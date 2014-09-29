@@ -1,0 +1,170 @@
+@-moz-document domain("wikipedia.org") {
+/* Wikipedia Dark Theme v1.0.0 (9/28/2014)
+ * https://github.com/StylishThemes/Wikipedia-Dark
+ * http://userstyles.org/styles/
+ * Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded
+ */
+
+  /*** Overall ***/
+  * {
+    border-color: #555 !important;
+    color: #9a9a9a !important;
+  }
+
+  a, .CategoryTreeToggle {
+    color: /*[[base-color]]*/ #4183C4 !important;
+  }
+
+  a:visited {
+    color: #ccc !important;
+  }
+
+  a:hover, a:hover span {
+    color: #fff !important;
+    text-decoration: underline !important;
+  }
+
+  /*** Background ***/
+  html, body {
+    background-color: #222 !important;
+    background-image: /*[[bg-choice]]*/ url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    /*[[bg-options]]*/
+    /*[[bg-options2]]*/
+  }
+
+  .mw-ui-button.mw-ui-progressive, .mw-ui-button.mw-ui-primary,
+  .mw-ui-button.mw-ui-progressive *, .mw-ui-button.mw-ui-primary * {
+    background-color: /*[[base-color]]*/ #4183C4 !important;
+    color: #fff !important;
+  }
+
+  #mw-page-base, div.vectorTabs, div.vectorTabs * {
+    background-image: none !important;
+  }
+
+  div, span, .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, #bodyContent,
+  .referencetooltip > li + li, div.vectorTabs ul li, table.plainlinks, tr[style*="background:#F5FFFA"] {
+    background-color: transparent !important;
+  }
+
+  #bodyContent pre, #bodyContent code {
+    background-color: #111 !important;
+  }
+
+  table, input, button, select,
+  tr[style*="background: antiquewhite;"], #toc, td[style*="background-color"],
+  #mw-content-text div[style*="background: #"] {
+    background-color: #222 !important;
+  }
+
+  table[style*="background-color:#fff;"], .search-form fieldset, table.ambox {
+    background-color: #282828 !important;
+  }
+
+  table.wikitable > tr > th, table.wikitable > * > tr > th {
+    background-color: #333; /* don't include !important flag */
+  }
+
+  td[style*="background: #ececec;"] {
+    background-color: #333 !important;
+  }
+
+  hr {
+    background-color: #555 !important;
+  }
+
+  /*** Background Color Styles ***/
+  /* Green */
+  #mp-left h2, #mp-left h2 span {
+    background: #244024 !important;
+  }
+
+  /* Blue */
+  div[style*="background"] h2, div[style*="background"] h2 *, #mp-right h2, #mp-right h2 span, .navbox th,
+  .navbox-title, .navbox-title *, tr[style*="background-color:tan;"],
+  div[style*="background: #444444;"], div[style*="background: #444444;"] *,
+  ol.references li:target, sup.reference:target, span.citation:target,
+  ol.references li:target *, sup.reference:target *, span.citation:target * {
+    background-color: #182030 !important;
+  }
+
+  .navbox-abovebelow, th.navbox-group, .navbox-subgroup .navbox-title,
+  .navbox-abovebelow *, th.navbox-group *, .navbox-subgroup .navbox-title * {
+    background-color: #212C43 !important;
+  }
+
+  /* Purple */
+  #mp-bottom h2, #mp-bottom h2 span {
+    background-color: #382B4A !important;
+  }
+
+  /* Brown */
+  #mp-center h2, #mp-center h2 span {
+    background-color: #383812 !important;
+  }
+
+  /*** Border ***/
+  #content, #toc {
+    -moz-border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    border-radius: 10px !important;
+  }
+
+  div.vectorTabs li:not(.selected) {
+    border-bottom: #555 1px solid !important;
+  }
+
+  /* arrow down */
+  .referencetooltip > li + li, .referencetooltip > li + li::after {
+    border-top-color: #555 !important;
+    border-right-color: transparent !important;
+    border-left-color: transparent !important;
+  }
+
+  /* Orange */
+  #centralNotice > div {
+    border-color: #e08b26 !important;
+  }
+
+  table.ambox-content, table.ambox-style {
+    border-left-color: #e08b26 !important;
+  }
+
+  /* add border */
+  div.vectorTabs li.selected {
+    border-bottom: #e08b26 1px solid !important;
+  }
+
+  /*** Text ***/
+  .wikitable th {
+    color: #fff !important;
+  }
+
+  .CategoryTreeEmptyBullet {
+    color: #ccc !important;
+  }
+
+  /*** Misc ***/
+  #p-cactions li.selected a, #p-cactions li a, #p-cactions li a:hover {
+    padding: 0 1em 0.1em !important;
+  }
+
+  ul, .portlet li {
+    list-style-image: none !important;
+  }
+
+  table[style*="border:4px ridge"] {
+    border: none !important;
+  }
+
+  /*** invert images ***/
+  img[title="Wikipedia"], .bookshelf-container .bookend, img.mwe-math-fallback-png-inline,
+  #mw-wsmfinal-close {
+    filter: url("data:image/svg+xml;utf8, <svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'i\'><feColorMatrix color-interpolation-filters=\'srgb\' values=\'-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0\'/></filter></svg>#i");
+    -webkit-filter: invert(100%) !important;
+    background-color: transparent !important;
+  }
+
+}
