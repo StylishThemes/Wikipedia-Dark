@@ -55,7 +55,7 @@
 
   table, input, button, select,
   tr[style*="background: antiquewhite;"], #toc, td[style*="background-color"],
-  #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li,
+  #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button.mw-ui-progressive[style*="background"], .mw-ui-button.mw-ui-progressive[style*="background"] * {
     background-color: #222 !important;
   }
