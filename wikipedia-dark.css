@@ -7,7 +7,6 @@
 
   /*** Overall ***/
   * {
-    border-color: #555 !important;
     color: #9a9a9a !important;
   }
 
@@ -45,7 +44,8 @@
   }
 
   div, span, .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, #bodyContent,
-  .referencetooltip > li + li, div.vectorTabs ul li, table.plainlinks, tr[style*="background:#F5FFFA"] {
+  .referencetooltip > li + li, div.vectorTabs ul li, table.plainlinks, tr[style*="background:#F5FFFA"],
+  th[style*="background-color: #fff"] {
     background-color: transparent !important;
   }
 
@@ -55,11 +55,12 @@
 
   table, input, button, select,
   tr[style*="background: antiquewhite;"], #toc, td[style*="background-color"],
-  #mw-content-text div[style*="background: #"] {
+  #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li,
+  .mw-ui-button.mw-ui-progressive[style*="background"], .mw-ui-button.mw-ui-progressive[style*="background"] * {
     background-color: #222 !important;
   }
 
-  table[style*="background-color:#fff;"], .search-form fieldset, table.ambox {
+  table[style*="background-color:#fff;"], .search-form fieldset, table.ambox, tr[style*="background-color: #fff;"] {
     background-color: #282828 !important;
   }
 
@@ -67,7 +68,8 @@
     background-color: #333; /* don't include !important flag */
   }
 
-  td[style*="background: #ececec;"] {
+  td[style*="background: #ececec;"], th[style*="background:#eee"], th[style*="background-color: #eee"],
+  tr[style*="background-color: #f7f7f7;"], #filetoc, .toccolours {
     background-color: #333 !important;
   }
 
@@ -76,8 +78,13 @@
   }
 
   /*** Background Color Styles ***/
+  /* Red */
+  td[style*="background: #FDD;"] {
+    background: #722 !important;
+  }
+
   /* Green */
-  #mp-left h2, #mp-left h2 span {
+  #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;"] {
     background: #244024 !important;
   }
 
@@ -106,6 +113,17 @@
   }
 
   /*** Border ***/
+  div, span, table, tr, input, select, th, td:not([style*="border-bottom"]),
+  h1, h2, h3, h4, h5, h6, ul, li {
+    border-color: #555 !important;
+  }
+
+  td[style*="border-bottom"] {
+    border-right-color: #555 !important;
+    border-left-color: #555 !important;
+    border-top-color: #555 !important;
+  }
+
   #content, #toc {
     -moz-border-radius: 10px !important;
     -webkit-border-radius: 10px !important;
