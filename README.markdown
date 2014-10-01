@@ -18,6 +18,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Changelog
 
+#### Version 1.0.1 (10/1/2014)
+
+* Add style to episode &amp; album track tables.
+* Add search dropdown styling.
+
 #### Version 1.0.0 (9/28/2014)
 
 * Initial commit; modified from [Dark Wikipedia Rounded](https://userstyles.org/styles/47161/dark-wikipedia-rounded) style.
