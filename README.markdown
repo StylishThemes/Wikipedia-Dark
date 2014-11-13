@@ -6,6 +6,16 @@
 ## Preview
 ![Wikipedia Dark preview](images/after.png)
 
+## Limitations
+
+* Many of the table cells have inline styling to add a background colors.
+  * Some of the very common stylings have been replaced using attribute selectors ( e.g. `th[style*="background:#eee"]` ).
+  * But due to the sheer number of possiblities, the replaced css style would also need to include selectors such as `th[style*="background-color: #eee"]` and `th[style*="background-color:#EEE"]` and `th[style*="background-color: #eeeeee"]`, etc.
+  * It would be a daunting task to find and replace all of these colors. I hope you see my point.
+* Not all images can be made readable.
+  * This style uses a css filter to invert the images, but this really only works on basic black-and-white images (not the logo).
+  * The "Wikipedia" title under the logo is an image and was not inverted because it is part of the logo &amp; it changes depending on the selected language.
+
 ## Contributions
 
 If you would like to contribute to this repository, please...
@@ -17,6 +27,12 @@ If you would like to contribute to this repository, please...
 Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia-Dark/graphs/contributors) so far!
 
 ## Changelog
+
+#### Version 1.0.2 (11/12/2014)
+
+* Fix math formulas being unreadable. Thanks [attilamolnar](https://github.com/attilamolnar)!
+* Invert speaker (listen) icon
+* Fix header cell in tbody styling (TV episodes).
 
 #### Version 1.0.1 (10/1/2014)
 
