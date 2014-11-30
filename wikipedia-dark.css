@@ -5,6 +5,13 @@
  * Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded
  */
 
+  /* transparent background */
+  div, span, .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, #bodyContent,
+  .referencetooltip > li + li, div.vectorTabs ul li, tr[style*="background:#F5FFFA"],
+  th[style*="background-color: #fff"] {
+    background-color: transparent !important;
+  }
+
   /*** Overall ***/
   * {
     color: #9a9a9a !important;
@@ -33,8 +40,7 @@
     /*[[bg-options2]]*/
   }
 
-  .mw-ui-button.mw-ui-progressive, .mw-ui-button.mw-ui-primary,
-  .mw-ui-button.mw-ui-progressive *, .mw-ui-button.mw-ui-primary * {
+  .mw-ui-button, .mw-ui-button * {
     background-color: /*[[base-color]]*/ #4183C4 !important;
     color: #fff !important;
   }
@@ -43,24 +49,19 @@
     background-image: none !important;
   }
 
-  div, span, .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, #bodyContent,
-  .referencetooltip > li + li, div.vectorTabs ul li, table.plainlinks, tr[style*="background:#F5FFFA"],
-  th[style*="background-color: #fff"] {
-    background-color: transparent !important;
-  }
-
   #bodyContent pre, #bodyContent code {
     background-color: #111 !important;
   }
 
   table, input, button, select,
-  tr[style*="background: antiquewhite;"], #toc, td[style*="background-color"],
+  tr[style*="background: antiquewhite;"], #toc, td[style*="background-color"], td[style*="background:#F5FAFF"],
   #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li, .suggestions,
-  .mw-ui-button.mw-ui-progressive[style*="background"], .mw-ui-button.mw-ui-progressive[style*="background"] * {
+  .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] * {
     background-color: #222 !important;
   }
 
-  table[style*="background-color:#fff;"], .search-form fieldset, table.ambox, tr[style*="background-color: #fff;"] {
+  table[style*="background-color:#fff;"], .search-form fieldset, table.ambox, tr[style*="background-color: #fff;"],
+  .mw-ui-button[style*="background-color:#008B6D"], tr[style*="background-color: #f5faff;"] {
     background-color: #282828 !important;
   }
 
@@ -70,7 +71,7 @@
 
   td[style*="background: #ececec;"], th[style*="background:#eee"], th[style*="background-color: #eee"],
   tr[style*="background-color: #f7f7f7;"], th[style*="background:#F2F2F2"], #filetoc, .toccolours,
-  th[style*="background:#F9F9F9"] {
+  th[style*="background:#F9F9F9"], table.plainlinks {
     background-color: #333 !important;
   }
 
@@ -95,13 +96,12 @@
   div[style*="background: #444444;"], div[style*="background: #444444;"] *,
   ol.references li:target, sup.reference:target, span.citation:target,
   ol.references li:target *, sup.reference:target *, span.citation:target *,
-  td[style*="background:#F5FAFF"] {
+  td[style*="background:#CEDFF2"], tr[bgcolor="#CEDFF2"], table[style*="background-color:#cef2e0"] * {
     background-color: #182030 !important;
   }
 
   .navbox-abovebelow, th.navbox-group, .navbox-subgroup .navbox-title,
-  .navbox-abovebelow *, th.navbox-group *, .navbox-subgroup .navbox-title *,
-  td[style*="background:#CEDFF2"] {
+  .navbox-abovebelow *, th.navbox-group *, .navbox-subgroup .navbox-title * {
     background-color: #212C43 !important;
   }
 
