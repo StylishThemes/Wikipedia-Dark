@@ -28,6 +28,12 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Changelog
 
+#### Version 1.0.3 (11/30/2014)
+
+* Portal page
+  * Darker background
+  * Fix button styling
+
 #### Version 1.0.2 (11/12/2014)
 
 * Fix math formulas being unreadable. Thanks [attilamolnar](https://github.com/attilamolnar)!
@@ -38,7 +44,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 * Add style to episode &amp; album track tables.
 * Add search dropdown styling.
-
-#### Version 1.0.0 (9/28/2014)
-
-* Initial commit; modified from [Dark Wikipedia Rounded](https://userstyles.org/styles/47161/dark-wikipedia-rounded) style.
