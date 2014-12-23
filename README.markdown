@@ -26,7 +26,19 @@ If you would like to contribute to this repository, please...
 
 Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia-Dark/graphs/contributors) so far!
 
-## Changelog
+## Recent Changes
+
+#### Version 1.0.4 (12/22/2014)
+
+* Remove (transparent) styling of legend colors
+* Add back styling of red links (non-existant wiki pages)
+* Infobox
+  * All background color styles (th & td) will now default to #333.
+  * Svg images within this box are now inverted.
+* All active (actively-clicked upon) png images on the page will now invert
+  * Not all inline svg images should be inverted, e.g. wiki icons.
+  * This method allows clicking the image to make it easier to read
+  * Try clicking on [this example](http://en.wikipedia.org/wiki/Aspirin#Physical_properties).
 
 #### Version 1.0.3 (11/30/2014)
 
@@ -39,8 +51,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 * Fix math formulas being unreadable. Thanks [attilamolnar](https://github.com/attilamolnar)!
 * Invert speaker (listen) icon
 * Fix header cell in tbody styling (TV episodes).
-
-#### Version 1.0.1 (10/1/2014)
-
-* Add style to episode &amp; album track tables.
-* Add search dropdown styling.
