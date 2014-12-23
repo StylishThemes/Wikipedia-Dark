@@ -6,7 +6,7 @@
  */
 
   /* transparent background */
-  div, span, .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, #bodyContent,
+  div, span:not(.legend-color), .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, #bodyContent,
   .referencetooltip > li + li, div.vectorTabs ul li, tr[style*="background:#F5FFFA"],
   th[style*="background-color: #fff"] {
     background-color: transparent !important;
@@ -30,6 +30,11 @@
     text-decoration: underline !important;
   }
 
+  /*** Red links (non-existant pages) ***/
+  a.new {
+    color: #980000 !important;
+  }
+
   /*** Background ***/
   html, body {
     background-color: #222 !important;
@@ -49,7 +54,7 @@
     background-image: none !important;
   }
 
-  #bodyContent pre, #bodyContent code {
+  #bodyContent pre, #bodyContent code, span.plainlinks * {
     background-color: #111 !important;
   }
 
@@ -71,7 +76,8 @@
 
   td[style*="background: #ececec;"], th[style*="background:#eee"], th[style*="background-color: #eee"],
   tr[style*="background-color: #f7f7f7;"], th[style*="background:#F2F2F2"], #filetoc, .toccolours,
-  th[style*="background:#F9F9F9"], table.plainlinks {
+  th[style*="background:#F9F9F9"], table.plainlinks, th[style*="background-color: lightgrey"],
+  th[style*="background:#ddd"], .infobox th[style*="background"], .infobox td[style*="background"] {
     background-color: #333 !important;
   }
 
@@ -182,7 +188,7 @@
 
   /*** invert images ***/
   img[title="Wikipedia"], .bookshelf-container .bookend, img.mwe-math-fallback-image-inline,
-  #mw-wsmfinal-close, img[src*="Speaker_Icon"] {
+  #mw-wsmfinal-close, img[src*="Speaker_Icon"], .infobox img[src*=".svg"], img[src*=".png"]:active {
     filter: url("data:image/svg+xml;utf8, <svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'i\'><feColorMatrix color-interpolation-filters=\'srgb\' values=\'-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0\'/></filter></svg>#i");
     -webkit-filter: invert(100%) !important;
     background-color: transparent !important;
