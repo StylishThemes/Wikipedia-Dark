@@ -28,6 +28,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.5 (8/8/2015)
+
+* Remove border radius.
+
 #### Version 1.0.4 (12/22/2014)
 
 * Remove (transparent) styling of legend colors
@@ -43,11 +47,5 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 #### Version 1.0.3 (11/30/2014)
 
 * Portal page
-  * Darker background
-  * Fix button styling
-
-#### Version 1.0.2 (11/12/2014)
-
-* Fix math formulas being unreadable. Thanks [attilamolnar](https://github.com/attilamolnar)!
-* Invert speaker (listen) icon
-* Fix header cell in tbody styling (TV episodes).
+  * Darker background.
+  * Fix button styling.
