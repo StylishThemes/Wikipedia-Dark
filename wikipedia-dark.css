@@ -133,12 +133,6 @@
     border-top-color: #555 !important;
   }
 
-  #content, #toc {
-    -moz-border-radius: 10px !important;
-    -webkit-border-radius: 10px !important;
-    border-radius: 10px !important;
-  }
-
   div.vectorTabs li:not(.selected) {
     border-bottom: #555 1px solid !important;
   }
