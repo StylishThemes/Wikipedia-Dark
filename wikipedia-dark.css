@@ -17,10 +17,14 @@
     color: #9a9a9a !important;
   }
 
+  [class^="nv-"] > a > span,
+  [class^="toclevel"] > a > span,
   a, .CategoryTreeToggle {
     color: /*[[base-color]]*/ #4183C4 !important;
   }
 
+  [class^="nv-"] > a:visited > span,
+  [class^="toclevel"] > a:visited > span,
   a:visited {
     color: #ccc !important;
   }
