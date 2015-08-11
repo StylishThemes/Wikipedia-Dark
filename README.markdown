@@ -28,6 +28,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.6 (8/11/2015)
+
+* Add TOC colors; see [pull #4](https://github.com/StylishThemes/Wikipedia-Dark/pull/4). Thanks [@40n](https://github.com/40n)!
+
 #### Version 1.0.5 (8/8/2015)
 
 * Remove border radius.
@@ -43,9 +47,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
   * Not all inline svg images should be inverted, e.g. wiki icons.
   * This method allows clicking the image to make it easier to read
   * Try clicking on [this example](http://en.wikipedia.org/wiki/Aspirin#Physical_properties).
-
-#### Version 1.0.3 (11/30/2014)
-
-* Portal page
-  * Darker background.
-  * Fix button styling.
