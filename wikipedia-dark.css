@@ -17,15 +17,15 @@
     color: #9a9a9a !important;
   }
 
-  a, .CategoryTreeToggle {
+  a, .CategoryTreeToggle, #toc a, #toc a span {
     color: /*[[base-color]]*/ #4183C4 !important;
   }
 
-  a:visited {
+  a:visited, #toc a:visited, #toc a:visited span {
     color: #ccc !important;
   }
 
-  a:hover, a:hover span {
+  a:hover, a:hover span, #toc a:hover, #toc a:hover span {
     color: #fff !important;
     text-decoration: underline !important;
   }
