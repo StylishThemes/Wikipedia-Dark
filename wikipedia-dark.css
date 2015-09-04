@@ -88,12 +88,12 @@
 
   /*** Background Color Styles ***/
   /* Red */
-  td[style*="background: #FDD;"] {
+  td[style*="background: #FDD;"], .table-no {
     background: #722 !important;
   }
 
   /* Green */
-  #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;"] {
+  #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;"], .table-yes {
     background: #244024 !important;
   }
 
@@ -118,8 +118,8 @@
   }
 
   /* Brown */
-  #mp-center h2, #mp-center h2 span {
-    background-color: #383812 !important;
+  #mp-center h2, #mp-center h2 span, .table-partial {
+    background-color: #321 !important;
   }
 
   /*** Border ***/
@@ -166,10 +166,6 @@
 
   .CategoryTreeEmptyBullet {
     color: #ccc !important;
-  }
-
-  .table-no, .table-yes, .table-partial {
-    color: #000 !important;
   }
 
   /*** Misc ***/
