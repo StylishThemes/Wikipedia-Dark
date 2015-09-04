@@ -78,8 +78,16 @@
   td[style*="background: #ececec;"], th[style*="background:#eee"], th[style*="background-color: #eee"],
   tr[style*="background-color: #f7f7f7;"], th[style*="background:#F2F2F2"], #filetoc, .toccolours,
   th[style*="background:#F9F9F9"], table.plainlinks, th[style*="background-color: lightgrey"],
-  th[style*="background:#ddd"], .infobox th[style*="background"], .infobox td[style*="background"] {
+  th[style*="background:#ddd"], .infobox th[style*="background"], .infobox td[style*="background"],
+  td[style*="background:#F2F2F2"] {
     background-color: #333 !important;
+  }
+
+  /* remove background image/gradient */
+  .keyboard-key {
+    background: #333 !important;
+    border-color: #555 !important;
+    box-shadow: 0.1em 0.2em 0.2em #444 !important;
   }
 
   hr {
@@ -113,7 +121,7 @@
   }
 
   /* Purple */
-  #mp-bottom h2, #mp-bottom h2 span {
+  #mp-bottom h2, #mp-bottom h2 span, th[style*="background:lavender"], td[style*="background:lavender"] {
     background-color: #382B4A !important;
   }
 
