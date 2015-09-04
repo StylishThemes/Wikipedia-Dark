@@ -50,7 +50,7 @@
     color: #fff !important;
   }
 
-  #mw-page-base, div.vectorTabs, div.vectorTabs * {
+  #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar {
     background-image: none !important;
   }
 
@@ -58,10 +58,10 @@
     background-color: #111 !important;
   }
 
-  table, input, button, select,
+  table, input, button, select, textarea,
   tr[style*="background: antiquewhite;"], #toc, td[style*="background-color"], td[style*="background:#F5FAFF"],
   #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li, .suggestions,
-  .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] * {
+  .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *, .wikiEditor-ui {
     background-color: #222 !important;
   }
 
@@ -84,9 +84,12 @@
   }
 
   /* remove background image/gradient */
-  .keyboard-key {
+  .keyboard-key, div#editpage-specialchars a {
     background: #333 !important;
     border-color: #555 !important;
+  }
+
+  .keyboard-key {
     box-shadow: 0.1em 0.2em 0.2em #444 !important;
   }
 
