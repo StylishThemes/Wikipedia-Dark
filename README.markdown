@@ -28,6 +28,14 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.7 (9/4/2015)
+
+* Improve table cell text visibility. Merged [pull #5](https://github.com/StylishThemes/Wikipedia-Dark/pull/5).
+* Reverted pull #5 which lightened the cell text and darkened the cell background instead.
+* Add table row striping.
+* Style `<kbd>` elements & darken some table backgrounds.
+* Darken wiki editor style.
+
 #### Version 1.0.6 (8/11/2015)
 
 * Add TOC colors; see [pull #4](https://github.com/StylishThemes/Wikipedia-Dark/pull/4). Thanks [@40n](https://github.com/40n)!
@@ -35,15 +43,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 #### Version 1.0.5 (8/8/2015)
 
 * Remove border radius.
-
-#### Version 1.0.4 (12/22/2014)
-
-* Remove (transparent) styling of legend colors
-* Add back styling of red links (non-existant wiki pages)
-* Infobox
-  * All background color styles (th & td) will now default to #333.
-  * Svg images within this box are now inverted.
-* All active (actively-clicked upon) png images on the page will now invert
-  * Not all inline svg images should be inverted, e.g. wiki icons.
-  * This method allows clicking the image to make it easier to read
-  * Try clicking on [this example](http://en.wikipedia.org/wiki/Aspirin#Physical_properties).
