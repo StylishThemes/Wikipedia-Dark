@@ -71,7 +71,7 @@
     background-color: #282828 !important;
   }
 
-  table.wikitable > tr > th, table.wikitable > * > tr > th {
+  table.wikitable > tr > th, table.wikitable > * > tr > th, div.barbox > table > tbody > tr > th {
     background-color: #333; /* don't include !important flag */
   }
 
