@@ -167,6 +167,10 @@
     color: #ccc !important;
   }
 
+  .table-no, .table-yes, .table-partial {
+    color: #000 !important;
+  }
+
   /*** Misc ***/
   #p-cactions li.selected a, #p-cactions li a, #p-cactions li a:hover {
     padding: 0 1em 0.1em !important;
