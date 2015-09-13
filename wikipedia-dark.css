@@ -68,7 +68,8 @@
 
   table[style*="background-color:#fff;"], .search-form fieldset, table.ambox, tr[style*="background-color: #fff;"],
   .mw-ui-button[style*="background-color:#008B6D"], tr[style*="background-color: #f5faff;"],
-  tr[style*="background:#E9E9E9"] > *, table.infobox.hproduct > tbody > tr[style*="background: #F0F0F0;"] {
+  tr[style*="background:#E9E9E9"] > *, table.infobox.hproduct > tbody > tr[style*="background: #F0F0F0;"],
+  td[style*="background:lightyellow"] {
     background-color: #282828 !important;
   }
 
@@ -130,7 +131,7 @@
   }
 
   /* Brown */
-  #mp-center h2, #mp-center h2 span, .table-partial {
+  #mp-center h2, #mp-center h2 span, .table-partial, tr[style*="background:orange"] {
     background-color: #321 !important;
   }
 
