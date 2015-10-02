@@ -136,8 +136,12 @@
   }
 
   /*** Border ***/
+  fieldset {
+    border-color: /*[[base-color]]*/ #4183C4 !important;
+  }
+
   div, span, table, tr:not([style*="border-bottom"]), th, td:not([style*="border-bottom"]),
-  h1, h2, h3, h4, h5, h6, ul, li, input, select {
+  h1, h2, h3, h4, h5, h6, ul, li, input, select, #bodyContent code {
     border-color: #555 !important;
   }
 
