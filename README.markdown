@@ -28,6 +28,15 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.8 (10/2/2015)
+
+* Use dark background table headers; see [pull #6](https://github.com/StylishThemes/Wikipedia-Dark/pull/6).
+* Add dark background to even rows of infobox; see [pull #7](https://github.com/StylishThemes/Wikipedia-Dark/pull/7).
+* Tweak incorrect selector.
+* Add `.navbox.collapse` style. Fixes [issue #8](https://github.com/StylishThemes/Wikipedia-Dark/issues/8).
+* Add new wikitable selectors. Fixes [issue #10](https://github.com/StylishThemes/Wikipedia-Dark/issues/10).
+* Add fieldset border style.
+
 #### Version 1.0.7 (9/4/2015)
 
 * Improve table cell text visibility. Merged [pull #5](https://github.com/StylishThemes/Wikipedia-Dark/pull/5).
@@ -39,7 +48,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 #### Version 1.0.6 (8/11/2015)
 
 * Add TOC colors; see [pull #4](https://github.com/StylishThemes/Wikipedia-Dark/pull/4). Thanks [@40n](https://github.com/40n)!
-
-#### Version 1.0.5 (8/8/2015)
-
-* Remove border radius.
