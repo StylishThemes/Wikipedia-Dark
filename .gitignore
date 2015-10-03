@@ -1,3 +1,8 @@
+# GitHub build config
+build.json
+*.build.css
+*.build.min.css
+
 #################
 ## Eclipse
 #################
@@ -49,6 +54,7 @@ local.properties
 # Build results
 [Dd]ebug/
 [Rr]elease/
+node_modules/
 *_i.c
 *_p.c
 *.ilk

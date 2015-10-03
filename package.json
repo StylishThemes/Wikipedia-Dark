@@ -1,0 +1,20 @@
+{
+  "name": "wikipedia-dark",
+  "version": "1.0.8",
+  "description": "Wikipedia Dark theme for Stylish",
+  "license": "CC-BY-SA-4.0",
+  "repository": "https://github.com/StylishThemes/Wikipedia-Dark",
+  "homepage": "https://userstyles.org/styles/105844/wikipedia-dark-st",
+  "contributors": [
+    "Mottie <wowmotty@gmail.com> (http://wowmotty.blogspot.com/)",
+    "Poorchop (https://poorchop.github.io/)",
+    "Attila Molnar (https://github.com/attilamolnar)",
+    "40n (https://github.com/40n)"
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-string-replace": "^1.2.0"
+  }
+}
