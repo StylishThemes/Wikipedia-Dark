@@ -28,6 +28,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.9 (10/3/2015)
+
+* Add user selected visited link color. Fixes [issue #13](https://github.com/StylishThemes/Wikipedia-Dark/issues/13).
+* Add grunt build process. See [wiki documentation](https://github.com/StylishThemes/Wikipedia-Dark/wiki/Build) for more details.
+
 #### Version 1.0.8 (10/2/2015)
 
 * Use dark background table headers; see [pull #6](https://github.com/StylishThemes/Wikipedia-Dark/pull/6).
@@ -44,7 +49,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 * Add table row striping.
 * Style `<kbd>` elements & darken some table backgrounds.
 * Darken wiki editor style.
-
-#### Version 1.0.6 (8/11/2015)
-
-* Add TOC colors; see [pull #4](https://github.com/StylishThemes/Wikipedia-Dark/pull/4). Thanks [@40n](https://github.com/40n)!
