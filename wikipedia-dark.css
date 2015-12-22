@@ -58,6 +58,10 @@
     background-color: #111 !important;
   }
 
+  td[style*="background:#FFFFFF"] {
+    background-color: #181818 !important;
+  }
+
   table, input, button, select, textarea,
   tr[style*="background: antiquewhite;"], #toc, td[style*="background-color"], td[style*="background:#F5FAFF"],
   #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li, .suggestions,
@@ -69,7 +73,7 @@
   table[style*="background-color:#fff;"], .search-form fieldset, table.ambox, tr[style*="background-color: #fff;"],
   .mw-ui-button[style*="background-color:#008B6D"], tr[style*="background-color: #f5faff;"],
   tr[style*="background:#E9E9E9"] > *, table.infobox.hproduct > tbody > tr[style*="background: #F0F0F0;"],
-  td[style*="background:lightyellow"] {
+  td[style*="background:lightyellow"], td[style*="background:#eeeeff"], td[style*="background:#ddddff"] {
     background-color: #282828 !important;
   }
 
