@@ -1,5 +1,5 @@
 @-moz-document domain("wikipedia.org") {
-/* Wikipedia Dark Theme v1.0.9 (10/3/2015)
+/* Wikipedia Dark Theme v1.0.10 (12/22/2015)
  * https://github.com/StylishThemes/Wikipedia-Dark
  * http://userstyles.org/styles/
  * Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded
@@ -22,7 +22,7 @@
   }
 
   a:visited, #toc a:visited, #toc a:visited span {
-    color: /*[[visited-color]]*/ #ff32a0 !important;
+    color: /*[[visited-color]]*/ #295887 !important;
   }
 
   a:hover, a:hover span, #toc a:hover, #toc a:hover span {

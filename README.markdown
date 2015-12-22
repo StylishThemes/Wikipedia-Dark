@@ -28,6 +28,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.10 (12/22/2015)
+
+* Darken cells with white background. Fixes [issue #15](https://github.com/StylishThemes/Wikipedia-Dark/issues/15).
+
 #### Version 1.0.9 (10/3/2015)
 
 * Add user selected visited link color. Fixes [issue #13](https://github.com/StylishThemes/Wikipedia-Dark/issues/13).
@@ -41,11 +45,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 * Add `.navbox.collapse` style. Fixes [issue #8](https://github.com/StylishThemes/Wikipedia-Dark/issues/8).
 * Add new wikitable selectors. Fixes [issue #10](https://github.com/StylishThemes/Wikipedia-Dark/issues/10).
 * Add fieldset border style.
-
-#### Version 1.0.7 (9/4/2015)
-
-* Improve table cell text visibility. Merged [pull #5](https://github.com/StylishThemes/Wikipedia-Dark/pull/5).
-* Reverted pull #5 which lightened the cell text and darkened the cell background instead.
-* Add table row striping.
-* Style `<kbd>` elements & darken some table backgrounds.
-* Darken wiki editor style.
