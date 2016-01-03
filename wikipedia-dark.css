@@ -85,7 +85,7 @@
   tr[style*="background-color: #f7f7f7;"], th[style*="background:#F2F2F2"], #filetoc, .toccolours,
   th[style*="background:#F9F9F9"], table.plainlinks, th[style*="background-color: lightgrey"],
   th[style*="background:#ddd"], .infobox th[style*="background"], .infobox td[style*="background"],
-  td[style*="background:#F2F2F2"] {
+  td[style*="background:#F2F2F2"], table.wikitable > tbody > tr[style*="background-color:#F6F6F6"] {
     background-color: #333 !important;
   }
 
@@ -181,7 +181,7 @@
   }
 
   /*** Text ***/
-  .wikitable th {
+  .wikitable th, table.wikitable > tbody > tr[style*="background-color:#F6F6F6"] > td > * {
     color: #fff !important;
   }
 
