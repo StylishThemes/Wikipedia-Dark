@@ -28,6 +28,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.11 (1/2/2016)
+
+* Dark background & brighter text for table footer; see [pull #9](https://github.com/StylishThemes/Wikipedia-Dark/pull/9).
+
 #### Version 1.0.10 (12/22/2015)
 
 * Darken cells with white background. Fixes [issue #15](https://github.com/StylishThemes/Wikipedia-Dark/issues/15).
@@ -36,12 +40,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 * Add user selected visited link color. Fixes [issue #13](https://github.com/StylishThemes/Wikipedia-Dark/issues/13).
 * Add grunt build process. See [wiki documentation](https://github.com/StylishThemes/Wikipedia-Dark/wiki/Build) for more details.
-
-#### Version 1.0.8 (10/2/2015)
-
-* Use dark background table headers; see [pull #6](https://github.com/StylishThemes/Wikipedia-Dark/pull/6).
-* Add dark background to even rows of infobox; see [pull #7](https://github.com/StylishThemes/Wikipedia-Dark/pull/7).
-* Tweak incorrect selector.
-* Add `.navbox.collapse` style. Fixes [issue #8](https://github.com/StylishThemes/Wikipedia-Dark/issues/8).
-* Add new wikitable selectors. Fixes [issue #10](https://github.com/StylishThemes/Wikipedia-Dark/issues/10).
-* Add fieldset border style.
