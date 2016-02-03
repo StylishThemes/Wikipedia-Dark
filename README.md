@@ -28,6 +28,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.12 (2/3/2016)
+
+* Global: Add missing styles.
+* Grunt: Change default visited link color.
+
 #### Version 1.0.11 (1/2/2016)
 
 * Dark background & brighter text for table footer; see [pull #9](https://github.com/StylishThemes/Wikipedia-Dark/pull/9).
@@ -35,8 +40,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 #### Version 1.0.10 (12/22/2015)
 
 * Darken cells with white background. Fixes [issue #15](https://github.com/StylishThemes/Wikipedia-Dark/issues/15).
-
-#### Version 1.0.9 (10/3/2015)
-
-* Add user selected visited link color. Fixes [issue #13](https://github.com/StylishThemes/Wikipedia-Dark/issues/13).
-* Add grunt build process. See [wiki documentation](https://github.com/StylishThemes/Wikipedia-Dark/wiki/Build) for more details.
