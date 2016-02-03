@@ -1,4 +1,5 @@
 @-moz-document domain("wikipedia.org") {
+
 /* Wikipedia Dark Theme v1.0.11 (1/2/2016)
  * https://github.com/StylishThemes/Wikipedia-Dark
  * http://userstyles.org/styles/
@@ -8,7 +9,7 @@
   /* transparent background */
   div, span:not(.legend-color), .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, #bodyContent,
   .referencetooltip > li + li, div.vectorTabs ul li, tr[style*="background:#F5FFFA"],
-  th[style*="background-color: #fff"] {
+  th[style*="background-color: #fff"], .mw-echo-notifications-badge {
     background-color: transparent !important;
   }
 
@@ -50,7 +51,7 @@
     color: #fff !important;
   }
 
-  #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar {
+  #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar, #p-cactions-label {
     background-image: none !important;
   }
 
@@ -66,14 +67,16 @@
   tr[style*="background: antiquewhite;"], #toc, td[style*="background-color"], td[style*="background:#F5FAFF"],
   #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *, .wikiEditor-ui,
-  table.navbox.collapsible tr:nth-child(2) > td {
+  table.navbox.collapsible tr:nth-child(2) > td, div.menu, .oo-ui-popupWidget-popup,
+  .oo-ui-buttonElement-button, .mw-notification {
     background-color: #222 !important;
   }
 
   table[style*="background-color:#fff;"], .search-form fieldset, table.ambox, tr[style*="background-color: #fff;"],
   .mw-ui-button[style*="background-color:#008B6D"], tr[style*="background-color: #f5faff;"],
   tr[style*="background:#E9E9E9"] > *, table.infobox.hproduct > tbody > tr[style*="background: #F0F0F0;"],
-  td[style*="background:lightyellow"], td[style*="background:#eeeeff"], td[style*="background:#ddddff"] {
+  td[style*="background:lightyellow"], td[style*="background:#eeeeff"], td[style*="background:#ddddff"],
+  .oo-ui-buttonElement-button:hover {
     background-color: #282828 !important;
   }
 
@@ -155,7 +158,7 @@
     border-top-color: #555 !important;
   }
 
-  div.vectorTabs li:not(.selected) {
+  div.vectorTabs li:not(.selected), .oo-ui-popupWidget-anchor:after {
     border-bottom: #555 1px solid !important;
   }
 
@@ -164,6 +167,13 @@
     border-top-color: #555 !important;
     border-right-color: transparent !important;
     border-left-color: transparent !important;
+  }
+  /* Bookmark Icon */
+  #ca-watch.icon a {
+    background-image: url('data:image/svg+xml,<%3Fxml%20version%3D"1.0"%20encoding%3D"UTF-8"%3F><svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"16"%20height%3D"16"><path%20d%3D"M8.103%201.146l2.175%204.408%204.864.707-3.52%203.431.831%204.845-4.351-2.287-4.351%202.287.831-4.845-3.52-3.431%204.864-.707z"%20fill%3D"transparent"%20stroke%3D"%237cb5d1"%20stroke-width%3D"1"%2F><%2Fsvg>') !important;
+  }
+  #ca-unwatch.icon a {
+    background-image: url('data:image/svg+xml,<%3Fxml%20version%3D"1.0"%20encoding%3D"UTF-8"%3F><svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20xmlns%3Axlink%3D"http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink"%20width%3D"16"%20height%3D"16"><defs><linearGradient%20id%3D"a"><stop%20offset%3D"0"%20stop-color%3D"%23c2edff"%2F><stop%20offset%3D".5"%20stop-color%3D"%2368bdff"%2F><stop%20offset%3D"1"%20stop-color%3D"%23fff"%2F><%2FlinearGradient><linearGradient%20x1%3D"13.47"%20y1%3D"14.363"%20x2%3D"4.596"%20y2%3D"3.397"%20id%3D"b"%20xlink%3Ahref%3D"%23a"%20gradientUnits%3D"userSpaceOnUse"%2F><%2Fdefs><path%20d%3D"M8.103%201.146l2.175%204.408%204.864.707-3.52%203.431.831%204.845-4.351-2.287-4.351%202.287.831-4.845-3.52-3.431%204.864-.707z"%20fill%3D"url%28%23b%29"%20stroke%3D"%237cb5d1"%20stroke-width%3D"1"%2F><%2Fsvg>') !important;
   }
 
   /* Orange */
@@ -176,6 +186,9 @@
   }
 
   /* add border */
+  div.vectorTabs li, #p-cactions-label {
+    border-right: #555 1px solid !important;
+  }
   div.vectorTabs li.selected {
     border-bottom: #e08b26 1px solid !important;
   }
@@ -204,11 +217,16 @@
 
   /*** invert images ***/
   img[title="Wikipedia"], .bookshelf-container .bookend, img.mwe-math-fallback-image-inline,
-  #mw-wsmfinal-close, img[src*="Speaker_Icon"], .infobox img[alt*="structure"][src*=".svg"], img[src*=".png"]:active {
+  #mw-wsmfinal-close, img[src*="Speaker_Icon"], .infobox img[alt*="structure"][src*=".svg"], img[src*=".png"]:active,
+  .oo-ui-iconElement-icon:not(.mw-echo-notifications-badge), .RTsettings {
     filter: url("data:image/svg+xml;utf8, <svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'i\'><feColorMatrix color-interpolation-filters=\'srgb\' values=\'-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0\'/></filter></svg>#i");
     -webkit-filter: invert(100%) !important;
     background-color: transparent !important;
   }
+  .oo-ui-icon-bell {
+    opacity: 0.7 !important;
+  }
 
   /* grunt build - remove to end of file */
+
 }
