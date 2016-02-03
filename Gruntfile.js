@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 		console.info('build.json not found - using defaults');
 		config = {
 			'color'    : '#4183C4',
-			'visited'  : '#ff32a0',
+			'visited'  : '#295887',
 			'image'    : 'url(https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/images/backgrounds/bg-tile1.png)',
 			'tiled'    : true,
 			'attach'   : 'scroll',
