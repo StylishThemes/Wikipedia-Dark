@@ -50,7 +50,8 @@
     color: #fff !important;
   }
 
-  #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar, #p-cactions-label {
+  #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar, #p-cactions-label,
+  .client-js #preftoc, .client-js #preftoc li, .client-js #preftoc li.selected a {
     background-image: none !important;
   }
 
@@ -157,6 +158,19 @@
     border-top-color: #555 !important;
   }
 
+  .mwe-popups:before {
+    border-bottom-color: #555 !important;
+  }
+  .mwe-popups.flipped_y:before, .mwe-popups.flipped_x_y:before {
+    border-top-color: #555 !important;
+  }
+  .mwe-popups:after {
+    border-bottom-color: #222 !important;
+  }
+  .mwe-popups.flipped_y:after, .mwe-popups.flipped_x_y:after {
+    border-top-color: #222 !important;
+  }
+
   div.vectorTabs li:not(.selected), .oo-ui-popupWidget-anchor:after {
     border-bottom: #555 1px solid !important;
   }
@@ -185,10 +199,10 @@
   }
 
   /* add border */
-  div.vectorTabs li, #p-cactions-label {
+  div.vectorTabs li, #p-cactions-label, .client-js #preftoc li {
     border-right: #555 1px solid !important;
   }
-  div.vectorTabs li.selected {
+  div.vectorTabs li.selected, .client-js #preftoc li.selected {
     border-bottom: #e08b26 1px solid !important;
   }
 
