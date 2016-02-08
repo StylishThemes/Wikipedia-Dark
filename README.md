@@ -28,6 +28,12 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.13 (2/8/2016)
+
+* Readme: update screenshots.
+* Add beta testing popups styling; see [pull #16](https://github.com/StylishThemes/Wikipedia-Dark/pull/16). Thanks [@chj1axr0](https://github.com/chj1axr0)!
+* Add style to preference tabs.
+
 #### Version 1.0.12 (2/3/2016)
 
 * Global: Add missing styles.
@@ -36,7 +42,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 #### Version 1.0.11 (1/2/2016)
 
 * Dark background & brighter text for table footer; see [pull #9](https://github.com/StylishThemes/Wikipedia-Dark/pull/9).
-
-#### Version 1.0.10 (12/22/2015)
-
-* Darken cells with white background. Fixes [issue #15](https://github.com/StylishThemes/Wikipedia-Dark/issues/15).
