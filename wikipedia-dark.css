@@ -67,7 +67,7 @@
   #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *, .wikiEditor-ui,
   table.navbox.collapsible tr:nth-child(2) > td, div.menu, .oo-ui-popupWidget-popup,
-  .oo-ui-buttonElement-button, .mw-notification {
+  .oo-ui-buttonElement-button, .mw-notification, .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall {
     background-color: #222 !important;
   }
 
