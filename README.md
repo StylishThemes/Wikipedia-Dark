@@ -28,6 +28,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.14 (4/15/2016)
+
+* Make selection style match the base color.
+
 #### Version 1.0.13 (2/8/2016)
 
 * Readme: update screenshots.
@@ -38,7 +42,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 * Global: Add missing styles.
 * Grunt: Change default visited link color.
-
-#### Version 1.0.11 (1/2/2016)
-
-* Dark background & brighter text for table footer; see [pull #9](https://github.com/StylishThemes/Wikipedia-Dark/pull/9).
