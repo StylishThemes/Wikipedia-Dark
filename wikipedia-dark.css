@@ -30,6 +30,16 @@
     text-decoration: underline !important;
   }
 
+  /* text selection */
+  ::selection {
+    background-color: /*[[base-color]]*/ #4183C4 !important;
+    color: #fff !important;
+  }
+  ::-moz-selection {
+    background-color: /*[[base-color]]*/ #4183C4 !important;
+    color: #fff !important;
+  }
+
   /*** Red links (non-existant pages) ***/
   a.new {
     color: #980000 !important;
