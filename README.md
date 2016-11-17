@@ -28,6 +28,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.15 (11/16/2016)
+
+* Editor: various tweaks.
+* Invert inline images.
+
 #### Version 1.0.14 (4/15/2016)
 
 * Make selection style match the base color.
@@ -37,8 +42,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 * Readme: update screenshots.
 * Add beta testing popups styling; see [pull #16](https://github.com/StylishThemes/Wikipedia-Dark/pull/16). Thanks [@chj1axr0](https://github.com/chj1axr0)!
 * Add style to preference tabs.
-
-#### Version 1.0.12 (2/3/2016)
-
-* Global: Add missing styles.
-* Grunt: Change default visited link color.
