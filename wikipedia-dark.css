@@ -17,7 +17,7 @@
     color: #9a9a9a !important;
   }
 
-  a, .CategoryTreeToggle, #toc a, #toc a span {
+  a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button {
     color: /*[[base-color]]*/ #4183C4 !important;
   }
 
@@ -61,8 +61,13 @@
   }
 
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar, #p-cactions-label,
-  .client-js #preftoc, .client-js #preftoc li, .client-js #preftoc li.selected a {
+  .client-js #preftoc, .client-js #preftoc li, .client-js #preftoc li.selected a,
+  .ui-widget-content {
     background-image: none !important;
+  }
+
+  .ui-widget-overlay {
+    background: rgba(0, 0, 0, 0.8) !important;
   }
 
   #bodyContent pre, #bodyContent code, span.plainlinks * {
@@ -78,8 +83,14 @@
   #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *, .wikiEditor-ui,
   table.navbox.collapsible tr:nth-child(2) > td, div.menu, .oo-ui-popupWidget-popup,
-  .oo-ui-buttonElement-button, .mw-notification, .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall {
+  .oo-ui-buttonElement-button, .mw-notification, .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall,
+  .ui-widget-content, .oo-ui-window-body, #pagehistory li.selected {
     background-color: #222 !important;
+  }
+
+  body .ui-button {
+    background: #282828 !important;
+    border-color: #555 !important;
   }
 
   table[style*="background-color:#fff;"], .search-form fieldset, table.ambox, tr[style*="background-color: #fff;"],
@@ -103,8 +114,13 @@
   }
 
   /* remove background image/gradient */
-  .keyboard-key, div#editpage-specialchars a {
+  .keyboard-key, div#editpage-specialchars a, body div.ui-dialog .ui-widget-header {
     background: #333 !important;
+    border-color: #555 !important;
+  }
+
+  body .ui-button:hover {
+    background: #444 !important;
     border-color: #555 !important;
   }
 
@@ -171,7 +187,8 @@
   .mwe-popups:before {
     border-bottom-color: #555 !important;
   }
-  .mwe-popups.flipped_y:before, .mwe-popups.flipped_x_y:before {
+  .mwe-popups.flipped_y:before, .mwe-popups.flipped_x_y:before,
+  .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
     border-top-color: #555 !important;
   }
   .mwe-popups:after {
