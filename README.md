@@ -28,6 +28,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+#### Version 1.0.16 (12/1/2016)
+
+* Extra: Fix Google Translate extension style. See https://forum.userstyles.org/discussion/52537/x
+
 #### Version 1.0.15 (11/16/2016)
 
 * Editor: various tweaks.
@@ -36,9 +40,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 #### Version 1.0.14 (4/15/2016)
 
 * Make selection style match the base color.
-
-#### Version 1.0.13 (2/8/2016)
-
-* Readme: update screenshots.
-* Add beta testing popups styling; see [pull #16](https://github.com/StylishThemes/Wikipedia-Dark/pull/16). Thanks [@chj1axr0](https://github.com/chj1axr0)!
-* Add style to preference tabs.
