@@ -74,7 +74,7 @@
     background-color: #111 !important;
   }
 
-  td[style*="background:#FFFFFF"] {
+  td[style*="background:#FFFFFF"], .jfk-bubble {
     background-color: #181818 !important;
   }
 
@@ -251,7 +251,7 @@
     list-style-image: none !important;
   }
 
-  table[style*="border:4px ridge"] {
+  table[style*="border:4px ridge"], .jfk-bubble-closebtn {
     border: none !important;
   }
 
@@ -259,9 +259,9 @@
   img[title="Wikipedia"], .bookshelf-container .bookend, img.mwe-math-fallback-image-inline,
   #mw-wsmfinal-close, img[src*="Speaker_Icon"], .infobox img[alt*="structure"][src*=".svg"], img[src*=".png"]:active,
   img[src*=".svg"][height="16"], img[src*=".svg"][height="17"], img[src*=".svg"][height="18"],
-  .oo-ui-iconElement-icon:not(.mw-echo-notifications-badge), .RTsettings {
-    filter: url("data:image/svg+xml;utf8, <svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'i\'><feColorMatrix color-interpolation-filters=\'srgb\' values=\'-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0\'/></filter></svg>#i");
+  .oo-ui-iconElement-icon:not(.mw-echo-notifications-badge), .RTsettings, #gtx-host, .jfk-bubble-closebtn {
     -webkit-filter: invert(100%) !important;
+            filter: invert(100%) !important;
     background-color: transparent !important;
   }
   .oo-ui-icon-bell {
