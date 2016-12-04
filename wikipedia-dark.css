@@ -6,14 +6,22 @@
  */
 
   /* transparent background */
-  div, span:not(.legend-color), .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, #bodyContent,
-  .referencetooltip > li + li, div.vectorTabs ul li, tr[style*="background:#F5FFFA"],
-  th[style*="background-color: #fff"], .mw-echo-notifications-badge {
+  div, span:not(.legend-color), .MainPageBG, .navbox-list, div#mw-head,
+  .mw-wsmfinal-content, #bodyContent, .referencetooltip > li + li,
+  div.vectorTabs ul li, tr[style*="background:#F5FFFA"],
+  th[style*="background-color: #fff"], .mw-echo-notifications-badge,
+  .infobox span.plainlinks * {
     background-color: transparent !important;
   }
 
   /*** Overall ***/
-  * {
+  td, p, li, th:not([style*="background"]), caption, div,
+  span:not([class*="color"]), p code {
+    color: #9a9a9a;
+  }
+
+  h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
+  div[style*="color"], input[type="search"], .suggestions-result {
     color: #9a9a9a !important;
   }
 
@@ -25,7 +33,8 @@
     color: /*[[visited-color]]*/ #295887 !important;
   }
 
-  a:hover, a:hover span, #toc a:hover, #toc a:hover span {
+  a:hover, a:hover span, #toc a:hover, #toc a:hover span,
+  .suggestions-result .highlight, .suggestions-special .special-query {
     color: #fff !important;
     text-decoration: underline !important;
   }
@@ -173,8 +182,9 @@
     border-color: /*[[base-color]]*/ #4183C4 !important;
   }
 
-  div, span, table, tr:not([style*="border-bottom"]), th, td:not([style*="border-bottom"]),
-  h1, h2, h3, h4, h5, h6, ul, li, input, select, #bodyContent code {
+  div, span:not([class*="color"]), table, tr:not([style*="border-bottom"]), th,
+  td:not([style*="border-bottom"]), h1, h2, h3, h4, h5, h6, ul, li, input, select,
+  #bodyContent code {
     border-color: #555 !important;
   }
 
@@ -234,7 +244,8 @@
   }
 
   /*** Text ***/
-  .wikitable th, table.wikitable > tbody > tr[style*="background-color:#F6F6F6"] > td > * {
+  .wikitable tr:not([style*="color:black"]) th,
+  table.wikitable > tbody > tr[style*="background-color:#F6F6F6"] > td > * {
     color: #fff !important;
   }
 
