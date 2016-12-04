@@ -208,7 +208,8 @@
     border-top-color: #222 !important;
   }
 
-  div.vectorTabs li:not(.selected), .oo-ui-popupWidget-anchor:after {
+  div.vectorTabs li:not(.selected), .oo-ui-popupWidget-anchor:after,
+  .oo-ui-popupWidget-head {
     border-bottom: #555 1px solid !important;
   }
 
@@ -270,7 +271,9 @@
   img[title="Wikipedia"], .bookshelf-container .bookend, img.mwe-math-fallback-image-inline,
   #mw-wsmfinal-close, img[src*="Speaker_Icon"], .infobox img[alt*="structure"][src*=".svg"], img[src*=".png"]:active,
   img[src*=".svg"][height="16"], img[src*=".svg"][height="17"], img[src*=".svg"][height="18"],
-  .oo-ui-iconElement-icon:not(.mw-echo-notifications-badge), .RTsettings, #gtx-host, .jfk-bubble-closebtn {
+  .oo-ui-iconElement-icon:not(.mw-echo-notifications-badge), .RTsettings, #gtx-host, .jfk-bubble-closebtn,
+  #pt-notifications-notice .mw-echo-notifications-badge:before, .oo-ui-pendingElement-pending,
+  #pt-notifications-alert .mw-echo-notifications-badge:before {
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
     background-color: transparent !important;
