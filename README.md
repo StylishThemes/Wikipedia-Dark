@@ -28,15 +28,16 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
-#### Version 1.0.16 (12/1/2016)
+### Version 1.0.17 (12/4/2016)
+
+* Invert header icons & notification background. Fixes [issue #17](https://github.com/StylishThemes/Wikipedia-Dark/issues/17).
+* Replace global selector. Fixes [issue #18](https://github.com/StylishThemes/Wikipedia-Dark/issues/18).
+
+### Version 1.0.16 (12/1/2016)
 
 * Extra: Fix Google Translate extension style. See https://forum.userstyles.org/discussion/52537/x
 
-#### Version 1.0.15 (11/16/2016)
+### Version 1.0.15 (11/16/2016)
 
 * Editor: various tweaks.
 * Invert inline images.
-
-#### Version 1.0.14 (4/15/2016)
-
-* Make selection style match the base color.
