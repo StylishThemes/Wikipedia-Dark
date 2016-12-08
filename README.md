@@ -28,6 +28,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+### Version 1.0.18 (12/8/2016)
+
+* Added support for related pages from beta. See [pull #19](https://github.com/StylishThemes/Wikipedia-Dark/pull/19); thanks [@chj1axr0](https://github.com/chj1axr0)!
+* Inlcude missing `<code>` definitions.
+
 ### Version 1.0.17 (12/4/2016)
 
 * Invert header icons & notification background. Fixes [issue #17](https://github.com/StylishThemes/Wikipedia-Dark/issues/17).
@@ -36,8 +41,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 ### Version 1.0.16 (12/1/2016)
 
 * Extra: Fix Google Translate extension style. See https://forum.userstyles.org/discussion/52537/x
-
-### Version 1.0.15 (11/16/2016)
-
-* Editor: various tweaks.
-* Invert inline images.
