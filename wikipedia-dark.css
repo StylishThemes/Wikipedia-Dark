@@ -10,7 +10,7 @@
   .mw-wsmfinal-content, #bodyContent, .referencetooltip > li + li,
   div.vectorTabs ul li, tr[style*="background:#F5FFFA"],
   th[style*="background-color: #fff"], .mw-echo-notifications-badge,
-  .infobox span.plainlinks * {
+  .ext-cards-card-list .ext-cards-card, .infobox span.plainlinks * {
     background-color: transparent !important;
   }
 
@@ -71,7 +71,7 @@
 
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar, #p-cactions-label,
   .client-js #preftoc, .client-js #preftoc li, .client-js #preftoc li.selected a,
-  .ui-widget-content {
+  .ui-widget-content, .ext-cards-card-list h3:after {
     background-image: none !important;
   }
 
