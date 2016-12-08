@@ -16,7 +16,7 @@
 
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption, div,
-  span:not([class*="color"]), p code {
+  span:not([class*="color"]), p code, label code, dl code {
     color: #9a9a9a;
   }
 
