@@ -28,9 +28,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
-### Version 1.0.19 (12/19/2016)
+### Version 1.0.19 & 1.0.20 (12/19/2016)
 
 * Define text color in pre elements. Fixes [issue #20](https://github.com/StylishThemes/Wikipedia-Dark/issues/20).
+* Add white background for transparent images; see [request](https://forum.userstyles.org/discussion/48549/x).
 
 ### Version 1.0.18 (12/8/2016)
 
