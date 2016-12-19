@@ -134,6 +134,11 @@
     background: #444 !important;
     border-color: #555 !important;
   }
+  /* add a white background to transparent images; see
+   * https://forum.userstyles.org/discussion/48549/x */
+  a.image img {
+    background: #ddd !important;
+  }
 
   .keyboard-key {
     box-shadow: 0.1em 0.2em 0.2em #444 !important;
