@@ -28,7 +28,7 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
-### Version 1.0.19 (12/18/2016)
+### Version 1.0.19 (12/19/2016)
 
 * Define text color in pre elements. Fixes [issue #20](https://github.com/StylishThemes/Wikipedia-Dark/issues/20).
 
