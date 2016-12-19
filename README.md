@@ -28,6 +28,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+### Version 1.0.19 (12/18/2016)
+
+* Define text color in pre elements. Fixes [issue #20](https://github.com/StylishThemes/Wikipedia-Dark/issues/20).
+
 ### Version 1.0.18 (12/8/2016)
 
 * Added support for related pages from beta. See [pull #19](https://github.com/StylishThemes/Wikipedia-Dark/pull/19); thanks [@chj1axr0](https://github.com/chj1axr0)!
@@ -37,7 +41,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 * Invert header icons & notification background. Fixes [issue #17](https://github.com/StylishThemes/Wikipedia-Dark/issues/17).
 * Replace global selector. Fixes [issue #18](https://github.com/StylishThemes/Wikipedia-Dark/issues/18).
-
-### Version 1.0.16 (12/1/2016)
-
-* Extra: Fix Google Translate extension style. See https://forum.userstyles.org/discussion/52537/x
