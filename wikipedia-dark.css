@@ -81,6 +81,8 @@
 
   #bodyContent pre, #bodyContent code, span.plainlinks * {
     background-color: #111 !important;
+    border-color: #555 !important;
+    color: #b9b9b9 !important;
   }
 
   td[style*="background:#FFFFFF"], .jfk-bubble {
