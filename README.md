@@ -28,6 +28,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+### Version 1.0.21 (1/6/2017)
+
+* Add nav popup styling. Fixes [issue #21](https://github.com/StylishThemes/Wikipedia-Dark/issues/21).
+
 ### Version 1.0.19 & 1.0.20 (12/19/2016)
 
 * Define text color in pre elements. Fixes [issue #20](https://github.com/StylishThemes/Wikipedia-Dark/issues/20).
@@ -37,8 +41,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 * Added support for related pages from beta. See [pull #19](https://github.com/StylishThemes/Wikipedia-Dark/pull/19); thanks [@chj1axr0](https://github.com/chj1axr0)!
 * Inlcude missing `<code>` definitions.
-
-### Version 1.0.17 (12/4/2016)
-
-* Invert header icons & notification background. Fixes [issue #17](https://github.com/StylishThemes/Wikipedia-Dark/issues/17).
-* Replace global selector. Fixes [issue #18](https://github.com/StylishThemes/Wikipedia-Dark/issues/18).
