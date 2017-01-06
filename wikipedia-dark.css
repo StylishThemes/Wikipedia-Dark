@@ -85,7 +85,7 @@
     color: #b9b9b9 !important;
   }
 
-  td[style*="background:#FFFFFF"], .jfk-bubble {
+  td[style*="background:#FFFFFF"], .jfk-bubble, .navpopup {
     background-color: #181818 !important;
   }
 
@@ -136,7 +136,7 @@
   }
   /* add a white background to transparent images; see
    * https://forum.userstyles.org/discussion/48549/x */
-  a.image img {
+  a.image img, a[href*=".svg"] img {
     background: #ddd !important;
   }
 
@@ -189,7 +189,7 @@
     border-color: /*[[base-color]]*/ #4183C4 !important;
   }
 
-  div, span:not([class*="color"]), table, tr:not([style*="border-bottom"]), th,
+  div:not([style*="-color"]), span:not([class*="color"]), table, tr:not([style*="border-bottom"]), th,
   td:not([style*="border-bottom"]), h1, h2, h3, h4, h5, h6, ul, li, input, select,
   #bodyContent code {
     border-color: #555 !important;
