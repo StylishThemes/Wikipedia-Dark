@@ -28,6 +28,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+### Version 1.0.22 (1/14/2017)
+
+* Add background for musical track list. See [pull #23](https://github.com/StylishThemes/Wikipedia-Dark/pull/23); thanks [@DeathTBO](https://github.com/DeathTBO)!
+* Combine definitions from [pull #23](https://github.com/StylishThemes/Wikipedia-Dark/pull/23) & add alt row color.
+
 ### Version 1.0.21 (1/6/2017)
 
 * Add nav popup styling. Fixes [issue #21](https://github.com/StylishThemes/Wikipedia-Dark/issues/21).
@@ -36,8 +41,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 * Define text color in pre elements. Fixes [issue #20](https://github.com/StylishThemes/Wikipedia-Dark/issues/20).
 * Add white background for transparent images; see [request](https://forum.userstyles.org/discussion/48549/x).
-
-### Version 1.0.18 (12/8/2016)
-
-* Added support for related pages from beta. See [pull #19](https://github.com/StylishThemes/Wikipedia-Dark/pull/19); thanks [@chj1axr0](https://github.com/chj1axr0)!
-* Inlcude missing `<code>` definitions.
