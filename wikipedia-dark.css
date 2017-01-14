@@ -123,6 +123,19 @@
   td[style*="background:#F2F2F2"], table.wikitable > tbody > tr[style*="background-color:#F6F6F6"] {
     background-color: #333 !important;
   }
+  
+  .tracklist {
+    background: transparent !important;
+  }
+  
+  .tlheader {
+    background: #333333 !important;
+  }
+  
+  .tracklist > tbody > tr {
+    background: #222222 !important;
+    border: solid #555555 1px !important;
+  }
 
   /* remove background image/gradient */
   .keyboard-key, div#editpage-specialchars a, body div.ui-dialog .ui-widget-header {
