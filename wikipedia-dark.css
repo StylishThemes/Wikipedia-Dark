@@ -22,7 +22,8 @@
   }
 
   h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
-  div[style*="color"], input[type="search"], .suggestions-result {
+  div[style*="color"], input[type="search"], input[type="submit"], select,
+  .suggestions-result {
     color: #9a9a9a !important;
   }
 
@@ -167,7 +168,8 @@
   div[style*="background: #444444;"], div[style*="background: #444444;"] *,
   ol.references li:target, sup.reference:target, span.citation:target,
   ol.references li:target *, sup.reference:target *, span.citation:target *,
-  td[style*="background:#CEDFF2"], tr[bgcolor="#CEDFF2"], table[style*="background-color:#cef2e0"] * {
+  td[style*="background:#CEDFF2"], tr[bgcolor="#CEDFF2"], table[style*="background-color:#cef2e0"] *,
+  div[style*="background-color: #cee0f2"], div[style*="background-color: #cedff2"] {
     background-color: #182030 !important;
   }
 
@@ -191,9 +193,9 @@
     border-color: /*[[base-color]]*/ #4183C4 !important;
   }
 
-  div:not([style*="-color"]), span:not([class*="color"]), table, tr:not([style*="border-bottom"]), th,
-  td:not([style*="border-bottom"]), h1, h2, h3, h4, h5, h6, ul, li, input, select,
-  #bodyContent code {
+  div:not([style*="-color"]), div[style*="background-color"], span:not([class*="color"]),
+  table, tr:not([style*="border-bottom"]), th, td:not([style*="border-bottom"]),
+  h1, h2, h3, h4, h5, h6, ul, li, input, select, #bodyContent code {
     border-color: #555 !important;
   }
 
