@@ -5,12 +5,9 @@
   "license": "CC-BY-SA-4.0",
   "repository": "https://github.com/StylishThemes/Wikipedia-Dark",
   "homepage": "https://userstyles.org/styles/105844/wikipedia-dark-st",
-  "contributors": [
-    "Mottie <wowmotty@gmail.com> (http://wowmotty.blogspot.com/)",
-    "Poorchop (https://poorchop.github.io/)",
-    "Attila Molnar (https://github.com/attilamolnar)",
-    "40n (https://github.com/40n)"
-  ],
+  "scripts": {
+    "authors": "bash tools/authors"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-cssmin": "^0.12.3",
