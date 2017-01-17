@@ -23,8 +23,8 @@
   }
 
   h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
-  div[style*="color"], input[type="search"], input[type="submit"], select,
-  .suggestions-result {
+  div[style*="color"], input[type="search"], input[type="submit"],
+  input[type="number"], select, .suggestions-result {
     color: #9a9a9a !important;
   }
 
@@ -74,7 +74,7 @@
 
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar, #p-cactions-label,
   .client-js #preftoc, .client-js #preftoc li, .client-js #preftoc li.selected a,
-  .ui-widget-content, .ext-cards-card-list h3:after {
+  .ui-widget-content, .ext-cards-card-list h3:after, #simpleSearch {
     background-image: none !important;
   }
 
