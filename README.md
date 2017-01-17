@@ -28,6 +28,12 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+### Version 1.0.23 (1/17/2017)
+
+* Fix various blue background &amp; text color.
+* Various text & background fixes.
+* Remove overriding styles in wikEd frame. Fixes [issue #24](https://github.com/StylishThemes/Wikipedia-Dark/issues/24).
+
 ### Version 1.0.22 (1/14/2017)
 
 * Add background for musical track list. See [pull #23](https://github.com/StylishThemes/Wikipedia-Dark/pull/23); thanks [@DeathTBO](https://github.com/DeathTBO)!
@@ -36,8 +42,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 ### Version 1.0.21 (1/6/2017)
 
 * Add nav popup styling. Fixes [issue #21](https://github.com/StylishThemes/Wikipedia-Dark/issues/21).
-
-### Version 1.0.19 & 1.0.20 (12/19/2016)
-
-* Define text color in pre elements. Fixes [issue #20](https://github.com/StylishThemes/Wikipedia-Dark/issues/20).
-* Add white background for transparent images; see [request](https://forum.userstyles.org/discussion/48549/x).
