@@ -6,8 +6,8 @@
  */
 
   /* transparent background */
-  div, span:not(.legend-color), .MainPageBG, .navbox-list, div#mw-head,
-  .mw-wsmfinal-content, #bodyContent, .referencetooltip > li + li,
+  div, span:not(.legend-color):not([class*="wikEd"]), .MainPageBG, .navbox-list,
+  div#mw-head, .mw-wsmfinal-content, #bodyContent, .referencetooltip > li + li,
   div.vectorTabs ul li, tr[style*="background:#F5FFFA"],
   th[style*="background-color: #fff"], .mw-echo-notifications-badge,
   .ext-cards-card-list .ext-cards-card, .infobox span.plainlinks *,
@@ -17,7 +17,8 @@
 
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption, div,
-  span:not([class*="color"]), p code, label code, dl code {
+  span:not([class*="color"]):not([class*="wikEd"]),
+  p code, label code, dl code {
     color: #9a9a9a;
   }
 
@@ -91,7 +92,7 @@
     background-color: #181818 !important;
   }
 
-  table, input, button, select, textarea,
+  table, input, button, select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite;"], #toc, td[style*="background-color"], td[style*="background:#F5FAFF"],
   #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *, .wikiEditor-ui,
@@ -141,6 +142,10 @@
    * https://forum.userstyles.org/discussion/48549/x */
   a.image img, a[href*=".svg"] img {
     background: #ddd !important;
+  }
+  /* white background to wikEd - see #24 */
+  .wikEdFrameBodySyntax {
+    background: #fff !important;
   }
 
   .keyboard-key {
