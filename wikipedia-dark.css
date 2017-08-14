@@ -11,7 +11,7 @@
   div.vectorTabs ul li, tr[style*="background:#F5FFFA"],
   th[style*="background-color: #fff"], .mw-echo-notifications-badge,
   .ext-cards-card-list .ext-cards-card, .infobox span.plainlinks *,
-  .tracklist {
+  .tracklist, blockquote[style*="background-color: white"] {
     background-color: transparent !important;
   }
 
