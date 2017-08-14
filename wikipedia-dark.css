@@ -289,7 +289,7 @@
   img[src*=".svg"][height="16"], img[src*=".svg"][height="17"], img[src*=".svg"][height="18"],
   .oo-ui-iconElement-icon:not(.mw-echo-notifications-badge), .RTsettings, #gtx-host, .jfk-bubble-closebtn,
   #pt-notifications-notice .mw-echo-notifications-badge:before, .oo-ui-pendingElement-pending,
-  #pt-notifications-alert .mw-echo-notifications-badge:before {
+  #pt-notifications-alert .mw-echo-notifications-badge:before, img.mwe-math-fallback-image-display {
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
     background-color: transparent !important;
