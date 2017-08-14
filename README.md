@@ -29,6 +29,16 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+### Version 1.0.23 (8/14/2017)
+
+* Remove blockquote white background. See [issue #22](https://github.com/StylishThemes/Wikipedia-Dark/issues/22).
+* Invert math fallback images. Fixes [issue #22](https://github.com/StylishThemes/Wikipedia-Dark/issues/22).
+* Readme:
+  * Fix link to contributors.
+  * Add Stylus Firefox addon link.
+  * Add Stylus for Opera link.
+  * Add AUTHORS & LICENSE files.
+
 ### Version 1.0.23 (1/17/2017)
 
 * Fix various blue background &amp; text color.
@@ -39,7 +49,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 * Add background for musical track list. See [pull #23](https://github.com/StylishThemes/Wikipedia-Dark/pull/23); thanks [@DeathTBO](https://github.com/DeathTBO)!
 * Combine definitions from [pull #23](https://github.com/StylishThemes/Wikipedia-Dark/pull/23) & add alt row color.
-
-### Version 1.0.21 (1/6/2017)
-
-* Add nav popup styling. Fixes [issue #21](https://github.com/StylishThemes/Wikipedia-Dark/issues/21).
