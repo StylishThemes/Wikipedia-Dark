@@ -6,9 +6,9 @@
  */
 
   /* transparent background */
-  div, span:not(.legend-color):not([class*="wikEd"]), .MainPageBG, .navbox-list,
-  div#mw-head, .mw-wsmfinal-content, #bodyContent, .referencetooltip > li + li,
-  div.vectorTabs ul li, tr[style*="background:#F5FFFA"],
+  div, span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
+  .MainPageBG, .navbox-list,  div#mw-head, .mw-wsmfinal-content, #bodyContent,
+  .referencetooltip > li + li, div.vectorTabs ul li, tr[style*="background:#F5FFFA"],
   th[style*="background-color: #fff"], .mw-echo-notifications-badge,
   .ext-cards-card-list .ext-cards-card, .infobox span.plainlinks *,
   .tracklist, blockquote[style*="background-color: white"] {
@@ -17,7 +17,7 @@
 
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption, div,
-  span:not([class*="color"]):not([class*="wikEd"]),
+  span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]),
   p code, label code, dl code {
     color: #9a9a9a;
   }
@@ -74,7 +74,7 @@
 
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar, #p-cactions-label,
   .client-js #preftoc, .client-js #preftoc li, .client-js #preftoc li.selected a,
-  .ui-widget-content, .ext-cards-card-list h3:after, #simpleSearch {
+  .ui-widget-content, .ext-cards-card-list h3:after, #simpleSearch, .mw-mmv-ttf-ellipsis:before {
     background-image: none !important;
   }
 
@@ -150,6 +150,9 @@
 
   .keyboard-key {
     box-shadow: 0.1em 0.2em 0.2em #444 !important;
+  }
+  .mw-mmv-ttf-ellipsis {
+    box-shadow: none !important;
   }
 
   hr {
