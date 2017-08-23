@@ -29,7 +29,12 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
-### Version 1.0.23 (8/14/2017)
+### Version 1.0.25 (8/22/2017)
+
+* Skip spans with a set background color. Fixes [issue #26](https://github.com/StylishThemes/Wikipedia-Dark/issues/26).
+* Update dependencies.
+
+### Version 1.0.24 (8/14/2017)
 
 * Remove blockquote white background. See [issue #22](https://github.com/StylishThemes/Wikipedia-Dark/issues/22).
 * Invert math fallback images. Fixes [issue #22](https://github.com/StylishThemes/Wikipedia-Dark/issues/22).
@@ -44,8 +49,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 * Fix various blue background &amp; text color.
 * Various text & background fixes.
 * Remove overriding styles in wikEd frame. Fixes [issue #24](https://github.com/StylishThemes/Wikipedia-Dark/issues/24).
-
-### Version 1.0.22 (1/14/2017)
-
-* Add background for musical track list. See [pull #23](https://github.com/StylishThemes/Wikipedia-Dark/pull/23); thanks [@DeathTBO](https://github.com/DeathTBO)!
-* Combine definitions from [pull #23](https://github.com/StylishThemes/Wikipedia-Dark/pull/23) & add alt row color.
