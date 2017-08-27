@@ -18,13 +18,13 @@
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption, div,
   span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]),
-  p code, label code, dl code {
+  p code, label code, dl code, .oo-ui-widget div, .oo-ui-widget label {
     color: #9a9a9a;
   }
 
   h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
   div[style*="color"], input[type="search"], input[type="submit"],
-  input[type="number"], select, .suggestions-result {
+  input[type="number"], select, .suggestions-result, input {
     color: #9a9a9a !important;
   }
 
@@ -39,7 +39,6 @@
   a:hover, a:hover span, #toc a:hover, #toc a:hover span,
   .suggestions-result .highlight, .suggestions-special .special-query {
     color: #fff !important;
-    text-decoration: underline !important;
   }
 
   /* text selection */
@@ -88,7 +87,8 @@
     color: #b9b9b9 !important;
   }
 
-  td[style*="background:#FFFFFF"], .jfk-bubble, .navpopup {
+  td[style*="background:#FFFFFF"], .jfk-bubble, .navpopup,
+  .popup_drop:hover .popup_menu, .popup_drop .popup_menu:hover {
     background-color: #181818 !important;
   }
 
@@ -98,7 +98,8 @@
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *, .wikiEditor-ui,
   table.navbox.collapsible tr:nth-child(2) > td, div.menu, .oo-ui-popupWidget-popup,
   .oo-ui-buttonElement-button, .mw-notification, .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall,
-  .ui-widget-content, .oo-ui-window-body, #pagehistory li.selected, .tracklist tr {
+  .ui-widget-content, .oo-ui-window-body, #pagehistory li.selected, .tracklist tr,
+  .mw-searchresults-has-iw .iw-resultset, .cx-callout-content, .oo-ui-widget {
     background-color: #222 !important;
   }
 
@@ -115,7 +116,8 @@
     background-color: #282828 !important;
   }
 
-  table.wikitable > tr > th, table.wikitable > * > tr > th, div.barbox > table > tbody > tr > th {
+  table.wikitable > tr > th, table.wikitable > * > tr > th, div.barbox > table > tbody > tr > th,
+  .cx-campaign-contributionsmenu li:hover {
     background-color: #333; /* don't include !important flag */
   }
 
@@ -297,7 +299,7 @@
             filter: invert(100%) !important;
     background-color: transparent !important;
   }
-  .oo-ui-icon-bell {
+  .oo-ui-icon-bell, .mw-widget-calendarWidget-day-additional {
     opacity: 0.7 !important;
   }
 
