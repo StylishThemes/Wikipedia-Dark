@@ -22,7 +22,7 @@
     color: #9a9a9a;
   }
 
-  h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
+  body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
   div[style*="color"], input[type="search"], input[type="submit"],
   input[type="number"], select, .suggestions-result, input {
     color: #9a9a9a !important;
