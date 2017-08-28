@@ -73,9 +73,13 @@
 
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar, #p-cactions-label,
   .client-js #preftoc, .client-js #preftoc li, .client-js #preftoc li.selected a,
-  .ui-widget-content, .ext-cards-card-list h3:after, #simpleSearch, .mw-mmv-ttf-ellipsis:before,
-  .mwe-popups-extract:after {
+  .ui-widget-content, .ext-cards-card-list h3:after, #simpleSearch, .mw-mmv-ttf-ellipsis:before {
     background-image: none !important;
+  }
+
+  /* fading linear gradient */
+  .mwe-popups-extract:after {
+    background-image: linear-gradient(to right, rgb(34, 34, 34, 0), rgb(34, 34, 34, 1) 50% ) !important;
   }
 
   .ui-widget-overlay {
