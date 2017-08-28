@@ -29,10 +29,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
-### Version 1.0.27 (8/28/2017)
+### Version 1.0.27 &ndash; 1.0.28 (8/28/2017)
 
-* Remove gradient background. See [issue #27](https://github.com/StylishThemes/Wikipedia-Dark/issues/27).
 * Add body text color.
+* Remove gradient background. See [issue #27](https://github.com/StylishThemes/Wikipedia-Dark/issues/27).
+* Restore as a darker gradient background.
 
 ### Version 1.0.26 (8/27/2017)
 
