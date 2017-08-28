@@ -29,6 +29,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+### Version 1.0.27 (8/28/2017)
+
+* Remove gradient background. See [issue #27](https://github.com/StylishThemes/Wikipedia-Dark/issues/27).
+* Add body text color.
+
 ### Version 1.0.26 (8/27/2017)
 
 * Bright preference form elements.
@@ -38,13 +43,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 * Skip spans with a set background color. Fixes [issue #26](https://github.com/StylishThemes/Wikipedia-Dark/issues/26).
 * Update dependencies.
-
-### Version 1.0.24 (8/14/2017)
-
-* Remove blockquote white background. See [issue #22](https://github.com/StylishThemes/Wikipedia-Dark/issues/22).
-* Invert math fallback images. Fixes [issue #22](https://github.com/StylishThemes/Wikipedia-Dark/issues/22).
-* Readme:
-  * Fix link to contributors.
-  * Add Stylus Firefox addon link.
-  * Add Stylus for Opera link.
-  * Add AUTHORS & LICENSE files.
