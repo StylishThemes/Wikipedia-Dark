@@ -73,7 +73,8 @@
 
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar, #p-cactions-label,
   .client-js #preftoc, .client-js #preftoc li, .client-js #preftoc li.selected a,
-  .ui-widget-content, .ext-cards-card-list h3:after, #simpleSearch, .mw-mmv-ttf-ellipsis:before {
+  .ui-widget-content, .ext-cards-card-list h3:after, #simpleSearch, .mw-mmv-ttf-ellipsis:before,
+  .mwe-popups-extract:after {
     background-image: none !important;
   }
 
