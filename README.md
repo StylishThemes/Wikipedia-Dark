@@ -29,6 +29,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+### Version 1.0.26 (8/27/2017)
+
+* Bright preference form elements.
+* Disable all bright box-shadow definitions. See [issue #27](https://github.com/StylishThemes/Wikipedia-Dark/issues/27).
+
 ### Version 1.0.25 (8/22/2017)
 
 * Skip spans with a set background color. Fixes [issue #26](https://github.com/StylishThemes/Wikipedia-Dark/issues/26).
@@ -43,9 +48,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
   * Add Stylus Firefox addon link.
   * Add Stylus for Opera link.
   * Add AUTHORS & LICENSE files.
-
-### Version 1.0.23 (1/17/2017)
-
-* Fix various blue background &amp; text color.
-* Various text & background fixes.
-* Remove overriding styles in wikEd frame. Fixes [issue #24](https://github.com/StylishThemes/Wikipedia-Dark/issues/24).
