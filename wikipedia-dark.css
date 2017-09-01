@@ -272,7 +272,7 @@
   }
 
   /*** Text ***/
-  .wikitable tr:not([style*="color:black"]) th,
+  .wikitable tr:not([style*="color:black"]) th:not([style*="color: black"]),
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6"] > td > * {
     color: #fff !important;
   }
