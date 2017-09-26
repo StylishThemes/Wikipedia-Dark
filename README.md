@@ -29,6 +29,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
+### Version 1.0.30 (9/26/2017)
+
+* Tables: Darken row styling. Fixes [issue #28](https://github.com/StylishThemes/Wikipedia-Dark/issues/28).
+
 ### Version 1.0.29 (9/1/2017)
 
 * Tables: Do not lighten black header text ([example](https://en.wikipedia.org/wiki/Comparison_of_eDonkey_software)).
