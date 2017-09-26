@@ -295,6 +295,31 @@
     border: none !important;
   }
 
+  /*** diff pages ***/
+  .diff-context {
+    background-color: #222 !important;
+  }
+  .wikEdDiffButtonUnchecked {
+    border-color: #444 !important;
+  }
+  td.diff-deletedline .diffchange, .wikEdDiffDelete {
+    background-color: rgba(213, 154, 0, .6) !important;
+    color: #ddd !important;
+  }
+  td.diff-deletedline {
+    border-color: rgba(213, 154, 0, .6) !important;
+  }
+  .wikEdDiffFragment:hover .wikEdDiffDelete {
+    background-color: rgba(213, 154, 0, .65) !important;
+  }
+  td.diff-addedline {
+    border-color: rgba(0, 112, 213, .6) !important;
+  }
+  td.diff-addedline .diffchange, .wikEdDiffInsert {
+    background-color: rgba(0, 112, 213, .6) !important;
+    color: #ddd !important;
+  }
+
   /*** invert images ***/
   img[title="Wikipedia"], .bookshelf-container .bookend, img.mwe-math-fallback-image-inline,
   #mw-wsmfinal-close, img[src*="Speaker_Icon"], .infobox img[alt*="structure"][src*=".svg"], img[src*=".png"]:active,
