@@ -104,7 +104,8 @@
   table.navbox.collapsible tr:nth-child(2) > td, div.menu, .oo-ui-popupWidget-popup,
   .oo-ui-buttonElement-button, .mw-notification, .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall,
   .ui-widget-content, .oo-ui-window-body, #pagehistory li.selected, .tracklist tr,
-  .mw-searchresults-has-iw .iw-resultset, .cx-callout-content, .oo-ui-widget {
+  .mw-searchresults-has-iw .iw-resultset, .cx-callout-content, .oo-ui-widget,
+  tr[style*="background:#f2f2f2"] {
     background-color: #222 !important;
   }
 
