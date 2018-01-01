@@ -15,6 +15,10 @@
     background-color: transparent !important;
   }
 
+  .lang-list-button {
+    outline-color: transparent !important;
+  }
+
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption, div,
   span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]),
@@ -160,12 +164,14 @@
     box-shadow: 0.1em 0.2em 0.2em #444 !important;
   }
   .mw-mmv-ttf-ellipsis, .navpopup, .oo-ui-popupWidget-popup,
-  .oo-ui-buttonElement-button, input + span {
+  .oo-ui-buttonElement-button, input + span,
+  .pure-form input[type=search] {
     box-shadow: none !important;
   }
 
   hr {
-    background-color: #555 !important;
+    background-color: transparent !important;
+    border-color: #555 !important;
   }
 
   /*** Background Color Styles ***/
@@ -212,7 +218,7 @@
 
   div:not([style*="-color"]), div[style*="background-color"], span:not([class*="color"]),
   table, tr:not([style*="border-bottom"]), th, td:not([style*="border-bottom"]),
-  h1, h2, h3, h4, h5, h6, ul, li, input, select, #bodyContent code {
+  h1, h2, h3, h4, h5, h6, ul, li, input, select, #bodyContent code, .lang-list-button:hover {
     border-color: #555 !important;
   }
 
@@ -330,6 +336,9 @@
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
     background-color: transparent !important;
+  }
+  .central-textlogo__image, .central-featured-logo, #p-logo a {
+    filter: invert(33%) !important;
   }
   .oo-ui-icon-bell, .mw-widget-calendarWidget-day-additional {
     opacity: 0.7 !important;
