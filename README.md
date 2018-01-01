@@ -29,17 +29,15 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia
 
 ## Recent Changes
 
-### Version 1.0.30 &ndash; 1.0.31 (9/26/2017)
+### Version 1.0.32 (2018/01/01)
+
+* Style entry page.
+
+### Version 1.0.30 &ndash; 1.0.31 (2017/9/26)
 
 * Tables: Darken row styling. Fixes [issue #28](https://github.com/StylishThemes/Wikipedia-Dark/issues/28).
 * Diff: Darken diff changes. See [issue #28](https://github.com/StylishThemes/Wikipedia-Dark/issues/28).
 
-### Version 1.0.29 (9/1/2017)
+### Version 1.0.29 (2017/9/1)
 
 * Tables: Do not lighten black header text ([example](https://en.wikipedia.org/wiki/Comparison_of_eDonkey_software)).
-
-### Version 1.0.27 &ndash; 1.0.28 (8/28/2017)
-
-* Add body text color.
-* Remove gradient background. See [issue #27](https://github.com/StylishThemes/Wikipedia-Dark/issues/27).
-* Restore as a darker gradient background.
