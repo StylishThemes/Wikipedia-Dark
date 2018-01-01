@@ -327,6 +327,9 @@
   }
 
   /*** invert images ***/
+  .central-textlogo__image, .central-featured-logo, #p-logo a {
+    filter: invert(100%) brightness(60.5%) !important;
+  }
   img[title="Wikipedia"], .bookshelf-container .bookend, img.mwe-math-fallback-image-inline,
   #mw-wsmfinal-close, img[src*="Speaker_Icon"], .infobox img[alt*="structure"][src*=".svg"], img[src*=".png"]:active,
   img[src*=".svg"][height="16"], img[src*=".svg"][height="17"], img[src*=".svg"][height="18"],
