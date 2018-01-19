@@ -337,8 +337,31 @@
             filter: invert(100%) !important;
     background-color: transparent !important;
   }
-  .central-textlogo__image, .central-featured-logo, #p-logo a {
-    filter: invert(33%) !important;
+  .central-textlogo__image {
+    filter: invert(60.5%) !important;
+  }
+  .central-featured-logo {
+    filter: brightness(60.5%) !important;
+  }
+  #p-logo a {
+    background-position: center -155px !important;
+    display: table-cell !important;
+    vertical-align: middle !important;
+  }
+  #p-logo a::before, #p-logo a::after {
+    display: block !important;
+    background: inherit !important;
+    content: "" !important;
+  }
+  #p-logo a::before {
+    background-position: center 0 !important;
+    filter: brightness(60.5%) !important;
+    height: 108px !important;
+  }
+  #p-logo a::after {
+    background-position: center -108px !important;
+    filter: invert(60.5%) !important;
+    height: 47px !important;
   }
   .oo-ui-icon-bell, .mw-widget-calendarWidget-day-additional {
     opacity: 0.7 !important;

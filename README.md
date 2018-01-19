@@ -15,7 +15,6 @@
   * It would be a daunting task to find and replace all of these colors. I hope you see my point.
 * Not all images can be made readable.
   * This style uses a css filter to invert the images, but this really only works on basic black-and-white images (not the logo).
-  * The "Wikipedia" title under the logo is an image and was not inverted because it is part of the logo &amp; it changes depending on the selected language.
 
 ## Contributions
 
