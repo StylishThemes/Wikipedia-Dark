@@ -25,18 +25,3 @@ If you would like to contribute to this repository, please...
 3. Create a pull request!
 
 Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia-Dark/blob/master/AUTHORS) so far!
-
-## Recent Changes
-
-### Version 1.0.32 (2018/01/01)
-
-* Style entry page.
-
-### Version 1.0.30 &ndash; 1.0.31 (2017/9/26)
-
-* Tables: Darken row styling. Fixes [issue #28](https://github.com/StylishThemes/Wikipedia-Dark/issues/28).
-* Diff: Darken diff changes. See [issue #28](https://github.com/StylishThemes/Wikipedia-Dark/issues/28).
-
-### Version 1.0.29 (2017/9/1)
-
-* Tables: Do not lighten black header text ([example](https://en.wikipedia.org/wiki/Comparison_of_eDonkey_software)).
