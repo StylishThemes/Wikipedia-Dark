@@ -5,6 +5,7 @@
 - Stylish is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
 
 ## Preview
+
 ![Wikipedia Dark preview](images/after.png)
 
 ## Limitations
@@ -14,7 +15,7 @@
   * But due to the sheer number of possiblities, the replaced css style would also need to include selectors such as `th[style*="background-color: #eee"]` and `th[style*="background-color:#EEE"]` and `th[style*="background-color: #eeeeee"]`, etc.
   * It would be a daunting task to find and replace all of these colors. I hope you see my point.
 * Not all images can be made readable.
-  * This style uses a css filter to invert the images, but this really only works on basic black-and-white images (not the logo).
+  * This style uses a css filter to invert the images, but this really only works on basic black-and-white images.
 
 ## Contributions
 
