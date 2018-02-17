@@ -176,12 +176,13 @@
 
   /*** Background Color Styles ***/
   /* Red */
-  td[style*="background: #FDD;"], .table-no {
+  td[style*="background: #FDD;"], .table-no, td[style*="background:#fdd"] {
     background: #722 !important;
   }
 
   /* Green */
-  #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;"], .table-yes {
+  #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;"], .table-yes,
+  td[style*="background:#dfd"] {
     background: #244024 !important;
   }
 
@@ -207,7 +208,8 @@
   }
 
   /* Brown */
-  #mp-center h2, #mp-center h2 span, .table-partial, tr[style*="background:orange"] {
+  #mp-center h2, #mp-center h2 span, .table-partial, tr[style*="background:orange"],
+  td[style*="background:#ffd"] {
     background-color: #321 !important;
   }
 
