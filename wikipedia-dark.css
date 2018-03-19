@@ -339,7 +339,7 @@
             filter: invert(100%) !important;
     background-color: transparent !important;
   }
-  .central-textlogo__image {
+  .central-textlogo__image, .unicode.haudio a img {
     filter: invert(60.5%) !important;
   }
   .central-featured-logo {
