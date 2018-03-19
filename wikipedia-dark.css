@@ -302,6 +302,11 @@
   table[style*="border:4px ridge"], .jfk-bubble-closebtn {
     border: none !important;
   }
+  
+  /* Loudspeaker icon */
+  .unicode.haudio a img {
+    filter: invert(60%);
+  }
 
   /*** diff pages ***/
   .diff-context {
