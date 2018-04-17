@@ -110,7 +110,8 @@
   .ui-widget-content, .oo-ui-window-body, #pagehistory li.selected, .tracklist tr,
   .mw-searchresults-has-iw .iw-resultset, .cx-callout-content, .oo-ui-widget,
   tr[style*="background:#f2f2f2"], th[style*="background:#EDF1F1"], td[style*="background:#EDF1F1"],
-  tr[style*="background-color:white"], tr[style*="background:#f9f9f9"], td[bgcolor="#FFFFFF"]  {
+  tr[style*="background-color:white"], tr[style*="background:#f9f9f9"], td[bgcolor="#FFFFFF"],
+  tr[style*="background:#ddd"]  {
     background-color: #222 !important;
   }
 
@@ -179,16 +180,18 @@
   /*** Background Color Styles ***/
   /* Red */
   td[style*="background: #FDD;"], .table-no, td[style*="background:#fdd"],
-  td[style*="background: #ffdddd"], tr[style*="background:#FFDDDD"] {
+  td[style*="background: #ffdddd"], tr[style*="background:#FFDDDD"],
+  tr[style*="background:#fbb"] {
     background: #722 !important;
     color: #ddd !important;
   }
 
   /* Green */
   #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;"], .table-yes,
-  td[style*="background:#dfd"], td[style*="background:#bfd"],
-  tr[style*="background:#DDFFDD"] {
+  td[style*="background:#dfd"], td[style*="background:#bfd"], tr[style*="background:#DDFFDD"],
+  tr[style*="background:#bfb"], tr[style*="background-color:#CCFFCC"] {
     background: #244024 !important;
+    color: #ddd !important;
   }
 
   /* Blue */
