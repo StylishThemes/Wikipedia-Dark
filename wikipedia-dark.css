@@ -198,7 +198,8 @@
   ol.references li:target, sup.reference:target, span.citation:target,
   ol.references li:target *, sup.reference:target *, span.citation:target *,
   td[style*="background:#CEDFF2"], tr[bgcolor="#CEDFF2"], table[style*="background-color:#cef2e0"] *,
-  div[style*="background-color: #cee0f2"], div[style*="background-color: #cedff2"] {
+  div[style*="background-color: #cee0f2"], div[style*="background-color: #cedff2"],
+  div[role="region"] h2, div[role="region"] .plainlinks, tr[style*="background-color: #cedff2"] {
     background-color: #182030 !important;
   }
 
