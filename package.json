@@ -9,9 +9,9 @@
     "authors": "bash tools/authors"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.2",
     "grunt-contrib-cssmin": "^2.2.1",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.1",
     "grunt-string-replace": "^1.3.1"
   }
 }
