@@ -295,7 +295,7 @@
     color: #fff !important;
   }
 
-  .CategoryTreeEmptyBullet {
+  .CategoryTreeEmptyBullet, .table-na {
     color: #ccc !important;
   }
 
