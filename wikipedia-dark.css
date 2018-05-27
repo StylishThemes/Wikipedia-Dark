@@ -1,4 +1,4 @@
-@-moz-document domain("wikipedia.org") {
+@-moz-document domain("wikipedia.org"), domain("wikidata.org") {
 /* Wikipedia Dark Theme v1.1.0 (2018-05-27)
  * https://github.com/StylishThemes/Wikipedia-Dark
  * http://userstyles.org/styles/
