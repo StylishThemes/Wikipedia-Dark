@@ -277,9 +277,14 @@
     border-right-color: transparent !important;
     border-left-color: transparent !important;
   }
-
   .referencetooltip > li + li {
     border-top: 12px #555 solid !important;
+  }
+  .referencetooltip.RTflipped > li + li {
+    border-bottom-color: #222 !important;
+  }
+  .referencetooltip.RTflipped > li + li::after {
+    border-bottom-color:  transparent !important;
   }
 
   /* Bookmark Icon */
