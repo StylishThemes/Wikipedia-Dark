@@ -247,14 +247,19 @@
   .mwe-popups.flipped-y:before, .mwe-popups.flipped-x-y:before {
     border-top-color: #555 !important;
   }
-  .mwe-popups:after {
+  .mwe-popups:after,
+  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:before,
+  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:after {
     border-bottom-color: #222 !important;
   }
   .mwe-popups.flipped_y:after, .mwe-popups.flipped_x_y:after,
-  .mwe-popups.flipped-y:after, .mwe-popups.flipped-x-y:after {
+  .mwe-popups.flipped-y:after, .mwe-popups.flipped-x-y:after,
+  .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:before,
+  .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:after {
     border-top-color: #222 !important;
   }
-  .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall {
+  .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall,
+  .oo-ui-popupWidget-popup {
     border: 1px solid #555 !important;
   }
   .mwe-popups-settings-icon:hover, .mwe-popups-settings-icon:active {
