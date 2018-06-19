@@ -21,7 +21,7 @@
 
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption, div,
-  span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]),
+  p span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]),
   p code, label code, dl code, .oo-ui-widget div, .oo-ui-widget label {
     color: #9a9a9a;
   }
