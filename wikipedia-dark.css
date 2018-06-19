@@ -281,20 +281,6 @@
   .referencetooltip > li + li {
     border-top: 12px #555 solid !important;
   }
- 
-  .referencetooltip.RTflipped > li + li {
-    position: absolute !important;
-    top: 8px !important;
-    border-top: 0 !important;
-    border-bottom: 8px #222 solid !important;
-  }
-
-  .referencetooltip.RTflipped > li + li::after {
-    border-top: 0 !important;
-    border-bottom: 8px #222 solid !important;
-    position: absolute !important;
-    margin-top: -3px !important;
-  }
 
   /* Bookmark Icon */
   #ca-watch.icon a {
