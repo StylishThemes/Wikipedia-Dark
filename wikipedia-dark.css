@@ -242,14 +242,20 @@
   .mwe-popups:before {
     border-bottom-color: #555 !important;
   }
-  .mwe-popups.flipped_y:before, .mwe-popups.flipped_x_y:before,
-  .wikiEditor-toolbar-dialog .ui-dialog-buttonpane {
+  .mwe-popups.flipped_y:before,
+  .mwe-popups.flipped_x_y:before,
+  .wikiEditor-toolbar-dialog .ui-dialog-buttonpane,
+  .mwe-popups.flipped-y:before,
+  .mwe-popups.flipped-x-y:before {
     border-top-color: #555 !important;
   }
   .mwe-popups:after {
     border-bottom-color: #222 !important;
   }
-  .mwe-popups.flipped_y:after, .mwe-popups.flipped_x_y:after {
+  .mwe-popups.flipped_y:after,
+  .mwe-popups.flipped_x_y:after,
+  .mwe-popups.flipped-y:after,
+  .mwe-popups.flipped-x-y:after {
     border-top-color: #222 !important;
   }
 
