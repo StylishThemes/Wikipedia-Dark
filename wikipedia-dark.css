@@ -289,7 +289,7 @@
     border-bottom-color: #222 !important;
   }
   .referencetooltip.RTflipped > li + li::after {
-    border-bottom-color:  transparent !important;
+    border-bottom-color: transparent !important;
   }
 
   /* Bookmark Icon */
