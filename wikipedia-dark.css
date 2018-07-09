@@ -1,4 +1,4 @@
-@-moz-document domain("wikipedia.org"), domain("wikidata.org"), domain("mediawiki.org") {
+@-moz-document domain("wikipedia.org"), domain("wikidata.org"), domain("mediawiki.org"), domain("wiktionary.org") {
 /* Wikipedia Dark Theme v1.2.0 (2018-06-07)
  * https://github.com/StylishThemes/Wikipedia-Dark
  * http://userstyles.org/styles/
@@ -28,7 +28,8 @@
 
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
   div[style*="color"], input[type="search"], input[type="submit"],
-  input[type="number"], select, .suggestions-result, input {
+  input[type="number"], select, .suggestions-result, input,
+  .central-featured-lang .link-box em, .central-featured-lang .link-box small {
     color: #9a9a9a !important;
   }
 
