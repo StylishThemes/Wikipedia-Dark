@@ -1,14 +1,22 @@
 # Wikipedia Dark
 
-Applies to wikipedia.org &amp; wikidata.org (mostly)
-
-- Install from [userstyles.org](https://userstyles.org/styles/105844/) (with customization options) or [manually](https://raw.githubusercontent.com/StylishThemes/Wikipedia-Dark/master/wikipedia-dark.css).
-- Stylus is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
-- Stylish is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
+Applies to wikipedia.org, wikidata.org, mediawiki.org &amp; wiktionary.org
 
 ## Preview
 
 ![Wikipedia Dark preview](images/after.png)
+
+## Installation
+
+A userstyle extension is required, common ones include:
+
+🎨 Stylus for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).<br>
+🎨 FreeStyler for [Firefox](https://freestyler.ws/download.php?browser=firefox), [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca), [Opera](https://addons.opera.com/extensions/download/freestyler/) or [Safari](https://freestyler.ws/download.php?browser=safari).
+
+Then install using one of these methods:
+
+📦 [Install the usercss](https://github.com/StylishThemes/Wikipedia-Dark/raw/master/wikipedia-dark.user.css) with Stylus or FreeStyler. Supports automatic updates.<br>
+📦 [Install from userstyles.org](https://userstyles.org/styles/105844) with customization, does not support automatic updates.<br>
 
 ## Limitations
 
@@ -23,8 +31,8 @@ Applies to wikipedia.org &amp; wikidata.org (mostly)
 
 If you would like to contribute to this repository, please...
 
-1. Fork
-2. Make changes (please read the [contribution guidelines](https://github.com/StylishThemes/Wikipedia-Dark/blob/master/CONTRIBUTING.md) and abide by them)
-3. Create a pull request!
+1. 👓 Read the [contribution guidelines](./CONTRIBUTING.md).
+1. ![repo-forked](https://user-images.githubusercontent.com/136959/42383736-c4cb0db8-80fd-11e8-91ca-12bae108bccc.png) [Fork](https://github.com/StylishThemes/Wikipedia-Dark/fork) or ![cloud-download](https://user-images.githubusercontent.com/136959/42401932-9ee9cae0-813d-11e8-8691-16e29a85d3b9.png) [download](https://github.com/StylishThemes/Wikipedia-Dark/archive/master.zip) this repository.
+1. 👌 Create a pull request!
 
-Thanks to all that have [contributed](https://github.com/StylishThemes/Wikipedia-Dark/blob/master/AUTHORS) so far!
+Thanks to all that have [contributed](./AUTHORS) so far!
