@@ -168,7 +168,8 @@
   tr[style*="background:#E9E9E9"] > *, table.infobox.hproduct > tbody > tr[style*="background: #F0F0F0;"],
   td[style*="background:lightyellow"], td[style*="background:#eeeeff"], td[style*="background:#ddddff"],
   .oo-ui-buttonElement-button:hover, .tracklist tr[style*="background-color:#f7f7f7"],
-  td[style*="background:#F9F9F9"], th[style*="background:gainsboro"], td[style*="background:gainsboro"] {
+  td[style*="background:#F9F9F9"], th[style*="background:gainsboro"], td[style*="background:gainsboro"],
+  h2[style*="background:#eeeeee"], h2[style*="background:#efefef"] {
     background-color: #282828 !important;
   }
 
