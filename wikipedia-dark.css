@@ -1,9 +1,51 @@
+/* ==UserStyle==
+@name         Wikipedia Dark
+@namespace    StylishThemes
+@version      2.0.0
+@description  Wikipedia Dark theme
+@author       StylishThemes
+@homepageURL  https://github.com/StylishThemes/Wikipedia-Dark
+@supportURL   https://github.com/StylishThemes/Wikipedia-Dark/issues
+@license      CC-BY-SA-4.0
+@advanced color base-color "Base color" #4183C4
+@advanced color visited-color "Visited color" #295887
+@advanced dropdown bg-selected "Background image" {
+  dft "Default" <<<EOT url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) EOT;
+  cst "Custom" <<<EOT
+  var(--bg-custom, none) EOT;
+  nbg "None" <<<EOT
+  none EOT;
+}
+@advanced text bg-custom "Custom Background; include url()" "url()"
+@advanced dropdown bg-options "Background image type" {
+  Tiled "Tiled" <<<EOT
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  background-position: left top !important; EOT;
+  Fit "Fit Window" <<<EOT
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; EOT;
+}
+@advanced dropdown bg-attachment "Background image attachment" {
+  Scroll "Scroll" <<<EOT
+  scroll EOT;
+  Fixed "Fixed" <<<EOT
+  fixed EOT;
+}
+@preprocessor uso
+==/UserStyle== */
+
 @-moz-document domain("wikipedia.org"), domain("wikidata.org"), domain("mediawiki.org"), domain("wiktionary.org") {
-/* Wikipedia Dark Theme v1.3.0 (2018-07-09)
- * https://github.com/StylishThemes/Wikipedia-Dark
- * http://userstyles.org/styles/
- * Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded
- */
+/* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
+
+  :root {
+    --base-color: /*[[base-color]]*/;
+    --visited-color: /*[[visited-color]]*/;
+    --bg-custom: /*[[bg-custom]]*/;
+    --bg-selected: /*[[bg-selected]]*/;
+    --bg-attachment: /*[[bg-attachment]]*/;
+  }
 
   /* transparent background */
   div, span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
@@ -34,11 +76,11 @@
   }
 
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button {
-    color: /*[[base-color]]*/ #4183C4 !important;
+    color: var(--base-color) !important;
   }
 
   a:visited, #toc a:visited, #toc a:visited span {
-    color: /*[[visited-color]]*/ #295887 !important;
+    color: var(--visited-color) !important;
   }
 
   a:hover, a:hover span, #toc a:hover, #toc a:hover span,
@@ -48,11 +90,11 @@
 
   /* text selection */
   ::selection {
-    background-color: /*[[base-color]]*/ #4183C4 !important;
+    background-color: var(--base-color) !important;
     color: #fff !important;
   }
   ::-moz-selection {
-    background-color: /*[[base-color]]*/ #4183C4 !important;
+    background-color: var(--base-color) !important;
     color: #fff !important;
   }
 
@@ -64,15 +106,15 @@
   /*** Background ***/
   html, body {
     background-color: #222 !important;
-    background-image: /*[[bg-choice]]*/ url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
+    background-image: var(--bg-selected) !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
-    background-attachment: /*[[bg-attachment]]*/ fixed !important;
+    background-attachment: var(--bg-attachment) !important;
     /*[[bg-options]]*/
   }
 
   .mw-ui-button, .mw-ui-button * {
-    background-color: /*[[base-color]]*/ #4183C4 !important;
+    background-color: var(--base-color) !important;
     color: #fff !important;
   }
 
@@ -225,7 +267,7 @@
 
   /*** Border ***/
   fieldset {
-    border-color: /*[[base-color]]*/ #4183C4 !important;
+    border-color: var(--base-color) !important;
   }
 
   div:not([style*="-color"]), div[style*="background-color"], span:not([class*="color"]),
