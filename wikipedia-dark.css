@@ -112,7 +112,7 @@
   .mw-searchresults-has-iw .iw-resultset, .cx-callout-content, .oo-ui-widget,
   tr[style*="background:#f2f2f2"], th[style*="background:#EDF1F1"], td[style*="background:#EDF1F1"],
   tr[style*="background-color:white"], tr[style*="background:#f9f9f9"], td[bgcolor="#FFFFFF"],
-  tr[style*="background:#ddd"]  {
+  tr[style*="background:#ddd"], td[style*="background: #F2F2F2"] {
     background-color: #222 !important;
   }
 
