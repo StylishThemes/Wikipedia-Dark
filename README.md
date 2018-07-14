@@ -11,7 +11,7 @@ Applies to wikipedia.org, wikidata.org, mediawiki.org &amp; wiktionary.org
 A userstyle extension is required, common ones include:
 
 🎨 Stylus for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).<br>
-🎨 FreeStyler for [Firefox](https://freestyler.ws/download.php?browser=firefox), [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca), [Opera](https://addons.opera.com/extensions/download/freestyler/) or [Safari](https://freestyler.ws/download.php?browser=safari).
+🎨 xStyle for [Firefox](https://addons.mozilla.org/firefox/addon/xstyle/) or [Chrome](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj).
 
 Then install using one of these methods:
 
