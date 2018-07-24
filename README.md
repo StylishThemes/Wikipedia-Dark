@@ -15,7 +15,7 @@ A userstyle extension is required, common ones include:
 
 Then install using one of these methods:
 
-📦 [Install the usercss](https://github.com/StylishThemes/Wikipedia-Dark/raw/master/wikipedia-dark.user.css) with Stylus or FreeStyler. Supports automatic updates.<br>
+📦 [Install the usercss](https://github.com/StylishThemes/Wikipedia-Dark/raw/master/wikipedia-dark.user.css) with Stylus or xStyle. Supports automatic updates.<br>
 📦 [Install from userstyles.org](https://userstyles.org/styles/105844) with customization, does not support automatic updates (NO LONGER UPDATED).<br>
 
 ## Limitations
