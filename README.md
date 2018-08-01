@@ -21,9 +21,10 @@ Then install using one of these methods:
 ## Limitations
 
 * Many of the table cells have inline styling to add a background colors.
-  * Some of the very common stylings have been replaced using attribute selectors ( e.g. `th[style*="background:#eee"]` ).
-  * But due to the sheer number of possiblities, the replaced css style would also need to include selectors such as `th[style*="background-color: #eee"]` and `th[style*="background-color:#EEE"]` and `th[style*="background-color: #eeeeee"]`, etc.
-  * It would be a daunting task to find and replace all of these colors. I hope you see my point.
+  * Some of the very common stylings have been replaced using attribute selectors ( e.g. `th[style*="background:#eee" i]` ).
+  * But due to the sheer number of possiblities, the replaced css style would also need to include selectors such as `th[style*="background-color: #eee" i]` and `th[style*="background-color:#eee" i]`, `th[bgcolor="eee" i]` and `th[style*="background-color: #eeeeee" i]`, etc.
+  * It would be a daunting task to find and replace *all* of these colors. I hope you see my point.
+  * If you *really* want a background color to be fixed, please share a pull request of the fix. We may not always have time to get to it.
 * Not all images can be made readable.
   * This style uses a css filter to invert the images, but this really only works on basic black-and-white images.
 
