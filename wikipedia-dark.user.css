@@ -252,7 +252,7 @@
   td[style*="background:#CEDFF2" i], tr[bgcolor="#CEDFF2" i], table[style*="background-color:#cef2e0" i] *,
   div[style*="background-color: #cee0f2" i], div[style*="background-color: #cedff2" i],
   div[role="region"] h2, div[role="region"] .plainlinks, tr[style*="background-color: #cedff2" i],
-  td[bgcolor*="#f0f0ff" i], tr[style*="background-color:#E1E9F3" i] {
+  td[bgcolor*="#f0f0ff" i], tr[style*="background-color:#E1E9F3" i], th[style*="background:#d1dbdf" i] {
     background-color: #182030 !important;
   }
 
