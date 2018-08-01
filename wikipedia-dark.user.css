@@ -50,10 +50,10 @@
   /* transparent background */
   div, span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
   .MainPageBG, .navbox-list,  div#mw-head, .mw-wsmfinal-content, #bodyContent,
-  .referencetooltip > li + li, div.vectorTabs ul li, tr[style*="background:#F5FFFA"],
-  th[style*="background-color: #fff"], .mw-echo-notifications-badge,
+  .referencetooltip > li + li, div.vectorTabs ul li, tr[style*="background:#F5FFFA" i],
+  th[style*="background-color: #fff" i], .mw-echo-notifications-badge,
   .ext-cards-card-list .ext-cards-card, .infobox span.plainlinks *,
-  .tracklist, blockquote[style*="background-color: white"] {
+  .tracklist, blockquote[style*="background-color: white" i] {
     background-color: transparent !important;
   }
 
@@ -139,22 +139,22 @@
     color: #b9b9b9 !important;
   }
 
-  td[style*="background:#FFFFFF"], .jfk-bubble, .navpopup,
+  td[style*="background:#FFFFFF" i], .jfk-bubble, .navpopup,
   .popup_drop:hover .popup_menu, .popup_drop .popup_menu:hover {
     background-color: #181818 !important;
   }
 
   table, input, button, select, textarea:not([class*="mw-editfont"]),
-  tr[style*="background: antiquewhite;"], #toc, td[style*="background-color"], td[style*="background:#F5FAFF"],
+  tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"], td[style*="background:#F5FAFF" i],
   #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *, .wikiEditor-ui,
   table.navbox.collapsible tr:nth-child(2) > td, div.menu, .oo-ui-popupWidget-popup,
   .oo-ui-buttonElement-button, .mw-notification, .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall,
   .ui-widget-content, .oo-ui-window-body, #pagehistory li.selected, .tracklist tr,
   .mw-searchresults-has-iw .iw-resultset, .cx-callout-content, .oo-ui-widget,
-  tr[style*="background:#f2f2f2"], th[style*="background:#EDF1F1"], td[style*="background:#EDF1F1"],
-  tr[style*="background-color:white"], tr[style*="background:#f9f9f9"], td[bgcolor="#FFFFFF"],
-  tr[style*="background:#ddd"], td[style*="background: #F2F2F2"], tr[style*="background-color:#F2F2F2"] {
+  tr[style*="background:#f2f2f2" i], th[style*="background:#EDF1F1" i], td[style*="background:#EDF1F1" i],
+  tr[style*="background-color:white" i], tr[style*="background:#f9f9f9" i], td[bgcolor="#FFFFFF" i],
+  tr[style*="background:#ddd" i], td[style*="background: #F2F2F2" i], tr[style*="background-color:#F2F2F2" i] {
     background-color: #222 !important;
   }
 
@@ -163,13 +163,13 @@
     border-color: #555 !important;
   }
 
-  table[style*="background-color:#fff;"], .search-form fieldset, table.ambox, tr[style*="background-color: #fff;"],
-  .mw-ui-button[style*="background-color:#008B6D"], tr[style*="background-color: #f5faff;"],
-  tr[style*="background:#E9E9E9"] > *, table.infobox.hproduct > tbody > tr[style*="background: #F0F0F0;"],
-  td[style*="background:lightyellow"], td[style*="background:#eeeeff"], td[style*="background:#ddddff"],
-  .oo-ui-buttonElement-button:hover, .tracklist tr[style*="background-color:#f7f7f7"],
-  td[style*="background:#F9F9F9"], th[style*="background:gainsboro"], td[style*="background:gainsboro"],
-  h2[style*="background:#eeeeee"], h2[style*="background:#efefef"] {
+  table[style*="background-color:#fff;" i], .search-form fieldset, table.ambox, tr[style*="background-color: #fff;" i],
+  .mw-ui-button[style*="background-color:#008B6D" i], tr[style*="background-color: #f5faff;" i],
+  tr[style*="background:#E9E9E9" i] > *, table.infobox.hproduct > tbody > tr[style*="background: #F0F0F0;" i],
+  td[style*="background:lightyellow" i], td[style*="background:#eeeeff" i], td[style*="background:#ddddff" i],
+  .oo-ui-buttonElement-button:hover, .tracklist tr[style*="background-color:#f7f7f7" i],
+  td[style*="background:#F9F9F9" i], th[style*="background:gainsboro" i], td[style*="background:gainsboro" i],
+  h2[style*="background:#eeeeee" i], h2[style*="background:#efefef" i] {
     background-color: #282828 !important;
   }
 
@@ -178,12 +178,12 @@
     background-color: #333; /* don't include !important flag */
   }
 
-  td[style*="background: #ececec;"], th[style*="background:#eee"], th[style*="background-color: #eee"],
-  tr[style*="background-color: #f7f7f7;"], th[style*="background:#F2F2F2"], #filetoc, .toccolours,
-  th[style*="background:#F9F9F9"], table.plainlinks, th[style*="background-color: lightgrey"],
-  th[style*="background:#ddd"], .infobox th[style*="background"], .infobox td[style*="background"],
-  td[style*="background:#F2F2F2"], table.wikitable > tbody > tr[style*="background-color:#F6F6F6"],
-  .tlheader, th[style*="background:whitesmoke"], td[style*="background:whitesmoke"] {
+  td[style*="background: #ececec;" i], th[style*="background:#eee" i], th[style*="background-color: #eee" i],
+  tr[style*="background-color: #f7f7f7;" i], th[style*="background:#F2F2F2" i], #filetoc, .toccolours,
+  th[style*="background:#F9F9F9" i], table.plainlinks, th[style*="background-color: lightgrey" i],
+  th[style*="background:#ddd" i], .infobox th[style*="background"], .infobox td[style*="background"],
+  td[style*="background:#F2F2F2" i], table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i],
+  .tlheader, th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i] {
     background-color: #333 !important;
   }
 
@@ -223,30 +223,30 @@
 
   /*** Background Color Styles ***/
   /* Red */
-  td[style*="background: #FDD;"], .table-no, td[style*="background:#fdd"],
-  td[style*="background: #ffdddd"], tr[style*="background:#FFDDDD"],
-  tr[style*="background:#fbb"] {
+  td[style*="background: #FDD;" i], .table-no, td[style*="background:#fdd" i],
+  td[style*="background: #ffdddd" i], tr[style*="background:#FFDDDD" i],
+  tr[style*="background:#fbb" i] {
     background: #722 !important;
     color: #ddd !important;
   }
 
   /* Green */
-  #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;"], .table-yes,
-  td[style*="background:#dfd"], td[style*="background:#bfd"], tr[style*="background:#DDFFDD"],
-  tr[style*="background:#bfb"], tr[style*="background-color:#CCFFCC"] {
+  #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;" i], .table-yes,
+  td[style*="background:#dfd" i], td[style*="background:#bfd" i], tr[style*="background:#DDFFDD" i],
+  tr[style*="background:#bfb" i], tr[style*="background-color:#CCFFCC" i] {
     background: #244024 !important;
     color: #ddd !important;
   }
 
   /* Blue */
   div[style*="background"] h2, div[style*="background"] h2 *, #mp-right h2, #mp-right h2 span, .navbox th,
-  .navbox-title, .navbox-title *, tr[style*="background-color:tan;"],
+  .navbox-title, .navbox-title *, tr[style*="background-color:tan;" i],
   div[style*="background: #444444;"], div[style*="background: #444444;"] *,
   ol.references li:target, sup.reference:target, span.citation:target,
   ol.references li:target *, sup.reference:target *, span.citation:target *,
-  td[style*="background:#CEDFF2"], tr[bgcolor="#CEDFF2"], table[style*="background-color:#cef2e0"] *,
-  div[style*="background-color: #cee0f2"], div[style*="background-color: #cedff2"],
-  div[role="region"] h2, div[role="region"] .plainlinks, tr[style*="background-color: #cedff2"] {
+  td[style*="background:#CEDFF2" i], tr[bgcolor="#CEDFF2" i], table[style*="background-color:#cef2e0" i] *,
+  div[style*="background-color: #cee0f2" i], div[style*="background-color: #cedff2" i],
+  div[role="region"] h2, div[role="region"] .plainlinks, tr[style*="background-color: #cedff2" i] {
     background-color: #182030 !important;
   }
 
@@ -256,13 +256,13 @@
   }
 
   /* Purple */
-  #mp-bottom h2, #mp-bottom h2 span, th[style*="background:lavender"], td[style*="background:lavender"] {
+  #mp-bottom h2, #mp-bottom h2 span, th[style*="background:lavender" i], td[style*="background:lavender" i] {
     background-color: #382B4A !important;
   }
 
   /* Brown */
-  #mp-center h2, #mp-center h2 span, .table-partial, tr[style*="background:orange"],
-  td[style*="background:#ffd"] {
+  #mp-center h2, #mp-center h2 span, .table-partial, tr[style*="background:orange" i],
+  td[style*="background:#ffd" i] {
     background-color: #321 !important;
   }
 
@@ -362,8 +362,8 @@
   }
 
   /*** Text ***/
-  .wikitable tr:not([style*="color:black"]) th:not([style*="color: black"]),
-  table.wikitable > tbody > tr[style*="background-color:#F6F6F6"] > td > * {
+  .wikitable tr:not([style*="color:black" i]) th:not([style*="color: black" i]),
+  table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i] > td > * {
     color: #fff !important;
   }
 
