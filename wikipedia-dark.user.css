@@ -155,7 +155,8 @@
   tr[style*="background:#f2f2f2" i], th[style*="background:#EDF1F1" i], td[style*="background:#EDF1F1" i],
   tr[style*="background-color:white" i], tr[style*="background:#f9f9f9" i], td[bgcolor="#FFFFFF" i],
   tr[style*="background:#ddd" i], td[style*="background: #F2F2F2" i], tr[style*="background-color:#F2F2F2" i],
-  tr[style*="background-color:#FFF5EE" i], tr[bgcolor="FFF5EE" i], td[bgcolor="FFF5EE" i] {
+  tr[style*="background-color:#FFF5EE" i], tr[bgcolor="FFF5EE" i], td[bgcolor="FFF5EE" i],
+  .wikitable.charts-zebragrey > tbody > tr:nth-of-type(odd) {
     background-color: #222 !important;
   }
 
@@ -171,7 +172,8 @@
   .oo-ui-buttonElement-button:hover, .tracklist tr[style*="background-color:#f7f7f7" i],
   td[style*="background:#F9F9F9" i], th[style*="background:gainsboro" i], td[style*="background:gainsboro" i],
   h2[style*="background:#eeeeee" i], h2[style*="background:#efefef" i], tr[bgcolor*="#eee" i],
-  tr[style*="background-color:#eee" i] {
+  tr[style*="background-color:#eee" i], .wikitable.charts-zebragrey > tbody > tr:nth-of-type(even),
+  tr[style*="background:#fbf8d6" i] {
     background-color: #282828 !important;
   }
 
@@ -185,7 +187,8 @@
   th[style*="background:#F9F9F9" i], table.plainlinks, th[style*="background-color: lightgrey" i],
   th[style*="background:#ddd" i], .infobox th[style*="background"], .infobox td[style*="background"],
   td[style*="background:#F2F2F2" i], table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i],
-  .tlheader, th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i] {
+  .tlheader, th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i],
+  th[style*="#FFEBAD" i] {
     background-color: #333 !important;
   }
 
