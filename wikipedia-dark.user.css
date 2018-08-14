@@ -53,7 +53,8 @@
   .referencetooltip > li + li, div.vectorTabs ul li, tr[style*="background:#F5FFFA" i],
   th[style*="background-color: #fff" i], .mw-echo-notifications-badge,
   .ext-cards-card-list .ext-cards-card, .infobox span.plainlinks *,
-  .tracklist, blockquote[style*="background-color: white" i] {
+  .tracklist, blockquote[style*="background-color: white" i],
+  .ns-0 ul, .ns-0 ol li, table.flextable, table.flextable .invisible {
     background-color: transparent !important;
   }
 
@@ -113,7 +114,7 @@
     /*[[bg-options]]*/
   }
 
-  .mw-ui-button, .mw-ui-button * {
+  .mw-ui-button, .mw-ui-button *, button[type="submit"] {
     background-color: var(--base-color) !important;
     color: #fff !important;
   }
@@ -156,7 +157,8 @@
   tr[style*="background-color:white" i], tr[style*="background:#f9f9f9" i], td[bgcolor="#FFFFFF" i],
   tr[style*="background:#ddd" i], td[style*="background: #F2F2F2" i], tr[style*="background-color:#F2F2F2" i],
   tr[style*="background-color:#FFF5EE" i], tr[bgcolor="FFF5EE" i], td[bgcolor="FFF5EE" i],
-  .wikitable.charts-zebragrey > tbody > tr:nth-of-type(odd), td > span[style*="background-color:#eee" i] {
+  .wikitable.charts-zebragrey > tbody > tr:nth-of-type(odd), td > span[style*="background-color:#eee" i],
+  #mw-content-text div:not(.toctitle) > h2, table.flextable th {
     background-color: #222 !important;
   }
 
@@ -173,7 +175,7 @@
   td[style*="background:#F9F9F9" i], th[style*="background:gainsboro" i], td[style*="background:gainsboro" i],
   h2[style*="background:#eeeeee" i], h2[style*="background:#efefef" i], tr[bgcolor*="#eee" i],
   tr[style*="background-color:#eee" i], .wikitable.charts-zebragrey > tbody > tr:nth-of-type(even),
-  tr[style*="background:#fbf8d6" i] {
+  tr[style*="background:#fbf8d6" i], table.flextable td {
     background-color: #282828 !important;
   }
 
@@ -273,7 +275,7 @@
   }
 
   /*** Border ***/
-  fieldset {
+  fieldset, button[type="submit"] {
     border-color: var(--base-color) !important;
   }
 
@@ -324,6 +326,10 @@
   .referencetooltip > li {
     background: #222 !important;
     border: 1px solid #555 !important;
+  }
+  input, button {
+    border-style: solid !important;
+    border-width: 1px !important;
   }
 
   /* arrow down */
