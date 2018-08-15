@@ -76,7 +76,7 @@
     color: #9a9a9a !important;
   }
 
-  a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button {
+  a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel {
     color: var(--base-color) !important;
   }
 
