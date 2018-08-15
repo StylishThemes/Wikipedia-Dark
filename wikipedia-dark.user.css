@@ -158,7 +158,8 @@
   tr[style*="background:#ddd" i], td[style*="background: #F2F2F2" i], tr[style*="background-color:#F2F2F2" i],
   tr[style*="background-color:#FFF5EE" i], tr[bgcolor="FFF5EE" i], td[bgcolor="FFF5EE" i],
   .wikitable.charts-zebragrey > tbody > tr:nth-of-type(odd), td > span[style*="background-color:#eee" i],
-  #mw-content-text div:not(.toctitle) > h2, table.flextable th {
+  #mw-content-text div:not(.toctitle) > h2, table.flextable th, tr[style*="background-color:#FFF" i],
+  td[style*="background:#eee" i] {
     background-color: #222 !important;
   }
 
@@ -264,7 +265,8 @@
   }
 
   /* Purple */
-  #mp-bottom h2, #mp-bottom h2 span, th[style*="background:lavender" i], td[style*="background:lavender" i] {
+  #mp-bottom h2, #mp-bottom h2 span, th[style*="background:lavender" i], td[style*="background:lavender" i],
+  th[style*="background:#edf" i] {
     background-color: #382B4A !important;
   }
 
