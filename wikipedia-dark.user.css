@@ -54,7 +54,8 @@
   th[style*="background-color: #fff" i], .mw-echo-notifications-badge,
   .ext-cards-card-list .ext-cards-card, .infobox span.plainlinks *,
   .tracklist, blockquote[style*="background-color: white" i],
-  .ns-0 ul, .ns-0 ol li, table.flextable, table.flextable .invisible {
+  .ns-0 ul, .ns-0 ol li, table.flextable, table.flextable .invisible,
+  table#noarticletext, table#noarticletext table {
     background-color: transparent !important;
   }
 
@@ -293,7 +294,7 @@
     border-top-color: #555 !important;
   }
 
-  .mwe-popups:before {
+  .mwe-popups:before, .cx-callout-1:before {
     border-bottom-color: #555 !important;
   }
   .mwe-popups.flipped_y:before, .mwe-popups.flipped_x_y:before,
@@ -301,7 +302,7 @@
   .mwe-popups.flipped-y:before, .mwe-popups.flipped-x-y:before {
     border-top-color: #555 !important;
   }
-  .mwe-popups:after,
+  .mwe-popups:after, .cx-callout-1:after,
   .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:before,
   .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:after {
     border-bottom-color: #222 !important;
@@ -381,7 +382,7 @@
     color: #fff !important;
   }
 
-  .CategoryTreeEmptyBullet, .table-na {
+  .CategoryTreeEmptyBullet, .table-na, .infobox {
     color: #ccc !important;
   }
 
