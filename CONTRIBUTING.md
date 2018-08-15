@@ -50,7 +50,7 @@ If you don't know CSS very well and have found a missing style, please include a
     /* bad */
     element[attr='value']{ }
     ```
-  
+
   * 2 Space indentation
     ```css
     /* good */
@@ -71,3 +71,34 @@ If you don't know CSS very well and have found a missing style, please include a
   * If your css definition already exists within the style, do not add it again! Add your selector to the existing definition.
 * Insert any new css selectors in any available slot before the style definition, or on a new line as needed.
 * If you want to add a new userstyle variable, please open an issue and discuss it with us first.
+
+## Getting Started
+
+* [Download](https://github.com/StylishThemes/Wikipedia-Dark/archive/master.zip), [fork](https://github.com/StylishThemes/Wikipedia-Dark/fork) or clone this repository.
+* Use [node.js](http://nodejs.org/) to run `npm install`.
+* Make any changes to the `wikipedia-dark.user.css` file and save.
+
+### Build & test
+
+* Create & change into a new branch of your local Wikipedia-Dark repository.
+* Open the style in the Stylus editor, and make sure to have "live preview" checked for testing.
+* Once you are satisfied with the changes, select all the css (<kbd>Ctrl</kbd> + <kbd>a</kbd>), copy (<kbd>Ctrl</kbd> + <kbd>c</kbd>) then paste (<kbd>Ctrl</kbd> + <kbd>v</kbd>) it into your editor.
+* Run `npm test` to test the css changes.
+* Now you can add and commit the changes of the `wikipedia-dark.user.css` file to your fork's branch.
+* If you haven't already contributed, then run `npm run authors` to add your name to our list of contributors :smile:
+* Push the changes to your branch, then submit a pull request.
+* And thanks again for contributing!
+
+## Development
+
+* `npm run authors`: Runs a batch file to rebuild the `AUTHORS` file. Update the `.mailmap` file for any duplicate entries.
+* `npm run clean`: Runs the perfectionist script & cleans up after it.
+* `npm run eslint`: Lint the JavaScript code in the `tools` directory.
+* `npm run lint`: Run eslint & stylelint scripts.
+* `npm run major`: Creates a semantic major release.
+* `npm run minor`: Creates a semantic minor release.
+* `npm run patch`: Creates a semantic patch release.
+* `npm run perfectionist`: Runs perfectionist only. CSS is not cleaned!
+* `npm run stylelint`: Run stylelint on the css file.
+* `npm run test`: Same as `npm run lint`.
+* `npm run update`: Update development dependencies.
