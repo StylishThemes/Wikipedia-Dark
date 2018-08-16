@@ -2,7 +2,7 @@
 
 1. [Getting Involved](#getting-involved)
 2. [How To Report style issues](#how-to-report-style-issues)
-3. [Core Style Guide](#wikipedia-dark-style-guide)
+3. [Style Guide](#style-guide)
 
 ## Getting Involved
 
@@ -23,7 +23,7 @@ If you don't know CSS very well and have found a missing style, please include a
 * Make any needed changes, then send us a pull request
 * Please include a url to the page (if public)
 
-## Wikipedia Dark Style Guide
+## Style Guide
 
 * Limit to the [K&R Style](http://en.wikipedia.org/wiki/1_true_brace_style#K.26R_style), and **2 SPACE INDENTATION** (no tabs, and not more, and not less than 2 spaces).
 
@@ -88,7 +88,7 @@ If you don't know CSS very well and have found a missing style, please include a
 * Push the changes to your branch, then submit a pull request.
 * And thanks again for contributing!
 
-## Development
+### Development Scripts
 
 * `npm run authors`: Runs a batch file to rebuild the `AUTHORS` file. Update the `.mailmap` file for any duplicate entries.
 * `npm run clean`: Runs the perfectionist script & cleans up after it.
