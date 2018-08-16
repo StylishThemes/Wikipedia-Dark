@@ -15,7 +15,7 @@ const file = path.join(__dirname, "..", "wikipedia-dark.user.css");
   const newVersion = semver.inc(version, level);
 
   fs.readFile(file, "utf8")
-    .then(css => css.replace(`v${version}`, `v${newVersion}`))
+    .then(css => css.replace(version, newVersion))
     .then(css => fs.writeFile(file, css))
     .then(() => console.log("\x1b[32m%s\x1b[0m", "Wikipedia Dark usercss updated"))
     .catch(exit);
