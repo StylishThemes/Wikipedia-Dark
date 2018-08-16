@@ -6,7 +6,7 @@
 
 ## Getting Involved
 
-There are a number of ways to get involved with the development of this Wikipedia Dark theme for Stylish. Even if you've never contributed to an Open Source project before, we're always looking for help identifying missing styles or other issues.
+There are a number of ways to get involved with the development of this Wikipedia Dark theme. Even if you've never contributed to an Open Source project before, we're always looking for help identifying missing styles or other issues.
 
 ## How to Report Style issues
 
@@ -62,11 +62,10 @@ If you don't know CSS very well and have found a missing style, please include a
     ·property: value;
     ```
 
-* Try to wrap lines at around 120 characters.
-* This style has a size limit:
-  * I'm not sure if it is [64kb](https://github.com/JasonBarnabe/stylish/wiki/Embedding-images-in-styles), or [100,000 bytes](http://userstyles.org/help/coding).
-  * So don't add any image URI's to the css; instead add the image into the `/images` directory; then point to using the following url: `http://stylishthemes.github.io/Wikipedia-Dark/images/`{my-image.png}.
-  * If possible, reduce any added selectors. Remember that Stylish requires an `!important` flag to override default styling, so a selector starting from the body isn't always necessary.
+* Try to wrap lines at around 80 characters.
+* This style does not have a size limit, but:
+  * Don't add any image URI's to the css; instead add the image into the `/images` directory; then point to using the following url: `http://StylishThemes.github.io/StackExchange-Sticky-Header/images/{my-image.png}`.
+  * If possible, reduce any added selectors. Remember that the style likely has an `!important` flag to override default styling, so a selector starting from the body isn't always necessary.
   * Don't add any inline comments. If you want to make a comment, add it as a note in the commit.
   * If your css definition already exists within the style, do not add it again! Add your selector to the existing definition.
 * Insert any new css selectors in any available slot before the style definition, or on a new line as needed.
