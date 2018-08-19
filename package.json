@@ -1,10 +1,12 @@
 {
   "name": "wikipedia-dark",
+  "title": "Wikipedia Dark",
   "version": "2.0.5",
   "description": "Wikipedia Dark theme",
   "license": "CC-BY-SA-4.0",
   "repository": "https://github.com/StylishThemes/Wikipedia-Dark",
-  "homepage": "https://userstyles.org/styles/105844/wikipedia-dark-st",
+  "homepage": "https://github.com/StylishThemes/Wikipedia-Dark",
+  "main": "wikipedia-dark.user.css",
   "devDependencies": {
     "eslint": "^5.3.0",
     "eslint-config-silverwind": "^2.0.3",
