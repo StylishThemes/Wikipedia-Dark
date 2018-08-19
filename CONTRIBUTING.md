@@ -64,7 +64,7 @@ If you don't know CSS very well and have found a missing style, please include a
 
 * Try to wrap lines at around 80 characters.
 * This style does not have a size limit, but:
-  * Don't add any image URI's to the css; instead add the image into the `/images` directory; then point to using the following url: `http://StylishThemes.github.io/StackExchange-Sticky-Header/images/{my-image.png}`.
+  * Don't add any image URI's to the css; instead add the image into the `/images` directory; then point to using the following url: `http://StylishThemes.github.io/Wikipedia-Dark/images/{my-image.png}`.
   * If possible, reduce any added selectors. Remember that the style likely has an `!important` flag to override default styling, so a selector starting from the body isn't always necessary.
   * Don't add any inline comments. If you want to make a comment, add it as a note in the commit.
   * If your css definition already exists within the style, do not add it again! Add your selector to the existing definition.
