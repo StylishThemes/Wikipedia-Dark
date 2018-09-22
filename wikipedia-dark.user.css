@@ -35,7 +35,7 @@
 }
 @preprocessor uso
 ==/UserStyle== */
-@-moz-document domain("wikipedia.org"), domain("wikidata.org"), domain("mediawiki.org"), domain("wiktionary.org") {
+@-moz-document domain("wikipedia.org"), domain("wikidata.org"), domain("mediawiki.org"), domain("wiktionary.org"), domain("wiki.rpcs3.net") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
@@ -163,7 +163,7 @@
   tr[style*="background-color: #f5faff;" i],
   tr[style*="background:#E9E9E9" i] > *,
   table.infobox.hproduct > tbody > tr[style*="background: #F0F0F0;" i],
-  table > tbody > tr[style*="background:#f0f0f0;" i],
+  tr[style*="background:#f0f0f0;" i],
   td[style*="background:lightyellow" i], td[style*="background:#eeeeff" i],
   td[style*="background:#ddddff" i], .oo-ui-buttonElement-button:hover,
   .tracklist tr[style*="background-color:#f7f7f7" i],
