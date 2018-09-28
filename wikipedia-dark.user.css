@@ -77,6 +77,9 @@
   a:visited, #toc a:visited, #toc a:visited span {
     color: var(--visited-color) !important;
   }
+  legend .oo-ui-labelElement-label {
+    color: #ddd !important;
+  }
   a:hover, a:hover span, #toc a:hover, #toc a:hover span,
   .suggestions-result .highlight, .suggestions-special .special-query {
     color: #fff !important;
@@ -110,7 +113,8 @@
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar,
   #p-cactions-label, .client-js #preftoc, .client-js #preftoc li,
   .client-js #preftoc li.selected a, .ui-widget-content,
-  .ext-cards-card-list h3:after, #simpleSearch, .mw-mmv-ttf-ellipsis:before {
+  .ext-cards-card-list h3:after, #simpleSearch, .mw-mmv-ttf-ellipsis:before,
+  .mw-advancedSearch-fieldContainer {
     background-image: none !important;
   }
   /* fading linear gradient */
@@ -151,7 +155,7 @@
   td > span[style*="background-color:#eee" i],
   #mw-content-text div:not(.toctitle) > h2, table.flextable th,
   tr[style*="background-color:#FFF" i], td[style*="background:#eee" i],
-  #mw-searchoptions {
+  #mw-searchoptions, .mw-advancedSearch-namespace-selection {
     background-color: #222 !important;
   }
   body .ui-button {
@@ -270,13 +274,14 @@
     background-color: #321 !important;
   }
   /*** Border ***/
-  fieldset, button[type="submit"] {
+  fieldset, button[type="submit"], .oo-ui-buttonElement-button:focus {
     border-color: var(--base-color) !important;
   }
   div:not([style*="-color"]), div[style*="background-color"],
   span:not([class*="color"]), table, tr:not([style*="border-bottom"]), th,
   td:not([style*="border-bottom"]), h1, h2, h3, h4, h5, h6, ul, li, input,
-  select, #bodyContent code, .lang-list-button:hover {
+  select, #bodyContent code, .lang-list-button:hover,
+  .oo-ui-buttonElement-button {
     border-color: #555 !important;
   }
   td[style*="border-bottom"] {
@@ -373,7 +378,8 @@
   ul, .portlet li {
     list-style-image: none !important;
   }
-  table[style*="border:4px ridge"], .jfk-bubble-closebtn {
+  table[style*="border:4px ridge"], .jfk-bubble-closebtn,
+  .oo-ui-tagMultiselectWidget-handle input {
     border: none !important;
   }
   /*** diff pages ***/
