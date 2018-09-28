@@ -35,7 +35,7 @@
 }
 @preprocessor uso
 ==/UserStyle== */
-@-moz-document domain("wikipedia.org"), domain("wikidata.org"), domain("mediawiki.org"), domain("wiktionary.org") {
+@-moz-document domain("wikipedia.org"), domain("wikidata.org"), domain("mediawiki.org"), domain("wiktionary.org"), domain("wiki.rpcs3.net") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
@@ -150,7 +150,8 @@
   .wikitable.charts-zebragrey > tbody > tr:nth-of-type(odd),
   td > span[style*="background-color:#eee" i],
   #mw-content-text div:not(.toctitle) > h2, table.flextable th,
-  tr[style*="background-color:#FFF" i], td[style*="background:#eee" i] {
+  tr[style*="background-color:#FFF" i], td[style*="background:#eee" i],
+  #mw-searchoptions {
     background-color: #222 !important;
   }
   body .ui-button {
@@ -161,8 +162,9 @@
   tr[style*="background-color: #fff;" i],
   .mw-ui-button[style*="background-color:#008B6D" i],
   tr[style*="background-color: #f5faff;" i],
-  tr[style*="background:#E9E9E9" i] > *,
+  tr[style*="background:#E9E9E9" i], th[style*="background:#E9E9E9" i],
   table.infobox.hproduct > tbody > tr[style*="background: #F0F0F0;" i],
+  tr[style*="background:#f0f0f0;" i],
   td[style*="background:lightyellow" i], td[style*="background:#eeeeff" i],
   td[style*="background:#ddddff" i], .oo-ui-buttonElement-button:hover,
   .tracklist tr[style*="background-color:#f7f7f7" i],
