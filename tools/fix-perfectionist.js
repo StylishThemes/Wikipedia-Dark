@@ -12,6 +12,7 @@ function cleanup(css) {
     // Perfectionist adds comments to the end of the previous line...
     // }/* comment */ => }\n\n  /* comment */
     .replace(/}\/\*(([\s\S])+?)\*\/\s*/g, "}\n\n  /*$1*/\n  ")
+    .replace(/,\s\/\*/g, ",\n  /*")
     // Remove extra carriage returns between definitions
     .replace(/\n+/g, "\n");
 }
