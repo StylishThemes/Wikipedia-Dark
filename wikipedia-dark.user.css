@@ -39,6 +39,7 @@
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
+    --base-color-8: rgba(/*[[base-color-rgb]]*/, .8);
     --visited-color: /*[[visited-color]]*/;
     --bg-custom: /*[[bg-custom]]*/;
     --bg-selected: /*[[bg-selected]]*/;
@@ -464,6 +465,6 @@
     background: rgba(175, 175, 175, .5) !important;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(65, 131, 196, .8) !important;
+    background: var(--base-color-8) !important;
   }
 }
