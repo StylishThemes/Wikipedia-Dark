@@ -120,7 +120,7 @@
   .ui-widget-overlay {
     background: rgba(0, 0, 0, .8) !important;
   }
-  #bodyContent pre, #bodyContent code, span.plainlinks * {
+  #bodyContent pre, #bodyContent code, span.plainlinks {
     background-color: #111 !important;
     border-color: #555 !important;
     color: #b9b9b9 !important;
@@ -181,7 +181,7 @@
   td[style*="background: #ececec;" i], th[style*="background:#eee" i],
   th[style*="background-color: #eee" i],
   tr[style*="background-color: #f7f7f7;" i], th[style*="background:#F2F2F2" i],
-  #filetoc, .toccolours, th[style*="background:#F9F9F9" i], table.plainlinks,
+  #filetoc, .toccolours, th[style*="background:#F9F9F9" i],
   th[style*="background-color: lightgrey" i], th[style*="background:#ddd" i],
   .infobox th[style*="background"], .infobox td[style*="background"],
   td[style*="background:#F2F2F2" i],
