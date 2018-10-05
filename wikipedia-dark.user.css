@@ -156,7 +156,8 @@
   td > span[style*="background-color:#eee" i],
   #mw-content-text div:not(.toctitle) > h2, table.flextable th,
   tr[style*="background-color:#FFF" i], td[style*="background:#eee" i],
-  #mw-searchoptions, .mw-advancedSearch-namespace-selection {
+  #mw-searchoptions, .mw-advancedSearch-namespace-selection,
+  td[style*="background:#fff2e6" i] {
     background-color: #222 !important;
   }
   body .ui-button {
@@ -256,7 +257,7 @@
   div[style*="background-color: #cedff2" i], div[role="region"] h2,
   div[role="region"] .plainlinks, tr[style*="background-color: #cedff2" i],
   td[bgcolor*="#f0f0ff" i], tr[style*="background-color:#E1E9F3" i],
-  th[style*="background:#d1dbdf" i] {
+  th[style*="background:#d1dbdf" i], td[style*="background:#e6f2ff" i] {
     background-color: #182030 !important;
   }
   .navbox-abovebelow, th.navbox-group, .navbox-subgroup .navbox-title,
