@@ -232,7 +232,7 @@
   #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;" i], .table-yes,
   td[style*="background:#dfd" i], td[style*="background:#bfd" i],
   tr[style*="background:#DDFFDD" i], tr[style*="background:#bfb" i],
-  tr[style*="background-color:#CCFFCC" i] {
+  tr[style*="background-color:#CCFFCC" i], .usermessage {
     background: #244024 !important;
     color: #ddd !important;
   }
