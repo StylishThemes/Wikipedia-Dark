@@ -187,7 +187,7 @@
   td[style*="background:#F2F2F2" i],
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i], .tlheader,
   th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i],
-  th[style*="#FFEBAD" i] {
+  th[style*="#FFEBAD" i], .usermessage {
     background-color: #333 !important;
   }
   /* remove background image/gradient */
@@ -266,10 +266,6 @@
   #mp-center h2, #mp-center h2 span, .table-partial,
   tr[style*="background:orange" i], td[style*="background:#ffd" i] {
     background-color: #321 !important;
-  }
-  /* Grey */
-  .usermessage {
-    background-color: #333 !important;
   }
   /*** Border ***/
   fieldset, button[type="submit"] {
