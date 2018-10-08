@@ -269,7 +269,7 @@
   }
   /* Grey */
   .usermessage {
-    background-color: #3a3a3a !important;
+    background-color: #333 !important;
   }
   /*** Border ***/
   fieldset, button[type="submit"] {
