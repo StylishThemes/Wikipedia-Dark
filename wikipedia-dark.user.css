@@ -232,7 +232,7 @@
   #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;" i], .table-yes,
   td[style*="background:#dfd" i], td[style*="background:#bfd" i],
   tr[style*="background:#DDFFDD" i], tr[style*="background:#bfb" i],
-  tr[style*="background-color:#CCFFCC" i], .usermessage {
+  tr[style*="background-color:#CCFFCC" i] {
     background: #244024 !important;
     color: #ddd !important;
   }
@@ -266,6 +266,10 @@
   #mp-center h2, #mp-center h2 span, .table-partial,
   tr[style*="background:orange" i], td[style*="background:#ffd" i] {
     background-color: #321 !important;
+  }
+  /* Grey */
+  .usermessage {
+    background-color: #3a3a3a !important;
   }
   /*** Border ***/
   fieldset, button[type="submit"] {
