@@ -35,7 +35,12 @@
 }
 @preprocessor uso
 ==/UserStyle== */
-@-moz-document domain("wikipedia.org"), domain("wikidata.org"), domain("mediawiki.org"), domain("wiktionary.org"), domain("wiki.rpcs3.net") {
+@-moz-document domain("wikipedia.org"),
+domain("wikidata.org"),
+domain("mediawiki.org"),
+domain("wikimedia.org"),
+domain("wiktionary.org"),
+domain("wiki.rpcs3.net") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
