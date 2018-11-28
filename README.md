@@ -1,6 +1,6 @@
 # Wikipedia Dark
 
-Applies to wikipedia.org, wikidata.org, mediawiki.org &amp; wiktionary.org
+Applies to wikipedia.org, wikidata.org, mediawiki.org, wikimedia.org &amp; wiktionary.org
 
 ## Preview
 
