@@ -184,7 +184,7 @@ domain("wiki.rpcs3.net") {
   h2[style*="background:#efefef" i], tr[bgcolor*="#eee" i],
   tr[style*="background-color:#eee" i],
   .wikitable.charts-zebragrey > tbody > tr:nth-of-type(even),
-  tr[style*="background:#fbf8d6" i], table.flextable td {
+  tr[style*="background:#fbf8d6" i], table.flextable td, table.nmbox td {
     background-color: #282828 !important;
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
@@ -200,7 +200,7 @@ domain("wiki.rpcs3.net") {
   td[style*="background:#F2F2F2" i],
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i], .tlheader,
   th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i],
-  th[style*="#FFEBAD" i], .usermessage {
+  th[style*="#FFEBAD" i], .usermessage, table.nmbox th {
     background-color: #333 !important;
   }
   /* remove background image/gradient */
