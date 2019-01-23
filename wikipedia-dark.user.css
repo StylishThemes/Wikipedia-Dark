@@ -184,7 +184,7 @@ domain("wiki.rpcs3.net") {
   h2[style*="background:#efefef" i], tr[bgcolor*="#eee" i],
   tr[style*="background-color:#eee" i],
   .wikitable.charts-zebragrey > tbody > tr:nth-of-type(even),
-  tr[style*="background:#fbf8d6" i], table.flextable td {
+  tr[style*="background:#fbf8d6" i], table.flextable td, table.nmbox td {
     background-color: #282828 !important;
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
@@ -200,7 +200,7 @@ domain("wiki.rpcs3.net") {
   td[style*="background:#F2F2F2" i],
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i], .tlheader,
   th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i],
-  th[style*="#FFEBAD" i], .usermessage {
+  th[style*="#FFEBAD" i], .usermessage, table.nmbox th {
     background-color: #333 !important;
   }
   /* remove background image/gradient */
@@ -245,9 +245,22 @@ domain("wiki.rpcs3.net") {
   #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;" i], .table-yes,
   td[style*="background:#dfd" i], td[style*="background:#bfd" i],
   tr[style*="background:#DDFFDD" i], tr[style*="background:#bfb" i],
-  tr[style*="background-color:#CCFFCC" i] {
-    background: #244024 !important;
+  tr[style*="background-color:#CCFFCC" i],
+  table.ext-status-stable > tbody > tr.tpl-infobox-header {
+    background: #165316 !important;
     color: #ddd !important;
+  }
+  /* Yellow */
+  table.ext-status-beta > tbody > tr.tpl-infobox-header {
+    background: #b28200 !important;
+  }
+  /* Orange */
+  table.ext-status-experimental > tbody > tr.tpl-infobox-header {
+    background: #e53e00 !important;
+  }
+  /* Grey */
+  table.ext-status-unknown > tbody > tr.tpl-infobox-header {
+    background: #555 !important;
   }
   /* Blue */
   div[style*="background"] h2, div[style*="background"] h2 *, #mp-right h2,
@@ -372,7 +385,8 @@ domain("wiki.rpcs3.net") {
   }
   /*** Text ***/
   .wikitable tr:not([style*="color:black" i]) th:not([style*="color: black" i]),
-  table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i] > td > * {
+  table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i] > td > * ,
+  tr.ext-infobox-header th, tr.ext-infobox-header span {
     color: #fff !important;
   }
   .CategoryTreeEmptyBullet, .table-na, .infobox {
