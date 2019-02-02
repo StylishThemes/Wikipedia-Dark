@@ -162,7 +162,9 @@ domain("wiki.rpcs3.net") {
   #mw-content-text div:not(.toctitle) > h2, table.flextable th,
   tr[style*="background-color:#FFF" i], td[style*="background:#eee" i],
   #mw-searchoptions, .mw-advancedSearch-namespace-selection,
-  td[style*="background:#fff2e6" i] {
+  td[style*="background:#fff2e6" i], td[style*="background:#F9F9F0"],
+  td[style*="background:#F4F9F0"], td[style*="background:#F9F0F0"],
+  td[style*="background:#f0f0f0"] {
     background-color: #222 !important;
   }
   body .ui-button {
@@ -298,8 +300,10 @@ domain("wiki.rpcs3.net") {
     border-color: var(--base-color) !important;
   }
   div:not([style*="-color"]), div[style*="background-color"],
-  span:not([class*="color"]), table, tr:not([style*="border-bottom"]), th,
-  td:not([style*="border-bottom"]), h1, h2, h3, h4, h5, h6, ul, li, input,
+  span:not([class*="color"]), table:not(.hp-portalen),
+  tr:not([style*="border-bottom"]), th,
+  td:not([style*="border-bottom"]):not([style*="border-top"]),
+  h1, h2, h3, h4, h5, h6, ul, li, input,
   select, #bodyContent code, .lang-list-button:hover,
   .oo-ui-buttonElement-button {
     border-color: #555 !important;
@@ -389,7 +393,7 @@ domain("wiki.rpcs3.net") {
   tr.ext-infobox-header th, tr.ext-infobox-header span {
     color: #fff !important;
   }
-  .CategoryTreeEmptyBullet, .table-na, .infobox {
+  .CategoryTreeEmptyBullet, .table-na, .infobox, .hp-portalen a span {
     color: #ccc !important;
   }
   /*** Misc ***/
