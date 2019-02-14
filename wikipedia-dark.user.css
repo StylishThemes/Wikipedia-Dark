@@ -83,7 +83,7 @@ domain("wiki.rpcs3.net") {
   a:visited, #toc a:visited, #toc a:visited span {
     color: var(--visited-color) !important;
   }
-  legend .oo-ui-labelElement-label {
+  legend .oo-ui-labelElement-label, .cnotice-message p {
     color: #ddd !important;
   }
   a:hover, a:hover span, #toc a:hover, #toc a:hover span,
@@ -442,7 +442,7 @@ domain("wiki.rpcs3.net") {
   #pt-notifications-notice .mw-echo-notifications-badge:before,
   .oo-ui-pendingElement-pending,
   #pt-notifications-alert .mw-echo-notifications-badge:before,
-  img.mwe-math-fallback-image-display {
+  img.mwe-math-fallback-image-display, #cnotice-toggle-icon {
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
     background-color: transparent !important;
