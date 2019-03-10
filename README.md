@@ -18,6 +18,10 @@ Then install using one of these methods:
 📦 [Install the usercss](https://github.com/StylishThemes/Wikipedia-Dark/raw/master/wikipedia-dark.user.css) with Stylus or xStyle. Supports automatic updates.<br>
 📦 [Install from userstyles.org](https://userstyles.org/styles/105844) with customization, does not support automatic updates **(NO LONGER UPDATED)**.<br>
 
+## Additional Userstyles
+
+⚙️ [Overlay-Scrollbars](https://github.com/StylishThemes/Overlay-Scrollbars)<br>
+
 ## Limitations
 
 * Many of the table cells have inline styling to add a background colors.
