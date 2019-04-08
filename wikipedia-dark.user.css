@@ -453,6 +453,19 @@ domain("wiki.rpcs3.net") {
   .central-featured-logo {
     filter: brightness(60.5%) !important;
   }
+  .oo-ui-icon-bell, .mw-widget-calendarWidget-day-additional {
+    opacity: .7 !important;
+  }
+  /*** Reference tooltips ***/
+  .rt-tooltip, .rt-tooltipTail:after {
+    background: #222 !important;
+  }
+  .rt-tooltipTail {
+    background: #555 !important;
+  }
+}
+@-moz-document domain("wikipedia.org") {
+  /*** Navigation menu logo ***/
   #p-logo a {
     background-position: center -155px !important;
     display: table-cell !important;
@@ -473,14 +486,5 @@ domain("wiki.rpcs3.net") {
     filter: invert(60.5%) !important;
     height: 47px !important;
   }
-  .oo-ui-icon-bell, .mw-widget-calendarWidget-day-additional {
-    opacity: .7 !important;
-  }
-  /*** Reference tooltips ***/
-  .rt-tooltip, .rt-tooltipTail:after {
-    background: #222 !important;
-  }
-  .rt-tooltipTail {
-    background: #555 !important;
   }
 }
