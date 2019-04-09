@@ -10,24 +10,23 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-silverwind": "^2.1.0",
-    "fs-extra": "^7.0.1",
     "perfectionist": "^2.4.0",
-    "semver": "^6.0.0",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
-    "updates": "^8.0.0"
+    "updates": "^8.0.0",
+    "ver": "^4.1.0"
   },
   "scripts": {
     "authors": "bash tools/authors",
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
-    "major": "node tools/bump-version.js major && git add . && npm version -f major",
-    "minor": "node tools/bump-version.js minor && git add . && npm version -f minor",
-    "patch": "node tools/bump-version.js patch && git add . && npm version -f patch",
-    "perfectionist": "perfectionist wikipedia-dark.user.css wikipedia-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "stylelint --silent --color -- wikipedia-dark.user.css",
+    "patch": "npx ver -p patch wikipedia-dark.user.css",
+    "minor": "npx ver -p minor wikipedia-dark.user.css",
+    "major": "npx ver -p major wikipedia-dark.user.css",
+    "perfectionist": "npx perfectionist wikipedia-dark.user.css wikipedia-dark.user.css --indentSize 2 --maxAtRuleLength 250",
+    "stylelint": "npx stylelint --silent --color -- wikipedia-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
-    "update": "updates -cu && npm install"
+    "update": "npx updates -cu && npm install"
   }
 }
