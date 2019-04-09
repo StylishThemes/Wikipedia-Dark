@@ -302,9 +302,8 @@ domain("wiki.rpcs3.net") {
   div:not([style*="-color"]), div[style*="background-color"],
   span:not([class*="color"]), table:not(.hp-portalen),
   tr:not([style*="border-bottom"]), th,
-  td:not([style*="border-bottom"]):not([style*="border-top"]),
-  h1, h2, h3, h4, h5, h6, ul, li, input,
-  select, #bodyContent code, .lang-list-button:hover,
+  td:not([style*="border-bottom"]):not([style*="border-top"]), h1, h2, h3, h4,
+  h5, h6, ul, li, input, select, #bodyContent code, .lang-list-button:hover,
   .oo-ui-buttonElement-button {
     border-color: #555 !important;
   }
@@ -352,7 +351,7 @@ domain("wiki.rpcs3.net") {
     border-width: 1px !important;
   }
   /* arrow down */
-  .referencetooltip > li + li, .referencetooltip > li + li::after {
+  .referencetooltip > li + li, .referencetooltip > li + li:after {
     border-top-color: #222 !important;
     border-right-color: transparent !important;
     border-left-color: transparent !important;
@@ -363,7 +362,7 @@ domain("wiki.rpcs3.net") {
   .referencetooltip.RTflipped > li + li {
     border-bottom-color: #222 !important;
   }
-  .referencetooltip.RTflipped > li + li::after {
+  .referencetooltip.RTflipped > li + li:after {
     border-bottom-color: transparent !important;
   }
   /* Bookmark Icon */
@@ -389,7 +388,7 @@ domain("wiki.rpcs3.net") {
   }
   /*** Text ***/
   .wikitable tr:not([style*="color:black" i]) th:not([style*="color: black" i]),
-  table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i] > td > * ,
+  table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i] > td > *,
   tr.ext-infobox-header th, tr.ext-infobox-header span {
     color: #fff !important;
   }
@@ -471,20 +470,19 @@ domain("wiki.rpcs3.net") {
     display: table-cell !important;
     vertical-align: middle !important;
   }
-  #p-logo a::before, #p-logo a::after {
+  #p-logo a:before, #p-logo a:after {
     display: block !important;
     background: inherit !important;
     content: "" !important;
   }
-  #p-logo a::before {
+  #p-logo a:before {
     background-position: center 0 !important;
     filter: brightness(60.5%) !important;
     height: 108px !important;
   }
-  #p-logo a::after {
+  #p-logo a:after {
     background-position: center -108px !important;
     filter: invert(60.5%) !important;
     height: 47px !important;
-  }
   }
 }
