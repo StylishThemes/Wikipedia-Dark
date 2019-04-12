@@ -13,7 +13,7 @@
     "perfectionist": "^2.4.0",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
-    "updates": "^8.0.0",
+    "updates": "^8.0.1",
     "ver": "^4.1.0"
   },
   "scripts": {
