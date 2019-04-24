@@ -68,12 +68,13 @@ domain("wiki.rpcs3.net") {
   }
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption, div,
-  span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]),
+  span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]):not([class*="oo-ui-labelElement-label"]),
   p code, label code, dl code, .oo-ui-widget div, .oo-ui-widget label {
     color: #9a9a9a;
   }
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
   div[style*="color"], input[type="search"], input[type="submit"],
+  .oo-ui-buttonElement-button, .oo-ui-buttonElement-button:hover,
   input[type="number"], select, .suggestions-result, input,
   .central-featured-lang .link-box em, .central-featured-lang .link-box small {
     color: #9a9a9a !important;
@@ -87,8 +88,9 @@ domain("wiki.rpcs3.net") {
   legend .oo-ui-labelElement-label, .cnotice-message p {
     color: #ddd !important;
   }
-  a:hover, a:hover span, #toc a:hover, #toc a:hover span,
-  .suggestions-result .highlight, .suggestions-special .special-query {
+  a:hover, a:hover span:not(.oo-ui-labelElement-label), #toc a:hover,
+  #toc a:hover span, .suggestions-result .highlight,
+  .suggestions-special .special-query {
     color: #fff !important;
   }
   /* text selection */
@@ -113,9 +115,23 @@ domain("wiki.rpcs3.net") {
     background-attachment: var(--bg-attachment) !important;
     /*[[bg-options]]*/
   }
-  .mw-ui-button, .mw-ui-button *, button[type="submit"] {
+  .mw-ui-button, .mw-ui-button *, button[type="submit"],
+  .pure-button-primary-progressive,
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button,
+  .mw-ui-button.mw-ui-progressive {
     background-color: var(--base-color) !important;
+    border-color: transparent !important;
     color: #fff !important;
+  }
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #d33 !important;
+  }
+  .mw-ui-button.mw-ui-progressive:hover, .pure-button-primary-progressive:hover,
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover,
+  .mw-ui-button.mw-ui-progressive:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)) !important;
   }
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar,
   #p-cactions-label, .client-js #preftoc, .client-js #preftoc li,
@@ -228,9 +244,14 @@ domain("wiki.rpcs3.net") {
   .keyboard-key {
     box-shadow: .1em .2em .2em #444 !important;
   }
-  .mw-mmv-ttf-ellipsis, .navpopup, .oo-ui-popupWidget-popup,
-  .oo-ui-buttonElement-button, input + span, .pure-form input[type=search] {
+  .mw-mmv-ttf-ellipsis, .navpopup, .oo-ui-popupWidget-popup, input + span,
+  .pure-form input[type=search] {
     box-shadow: none !important;
+  }
+  .pure-button-primary-progressive:focus,
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus:not(:active),
+  .mw-ui-button.mw-ui-progressive:focus:not(:active) {
+    box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 2px #fff !important;
   }
   hr {
     background-color: transparent !important;
@@ -297,7 +318,8 @@ domain("wiki.rpcs3.net") {
     background-color: #321 !important;
   }
   /*** Border ***/
-  fieldset, button[type="submit"], .oo-ui-buttonElement-button:focus {
+  fieldset, button[type="submit"]:not(.pure-button-primary-progressive),
+  .oo-ui-buttonElement-button:focus:not(:active) {
     border-color: var(--base-color) !important;
   }
   div:not([style*="-color"]), div[style*="background-color"],
@@ -396,6 +418,12 @@ domain("wiki.rpcs3.net") {
   .CategoryTreeEmptyBullet, .table-na, .infobox, .hp-portalen a span {
     color: #ccc !important;
   }
+  .oo-ui-buttonElement-button:hover {
+    color: #bcbcbc !important;
+  }
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
+    color: #ff4242 !important;
+  }
   /*** Misc ***/
   #p-cactions li.selected a, #p-cactions li a, #p-cactions li a:hover {
     padding: 0 1em .1em !important;
@@ -430,6 +458,18 @@ domain("wiki.rpcs3.net") {
   td.diff-addedline .diffchange, .wikEdDiffInsert {
     background-color: rgba(0, 112, 213, .6) !important;
     color: #ddd !important;
+  }
+  .oo-ui-buttonElement-button:active, .pure-button-primary-progressive:active,
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
+  .mw-ui-button.mw-ui-progressive:active,
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:active {
+    filter: brightness(72.5%) !important;
+  }
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:focus:not(:active),
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-iconElement > .oo-ui-buttonElement-button:focus:not(:active),
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-labelElement > .oo-ui-buttonElement-button:focus:not(:active) {
+    border-color: var(--base-color) !important;
+    box-shadow: inset 0 0 0 1px var(--base-color) !important;
   }
   /*** invert images ***/
   img[title="Wikipedia"], .bookshelf-container .bookend,
