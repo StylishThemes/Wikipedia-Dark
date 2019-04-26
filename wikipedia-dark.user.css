@@ -69,7 +69,8 @@ domain("wiki.rpcs3.net") {
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption, div,
   span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]):not([class*="oo-ui-labelElement-label"]),
-  p code, label code, dl code, .oo-ui-widget div, .oo-ui-widget label {
+  p code, label code, dl code, .oo-ui-widget div, .oo-ui-widget label,
+  #pagehistory li.selected {
     color: #9a9a9a;
   }
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
