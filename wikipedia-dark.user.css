@@ -70,7 +70,7 @@ domain("wiki.rpcs3.net") {
   td, p, li, th:not([style*="background"]), caption, div,
   span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]):not([class*="oo-ui-labelElement-label"]),
   p code, label code, dl code, .oo-ui-widget div, .oo-ui-widget label,
-  #pagehistory li.selected {
+  #pagehistory li.selected, #mwe-popups-settings main form label {
     color: #9a9a9a;
   }
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
@@ -86,7 +86,9 @@ domain("wiki.rpcs3.net") {
   a:visited, #toc a:visited, #toc a:visited span {
     color: var(--visited-color) !important;
   }
-  legend .oo-ui-labelElement-label, .cnotice-message p {
+  legend .oo-ui-labelElement-label, .cnotice-message p,
+  #mwe-popups-settings header h1, #mwe-popups-settings main form label > span,
+  .mwe-popups-settings-help p {
     color: #ddd !important;
   }
   a:hover, a:hover span:not(.oo-ui-labelElement-label), #toc a:hover,
@@ -182,7 +184,7 @@ domain("wiki.rpcs3.net") {
   #mw-searchoptions, .mw-advancedSearch-namespace-selection,
   td[style*="background:#fff2e6" i], td[style*="background:#F9F9F0"],
   td[style*="background:#F4F9F0"], td[style*="background:#F9F0F0"],
-  td[style*="background:#f0f0f0"] {
+  td[style*="background:#f0f0f0"], #mwe-popups-settings {
     background-color: #222 !important;
   }
   body .ui-button {
@@ -328,7 +330,7 @@ domain("wiki.rpcs3.net") {
   tr:not([style*="border-bottom"]), th,
   td:not([style*="border-bottom"]):not([style*="border-top"]), h1, h2, h3, h4,
   h5, h6, ul, li, input, select, #bodyContent code, .lang-list-button:hover,
-  .oo-ui-buttonElement-button {
+  .oo-ui-buttonElement-button, #mwe-popups-settings, #mwe-popups-settings header {
     border-color: #555 !important;
   }
   td[style*="border-bottom"] {
@@ -491,6 +493,12 @@ domain("wiki.rpcs3.net") {
   .central-textlogo__image, .unicode.haudio a img {
     filter: invert(60.5%) !important;
   }
+  .mw-ui-icon-popups-close:before {
+    filter: invert(86.5%) !important;
+  }
+  .mw-ui-icon-footer::before {
+    filter: invert(86.5%) !important;
+  }
   .central-featured-logo {
     filter: brightness(60.5%) !important;
   }
@@ -503,6 +511,13 @@ domain("wiki.rpcs3.net") {
   }
   .rt-tooltipTail {
     background: #555 !important;
+  }
+  /*** Page preview settings ***/
+  .mwe-popups-overlay {
+    background-color: rgba(34, 34, 34, .75) !important;
+  }
+  #mwe-popups-settings {
+    box-shadow: 0 2px 2px 0 rgba(85, 85, 85, .25) !important;
   }
 }
 @-moz-document domain("wikipedia.org") {
