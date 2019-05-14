@@ -427,6 +427,11 @@ domain("wiki.rpcs3.net") {
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
     color: #ff4242 !important;
   }
+  /*** Quotes ***/
+  .ts-Начало_цитаты-quote {
+    background-color: transparent !important;
+    border: none !important;
+  }
   /*** Misc ***/
   #p-cactions li.selected a, #p-cactions li a, #p-cactions li a:hover {
     padding: 0 1em .1em !important;
