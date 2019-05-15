@@ -428,7 +428,7 @@ domain("wiki.rpcs3.net") {
     color: #ff4242 !important;
   }
   /*** Quotes ***/
-  .ts-Начало_цитаты-quote {
+  blockquote {
     background-color: transparent !important;
     border: none !important;
   }
