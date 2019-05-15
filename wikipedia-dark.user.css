@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Wikipedia Dark
 @namespace    StylishThemes
-@version      2.1.2
+@version      2.1.3
 @description  Wikipedia Dark theme
 @author       StylishThemes
 @homepageURL  https://github.com/StylishThemes/Wikipedia-Dark
@@ -70,7 +70,8 @@ domain("wiki.rpcs3.net") {
   td, p, li, th:not([style*="background"]), caption, div,
   span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]):not([class*="oo-ui-labelElement-label"]),
   p code, label code, dl code, .oo-ui-widget div, .oo-ui-widget label,
-  #pagehistory li.selected, #mwe-popups-settings main form label, #pt-anonuserpage {
+  #pagehistory li.selected, #mwe-popups-settings main form label,
+  #pt-anonuserpage {
     color: #9a9a9a;
   }
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
@@ -483,8 +484,8 @@ domain("wiki.rpcs3.net") {
   img[title="Wikipedia"], .bookshelf-container .bookend,
   img.mwe-math-fallback-image-inline, #mw-wsmfinal-close,
   img[src*="Speaker_Icon"], .infobox img[alt*="structure"][src*=".svg"],
-  img[src*=".svg"][height="16"],
-  img[src*=".svg"][height="17"], img[src*=".svg"][height="18"],
+  img[src*=".svg"][height="16"], img[src*=".svg"][height="17"],
+  img[src*=".svg"][height="18"],
   .oo-ui-iconElement-icon:not(.mw-echo-notifications-badge), .RTsettings,
   #gtx-host, .jfk-bubble-closebtn,
   #pt-notifications-notice .mw-echo-notifications-badge:before,
