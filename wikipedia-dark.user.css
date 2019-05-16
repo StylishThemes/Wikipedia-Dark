@@ -207,7 +207,8 @@ domain("wiki.rpcs3.net") {
   h2[style*="background:#efefef" i], tr[bgcolor*="#eee" i],
   tr[style*="background-color:#eee" i],
   .wikitable.charts-zebragrey > tbody > tr:nth-of-type(even),
-  tr[style*="background:#fbf8d6" i], table.flextable td, table.nmbox td {
+  tr[style*="background:#fbf8d6" i], table.flextable td, table.nmbox td,
+  tr[style*="background-color:#f7f7f7"] {
     background-color: #282828 !important;
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
