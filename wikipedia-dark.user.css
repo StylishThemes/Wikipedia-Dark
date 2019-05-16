@@ -41,7 +41,8 @@ domain("wikidata.org"),
 domain("mediawiki.org"),
 domain("wikimedia.org"),
 domain("wiktionary.org"),
-domain("wiki.rpcs3.net") {
+domain("wiki.rpcs3.net"),
+domain("wiki.archlinux.org") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
