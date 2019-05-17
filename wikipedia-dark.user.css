@@ -153,7 +153,8 @@ domain("wiki.rpcs3.net") {
   .ui-widget-overlay {
     background: rgba(0, 0, 0, .8) !important;
   }
-  #bodyContent pre, #bodyContent code, span.plainlinks {
+  #bodyContent pre, #bodyContent code, span.plainlinks,
+  td[style*="border-bottom: 1px solid #eee; background-color:#ffffff"] {
     background-color: #111 !important;
     border-color: #555 !important;
     color: #b9b9b9 !important;
@@ -187,7 +188,8 @@ domain("wiki.rpcs3.net") {
   #mw-searchoptions, .mw-advancedSearch-namespace-selection,
   td[style*="background:#fff2e6" i], td[style*="background:#F9F9F0"],
   td[style*="background:#F4F9F0"], td[style*="background:#F9F0F0"],
-  td[style*="background:#f0f0f0"], #mwe-popups-settings {
+  td[style*="background:#f0f0f0"], #mwe-popups-settings,
+  th[style*="border-bottom: 1px solid #eee; background-color:#ffffff;"] {
     background-color: #222 !important;
   }
   body .ui-button {
