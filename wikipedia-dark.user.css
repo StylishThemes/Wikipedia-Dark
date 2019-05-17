@@ -84,7 +84,8 @@ domain("wiki.rpcs3.net") {
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel {
     color: var(--base-color) !important;
   }
-  a:visited, #toc a:visited, #toc a:visited span {
+  a:visited, #toc a:visited, #toc a:visited span,
+  .vectorTabs li.new:not(.selected) a:visited {
     color: var(--visited-color) !important;
   }
   legend .oo-ui-labelElement-label, .cnotice-message p,
@@ -107,7 +108,8 @@ domain("wiki.rpcs3.net") {
     color: #fff !important;
   }
   /*** Red links (non-existant pages) ***/
-  a.new {
+  div.vectorTabs li.new:not(.selected) a, .mw-plusminus-neg, a.new,
+  #p-personal a.new {
     color: #980000 !important;
   }
   /*** Background ***/
