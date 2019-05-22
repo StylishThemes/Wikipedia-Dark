@@ -433,6 +433,9 @@ domain("wiki.rpcs3.net") {
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
     color: #ff4242 !important;
   }
+  .mw-plusminus-pos {
+    color: #007f00 !important;
+  }
   /*** Quotes ***/
   blockquote {
     background-color: transparent !important;
