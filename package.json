@@ -20,13 +20,12 @@
     "authors": "bash tools/authors",
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
-    "lint": "npm run eslint && npm run stylelint",
     "patch": "npx ver -p patch wikipedia-dark.user.css",
     "minor": "npx ver -p minor wikipedia-dark.user.css",
     "major": "npx ver -p major wikipedia-dark.user.css",
     "perfectionist": "npx perfectionist wikipedia-dark.user.css wikipedia-dark.user.css --indentSize 2 --maxAtRuleLength 250",
     "stylelint": "npx stylelint --silent --color -- wikipedia-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
-    "update": "npx updates -cu && npm install"
+    "update": "npx updates -cu && rm -rf node_modules && npm install"
   }
 }
