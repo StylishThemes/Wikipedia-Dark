@@ -89,7 +89,7 @@ domain("wiki.rpcs3.net") {
   .oo-ui-buttonElement-button, .oo-ui-buttonElement-button:hover,
   input[type="number"], select, .suggestions-result, input,
   .central-featured-lang .link-box em, .central-featured-lang .link-box small,
-  div.flaggedrevs_preview {
+  div.flaggedrevs_preview, div.plainlinks {
     color: #9a9a9a !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel {
@@ -101,7 +101,7 @@ domain("wiki.rpcs3.net") {
   }
   legend .oo-ui-labelElement-label, .cnotice-message p,
   #mwe-popups-settings header h1, #mwe-popups-settings main form label > span,
-  .mwe-popups-settings-help p {
+  .mwe-popups-settings-help p, font[color="black"] {
     color: #ddd !important;
   }
   a:hover, a:hover span:not(.oo-ui-labelElement-label), #toc a:hover,
@@ -171,7 +171,8 @@ domain("wiki.rpcs3.net") {
     color: #b9b9b9 !important;
   }
   td[style*="background:#FFFFFF" i], .jfk-bubble, .navpopup,
-  .popup_drop:hover .popup_menu, .popup_drop .popup_menu:hover {
+  .popup_drop:hover .popup_menu, .popup_drop .popup_menu:hover,
+  td[style*="background:#f5fffa"] {
     background-color: #181818 !important;
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
@@ -239,7 +240,9 @@ domain("wiki.rpcs3.net") {
   .infobox td[style*="background"], td[style*="background:#F2F2F2" i],
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i], .tlheader,
   th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i],
-  th[style*="#FFEBAD" i], .usermessage, table.nmbox th {
+  th[style*="#FFEBAD" i], .usermessage, table.nmbox th,
+  tr[style*="#eaecf0" i], td[style*="#eaecf0" i],
+  p[style*="background-color:#F7FAFC" i] {
     background-color: #333 !important;
   }
   /* remove background image/gradient */
@@ -272,6 +275,9 @@ domain("wiki.rpcs3.net") {
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus:not(:active),
   .mw-ui-button.mw-ui-progressive:focus:not(:active) {
     box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 2px #fff !important;
+  }
+  strong, em {
+    text-shadow: none !important;
   }
   hr {
     background-color: transparent !important;
