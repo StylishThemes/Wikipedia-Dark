@@ -37,21 +37,21 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document domain("wikipedia.org"),
-domain("wikidata.org"),
-domain("mediawiki.org"),
-domain("wikitech.wikimedia.org"),
-domain("otrs-wiki.wikimedia.org"),
-domain("commons.wikimedia.org"),
-domain("meta.wikimedia.org"),
-domain("species.wikimedia.org"),
-domain("wiktionary.org"),
-domain("wikivoyage.org"),
-domain("wikiversity.org"),
-domain("wikinews.org"),
-domain("wikiquote.org"),
-domain("wikisource.org"),
-domain("wikibooks.org"),
-domain("wiki.rpcs3.net") {
+               domain("wikidata.org"),
+               domain("mediawiki.org"),
+               domain("wikitech.wikimedia.org"),
+               domain("otrs-wiki.wikimedia.org"),
+               domain("commons.wikimedia.org"),
+               domain("meta.wikimedia.org"),
+               domain("species.wikimedia.org"),
+               domain("wiktionary.org"),
+               domain("wikivoyage.org"),
+               domain("wikiversity.org"),
+               domain("wikinews.org"),
+               domain("wikiquote.org"),
+               domain("wikisource.org"),
+               domain("wikibooks.org"),
+               domain("wiki.rpcs3.net") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
@@ -62,7 +62,8 @@ domain("wiki.rpcs3.net") {
     --bg-attachment: /*[[bg-attachment]]*/;
   }
   /* transparent background */
-  div, span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
+  div:not([class*="mw-echo-ui"]),
+  span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
   .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, #bodyContent,
   .referencetooltip > li + li, div.vectorTabs ul li,
   tr[style*="background:#F5FFFA" i], th[style*="background-color: #fff" i],
@@ -108,6 +109,19 @@ domain("wiki.rpcs3.net") {
   #toc a:hover span, .suggestions-result .highlight,
   .suggestions-special .special-query {
     color: #fff !important;
+  }
+  .mw-echo-ui-toggleReadCircleButtonWidget-circle {
+    background-color: #72777d;
+  }
+  .mw-echo-ui-toggleReadCircleButtonWidget-circle.mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
+    background-color: transparent;
+    border: 1px solid #72777d;
+  }
+  .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle {
+    background-color: dimgray;
+  }
+  .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
+    background-color: darkslategray;
   }
   /* text selection */
   ::selection {
@@ -181,7 +195,7 @@ domain("wiki.rpcs3.net") {
   #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li,
   .suggestions, .mw-ui-button[style*="background"],
   .mw-ui-button[style*="background"] *, .wikiEditor-ui,
-  table.navbox.collapsible tr:nth-child(2) > td, div.menu,
+  table.navbox.collapsible tr:nth-child(2) > td, div.menu, ul.menu,
   .oo-ui-popupWidget-popup, .oo-ui-buttonElement-button, .mw-notification,
   .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall, .ui-widget-content,
   .oo-ui-window-body, #pagehistory li.selected, .tracklist tr,
@@ -240,9 +254,8 @@ domain("wiki.rpcs3.net") {
   .infobox td[style*="background"], td[style*="background:#F2F2F2" i],
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i], .tlheader,
   th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i],
-  th[style*="#FFEBAD" i], .usermessage, table.nmbox th,
-  tr[style*="#eaecf0" i], td[style*="#eaecf0" i],
-  p[style*="background-color:#F7FAFC" i] {
+  th[style*="#FFEBAD" i], .usermessage, table.nmbox th, tr[style*="#eaecf0" i],
+  td[style*="#eaecf0" i], p[style*="background-color:#F7FAFC" i] {
     background-color: #333 !important;
   }
   /* remove background image/gradient */
@@ -459,9 +472,6 @@ domain("wiki.rpcs3.net") {
     border: none !important;
   }
   /*** Misc ***/
-  #p-cactions li.selected a, #p-cactions li a, #p-cactions li a:hover {
-    padding: 0 1em .1em !important;
-  }
   ul, .portlet li {
     list-style-image: none !important;
   }
@@ -535,6 +545,9 @@ domain("wiki.rpcs3.net") {
   }
   .oo-ui-icon-bell, .mw-widget-calendarWidget-day-additional {
     opacity: .7 !important;
+  }
+  #footer-icons img {
+    filter: brightness(70%);
   }
   /*** Reference tooltips ***/
   .rt-tooltip, .rt-tooltipTail:after {
