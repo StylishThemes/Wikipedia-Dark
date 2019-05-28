@@ -62,8 +62,7 @@
     --bg-attachment: /*[[bg-attachment]]*/;
   }
   /* transparent background */
-  div:not([class*="mw-echo-ui"]),
-  span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
+  div, span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
   .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, #bodyContent,
   .referencetooltip > li + li, div.vectorTabs ul li,
   tr[style*="background:#F5FFFA" i], th[style*="background-color: #fff" i],
@@ -110,18 +109,21 @@
   .suggestions-special .special-query {
     color: #fff !important;
   }
-  .mw-echo-ui-toggleReadCircleButtonWidget-circle {
-    background-color: #72777d;
+  div[class*="mw-echo-ui"], span[class*="mw-echo-ui"] {
+    background-color: inherit !important;
+  }
+  div.mw-echo-ui-toggleReadCircleButtonWidget-circle {
+    background-color: #72777d !important;
   }
   .mw-echo-ui-toggleReadCircleButtonWidget-circle.mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
-    background-color: transparent;
+    background-color: transparent !important;
     border: 1px solid #72777d;
   }
   .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle {
-    background-color: dimgray;
+    background-color: dimgray !important;
   }
   .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
-    background-color: darkslategray;
+    background-color: darkslategray !important;
   }
   /* text selection */
   ::selection {
