@@ -481,6 +481,15 @@
   .oo-ui-tagMultiselectWidget-handle input {
     border: none !important;
   }
+  .popup_history_row_even {
+    background: #333;
+  }
+  ins.popupDiff {
+    background: #333;
+  }
+  del.popupDiff {
+    background: #222;
+  }
   /*** diff pages ***/
   .diff-context {
     background-color: #222 !important;
