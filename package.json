@@ -7,6 +7,9 @@
   "repository": "https://github.com/StylishThemes/Wikipedia-Dark",
   "homepage": "https://github.com/StylishThemes/Wikipedia-Dark",
   "main": "wikipedia-dark.user.css",
+  "engines": {
+    "node": ">=10"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-silverwind": "^3.0.2",
