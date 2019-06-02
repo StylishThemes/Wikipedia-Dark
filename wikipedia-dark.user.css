@@ -188,6 +188,13 @@
   div#mw-content-text div.mw-parser-output h2:not([id^="mp-"]) {
     background-color: transparent !important;
   }
+  .wpb .portal ul, .boilerplate .pullquote, .module-shortcutboxplain,
+  .mw-trackedTemplate {
+    background-color: #333 !important;
+  }
+  .portal, .sistersitebox, .boilerplate, .NavFrame, .divbox {
+    background-color: #222 !important;
+  }
   /* fading linear gradient */
   .mwe-popups-extract:after {
     background-image: linear-gradient(to right, rgb(34, 34, 34, 0), rgb(34, 34, 34, 1) 50%) !important;
