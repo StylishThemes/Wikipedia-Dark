@@ -110,6 +110,32 @@
   .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
     background-color: darkslategray !important;
   }
+  .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th {
+    background-color: #333 !important;
+  }
+  .mw-collapsible:not([class*="navbox-"]) td {
+    background-color: #222 !important;
+  }
+  .wikipediauserbox td {
+    color: #999 !important;
+  }
+  .oo-ui-textInputWidget .oo-ui-inputWidget-input {
+    color: #777;
+  }
+  .oo-ui-toolbar-bar, .oo-ui-window-head, .oo-ui-window-foot,
+  .oo-ui-popupToolGroup-tools {
+    background: #222 !important;
+  }
+  table.diff, td.diff-otitle, td.diff-ntitle {
+    background-color: #333;
+  }
+  .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:hover,
+  .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active,
+  .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active:focus,
+  .oo-ui-tool.oo-ui-widget-enabled.oo-ui-tool-active > .oo-ui-tool-link,
+  .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
+    background-color: #333;
+  }
   /* text selection */
   ::selection {
     background-color: var(--base-color) !important;
@@ -122,7 +148,7 @@
   /*** Red links (non-existant pages) ***/
   div.vectorTabs li.new:not(.selected) a, .mw-plusminus-neg, a.new,
   #p-personal a.new {
-    color: #980000 !important;
+    color: #e33 !important;
   }
   /*** Background ***/
   html, body {
@@ -157,6 +183,10 @@
   .ext-cards-card-list h3:after, #simpleSearch, .mw-mmv-ttf-ellipsis:before,
   .mw-advancedSearch-fieldContainer {
     background-image: none !important;
+  }
+  .metadata.plainlinks.stub,
+  div#mw-content-text div.mw-parser-output h2:not([id^="mp-"]) {
+    background-color: transparent !important;
   }
   /* fading linear gradient */
   .mwe-popups-extract:after {
