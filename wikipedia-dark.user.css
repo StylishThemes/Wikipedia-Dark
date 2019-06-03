@@ -148,7 +148,7 @@
   /*** Red links (non-existant pages) ***/
   div.vectorTabs li.new:not(.selected) a, .mw-plusminus-neg, a.new,
   #p-personal a.new {
-    color: #e33 !important;
+    color: #f11 !important;
   }
   /*** Background ***/
   html, body {
