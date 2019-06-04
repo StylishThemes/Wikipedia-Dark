@@ -147,9 +147,8 @@
   .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget {
     color: #777;
   }
-  .oo-ui-labelElement .oo-ui-labelElement-label,
-  .oo-ui-labelElement.oo-ui-labelElement-label {
-    color: #999;
+  .oo-ui-messageDialog-title, .oo-ui-messageDialog-message {
+    color: #9a9a9a;
   }
   #language-settings-dialog {
     background-color: #222 !important;
@@ -184,10 +183,6 @@
     background-color: var(--base-color) !important;
     border-color: transparent !important;
     color: #fff !important;
-  }
-  .oo-ui-buttonElement.oo-ui-labelElement > input.oo-ui-buttonElement-button,
-  .oo-ui-buttonElement.oo-ui-labelElement > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {
-    color: #fff;
   }
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
     background-color: transparent !important;
