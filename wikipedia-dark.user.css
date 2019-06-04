@@ -611,6 +611,27 @@
   #mwe-popups-settings {
     box-shadow: 0 2px 2px 0 rgba(85, 85, 85, .25) !important;
   }
+  /* wikidata fixes */
+  .wikibase-entitytermsforlanguagelistview-header-row th {
+    background-color: #333 !important;
+  }
+  .wikibase-sitelinkgroupview, .ui-widget.ui-suggester-list {
+    background-color: #222 !important;
+  }
+  .wb-icon, .articlepreview-button, .wb-help-field-hint {
+    filter: invert(80%);
+  }
+  .tipsy-inner {
+    color: #9a9a9a;
+    background-color: #222 !important;
+  }
+  .articlepreview.open {
+    background-color: #222 !important;
+  }
+  .articlepreview .toggler {
+    filter: invert(80%);
+    background-color: #eee !important;
+  }
 }
 @-moz-document domain("wikipedia.org") {
   /*** Navigation menu logo ***/
