@@ -136,6 +136,21 @@
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
     background-color: #333;
   }
+  .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:checked + span,
+  .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:indeterminate + span {
+    background-color: #36c !important;
+    filter: none !important;
+  }
+  .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted {
+    background-color: #333 !important;
+  }
+  .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget {
+    color: #777;
+  }
+  .oo-ui-labelElement .oo-ui-labelElement-label,
+  .oo-ui-labelElement.oo-ui-labelElement-label {
+    color: #999;
+  }
   /* text selection */
   ::selection {
     background-color: var(--base-color) !important;
