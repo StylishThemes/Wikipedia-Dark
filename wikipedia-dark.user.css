@@ -530,6 +530,15 @@
   del.popupDiff {
     background: #222;
   }
+  .wikEdFrameBodySyntax {
+    filter: invert(100%);
+  }
+  .wikEdFrameBodyPlain {
+    background: #111 !important;
+  }
+  #proveit {
+    background-color: #222 !important;
+  }
   /*** diff pages ***/
   .diff-context {
     background-color: #222 !important;
