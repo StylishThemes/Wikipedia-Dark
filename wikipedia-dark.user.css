@@ -36,7 +36,7 @@
 }
 @preprocessor uso
 ==/UserStyle== */
-@-moz-document regexp("https?:\\/\\/[^?]*((wikipedia|mediawiki|wikibooks|wikidata|wikinews|wikiquote|wikisource|wikiversity|wikivoyage|wiktionary)|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.+"), domain("wiki.rpcs3.net") {
+@-moz-document regexp("https?:\\/\\/([a-zA-Z0-9\\-]{2,}\\.(wikipedia|mediawiki|wikibooks|wikidata|wikinews|wikiquote|wikisource|wikiversity|wikivoyage|wiktionary)|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.+"), domain("wiki.rpcs3.net") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
