@@ -151,6 +151,9 @@
   .oo-ui-labelElement.oo-ui-labelElement-label {
     color: #999;
   }
+  #language-settings-dialog {
+    background-color: #222 !important;
+  }
   /* text selection */
   ::selection {
     background-color: var(--base-color) !important;
@@ -618,6 +621,16 @@
   .wikibase-sitelinkgroupview, .ui-widget.ui-suggester-list {
     background-color: #222 !important;
   }
+  li.wikibase-sitelinkview.listview-item span.wikibase-sitelinkview-siteid-container {
+    background-color: #333 !important;
+  }
+  ul.wikibase-snaktypeselector-menu.ui-menu {
+    background-color: #222 !important;
+  }
+  .wikibase-snaktypeselector-menu .ui-state-active,
+  .wikibase-snaktypeselector-menu .ui-state-focus {
+    background: #333 !important;
+  }
   .wb-icon, .articlepreview-button, .wb-help-field-hint {
     filter: invert(80%);
   }
@@ -631,6 +644,19 @@
   .articlepreview .toggler {
     filter: invert(80%);
     background-color: #eee !important;
+  }
+  .wikibase-entityview textarea {
+    color: #9a9a9a;
+  }
+  .imeselector-toggle {
+    filter: brightness(200%);
+  }
+  .imeselector-menu {
+    filter: brightness(50%);
+    background-color: #222 !important;
+  }
+  .imeselector-menu .selectable-row:hover {
+    background-color: #333;
   }
 }
 @-moz-document domain("wikipedia.org") {
