@@ -185,6 +185,10 @@
     border-color: transparent !important;
     color: #fff !important;
   }
+  .oo-ui-buttonElement.oo-ui-labelElement > input.oo-ui-buttonElement-button,
+  .oo-ui-buttonElement.oo-ui-labelElement > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {
+    color: #fff;
+  }
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
     background-color: transparent !important;
     border-color: transparent !important;
@@ -337,6 +341,31 @@
   hr {
     background-color: transparent !important;
     border-color: #555 !important;
+  }
+  .ve-init-mw-tempWikitextEditorWidget {
+    background-color: #222;
+  }
+  .userSummaryButtons a, #userSummaryButtons a {
+    background-color: #333;
+    border-color: #333;
+  }
+  .userSummaryButtons a:hover, #userSummaryButtons a:hover {
+    background-color: #444;
+    border-color: #444;
+  }
+  #btn_opisy_zm_waxon_off {
+    background-color: #333 !important;
+    border-color: #333 !important;
+  }
+  .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
+    background-color: #222;
+  }
+  .mw-ui-icon.mw-ui-icon-before::before, .mw-ui-icon.mw-ui-icon-element::before {
+    filter: invert(80%);
+  }
+  div > .flow-menu li a,
+  .flow-component.flow-board-page .flow-board-header .side-rail-toggle-button {
+    background-color: #222 !important;
   }
   /*** Background Color Styles ***/
   /* Red */
@@ -608,6 +637,12 @@
   }
   #footer-icons img {
     filter: brightness(70%);
+  }
+  #mw-indicator-mw-helplink a {
+    filter: invert(80%) hue-rotate(180deg);
+  }
+  .oo-ui-indicator-down {
+    filter: invert(100%);
   }
   /*** Reference tooltips ***/
   .rt-tooltip, .rt-tooltipTail:after {
