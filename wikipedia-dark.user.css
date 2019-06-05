@@ -110,6 +110,9 @@
   .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
     background-color: darkslategray !important;
   }
+  .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label {
+    color: #919191;
+  }
   .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th {
     background-color: #333 !important;
   }
@@ -165,7 +168,7 @@
   /*** Red links (non-existant pages) ***/
   div.vectorTabs li.new:not(.selected) a, .mw-plusminus-neg, a.new,
   #p-personal a.new {
-    color: #f11 !important;
+    color: #c22 !important;
   }
   /*** Background ***/
   html, body {
@@ -224,7 +227,7 @@
   .ui-widget-overlay {
     background: rgba(0, 0, 0, .8) !important;
   }
-  .mw-body-content pre, .mw-body-content code, span.plainlinks, .mw-code,
+  .mw-body-content pre, .mw-body-content code, span.plainlinks,
   td[style*="border-bottom: 1px solid #eee; background-color:#ffffff"] {
     background-color: #111 !important;
     border-color: #555 !important;
@@ -419,8 +422,9 @@
     background-color: #212c43 !important;
   }
   /* Purple */
-  #mp-lower #mp-bottom h2, #mp-bottom h2 span, th[style*="background:lavender" i],
-  td[style*="background:lavender" i], th[style*="background:#edf" i] {
+  #mp-lower #mp-bottom h2, #mp-bottom h2 span,
+  th[style*="background:lavender" i], td[style*="background:lavender" i],
+  th[style*="background:#edf" i] {
     background-color: #382b4a !important;
   }
   /* Brown */
@@ -628,6 +632,9 @@
   }
   .oo-ui-pendingElement-pending > * {
     filter: invert(100%) !important;
+  }
+  .oo-ui-pendingElement-pending .oo-ui-widget-enabled.oo-ui-iconElement-icon {
+    filter: none !important;
   }
   .central-textlogo__image, .unicode.haudio a img {
     filter: invert(60.5%) !important;
