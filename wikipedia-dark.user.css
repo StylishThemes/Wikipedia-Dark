@@ -55,7 +55,8 @@
   .infobox span.plainlinks *, .tracklist,
   blockquote[style*="background-color: white" i], .ns-0 ul, .ns-0 ol li,
   table.flextable, table.flextable .invisible, table#noarticletext,
-  table#noarticletext table {
+  table#noarticletext table, .metadata.plainlinks.stub,
+  div#mw-content-text div.mw-parser-output h2:not([id^="mp-"]) {
     background-color: transparent !important;
   }
   .lang-list-button {
@@ -66,7 +67,9 @@
   span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]):not([class*="oo-ui-labelElement-label"]),
   p code, label code, dl code, .oo-ui-widget div, .oo-ui-widget label,
   #pagehistory li.selected, #mwe-popups-settings main form label,
-  #pt-anonuserpage {
+  #pt-anonuserpage, .oo-ui-textInputWidget .oo-ui-inputWidget-input,
+  .oo-ui-messageDialog-title, .oo-ui-messageDialog-message,
+  .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label {
     color: #9a9a9a;
   }
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
@@ -74,7 +77,7 @@
   .oo-ui-buttonElement-button, .oo-ui-buttonElement-button:hover,
   input[type="number"], select, .suggestions-result, input,
   .central-featured-lang .link-box em, .central-featured-lang .link-box small,
-  div.flaggedrevs_preview, div.plainlinks {
+  div.flaggedrevs_preview, div.plainlinks, .wikipediauserbox td {
     color: #9a9a9a !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel {
@@ -110,28 +113,18 @@
   .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
     background-color: darkslategray !important;
   }
-  .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label {
-    color: #919191;
-  }
   .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th {
     background-color: #333 !important;
   }
   .mw-collapsible:not([class*="navbox-"]) td {
     background-color: #222 !important;
   }
-  .wikipediauserbox td {
-    color: #9a9a9a !important;
-  }
-  .oo-ui-textInputWidget .oo-ui-inputWidget-input {
-    color: #9a9a9a;
-  }
   .oo-ui-toolbar-bar, .oo-ui-window-head, .oo-ui-window-foot,
-  .oo-ui-popupToolGroup-tools {
+  .oo-ui-popupToolGroup-tools, #language-settings-dialog {
     background: #222 !important;
   }
-  table.diff, td.diff-otitle, td.diff-ntitle {
-    background-color: #333;
-  }
+  table.diff, td.diff-otitle, td.diff-ntitle,
+  .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted,
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:hover,
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active,
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active:focus,
@@ -144,24 +137,11 @@
     background-color: #36c !important;
     filter: none !important;
   }
-  .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted {
-    background-color: #333 !important;
-  }
   .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget {
     color: #777;
   }
-  .oo-ui-messageDialog-title, .oo-ui-messageDialog-message {
-    color: #9a9a9a;
-  }
-  #language-settings-dialog {
-    background-color: #222 !important;
-  }
   /* text selection */
-  ::selection {
-    background-color: var(--base-color) !important;
-    color: #fff !important;
-  }
-  ::-moz-selection {
+  ::selection, ::-moz-selection {
     background-color: var(--base-color) !important;
     color: #fff !important;
   }
@@ -211,10 +191,6 @@
   .ext-cards-card-list h3:after, #simpleSearch, .mw-mmv-ttf-ellipsis:before,
   .mw-advancedSearch-fieldContainer {
     background-image: none !important;
-  }
-  .metadata.plainlinks.stub,
-  div#mw-content-text div.mw-parser-output h2:not([id^="mp-"]) {
-    background-color: transparent !important;
   }
   .wpb .portal ul, .boilerplate .pullquote, .module-shortcutboxplain,
   .mw-trackedTemplate {
@@ -561,10 +537,7 @@
   .oo-ui-tagMultiselectWidget-handle input {
     border: none !important;
   }
-  .popup_history_row_even {
-    background: #333;
-  }
-  ins.popupDiff {
+  .popup_history_row_even, ins.popupDiff {
     background: #333;
   }
   del.popupDiff {
@@ -644,10 +617,7 @@
   .central-textlogo__image, .unicode.haudio a img {
     filter: invert(60.5%) !important;
   }
-  .mw-ui-icon-popups-close:before {
-    filter: invert(86.5%) !important;
-  }
-  .mw-ui-icon-footer::before {
+  .mw-ui-icon-popups-close:before, .mw-ui-icon-footer::before {
     filter: invert(86.5%) !important;
   }
   .central-featured-logo {
@@ -680,37 +650,33 @@
     box-shadow: 0 2px 2px 0 rgba(85, 85, 85, .25) !important;
   }
   /* wikidata fixes */
-  .wikibase-entitytermsforlanguagelistview-header-row th {
-    background-color: #333 !important;
-  }
-  .wikibase-sitelinkgroupview, .ui-widget.ui-suggester-list {
-    background-color: #222 !important;
-  }
+  .wikibase-entitytermsforlanguagelistview-header-row th,
   li.wikibase-sitelinkview.listview-item span.wikibase-sitelinkview-siteid-container {
     background-color: #333 !important;
   }
-  ul.wikibase-snaktypeselector-menu.ui-menu {
+  .wikibase-sitelinkgroupview, .ui-widget.ui-suggester-list,
+  .articlepreview.open, ul.wikibase-snaktypeselector-menu.ui-menu {
     background-color: #222 !important;
   }
   .wikibase-snaktypeselector-menu .ui-state-active,
   .wikibase-snaktypeselector-menu .ui-state-focus {
     background: #333 !important;
   }
-  .wb-icon, .articlepreview-button, .wb-help-field-hint {
+  .ui-entityselector-list .ui-entityselector-notfound {
+    background-color: #222;
+  }
+  .wb-icon, .articlepreview-button, .wb-help-field-hint, .ui-icon-close {
     filter: invert(80%);
   }
   .tipsy-inner {
     color: #9a9a9a;
     background-color: #222 !important;
   }
-  .articlepreview.open {
-    background-color: #222 !important;
-  }
   .articlepreview .toggler {
     filter: invert(80%);
     background-color: #eee !important;
   }
-  .wikibase-entityview textarea {
+  .wikibase-entityview textarea, .ui-listrotator {
     color: #9a9a9a;
   }
   .imeselector-toggle {
