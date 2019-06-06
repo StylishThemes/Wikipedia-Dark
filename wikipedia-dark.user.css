@@ -45,6 +45,20 @@
     --bg-custom: /*[[bg-custom]]*/;
     --bg-selected: /*[[bg-selected]]*/;
     --bg-attachment: /*[[bg-attachment]]*/;
+    --gray-1: #111;
+    --gray-2: #222;
+    --gray-3: #333;
+    --gray-4: #444;
+    --gray-5: #555;
+    --gray-7: #777;
+    --gray-c: #ccc;
+    --gray-d: #ddd;
+    --gray-e: #eee;
+    --white: #fff;
+    --gray-18: #181818;
+    --gray-28: #282828;
+    --gray-9a: #9a9a9a;
+    --gray-b9: #b9b9b9;
   }
   /* transparent background */
   div, span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
@@ -70,7 +84,7 @@
   #pt-anonuserpage, .oo-ui-textInputWidget .oo-ui-inputWidget-input,
   .oo-ui-messageDialog-title, .oo-ui-messageDialog-message,
   .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label {
-    color: #9a9a9a;
+    color: var(--gray-9a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
   div[style*="color"], input[type="search"], input[type="submit"],
@@ -78,7 +92,7 @@
   input[type="number"], select, .suggestions-result, input,
   .central-featured-lang .link-box em, .central-featured-lang .link-box small,
   div.flaggedrevs_preview, div.plainlinks, .wikipediauserbox td {
-    color: #9a9a9a !important;
+    color: var(--gray-9a) !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel {
     color: var(--base-color) !important;
@@ -90,12 +104,12 @@
   legend .oo-ui-labelElement-label, .cnotice-message p,
   #mwe-popups-settings header h1, #mwe-popups-settings main form label > span,
   .mwe-popups-settings-help p, font[color="black"] {
-    color: #ddd !important;
+    color: var(--gray-d) !important;
   }
   a:hover, a:hover span:not(.oo-ui-labelElement-label), #toc a:hover,
   #toc a:hover span, .suggestions-result .highlight,
   .suggestions-special .special-query {
-    color: #fff !important;
+    color: var(--white) !important;
   }
   div[class*="mw-echo-ui"], span[class*="mw-echo-ui"] {
     background-color: inherit !important;
@@ -114,14 +128,14 @@
     background-color: darkslategray !important;
   }
   .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th {
-    background-color: #333 !important;
+    background-color: var(--gray-3) !important;
   }
   .mw-collapsible:not([class*="navbox-"]) td {
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
   }
   .oo-ui-toolbar-bar, .oo-ui-window-head, .oo-ui-window-foot,
   .oo-ui-popupToolGroup-tools, #language-settings-dialog {
-    background: #222 !important;
+    background: var(--gray-2) !important;
   }
   table.diff, td.diff-otitle, td.diff-ntitle,
   .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted,
@@ -130,7 +144,7 @@
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active:focus,
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-tool-active > .oo-ui-tool-link,
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
-    background-color: #333;
+    background-color: var(--gray-3);
   }
   .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:checked + span,
   .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:indeterminate + span {
@@ -138,12 +152,12 @@
     filter: none !important;
   }
   .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget {
-    color: #777;
+    color: var(--gray-7);
   }
   /* text selection */
   ::selection, ::-moz-selection {
     background-color: var(--base-color) !important;
-    color: #fff !important;
+    color: var(--white) !important;
   }
   .mw-plusminus-pos {
     color: #390 !important;
@@ -155,7 +169,7 @@
   }
   /*** Background ***/
   html, body {
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
     background-image: var(--bg-selected) !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
@@ -168,7 +182,7 @@
   .mw-ui-button.mw-ui-progressive {
     background-color: var(--base-color) !important;
     border-color: transparent !important;
-    color: #fff !important;
+    color: var(--white) !important;
   }
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
@@ -178,7 +192,7 @@
   }
   .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled.oo-ui-flaggedElement-primary > .oo-ui-tool-link,
   .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary > .oo-ui-tool-link {
-    background-color: #777;
+    background-color: var(--gray-7);
   }
   .mw-ui-button.mw-ui-progressive:hover, .pure-button-primary-progressive:hover,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover,
@@ -194,10 +208,10 @@
   }
   .wpb .portal ul, .boilerplate .pullquote, .module-shortcutboxplain,
   .mw-trackedTemplate {
-    background-color: #333 !important;
+    background-color: var(--gray-3) !important;
   }
   .mw-body-content .portal, .sistersitebox, .boilerplate, .NavFrame, .divbox {
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
   }
   /* fading linear gradient */
   .mwe-popups-extract:after {
@@ -208,8 +222,8 @@
   }
   .mw-body-content pre, .mw-body-content code, span.plainlinks,
   td[style*="border-bottom: 1px solid #eee; background-color:#ffffff"] {
-    background-color: #111 !important;
-    border-color: #555 !important;
+    background-color: var(--gray-1) !important;
+    border-color: var(--gray-5) !important;
     color: #b9b9b9 !important;
   }
   td[style*="background:#FFFFFF" i], .jfk-bubble, .navpopup,
@@ -244,11 +258,11 @@
   td[style*="background:#F4F9F0"], td[style*="background:#F9F0F0"],
   td[style*="background:#f0f0f0"], #mwe-popups-settings,
   th[style*="border-bottom: 1px solid #eee; background-color:#ffffff;"] {
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
   }
   body .ui-button {
     background: #282828 !important;
-    border-color: #555 !important;
+    border-color: var(--gray-5) !important;
   }
   table[style*="background-color:#fff;" i], .search-form fieldset, table.ambox,
   tr[style*="background-color: #fff;" i],
@@ -271,7 +285,7 @@
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
   div.barbox > table > tbody > tr > th, .cx-campaign-contributionsmenu li:hover {
-    background-color: #333; /* don't include !important flag */
+    background-color: var(--gray-3); /* don't include !important flag */
   }
   td[style*="background: #ececec;" i], th[style*="background:#eee" i],
   th[style*="background-color: #eee" i],
@@ -284,29 +298,29 @@
   th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i],
   th[style*="#FFEBAD" i], .usermessage, table.nmbox th, tr[style*="#eaecf0" i],
   td[style*="#eaecf0" i], p[style*="background-color:#F7FAFC" i] {
-    background-color: #333 !important;
+    background-color: var(--gray-3) !important;
   }
   /* remove background image/gradient */
   .keyboard-key, div#editpage-specialchars a,
   body div.ui-dialog .ui-widget-header {
-    background: #333 !important;
-    border-color: #555 !important;
+    background: var(--gray-3) !important;
+    border-color: var(--gray-5) !important;
   }
   body .ui-button:hover {
-    background: #444 !important;
-    border-color: #555 !important;
+    background: var(--gray-4) !important;
+    border-color: var(--gray-5) !important;
   }
   /* add a white background to transparent images; see
    * https://forum.userstyles.org/discussion/48549/x */
   a.image img, a[href*=".svg"] img {
-    background: #ddd !important;
+    background: var(--gray-d) !important;
   }
   /* white background to wikEd - see #24 */
   .wikEdFrameBodySyntax {
-    background: #fff !important;
+    background: var(--white) !important;
   }
   .keyboard-key {
-    box-shadow: .1em .2em .2em #444 !important;
+    box-shadow: .1em .2em .2em var(--gray-4) !important;
   }
   .mw-mmv-ttf-ellipsis, .navpopup, .oo-ui-popupWidget-popup, input + span,
   .pure-form input[type=search] {
@@ -315,18 +329,18 @@
   .pure-button-primary-progressive:focus,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus:not(:active),
   .mw-ui-button.mw-ui-progressive:focus:not(:active) {
-    box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 2px #fff !important;
+    box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 2px var(--white) !important;
   }
   strong, em {
     text-shadow: none !important;
   }
   hr {
     background-color: transparent !important;
-    border-color: #555 !important;
+    border-color: var(--gray-5) !important;
   }
   .mw-editfont-monospace {
-    background-color: #222;
-    color: #9a9a9a;
+    background-color: var(--gray-2);
+    color: var(--gray-9a);
   }
   .userSummaryButtons a, #userSummaryButtons a {
     background-color: #002800;
@@ -343,14 +357,14 @@
     border-color: #542 !important;
   }
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
-    background-color: #222;
+    background-color: var(--gray-2);
   }
   .mw-ui-icon.mw-ui-icon-before::before, .mw-ui-icon.mw-ui-icon-element::before {
     filter: invert(80%);
   }
   div > .flow-menu li a,
   .flow-component.flow-board-page .flow-board-header .side-rail-toggle-button {
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
   }
   /*** Background Color Styles ***/
   /* Red */
@@ -358,7 +372,7 @@
   td[style*="background: #ffdddd" i], tr[style*="background:#FFDDDD" i],
   tr[style*="background:#fbb" i] {
     background: #722 !important;
-    color: #ddd !important;
+    color: var(--gray-d) !important;
   }
   /* Green */
   #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;" i], .table-yes,
@@ -367,7 +381,7 @@
   tr[style*="background-color:#CCFFCC" i],
   table.ext-status-stable > tbody > tr.tpl-infobox-header {
     background: #165316 !important;
-    color: #ddd !important;
+    color: var(--gray-d) !important;
   }
   /* Yellow */
   table.ext-status-beta > tbody > tr.tpl-infobox-header {
@@ -379,7 +393,7 @@
   }
   /* Grey */
   table.ext-status-unknown > tbody > tr.tpl-infobox-header {
-    background: #555 !important;
+    background: var(--gray-5) !important;
   }
   /* Blue */
   div[style*="background"] h2, div[style*="background"] h2 *, #mp-right h2,
@@ -424,46 +438,46 @@
   td:not([style*="border-bottom"]):not([style*="border-top"]), h1, h2, h3, h4,
   h5, h6, ul, li, input, select, .mw-body-content code, .lang-list-button:hover,
   .oo-ui-buttonElement-button, #mwe-popups-settings, #mwe-popups-settings header {
-    border-color: #555 !important;
+    border-color: var(--gray-5) !important;
   }
   td[style*="border-bottom"] {
-    border-right-color: #555 !important;
-    border-left-color: #555 !important;
-    border-top-color: #555 !important;
+    border-right-color: var(--gray-5) !important;
+    border-left-color: var(--gray-5) !important;
+    border-top-color: var(--gray-5) !important;
   }
   .mwe-popups:before, .cx-callout-1:before {
-    border-bottom-color: #555 !important;
+    border-bottom-color: var(--gray-5) !important;
   }
   .mwe-popups.flipped_y:before, .mwe-popups.flipped_x_y:before,
   .wikiEditor-toolbar-dialog .ui-dialog-buttonpane, .mwe-popups.flipped-y:before,
   .mwe-popups.flipped-x-y:before {
-    border-top-color: #555 !important;
+    border-top-color: var(--gray-5) !important;
   }
   .mwe-popups:after, .cx-callout-1:after,
   .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:before,
   .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:after {
-    border-bottom-color: #222 !important;
+    border-bottom-color: var(--gray-2) !important;
   }
   .mwe-popups.flipped_y:after, .mwe-popups.flipped_x_y:after,
   .mwe-popups.flipped-y:after, .mwe-popups.flipped-x-y:after,
   .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:before,
   .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:after {
-    border-top-color: #222 !important;
+    border-top-color: var(--gray-2) !important;
   }
   .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall,
   .oo-ui-popupWidget-popup {
-    border: 1px solid #555 !important;
+    border: 1px solid var(--gray-5) !important;
   }
   .mwe-popups-settings-icon:hover, .mwe-popups-settings-icon:active {
-    background-color: #444 !important;
+    background-color: var(--gray-4) !important;
   }
   div.vectorTabs li:not(.selected), .oo-ui-popupWidget-anchor:after,
   .oo-ui-popupWidget-head {
-    border-bottom: #555 1px solid !important;
+    border-bottom: var(--gray-5) 1px solid !important;
   }
   .referencetooltip > li {
-    background: #222 !important;
-    border: 1px solid #555 !important;
+    background: var(--gray-2) !important;
+    border: 1px solid var(--gray-5) !important;
   }
   input, button {
     border-style: solid !important;
@@ -471,15 +485,15 @@
   }
   /* arrow down */
   .referencetooltip > li + li, .referencetooltip > li + li:after {
-    border-top-color: #222 !important;
+    border-top-color: var(--gray-2) !important;
     border-right-color: transparent !important;
     border-left-color: transparent !important;
   }
   .referencetooltip > li + li {
-    border-top: 12px #555 solid !important;
+    border-top: 12px var(--gray-5) solid !important;
   }
   .referencetooltip.RTflipped > li + li {
-    border-bottom-color: #222 !important;
+    border-bottom-color: var(--gray-2) !important;
   }
   .referencetooltip.RTflipped > li + li:after {
     border-bottom-color: transparent !important;
@@ -500,7 +514,7 @@
   }
   /* add border */
   div.vectorTabs li, #p-cactions-label, .client-js #preftoc li {
-    border-right: #555 1px solid !important;
+    border-right: var(--gray-5) 1px solid !important;
   }
   div.vectorTabs li.selected, .client-js #preftoc li.selected {
     border-bottom: #e08b26 1px solid !important;
@@ -509,10 +523,10 @@
   .wikitable tr:not([style*="color:black" i]) th:not([style*="color: black" i]),
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i] > td > *,
   tr.ext-infobox-header th, tr.ext-infobox-header span {
-    color: #fff !important;
+    color: var(--white) !important;
   }
   .CategoryTreeEmptyBullet, .table-na, .infobox, .hp-portalen a span {
-    color: #ccc !important;
+    color: var(--gray-c) !important;
   }
   .oo-ui-buttonElement-button:hover {
     color: #bcbcbc !important;
@@ -538,30 +552,30 @@
     border: none !important;
   }
   .popup_history_row_even, ins.popupDiff {
-    background: #333;
+    background: var(--gray-3);
   }
   del.popupDiff {
-    background: #222;
+    background: var(--gray-2);
   }
   .wikEdFrameBodySyntax {
     filter: invert(100%);
   }
   .wikEdFrameBodyPlain {
-    background: #111 !important;
+    background: var(--gray-1) !important;
   }
   #proveit {
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
   }
   /*** diff pages ***/
   .diff-context {
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
   }
   .wikEdDiffButtonUnchecked {
-    border-color: #444 !important;
+    border-color: var(--gray-4) !important;
   }
   td.diff-deletedline .diffchange, .wikEdDiffDelete {
     background-color: rgba(213, 154, 0, .6) !important;
-    color: #ddd !important;
+    color: var(--gray-d) !important;
   }
   td.diff-deletedline {
     border-color: rgba(213, 154, 0, .6) !important;
@@ -574,7 +588,7 @@
   }
   td.diff-addedline .diffchange, .wikEdDiffInsert {
     background-color: rgba(0, 112, 213, .6) !important;
-    color: #ddd !important;
+    color: var(--gray-d) !important;
   }
   .oo-ui-buttonElement-button:active, .pure-button-primary-progressive:active,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
@@ -605,7 +619,7 @@
     background-color: transparent !important;
   }
   .oo-ui-pendingElement-pending {
-    background-color: #ddd !important;
+    background-color: var(--gray-d) !important;
     filter: invert(100%) !important;
   }
   .oo-ui-pendingElement-pending > * {
@@ -637,10 +651,10 @@
   }
   /*** Reference tooltips ***/
   .rt-tooltip, .rt-tooltipTail:after {
-    background: #222 !important;
+    background: var(--gray-2) !important;
   }
   .rt-tooltipTail {
-    background: #555 !important;
+    background: var(--gray-5) !important;
   }
   /*** Page preview settings ***/
   .mwe-popups-overlay {
@@ -652,42 +666,42 @@
   /* wikidata fixes */
   .wikibase-entitytermsforlanguagelistview-header-row th,
   li.wikibase-sitelinkview.listview-item span.wikibase-sitelinkview-siteid-container {
-    background-color: #333 !important;
+    background-color: var(--gray-3) !important;
   }
   .wikibase-sitelinkgroupview, .ui-widget.ui-suggester-list,
   .articlepreview.open, ul.wikibase-snaktypeselector-menu.ui-menu {
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
   }
   .wikibase-snaktypeselector-menu .ui-state-active,
   .wikibase-snaktypeselector-menu .ui-state-focus {
-    background: #333 !important;
+    background: var(--gray-3) !important;
   }
   .ui-entityselector-list .ui-entityselector-notfound {
-    background-color: #222;
+    background-color: var(--gray-2);
   }
   .wb-icon, .articlepreview-button, .wb-help-field-hint, .ui-icon-close {
     filter: invert(80%);
   }
   .tipsy-inner {
-    color: #9a9a9a;
-    background-color: #222 !important;
+    color: var(--gray-9a);
+    background-color: var(--gray-2) !important;
   }
   .articlepreview .toggler {
     filter: invert(80%);
-    background-color: #eee !important;
+    background-color: var(--gray-e) !important;
   }
   .wikibase-entityview textarea, .ui-listrotator {
-    color: #9a9a9a;
+    color: var(--gray-9a);
   }
   .imeselector-toggle {
     filter: brightness(200%);
   }
   .imeselector-menu {
     filter: brightness(50%);
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
   }
   .imeselector-menu .selectable-row:hover {
-    background-color: #333;
+    background-color: var(--gray-3);
   }
 }
 @-moz-document domain("wikipedia.org") {
