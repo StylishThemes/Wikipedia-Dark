@@ -165,6 +165,9 @@
     background-color: var(--base-color) !important;
     color: #fff !important;
   }
+  .mw-plusminus-pos {
+    color: #390 !important;
+  }
   /*** Red links (non-existant pages) ***/
   div.vectorTabs li.new:not(.selected) a, .mw-plusminus-neg, a.new,
   #p-personal a.new {
@@ -350,16 +353,18 @@
     color: #9a9a9a;
   }
   .userSummaryButtons a, #userSummaryButtons a {
-    background-color: #333;
-    border-color: #333;
+    background-color: #002800;
+    border-color: #061;
+    color: #aaa !important;
   }
   .userSummaryButtons a:hover, #userSummaryButtons a:hover {
-    background-color: #444;
-    border-color: #444;
+    background-color: #002800;
+    border-color: #061;
+    filter: brightness(120%);
   }
   #btn_opisy_zm_waxon_off {
-    background-color: #333 !important;
-    border-color: #333 !important;
+    background-color: #261d08 !important;
+    border-color: #542 !important;
   }
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
     background-color: #222;
