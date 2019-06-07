@@ -642,10 +642,6 @@
     background-image: -webkit-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
     background-image: -moz-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
     background-image: linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
-    background-size: 1.429em 1.429em;
-    -webkit-animation: oo-ui-pendingElement-stripes 650ms linear infinite;
-       -moz-animation: oo-ui-pendingElement-stripes 650ms linear infinite;
-            animation: oo-ui-pendingElement-stripes 650ms linear infinite;
   }
   .central-textlogo__image, .unicode.haudio a img {
     filter: invert(60.5%) !important;
