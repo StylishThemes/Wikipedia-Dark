@@ -152,7 +152,7 @@
   .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th {
     background-color: var(--gray-3) !important;
   }
-  .mw-collapsible:not([class*="navbox-"]) td {
+  .mw-collapsible:not([class*="navbox-"]) td:not([class*="mbox-"]) {
     background-color: var(--gray-2) !important;
   }
   .oo-ui-toolbar-bar, .oo-ui-window-head, .oo-ui-window-foot,
