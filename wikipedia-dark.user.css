@@ -258,7 +258,7 @@
   td[style*="background:#F5FAFF" i],
   #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li,
   .suggestions, .mw-ui-button[style*="background"],
-  .mw-ui-button[style*="background"] *, .wikiEditor-ui,
+  .mw-ui-button[style*="background"] *, .wikiEditor-ui, .mw-search-results li,
   table.navbox.collapsible tr:nth-child(2) > td, div.menu, ul.menu,
   .oo-ui-popupWidget-popup, .oo-ui-buttonElement-button, .mw-notification,
   .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall, .ui-widget-content,
@@ -627,9 +627,8 @@
   img.mwe-math-fallback-image-inline, #mw-wsmfinal-close,
   img[src*="Speaker_Icon"], .infobox img[alt*="structure"][src*=".svg"],
   img[src*=".svg"][height="16"], img[src*=".svg"][height="17"],
-  img[src*=".svg"][height="18"],
-  .oo-ui-iconElement-icon:not(.mw-echo-notifications-badge), .RTsettings,
-  #gtx-host, .jfk-bubble-closebtn,
+  img[src*=".svg"][height="18"], #gtx-host, .jfk-bubble-closebtn,
+  .oo-ui-iconElement-icon:not(.oo-ui-image-progressive), .RTsettings,
   #pt-notifications-notice .mw-echo-notifications-badge:before,
   #pt-notifications-alert .mw-echo-notifications-badge:before,
   img.mwe-math-fallback-image-display, #cnotice-toggle-icon {
@@ -670,7 +669,7 @@
   .cx-campaign-contributionsmenu li.cx-campaign-uploads a {
     background-image: url('data:image/svg+xml;utf-8,%3Csvg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M13.09 6.18a3.68 3.68 0 0 1-2.18-2.55c.09.09 1.82.91 1.82.91L10 0 7.27 4.55l1.82-.91a5.08 5.08 0 0 0 .55 1.91 5.13 5.13 0 0 0 2 2 8.86 8.86 0 0 1 2 1.18l-.64.63-.45-.45-.26 1.54 1.54-.26-.45-.45.62-.65a5.69 5.69 0 0 1 1.45 3.45h-.91v-.73l-1.26.91 1.26.91v-.73h.91A5.21 5.21 0 0 1 14 16.36l-.64-.64.45-.45-1.53-.27.26 1.54.45-.45.64.64a5.69 5.69 0 0 1-3.45 1.45v-.91h.73L10 16l-.91 1.27h.73v.91a5.21 5.21 0 0 1-3.45-1.45l.63-.64.45.45.27-1.54-1.54.26.45.45-.63.65a5.69 5.69 0 0 1-1.45-3.45h.91v.73l1.26-.91-1.26-.91v.73h-.91A5.21 5.21 0 0 1 6 9.09l.64.64-.45.45 1.54.26-.28-1.53-.45.45-.64-.64L5 7.45a7.29 7.29 0 1 0 8.09-1.27z" fill="%23888"/%3E%3Ccircle cx="10" cy="12.7" r="2.5" fill="%23888"/%3E%3C/svg%3E');
   }
-  .oo-ui-indicator-down {
+  .oo-ui-indicator-down, .oo-ui-indicator-clear {
     filter: invert(100%);
   }
   /*** Reference tooltips ***/
