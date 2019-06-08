@@ -36,7 +36,7 @@
 }
 @preprocessor uso
 ==/UserStyle== */
-@-moz-document regexp("https?:\\/\\/[^?]*((wikipedia|mediawiki|wikibooks|wikidata|wikinews|wikiquote|wikisource|wikiversity|wikivoyage|wiktionary)|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.+"), domain("wiki.rpcs3.net") {
+@-moz-document regexp("https?:\\/\\/([\\w\\-]{2,}\\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|www\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.+"), domain("wiki.rpcs3.net") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
@@ -45,17 +45,54 @@
     --bg-custom: /*[[bg-custom]]*/;
     --bg-selected: /*[[bg-selected]]*/;
     --bg-attachment: /*[[bg-attachment]]*/;
+    --gray-1: #111;
+    --gray-2: #222;
+    --gray-3: #333;
+    --gray-4: #444;
+    --gray-5: #555;
+    --gray-7: #777;
+    --gray-a: #aaa;
+    --gray-c: #ccc;
+    --gray-d: #ddd;
+    --gray-e: #eee;
+    --white: #fff;
+    --gray-18: #181818;
+    --gray-28: #282828;
+    --gray-2f: #2f4f4f;
+    --gray-69: #696969;
+    --gray-9a: #9a9a9a;
+    --gray-b9: #b9b9b9;
+    --gray-bc: #bcbcbc;
+    --blue-1: #36c;
+    --blue-2: #182030;
+    --blue-3: #212c43;
+    --red-1: #c22;
+    --red-2: #d33;
+    --red-3: #722;
+    --red-4: #ff4242;
+    --green-1: #390;
+    --green-2: #165316;
+    --green-3: #061;
+    --green-4: #002800;
+    --brown-1: #321;
+    --brown-2: #542;
+    --brown-3: #261d08;
+    --yellow-1: #b28200;
+    --orange-1: #e53e00;
+    --orange-2: #e08b26;
+    --purple-1: #382b4a;
   }
   /* transparent background */
   div, span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
-  .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, #bodyContent,
+  .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, .mw-body-content,
   .referencetooltip > li + li, div.vectorTabs ul li,
   tr[style*="background:#F5FFFA" i], th[style*="background-color: #fff" i],
   .mw-echo-notifications-badge, .ext-cards-card-list .ext-cards-card,
   .infobox span.plainlinks *, .tracklist,
   blockquote[style*="background-color: white" i], .ns-0 ul, .ns-0 ol li,
   table.flextable, table.flextable .invisible, table#noarticletext,
-  table#noarticletext table {
+  table#noarticletext table, .metadata.plainlinks.stub,
+  div#mw-content-text div.mw-parser-output h2:not([id^="mp-"]) {
     background-color: transparent !important;
   }
   .lang-list-button {
@@ -66,16 +103,18 @@
   span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]):not([class*="oo-ui-labelElement-label"]),
   p code, label code, dl code, .oo-ui-widget div, .oo-ui-widget label,
   #pagehistory li.selected, #mwe-popups-settings main form label,
-  #pt-anonuserpage {
-    color: #9a9a9a;
+  #pt-anonuserpage, .oo-ui-textInputWidget .oo-ui-inputWidget-input,
+  .oo-ui-messageDialog-title, .oo-ui-messageDialog-message,
+  .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label, .mw-mmv-image-desc {
+    color: var(--gray-9a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
   div[style*="color"], input[type="search"], input[type="submit"],
   .oo-ui-buttonElement-button, .oo-ui-buttonElement-button:hover,
   input[type="number"], select, .suggestions-result, input,
   .central-featured-lang .link-box em, .central-featured-lang .link-box small,
-  div.flaggedrevs_preview, div.plainlinks {
-    color: #9a9a9a !important;
+  div.flaggedrevs_preview, div.plainlinks, .wikipediauserbox td {
+    color: var(--gray-9a) !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel {
     color: var(--base-color) !important;
@@ -87,46 +126,72 @@
   legend .oo-ui-labelElement-label, .cnotice-message p,
   #mwe-popups-settings header h1, #mwe-popups-settings main form label > span,
   .mwe-popups-settings-help p, font[color="black"] {
-    color: #ddd !important;
+    color: var(--gray-d) !important;
   }
   a:hover, a:hover span:not(.oo-ui-labelElement-label), #toc a:hover,
   #toc a:hover span, .suggestions-result .highlight,
   .suggestions-special .special-query {
-    color: #fff !important;
+    color: var(--white) !important;
   }
   div[class*="mw-echo-ui"], span[class*="mw-echo-ui"] {
     background-color: inherit !important;
   }
   div.mw-echo-ui-toggleReadCircleButtonWidget-circle {
-    background-color: #72777d !important;
+    background-color: var(--gray-7) !important;
   }
   .mw-echo-ui-toggleReadCircleButtonWidget-circle.mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
     background-color: transparent !important;
-    border: 1px solid #72777d;
+    border: 1px solid var(--gray-7);
   }
   .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle {
-    background-color: dimgray !important;
+    background-color: var(--gray-69) !important;
   }
   .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
-    background-color: darkslategray !important;
+    background-color: var(--gray-2f) !important;
+  }
+  .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th {
+    background-color: var(--gray-3) !important;
+  }
+  .mw-collapsible:not([class*="navbox-"]) td:not([class*="mbox-"]) {
+    background-color: var(--gray-2) !important;
+  }
+  .oo-ui-toolbar-bar, .oo-ui-window-head, .oo-ui-window-foot,
+  .oo-ui-popupToolGroup-tools, #language-settings-dialog {
+    background: var(--gray-2) !important;
+  }
+  table.diff, td.diff-otitle, td.diff-ntitle,
+  .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted,
+  .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:hover,
+  .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active,
+  .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active:focus,
+  .oo-ui-tool.oo-ui-widget-enabled.oo-ui-tool-active > .oo-ui-tool-link,
+  .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
+    background-color: var(--gray-3);
+  }
+  .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:checked + span,
+  .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:indeterminate + span {
+    background-color: var(--blue-1) !important;
+    filter: none !important;
+  }
+  .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget {
+    color: var(--gray-7);
   }
   /* text selection */
-  ::selection {
+  ::selection, ::-moz-selection {
     background-color: var(--base-color) !important;
-    color: #fff !important;
+    color: var(--white) !important;
   }
-  ::-moz-selection {
-    background-color: var(--base-color) !important;
-    color: #fff !important;
+  .mw-plusminus-pos {
+    color: var(--green-1) !important;
   }
   /*** Red links (non-existant pages) ***/
   div.vectorTabs li.new:not(.selected) a, .mw-plusminus-neg, a.new,
   #p-personal a.new {
-    color: #980000 !important;
+    color: var(--red-1) !important;
   }
   /*** Background ***/
   html, body {
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
     background-image: var(--bg-selected) !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
@@ -139,12 +204,17 @@
   .mw-ui-button.mw-ui-progressive {
     background-color: var(--base-color) !important;
     border-color: transparent !important;
-    color: #fff !important;
+    color: var(--white) !important;
   }
-  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button,
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
     background-color: transparent !important;
     border-color: transparent !important;
-    color: #d33 !important;
+    color: var(--red-2) !important;
+  }
+  .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled.oo-ui-flaggedElement-primary > .oo-ui-tool-link,
+  .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary > .oo-ui-tool-link {
+    background-color: var(--gray-7);
   }
   .mw-ui-button.mw-ui-progressive:hover, .pure-button-primary-progressive:hover,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover,
@@ -158,6 +228,13 @@
   .mw-advancedSearch-fieldContainer {
     background-image: none !important;
   }
+  .wpb .portal ul, .boilerplate .pullquote, .module-shortcutboxplain,
+  .mw-trackedTemplate {
+    background-color: var(--gray-3) !important;
+  }
+  .mw-body-content .portal, .sistersitebox, .boilerplate, .NavFrame, .divbox {
+    background-color: var(--gray-2) !important;
+  }
   /* fading linear gradient */
   .mwe-popups-extract:after {
     background-image: linear-gradient(to right, rgb(34, 34, 34, 0), rgb(34, 34, 34, 1) 50%) !important;
@@ -165,23 +242,23 @@
   .ui-widget-overlay {
     background: rgba(0, 0, 0, .8) !important;
   }
-  #bodyContent pre, #bodyContent code, span.plainlinks,
+  .mw-body-content pre, .mw-body-content code, span.plainlinks,
   td[style*="border-bottom: 1px solid #eee; background-color:#ffffff"] {
-    background-color: #111 !important;
-    border-color: #555 !important;
-    color: #b9b9b9 !important;
+    background-color: var(--gray-1) !important;
+    border-color: var(--gray-5) !important;
+    color: var(--gray-b9) !important;
   }
   td[style*="background:#FFFFFF" i], .jfk-bubble, .navpopup,
   .popup_drop:hover .popup_menu, .popup_drop .popup_menu:hover,
   td[style*="background:#f5fffa"] {
-    background-color: #181818 !important;
+    background-color: var(--gray-18) !important;
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"],
   td[style*="background:#F5FAFF" i],
   #mw-content-text div[style*="background: #"], .vevent td, .referencetooltip li,
   .suggestions, .mw-ui-button[style*="background"],
-  .mw-ui-button[style*="background"] *, .wikiEditor-ui,
+  .mw-ui-button[style*="background"] *, .wikiEditor-ui, .mw-search-results li,
   table.navbox.collapsible tr:nth-child(2) > td, div.menu, ul.menu,
   .oo-ui-popupWidget-popup, .oo-ui-buttonElement-button, .mw-notification,
   .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall, .ui-widget-content,
@@ -203,11 +280,11 @@
   td[style*="background:#F4F9F0"], td[style*="background:#F9F0F0"],
   td[style*="background:#f0f0f0"], #mwe-popups-settings,
   th[style*="border-bottom: 1px solid #eee; background-color:#ffffff;"] {
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
   }
   body .ui-button {
-    background: #282828 !important;
-    border-color: #555 !important;
+    background: var(--gray-28) !important;
+    border-color: var(--gray-5) !important;
   }
   table[style*="background-color:#fff;" i], .search-form fieldset, table.ambox,
   tr[style*="background-color: #fff;" i],
@@ -226,11 +303,11 @@
   .wikitable.charts-zebragrey > tbody > tr:nth-of-type(even),
   tr[style*="background:#fbf8d6" i], table.flextable td, table.nmbox td,
   tr[style*="background-color:#f7f7f7"] {
-    background-color: #282828 !important;
+    background-color: var(--gray-28) !important;
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
   div.barbox > table > tbody > tr > th, .cx-campaign-contributionsmenu li:hover {
-    background-color: #333; /* don't include !important flag */
+    background-color: var(--gray-3); /* don't include !important flag */
   }
   td[style*="background: #ececec;" i], th[style*="background:#eee" i],
   th[style*="background-color: #eee" i],
@@ -243,29 +320,29 @@
   th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i],
   th[style*="#FFEBAD" i], .usermessage, table.nmbox th, tr[style*="#eaecf0" i],
   td[style*="#eaecf0" i], p[style*="background-color:#F7FAFC" i] {
-    background-color: #333 !important;
+    background-color: var(--gray-3) !important;
   }
   /* remove background image/gradient */
   .keyboard-key, div#editpage-specialchars a,
   body div.ui-dialog .ui-widget-header {
-    background: #333 !important;
-    border-color: #555 !important;
+    background: var(--gray-3) !important;
+    border-color: var(--gray-5) !important;
   }
   body .ui-button:hover {
-    background: #444 !important;
-    border-color: #555 !important;
+    background: var(--gray-4) !important;
+    border-color: var(--gray-5) !important;
   }
   /* add a white background to transparent images; see
    * https://forum.userstyles.org/discussion/48549/x */
   a.image img, a[href*=".svg"] img {
-    background: #ddd !important;
+    background: var(--gray-d) !important;
   }
   /* white background to wikEd - see #24 */
   .wikEdFrameBodySyntax {
-    background: #fff !important;
+    background: var(--white) !important;
   }
   .keyboard-key {
-    box-shadow: .1em .2em .2em #444 !important;
+    box-shadow: .1em .2em .2em var(--gray-4) !important;
   }
   .mw-mmv-ttf-ellipsis, .navpopup, .oo-ui-popupWidget-popup, input + span,
   .pure-form input[type=search] {
@@ -274,22 +351,50 @@
   .pure-button-primary-progressive:focus,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus:not(:active),
   .mw-ui-button.mw-ui-progressive:focus:not(:active) {
-    box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 2px #fff !important;
+    box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 2px var(--white) !important;
   }
   strong, em {
     text-shadow: none !important;
   }
   hr {
     background-color: transparent !important;
-    border-color: #555 !important;
+    border-color: var(--gray-5) !important;
+  }
+  .mw-editfont-monospace {
+    background-color: var(--gray-2);
+    color: var(--gray-9a);
+  }
+  .userSummaryButtons a, #userSummaryButtons a {
+    background-color: var(--green-4);
+    border-color: var(--green-3);
+    color: var(--gray-a) !important;
+  }
+  .userSummaryButtons a:hover, #userSummaryButtons a:hover {
+    background-color: var(--green-4);
+    border-color: var(--green-3);
+    filter: brightness(120%);
+  }
+  #btn_opisy_zm_waxon_off {
+    background-color: var(--brown-3) !important;
+    border-color: var(--brown-2) !important;
+  }
+  .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
+    background-color: var(--gray-2);
+  }
+  .mw-ui-icon.mw-ui-icon-before::before, .mw-ui-icon.mw-ui-icon-element::before {
+    filter: invert(80%);
+  }
+  div > .flow-menu li a,
+  .flow-component.flow-board-page .flow-board-header .side-rail-toggle-button {
+    background-color: var(--gray-2) !important;
   }
   /*** Background Color Styles ***/
   /* Red */
   td[style*="background: #FDD;" i], .table-no, td[style*="background:#fdd" i],
   td[style*="background: #ffdddd" i], tr[style*="background:#FFDDDD" i],
   tr[style*="background:#fbb" i] {
-    background: #722 !important;
-    color: #ddd !important;
+    background: var(--red-3) !important;
+    color: var(--gray-d) !important;
   }
   /* Green */
   #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;" i], .table-yes,
@@ -297,20 +402,20 @@
   tr[style*="background:#DDFFDD" i], tr[style*="background:#bfb" i],
   tr[style*="background-color:#CCFFCC" i],
   table.ext-status-stable > tbody > tr.tpl-infobox-header {
-    background: #165316 !important;
-    color: #ddd !important;
+    background: var(--green-2) !important;
+    color: var(--gray-d) !important;
   }
   /* Yellow */
   table.ext-status-beta > tbody > tr.tpl-infobox-header {
-    background: #b28200 !important;
+    background: var(--yellow-1) !important;
   }
   /* Orange */
   table.ext-status-experimental > tbody > tr.tpl-infobox-header {
-    background: #e53e00 !important;
+    background: var(--orange-1) !important;
   }
   /* Grey */
   table.ext-status-unknown > tbody > tr.tpl-infobox-header {
-    background: #555 !important;
+    background: var(--gray-5) !important;
   }
   /* Blue */
   div[style*="background"] h2, div[style*="background"] h2 *, #mp-right h2,
@@ -326,22 +431,23 @@
   div[role="region"] .plainlinks, tr[style*="background-color: #cedff2" i],
   td[bgcolor*="#f0f0ff" i], tr[style*="background-color:#E1E9F3" i],
   th[style*="background:#d1dbdf" i], td[style*="background:#e6f2ff" i] {
-    background-color: #182030 !important;
+    background-color: var(--blue-2) !important;
   }
   .navbox-abovebelow, th.navbox-group, .navbox-subgroup .navbox-title,
   .navbox-abovebelow *, th.navbox-group *, .navbox-subgroup .navbox-title *,
   tr[bgcolor*="#E1E9F3" i] {
-    background-color: #212c43 !important;
+    background-color: var(--blue-3) !important;
   }
   /* Purple */
-  #mp-bottom h2, #mp-bottom h2 span, th[style*="background:lavender" i],
-  td[style*="background:lavender" i], th[style*="background:#edf" i] {
-    background-color: #382b4a !important;
+  #mp-lower #mp-bottom h2, #mp-bottom h2 span,
+  th[style*="background:lavender" i], td[style*="background:lavender" i],
+  th[style*="background:#edf" i] {
+    background-color: var(--purple-1) !important;
   }
   /* Brown */
   #mp-center h2, #mp-center h2 span, .table-partial,
   tr[style*="background:orange" i], td[style*="background:#ffd" i] {
-    background-color: #321 !important;
+    background-color: var(--brown-1) !important;
   }
   /*** Border ***/
   fieldset, button[type="submit"]:not(.pure-button-primary-progressive),
@@ -352,48 +458,48 @@
   span:not([class*="color"]), table:not(.hp-portalen),
   tr:not([style*="border-bottom"]), th, .infobox tr[style*="background-color"],
   td:not([style*="border-bottom"]):not([style*="border-top"]), h1, h2, h3, h4,
-  h5, h6, ul, li, input, select, #bodyContent code, .lang-list-button:hover,
+  h5, h6, ul, li, input, select, .mw-body-content code, .lang-list-button:hover,
   .oo-ui-buttonElement-button, #mwe-popups-settings, #mwe-popups-settings header {
-    border-color: #555 !important;
+    border-color: var(--gray-5) !important;
   }
   td[style*="border-bottom"] {
-    border-right-color: #555 !important;
-    border-left-color: #555 !important;
-    border-top-color: #555 !important;
+    border-right-color: var(--gray-5) !important;
+    border-left-color: var(--gray-5) !important;
+    border-top-color: var(--gray-5) !important;
   }
   .mwe-popups:before, .cx-callout-1:before {
-    border-bottom-color: #555 !important;
+    border-bottom-color: var(--gray-5) !important;
   }
   .mwe-popups.flipped_y:before, .mwe-popups.flipped_x_y:before,
   .wikiEditor-toolbar-dialog .ui-dialog-buttonpane, .mwe-popups.flipped-y:before,
   .mwe-popups.flipped-x-y:before {
-    border-top-color: #555 !important;
+    border-top-color: var(--gray-5) !important;
   }
   .mwe-popups:after, .cx-callout-1:after,
   .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:before,
   .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:after {
-    border-bottom-color: #222 !important;
+    border-bottom-color: var(--gray-2) !important;
   }
   .mwe-popups.flipped_y:after, .mwe-popups.flipped_x_y:after,
   .mwe-popups.flipped-y:after, .mwe-popups.flipped-x-y:after,
   .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:before,
   .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:after {
-    border-top-color: #222 !important;
+    border-top-color: var(--gray-2) !important;
   }
   .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall,
   .oo-ui-popupWidget-popup {
-    border: 1px solid #555 !important;
+    border: 1px solid var(--gray-5) !important;
   }
   .mwe-popups-settings-icon:hover, .mwe-popups-settings-icon:active {
-    background-color: #444 !important;
+    background-color: var(--gray-4) !important;
   }
   div.vectorTabs li:not(.selected), .oo-ui-popupWidget-anchor:after,
   .oo-ui-popupWidget-head {
-    border-bottom: #555 1px solid !important;
+    border-bottom: var(--gray-5) 1px solid !important;
   }
   .referencetooltip > li {
-    background: #222 !important;
-    border: 1px solid #555 !important;
+    background: var(--gray-2) !important;
+    border: 1px solid var(--gray-5) !important;
   }
   input, button {
     border-style: solid !important;
@@ -401,57 +507,55 @@
   }
   /* arrow down */
   .referencetooltip > li + li, .referencetooltip > li + li:after {
-    border-top-color: #222 !important;
+    border-top-color: var(--gray-2) !important;
     border-right-color: transparent !important;
     border-left-color: transparent !important;
   }
   .referencetooltip > li + li {
-    border-top: 12px #555 solid !important;
+    border-top: 12px var(--gray-5) solid !important;
   }
   .referencetooltip.RTflipped > li + li {
-    border-bottom-color: #222 !important;
+    border-bottom-color: var(--gray-2) !important;
   }
   .referencetooltip.RTflipped > li + li:after {
     border-bottom-color: transparent !important;
   }
   /* Bookmark Icon */
   #ca-watch.icon a {
-    background-image: url('data:image/svg+xml,<%3Fxml%20version%3D"1.0"%20encoding%3D"UTF-8"%3F><svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"16"%20height%3D"16"><path%20d%3D"M8.103%201.146l2.175%204.408%204.864.707-3.52%203.431.831%204.845-4.351-2.287-4.351%202.287.831-4.845-3.52-3.431%204.864-.707z"%20fill%3D"transparent"%20stroke%3D"%237cb5d1"%20stroke-width%3D"1"%2F><%2Fsvg>') !important;
+    background-image: url('data:image/svg+xml;utf-8,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8.103 1.146l2.175 4.408 4.864.707-3.52 3.431.831 4.845-4.351-2.287-4.351 2.287.831-4.845-3.52-3.431 4.864-.707z" fill="transparent" stroke="%237cb5d1"/%3E%3C/svg%3E') !important;
   }
   #ca-unwatch.icon a {
-    background-image: url('data:image/svg+xml,<%3Fxml%20version%3D"1.0"%20encoding%3D"UTF-8"%3F><svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20xmlns%3Axlink%3D"http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink"%20width%3D"16"%20height%3D"16"><defs><linearGradient%20id%3D"a"><stop%20offset%3D"0"%20stop-color%3D"%23c2edff"%2F><stop%20offset%3D".5"%20stop-color%3D"%2368bdff"%2F><stop%20offset%3D"1"%20stop-color%3D"%23fff"%2F><%2FlinearGradient><linearGradient%20x1%3D"13.47"%20y1%3D"14.363"%20x2%3D"4.596"%20y2%3D"3.397"%20id%3D"b"%20xlink%3Ahref%3D"%23a"%20gradientUnits%3D"userSpaceOnUse"%2F><%2Fdefs><path%20d%3D"M8.103%201.146l2.175%204.408%204.864.707-3.52%203.431.831%204.845-4.351-2.287-4.351%202.287.831-4.845-3.52-3.431%204.864-.707z"%20fill%3D"url%28%23b%29"%20stroke%3D"%237cb5d1"%20stroke-width%3D"1"%2F><%2Fsvg>') !important;
+    background-image: url('data:image/svg+xml;utf-8,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Cdefs%3E%3ClinearGradient id="a" x1="13.47" x2="4.596" y1="14.363" y2="3.397" gradientUnits="userSpaceOnUse"%3E%3Cstop stop-color="%23c2edff" offset="0"/%3E%3Cstop stop-color="%2368bdff" offset=".5"/%3E%3Cstop stop-color="%23fff" offset="1"/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d="M8.103 1.146l2.175 4.408 4.864.707-3.52 3.431.831 4.845-4.351-2.287-4.351 2.287.831-4.845-3.52-3.431 4.864-.707z" fill="url(%23a)" stroke="%237cb5d1"/%3E%3C/svg%3E') !important;
   }
   /* Orange */
   #centralNotice > div {
-    border-color: #e08b26 !important;
+    border-color: var(--orange-2) !important;
   }
   table.ambox-content, table.ambox-style {
-    border-left-color: #e08b26 !important;
+    border-left-color: var(--orange-2) !important;
   }
   /* add border */
   div.vectorTabs li, #p-cactions-label, .client-js #preftoc li {
-    border-right: #555 1px solid !important;
+    border-right: var(--gray-5) 1px solid !important;
   }
   div.vectorTabs li.selected, .client-js #preftoc li.selected {
-    border-bottom: #e08b26 1px solid !important;
+    border-bottom: var(--orange-2) 1px solid !important;
   }
   /*** Text ***/
   .wikitable tr:not([style*="color:black" i]) th:not([style*="color: black" i]),
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i] > td > *,
   tr.ext-infobox-header th, tr.ext-infobox-header span {
-    color: #fff !important;
+    color: var(--white) !important;
   }
   .CategoryTreeEmptyBullet, .table-na, .infobox, .hp-portalen a span {
-    color: #ccc !important;
+    color: var(--gray-c) !important;
   }
   .oo-ui-buttonElement-button:hover {
-    color: #bcbcbc !important;
+    color: var(--gray-bc) !important;
   }
-  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
-    color: #ff4242 !important;
-  }
-  .mw-plusminus-pos {
-    color: #007f00 !important;
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover,
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
+    color: var(--red-4) !important;
   }
   /*** Quotes ***/
   blockquote {
@@ -466,25 +570,31 @@
   .oo-ui-tagMultiselectWidget-handle input {
     border: none !important;
   }
-  .popup_history_row_even {
-    background: #333;
-  }
-  ins.popupDiff {
-    background: #333;
+  .popup_history_row_even, ins.popupDiff {
+    background: var(--gray-3);
   }
   del.popupDiff {
-    background: #222;
+    background: var(--gray-2);
+  }
+  .wikEdFrameBodySyntax {
+    filter: invert(100%);
+  }
+  .wikEdFrameBodyPlain {
+    background: var(--gray-1) !important;
+  }
+  #proveit {
+    background-color: var(--gray-2) !important;
   }
   /*** diff pages ***/
   .diff-context {
-    background-color: #222 !important;
+    background-color: var(--gray-2) !important;
   }
   .wikEdDiffButtonUnchecked {
-    border-color: #444 !important;
+    border-color: var(--gray-4) !important;
   }
   td.diff-deletedline .diffchange, .wikEdDiffDelete {
     background-color: rgba(213, 154, 0, .6) !important;
-    color: #ddd !important;
+    color: var(--gray-d) !important;
   }
   td.diff-deletedline {
     border-color: rgba(213, 154, 0, .6) !important;
@@ -497,12 +607,13 @@
   }
   td.diff-addedline .diffchange, .wikEdDiffInsert {
     background-color: rgba(0, 112, 213, .6) !important;
-    color: #ddd !important;
+    color: var(--gray-d) !important;
   }
   .oo-ui-buttonElement-button:active, .pure-button-primary-progressive:active,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
   .mw-ui-button.mw-ui-progressive:active,
-  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:active {
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:active,
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:active {
     filter: brightness(72.5%) !important;
   }
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:focus:not(:active),
@@ -516,24 +627,25 @@
   img.mwe-math-fallback-image-inline, #mw-wsmfinal-close,
   img[src*="Speaker_Icon"], .infobox img[alt*="structure"][src*=".svg"],
   img[src*=".svg"][height="16"], img[src*=".svg"][height="17"],
-  img[src*=".svg"][height="18"],
-  .oo-ui-iconElement-icon:not(.mw-echo-notifications-badge), .RTsettings,
-  #gtx-host, .jfk-bubble-closebtn,
+  img[src*=".svg"][height="18"], #gtx-host, .jfk-bubble-closebtn,
+  .oo-ui-iconElement-icon:not(.oo-ui-image-progressive), .RTsettings,
   #pt-notifications-notice .mw-echo-notifications-badge:before,
-  .oo-ui-pendingElement-pending,
   #pt-notifications-alert .mw-echo-notifications-badge:before,
   img.mwe-math-fallback-image-display, #cnotice-toggle-icon {
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
     background-color: transparent !important;
   }
+  .oo-ui-pendingElement-pending {
+    background-color: var(--gray-1);
+    background-image: -webkit-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+    background-image: linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+  }
   .central-textlogo__image, .unicode.haudio a img {
     filter: invert(60.5%) !important;
   }
-  .mw-ui-icon-popups-close:before {
-    filter: invert(86.5%) !important;
-  }
-  .mw-ui-icon-footer::before {
+  .mw-ui-icon-popups-close:before, .mw-ui-icon-footer::before {
     filter: invert(86.5%) !important;
   }
   .central-featured-logo {
@@ -545,12 +657,27 @@
   #footer-icons img {
     filter: brightness(70%);
   }
+  #mw-indicator-mw-helplink a {
+    background-image: url('data:image/svg+xml;utf-8,%3Csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="m12.001 2.085c-5.478 0-9.916 4.438-9.916 9.916 0 5.476 4.438 9.914 9.916 9.914 5.476 0 9.914-4.438 9.914-9.914 0-5.478-4.438-9.916-9.914-9.916zm0.001 18c-4.465 0-8.084-3.619-8.084-8.083 0-4.465 3.619-8.084 8.084-8.084 4.464 0 8.083 3.619 8.083 8.084 0 4.464-3.619 8.083-8.083 8.083z" fill="%23888"/%3E%3Cpath d="m11.766 6.688c-2.5 0-3.219 2.188-3.219 2.188l1.411 0.854s0.298-0.791 0.901-1.229c0.516-0.375 1.625-0.625 2.219 0.125 0.701 0.885-0.17 1.587-1.078 2.719-0.953 1.186-1 3.655-1 3.655h1.969s0.135-2.318 1.041-3.381c0.604-0.707 1.443-1.338 1.443-2.494s-1.187-2.437-3.687-2.437zm-0.766 9.312h2v2h-2v-2z" fill="%23888"/%3E%3C/svg%3E');
+  }
+  .cx-campaign-contributionsmenu li.cx-campaign-contributions a {
+    background-image: url('data:image/svg+xml;utf-8,%3Csvg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="m10 11c-5.92 0-8 3-8 5v3h16v-3c0-2-2.08-5-8-5z" fill="%23888"/%3E%3Ccircle cx="10" cy="5.5" r="4.5" fill="%23888"/%3E%3C/svg%3E%0A');
+  }
+  .cx-campaign-contributionsmenu li.cx-campaign-translations a {
+    background-image: url('data:image/svg+xml;utf-8,%3Csvg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M20 18h-1.44a.61.61 0 0 1-.4-.12.81.81 0 0 1-.23-.31L17 15h-5l-1 2.54a.77.77 0 0 1-.22.3.59.59 0 0 1-.4.14H9l4.55-11.47h1.89zm-3.53-4.31L14.89 9.5a11.62 11.62 0 0 1-.39-1.24q-.09.37-.19.69l-.19.56-1.58 4.19zm-6.3-1.58a13.43 13.43 0 0 1-2.91-1.41 11.46 11.46 0 0 0 2.81-5.37H12V4H7.31a4 4 0 0 0-.2-.56C6.87 2.79 6.6 2 6.6 2l-1.47.5s.4.89.6 1.5H0v1.33h2.15A11.23 11.23 0 0 0 5 10.7a17.19 17.19 0 0 1-5 2.1q.56.82.87 1.38a23.28 23.28 0 0 0 5.22-2.51 15.64 15.64 0 0 0 3.56 1.77zM3.63 5.33h4.91a8.11 8.11 0 0 1-2.45 4.45 9.11 9.11 0 0 1-2.46-4.45z" fill="%23888"/%3E%3C/svg%3E');
+  }
+  .cx-campaign-contributionsmenu li.cx-campaign-uploads a {
+    background-image: url('data:image/svg+xml;utf-8,%3Csvg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M13.09 6.18a3.68 3.68 0 0 1-2.18-2.55c.09.09 1.82.91 1.82.91L10 0 7.27 4.55l1.82-.91a5.08 5.08 0 0 0 .55 1.91 5.13 5.13 0 0 0 2 2 8.86 8.86 0 0 1 2 1.18l-.64.63-.45-.45-.26 1.54 1.54-.26-.45-.45.62-.65a5.69 5.69 0 0 1 1.45 3.45h-.91v-.73l-1.26.91 1.26.91v-.73h.91A5.21 5.21 0 0 1 14 16.36l-.64-.64.45-.45-1.53-.27.26 1.54.45-.45.64.64a5.69 5.69 0 0 1-3.45 1.45v-.91h.73L10 16l-.91 1.27h.73v.91a5.21 5.21 0 0 1-3.45-1.45l.63-.64.45.45.27-1.54-1.54.26.45.45-.63.65a5.69 5.69 0 0 1-1.45-3.45h.91v.73l1.26-.91-1.26-.91v.73h-.91A5.21 5.21 0 0 1 6 9.09l.64.64-.45.45 1.54.26-.28-1.53-.45.45-.64-.64L5 7.45a7.29 7.29 0 1 0 8.09-1.27z" fill="%23888"/%3E%3Ccircle cx="10" cy="12.7" r="2.5" fill="%23888"/%3E%3C/svg%3E');
+  }
+  .oo-ui-indicator-down, .oo-ui-indicator-clear {
+    filter: invert(100%);
+  }
   /*** Reference tooltips ***/
   .rt-tooltip, .rt-tooltipTail:after {
-    background: #222 !important;
+    background: var(--gray-2) !important;
   }
   .rt-tooltipTail {
-    background: #555 !important;
+    background: var(--gray-5) !important;
   }
   /*** Page preview settings ***/
   .mwe-popups-overlay {
@@ -558,6 +685,46 @@
   }
   #mwe-popups-settings {
     box-shadow: 0 2px 2px 0 rgba(85, 85, 85, .25) !important;
+  }
+  /* wikidata fixes */
+  .wikibase-entitytermsforlanguagelistview-header-row th,
+  li.wikibase-sitelinkview.listview-item span.wikibase-sitelinkview-siteid-container {
+    background-color: var(--gray-3) !important;
+  }
+  .wikibase-sitelinkgroupview, .ui-widget.ui-suggester-list,
+  .articlepreview.open, ul.wikibase-snaktypeselector-menu.ui-menu {
+    background-color: var(--gray-2) !important;
+  }
+  .wikibase-snaktypeselector-menu .ui-state-active,
+  .wikibase-snaktypeselector-menu .ui-state-focus {
+    background: var(--gray-3) !important;
+  }
+  .ui-entityselector-list .ui-entityselector-notfound {
+    background-color: var(--gray-2);
+  }
+  .wb-icon, .articlepreview-button, .wb-help-field-hint, .ui-icon-close {
+    filter: invert(80%);
+  }
+  .tipsy-inner {
+    color: var(--gray-9a);
+    background-color: var(--gray-2) !important;
+  }
+  .articlepreview .toggler {
+    filter: invert(80%);
+    background-color: var(--gray-e) !important;
+  }
+  .wikibase-entityview textarea, .ui-listrotator {
+    color: var(--gray-9a);
+  }
+  .imeselector-toggle {
+    filter: brightness(200%);
+  }
+  .imeselector-menu {
+    filter: brightness(50%);
+    background-color: var(--gray-2) !important;
+  }
+  .imeselector-menu .selectable-row:hover {
+    background-color: var(--gray-3);
   }
 }
 @-moz-document domain("wikipedia.org") {
