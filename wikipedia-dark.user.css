@@ -105,7 +105,7 @@
   #pagehistory li.selected, #mwe-popups-settings main form label,
   #pt-anonuserpage, .oo-ui-textInputWidget .oo-ui-inputWidget-input,
   .oo-ui-messageDialog-title, .oo-ui-messageDialog-message,
-  .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label {
+  .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label, .mw-mmv-image-desc {
     color: var(--gray-9a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
