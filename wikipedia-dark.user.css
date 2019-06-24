@@ -447,7 +447,7 @@
     background-color: var(--purple-1) !important;
   }
   /* Brown */
-  #mp-center h2, #mp-center h2 span, .table-partial,
+  #mp-center #mp-tfl-h2, #mp-center #mp-tfl-h2 span, .table-partial,
   tr[style*="background:orange" i], td[style*="background:#ffd" i] {
     background-color: var(--brown-1) !important;
   }
