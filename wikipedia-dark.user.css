@@ -497,7 +497,7 @@
   }
   div.vectorTabs li:not(.selected), .oo-ui-popupWidget-anchor:after,
   .oo-ui-popupWidget-head {
-    border-bottom: var(--gray-5) 1px solid !important;
+    border-bottom: 1px solid var(--gray-5) !important;
   }
   .referencetooltip > li {
     background: var(--gray-2) !important;
@@ -538,10 +538,10 @@
   }
   /* add border */
   div.vectorTabs li, #p-cactions-label, .client-js #preftoc li {
-    border-right: var(--gray-5) 1px solid !important;
+    border-right: 1px solid var(--gray-5) !important;
   }
   div.vectorTabs li.selected, .client-js #preftoc li.selected {
-    border-bottom: var(--orange-2) 1px solid !important;
+    border-bottom: 1px solid var(--orange-2) !important;
   }
   /*** Text ***/
   .wikitable tr:not([style*="color:black" i]) th:not([style*="color: black" i]),
