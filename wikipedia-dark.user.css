@@ -113,7 +113,8 @@
   .oo-ui-buttonElement-button, .oo-ui-buttonElement-button:hover,
   input[type="number"], select, .suggestions-result, input,
   .central-featured-lang .link-box em, .central-featured-lang .link-box small,
-  div.flaggedrevs_preview, div.plainlinks, .wikipediauserbox td {
+  div.flaggedrevs_preview, div.plainlinks, .wikipediauserbox td,
+  .table-partial[style*="background: #FFFFBB; color:black;"] {
     color: var(--gray-9a) !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel {
