@@ -631,8 +631,8 @@
   img[src*=".svg"][height="16"], img[src*=".svg"][height="17"],
   img[src*=".svg"][height="18"], #gtx-host, .jfk-bubble-closebtn,
   .oo-ui-iconElement-icon:not(.oo-ui-image-progressive), .RTsettings,
-  #pt-notifications-notice .mw-echo-notifications-badge:before,
-  #pt-notifications-alert .mw-echo-notifications-badge:before,
+  #pt-notifications-notice .mw-echo-notifications-badge,
+  #pt-notifications-alert .mw-echo-notifications-badge,
   img.mwe-math-fallback-image-display, #cnotice-toggle-icon {
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
