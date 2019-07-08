@@ -36,7 +36,7 @@
 }
 @preprocessor uso
 ==/UserStyle== */
-@-moz-document regexp("https?:\\/\\/([\\w\\-]{2,}\\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|www\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.+"), domain("wiki.rpcs3.net") {
+@-moz-document regexp("https?:\\/\\/([\\w\\-]{2,}\\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|www\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.+"), domain("wiki.rpcs3.net"), domain("wiki.archlinux.org") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
@@ -117,11 +117,17 @@
   .table-partial[style*="background: #FFFFBB; color:black;"] {
     color: var(--gray-9a) !important;
   }
-  a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel {
+  a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel,
+  #content a:not(.new), #mw-navigation li:not(.new) a:not(.new),
+  #mw-panel li:not(.new) a:not(.new), #column-one li:not(.new) a:not(.new),
+  #footer a:not(.new) {
     color: var(--base-color) !important;
   }
   a:visited, #toc a:visited, #toc a:visited span,
-  .vectorTabs li.new:not(.selected) a:visited {
+  .vectorTabs li.new:not(.selected) a:visited, #content a:not(.new):visited,
+  #mw-panel li:not(.new) a:not(.new):visited,
+  #p-navigation li:not(.new) a:not(.new):visited,
+  #p-tb li:not(.new) a:not(.new):visited {
     color: var(--visited-color) !important;
   }
   legend .oo-ui-labelElement-label, .cnotice-message p,
