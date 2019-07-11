@@ -760,10 +760,24 @@
     height: 47px !important;
   }
 }
-@-moz-document domain("wiki.archlinux.org") {
+@-moz-document domain("wiki.archlinux.org"), url-prefix("https://wiki.archlinux.org/index.php/") {
   #content table, #content h1, #content h2, #content h3, #content h4,
-  #content h5, #content pre, #content code, #content tt, table.wikitable {
+  #content h5, #content pre, #content code, #content tt, table.wikitable,
+  .mw-body, .parsoid-body,
+  .oo-ui-tagItemWidget.oo-ui-widget-enabled
+.mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-title,
+  .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-desc {
     color: var(--gray-9a);
+  }
+  .oo-ui-tagItemWidget.oo-ui-widget-enabled {
+    color: var(--gray-8);
+  }
+  .mw-rcfilters-ui-filterMenuSectionOptionWidget-header-title.oo-ui-labelElement-label,
+  .mw-rcfilters-ui-viewSwitchWidget label.oo-ui-labelWidget {
+    color: var(--gray-a);
+  }
+  .mw-rcfilters-ui-itemMenuOptionWidget-label-title {
+    color: var(--gray-a) !important;
   }
   td[style*="background: #ddd; color: inherit;"] {
     background: var(--gray-5) !important;
@@ -783,12 +797,6 @@
     background-color: var(--green-4) !important;
     border-color: var(--green-3) !important;
   }
-  #mw-panel .portal .body {
-    background-image: none !important;
-  }
-  #mw-panel .portal [id*="-label"] {
-    border-bottom-color: var(--gray-5) !important;
-  }
   #toc, .toc, .mw-warning, .toccolours {
     background-color: var(--gray-2) !important;
     border-color: var(--gray-5) !important;
@@ -798,5 +806,15 @@
   }
   #pagehistory li {
     border-color: var(--gray-2) !important;
+  }
+  .mw-rcfilters-ui-filterTagMultiselectWidget-hideshowButton .oo-ui-labelElement-label {
+    border: 0 !important;
+  }
+  /* hack around sidebar bottom border brightness */
+  #mw-panel .portal .body {
+    background-image: none !important;
+  }
+  #mw-panel .portal [id*="-label"] {
+    border-bottom: 1px solid var(--gray-5);
   }
 }
