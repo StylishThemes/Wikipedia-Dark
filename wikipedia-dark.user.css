@@ -758,3 +758,9 @@
     height: 47px !important;
   }
 }
+@-moz-document domain("wiki.archlinux.org") {
+  #content table, #content h1, #content h2, #content h3, #content h4,
+  #content h5, #content pre, #content code, #content tt, table.wikitable {
+    color: var(--gray-9a);
+  }
+}
