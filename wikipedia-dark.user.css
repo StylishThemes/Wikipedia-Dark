@@ -66,6 +66,7 @@
     --blue-1: #36c;
     --blue-2: #182030;
     --blue-3: #212c43;
+    --red-0: #400;
     --red-1: #c22;
     --red-2: #d33;
     --red-3: #722;
@@ -81,6 +82,7 @@
     --orange-1: #e53e00;
     --orange-2: #e08b26;
     --purple-1: #382b4a;
+    --purple-2: #768;
   }
   /* transparent background */
   div, span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
@@ -762,5 +764,39 @@
   #content table, #content h1, #content h2, #content h3, #content h4,
   #content h5, #content pre, #content code, #content tt, table.wikitable {
     color: var(--gray-9a);
+  }
+  td[style*="background: #ddd; color: inherit;"] {
+    background: var(--gray-5) !important;
+  }
+  td[style*="background: #faa; color: inherit;"] {
+    background: var(--red-0) !important;
+  }
+  div.archwiki-template-box.archwiki-template-box-note {
+    background-color: var(--purple-1) !important;
+    border-color: var(--purple-2) !important;
+  }
+  div.archwiki-template-box.archwiki-template-box-warning {
+    background-color: var(--red-0) !important;
+    border-color: var(--red-3) !important;
+  }
+  div.archwiki-template-box.archwiki-template-box-tip {
+    background-color: var(--green-4) !important;
+    border-color: var(--green-3) !important;
+  }
+  #mw-panel .portal .body {
+    background-image: none !important;
+  }
+  #mw-panel .portal [id*="-label"] {
+    border-bottom-color: var(--gray-5) !important;
+  }
+  #toc, .toc, .mw-warning, .toccolours {
+    background-color: var(--gray-2) !important;
+    border-color: var(--gray-5) !important;
+  }
+  textarea {
+    border-color: var(--gray-4);
+  }
+  #pagehistory li {
+    border-color: var(--gray-2) !important;
   }
 }
