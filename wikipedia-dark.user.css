@@ -118,7 +118,9 @@
   input[type="number"], select, .suggestions-result, input,
   .central-featured-lang .link-box em, .central-featured-lang .link-box small,
   div.flaggedrevs_preview, div.plainlinks, .wikipediauserbox td,
-  .table-partial[style*="background: #FFFFBB; color:black;"] {
+  .table-partial[style*="background: #FFFFBB; color:black;"],
+  a[href*="Wikipedia:Wikipedia_Signpost"] span,
+  span[style*="white-space:nowrap; line-height:120%; font-size:155%; color:#333;"] {
     color: var(--gray-9a) !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel,
@@ -219,9 +221,9 @@
   }
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
-    background-color: transparent !important;
+    background-color: var(--red-2) !important;
     border-color: transparent !important;
-    color: var(--red-2) !important;
+    color: var(--white) !important;
   }
   .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled.oo-ui-flaggedElement-primary > .oo-ui-tool-link,
   .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary > .oo-ui-tool-link {
@@ -243,7 +245,9 @@
   .mw-trackedTemplate {
     background-color: var(--gray-3) !important;
   }
-  .mw-body-content .portal, .sistersitebox, .boilerplate, .NavFrame, .divbox {
+  .mw-body-content .portal, .sistersitebox, .boilerplate, .NavFrame, .divbox,
+  div.resolved span, div.unresolved span, div.unsure span, div.stale span,
+  div.being_worked_on span, div.stuck span, div.disregard span, div.FYI span {
     background-color: var(--gray-2) !important;
   }
   /* fading linear gradient */
@@ -281,7 +285,7 @@
   tr[style*="background:#ddd" i], td[style*="background: #F2F2F2" i],
   tr[style*="background-color:#F2F2F2" i],
   tr[style*="background-color:#FFF5EE" i], tr[bgcolor="FFF5EE" i],
-  td[bgcolor="FFF5EE" i],
+  td[bgcolor="FFF5EE" i], tr[style*="background-color:#f0f0f0" i],
   .wikitable.charts-zebragrey > tbody > tr:nth-of-type(odd),
   td > span[style*="background-color:#eee" i],
   #mw-content-text div:not(.toctitle) > h2, table.flextable th,
@@ -322,7 +326,7 @@
     background-color: var(--gray-3); /* don't include !important flag */
   }
   td[style*="background: #ececec;" i], th[style*="background:#eee" i],
-  th[style*="background-color: #eee" i],
+  th[style*="background-color: #eee" i], tr[style*="background: #dddddd" i],
   tr[style*="background-color: #f7f7f7;" i], th[style*="background:#F2F2F2" i],
   #filetoc, .toccolours, th[style*="background:#F9F9F9" i],
   th[style*="background-color: lightgrey" i], th[style*="background:#ddd" i],
@@ -399,6 +403,14 @@
   div > .flow-menu li a,
   .flow-component.flow-board-page .flow-board-header .side-rail-toggle-button {
     background-color: var(--gray-2) !important;
+  }
+  .mw-mmv-post-image {
+    background-color: var(--gray-2) !important;
+  }
+  .mw-mmv-download-button, .mw-mmv-reuse-button, .mw-mmv-options-button,
+  .mw-mmv-close, .mw-mmv-fullscreen, .mw-mmv-next-image, .mw-mmv-prev-image {
+    background-color: transparent !important;
+    border: none !important;
   }
   /*** Background Color Styles ***/
   /* Red */
@@ -669,6 +681,9 @@
   #footer-icons img {
     filter: brightness(70%);
   }
+  img[alt="The Signpost"] {
+    filter: invert(60%);
+  }
   #mw-indicator-mw-helplink a {
     background-image: url('data:image/svg+xml;utf-8,%3Csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="m12.001 2.085c-5.478 0-9.916 4.438-9.916 9.916 0 5.476 4.438 9.914 9.916 9.914 5.476 0 9.914-4.438 9.914-9.914 0-5.478-4.438-9.916-9.914-9.916zm0.001 18c-4.465 0-8.084-3.619-8.084-8.083 0-4.465 3.619-8.084 8.084-8.084 4.464 0 8.083 3.619 8.083 8.084 0 4.464-3.619 8.083-8.083 8.083z" fill="%23888"/%3E%3Cpath d="m11.766 6.688c-2.5 0-3.219 2.188-3.219 2.188l1.411 0.854s0.298-0.791 0.901-1.229c0.516-0.375 1.625-0.625 2.219 0.125 0.701 0.885-0.17 1.587-1.078 2.719-0.953 1.186-1 3.655-1 3.655h1.969s0.135-2.318 1.041-3.381c0.604-0.707 1.443-1.338 1.443-2.494s-1.187-2.437-3.687-2.437zm-0.766 9.312h2v2h-2v-2z" fill="%23888"/%3E%3C/svg%3E');
   }
@@ -680,6 +695,9 @@
   }
   .cx-campaign-contributionsmenu li.cx-campaign-uploads a {
     background-image: url('data:image/svg+xml;utf-8,%3Csvg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M13.09 6.18a3.68 3.68 0 0 1-2.18-2.55c.09.09 1.82.91 1.82.91L10 0 7.27 4.55l1.82-.91a5.08 5.08 0 0 0 .55 1.91 5.13 5.13 0 0 0 2 2 8.86 8.86 0 0 1 2 1.18l-.64.63-.45-.45-.26 1.54 1.54-.26-.45-.45.62-.65a5.69 5.69 0 0 1 1.45 3.45h-.91v-.73l-1.26.91 1.26.91v-.73h.91A5.21 5.21 0 0 1 14 16.36l-.64-.64.45-.45-1.53-.27.26 1.54.45-.45.64.64a5.69 5.69 0 0 1-3.45 1.45v-.91h.73L10 16l-.91 1.27h.73v.91a5.21 5.21 0 0 1-3.45-1.45l.63-.64.45.45.27-1.54-1.54.26.45.45-.63.65a5.69 5.69 0 0 1-1.45-3.45h.91v.73l1.26-.91-1.26-.91v.73h-.91A5.21 5.21 0 0 1 6 9.09l.64.64-.45.45 1.54.26-.28-1.53-.45.45-.64-.64L5 7.45a7.29 7.29 0 1 0 8.09-1.27z" fill="%23888"/%3E%3Ccircle cx="10" cy="12.7" r="2.5" fill="%23888"/%3E%3C/svg%3E');
+  }
+  .jquery-tablesorter th.headerSort {
+    background-image: url('data:image/svg+xml;utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="21" height="9"%3E%3Cpath d="M14.5 5l-4 4-4-4zm0-1l-4-4-4 4z" fill="%23ccc"/%3E%3C/svg%3E');
   }
   .oo-ui-indicator-down, .oo-ui-indicator-clear {
     filter: invert(100%);
