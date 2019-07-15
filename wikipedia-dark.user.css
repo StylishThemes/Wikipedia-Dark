@@ -250,6 +250,22 @@
   div.being_worked_on span, div.stuck span, div.disregard span, div.FYI span {
     background-color: var(--gray-2) !important;
   }
+  #searchInput:focus, #simpleSearch:hover #searchInput:focus {
+    -webkit-box-shadow: inset 0 0 0 1px var(--blue-1);
+            box-shadow: inset 0 0 0 1px var(--blue-1);
+  }
+  .oo-ui-inputWidget-input {
+    background-color: transparent !important;
+  }
+  .mw-advancedSearch-fieldContainer .oo-ui-labelElement > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label {
+    background-color: var(--gray-2) !important;
+  }
+  .mw-advancedSearch-namespace-selection {
+    background: linear-gradient(var(--gray-1), var(--gray-2) .5em);
+  }
+  .oo-ui-tagItemWidget.oo-ui-widget-enabled {
+    color: var(--gray-9a);
+  }
   /* fading linear gradient */
   .mwe-popups-extract:after {
     background-image: linear-gradient(to right, rgb(34, 34, 34, 0), rgb(34, 34, 34, 1) 50%) !important;
@@ -716,7 +732,8 @@
   #mwe-popups-settings {
     box-shadow: 0 2px 2px 0 rgba(85, 85, 85, .25) !important;
   }
-  /* wikidata fixes */
+}
+@-moz-document domain("wikidata.org") {
   .wikibase-entitytermsforlanguagelistview-header-row th,
   li.wikibase-sitelinkview.listview-item span.wikibase-sitelinkview-siteid-container {
     background-color: var(--gray-3) !important;
