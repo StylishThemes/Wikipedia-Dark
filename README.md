@@ -1,10 +1,12 @@
 # Wikipedia Dark
 
-Applies to wikipedia.org, wikidata.org, mediawiki.org, wikimedia.org &amp; wiktionary.org
+Applies to all Wikimedia wikis (wikipedia.org, wikidata.org, wiktionary.org, etc.), Wikidot wikis and the Arch Linux wiki.
 
 ## Preview
 
-![Wikipedia Dark preview](images/after.png)
+![Wikipedia Dark preview](images/main-page-dark.png "Wikipedia's main page with the dark theme applied")
+
+For comparison, see [this page without the theme](images/main-page-light.png).
 
 ## Installation
 
@@ -16,11 +18,11 @@ A userstyle extension is required, common ones include:
 Then install using one of these methods:
 
 📦 [Install the usercss](https://github.com/StylishThemes/Wikipedia-Dark/raw/master/wikipedia-dark.user.css) with Stylus or xStyle. Supports automatic updates.<br>
-📦 [Install from userstyles.org](https://userstyles.org/styles/105844) with customization, does not support automatic updates **(NO LONGER UPDATED)**.<br>
+📦 [Install from userstyles.org](https://userstyles.org/styles/105844) with customization, does not support automatic updates **(NO LONGER UPDATED)**.
 
 ## Additional Userstyles
 
-⚙️ [Overlay-Scrollbars](https://github.com/StylishThemes/Overlay-Scrollbars)<br>
+⚙️ [Overlay-Scrollbars](https://github.com/StylishThemes/Overlay-Scrollbars)
 
 ## Limitations
 
