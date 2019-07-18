@@ -590,12 +590,10 @@
   .CategoryTreeEmptyBullet, .table-na, .infobox, .hp-portalen a span {
     color: var(--gray-c) !important;
   }
-  .oo-ui-buttonElement-button:hover {
-    color: var(--gray-bc) !important;
-  }
+  .oo-ui-buttonElement-button:hover,
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
-    color: var(--red-4) !important;
+    color: var(--gray-bc) !important;
   }
   /*** Quotes ***/
   blockquote {
