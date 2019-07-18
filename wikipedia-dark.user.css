@@ -733,6 +733,20 @@
     box-shadow: 0 2px 2px 0 rgba(85, 85, 85, .25) !important;
   }
 }
+@-moz-document domain("commons.wikimedia.org") {
+  #firstHeading div.fastcci-buttonset > .ui-button {
+    background-color: var(--gray-2) !important;
+  }
+  #firstHeading div.fastcci-buttonset > .ui-button:hover {
+    background-color: var(--gray-3) !important;
+  }
+  .mw-parser-output #wdinfoboxcaption {
+    background-color: var(--gray-2);
+  }
+  .mw-body .mw-body-content #mw-content-text h2 {
+    background-color: transparent !important;
+  }
+}
 @-moz-document domain("wikidata.org") {
   .wikibase-entitytermsforlanguagelistview-header-row th,
   li.wikibase-sitelinkview.listview-item span.wikibase-sitelinkview-siteid-container {
