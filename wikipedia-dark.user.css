@@ -92,11 +92,12 @@
   .referencetooltip > li + li, div.vectorTabs ul li,
   tr[style*="background:#F5FFFA" i], th[style*="background-color: #fff" i],
   .mw-echo-notifications-badge, .ext-cards-card-list .ext-cards-card,
-  .infobox span.plainlinks *, .tracklist,
+  .infobox span.plainlinks *, .tracklist, .vertical-navbox th a,
   blockquote[style*="background-color: white" i], .ns-0 ul, .ns-0 ol li,
   table.flextable, table.flextable .invisible, table#noarticletext,
   table#noarticletext table, .metadata.plainlinks.stub,
-  div#mw-content-text div.mw-parser-output h2:not([id^="mp-"]) {
+  div#mw-content-text div.mw-parser-output h2:not([id^="mp-"]),
+  .mw-body-content .portal ul {
     background-color: transparent !important;
   }
   .lang-list-button {
@@ -119,7 +120,7 @@
   .central-featured-lang .link-box em, .central-featured-lang .link-box small,
   div.flaggedrevs_preview, div.plainlinks, .wikipediauserbox td,
   .table-partial[style*="background: #FFFFBB; color:black;"],
-  a[href*="Wikipedia:Wikipedia_Signpost"] span,
+  a[href*="Wikipedia:Wikipedia_Signpost"] span, .vertical-navbox th span,
   span[style*="white-space:nowrap; line-height:120%; font-size:155%; color:#333;"] {
     color: var(--gray-9a) !important;
   }
@@ -242,7 +243,7 @@
     background-image: none !important;
   }
   .wpb .portal ul, .boilerplate .pullquote, .module-shortcutboxplain,
-  .mw-trackedTemplate {
+  .mw-trackedTemplate, .vertical-navbox th {
     background-color: var(--gray-3) !important;
   }
   .mw-body-content .portal, .sistersitebox, .boilerplate, .NavFrame, .divbox,
