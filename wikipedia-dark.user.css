@@ -37,8 +37,7 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document regexp("https?:\\/\\/([\\w\\-]{2,}\\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|www\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.+"),
-               domain("wiki.rpcs3.net"),
-               domain("wiki.archlinux.org") {
+               regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.+") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
@@ -810,7 +809,7 @@
     height: 47px !important;
   }
 }
-@-moz-document domain("wiki.archlinux.org"), url-prefix("https://wiki.archlinux.org/index.php/") {
+@-moz-document domain("wiki.archlinux.org") {
   #content table, #content h1, #content h2, #content h3, #content h4,
   #content h5, #content pre, #content code, #content tt, table.wikitable,
   .mw-body, .parsoid-body,
@@ -871,5 +870,10 @@
   }
   .mw-datatable th, .mw-datatable tr:hover td {
     background-color: var(--gray-3);
+  }
+}
+@-moz-document domain("wiki.mozilla.org") {
+  .mw-wiki-logo {
+    filter: invert(100%) hue-rotate(180deg) brightness(50%);
   }
 }
