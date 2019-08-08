@@ -623,6 +623,12 @@
   #proveit {
     background-color: var(--gray-2) !important;
   }
+  .mw-datatable td {
+    background-color: var(--gray-2);
+  }
+  .mw-datatable th, .mw-datatable tr:hover td {
+    background-color: var(--gray-3);
+  }
   /*** diff pages ***/
   .diff-context {
     background-color: var(--gray-2) !important;
@@ -864,12 +870,6 @@
   }
   #mw-panel .portal [id*="-label"] {
     border-bottom: 1px solid var(--gray-5);
-  }
-  .mw-datatable td {
-    background-color: var(--gray-2);
-  }
-  .mw-datatable th, .mw-datatable tr:hover td {
-    background-color: var(--gray-3);
   }
 }
 @-moz-document domain("wiki.mozilla.org") {
