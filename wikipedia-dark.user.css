@@ -59,6 +59,7 @@
     --white: #fff;
     --gray-18: #181818;
     --gray-28: #282828;
+    --gray-2e: #2e3237;
     --gray-2f: #2f4f4f;
     --gray-69: #696969;
     --gray-9a: #9a9a9a;
@@ -84,6 +85,9 @@
     --orange-2: #e08b26;
     --purple-1: #382b4a;
     --purple-2: #768;
+    --ores-1: #4d3a00;
+    --ores-2: #4d2900;
+    --ores-3: #4d2004;
   }
   /* transparent background */
   div, span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
@@ -427,6 +431,31 @@
   .mw-mmv-close, .mw-mmv-fullscreen, .mw-mmv-next-image, .mw-mmv-prev-image {
     background-color: transparent !important;
     border: none !important;
+  }
+  .mw-changeslist-line tr.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey td:not(:nth-child(-n+2)) {
+    background-color: var(--gray-2e) !important;
+  }
+  /* ORES highlight colors */
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c5"]:before,
+  .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3 tr:first-child,
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
+    background-color: var(--ores-1);
+  }
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c4"]:before,
+  .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4 tr:first-child,
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
+    background-color: var(--ores-2);
+  }
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c3"]:before,
+  .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5 tr:first-child,
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
+    background-color: var(--ores-3);
   }
   /*** Background Color Styles ***/
   /* Red */
