@@ -241,7 +241,7 @@
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar,
   #p-cactions-label, .client-js #preftoc, .client-js #preftoc li,
   .client-js #preftoc li.selected a, .ui-widget-content,
-  .ext-cards-card-list h3:after, #simpleSearch, .mw-mmv-ttf-ellipsis:before,
+  .ext-cards-card-list h3::after, #simpleSearch, .mw-mmv-ttf-ellipsis::before,
   .mw-advancedSearch-fieldContainer {
     background-image: none !important;
   }
@@ -271,7 +271,7 @@
     color: var(--gray-9a);
   }
   /* fading linear gradient */
-  .mwe-popups-extract:after {
+  .mwe-popups-extract::after {
     background-image: linear-gradient(to right, rgb(34, 34, 34, 0), rgb(34, 34, 34, 1) 50%) !important;
   }
   .ui-widget-overlay {
@@ -436,21 +436,21 @@
     background-color: var(--gray-2e) !important;
   }
   /* ORES highlight colors */
-  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c5"]:before,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c5"]::before,
   .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3 tr:first-child,
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
     background-color: var(--ores-1);
   }
-  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c4"]:before,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c4"]::before,
   .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4 tr:first-child,
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
     background-color: var(--ores-2);
   }
-  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c3"]:before,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c3"]::before,
   .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5 tr:first-child,
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
@@ -536,23 +536,23 @@
     border-left-color: var(--gray-5) !important;
     border-top-color: var(--gray-5) !important;
   }
-  .mwe-popups:before, .cx-callout-1:before {
+  .mwe-popups::before, .cx-callout-1::before {
     border-bottom-color: var(--gray-5) !important;
   }
-  .mwe-popups.flipped_y:before, .mwe-popups.flipped_x_y:before,
-  .wikiEditor-toolbar-dialog .ui-dialog-buttonpane, .mwe-popups.flipped-y:before,
-  .mwe-popups.flipped-x-y:before {
+  .mwe-popups.flipped_y::before, .mwe-popups.flipped_x_y::before,
+  .wikiEditor-toolbar-dialog .ui-dialog-buttonpane,
+  .mwe-popups.flipped-y::before, .mwe-popups.flipped-x-y::before {
     border-top-color: var(--gray-5) !important;
   }
-  .mwe-popups:after, .cx-callout-1:after,
-  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:before,
-  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:after {
+  .mwe-popups::after, .cx-callout-1::after,
+  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor::before,
+  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor::after {
     border-bottom-color: var(--gray-2) !important;
   }
-  .mwe-popups.flipped_y:after, .mwe-popups.flipped_x_y:after,
-  .mwe-popups.flipped-y:after, .mwe-popups.flipped-x-y:after,
-  .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:before,
-  .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:after {
+  .mwe-popups.flipped_y::after, .mwe-popups.flipped_x_y::after,
+  .mwe-popups.flipped-y::after, .mwe-popups.flipped-x-y::after,
+  .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor::before,
+  .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor::after {
     border-top-color: var(--gray-2) !important;
   }
   .mwe-popups, .mwe-popups-is-not-tall, .mwe-popups-is-tall,
@@ -562,7 +562,7 @@
   .mwe-popups-settings-icon:hover, .mwe-popups-settings-icon:active {
     background-color: var(--gray-4) !important;
   }
-  div.vectorTabs li:not(.selected), .oo-ui-popupWidget-anchor:after,
+  div.vectorTabs li:not(.selected), .oo-ui-popupWidget-anchor::after,
   .oo-ui-popupWidget-head {
     border-bottom: 1px solid var(--gray-5) !important;
   }
@@ -575,7 +575,7 @@
     border-width: 1px !important;
   }
   /* arrow down */
-  .referencetooltip > li + li, .referencetooltip > li + li:after {
+  .referencetooltip > li + li, .referencetooltip > li + li::after {
     border-top-color: var(--gray-2) !important;
     border-right-color: transparent !important;
     border-left-color: transparent !important;
@@ -586,7 +586,7 @@
   .referencetooltip.RTflipped > li + li {
     border-bottom-color: var(--gray-2) !important;
   }
-  .referencetooltip.RTflipped > li + li:after {
+  .referencetooltip.RTflipped > li + li::after {
     border-bottom-color: transparent !important;
   }
   /* Bookmark Icon */
@@ -718,7 +718,7 @@
   .central-textlogo__image, .unicode.haudio a img {
     filter: invert(60.5%) !important;
   }
-  .mw-ui-icon-popups-close:before, .mw-ui-icon-footer::before {
+  .mw-ui-icon-popups-close::before, .mw-ui-icon-footer::before {
     filter: invert(86.5%) !important;
   }
   .central-featured-logo {
@@ -752,7 +752,7 @@
     filter: invert(100%);
   }
   /*** Reference tooltips ***/
-  .rt-tooltip, .rt-tooltipTail:after {
+  .rt-tooltip, .rt-tooltipTail::after {
     background: var(--gray-2) !important;
   }
   .rt-tooltipTail {
@@ -828,17 +828,17 @@
     display: table-cell !important;
     vertical-align: middle !important;
   }
-  #p-logo a:before, #p-logo a:after {
+  #p-logo a::before, #p-logo a::after {
     display: block !important;
     background: inherit !important;
     content: "" !important;
   }
-  #p-logo a:before {
+  #p-logo a::before {
     background-position: center 0 !important;
     filter: brightness(60.5%) !important;
     height: 108px !important;
   }
-  #p-logo a:after {
+  #p-logo a::after {
     background-position: center -108px !important;
     filter: invert(60.5%) !important;
     height: 47px !important;
