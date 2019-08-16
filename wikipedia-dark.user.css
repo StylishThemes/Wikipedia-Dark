@@ -1436,6 +1436,20 @@
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
     background-color: var(--ores-3);
   }
+  /* Fixing broken element padding on RecentChanges */
+  .mw-rcfilters-ui-changesListWrapperWidget {
+    padding-left: .5em;
+  }
+  .mw-rcfilters-ui-changesListWrapperWidget-highlighted ul li {
+    padding-right: .5em;
+    padding-left: .5em;
+  }
+  .mw-rcfilters-ui-changesListWrapperWidget-highlighted .mw-rcfilters-ui-highlights {
+    display: block;
+  }
+  .mw-rcfilters-ui-changesListWrapperWidget-highlighted .mw-rcfilters-ui-highlights > div {
+    margin-right: 10px;
+  }
 }
 @-moz-document domain("commons.wikimedia.org") {
   #mw-page-base, .mw-parser-output #wdinfoboxcaption {
