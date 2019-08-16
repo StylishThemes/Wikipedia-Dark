@@ -101,18 +101,16 @@
   table.flextable, table.flextable .invisible, table#noarticletext,
   table#noarticletext table, .metadata.plainlinks.stub,
   div#mw-content-text div.mw-parser-output h2:not([id^="mp-"]),
-  .mw-body-content .portal ul, .mbox-text div[style*="background"] {
+  .mw-body-content .portal ul, div[style*="background"] {
     background-color: transparent !important;
   }
   div.thumbinner, .catlinks, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
-  .mw-mmv-info-box, .infobox.standard-talk {
+  .mw-mmv-info-box, .infobox.standard-talk, .mwe-pt-article-row-odd,
+  .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options {
     background-color: transparent;
   }
   .lang-list-button {
     outline-color: transparent !important;
-  }
-  #mw-head {
-    border-bottom: 1px solid;
   }
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption, div,
@@ -290,6 +288,9 @@
   .ui-widget-overlay {
     background: rgba(0, 0, 0, .8) !important;
   }
+  .oo-ui-windowManager-modal > .oo-ui-dialog {
+    background-color: rgba(56, 56, 56, .5);
+  }
   .mw-body-content pre, .mw-body-content code, span.plainlinks,
   td[style*="border-bottom: 1px solid #eee; background-color:#ffffff"] {
     background-color: var(--gray-1) !important;
@@ -301,7 +302,7 @@
   td[style*="background:#f5fffa"] {
     background-color: var(--gray-18) !important;
   }
-  .fr-watchlist-pending-notice, .mw-widget-dateInputWidget-handle {
+  .mw-widget-dateInputWidget-handle, .mwe-pt-control-gradient {
     background-color: var(--gray-2); /* non-important */
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
@@ -359,7 +360,8 @@
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
   div.barbox > table > tbody > tr > th, .cx-campaign-contributionsmenu li:hover,
-  .suggestions-results, .suggestions-special {
+  .suggestions-results, .suggestions-special, #mwe-pt-list-more,
+  .fr-watchlist-pending-notice, div.flaggedrevs_notice {
     background-color: var(--gray-3); /* don't include !important flag */
   }
   td[style*="background: #ececec;" i], th[style*="background:#eee" i],
@@ -436,7 +438,8 @@
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
     background-color: var(--gray-2);
   }
-  .mw-ui-icon.mw-ui-icon-before::before, .mw-ui-icon.mw-ui-icon-element::before {
+  .mw-ui-icon.mw-ui-icon-before::before, .mw-ui-icon.mw-ui-icon-element::before,
+  .mw-parser-output .helpContents-icon {
     filter: invert(80%);
   }
   div > .flow-menu li a,
@@ -647,6 +650,9 @@
   div.vectorTabs li.selected, .client-js #preftoc li.selected {
     border-bottom: 1px solid var(--orange-2) !important;
   }
+  #mw-head {
+    border-bottom: 1px solid var(--gray-5);
+  }
   /*** Text ***/
   .wikitable tr:not([style*="color:black" i]) th:not([style*="color: black" i]),
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i] > td > *,
@@ -694,6 +700,9 @@
   }
   .mw-datatable th, .mw-datatable tr:hover td {
     background-color: var(--gray-3);
+  }
+  .mw-spinner-container > div::after {
+    background-color: var(--gray-9a);
   }
   /*** diff pages ***/
   .diff-context {
