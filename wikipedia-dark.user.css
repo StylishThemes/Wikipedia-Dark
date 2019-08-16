@@ -90,8 +90,9 @@
     --ores-3: #4d2004;
   }
   /* transparent background */
-  div, span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
-  .MainPageBG, .navbox-list, div#mw-head, .mw-wsmfinal-content, .mw-body-content,
+  .mw-body, .parsoid-body, #mp-topbanner,
+  span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]),
+  .MainPageBG, .navbox-list, .mw-wsmfinal-content, .mw-body-content,
   .referencetooltip > li + li, div.vectorTabs ul li,
   tr[style*="background:#F5FFFA" i], th[style*="background-color: #fff" i],
   .mw-echo-notifications-badge, .ext-cards-card-list .ext-cards-card,
@@ -100,11 +101,18 @@
   table.flextable, table.flextable .invisible, table#noarticletext,
   table#noarticletext table, .metadata.plainlinks.stub,
   div#mw-content-text div.mw-parser-output h2:not([id^="mp-"]),
-  .mw-body-content .portal ul {
+  .mw-body-content .portal ul, .mbox-text div[style*="background"] {
     background-color: transparent !important;
+  }
+  div.thumbinner, .catlinks, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
+  .mw-mmv-info-box, .infobox.standard-talk {
+    background-color: transparent;
   }
   .lang-list-button {
     outline-color: transparent !important;
+  }
+  #mw-head {
+    border-bottom: 1px solid;
   }
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption, div,
@@ -113,7 +121,8 @@
   #pagehistory li.selected, #mwe-popups-settings main form label,
   #pt-anonuserpage, .oo-ui-textInputWidget .oo-ui-inputWidget-input,
   .oo-ui-messageDialog-title, .oo-ui-messageDialog-message,
-  .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label, .mw-mmv-image-desc {
+  .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label, .mw-mmv-image-desc,
+  .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
     color: var(--gray-9a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
@@ -215,6 +224,9 @@
     background-attachment: var(--bg-attachment) !important;
     /*[[bg-options]]*/
   }
+  #mw-head, #mw-panel, .mw-prefs-buttons {
+    background-image: var(--bg-selected);
+  }
   .mw-ui-button, .mw-ui-button *, button[type="submit"],
   .pure-button-primary-progressive,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button,
@@ -246,12 +258,13 @@
     background-image: none !important;
   }
   .wpb .portal ul, .boilerplate .pullquote, .module-shortcutboxplain,
-  .mw-trackedTemplate, .vertical-navbox th {
+  .mw-trackedTemplate, .vertical-navbox th, .todo-box {
     background-color: var(--gray-3) !important;
   }
   .mw-body-content .portal, .sistersitebox, .boilerplate, .NavFrame, .divbox,
   div.resolved span, div.unresolved span, div.unsure span, div.stale span,
-  div.being_worked_on span, div.stuck span, div.disregard span, div.FYI span {
+  div.being_worked_on span, div.stuck span, div.disregard span, div.FYI span,
+  .vertical-navbox {
     background-color: var(--gray-2) !important;
   }
   #searchInput:focus, #simpleSearch:hover #searchInput:focus {
@@ -287,6 +300,9 @@
   .popup_drop:hover .popup_menu, .popup_drop .popup_menu:hover,
   td[style*="background:#f5fffa"] {
     background-color: var(--gray-18) !important;
+  }
+  .fr-watchlist-pending-notice, .mw-widget-dateInputWidget-handle {
+    background-color: var(--gray-2); /* non-important */
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"],
@@ -342,7 +358,8 @@
     background-color: var(--gray-28) !important;
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
-  div.barbox > table > tbody > tr > th, .cx-campaign-contributionsmenu li:hover {
+  div.barbox > table > tbody > tr > th, .cx-campaign-contributionsmenu li:hover,
+  .suggestions-results, .suggestions-special {
     background-color: var(--gray-3); /* don't include !important flag */
   }
   td[style*="background: #ececec;" i], th[style*="background:#eee" i],
@@ -355,7 +372,9 @@
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i], .tlheader,
   th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i],
   th[style*="#FFEBAD" i], .usermessage, table.nmbox th, tr[style*="#eaecf0" i],
-  td[style*="#eaecf0" i], p[style*="background-color:#F7FAFC" i] {
+  td[style*="#eaecf0" i], p[style*="background-color:#F7FAFC" i],
+  .vertical-navbox div[style*="#adf"],
+  .infobox.standard-talk tr[style*="#e8dbae"] {
     background-color: var(--gray-3) !important;
   }
   /* remove background image/gradient */
@@ -435,27 +454,45 @@
   .mw-changeslist-line tr.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey td:not(:nth-child(-n+2)) {
     background-color: var(--gray-2e) !important;
   }
+  .mw-rcfilters-ui-filterMenuHeaderWidget-header,
+  .mw-rcfilters-ui-menuSelectWidget-footer,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-changeslist-legend,
+  .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle {
+    background-color: transparent;
+  }
   /* ORES highlight colors */
-  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c5"]::before,
+  .mw-rcfilters-ui-highlights-color-none {
+    background-color: var(--gray-7);
+  }
+  .mw-rcfilters-ui-highlights-color-c3,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c3"]::before {
+    background-color: var(--ores-1);
+  }
   .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3 tr:first-child,
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
-    background-color: var(--ores-1);
+    background-color: var(--ores-1) !important;
   }
-  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c4"]::before,
+  .mw-rcfilters-ui-highlights-color-c4,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c4"]::before {
+    background-color: var(--ores-2);
+  }
   .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4 tr:first-child,
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
-    background-color: var(--ores-2);
+    background-color: var(--ores-2) !important;
   }
-  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c3"]::before,
+  .mw-rcfilters-ui-highlights-color-c5,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c5"]::before {
+    background-color: var(--ores-3);
+  }
   .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5 tr:first-child,
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
-    background-color: var(--ores-3);
+    background-color: var(--ores-3) !important;
   }
   /*** Background Color Styles ***/
   /* Red */
