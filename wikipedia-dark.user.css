@@ -971,11 +971,15 @@
   .header .branding-box h1 img, .header .branding-box a img {
     filter: brightness(150%);
   }
-  .mw-ui-icon.mw-ui-icon-before::before, .mw-ui-icon.mw-ui-icon-element::before {
+  #mw-mf-page-left ul li a.mw-ui-icon::before,
+  .minerva-user-menu ul li a.mw-ui-icon::before {
     filter: brightness(150%);
   }
   footer > .post-content > h2 > img {
     filter: brightness(200%);
+  }
+  .mw-ui-icon-mf-user::before {
+    filter: invert(100%) brightness(300%);
   }
   .oo-ui-buttonElement.oo-ui-iconElement .oo-ui-iconElement-icon,
   .oo-ui-buttonElement.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator {
@@ -1449,6 +1453,17 @@
   }
   .mw-rcfilters-ui-changesListWrapperWidget-highlighted .mw-rcfilters-ui-highlights > div {
     margin-right: 10px;
+  }
+  /* end of padding fix*/
+  .list-thumb.list-thumb-none {
+    background-color: var(--gray-4);
+  }
+  .page-summary .minoredit, .list-header {
+    background-color: var(--gray-3);
+  }
+  .page-list.side-list .list-thumb, .topic-title-list.side-list .list-thumb,
+  .site-link-list.side-list .list-thumb {
+    color: var(--gray-9a);
   }
 }
 @-moz-document domain("commons.wikimedia.org") {
