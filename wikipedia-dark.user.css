@@ -304,7 +304,7 @@
     background-color: var(--gray-18) !important;
   }
   .mw-widget-dateInputWidget-handle, .mwe-pt-control-gradient,
-  .template-documentation {
+  .template-documentation, .mw-parser-output .quotebox {
     background-color: var(--gray-2); /* non-important */
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
@@ -404,7 +404,7 @@
     box-shadow: .1em .2em .2em var(--gray-4) !important;
   }
   .mw-mmv-ttf-ellipsis, .navpopup, .oo-ui-popupWidget-popup, input + span,
-  .pure-form input[type=search] {
+  .pure-form input[type=search], .searchbox .mw-ui-input {
     box-shadow: none !important;
   }
   .pure-button-primary-progressive:focus,
@@ -462,6 +462,7 @@
   .mw-rcfilters-ui-filterMenuHeaderWidget-header,
   .mw-rcfilters-ui-menuSelectWidget-footer,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-changeslist-legend,
+  .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle {
     background-color: transparent;
   }
@@ -586,7 +587,7 @@
     border-color: var(--base-color) !important;
   }
   div:not([style*="-color"]), div[style*="background-color"],
-  span:not([class*="color"]), table:not(.hp-portalen),
+  span:not([class*="color"]), table:not(.hp-portalen), #talkheader td,
   tr:not([style*="border-bottom"]), th, .infobox tr[style*="background-color"],
   td:not([style*="border-bottom"]):not([style*="border-top"]), h1, h2, h3, h4,
   h5, h6, ul, li, input, select, .mw-body-content code, .lang-list-button:hover,
