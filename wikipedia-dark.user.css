@@ -910,6 +910,7 @@
     --orange-2: #e08b26;
     --purple-1: #382b4a;
     --purple-2: #768;
+    --cyan-1: #194d41;
     --ores-1: #4d3a00;
     --ores-2: #4d2900;
     --ores-3: #4d2004;
@@ -1389,8 +1390,27 @@
     background-color: var(--gray-2);
     border-color: var(--gray-7);
   }
+  .mw-rollback-link, .mw-tag-marker {
+    background-color: var(--gray-2);
+  }
   .mw-rcfilters-ui-highlights-color-none {
     background-color: var(--gray-7);
+  }
+  .mw-rcfilters-ui-highlights-color-c1,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c1"]::before,
+  .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c1,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c1 tr:first-child,
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c1.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c1.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
+    background-color: var(--blue-2);
+  }
+  .mw-rcfilters-ui-highlights-color-c2,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c2"]::before,
+  .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c2,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c2 tr:first-child,
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c2.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c2.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
+    background-color: var(--cyan-1);
   }
   .mw-rcfilters-ui-highlights-color-c3,
   .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c3"]::before,
