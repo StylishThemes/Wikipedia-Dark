@@ -989,8 +989,14 @@
   .page-actions-menu__list-item .mw-ui-icon-element {
     filter: brightness(150%);
   }
+  .mw-editsection a.mw-ui-icon::before {
+    filter: brightness(150%);
+  }
   #page-actions .mw-show-on-map {
     filter: invert(100%);
+  }
+  .mw-ui-icon-mf-arrow:before {
+    filter: invert(80%);
   }
   .oo-ui-buttonElement.oo-ui-iconElement .oo-ui-iconElement-icon,
   .oo-ui-buttonElement.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator {
@@ -1190,15 +1196,43 @@
   .client-js .ambox .ambox-learn-more::before {
     background: none;
   }
+  .hatnote, .dablink, .rellink {
+    color: var(--gray-c);
+    background-color: var(--gray-3);
+  }
+  .client-js .toc-mobile {
+    background-color: var(--gray-2);
+    border-color: var(--gray-7);
+  }
   .content table.infobox {
     border-color: var(--gray-7);
     background-color: var(--gray-3);
+  }
+  .content table.infobox *[style*="background"] {
+    background-color: var(--gray-2) !important;
   }
   .content table.infobox th, .content table.infobox td {
     border-bottom-color: var(--gray-7);
   }
   .content .mw-parser-output > h2, .content .section-heading {
     border-bottom-color: var(--gray-7);
+  }
+  .wikitable > tr > th, .wikitable > * > tr > th {
+    background-color: var(--gray-3);
+  }
+  .content figcaption, .content .thumbcaption {
+    color: var(--gray-9a);
+  }
+  .image-details {
+    background-color: var(--gray-2);
+  }
+  blockquote {
+    border-left-color: var(--gray-5);
+  }
+  .mbox-small.plainlinks.sistersitebox, .mbox-small.wikipedia-books {
+    background-color: var(--gray-3) !important;
+    border-color: var(--gray-7) !important;
+    color: var(--gray-c) !important;
   }
   .mw-ui-button {
     background-color: var(--gray-3);
@@ -1213,10 +1247,6 @@
   .overlay textarea {
     background-color: var(--gray-1);
     color: var(--gray-9a);
-  }
-  .last-modified-bar.active {
-    background-color: var(--gray-3);
-    color: var(--gray-c);
   }
   .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover {
     background-color: var(--gray-5);
@@ -1308,8 +1338,15 @@
   }
   footer .last-modified-bar {
     border-bottom-color: var(--gray-7);
-    background-color: var(--gray-2);
+    background-color: var(--gray-3);
     color: var(--gray-c);
+  }
+  .last-modified-bar.active {
+    background-color: var(--gray-3);
+    color: var(--gray-c);
+  }
+  .last-modified-bar a, .last-modified-bar a:visited {
+    color: var(--base-color);
   }
   .minerva-footer {
     border-top: solid 1px var(--gray-7);
