@@ -972,7 +972,8 @@
     filter: brightness(150%);
   }
   #mw-mf-page-left ul li a.mw-ui-icon::before,
-  .minerva-user-menu ul li a.mw-ui-icon::before {
+  .minerva-user-menu ul li a.mw-ui-icon::before,
+  #page-actions-overflow ul li a.mw-ui-icon::before {
     filter: brightness(150%);
   }
   footer > .post-content > h2 > img {
@@ -980,6 +981,12 @@
   }
   .mw-ui-icon-mf-user::before {
     filter: invert(100%) brightness(300%);
+  }
+  .page-actions-menu__list-item .mw-ui-icon-element {
+    filter: brightness(150%);
+  }
+  #page-actions .mw-show-on-map {
+    filter: invert(100%);
   }
   .oo-ui-buttonElement.oo-ui-iconElement .oo-ui-iconElement-icon,
   .oo-ui-buttonElement.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator {
@@ -1202,6 +1209,10 @@
   .overlay textarea {
     background-color: var(--gray-1);
     color: var(--gray-9a);
+  }
+  .last-modified-bar.active {
+    background-color: var(--gray-3);
+    color: var(--gray-c);
   }
   .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover {
     background-color: var(--gray-5);
@@ -1458,12 +1469,33 @@
   .list-thumb.list-thumb-none {
     background-color: var(--gray-4);
   }
-  .page-summary .minoredit, .list-header {
+  .minoredit, .list-header {
     background-color: var(--gray-3);
   }
   .page-list.side-list .list-thumb, .topic-title-list.side-list .list-thumb,
   .site-link-list.side-list .list-thumb {
     color: var(--gray-9a);
+  }
+  #mw-mf-diffview #mw-mf-userinfo {
+    background-color: var(--gray-2);
+  }
+  .language-searcher .panel {
+    background-color: var(--gray-2);
+  }
+  .language-searcher .site-link-list a {
+    border-top-color: var(--gray-7);
+  }
+  .language-searcher .site-link-list li {
+    background-color: var(--gray-2);
+  }
+  .language-searcher .site-link-list a .autonym {
+    color: var(--gray-c);
+  }
+  .overlay .panel {
+    border-bottom-color: var(--gray-7);
+  }
+  .language-overlay .overlay-content {
+    background-color: var(--gray-2);
   }
 }
 @-moz-document domain("commons.wikimedia.org") {
