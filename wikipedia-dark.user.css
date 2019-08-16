@@ -302,7 +302,8 @@
   td[style*="background:#f5fffa"] {
     background-color: var(--gray-18) !important;
   }
-  .mw-widget-dateInputWidget-handle, .mwe-pt-control-gradient {
+  .mw-widget-dateInputWidget-handle, .mwe-pt-control-gradient,
+  .template-documentation {
     background-color: var(--gray-2); /* non-important */
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
