@@ -1389,6 +1389,10 @@
     background-color: var(--gray-2);
     border-color: var(--gray-7);
   }
+  .mw-rcfilters-ui-highlights-color-none {
+    background-color: var(--gray-7);
+  }
+  .mw-rcfilters-ui-highlights-color-c3,
   .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c3"]::before,
   .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3 tr:first-child,
@@ -1396,6 +1400,7 @@
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
     background-color: var(--ores-1);
   }
+  .mw-rcfilters-ui-highlights-color-c4,
   .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c4"]::before,
   .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4 tr:first-child,
@@ -1403,6 +1408,7 @@
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
     background-color: var(--ores-2);
   }
+  .mw-rcfilters-ui-highlights-color-c5,
   .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c5"]::before,
   .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5 tr:first-child,
