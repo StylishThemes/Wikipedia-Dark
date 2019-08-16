@@ -971,6 +971,10 @@
   .header .branding-box h1 img, .header .branding-box a img {
     filter: brightness(150%);
   }
+  .header-container a.mw-ui-icon, .header-container button.mw-ui-icon,
+  .header-container label.mw-ui-icon {
+    filter: brightness(200%);
+  }
   #mw-mf-page-left ul li a.mw-ui-icon::before,
   .minerva-user-menu ul li a.mw-ui-icon::before,
   #page-actions-overflow ul li a.mw-ui-icon::before {
