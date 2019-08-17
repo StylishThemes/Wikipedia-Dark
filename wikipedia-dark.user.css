@@ -1244,6 +1244,23 @@
     color: var(--gray-c);
     border-color: var(--gray-7);
   }
+  .diff-context {
+    background-color: transparent;
+    border-color: var(--gray-5);
+    color: var(--gray-c);
+  }
+  .diff-addedline {
+    border-color: rgba(0, 112, 213, .6);
+  }
+  .diff-addedline .diffchange {
+    background: rgba(0, 112, 213, .6);
+  }
+  .diff-deletedline {
+    border-color: rgba(213, 154, 0, .6);
+  }
+  .diff-deletedline .diffchange {
+    background: rgba(213, 154, 0, .6);
+  }
   .overlay textarea {
     background-color: var(--gray-1);
     color: var(--gray-9a);
