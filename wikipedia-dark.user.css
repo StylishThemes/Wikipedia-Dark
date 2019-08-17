@@ -589,15 +589,10 @@
   div:not([style*="-color"]), div[style*="background-color"],
   span:not([class*="color"]), table:not(.hp-portalen), #talkheader td,
   tr:not([style*="border-bottom"]), th, .infobox tr[style*="background-color"],
-  td:not([style*="border-bottom"]):not([style*="border-top"]), h1, h2, h3, h4,
-  h5, h6, ul, li, input, select, .mw-body-content code, .lang-list-button:hover,
-  .oo-ui-buttonElement-button, #mwe-popups-settings, #mwe-popups-settings header {
+  td, h1, h2, h3, h4, h5, h6, ul, li, input, select, .mw-body-content code,
+  .lang-list-button:hover, .oo-ui-buttonElement-button, #mwe-popups-settings,
+  #mwe-popups-settings header {
     border-color: var(--gray-5) !important;
-  }
-  td[style*="border-bottom"] {
-    border-right-color: var(--gray-5) !important;
-    border-left-color: var(--gray-5) !important;
-    border-top-color: var(--gray-5) !important;
   }
   .mwe-popups::before, .cx-callout-1::before {
     border-bottom-color: var(--gray-5) !important;
