@@ -150,7 +150,8 @@
   }
   legend .oo-ui-labelElement-label, .cnotice-message p,
   #mwe-popups-settings header h1, #mwe-popups-settings main form label > span,
-  .mwe-popups-settings-help p, font[color="black"] {
+  .mwe-popups-settings-help p, font[color="black"],
+  #content td[style*="background: #f9f9e9;" i] a {
     color: var(--gray-d) !important;
   }
   a:hover, a:hover span:not(.oo-ui-labelElement-label), #toc a:hover,
@@ -538,8 +539,10 @@
     color: var(--gray-d) !important;
   }
   /* Yellow */
-  table.ext-status-beta > tbody > tr.tpl-infobox-header {
+  table.ext-status-beta > tbody > tr.tpl-infobox-header,
+  td[style*="background: #f9f9e9;" i], span[style*="background: #f9f9e9;" i] {
     background: var(--yellow-1) !important;
+    color: var(--gray-3) !important;
   }
   /* Orange */
   table.ext-status-experimental > tbody > tr.tpl-infobox-header {
@@ -677,7 +680,7 @@
   tr.ext-infobox-header th, tr.ext-infobox-header span {
     color: var(--white) !important;
   }
-  .CategoryTreeEmptyBullet, .table-na, .infobox, .hp-portalen a span {
+  .CategoryTreeEmptyBullet, .table-na, .infobox, .hp-portalen a span, kbd {
     color: var(--gray-c) !important;
   }
   .oo-ui-buttonElement-button:hover,
