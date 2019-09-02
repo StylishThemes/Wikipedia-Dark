@@ -1134,13 +1134,13 @@
   .header, .oo-ui-dropdownWidget-handle, .oo-ui-menuSelectWidget,
   .notifications-filter-overlay .overlay-content .mw-echo-ui-pageNotificationsOptionWidget,
   .notifications-filter-overlay .overlay-content .mw-echo-ui-crossWikiUnreadFilterWidget {
-    border-color: var(--gray-7);
+    border-color: var(--gray-5);
   }
   .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor::after,
   .language-searcher .site-link-list a, .minerva-footer,
   .mw-rcfilters-ui-itemMenuOptionWidget-view-namespaces,
   .overlay-footer-container {
-    border-top-color: var(--gray-7);
+    border-top-color: var(--gray-5);
   }
   .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor::after,
   .mw-rcfilters-ui-itemMenuOptionWidget:not(:last-child):not(.mw-rcfilters-ui-itemMenuOptionWidget-identifier-talk),
@@ -1148,16 +1148,14 @@
   .content .section-heading, .content table.infobox th,
   .content table.infobox td, .action-history #pagehistory li, .header-container,
   .mw-echo-ui-notificationItemWidget:last-child {
-    border-bottom-color: var(--gray-7);
+    border-bottom-color: var(--gray-5);
   }
-  .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor::after {
-    border-left-color: var(--gray-7);
-  }
-  .oo-ui-popupWidget-anchored-start .oo-ui-popupWidget-anchor::after {
-    border-right-color: var(--gray-7);
-  }
+  .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor::after,
   blockquote {
     border-left-color: var(--gray-5);
+  }
+  .oo-ui-popupWidget-anchored-start .oo-ui-popupWidget-anchor::after {
+    border-right-color: var(--gray-5);
   }
   /* Diff fixes */
   .diff-context {
@@ -1194,35 +1192,35 @@
   .mw-rollback-link {
     margin-left: .5em;
     float: right;
-    border: 1px solid var(--gray-7);
+    border: 1px solid var(--gray-5);
   }
   /* Other UI fixes */
   .mw-ui-input {
     background-color: var(--gray-1);
     color: var(--gray-c);
-    border-color: var(--gray-7);
-    box-shadow: inset 0 0 0 .1em var(--gray-7);
+    border-color: var(--gray-5);
+    box-shadow: inset 0 0 0 .1em var(--gray-5);
   }
   .search-box .search {
     background-color: var(--gray-2);
-    border-color: var(--gray-7);
+    border-color: var(--gray-5);
     color: var(--gray-c);
   }
   .toggle-list__list {
     background-color: var(--gray-3);
-    box-shadow: 0 5px 17px 0 rgba(0, 0, 0, .24), 0 0 1px var(--gray-7);
+    box-shadow: 0 5px 17px 0 rgba(0, 0, 0, .24), 0 0 1px var(--gray-5);
   }
   .minerva--amc-enabled.action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-history-undo a:hover,
   .minerva--amc-enabled.action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-rollback-link a:hover {
     background-color: var(--gray-5);
+    border-color: var(--gray-5);
     color: var(--gray-c);
-    border-color: var(--gray-7);
   }
   .mw-widget-dateInputWidget-handle,
   .oo-ui-textInputWidget .oo-ui-inputWidget-input {
     background-color: var(--gray-1);
+    border-color: var(--gray-5);
     color: var(--gray-c);
-    border-color: var(--gray-7);
   }
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover {
     background-color: var(--gray-4);
@@ -1242,23 +1240,23 @@
   .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select:hover,
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-buttonElement-pressed > input.oo-ui-buttonElement-button,
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active {
+    border-color: var(--gray-5);
     color: var(--gray-c);
-    border-color: var(--gray-7);
   }
   #mw-mf-page-left ul li {
     background-color: var(--gray-3);
-    border-top-color: var(--gray-7);
+    border-top-color: var(--gray-5);
   }
   .page-list li, .topic-title-list li, .site-link-list li {
+    border-bottom-color: var(--gray-5);
     color: var(--gray-c);
-    border-bottom-color: var(--gray-7);
   }
   .backtotop {
-    box-shadow: .1em .2em .3em var(--gray-7);
+    box-shadow: .1em .2em .3em var(--gray-5);
   }
   .mbox-small.plainlinks.sistersitebox, .mbox-small.wikipedia-books {
     background-color: var(--gray-3) !important;
-    border-color: var(--gray-7) !important;
+    border-color: var(--gray-5) !important;
     color: var(--gray-c) !important;
   }
   .overlay textarea {
@@ -1272,7 +1270,7 @@
   .overlay-header .header-action .progressive[disabled],
   .oo-ui-buttonElement-framed.oo-ui-widget-disabled > .oo-ui-buttonElement-button {
     background-color: var(--gray-5);
-    border-color: var(--gray-7);
+    border-color: var(--gray-5);
   }
   .minerva--amc-enabled.action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-history-undo a,
   .minerva--amc-enabled.action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-rollback-link a,
@@ -1280,12 +1278,12 @@
   .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle:hover,
   .mw-ui-button:hover {
     background-color: var(--gray-4);
+    border-color: var(--gray-5);
     color: var(--gray-c);
-    border-color: var(--gray-7);
   }
   .overlay .content-header, footer .last-modified-bar {
-    border-bottom-color: var(--gray-7);
     background-color: var(--gray-3);
+    border-bottom-color: var(--gray-5);
     color: var(--gray-c);
   }
   .last-modified-bar.active, .oo-ui-toolbar-bar, .hatnote, .dablink, .rellink,
@@ -1296,17 +1294,17 @@
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button,
   .previewnote p, .warningbox, .mw-revision, .mw-ui-button {
     background-color: var(--gray-3);
+    border-color: var(--gray-5);
     color: var(--gray-c);
-    border-color: var(--gray-7);
   }
   .oo-ui-popupWidget-popup, .oo-ui-popupToolGroup-tools, .content table.infobox {
     background-color: var(--gray-3);
-    border-color: var(--gray-7);
+    border-color: var(--gray-5);
   }
   .ip-label-container, .client-js .toc-mobile,
   .mw-echo-ui-notificationItemWidget {
     background-color: var(--gray-2);
-    border-color: var(--gray-7);
+    border-color: var(--gray-5);
   }
   .client-js body.mw-rcfilters-ui-loading .mw-changeslist {
     opacity: .7;
