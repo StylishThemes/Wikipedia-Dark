@@ -101,13 +101,15 @@
   blockquote[style*="background-color: white" i], .ns-0 ul, .ns-0 ol li,
   table.flextable, table.flextable .invisible, table#noarticletext,
   table#noarticletext table, .metadata.plainlinks.stub,
-  div#mw-content-text div.mw-parser-output h2:not([id^="mp-"]),
-  .mw-body-content .portal ul, div[style*="background"] {
+  .mw-body-content #mw-content-text h2:not([id^="mp-"]),
+  .mw-body-content .portal ul, div[style*="background"], .wikitable > tr,
+  .wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr,
+  .wikitable > * > tr > th, .wikitable > * > tr > td {
     background-color: transparent !important;
   }
   div.thumbinner, .catlinks, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
   .mw-mmv-info-box, .infobox.standard-talk, .mwe-pt-article-row-odd,
-  .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options {
+  .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options, td[bgcolor] {
     background-color: transparent;
   }
   .lang-list-button {
@@ -121,7 +123,8 @@
   #pt-anonuserpage, .oo-ui-textInputWidget .oo-ui-inputWidget-input,
   .oo-ui-messageDialog-title, .oo-ui-messageDialog-message,
   .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label, .mw-mmv-image-desc,
-  .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
+  .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected,
+  .guider_content h1, .guider_content p {
     color: var(--gray-9a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
@@ -305,7 +308,12 @@
     background-color: var(--gray-18) !important;
   }
   .mw-widget-dateInputWidget-handle, .mwe-pt-control-gradient,
-  .template-documentation, .mw-parser-output .quotebox {
+  .template-documentation, .mw-parser-output .quotebox,
+  #languagesettings-settings-panel, .uls-language-settings-close-block,
+  .uls-input-settings .uls-input-settings-inputmethods-list, .imeselector,
+  .imeselector-menu, .uls-ime-menu-settings-item, .ip-label-container,
+  .mw-pt-languages, .cbnnr-main, .mw_metadata td, .kephir-sagittarius-invite,
+  .infobox {
     background-color: var(--gray-2); /* non-important */
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
@@ -361,12 +369,14 @@
   tr[style*="background-color:#f7f7f7"] {
     background-color: var(--gray-28) !important;
   }
-  table.wikitable > tr > th, table.wikitable > * > tr > th,
   div.barbox > table > tbody > tr > th, .cx-campaign-contributionsmenu li:hover,
   .suggestions-results, .suggestions-special, #mwe-pt-list-more,
-  .fr-watchlist-pending-notice, div.flaggedrevs_notice {
+  .fr-watchlist-pending-notice, div.flaggedrevs_notice, .imeselector:hover,
+  .imeselector-menu .selectable-row:hover, .guider, .mw-pt-languages-label,
+  .cbnnr-close, .mw_metadata th {
     background-color: var(--gray-3); /* don't include !important flag */
   }
+  table.wikitable > tr > th, table.wikitable > * > tr > th,
   td[style*="background: #ececec;" i], th[style*="background:#eee" i],
   th[style*="background-color: #eee" i], tr[style*="background: #dddddd" i],
   tr[style*="background-color: #f7f7f7;" i], th[style*="background:#F2F2F2" i],
@@ -381,6 +391,12 @@
   .vertical-navbox div[style*="#adf"],
   .infobox.standard-talk tr[style*="#e8dbae"] {
     background-color: var(--gray-3) !important;
+  }
+  .plainlinks.mw-trackedTemplate {
+    background: var(--gray-3) !important;
+  }
+  .licensetpl.fileinfotpl tbody th {
+    background-color: var(--gray-4) !important;
   }
   /* remove background image/gradient */
   .keyboard-key, div#editpage-specialchars a,
@@ -423,6 +439,17 @@
   .mw-editfont-monospace {
     background-color: var(--gray-2);
     color: var(--gray-9a);
+  }
+  .mw-body pre, .mw-body code, .mw-body .mw-code {
+    background-color: var(--gray-1) !important;
+    border-color: var(--gray-5) !important;
+    color: var(--gray-b9) !important;
+  }
+  div.mw-warning-with-logexcerpt, div.mw-lag-warn-high,
+  div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon,
+  div.titleblacklist-warning, div.locked-warning {
+    background-color: var(--red-3);
+    border-color: var(--red-1) !important;
   }
   .userSummaryButtons a, #userSummaryButtons a {
     background-color: var(--green-4);
@@ -818,6 +845,9 @@
   .oo-ui-indicator-down, .oo-ui-indicator-clear {
     filter: invert(100%);
   }
+  #pt-uls a.uls-trigger {
+    filter: invert(100%) hue-rotate(180deg);
+  }
   /*** Reference tooltips ***/
   .rt-tooltip, .rt-tooltipTail::after {
     background: var(--gray-2) !important;
@@ -834,37 +864,102 @@
   }
 }
 @-moz-document domain("commons.wikimedia.org") {
-  #firstHeading div.fastcci-buttonset > .ui-button {
-    background-color: var(--gray-2) !important;
-  }
-  #firstHeading div.fastcci-buttonset > .ui-button:hover {
-    background-color: var(--gray-3) !important;
-  }
-  .mw-parser-output #wdinfoboxcaption {
+  #mw-page-base, .mw-parser-output #wdinfoboxcaption {
     background-color: var(--gray-2);
   }
-  .mw-body .mw-body-content #mw-content-text h2 {
-    background-color: transparent !important;
+  #firstHeading div.fastcci-buttonset > .ui-button, .gallery .gallerybox {
+    background-color: var(--gray-2) !important;
+  }
+  .ui-state-active, .ui-widget-content .ui-state-active,
+  .ui-widget-header .ui-state-active, .ui-state-hover,
+  .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover,
+  .ui-state-focus, .ui-widget-content .ui-state-focus,
+  .ui-widget-header .ui-state-focus, #cat_a_lot {
+    background: var(--gray-3);
+  }
+  #firstHeading div.fastcci-buttonset > .ui-button:hover,
+  .gallerytext .jFileTitle, #Centralized_discussion tr th,
+  #villagepumpheader table tr th {
+    background-color: var(--gray-3) !important;
+  }
+  .mw-parser-output .mainpage-welcome-sitename {
+    color: var(--gray-91);
+  }
+  .mw-parser-output .mainpage-box-orange .mainpage-box-title {
+    background-color: var(--orange-1);
+  }
+  .mw-parser-output .mainpage-box-green .mainpage-box-title {
+    background-color: var(--green-2);
+  }
+  .mw-parser-output .mainpage-box-blue .mainpage-box-title,
+  .mw-parser-output .community-tabs td.active {
+    background-color: var(--blue-3);
+  }
+  .mw-parser-output .community-tabs td {
+    background-color: var(--blue-2);
+  }
+  body .ui-button.ui-button-green, body .ui-button.ui-button-green:hover {
+    border-color: var(--green-4) !important;
+    background: linear-gradient(to bottom, var(--green-3) 0%, var(--green-2) 90%) !important;
+  }
+  .com-mg-pagination {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+  }
+  .tipsy-inner {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+    color: var(--gray-9a);
+  }
+  /* Hack to fix Wikimedia logo on MP */
+  .mainpage .center > .floatnone {
+    background-image: url("//upload.wikimedia.org/wikipedia/commons/thumb/8/81/Wikimedia-logo.svg/45px-Wikimedia-logo.svg.png");
+  }
+  .mainpage .center > .floatnone > img {
+    opacity: 0;
   }
 }
 @-moz-document domain("wikidata.org") {
-  .wikibase-entitytermsforlanguagelistview-header-row th,
-  li.wikibase-sitelinkview.listview-item span.wikibase-sitelinkview-siteid-container {
-    background-color: var(--gray-3) !important;
+  .mw-parser-output .wd-mp-headerbox, .mw-parser-output .wd-mp-subheader > div,
+  .ui-entityselector-list .ui-entityselector-more,
+  .wikibase-entitysearch-list .wb-entitysearch-suggestions,
+  .wikibase-statementgrouplistview .wikibase-statementlistview,
+  .articlepreview .container, .wikibase-referenceview.wb-edit,
+  .ui-entityselector-list .ui-entityselector-notfound {
+    background-color: var(--gray-2);
   }
   .wikibase-sitelinkgroupview, .ui-widget.ui-suggester-list,
   .articlepreview.open, ul.wikibase-snaktypeselector-menu.ui-menu {
     background-color: var(--gray-2) !important;
   }
+  .wikibase-statementgrouplistview .wikibase-statementgroupview-property,
+  .wikibase-sitelinkgroupview .wikibase-sitelinkgroupview-heading-container,
+  .wikibase-referenceview.wb-edit > .wikibase-referenceview-heading {
+    background-color: var(--gray-3);
+  }
+  .wikibase-entitytermsforlanguagelistview-header-row th,
+  li.wikibase-sitelinkview.listview-item span.wikibase-sitelinkview-siteid-container {
+    background-color: var(--gray-3) !important;
+  }
   .wikibase-snaktypeselector-menu .ui-state-active,
   .wikibase-snaktypeselector-menu .ui-state-focus {
     background: var(--gray-3) !important;
   }
-  .ui-entityselector-list .ui-entityselector-notfound {
-    background-color: var(--gray-2);
+  .wikibase-statementgrouplistview .wikibase-statementgroupview-property.wb-edit,
+  .wikibase-statementgroupview-property.wb-edit + .wikibase-statementlistview > .wikibase-toolbar-wrapper {
+    background-color: var(--gray-4);
   }
-  .wb-icon, .articlepreview-button, .wb-help-field-hint, .ui-icon-close {
-    filter: invert(80%);
+  .wikibase-entityview textarea, .ui-listrotator {
+    color: var(--gray-9a);
+  }
+  #mw-content-text .mp-frame .mp-frame-header[style*="background: #006699"] {
+    background-color: var(--blue-2) !important;
+  }
+  #mw-content-text .mp-frame .mp-frame-header[style*="background: #339966"] {
+    background-color: var(--green-2) !important;
+  }
+  #mw-content-text .mp-frame .mp-frame-header[style*="background: #990000"] {
+    background-color: var(--red-1) !important;
   }
   .tipsy-inner {
     color: var(--gray-9a);
@@ -874,18 +969,11 @@
     filter: invert(80%);
     background-color: var(--gray-e) !important;
   }
-  .wikibase-entityview textarea, .ui-listrotator {
-    color: var(--gray-9a);
+  .wb-icon, .articlepreview-button, .wb-help-field-hint, .ui-icon-close {
+    filter: invert(80%);
   }
-  .imeselector-toggle {
-    filter: brightness(200%);
-  }
-  .imeselector-menu {
-    filter: brightness(50%);
-    background-color: var(--gray-2) !important;
-  }
-  .imeselector-menu .selectable-row:hover {
-    background-color: var(--gray-3);
+  .mw-parser-output .wd-mp-headerimage {
+    filter: invert(100%);
   }
 }
 @-moz-document domain("wikipedia.org") {
@@ -909,6 +997,15 @@
     background-position: center -108px !important;
     filter: invert(60.5%) !important;
     height: 47px !important;
+  }
+}
+@-moz-document domain("www.mediawiki.org") {
+  .mw-parser-output .note-info {
+    background-color: var(--green-4);
+    border-color: var(--green-3) !important;
+  }
+  .navbox.mw-collapsible th[style*="color:"] {
+    color: var(--gray-9a) !important; /* make global? */
   }
 }
 @-moz-document domain("wiki.archlinux.org") {
@@ -950,6 +1047,9 @@
   #toc, .toc, .mw-warning, .toccolours {
     background-color: var(--gray-2) !important;
     border-color: var(--gray-5) !important;
+  }
+  div.archwiki-template-message {
+    background-color: var(--gray-2);
   }
   textarea {
     border-color: var(--gray-4);
