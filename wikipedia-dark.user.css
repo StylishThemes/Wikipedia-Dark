@@ -911,9 +911,9 @@
     --purple-1: #382b4a;
     --purple-2: #768;
     --cyan-1: #194d41;
-    --ores-1: #4d3a00;
-    --ores-2: #4d2900;
-    --ores-3: #4d2004;
+    --ores-1: #222800;
+    --ores-2: #222000;
+    --ores-3: #221800;
   }
   body {
     background-color: var(--gray-2);
@@ -968,6 +968,9 @@
   .ext-related-articles-card-list h3::after, .overlay-enabled, #content {
     background: none;
   }
+  .mw-rcfilters-ui-filterTagMultiselectWidget-mobile .oo-ui-tagMultiselectWidget-input.oo-ui-textInputWidget input[readonly] {
+    background-color: var(--gray-1);
+  }
   .overlay, .overlay.search-overlay, .language-overlay .overlay-content,
   .language-searcher .site-link-list li, .language-searcher .panel,
   #mw-mf-diffview #mw-mf-userinfo, .mw-rollback-link, .mw-tag-marker,
@@ -985,7 +988,6 @@
     background-color: var(--gray-2) !important;
   }
   .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted.oo-ui-optionWidget-highlighted,
-  .mw-rcfilters-ui-itemMenuOptionWidget.oo-ui-optionWidget-selected,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .mw-rcfilters-ui-tagItemWidget-selected.oo-ui-tagItemWidget.oo-ui-widget-enabled,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled,
   .oo-ui-windowManager-modal > .oo-ui-dialog > .oo-ui-window-frame,
@@ -993,16 +995,20 @@
   .wikitable > tr > th, .wikitable > * > tr > th, .overlay-header-container,
   .overlay-footer-container, .overlay.search-overlay .results,
   .overlay.search-overlay .search-feedback, .header-container.header-chrome,
-  .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted,
   .mw-widgets-datetime-calendarWidget, .mw-widget-dateInputWidget-calendar,
   .minoredit, .list-header, .oo-ui-dropdownWidget-handle,
   .mw-echo-ui-notificationsInboxWidget-toolbarWrapper,
   .mw-echo-ui-pageNotificationsOptionWidget.oo-ui-optionWidget-selected,
   .oo-ui-dropdownWidget.oo-ui-widget-enabled.oo-ui-dropdownWidget-open .oo-ui-dropdownWidget-handle,
-  .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle {
+  .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle,
+  .oo-ui-menuSelectWidget {
     background-color: var(--gray-3);
   }
   .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted:not(.oo-ui-optionWidget-selected),
+  .mw-rcfilters-ui-itemMenuOptionWidget:hover,
+  .mw-rcfilters-ui-itemMenuOptionWidget-highlighted,
+  .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted,
+  .mw-rcfilters-ui-itemMenuOptionWidget.oo-ui-optionWidget-selected,
   .oo-ui-listToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled,
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active,
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active:focus,
@@ -1070,6 +1076,10 @@
   .page-summary a h2, .page-summary a h3 {
     color: var(--base-color);
   }
+  a.new, a.new:visited, a.new:hover, a.new > *, a.new:visited > *,
+  a.new:hover > * {
+    color: var(--red-1);
+  }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled:hover {
     color: var(--gray-7);
   }
@@ -1077,7 +1087,8 @@
   .site-link-list.side-list .list-thumb, .content figcaption,
   .content .thumbcaption, #mw-mf-page-left ul li a:visited,
   #mw-mf-page-left ul li a:active, .toggle-list-item__anchor--menu:visited,
-  .toggle-list-item__anchor--menu:active {
+  .toggle-list-item__anchor--menu:active,
+  .mw-rcfilters-ui-tagItemWidget-popup-content {
     color: var(--gray-9a);
   }
   .language-searcher .site-link-list a .autonym,
@@ -1125,17 +1136,25 @@
   .notifications-filter-overlay .overlay-content .mw-echo-ui-crossWikiUnreadFilterWidget {
     border-color: var(--gray-7);
   }
+  .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor::after,
   .language-searcher .site-link-list a, .minerva-footer,
   .mw-rcfilters-ui-itemMenuOptionWidget-view-namespaces,
   .overlay-footer-container {
     border-top-color: var(--gray-7);
   }
+  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor::after,
   .mw-rcfilters-ui-itemMenuOptionWidget:not(:last-child):not(.mw-rcfilters-ui-itemMenuOptionWidget-identifier-talk),
   .mw-changeslist-line, .overlay .panel, .content .mw-parser-output > h2,
   .content .section-heading, .content table.infobox th,
   .content table.infobox td, .action-history #pagehistory li, .header-container,
   .mw-echo-ui-notificationItemWidget:last-child {
     border-bottom-color: var(--gray-7);
+  }
+  .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor::after {
+    border-left-color: var(--gray-7);
+  }
+  .oo-ui-popupWidget-anchored-start .oo-ui-popupWidget-anchor::after {
+    border-right-color: var(--gray-7);
   }
   blockquote {
     border-left-color: var(--gray-5);
@@ -1206,7 +1225,7 @@
     border-color: var(--gray-7);
   }
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover {
-    background-color: var(--gray-5);
+    background-color: var(--gray-4);
     color: var(--gray-c);
   }
   .mw-widgets-datetime-dateTimeInputWidget-handle {
@@ -1216,8 +1235,7 @@
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active:focus,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
-  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active,
-  .oo-ui-menuSelectWidget {
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active {
     background-color: var(--gray-4);
     color: var(--gray-c);
   }
@@ -1227,15 +1245,9 @@
     color: var(--gray-c);
     border-color: var(--gray-7);
   }
-  .oo-ui-pendingElement-pending {
-    background-color: var(--gray-2);
-    background-image: -webkit-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
-    background-image: -moz-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
-    background-image: linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
-  }
   #mw-mf-page-left ul li {
     background-color: var(--gray-3);
-    border-top: 1px solid var(--gray-7);
+    border-top-color: var(--gray-7);
   }
   .page-list li, .topic-title-list li, .site-link-list li {
     color: var(--gray-c);
@@ -1252,11 +1264,6 @@
   .overlay textarea {
     background-color: var(--gray-1);
     color: var(--gray-9a);
-  }
-  .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link {
-    -webkit-transition: none;
-       -moz-transition: none;
-            transition: none;
   }
   .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled.oo-ui-flaggedElement-primary > .oo-ui-tool-link,
   .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary > .oo-ui-tool-link,
@@ -1292,9 +1299,6 @@
     color: var(--gray-c);
     border-color: var(--gray-7);
   }
-  .mw-rcfilters-ui-filterTagMultiselectWidget-mobile .oo-ui-tagMultiselectWidget-input.oo-ui-textInputWidget input[readonly] {
-    background-color: var(--gray-1);
-  }
   .oo-ui-popupWidget-popup, .oo-ui-popupToolGroup-tools, .content table.infobox {
     background-color: var(--gray-3);
     border-color: var(--gray-7);
@@ -1303,6 +1307,53 @@
   .mw-echo-ui-notificationItemWidget {
     background-color: var(--gray-2);
     border-color: var(--gray-7);
+  }
+  .client-js body.mw-rcfilters-ui-loading .mw-changeslist {
+    opacity: .7;
+  }
+  /* Animation fixes */
+  .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link {
+    -webkit-transition: none;
+       -moz-transition: none;
+            transition: none;
+  }
+  .oo-ui-pendingElement-pending {
+    background-color: var(--gray-2);
+    background-image: -webkit-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+    background-image: linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+  }
+  @-webkit-keyframes unseen-fadeout-to-unread {
+    from {
+      background-color: var(--gray-18);
+    }
+    to {
+      background-color: var(--gray-3);
+    }
+  }
+  @keyframes unseen-fadeout-to-unread {
+    from {
+      background-color: var(--gray-18);
+    }
+    to {
+      background-color: var(--gray-3);
+    }
+  }
+  @-webkit-keyframes unseen-fadeout-to-read {
+    from {
+      background-color: var(--gray-18);
+    }
+    to {
+      background-color: var(--gray-2);
+    }
+  }
+  @keyframes unseen-fadeout-to-read {
+    from {
+      background-color: var(--gray-18);
+    }
+    to {
+      background-color: var(--gray-2);
+    }
   }
 }
 @-moz-document domain("commons.wikimedia.org") {
