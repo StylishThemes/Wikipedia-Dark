@@ -953,7 +953,8 @@
   .oo-ui-decoratedOptionWidget.oo-ui-widget-enabled .oo-ui-indicatorElement-indicator,
   .oo-ui-buttonElement.oo-ui-iconElement .oo-ui-iconElement-icon,
   .oo-ui-buttonElement.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator,
-  .client-js .mw-echo-special-nojs {
+  .client-js .mw-echo-special-nojs, .mwe-math-fallback-image-inline,
+  .oo-ui-icon-check, .mw-ui-icon-check:before {
     filter: invert(80%);
   }
   .oo-ui-image-progressive.oo-ui-icon-eye, .mw-ui-icon-eye-progressive::before,
@@ -961,7 +962,8 @@
     filter: invert(0);
   }
   /* Background fixes */
-  .minerva--amc-enabled.action-history .mw-history-compareselectedversions {
+  .minerva--amc-enabled.action-history .mw-history-compareselectedversions,
+  .ns-special .pre-content, .ns-special #content form {
     background-color: transparent;
   }
   .client-js .ambox .ambox-learn-more::before, #mw-mf-page-center,
@@ -981,11 +983,17 @@
   #mw-mf-page-left, .oo-ui-dropdownInputWidget.oo-ui-widget-enabled:hover,
   .oo-ui-dropdownInputWidget.oo-ui-widget-enabled,
   .mw-widgets-datetime-dateTimeInputWidget.oo-ui-widget-enabled .mw-widgets-datetime-dateTimeInputWidget-editField:hover,
-  .navigation-enabled #mw-mf-page-center {
+  .navigation-enabled #mw-mf-page-center, table.wikitable tr {
     background-color: var(--gray-2);
   }
   .content table.infobox *[style*="background"] {
     background-color: var(--gray-2) !important;
+  }
+  tr[bgcolor], td[bgcolor] {
+    background-color: var(--gray-28);
+  }
+  tr[style*="background"], td[style*="background"] {
+    background-color: var(--gray-28) !important;
   }
   .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted.oo-ui-optionWidget-highlighted,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .mw-rcfilters-ui-tagItemWidget-selected.oo-ui-tagItemWidget.oo-ui-widget-enabled,
@@ -1001,8 +1009,11 @@
   .mw-echo-ui-pageNotificationsOptionWidget.oo-ui-optionWidget-selected,
   .oo-ui-dropdownWidget.oo-ui-widget-enabled.oo-ui-dropdownWidget-open .oo-ui-dropdownWidget-handle,
   .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle,
-  .oo-ui-menuSelectWidget {
+  .oo-ui-menuSelectWidget, th[bgcolor] {
     background-color: var(--gray-3);
+  }
+  th[style*="background"] {
+    background-color: var(--gray-3) !important;
   }
   .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted:not(.oo-ui-optionWidget-selected),
   .mw-rcfilters-ui-itemMenuOptionWidget:hover,
@@ -1020,7 +1031,8 @@
     background-color: var(--gray-4);
   }
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:hover,
-  .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover {
+  .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover,
+  form.mw-mf-settings #beta-field::before {
     background-color: var(--gray-5);
   }
   .editor-overlay-ve.loading, .overlay.overlay-loading,
@@ -1116,6 +1128,9 @@
   .notifications-filter-overlay .overlay-content .mw-echo-ui-crossWikiUnreadFilterWidget-subtitle {
     color: var(--gray-c);
   }
+  td[class*="table-"] {
+    color: var(--gray-c) !important;
+  }
   /* Border fixes */
   .oo-ui-tagItemWidget, .oo-ui-toolGroup, .page-actions-menu,
   .mw-rcfilters-ui-tagItemWidget.oo-ui-flaggedElement-muted.oo-ui-tagItemWidget.oo-ui-widget-enabled,
@@ -1133,7 +1148,10 @@
   .mw-tag-marker, .ns-special .content-header, .mw-mf-watchlist-selector li,
   .header, .oo-ui-dropdownWidget-handle, .oo-ui-menuSelectWidget,
   .notifications-filter-overlay .overlay-content .mw-echo-ui-pageNotificationsOptionWidget,
-  .notifications-filter-overlay .overlay-content .mw-echo-ui-crossWikiUnreadFilterWidget {
+  .notifications-filter-overlay .overlay-content .mw-echo-ui-crossWikiUnreadFilterWidget,
+  form.mw-mf-settings .oo-ui-fieldLayout,
+  form.mw-mf-settings .oo-ui-fieldLayout:first-child,
+  .overlay.search-overlay .search-content {
     border-color: var(--gray-5);
   }
   .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor::after,
@@ -1150,8 +1168,7 @@
   .mw-echo-ui-notificationItemWidget:last-child {
     border-bottom-color: var(--gray-5);
   }
-  .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor::after,
-  blockquote {
+  .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor::after, blockquote {
     border-left-color: var(--gray-5);
   }
   .oo-ui-popupWidget-anchored-start .oo-ui-popupWidget-anchor::after {
@@ -1195,6 +1212,10 @@
     border: 1px solid var(--gray-5);
   }
   /* Other UI fixes */
+  .ns-special #content {
+    background-color: var(--gray-2);
+    background-image: var(--bg-selected);
+  }
   .mw-ui-input {
     background-color: var(--gray-1);
     color: var(--gray-c);
