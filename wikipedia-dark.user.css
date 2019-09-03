@@ -59,7 +59,6 @@
     --white: #fff;
     --gray-18: #181818;
     --gray-28: #282828;
-    --gray-2e: #2e3237;
     --gray-2f: #2f4f4f;
     --gray-69: #696969;
     --gray-9a: #9a9a9a;
@@ -86,9 +85,9 @@
     --purple-1: #382b4a;
     --purple-2: #768;
     --cyan-1: #194d41;
-    --ores-1: #4d3a00;
-    --ores-2: #4d2900;
-    --ores-3: #4d2004;
+    --ores-1: #222800;
+    --ores-2: #222000;
+    --ores-3: #221804;
   }
   /* transparent background */
   .mw-body, .parsoid-body, #mp-topbanner,
@@ -104,12 +103,13 @@
   .mw-body-content #mw-content-text h2:not([id^="mp-"]),
   .mw-body-content .portal ul, div[style*="background"], .wikitable > tr,
   .wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr,
-  .wikitable > * > tr > th, .wikitable > * > tr > td {
+  .wikitable > * > tr > th, .wikitable > * > tr > td,
+  .wikitable th span[style*="background"] {
     background-color: transparent !important;
   }
   div.thumbinner, .catlinks, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
   .mw-mmv-info-box, .infobox.standard-talk, .mwe-pt-article-row-odd,
-  .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options, td[bgcolor] {
+  .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options {
     background-color: transparent;
   }
   .lang-list-button {
@@ -135,7 +135,8 @@
   div.flaggedrevs_preview, div.plainlinks, .wikipediauserbox td,
   .table-partial[style*="background: #FFFFBB; color:black;"],
   a[href*="Wikipedia:Wikipedia_Signpost"] span, .vertical-navbox th span,
-  span[style*="white-space:nowrap; line-height:120%; font-size:155%; color:#333;"] {
+  span[style*="white-space:nowrap; line-height:120%; font-size:155%; color:#333;"],
+  tr[style^="color:black"], span[title="To be announced"] {
     color: var(--gray-9a) !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel,
@@ -350,6 +351,9 @@
     background: var(--gray-28) !important;
     border-color: var(--gray-5) !important;
   }
+  tr[bgcolor], td[bgcolor] {
+    background-color: var(--gray-28);
+  }
   table[style*="background-color:#fff;" i], .search-form fieldset, table.ambox,
   tr[style*="background-color: #fff;" i],
   .mw-ui-button[style*="background-color:#008B6D" i],
@@ -366,7 +370,8 @@
   tr[style*="background-color:#eee" i],
   .wikitable.charts-zebragrey > tbody > tr:nth-of-type(even),
   tr[style*="background:#fbf8d6" i], table.flextable td, table.nmbox td,
-  tr[style*="background-color:#f7f7f7"] {
+  tr[style*="background-color:#f7f7f7"],
+  .mw-changeslist-line tr.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey td:not(:nth-child(-n+2)) {
     background-color: var(--gray-28) !important;
   }
   div.barbox > table > tbody > tr > th, .cx-campaign-contributionsmenu li:hover,
@@ -483,9 +488,6 @@
   .mw-mmv-close, .mw-mmv-fullscreen, .mw-mmv-next-image, .mw-mmv-prev-image {
     background-color: transparent !important;
     border: none !important;
-  }
-  .mw-changeslist-line tr.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey td:not(:nth-child(-n+2)) {
-    background-color: var(--gray-2e) !important;
   }
   .mw-rcfilters-ui-filterMenuHeaderWidget-header,
   .mw-rcfilters-ui-menuSelectWidget-footer,
@@ -624,7 +626,7 @@
   #mwe-popups-settings header {
     border-color: var(--gray-5) !important;
   }
-  .mwe-popups::before, .cx-callout-1::before {
+  .mwe-popups::before, .cx-callout-1::before, tr[style*="border-bottom"] {
     border-bottom-color: var(--gray-5) !important;
   }
   .mwe-popups.flipped_y::before, .mwe-popups.flipped_x_y::before,
@@ -884,7 +886,6 @@
     --white: #fff;
     --gray-18: #181818;
     --gray-28: #282828;
-    --gray-2e: #2e3237;
     --gray-2f: #2f4f4f;
     --gray-69: #696969;
     --gray-9a: #9a9a9a;
