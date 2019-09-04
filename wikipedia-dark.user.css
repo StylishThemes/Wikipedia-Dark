@@ -863,6 +863,518 @@
     box-shadow: 0 2px 2px 0 rgba(85, 85, 85, .25) !important;
   }
 }
+@-moz-document regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|www\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.+") {
+  :root {
+    --base-color: /*[[base-color]]*/;
+    --base-color-8: rgba(/*[[base-color-rgb]]*/, .8);
+    --visited-color: /*[[visited-color]]*/;
+    --bg-custom: /*[[bg-custom]]*/;
+    --bg-selected: /*[[bg-selected]]*/;
+    --bg-attachment: /*[[bg-attachment]]*/;
+    --gray-1: #111;
+    --gray-2: #222;
+    --gray-3: #333;
+    --gray-4: #444;
+    --gray-5: #555;
+    --gray-7: #777;
+    --gray-a: #aaa;
+    --gray-c: #ccc;
+    --gray-d: #ddd;
+    --gray-e: #eee;
+    --white: #fff;
+    --gray-18: #181818;
+    --gray-28: #282828;
+    --gray-2e: #2e3237;
+    --gray-2f: #2f4f4f;
+    --gray-69: #696969;
+    --gray-9a: #9a9a9a;
+    --gray-b9: #b9b9b9;
+    --gray-bc: #bcbcbc;
+    --blue-1: #36c;
+    --blue-2: #182030;
+    --blue-3: #212c43;
+    --red-0: #400;
+    --red-1: #c22;
+    --red-2: #d33;
+    --red-3: #722;
+    --red-4: #ff4242;
+    --green-1: #390;
+    --green-2: #165316;
+    --green-3: #061;
+    --green-4: #002800;
+    --brown-1: #321;
+    --brown-2: #542;
+    --brown-3: #261d08;
+    --yellow-1: #b28200;
+    --orange-1: #e53e00;
+    --orange-2: #e08b26;
+    --purple-1: #382b4a;
+    --purple-2: #768;
+    --cyan-1: #194d41;
+    --ores-1: #222800;
+    --ores-2: #222000;
+    --ores-3: #221800;
+  }
+  body {
+    background-color: var(--gray-2);
+    background-image: var(--bg-selected);
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-attachment: var(--bg-attachment);
+    /*[[bg-options]]*/
+    color: var(--gray-c);
+  }
+  /* Icon fixes */
+  footer > .post-content > h2 > img, .header-container button.mw-ui-icon,
+  .header-container label.mw-ui-icon, .mw-ui-icon-wikimedia-bellOutline-base20,
+  .mw-ui-icon-minerva-mainmenu {
+    filter: brightness(200%);
+  }
+  .mw-editsection a.mw-ui-icon::before,
+  .page-actions-menu__list-item .mw-ui-icon-element,
+  #mw-mf-page-left ul li a.mw-ui-icon::before,
+  .minerva-user-menu ul li a.mw-ui-icon::before,
+  #page-actions-overflow ul li a.mw-ui-icon::before,
+  .header .branding-box h1 img, .header .branding-box a img {
+    filter: brightness(150%);
+  }
+  #page-actions .mw-show-on-map {
+    filter: invert(100%);
+  }
+  .mw-ui-icon-mf-user::before {
+    filter: invert(100%) brightness(300%);
+  }
+  .oo-ui-icon-funnel, .mw-ui-icon-funnel::before, .oo-ui-icon-wikiText,
+  .mw-ui-icon-wikiText::before, .oo-ui-icon-close, .mw-ui-icon-close::before,
+  .oo-ui-icon-edit, .mw-ui-icon-edit::before, .oo-ui-icon-eye,
+  .mw-ui-icon-eye::before, .mw-ui-icon-mf-arrow:before, .oo-ui-icon-settings,
+  .mw-ui-icon-settings::before, .oo-ui-indicator-down,
+  .oo-ui-decoratedOptionWidget.oo-ui-widget-enabled .oo-ui-iconElement-icon,
+  .oo-ui-decoratedOptionWidget.oo-ui-widget-enabled .oo-ui-indicatorElement-indicator,
+  .oo-ui-buttonElement.oo-ui-iconElement .oo-ui-iconElement-icon,
+  .oo-ui-buttonElement.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator,
+  .client-js .mw-echo-special-nojs, .mwe-math-fallback-image-inline,
+  .oo-ui-icon-check, .mw-ui-icon-check:before {
+    filter: invert(80%);
+  }
+  .oo-ui-image-progressive.oo-ui-icon-eye, .mw-ui-icon-eye-progressive::before,
+  .oo-ui-image-progressive.oo-ui-icon-edit, .mw-ui-icon-edit-progressive::before {
+    filter: invert(0);
+  }
+  /* Background fixes */
+  .minerva--amc-enabled.action-history .mw-history-compareselectedversions,
+  .ns-special .pre-content, .ns-special #content form {
+    background-color: transparent;
+  }
+  .client-js .ambox .ambox-learn-more::before, #mw-mf-page-center,
+  .ext-related-articles-card-list h3::after, .overlay-enabled, #content {
+    background: none;
+  }
+  .mw-rcfilters-ui-filterTagMultiselectWidget-mobile .oo-ui-tagMultiselectWidget-input.oo-ui-textInputWidget input[readonly] {
+    background-color: var(--gray-1);
+  }
+  .overlay, .overlay.search-overlay, .language-overlay .overlay-content,
+  .language-searcher .site-link-list li, .language-searcher .panel,
+  #mw-mf-diffview #mw-mf-userinfo, .mw-rollback-link, .mw-tag-marker,
+  .mw-rcfilters-ui-filterMenuSectionOptionWidget,
+  .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle,
+  .ext-related-articles-card-list .ext-related-articles-card-thumb,
+  .ext-related-articles-card-list .ext-related-articles-card, .image-details,
+  #mw-mf-page-left, .oo-ui-dropdownInputWidget.oo-ui-widget-enabled:hover,
+  .oo-ui-dropdownInputWidget.oo-ui-widget-enabled,
+  .mw-widgets-datetime-dateTimeInputWidget.oo-ui-widget-enabled .mw-widgets-datetime-dateTimeInputWidget-editField:hover,
+  .navigation-enabled #mw-mf-page-center, table.wikitable tr {
+    background-color: var(--gray-2);
+  }
+  .content table.infobox *[style*="background"] {
+    background-color: var(--gray-2) !important;
+  }
+  tr[bgcolor], td[bgcolor] {
+    background-color: var(--gray-28);
+  }
+  tr[style*="background"], td[style*="background"] {
+    background-color: var(--gray-28) !important;
+  }
+  .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted.oo-ui-optionWidget-highlighted,
+  .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .mw-rcfilters-ui-tagItemWidget-selected.oo-ui-tagItemWidget.oo-ui-widget-enabled,
+  .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled,
+  .oo-ui-windowManager-modal > .oo-ui-dialog > .oo-ui-window-frame,
+  .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle,
+  .wikitable > tr > th, .wikitable > * > tr > th, .overlay-header-container,
+  .overlay-footer-container, .overlay.search-overlay .results,
+  .overlay.search-overlay .search-feedback, .header-container.header-chrome,
+  .mw-widgets-datetime-calendarWidget, .mw-widget-dateInputWidget-calendar,
+  .minoredit, .list-header, .oo-ui-dropdownWidget-handle,
+  .mw-echo-ui-notificationsInboxWidget-toolbarWrapper,
+  .mw-echo-ui-pageNotificationsOptionWidget.oo-ui-optionWidget-selected,
+  .oo-ui-dropdownWidget.oo-ui-widget-enabled.oo-ui-dropdownWidget-open .oo-ui-dropdownWidget-handle,
+  .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle,
+  .oo-ui-menuSelectWidget, th[bgcolor] {
+    background-color: var(--gray-3);
+  }
+  th[style*="background"] {
+    background-color: var(--gray-3) !important;
+  }
+  .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted:not(.oo-ui-optionWidget-selected),
+  .mw-rcfilters-ui-itemMenuOptionWidget:hover,
+  .mw-rcfilters-ui-itemMenuOptionWidget-highlighted,
+  .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted,
+  .mw-rcfilters-ui-itemMenuOptionWidget.oo-ui-optionWidget-selected,
+  .oo-ui-listToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled,
+  .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active,
+  .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active:focus,
+  .oo-ui-tool.oo-ui-widget-enabled.oo-ui-tool-active > .oo-ui-tool-link,
+  .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link,
+  .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:active,
+  .mw-echo-ui-notificationItemWidget:hover, .list-thumb.list-thumb-none,
+  .toggle-list-item__anchor--menu:hover {
+    background-color: var(--gray-4);
+  }
+  .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:hover,
+  .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover,
+  form.mw-mf-settings #beta-field::before {
+    background-color: var(--gray-5);
+  }
+  .editor-overlay-ve.loading, .overlay.overlay-loading,
+  .oo-ui-windowManager-modal > .oo-ui-dialog {
+    background-color: rgba(56, 56, 56, .5);
+  }
+  /* ORES highlight fixes */
+  .mw-rcfilters-ui-highlights-color-none {
+    background-color: var(--gray-7);
+  }
+  .mw-rcfilters-ui-highlights-color-c1,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c1"]::before,
+  .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c1,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c1 tr:first-child,
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c1.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c1.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
+    background-color: var(--blue-2);
+  }
+  .mw-rcfilters-ui-highlights-color-c2,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c2"]::before,
+  .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c2,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c2 tr:first-child,
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c2.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c2.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
+    background-color: var(--cyan-1);
+  }
+  .mw-rcfilters-ui-highlights-color-c3,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c3"]::before,
+  .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3 tr:first-child,
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
+    background-color: var(--ores-1);
+  }
+  .mw-rcfilters-ui-highlights-color-c4,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c4"]::before,
+  .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4 tr:first-child,
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
+    background-color: var(--ores-2);
+  }
+  .mw-rcfilters-ui-highlights-color-c5,
+  .mw-rcfilters-ui-tagItemWidget-highlight[data-color="c5"]::before,
+  .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5 tr:first-child,
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
+    background-color: var(--ores-3);
+  }
+  /* Foreground fixes */
+  a, a:not([href]), .last-modified-bar a, .last-modified-bar a:visited,
+  .page-summary a h2, .page-summary a h3 {
+    color: var(--base-color);
+  }
+  a.new, a.new:visited, a.new:hover, a.new > *, a.new:visited > *,
+  a.new:hover > * {
+    color: var(--red-1);
+  }
+  .oo-ui-tagItemWidget.oo-ui-widget-enabled:hover {
+    color: var(--gray-7);
+  }
+  .page-list.side-list .list-thumb, .topic-title-list.side-list .list-thumb,
+  .site-link-list.side-list .list-thumb, .content figcaption,
+  .content .thumbcaption, #mw-mf-page-left ul li a:visited,
+  #mw-mf-page-left ul li a:active, .toggle-list-item__anchor--menu:visited,
+  .toggle-list-item__anchor--menu:active,
+  .mw-rcfilters-ui-tagItemWidget-popup-content {
+    color: var(--gray-9a);
+  }
+  .language-searcher .site-link-list a .autonym,
+  .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-title,
+  .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-desc,
+  .mw-rcfilters-ui-itemMenuOptionWidget-label-desc,
+  .mw-rcfilters-ui-itemMenuOptionWidget-label-title,
+  .oo-ui-tagItemWidget.oo-ui-widget-enabled, .mw-widget-calendarWidget-day,
+  .mw-rcfilters-ui-tagItemWidget.oo-ui-flaggedElement-muted.oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-labelElement-label,
+  .mw-rcfilters-ui-savedLinksListWidget-placeholder.oo-ui-optionWidget .oo-ui-labelElement-label,
+  .ext-related-articles-card-list h3 a, .category-header li a,
+  .oo-ui-messageDialog-message, .oo-ui-messageDialog-title, .page-summary h2,
+  .page-summary h3, .page-list li > a, .topic-title-list li > a,
+  .site-link-list li > a, #mw-mf-page-left ul li a,
+  .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label,
+  .mw-echo-ui-notificationItemWidget-content-actions-timestamp,
+  .mw-echo-ui-notificationItemWidget-content-message-header,
+  .mw-echo-ui-notificationsListWidget:not(:hover) a,
+  #p-personal .mw-echo-ui-notificationsListWidget:not(:hover) a.new,
+  .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select,
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button,
+  .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover,
+  .toggle-list-item__anchor--menu,
+  .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget,
+  .notifications-filter-overlay .overlay-content .mw-echo-ui-crossWikiUnreadFilterWidget-subtitle {
+    color: var(--gray-c);
+  }
+  td[class*="table-"] {
+    color: var(--gray-c) !important;
+  }
+  /* Border fixes */
+  .oo-ui-tagItemWidget, .oo-ui-toolGroup, .page-actions-menu,
+  .mw-rcfilters-ui-tagItemWidget.oo-ui-flaggedElement-muted.oo-ui-tagItemWidget.oo-ui-widget-enabled,
+  .mw-rcfilters-ui-filterTagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle,
+  .client-js .mw-recentchanges-toplinks:not(.mw-recentchanges-toplinks-collapsed),
+  .oo-ui-windowManager-modal.oo-ui-windowManager-floating > .oo-ui-dialog > .oo-ui-window-frame,
+  .editor-overlay-ve .overlay-header-container .ve-init-mw-mobileArticleTarget-toolbar,
+  .notifications-overlay-overlay .mw-echo-ui-actionMenuPopupWidget-menu,
+  .oo-ui-dropdownInputWidget select, .oo-ui-panelLayout-framed,
+  .mw-rollback-link, .mw-widget-calendarWidget, .content kbd, .content samp,
+  .content code, .content pre, .category-header li, footer > .post-content > h2,
+  ul.mw-contributions-list li, ul.special li, .mw-tag-marker, .content kbd,
+  .content samp, .content code, .content pre, .category-header li,
+  footer > .post-content > h2, ul.mw-contributions-list li, ul.special li,
+  .mw-tag-marker, .ns-special .content-header, .mw-mf-watchlist-selector li,
+  .header, .oo-ui-dropdownWidget-handle, .oo-ui-menuSelectWidget,
+  .notifications-filter-overlay .overlay-content .mw-echo-ui-pageNotificationsOptionWidget,
+  .notifications-filter-overlay .overlay-content .mw-echo-ui-crossWikiUnreadFilterWidget,
+  form.mw-mf-settings .oo-ui-fieldLayout,
+  form.mw-mf-settings .oo-ui-fieldLayout:first-child,
+  .overlay.search-overlay .search-content {
+    border-color: var(--gray-5);
+  }
+  .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor::after,
+  .language-searcher .site-link-list a, .minerva-footer,
+  .mw-rcfilters-ui-itemMenuOptionWidget-view-namespaces,
+  .overlay-footer-container {
+    border-top-color: var(--gray-5);
+  }
+  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor::after,
+  .mw-rcfilters-ui-itemMenuOptionWidget:not(:last-child):not(.mw-rcfilters-ui-itemMenuOptionWidget-identifier-talk),
+  .mw-changeslist-line, .overlay .panel, .content .mw-parser-output > h2,
+  .content .section-heading, .content table.infobox th,
+  .content table.infobox td, .action-history #pagehistory li, .header-container,
+  .mw-echo-ui-notificationItemWidget:last-child {
+    border-bottom-color: var(--gray-5);
+  }
+  .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor::after, blockquote {
+    border-left-color: var(--gray-5);
+  }
+  .oo-ui-popupWidget-anchored-start .oo-ui-popupWidget-anchor::after {
+    border-right-color: var(--gray-5);
+  }
+  /* Diff fixes */
+  .diff-context {
+    background-color: transparent;
+    border-color: var(--gray-5);
+    color: var(--gray-c);
+  }
+  .diff-addedline {
+    border-color: rgba(0, 112, 213, .6);
+  }
+  .diff-addedline .diffchange {
+    background: rgba(0, 112, 213, .6);
+  }
+  .diff-deletedline {
+    border-color: rgba(213, 154, 0, .6);
+  }
+  .diff-deletedline .diffchange {
+    background: rgba(213, 154, 0, .6);
+  }
+  /* RecentChanges layout fixes (see #78) */
+  .mw-rcfilters-ui-changesListWrapperWidget {
+    padding-left: .5em;
+  }
+  .mw-rcfilters-ui-changesListWrapperWidget-highlighted ul li {
+    padding-right: .5em;
+    padding-left: .5em;
+  }
+  .mw-rcfilters-ui-changesListWrapperWidget-highlighted .mw-rcfilters-ui-highlights {
+    display: block;
+  }
+  .mw-rcfilters-ui-changesListWrapperWidget-highlighted .mw-rcfilters-ui-highlights > div {
+    margin-right: 10px;
+  }
+  .mw-rollback-link {
+    margin-left: .5em;
+    float: right;
+    border: 1px solid var(--gray-5);
+  }
+  /* Other UI fixes */
+  .ns-special #content {
+    background-color: var(--gray-2);
+    background-image: var(--bg-selected);
+  }
+  .mw-ui-input {
+    background-color: var(--gray-1);
+    color: var(--gray-c);
+    border-color: var(--gray-5);
+    box-shadow: inset 0 0 0 .1em var(--gray-5);
+  }
+  .search-box .search {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+    color: var(--gray-c);
+  }
+  .toggle-list__list {
+    background-color: var(--gray-3);
+    box-shadow: 0 5px 17px 0 rgba(0, 0, 0, .24), 0 0 1px var(--gray-5);
+  }
+  .minerva--amc-enabled.action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-history-undo a:hover,
+  .minerva--amc-enabled.action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-rollback-link a:hover {
+    background-color: var(--gray-5);
+    border-color: var(--gray-5);
+    color: var(--gray-c);
+  }
+  .mw-widget-dateInputWidget-handle,
+  .oo-ui-textInputWidget .oo-ui-inputWidget-input {
+    background-color: var(--gray-1);
+    border-color: var(--gray-5);
+    color: var(--gray-c);
+  }
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover {
+    background-color: var(--gray-4);
+    color: var(--gray-c);
+  }
+  .mw-widgets-datetime-dateTimeInputWidget-handle {
+    background-color: var(--gray-1);
+    color: var(--gray-c);
+  }
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active,
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active:focus,
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active {
+    background-color: var(--gray-4);
+    color: var(--gray-c);
+  }
+  .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select:hover,
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-buttonElement-pressed > input.oo-ui-buttonElement-button,
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active {
+    border-color: var(--gray-5);
+    color: var(--gray-c);
+  }
+  #mw-mf-page-left ul li {
+    background-color: var(--gray-3);
+    border-top-color: var(--gray-5);
+  }
+  .page-list li, .topic-title-list li, .site-link-list li {
+    border-bottom-color: var(--gray-5);
+    color: var(--gray-c);
+  }
+  .backtotop {
+    box-shadow: .1em .2em .3em var(--gray-5);
+  }
+  .mbox-small.plainlinks.sistersitebox, .mbox-small.wikipedia-books {
+    background-color: var(--gray-3) !important;
+    border-color: var(--gray-5) !important;
+    color: var(--gray-c) !important;
+  }
+  .overlay textarea {
+    background-color: var(--gray-1);
+    color: var(--gray-9a);
+  }
+  .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled.oo-ui-flaggedElement-primary > .oo-ui-tool-link,
+  .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary > .oo-ui-tool-link,
+  .overlay-header .header-action .continue[disabled],
+  .overlay-header .header-action .submit[disabled],
+  .overlay-header .header-action .progressive[disabled],
+  .oo-ui-buttonElement-framed.oo-ui-widget-disabled > .oo-ui-buttonElement-button {
+    background-color: var(--gray-5);
+    border-color: var(--gray-5);
+  }
+  .minerva--amc-enabled.action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-history-undo a,
+  .minerva--amc-enabled.action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-rollback-link a,
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover,
+  .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle:hover,
+  .mw-ui-button:hover {
+    background-color: var(--gray-4);
+    border-color: var(--gray-5);
+    color: var(--gray-c);
+  }
+  .overlay .content-header, footer .last-modified-bar {
+    background-color: var(--gray-3);
+    border-bottom-color: var(--gray-5);
+    color: var(--gray-c);
+  }
+  .last-modified-bar.active, .oo-ui-toolbar-bar, .hatnote, .dablink, .rellink,
+  .client-js .ambox {
+    background-color: var(--gray-3);
+    color: var(--gray-c);
+  }
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button,
+  .previewnote p, .warningbox, .mw-revision, .mw-ui-button {
+    background-color: var(--gray-3);
+    border-color: var(--gray-5);
+    color: var(--gray-c);
+  }
+  .oo-ui-popupWidget-popup, .oo-ui-popupToolGroup-tools, .content table.infobox {
+    background-color: var(--gray-3);
+    border-color: var(--gray-5);
+  }
+  .ip-label-container, .client-js .toc-mobile,
+  .mw-echo-ui-notificationItemWidget {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+  }
+  .client-js body.mw-rcfilters-ui-loading .mw-changeslist {
+    opacity: .7;
+  }
+  /* Animation fixes */
+  .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link {
+    -webkit-transition: none;
+       -moz-transition: none;
+            transition: none;
+  }
+  .oo-ui-pendingElement-pending {
+    background-color: var(--gray-2);
+    background-image: -webkit-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+    background-image: linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+  }
+  @-webkit-keyframes unseen-fadeout-to-unread {
+    from {
+      background-color: var(--gray-18);
+    }
+    to {
+      background-color: var(--gray-3);
+    }
+  }
+  @keyframes unseen-fadeout-to-unread {
+    from {
+      background-color: var(--gray-18);
+    }
+    to {
+      background-color: var(--gray-3);
+    }
+  }
+  @-webkit-keyframes unseen-fadeout-to-read {
+    from {
+      background-color: var(--gray-18);
+    }
+    to {
+      background-color: var(--gray-2);
+    }
+  }
+  @keyframes unseen-fadeout-to-read {
+    from {
+      background-color: var(--gray-18);
+    }
+    to {
+      background-color: var(--gray-2);
+    }
+  }
+}
 @-moz-document domain("commons.wikimedia.org") {
   #mw-page-base, .mw-parser-output #wdinfoboxcaption {
     background-color: var(--gray-2);
