@@ -810,9 +810,9 @@
   }
   .oo-ui-pendingElement-pending {
     background-color: var(--gray-1);
-    background-image: -webkit-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
-    background-image: -moz-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
-    background-image: linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+    background-image: -webkit-linear-gradient(135deg, var(--black) 25%, transparent 25%, transparent 50%, var(--black) 50%, var(--black) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(135deg, var(--black) 25%, transparent 25%, transparent 50%, var(--black) 50%, var(--black) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(135deg, var(--black) 25%, transparent 25%, transparent 50%, var(--black) 50%, var(--black) 75%, transparent 75%, transparent);
   }
   .central-textlogo__image, .unicode.haudio a img {
     filter: invert(60.5%) !important;
@@ -1343,9 +1343,9 @@
   }
   .oo-ui-pendingElement-pending {
     background-color: var(--gray-2);
-    background-image: -webkit-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
-    background-image: -moz-linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
-    background-image: linear-gradient(135deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+    background-image: -webkit-linear-gradient(135deg, var(--black) 25%, transparent 25%, transparent 50%, var(--black) 50%, var(--black) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(135deg, var(--black) 25%, transparent 25%, transparent 50%, var(--black) 50%, var(--black) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(135deg, var(--black) 25%, transparent 25%, transparent 50%, var(--black) 50%, var(--black) 75%, transparent 75%, transparent);
   }
   @-webkit-keyframes unseen-fadeout-to-unread {
     from {
@@ -1534,7 +1534,7 @@
     background-color: transparent;
   }
   .mw-parser-output .main-top-left {
-    background-image: linear-gradient(to right, black 70%, transparent);
+    background-image: linear-gradient(to right, var(--black) 70%, transparent);
   }
   .mw-parser-output .main-top-right {
     background-image: linear-gradient(to right, transparent 30%, rgba(0, 0, 0, .5) 95%, transparent);
