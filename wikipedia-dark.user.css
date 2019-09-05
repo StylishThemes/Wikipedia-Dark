@@ -37,7 +37,8 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document regexp("https?:\\/\\/([\\w\\-]{2,}\\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|www\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.+"),
-               regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.+") {
+               regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.+"),
+               url-prefix("https://www.wikipedia.org/") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
@@ -124,7 +125,7 @@
   .oo-ui-messageDialog-title, .oo-ui-messageDialog-message,
   .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label, .mw-mmv-image-desc,
   .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected,
-  .guider_content h1, .guider_content p {
+  .guider_content h1, .guider_content p, select#searchLanguage option {
     color: var(--gray-9a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li, .infobox th[style*="background"],
@@ -203,7 +204,8 @@
     background-color: var(--blue-1) !important;
     filter: none !important;
   }
-  .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget {
+  .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget,
+  .footer-sidebar-text, .site-license {
     color: var(--gray-7);
   }
   /* text selection */
@@ -284,7 +286,8 @@
   .mw-advancedSearch-namespace-selection {
     background: linear-gradient(var(--gray-1), var(--gray-2) .5em);
   }
-  .oo-ui-tagItemWidget.oo-ui-widget-enabled {
+  .oo-ui-tagItemWidget.oo-ui-widget-enabled,
+  .search-container .js-langpicker-label {
     color: var(--gray-9a);
   }
   /* fading linear gradient */
@@ -351,7 +354,7 @@
     background: var(--gray-28) !important;
     border-color: var(--gray-5) !important;
   }
-  tr[bgcolor], td[bgcolor] {
+  tr[bgcolor], td[bgcolor], .app-badges .footer-sidebar-content {
     background-color: var(--gray-28);
   }
   table[style*="background-color:#fff;" i], .search-form fieldset, table.ambox,
