@@ -317,7 +317,7 @@
   .uls-input-settings .uls-input-settings-inputmethods-list, .imeselector,
   .imeselector-menu, .uls-ime-menu-settings-item, .ip-label-container,
   .mw-pt-languages, .cbnnr-main, .mw_metadata td, .kephir-sagittarius-invite,
-  .infobox {
+  .infobox, .lang-list-container {
     background-color: var(--gray-2); /* non-important */
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
@@ -347,7 +347,7 @@
   td[style*="background:#F4F9F0"], td[style*="background:#F9F0F0"],
   td[style*="background:#f0f0f0"], #mwe-popups-settings,
   th[style*="border-bottom: 1px solid #eee; background-color:#ffffff;"],
-  .table-na[style*="background:#ececec;"] {
+  .table-na[style*="background:#ececec;"], #js-lang-lists .text {
     background-color: var(--gray-2) !important;
   }
   body .ui-button {
@@ -405,6 +405,9 @@
   }
   .licensetpl.fileinfotpl tbody th {
     background-color: var(--gray-4) !important;
+  }
+  .lang-list-border {
+    background-color: var(--gray-5);
   }
   /* remove background image/gradient */
   .keyboard-key, div#editpage-specialchars a,
@@ -628,6 +631,9 @@
   .lang-list-button:hover, .oo-ui-buttonElement-button, #mwe-popups-settings,
   #mwe-popups-settings header {
     border-color: var(--gray-5) !important;
+  }
+  .lang-list-button {
+    border-color: var(--gray-5);
   }
   .mwe-popups::before, .cx-callout-1::before, tr[style*="border-bottom"] {
     border-bottom-color: var(--gray-5) !important;
