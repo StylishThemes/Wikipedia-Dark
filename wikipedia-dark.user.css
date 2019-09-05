@@ -36,8 +36,8 @@
 }
 @preprocessor uso
 ==/UserStyle== */
-@-moz-document regexp("https?:\\/\\/([\\w\\-]{2,}\\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|www\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.*"),
-               regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.+") {
+@-moz-document regexp("https?:\\/\\/(([\\w\\-]{2,}\\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech|incubator)\\.wikimedia)\\.org\\/.*"),
+               regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
@@ -46,7 +46,7 @@
     --bg-custom: /*[[bg-custom]]*/;
     --bg-selected: /*[[bg-selected]]*/;
     --bg-attachment: /*[[bg-attachment]]*/;
-    --gray-0: #000;
+    --black: #000;
     --gray-1: #111;
     --gray-2: #222;
     --gray-3: #333;
@@ -88,7 +88,7 @@
     --cyan-1: #194d41;
     --ores-1: #222800;
     --ores-2: #222000;
-    --ores-3: #221804;
+    --ores-3: #221800;
   }
   /* transparent background */
   .mw-body, .parsoid-body, #mp-topbanner,
@@ -876,7 +876,7 @@
     --bg-custom: /*[[bg-custom]]*/;
     --bg-selected: /*[[bg-selected]]*/;
     --bg-attachment: /*[[bg-attachment]]*/;
-    --gray-0: #000;
+    --black: #000;
     --gray-1: #111;
     --gray-2: #222;
     --gray-3: #333;
@@ -1534,7 +1534,7 @@
     background-color: transparent;
   }
   .mw-parser-output .main-top-left {
-    background-image: linear-gradient(to right, var(--gray-0) 70%, transparent);
+    background-image: linear-gradient(to right, black 70%, transparent);
   }
   .mw-parser-output .main-top-right {
     background-image: linear-gradient(to right, transparent 30%, rgba(0, 0, 0, .5) 95%, transparent);
