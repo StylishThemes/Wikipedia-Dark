@@ -1548,11 +1548,11 @@
   .mw-customtoggle, .mw-collapsible-toggle {
     filter: invert(80%);
   }
-  div.flaggedrevs_preview {
+  div.flaggedrevs_preview, div.mw-search-profile-tabs {
     background-color: var(--blue-2);
     color: var(--gray-c) !important;
   }
-  div.flaggedrevs_diffnotice, div.flaggedrevs_preview {
+  div.flaggedrevs_diffnotice, div.flaggedrevs_preview, div.mw-search-profile-tabs {
     border-color: var(--blue-3) !important;
   }
   #mw-panel .portal:not(#p-navigation) .body {
