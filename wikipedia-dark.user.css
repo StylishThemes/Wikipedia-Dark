@@ -1522,17 +1522,31 @@
   }
 }
 @-moz-document domain("ru.wikipedia.org") {
-  .mw-parser-output .main-top, .mw-parser-output .main-box {
+  .mw-parser-output .main-top, .mw-parser-output .main-box, #mw-page-base {
     background-color: transparent;
   }
   .mw-parser-output .main-top-left {
-    background-image: linear-gradient(to right, black 70%, transparent);
+    background-image: linear-gradient(to right, var(--gray-0) 70%, transparent);
   }
   .mw-parser-output .main-top-right {
     background-image: linear-gradient(to right, transparent 30%, rgba(0, 0, 0, .5) 95%, transparent);
   }
   .mw-customtoggle, .mw-collapsible-toggle {
     filter: invert(80%);
+  }
+  div.flaggedrevs_preview {
+    background-color: var(--blue-2);
+    color: var(--gray-c) !important;
+  }
+  div.flaggedrevs_diffnotice, div.flaggedrevs_preview {
+    border-color: var(--blue-3) !important;
+  }
+  #mw-panel .portal:not(#p-navigation) .body {
+    background-image: linear-gradient(to top, transparent, var(--gray-c));
+    background-size: auto 1px;
+  }
+  th.infobox-header[style*="background:#b0c4de;"] {
+    background-color: var(--blue-3) !important;
   }
 }
 @-moz-document domain("wiki.archlinux.org") {
