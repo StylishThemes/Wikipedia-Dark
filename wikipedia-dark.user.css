@@ -110,7 +110,8 @@
   }
   div.thumbinner, .catlinks, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
   .mw-mmv-info-box, .infobox.standard-talk, .mwe-pt-article-row-odd,
-  .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options {
+  .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options, #mw-page-base,
+  .mw-parser-output #siteContainer div:first-child {
     background-color: transparent;
   }
   .lang-list-button {
@@ -317,7 +318,8 @@
   .uls-input-settings .uls-input-settings-inputmethods-list, .imeselector,
   .imeselector-menu, .uls-ime-menu-settings-item, .ip-label-container,
   .mw-pt-languages, .cbnnr-main, .mw_metadata td, .kephir-sagittarius-invite,
-  .infobox, .lang-list-container {
+  .infobox, .lang-list-container, .mw-parser-output #bottombox-d, .uls-lcd,
+  .uls-search, div.mw-pt-languages {
     background-color: var(--gray-2); /* non-important */
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
@@ -381,7 +383,7 @@
   .suggestions-results, .suggestions-special, #mwe-pt-list-more,
   .fr-watchlist-pending-notice, div.flaggedrevs_notice, .imeselector:hover,
   .imeselector-menu .selectable-row:hover, .guider, .mw-pt-languages-label,
-  .cbnnr-close, .mw_metadata th {
+  .cbnnr-close, .mw_metadata th, .uls-language-block > ul > li:hover {
     background-color: var(--gray-3); /* don't include !important flag */
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
@@ -406,7 +408,8 @@
   .licensetpl.fileinfotpl tbody th {
     background-color: var(--gray-4) !important;
   }
-  .lang-list-border {
+  .lang-list-border, .interlanguage-uls-menu.selector-left::after,
+  .interlanguage-uls-menu.selector-left::before {
     background-color: var(--gray-5);
   }
   /* remove background image/gradient */
@@ -965,7 +968,8 @@
   .oo-ui-buttonElement.oo-ui-iconElement .oo-ui-iconElement-icon,
   .oo-ui-buttonElement.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator,
   .client-js .mw-echo-special-nojs, .mwe-math-fallback-image-inline,
-  .oo-ui-icon-check, .mw-ui-icon-check:before {
+  .oo-ui-icon-check, .mw-ui-icon-check:before, .uls-search-label,
+  .central-textlogo a > img {
     filter: invert(80%);
   }
   .oo-ui-image-progressive.oo-ui-icon-eye, .mw-ui-icon-eye-progressive::before,
