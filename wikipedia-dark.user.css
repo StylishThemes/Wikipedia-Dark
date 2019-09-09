@@ -505,6 +505,20 @@
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle {
     background-color: transparent;
   }
+  .mw-enhanced-rc.mw-changeslist-line,
+  .mw-collapsible.mw-enhanced-rc.mw-changeslist-line,
+  .mw-collapsible.mw-enhanced-rc.mw-changeslist-line td,
+  .oo-ui-widget-enabled.mw-rcfilters-ui-changesListWrapperWidget,
+  .oo-ui-widget-enabled.mw-rcfilters-ui-filterWrapperWidget,
+  .oo-ui-widget-enabled.mw-rcfilters-ui-rcTopSectionWidget,
+  .oo-ui-widget-enabled.oo-ui-tagMultiselectWidget,
+  .oo-ui-widget-enabled.mw-rcfilters-ui-watchlistTopSectionWidget {
+    background-color: transparent !important;
+  }
+  #mw-fr-watchlist-pending-notice {
+    background-color: var(--red-3) !important;
+    border-color: var(--red-0) !important;
+  }
   /* ORES highlight colors */
   .mw-rcfilters-ui-highlights-color-none {
     background-color: var(--gray-7);
@@ -1009,20 +1023,6 @@
   .mw-widgets-datetime-dateTimeInputWidget.oo-ui-widget-enabled .mw-widgets-datetime-dateTimeInputWidget-editField:hover,
   .navigation-enabled #mw-mf-page-center, table.wikitable tr {
     background-color: var(--gray-2);
-  }
-  .mw-enhanced-rc.mw-changeslist-line,
-  .mw-collapsible.mw-enhanced-rc.mw-changeslist-line,
-  .mw-collapsible.mw-enhanced-rc.mw-changeslist-line td,
-  .oo-ui-widget-enabled.mw-rcfilters-ui-changesListWrapperWidget,
-  .oo-ui-widget-enabled.mw-rcfilters-ui-filterWrapperWidget,
-  .oo-ui-widget-enabled.mw-rcfilters-ui-rcTopSectionWidget,
-  .oo-ui-widget-enabled.oo-ui-tagMultiselectWidget,
-  .oo-ui-widget-enabled.mw-rcfilters-ui-watchlistTopSectionWidget {
-    background-color: transparent !important;
-  }
-  #mw-fr-watchlist-pending-notice {
-    background-color: var(--red-3) !important;
-    border-color: var(--red-0) !important;
   }
   .content table.infobox *[style*="background"] {
     background-color: var(--gray-2) !important;
