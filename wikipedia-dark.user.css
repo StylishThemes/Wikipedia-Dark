@@ -766,7 +766,8 @@
   .mw-spinner-container > div::after {
     background-color: var(--gray-9a);
   }
-  div.flaggedrevs_diffnotice, div.flaggedrevs_preview, div.mw-search-profile-tabs {
+  div.flaggedrevs_diffnotice, div.flaggedrevs_preview,
+  div.mw-search-profile-tabs {
     background-color: var(--blue-2);
     border-color: var(--blue-3) !important;
     color: var(--gray-c) !important;
@@ -1008,6 +1009,20 @@
   .mw-widgets-datetime-dateTimeInputWidget.oo-ui-widget-enabled .mw-widgets-datetime-dateTimeInputWidget-editField:hover,
   .navigation-enabled #mw-mf-page-center, table.wikitable tr {
     background-color: var(--gray-2);
+  }
+  .mw-enhanced-rc.mw-changeslist-line,
+  .mw-collapsible.mw-enhanced-rc.mw-changeslist-line,
+  .mw-collapsible.mw-enhanced-rc.mw-changeslist-line td,
+  .oo-ui-widget-enabled.mw-rcfilters-ui-changesListWrapperWidget,
+  .oo-ui-widget-enabled.mw-rcfilters-ui-filterWrapperWidget,
+  .oo-ui-widget-enabled.mw-rcfilters-ui-rcTopSectionWidget,
+  .oo-ui-widget-enabled.oo-ui-tagMultiselectWidget,
+  .oo-ui-widget-enabled.mw-rcfilters-ui-watchlistTopSectionWidget {
+    background-color: transparent !important;
+  }
+  #mw-fr-watchlist-pending-notice {
+    background-color: var(--red-3) !important;
+    border-color: var(--red-0) !important;
   }
   .content table.infobox *[style*="background"] {
     background-color: var(--gray-2) !important;
