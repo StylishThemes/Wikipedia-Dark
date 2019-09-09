@@ -766,6 +766,14 @@
   .mw-spinner-container > div::after {
     background-color: var(--gray-9a);
   }
+  div.flaggedrevs_diffnotice, div.flaggedrevs_preview, div.mw-search-profile-tabs {
+    background-color: var(--blue-2);
+    border-color: var(--blue-3) !important;
+    color: var(--gray-c) !important;
+  }
+  div.flaggedrevs_short, div.flaggedrevs_short_details {
+    background-color: var(--gray-2);
+  }
   /*** diff pages ***/
   .diff-context {
     background-color: var(--gray-2) !important;
@@ -1551,13 +1559,6 @@
   }
   .mw-customtoggle, .mw-collapsible-toggle {
     filter: invert(80%);
-  }
-  div.flaggedrevs_preview, div.mw-search-profile-tabs {
-    background-color: var(--blue-2);
-    color: var(--gray-c) !important;
-  }
-  div.flaggedrevs_diffnotice, div.flaggedrevs_preview, div.mw-search-profile-tabs {
-    border-color: var(--blue-3) !important;
   }
   #mw-panel .portal:not(#p-navigation) .body {
     background-image: linear-gradient(to top, transparent, var(--gray-c));
