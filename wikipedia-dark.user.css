@@ -309,7 +309,8 @@
   }
   td[style*="background:#FFFFFF" i], .jfk-bubble, .navpopup,
   .popup_drop:hover .popup_menu, .popup_drop .popup_menu:hover,
-  td[style*="background:#f5fffa"] {
+  td[style*="background:#f5fffa"], .example-select,
+  .mw-parser-output a > span[style*="background"] {
     background-color: var(--gray-18) !important;
   }
   .mw-widget-dateInputWidget-handle, .mwe-pt-control-gradient,
@@ -319,7 +320,8 @@
   .imeselector-menu, .uls-ime-menu-settings-item, .ip-label-container,
   .mw-pt-languages, .cbnnr-main, .mw_metadata td, .kephir-sagittarius-invite,
   .infobox, .lang-list-container, .mw-parser-output #bottombox-d, .uls-lcd,
-  .uls-search, div.mw-pt-languages {
+  .uls-search, div.mw-pt-languages, .ns-0 #mw-content-text h1,
+  .wikiEditor-ui-toolbar {
     background-color: var(--gray-2); /* non-important */
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
@@ -383,7 +385,8 @@
   .suggestions-results, .suggestions-special, #mwe-pt-list-more,
   .fr-watchlist-pending-notice, div.flaggedrevs_notice, .imeselector:hover,
   .imeselector-menu .selectable-row:hover, .guider, .mw-pt-languages-label,
-  .cbnnr-close, .mw_metadata th, .uls-language-block > ul > li:hover {
+  .cbnnr-close, .mw_metadata th, .uls-language-block > ul > li:hover,
+  th[bgcolor] {
     background-color: var(--gray-3); /* don't include !important flag */
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
@@ -1551,6 +1554,14 @@
     background-position: center -108px !important;
     filter: invert(60.5%) !important;
     height: 47px !important;
+  }
+}
+@-moz-document domain("wiktionary.org") {
+  .mw-wiki-logo {
+    filter: invert(80%) hue-rotate(180deg);
+  }
+  #main_page_mp-mp {
+    background-color: transparent !important;
   }
 }
 @-moz-document domain("www.mediawiki.org") {
