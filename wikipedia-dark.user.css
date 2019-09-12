@@ -1593,6 +1593,18 @@
   th.infobox-header[style*="background:#b0c4de;"] {
     background-color: var(--blue-3) !important;
   }
+  .mw-parser-output table tr td[style*="background: #edf3fe;"] {
+    background: var(--gray-2) !important;
+  }
+  .mw-parser-output table tr td[style*="background: #ffffff;"] {
+    background: var(--gray-18) !important;
+  }
+  .mw-parser-output table tbody tr th[style*="background:#ccccff;"] {
+    background: var(--purple-1) !important;
+  }
+  .mw-parser-output table.ambox-notice {
+    border-left-color: var(--blue-1) !important;
+  }
 }
 @-moz-document domain("wiki.archlinux.org") {
   #content table, #content h1, #content h2, #content h3, #content h4,
