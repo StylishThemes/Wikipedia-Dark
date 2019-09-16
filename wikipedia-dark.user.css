@@ -147,6 +147,9 @@
   #footer a:not(.new) {
     color: var(--base-color) !important;
   }
+  #firstHeading a > span {
+    color: var(--base-color);
+  }
   a:visited, #toc a:visited, #toc a:visited span,
   .vectorTabs li.new:not(.selected) a:visited, #content a:not(.new):visited,
   #mw-panel li:not(.new) a:not(.new):visited,
@@ -321,7 +324,7 @@
   .mw-pt-languages, .cbnnr-main, .mw_metadata td, .kephir-sagittarius-invite,
   .infobox, .lang-list-container, .mw-parser-output #bottombox-d, .uls-lcd,
   .uls-search, div.mw-pt-languages, .ns-0 #mw-content-text h1,
-  .wikiEditor-ui-toolbar {
+  .wikiEditor-ui-toolbar, .mw-ext-score-popup {
     background-color: var(--gray-2); /* non-important */
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
@@ -351,7 +354,7 @@
   td[style*="background:#F4F9F0"], td[style*="background:#F9F0F0"],
   td[style*="background:#f0f0f0"], #mwe-popups-settings,
   th[style*="border-bottom: 1px solid #eee; background-color:#ffffff;"],
-  .table-na[style*="background:#ececec;"], #js-lang-lists .text {
+  .table-na[style*="background:#ececec;"], #js-lang-lists .text, div.arcProg {
     background-color: var(--gray-2) !important;
   }
   body .ui-button {
@@ -386,7 +389,7 @@
   .fr-watchlist-pending-notice, div.flaggedrevs_notice, .imeselector:hover,
   .imeselector-menu .selectable-row:hover, .guider, .mw-pt-languages-label,
   .cbnnr-close, .mw_metadata th, .uls-language-block > ul > li:hover,
-  th[bgcolor], .wikEdDiffBlock {
+  th[bgcolor], .wikEdDiffBlock, .installerMessage {
     background-color: var(--gray-3); /* don't include !important flag */
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
@@ -1096,6 +1099,12 @@
   form.mw-mf-settings #beta-field::before {
     background-color: var(--gray-5);
   }
+  .mw-ext-score img {
+    background-color: var(--gray-c);
+  }
+  .installerTitle {
+    background-color: var(--blue-2);
+  }
   .editor-overlay-ve.loading, .overlay.overlay-loading,
   .oo-ui-windowManager-modal > .oo-ui-dialog {
     background-color: rgba(56, 56, 56, .5);
@@ -1384,9 +1393,13 @@
     border-color: var(--gray-5);
   }
   .ip-label-container, .client-js .toc-mobile,
-  .mw-echo-ui-notificationItemWidget {
+  .mw-echo-ui-notificationItemWidget, .mw-ext-score-popup::after {
     background-color: var(--gray-2);
     border-color: var(--gray-5);
+  }
+  .scriptInstaller {
+    box-shadow: 5px 5px 5px var(--gray-5);
+    background-color: var(--gray-2);
   }
   .client-js body.mw-rcfilters-ui-loading .mw-changeslist {
     opacity: .7;
