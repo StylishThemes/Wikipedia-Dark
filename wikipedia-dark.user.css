@@ -1568,6 +1568,20 @@
 }
 @-moz-document domain("wikipedia.org") {
   /*** Navigation menu logo ***/
+  :root {
+    --assess-1: #06c;
+    --assess-2: #29c;
+    --assess-3: #070;
+    --assess-4: #6b0;
+    --assess-5: #993;
+    --assess-6: #b60;
+    --assess-7: #921; /* was #901 */
+    --assess-8: #85f;
+    --assess-9: #070;
+    --assess-10: #0b6;
+    --assess-11: #a4c;
+    --assess-12: #568;
+  }
   #p-logo a {
     background-position: center -155px !important;
     display: table-cell !important;
@@ -1587,6 +1601,43 @@
     background-position: center -108px !important;
     filter: invert(60.5%) !important;
     height: 47px !important;
+  }
+  /* Article assessment colors */
+  .assess-fa-text, .assess-fl-text {
+    color: var(--assess-1) !important;
+  }
+  .assess-a-text, .assess-al-text {
+    color: var(--assess-2) !important;
+  }
+  .assess-ga-text {
+    color: var(--assess-3) !important;
+  }
+  .assess-b-text, .assess-bl-text {
+    color: var(--assess-4) !important;
+  }
+  .assess-c-text, .assess-cl-text {
+    color: var(--assess-5) !important;
+  }
+  .assess-start-text {
+    color: var(--assess-6) !important;
+  }
+  .assess-stub-text, .assess-sl-text {
+    color: var(--assess-7) !important;
+  }
+  .assess-list-text {
+    color: var(--assess-8) !important;
+  }
+  .assess-bplus-text {
+    color: var(--assess-9) !important;
+  }
+  .assess-dab-text, .assess-setindex-text {
+    color: var(--assess-10) !important;
+  }
+  .assess-cur-text {
+    color: var(--assess-11) !important;
+  }
+  .assess-future-text {
+    color: var(--assess-12) !important;
   }
 }
 @-moz-document domain("wiktionary.org") {
