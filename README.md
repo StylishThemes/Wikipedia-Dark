@@ -4,6 +4,7 @@
 [![Star](https://github-svg-buttons.herokuapp.com/star.svg?user=StylishThemes&repo=Wikipedia-Dark&style=flat&background=007ec6)](https://github.com/StylishThemes/Wikipedia-Dark/stargazers)
 [![Fork](https://github-svg-buttons.herokuapp.com/fork.svg?user=StylishThemes&repo=Wikipedia-Dark&style=flat&background=007ec6)](https://github.com/StylishThemes/Wikipedia-Dark/fork)
 [![devDependencies](https://img.shields.io/david/dev/StylishThemes/Wikipedia-Dark.svg?label=%20devDependencies%20)](https://david-dm.org/StylishThemes/Wikipedia-Dark?type=dev)
+[![Build Status](https://travis-ci.org/StylishThemes/Wikipedia-Dark.svg?branch=master)](https://travis-ci.org/StylishThemes/Wikipedia-Dark)
 [![Gitter](https://img.shields.io/gitter/room/StylishThemes/Wikipedia-Dark.js.svg?maxAge=2592000)](https://gitter.im/StylishThemes/Lobby)
 
 Applies to all Wikimedia wikis (wikipedia.org, wikidata.org, wiktionary.org, etc.), Wikidot wikis and the Arch Linux wiki.
