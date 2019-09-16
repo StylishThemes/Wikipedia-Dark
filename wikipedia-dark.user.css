@@ -386,7 +386,7 @@
   .fr-watchlist-pending-notice, div.flaggedrevs_notice, .imeselector:hover,
   .imeselector-menu .selectable-row:hover, .guider, .mw-pt-languages-label,
   .cbnnr-close, .mw_metadata th, .uls-language-block > ul > li:hover,
-  th[bgcolor] {
+  th[bgcolor], .wikEdDiffBlock {
     background-color: var(--gray-3); /* don't include !important flag */
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
@@ -414,6 +414,12 @@
   .lang-list-border, .interlanguage-uls-menu.selector-left::after,
   .interlanguage-uls-menu.selector-left::before {
     background-color: var(--gray-5);
+  }
+  .mw-revslider-revision {
+    background-color: var(--gray-7);
+  }
+  .mw-revslider-revision-wrapper:hover, .mw-revslider-revision-wrapper-hovered {
+    background-color: rgba(0, 0, 0, .5);
   }
   /* remove background image/gradient */
   .keyboard-key, div#editpage-specialchars a,
@@ -505,7 +511,8 @@
   .mw-rcfilters-ui-menuSelectWidget-footer,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-changeslist-legend,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle,
-  .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle {
+  .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle,
+  .flaggedrevs_reviewform {
     background-color: transparent;
   }
   .mw-enhanced-rc.mw-changeslist-line,
@@ -515,7 +522,8 @@
   .oo-ui-widget-enabled.mw-rcfilters-ui-filterWrapperWidget,
   .oo-ui-widget-enabled.mw-rcfilters-ui-rcTopSectionWidget,
   .oo-ui-widget-enabled.oo-ui-tagMultiselectWidget,
-  .oo-ui-widget-enabled.mw-rcfilters-ui-watchlistTopSectionWidget {
+  .oo-ui-widget-enabled.mw-rcfilters-ui-watchlistTopSectionWidget,
+  tr[style*="background"] {
     background-color: transparent !important;
   }
   #mw-fr-watchlist-pending-notice {
@@ -792,6 +800,10 @@
   div.flaggedrevs_short, div.flaggedrevs_short_details {
     background-color: var(--gray-2);
   }
+  table.fmbox-warning {
+    background-color: var(--red-3) !important;
+    border-color: var(--red-0) !important;
+  }
   /*** diff pages ***/
   .diff-context {
     background-color: var(--gray-2) !important;
@@ -815,6 +827,14 @@
   td.diff-addedline .diffchange, .wikEdDiffInsert {
     background-color: rgba(0, 112, 213, .6) !important;
     color: var(--gray-d) !important;
+  }
+  .mw-revslider-pointer-line .mw-revslider-upper-color,
+  .mw-revslider-pointer-container-newer .mw-revslider-slider-line {
+    border-color: rgba(30, 109, 184, .5) !important;
+  }
+  .mw-revslider-pointer-line .mw-revslider-lower-color,
+  .mw-revslider-pointer-container-older .mw-revslider-slider-line {
+    border-color: rgba(255, 204, 51, .5) !important;
   }
   .oo-ui-buttonElement-button:active, .pure-button-primary-progressive:active,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
