@@ -787,11 +787,48 @@
   .wikEdFrameBodySyntax {
     filter: invert(100%);
   }
+  .editOptions, #proveit-body, .wikiEditor-ui-toolbar .booklet .pages {
+    background-color: transparent;
+  }
+  #proveit-header, #proveit-footer {
+    background-color: var(--gray-1);
+  }
   .wikEdFrameBodyPlain {
-    background: var(--gray-1) !important;
+    background-color: var(--gray-1) !important;
+  }
+  .wikEdConsoleWrapper, .wikiEditor-ui-toolbar .group .tool-select {
+    background-color: var(--gray-2);
   }
   #proveit {
     background-color: var(--gray-2) !important;
+  }
+  .wikEdButtonBarButtonsWrapperVisible, .wikEdButtonBarButtonsWrapperHidden,
+  .wikEdButtonBarGrip, .wikiEditor-ui-toolbar .sections .section,
+  .wikiEditor-ui-toolbar .group .tool-select .options, .wikEdButtonsPreview {
+    background-color: var(--gray-3);
+  }
+  .wikiEditor-ui-toolbar .group .tool-select .options .option:hover {
+    background-color: var(--gray-4);
+  }
+  .wikiEditor-ui-toolbar .booklet .index div {
+    color: var(--base-color);
+  }
+  #proveit-header button, #proveit-footer button {
+    color: var(--gray-5);
+  }
+  .wikiEditor-ui-toolbar .booklet .index .current {
+    background-color: var(--gray-4);
+    color: var(--gray-9a);
+  }
+  .wikEdButton, .wikEdButtonDummy, .wikEdButtonChecked, .wikEdButtonUnchecked {
+    background-color: transparent;
+    filter: invert(100%) hue-rotate(180deg);
+  }
+  .wikEdButtonChecked {
+    border-color: var(--gray-e) var(--gray-1) var(--gray-1) var(--gray-e) !important;
+  }
+  .wikEdButtonUnchecked {
+    border-color: var(--gray-1) var(--gray-e) var(--gray-e) var(--gray-1) !important;
   }
   .mw-datatable td {
     background-color: var(--gray-2);
