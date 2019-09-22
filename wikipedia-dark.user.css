@@ -1734,6 +1734,12 @@
   .wide > * > tr > td {
     border-color: var(--gray-5);
   }
+  a span[style*="color"] {
+    color: var(--base-color) !important;
+  }
+  .ns-0 .mw-disambig {
+    background-color: var(--red-3);
+  }
 }
 @-moz-document domain("wiki.archlinux.org") {
   #content table, #content h1, #content h2, #content h3, #content h4,
