@@ -89,6 +89,17 @@
     --ores-1: #222800;
     --ores-2: #222000;
     --ores-3: #221800;
+    --black_25: rgba(0, 0, 0, .25);
+    --black_5: rgba(0, 0, 0, .5);
+    --black_8: rgba(0, 0, 0, .8);
+    --gray-2_75: rgba(34, 34, 34, .75);
+    --gray-3_5: rgba(51, 51, 51, .5);
+    --gray-5_25: rgba(85, 85, 85, .25);
+    --white_1: rgba(255, 255, 255, .1);
+    --diff-del: rgba(213, 154, 0, .6);
+    --diff-add: rgba(0, 112, 213, .6);
+    --revs-old: rgba(255, 204, 51, .5);
+    --revs-new: rgba(30, 109, 184, .5);
   }
   /* transparent background */
   .mw-body, .parsoid-body, #mp-topbanner,
@@ -258,7 +269,7 @@
   .mw-ui-button.mw-ui-progressive:hover, .pure-button-primary-progressive:hover,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover,
   .mw-ui-button.mw-ui-progressive:hover {
-    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)) !important;
+    background-image: linear-gradient(var(--white_1), var(--white_1)) !important;
   }
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar,
   #p-cactions-label, .client-js #preftoc, .client-js #preftoc li,
@@ -296,13 +307,13 @@
   }
   /* fading linear gradient */
   .mwe-popups-extract::after {
-    background-image: linear-gradient(to right, rgb(34, 34, 34, 0), rgb(34, 34, 34, 1) 50%) !important;
+    background-image: linear-gradient(to right, transparent, var(--gray-2) 50%) !important;
   }
   .ui-widget-overlay {
-    background: rgba(0, 0, 0, .8) !important;
+    background: var(--black_8) !important;
   }
   .oo-ui-windowManager-modal > .oo-ui-dialog {
-    background-color: rgba(56, 56, 56, .5);
+    background-color: var(--gray-3_5);
   }
   .mw-body-content pre, .mw-body-content code, span.plainlinks,
   td[style*="border-bottom: 1px solid #eee; background-color:#ffffff"] {
@@ -422,7 +433,7 @@
     background-color: var(--gray-7);
   }
   .mw-revslider-revision-wrapper:hover, .mw-revslider-revision-wrapper-hovered {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--black_5);
   }
   /* remove background image/gradient */
   .keyboard-key, div#editpage-specialchars a,
@@ -770,11 +781,8 @@
   .oo-ui-tagMultiselectWidget-handle input {
     border: none !important;
   }
-  .popup_history_row_even, ins.popupDiff {
+  .popup_history_row_even {
     background: var(--gray-3);
-  }
-  del.popupDiff {
-    background: var(--gray-2);
   }
   .wikEdFrameBodySyntax {
     filter: invert(100%);
@@ -824,30 +832,35 @@
   .wikEdDiffButtonUnchecked {
     border-color: var(--gray-4) !important;
   }
-  td.diff-deletedline .diffchange, .wikEdDiffDelete {
-    background-color: rgba(213, 154, 0, .6) !important;
+  td.diff-deletedline .diffchange, .wikEdDiffDelete,
+  .wikEdDiffFragment:hover .wikEdDiffDelete {
+    background-color: var(--diff-del) !important;
+    color: var(--gray-d) !important;
+  }
+  td.diff-addedline .diffchange, .wikEdDiffInsert,
+  .wikEdDiffFragment:hover .wikEdDiffInsert {
+    background-color: var(--diff-add) !important;
     color: var(--gray-d) !important;
   }
   td.diff-deletedline {
-    border-color: rgba(213, 154, 0, .6) !important;
-  }
-  .wikEdDiffFragment:hover .wikEdDiffDelete {
-    background-color: rgba(213, 154, 0, .65) !important;
+    border-color: var(--diff-del) !important;
   }
   td.diff-addedline {
-    border-color: rgba(0, 112, 213, .6) !important;
+    border-color: var(--diff-add) !important;
   }
-  td.diff-addedline .diffchange, .wikEdDiffInsert {
-    background-color: rgba(0, 112, 213, .6) !important;
-    color: var(--gray-d) !important;
+  del.popupDiff {
+    background-color: var(--diff-del);
+  }
+  ins.popupDiff {
+    background-color: var(--diff-add);
   }
   .mw-revslider-pointer-line .mw-revslider-upper-color,
   .mw-revslider-pointer-container-newer .mw-revslider-slider-line {
-    border-color: rgba(30, 109, 184, .5) !important;
+    border-color: var(--revs-new) !important;
   }
   .mw-revslider-pointer-line .mw-revslider-lower-color,
   .mw-revslider-pointer-container-older .mw-revslider-slider-line {
-    border-color: rgba(255, 204, 51, .5) !important;
+    border-color: var(--revs-old) !important;
   }
   .oo-ui-buttonElement-button:active, .pure-button-primary-progressive:active,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
@@ -930,10 +943,10 @@
   }
   /*** Page preview settings ***/
   .mwe-popups-overlay {
-    background-color: rgba(34, 34, 34, .75) !important;
+    background-color: var(--gray-2_75) !important;
   }
   #mwe-popups-settings {
-    box-shadow: 0 2px 2px 0 rgba(85, 85, 85, .25) !important;
+    box-shadow: 0 2px 2px 0 var(--gray-5_25) !important;
   }
 }
 @-moz-document regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|www\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.+") {
@@ -987,6 +1000,17 @@
     --ores-1: #222800;
     --ores-2: #222000;
     --ores-3: #221800;
+    --black_25: rgba(0, 0, 0, .25);
+    --black_5: rgba(0, 0, 0, .5);
+    --black_8: rgba(0, 0, 0, .8);
+    --gray-2_75: rgba(34, 34, 34, .75);
+    --gray-3_5: rgba(51, 51, 51, .5);
+    --gray-5_25: rgba(85, 85, 85, .25);
+    --white_1: rgba(255, 255, 255, .1);
+    --diff-del: rgba(213, 154, 0, .6);
+    --diff-add: rgba(0, 112, 213, .6);
+    --revs-old: rgba(255, 204, 51, .5);
+    --revs-new: rgba(30, 109, 184, .5);
   }
   body {
     background-color: var(--gray-2);
@@ -1114,7 +1138,7 @@
   }
   .editor-overlay-ve.loading, .overlay.overlay-loading,
   .oo-ui-windowManager-modal > .oo-ui-dialog {
-    background-color: rgba(56, 56, 56, .5);
+    background-color: var(--gray-3_5);
   }
   /* ORES highlight fixes */
   .mw-rcfilters-ui-highlights-color-none {
@@ -1259,16 +1283,16 @@
     color: var(--gray-c);
   }
   .diff-addedline {
-    border-color: rgba(0, 112, 213, .6);
+    border-color: var(--diff-add);
   }
   .diff-addedline .diffchange {
-    background: rgba(0, 112, 213, .6);
+    background: var(--diff-add);
   }
   .diff-deletedline {
-    border-color: rgba(213, 154, 0, .6);
+    border-color: var(--diff-del);
   }
   .diff-deletedline .diffchange {
-    background: rgba(213, 154, 0, .6);
+    background: var(--diff-del);
   }
   /* RecentChanges layout fixes (see #78) */
   .mw-rcfilters-ui-changesListWrapperWidget {
@@ -1307,7 +1331,7 @@
   }
   .toggle-list__list {
     background-color: var(--gray-3);
-    box-shadow: 0 5px 17px 0 rgba(0, 0, 0, .24), 0 0 1px var(--gray-5);
+    box-shadow: 0 5px 17px 0 var(--black_25), 0 0 1px var(--gray-5);
   }
   .minerva--amc-enabled.action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-history-undo a:hover,
   .minerva--amc-enabled.action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-rollback-link a:hover {
@@ -1677,7 +1701,7 @@
     background-image: linear-gradient(to right, var(--black) 70%, transparent);
   }
   .mw-parser-output .main-top-right {
-    background-image: linear-gradient(to right, transparent 30%, rgba(0, 0, 0, .5) 95%, transparent);
+    background-image: linear-gradient(to right, transparent 30%, var(--black_5) 95%, transparent);
   }
   .mw-customtoggle, .mw-collapsible-toggle {
     filter: invert(80%);
