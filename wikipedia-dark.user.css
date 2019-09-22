@@ -1047,6 +1047,9 @@
   .mw-rcfilters-ui-filterTagMultiselectWidget-mobile .oo-ui-tagMultiselectWidget-input.oo-ui-textInputWidget input[readonly] {
     background-color: var(--gray-1);
   }
+  .mw-highlight {
+    background-color: var(--gray-18);
+  }
   .overlay, .overlay.search-overlay, .language-overlay .overlay-content,
   .language-searcher .site-link-list li, .language-searcher .panel,
   #mw-mf-diffview #mw-mf-userinfo, .mw-rollback-link, .mw-tag-marker,
@@ -1225,7 +1228,8 @@
   .notifications-filter-overlay .overlay-content .mw-echo-ui-crossWikiUnreadFilterWidget,
   form.mw-mf-settings .oo-ui-fieldLayout,
   form.mw-mf-settings .oo-ui-fieldLayout:first-child,
-  .overlay.search-overlay .search-content {
+  .overlay.search-overlay .search-content, .content kbd, .content samp,
+  .content code, .content pre {
     border-color: var(--gray-5);
   }
   .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor::after,
@@ -1396,13 +1400,18 @@
     background-color: var(--gray-3);
     border-color: var(--gray-5);
   }
-  .ip-label-container, .client-js .toc-mobile,
+  .ip-label-container, .client-js .toc-mobile, #toc,
   .mw-echo-ui-notificationItemWidget, .mw-ext-score-popup::after {
     background-color: var(--gray-2);
     border-color: var(--gray-5);
   }
   .client-js body.mw-rcfilters-ui-loading .mw-changeslist {
     opacity: .7;
+  }
+  kbd.keyboard-key {
+    background: var(--gray-18) !important;
+    border-color: var(--gray-5) !important;
+    color: var(--gray-9a) !important;
   }
   /* Animation fixes */
   .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link {
@@ -1510,6 +1519,9 @@
   }
 }
 @-moz-document domain("wikidata.org") {
+  .wikibase-referenceview {
+    background-color: transparent;
+  }
   .mw-parser-output .wd-mp-headerbox, .mw-parser-output .wd-mp-subheader > div,
   .ui-entityselector-list .ui-entityselector-more,
   .wikibase-entitysearch-list .wb-entitysearch-suggestions,
@@ -1524,7 +1536,7 @@
   }
   .wikibase-statementgrouplistview .wikibase-statementgroupview-property,
   .wikibase-sitelinkgroupview .wikibase-sitelinkgroupview-heading-container,
-  .wikibase-referenceview.wb-edit > .wikibase-referenceview-heading {
+  .wikibase-referenceview > .wikibase-referenceview-heading {
     background-color: var(--gray-3);
   }
   .wikibase-entitytermsforlanguagelistview-header-row th,
