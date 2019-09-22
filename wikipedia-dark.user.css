@@ -807,6 +807,16 @@
     background-color: var(--red-3) !important;
     border-color: var(--red-0) !important;
   }
+  .mw-ext-score img {
+    background-color: var(--gray-c);
+  }
+  .installerTitle {
+    background-color: var(--blue-2);
+  }
+  .scriptInstaller {
+    box-shadow: 5px 5px 5px var(--gray-5);
+    background-color: var(--gray-2);
+  }
   /*** diff pages ***/
   .diff-context {
     background-color: var(--gray-2) !important;
@@ -1098,12 +1108,6 @@
   .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover,
   form.mw-mf-settings #beta-field::before {
     background-color: var(--gray-5);
-  }
-  .mw-ext-score img {
-    background-color: var(--gray-c);
-  }
-  .installerTitle {
-    background-color: var(--blue-2);
   }
   .editor-overlay-ve.loading, .overlay.overlay-loading,
   .oo-ui-windowManager-modal > .oo-ui-dialog {
@@ -1397,10 +1401,6 @@
     background-color: var(--gray-2);
     border-color: var(--gray-5);
   }
-  .scriptInstaller {
-    box-shadow: 5px 5px 5px var(--gray-5);
-    background-color: var(--gray-2);
-  }
   .client-js body.mw-rcfilters-ui-loading .mw-changeslist {
     opacity: .7;
   }
@@ -1567,7 +1567,6 @@
   }
 }
 @-moz-document domain("wikipedia.org") {
-  /*** Navigation menu logo ***/
   :root {
     --assess-1: #06c;
     --assess-2: #29c;
@@ -1582,6 +1581,7 @@
     --assess-11: #a4c;
     --assess-12: #568;
   }
+  /*** Navigation menu logo ***/
   #p-logo a {
     background-position: center -155px !important;
     display: table-cell !important;
