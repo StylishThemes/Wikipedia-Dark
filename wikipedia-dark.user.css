@@ -1674,7 +1674,8 @@
     background-image: linear-gradient(to top, transparent, var(--gray-c));
     background-size: auto 1px;
   }
-  th.infobox-header[style*="background:#b0c4de;"] {
+  th.infobox-header[style*="background:#b0c4de;"], .standard > tr > th,
+  .standard > * > tr > th, .wide > tr > th, .wide > * > tr > th {
     background-color: var(--blue-3) !important;
   }
   .mw-parser-output table tr td[style*="background: #edf3fe;"] {
@@ -1683,11 +1684,19 @@
   .mw-parser-output table tr td[style*="background: #ffffff;"] {
     background: var(--gray-18) !important;
   }
+  div.NavFrame div.NavHead {
+    background: var(--gray-18);
+  }
   .mw-parser-output table tbody tr th[style*="background:#ccccff;"] {
     background: var(--purple-1) !important;
   }
   .mw-parser-output table.ambox-notice {
     border-left-color: var(--blue-1) !important;
+  }
+  .standard > tr > th, .standard > tr > td, .standard > * > tr > th,
+  .standard > * > tr > td, .wide > tr > th, .wide > tr > td, .wide > * > tr > th,
+  .wide > * > tr > td {
+    border-color: var(--gray-5);
   }
 }
 @-moz-document domain("wiki.archlinux.org") {
