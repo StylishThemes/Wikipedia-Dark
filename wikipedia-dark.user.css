@@ -116,7 +116,8 @@
   .mw-body-content .portal ul, div[style*="background"], .wikitable > tr,
   .wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr,
   .wikitable > * > tr > th, .wikitable > * > tr > td,
-  .wikitable th span[style*="background"] {
+  .wikitable th span[style*="background"],
+  .oo-ui-fieldsetLayout-group .oo-ui-widget {
     background-color: transparent !important;
   }
   div.thumbinner, .catlinks, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
@@ -776,6 +777,10 @@
   /*** Misc ***/
   ul, .portlet li {
     list-style-image: none !important;
+    margin: 0;
+  }
+  .vectorMenu li {
+    list-style: none none;
   }
   table[style*="border:4px ridge"], .jfk-bubble-closebtn,
   .oo-ui-tagMultiselectWidget-handle input {
@@ -863,8 +868,9 @@
     background-color: var(--gray-2);
   }
   /*** diff pages ***/
-  .diff-context {
-    background-color: var(--gray-2) !important;
+  table.diff, td.diff-otitle, td.diff-ntitle, td.diff-addedline,
+  td.diff-deletedline, td.diff-context {
+    background-color: transparent !important;
   }
   .wikEdDiffButtonUnchecked {
     border-color: var(--gray-4) !important;
