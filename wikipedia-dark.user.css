@@ -977,6 +977,10 @@
   #pt-uls a.uls-trigger {
     filter: invert(100%) hue-rotate(180deg);
   }
+  #mw-panel .portal:not(#p-navigation) .body {
+    background-image: linear-gradient(to top, transparent, var(--gray-c));
+    background-size: auto 1px;
+  }
   /*** Reference tooltips ***/
   .rt-tooltip, .rt-tooltipTail::after {
     background: var(--gray-2) !important;
