@@ -1071,7 +1071,7 @@
   /* Icon fixes */
   footer > .post-content > h2 > img, .header-container button.mw-ui-icon,
   .header-container label.mw-ui-icon, .mw-ui-icon-wikimedia-bellOutline-base20,
-  .mw-ui-icon-minerva-mainmenu {
+  .mw-ui-icon-minerva-mainmenu, .mw-ui-icon-before::before {
     filter: brightness(200%);
   }
   .mw-editsection a.mw-ui-icon::before,
@@ -1131,7 +1131,8 @@
   #mw-mf-page-left, .oo-ui-dropdownInputWidget.oo-ui-widget-enabled:hover,
   .oo-ui-dropdownInputWidget.oo-ui-widget-enabled,
   .mw-widgets-datetime-dateTimeInputWidget.oo-ui-widget-enabled .mw-widgets-datetime-dateTimeInputWidget-editField:hover,
-  .navigation-enabled #mw-mf-page-center, table.wikitable tr {
+  .navigation-enabled #mw-mf-page-center, table.wikitable tr, .overlay,
+  .action-history .mw-history-compareselectedversions {
     background-color: var(--gray-2);
   }
   .content table.infobox *[style*="background"] {
@@ -1160,7 +1161,7 @@
   .oo-ui-menuSelectWidget, th[bgcolor] {
     background-color: var(--gray-3);
   }
-  th[style*="background"] {
+  th[style*="background"], .ombox-notice[style*="background"] {
     background-color: var(--gray-3) !important;
   }
   .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted:not(.oo-ui-optionWidget-selected),
@@ -1175,7 +1176,7 @@
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link,
   .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:active,
   .mw-echo-ui-notificationItemWidget:hover, .list-thumb.list-thumb-none,
-  .toggle-list-item__anchor--menu:hover {
+  .toggle-list-item__anchor--menu:hover, .toggle-list-item:hover {
     background-color: var(--gray-4);
   }
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:hover,
@@ -1271,7 +1272,7 @@
   .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select,
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button,
   .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover,
-  .toggle-list-item__anchor--menu,
+  .toggle-list-item__anchor--menu, .toggle-list-item__label,
   .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget,
   .notifications-filter-overlay .overlay-content .mw-echo-ui-crossWikiUnreadFilterWidget-subtitle {
     color: var(--gray-c);
@@ -1461,13 +1462,20 @@
     background-color: var(--gray-3);
     color: var(--gray-c);
   }
+  .action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-history-undo a,
+  .action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-rollback-link a,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button,
   .previewnote p, .warningbox, .mw-revision, .mw-ui-button {
     background-color: var(--gray-3);
     border-color: var(--gray-5);
     color: var(--gray-c);
   }
-  .oo-ui-popupWidget-popup, .oo-ui-popupToolGroup-tools, .content table.infobox {
+  .mw-parser-output .divbox-gray, .mw-parser-output .divbox-grey {
+    background-color: var(--gray-4);
+    border-color: var(--gray-5);
+  }
+  .oo-ui-popupWidget-popup, .oo-ui-popupToolGroup-tools, .content table.infobox,
+  .ve-mobile-fakeToolbar-container {
     background-color: var(--gray-3);
     border-color: var(--gray-5);
   }
