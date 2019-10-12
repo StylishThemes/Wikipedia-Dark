@@ -1748,7 +1748,7 @@
     color: var(--gray-9a) !important; /* make global? */
   }
 }
-@-moz-document domain("ru.wikipedia.org") {
+@-moz-document domain("ru.wikipedia.org"), domain("ru.wiktionary.org") {
   .mw-parser-output .main-top, .mw-parser-output .main-box, #mw-page-base {
     background-color: transparent;
   }
@@ -1766,8 +1766,24 @@
     background-size: auto 1px;
   }
   th.infobox-header[style*="background:#b0c4de;"], .standard > tr > th,
-  .standard > * > tr > th, .wide > tr > th, .wide > * > tr > th {
+  .standard > * > tr > th, .wide > tr > th, .wide > * > tr > th,
+  th[style*="color:#fff; background:#69c;"] {
     background-color: var(--blue-3) !important;
+  }
+  td[style*="background:#eef9ff;"] {
+    background-color: var(--blue-2) !important;
+  }
+  input.mw-ui-button {
+    color: var(--white) !important;
+  }
+  input.mw-ui-button:hover {
+    opacity: .8;
+  }
+  th[style*="background:#ffd399;"] {
+    background: var(--brown-2) !important;
+  }
+  td[style="background:#ffffec"] {
+    background: var(--brown-3) !important;
   }
   .mw-parser-output table tr td[style*="background: #edf3fe;"] {
     background: var(--gray-2) !important;
