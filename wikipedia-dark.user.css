@@ -249,15 +249,28 @@
   #mw-head, #mw-panel, .mw-prefs-buttons {
     background-image: var(--bg-selected);
   }
-  .mw-ui-button, .mw-ui-button *, button[type="submit"],
-  .pure-button-primary-progressive,
+  button[type="submit"], .pure-button-primary-progressive,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button,
   .mw-ui-button.mw-ui-progressive {
     background-color: var(--base-color) !important;
     border-color: transparent !important;
     color: var(--white) !important;
   }
-  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button,
+  #languagesettings-panels .mw-ui-pressed {
+    background-color: var(--base-color) !important;
+    border-color: var(--base-color) !important;
+    color: var(--white) !important;
+  }
+  .mw-ui-button {
+    background-color: var(--black) !important;
+    color: var(--gray-c);
+    border-color: var(--gray-5) !important;
+  }
+  .mw-ui-button:hover {
+    background-color: var(--black_25) !important;
+    color: var(--gray-c) !important;
+    border-color: var(--gray-69);
+  }
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
     background-color: var(--red-2) !important;
     border-color: transparent !important;
@@ -271,6 +284,13 @@
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover,
   .mw-ui-button.mw-ui-progressive:hover {
     background-image: linear-gradient(var(--white_1), var(--white_1)) !important;
+  }
+  .mw-ui-button.mw-ui-progressive:hover {
+    background-color: var(--base-color) !important;
+    border-color: var(--base-color) !important;
+  }
+  .mw-ui-button.mw-ui-progressive {
+    color: var(--gray-e) !important;
   }
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar,
   #p-cactions-label, .client-js #preftoc, .client-js #preftoc li,
@@ -303,7 +323,8 @@
     background: linear-gradient(var(--gray-1), var(--gray-2) .5em);
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled,
-  .search-container .js-langpicker-label {
+  .search-container .js-langpicker-label, .uls-input-settings-disable-info,
+  .uls-input-settings-no-inputmethods {
     color: var(--gray-9a);
   }
   /* fading linear gradient */
@@ -465,7 +486,10 @@
   .pure-button-primary-progressive:focus,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus:not(:active),
   .mw-ui-button.mw-ui-progressive:focus:not(:active) {
-    box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 2px var(--white) !important;
+    box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 2px var(--gray-a) !important;
+  }
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus {
+    border-color: var(--base-color) !important;
   }
   strong, em {
     text-shadow: none !important;
@@ -486,7 +510,7 @@
   div.mw-warning-with-logexcerpt, div.mw-lag-warn-high,
   div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon,
   div.titleblacklist-warning, div.locked-warning {
-    background-color: var(--red-3);
+    background-color: var(--red-0);
     border-color: var(--red-1) !important;
   }
   .userSummaryButtons a, #userSummaryButtons a {
@@ -503,11 +527,18 @@
     background-color: var(--brown-3) !important;
     border-color: var(--brown-2) !important;
   }
+  .warningbox {
+    background-color: var(--brown-3);
+    border-color: var(--brown-2);
+  }
+  .messagebox, .errorbox, .warningbox, .successbox {
+    color: var(--gray-c);
+  }
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
     background-color: var(--gray-2);
   }
   .mw-ui-icon.mw-ui-icon-before::before, .mw-ui-icon.mw-ui-icon-element::before,
-  .mw-parser-output .helpContents-icon {
+  .mw-parser-output .helpContents-icon, img[src*="9px-AnonEditWarning.svg.png"] {
     filter: invert(80%);
   }
   div > .flow-menu li a,
@@ -667,13 +698,17 @@
   .oo-ui-buttonElement-button:focus:not(:active) {
     border-color: var(--base-color) !important;
   }
-  div:not([style*="-color"]), div[style*="background-color"],
+  /* TODO: Sigh! remove these :nots and the div/span etc from here and def not !imporant */
+  div:not([style*="-color"]):not(.uls-menu), div[style*="background-color"],
   span:not([class*="color"]), table:not(.hp-portalen), #talkheader td,
   tr:not([style*="border-bottom"]), th, .infobox tr[style*="background-color"],
   td, h1, h2, h3, h4, h5, h6, ul, li, input, select, .mw-body-content code,
   .lang-list-button:hover, .oo-ui-buttonElement-button, #mwe-popups-settings,
   #mwe-popups-settings header {
     border-color: var(--gray-5) !important;
+  }
+  #mw-editform-cancel > a {
+    border: 0;
   }
   .lang-list-button {
     border-color: var(--gray-5);
@@ -716,11 +751,28 @@
     border-style: solid !important;
     border-width: 1px !important;
   }
+  .languagesettings-menu .menu-section.active,
+  .languagesettings-menu .menu-section:focus {
+    border-color: var(--base-color);
+  }
   /* arrow down */
   .referencetooltip > li + li, .referencetooltip > li + li::after {
     border-top-color: var(--gray-2) !important;
     border-right-color: transparent !important;
     border-left-color: transparent !important;
+  }
+  /* arrow left */
+  .uls-menu.callout.selector-left::before,
+  .uls-menu.callout.selector-left::after {
+    border-right-color: var(--gray-3);
+    outline-offset: 3px !important;
+  }
+  .uls-menu.callout::before, .uls-menu.callout::after {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .uls-menu {
+    border-color: var(--gray-5) !important;
   }
   .referencetooltip > li + li {
     border-top: 12px var(--gray-5) solid !important;
@@ -752,9 +804,6 @@
   div.vectorTabs li.selected, .client-js #preftoc li.selected {
     border-bottom: 1px solid var(--orange-2) !important;
   }
-  #mw-head {
-    border-bottom: 1px solid var(--gray-5);
-  }
   /*** Text ***/
   .wikitable tr:not([style*="color:black" i]) th:not([style*="color: black" i]),
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i] > td > *,
@@ -768,6 +817,9 @@
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
     color: var(--gray-bc) !important;
+  }
+  #mw-editform-cancel > a > span.oo-ui-labelElement-label {
+    color: var(--red-4);
   }
   /*** Quotes ***/
   blockquote {
