@@ -29,6 +29,6 @@
     "perfectionist": "npx perfectionist wikipedia-dark.user.css wikipedia-dark.user.css --indentSize 2 --maxAtRuleLength 250",
     "stylelint": "npx stylelint --color -- wikipedia-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
-    "update": "npx updates -cu && rm -rf node_modules && npm install"
+    "update": "npx updates -cu && npm install"
   }
 }
