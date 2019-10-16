@@ -661,7 +661,13 @@
     background: var(--yellow-1) !important;
     color: var(--gray-3) !important;
   }
+  th[style="border-top: 5px solid #CF9C65;"] {
+    border-top-color: var(--yellow-1) !important;
+  }
   /* Orange */
+  th[style="border-top: 5px solid #FFF157;"] {
+    border-top-color: var(--orange-2) !important;
+  }
   table.ext-status-experimental > tbody > tr.tpl-infobox-header {
     background: var(--orange-1) !important;
   }
@@ -687,7 +693,7 @@
   }
   .navbox-abovebelow, th.navbox-group, .navbox-subgroup .navbox-title,
   .navbox-abovebelow *, th.navbox-group *, .navbox-subgroup .navbox-title *,
-  tr[bgcolor*="#E1E9F3" i] {
+  tr[bgcolor*="#E1E9F3" i], .infobox th[style*="background-color:#C3D6EF;"] {
     background-color: var(--blue-3) !important;
   }
   /* Purple */
