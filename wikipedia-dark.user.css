@@ -202,7 +202,7 @@
   .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th {
     background-color: var(--gray-3) !important;
   }
-  .mw-collapsible:not([class*="navbox-"]) td:not([class*="mbox-"]) {
+  .mw-collapsible:not([class*="navbox-"]) td:not([class*="mbox-"]):not(.assess-start):not(.import-high) {
     background-color: var(--gray-2) !important;
   }
   .oo-ui-toolbar-bar, .oo-ui-window-head, .oo-ui-window-foot,
@@ -537,6 +537,19 @@
   .warningbox {
     background-color: var(--brown-3);
     border-color: var(--brown-2);
+  }
+  table.tmbox-protection, html table.tmbox-notice {
+    border-color: var(--brown-2) !important;
+  }
+  html table.tmbox, .tmbox.tmbox-notice table[style*="background:transparent;"] {
+    background-color: var(--brown-3) !important;
+    border-color: var(--brown-2) !important;
+  }
+  td.assess-start[style*="background: #FFAA66;"] {
+    background: var(--brown-2) !important;
+  }
+  td.import-high[style*="background: #ffacff;"] {
+    background: var(--purple-1) !important;
   }
   .messagebox, .errorbox, .warningbox, .successbox {
     color: var(--gray-c);
