@@ -840,7 +840,7 @@
   .oo-ui-tagMultiselectWidget-handle input {
     border: none !important;
   }
-  .popup_history_row_even {
+  .popup_history_row_even, .flow-topic-moderatestate-lock .flow-topic-titlebar {
     background: var(--gray-3);
   }
   .editOptions, #proveit-body, .wikiEditor-ui-toolbar .booklet .pages {
