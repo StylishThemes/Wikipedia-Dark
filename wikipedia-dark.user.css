@@ -427,8 +427,8 @@
   .suggestions-results, .suggestions-special, #mwe-pt-list-more,
   .fr-watchlist-pending-notice, div.flaggedrevs_notice, .imeselector:hover,
   .imeselector-menu .selectable-row:hover, .guider, .mw-pt-languages-label,
-  .cbnnr-close, .mw_metadata th, .uls-language-block > ul > li:hover,
-  th[bgcolor], .wikEdDiffBlock, .installerMessage {
+  .mw_metadata th, .uls-language-block > ul > li:hover, th[bgcolor],
+  .wikEdDiffBlock, .installerMessage {
     background-color: var(--gray-3); /* don't include !important flag */
   }
   table.wikitable > tr > th, table.wikitable > * > tr > th,
@@ -457,7 +457,7 @@
   .interlanguage-uls-menu.selector-left::before {
     background-color: var(--gray-5);
   }
-  .mw-revslider-revision {
+  .mw-revslider-revision, .cbnnr-close {
     background-color: var(--gray-7);
   }
   .mw-revslider-revision-wrapper:hover, .mw-revslider-revision-wrapper-hovered {
