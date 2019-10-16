@@ -119,7 +119,7 @@
   .wikitable th span[style*="background"], .inline-quote-talk,
   .oo-ui-fieldsetLayout-group .oo-ui-widget,
   .mw-parser-output .mod-gallery .whitebg img,
-  .mw-parser-output .mod-gallery .gallerybox div {
+  .mw-parser-output .mod-gallery .gallerybox div, tt[style="background: white;"] {
     background-color: transparent !important;
   }
   div.thumbinner, .catlinks, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
