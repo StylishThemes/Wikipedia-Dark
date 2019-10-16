@@ -437,8 +437,9 @@
   tr[style*="background-color: #f7f7f7;" i], th[style*="background:#F2F2F2" i],
   #filetoc, .toccolours, th[style*="background:#F9F9F9" i],
   th[style*="background-color: lightgrey" i], th[style*="background:#ddd" i],
-  .infobox th[style*="background"], .infobox tr[style*="background-color"],
-  .infobox td[style*="background"], td[style*="background:#F2F2F2" i],
+  .infobox th[style*="background"]:not([style*="background:#dfc;"]),
+  .infobox tr[style*="background-color"], .infobox td[style*="background"],
+  td[style*="background:#F2F2F2" i],
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i], .tlheader,
   th[style*="background:whitesmoke" i], td[style*="background:whitesmoke" i],
   th[style*="#FFEBAD" i], .usermessage, table.nmbox th, tr[style*="#eaecf0" i],
@@ -667,6 +668,9 @@
   table.ext-status-stable > tbody > tr.tpl-infobox-header {
     background: var(--green-2) !important;
     color: var(--gray-d) !important;
+  }
+  html table th[style*="background:#dfc;"] {
+    background: var(--green-2) !important;
   }
   /* Yellow */
   table.ext-status-beta > tbody > tr.tpl-infobox-header,
