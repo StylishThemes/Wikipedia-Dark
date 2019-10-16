@@ -259,6 +259,9 @@
     border-color: transparent !important;
     color: var(--white) !important;
   }
+  .oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button {
+    border-color: transparent !important;
+  }
   #languagesettings-panels .mw-ui-pressed {
     background-color: var(--base-color) !important;
     border-color: var(--base-color) !important;
