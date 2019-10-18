@@ -120,7 +120,8 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   .wikitable th span[style*="background"], .inline-quote-talk,
   .oo-ui-fieldsetLayout-group .oo-ui-widget,
   .mw-parser-output .mod-gallery .whitebg img,
-  .mw-parser-output .mod-gallery .gallerybox div, tt[style="background: white;"] {
+  .mw-parser-output .mod-gallery .gallerybox div, tt[style="background: white;"],
+  #hauptseite table div[class] {
     background-color: transparent !important;
   }
   div.thumbinner, .catlinks, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
