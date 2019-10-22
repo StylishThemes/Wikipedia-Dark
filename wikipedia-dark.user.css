@@ -209,7 +209,8 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background-color: var(--gray-2) !important;
   }
   .oo-ui-toolbar-bar, .oo-ui-window-head, .oo-ui-window-foot,
-  .oo-ui-popupToolGroup-tools, #language-settings-dialog {
+  .oo-ui-popupToolGroup-tools, #language-settings-dialog,
+  .mw-parser-output .ts-Родственные_проекты {
     background: var(--gray-2) !important;
   }
   table.diff, td.diff-otitle, td.diff-ntitle,
