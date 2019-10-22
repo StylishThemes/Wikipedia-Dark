@@ -399,7 +399,9 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   td[style*="background:#F4F9F0"], td[style*="background:#F9F0F0"],
   td[style*="background:#f0f0f0"], #mwe-popups-settings,
   th[style*="border-bottom: 1px solid #eee; background-color:#ffffff;"],
-  .table-na[style*="background:#ececec;"], #js-lang-lists .text, div.arcProg,
+  .table-na[style*="background:#ececec;"], #js-lang-lists .text, div.arcProg {
+    background-color: var(--gray-2) !important;
+  }
   .infoboks.biografi tr.overskrift th, .infoboks tr.rad td,
   .infoboks tr.bilde td, .infoboks tr.overskrift td {
     background-color: var(--gray-2) !important;
@@ -1858,6 +1860,12 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   html[lang="de"] body #mw-content-text #hauptseite h2 {
     background: var(--blue-2) !important;
     border: 1px solid var(--blue-3) !important;
+  }
+}
+@-moz-document domain("no.wikipedia.org") {
+  .infoboks.biografi tr.overskrift th, .infoboks tr.rad td,
+  .infoboks tr.bilde td, .infoboks tr.overskrift td {
+    background-color: var(--gray-2) !important;
   }
 }
 @-moz-document domain("ru.wikipedia.org"), domain("ru.wiktionary.org") {
