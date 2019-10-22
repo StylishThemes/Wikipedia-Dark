@@ -120,8 +120,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   .wikitable th span[style*="background"], .inline-quote-talk,
   .oo-ui-fieldsetLayout-group .oo-ui-widget,
   .mw-parser-output .mod-gallery .whitebg img,
-  .mw-parser-output .mod-gallery .gallerybox div, tt[style="background: white;"],
-  #hauptseite table div[class] {
+  .mw-parser-output .mod-gallery .gallerybox div, tt[style="background: white;"] {
     background-color: transparent !important;
   }
   div.thumbinner, .catlinks, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
@@ -1849,6 +1848,16 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   }
   .navbox.mw-collapsible th[style*="color:"] {
     color: var(--gray-9a) !important; /* make global? */
+  }
+}
+@-moz-document domain("de.wikipedia.org") {
+  #hauptseite .inhalt {
+    background: var(--black_25);
+    border: 1px solid var(--gray-4) !important;
+  }
+  html[lang="de"] body #mw-content-text #hauptseite h2 {
+    background: var(--blue-2) !important;
+    border: 1px solid var(--blue-3) !important;
   }
 }
 @-moz-document domain("ru.wikipedia.org"), domain("ru.wiktionary.org") {
