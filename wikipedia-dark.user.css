@@ -369,7 +369,8 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   .infobox, .lang-list-container, .mw-parser-output #bottombox-d, .uls-lcd,
   .uls-search, div.mw-pt-languages, .ns-0 #mw-content-text h1,
   .wikiEditor-ui-toolbar, .mw-ext-score-popup,
-  .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle {
+  .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle,
+  .mw-parser-output .quotebox-title {
     background-color: var(--gray-2); /* non-important */
   }
   table, input, button, select, textarea:not([class*="mw-editfont"]),
