@@ -313,7 +313,8 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   .mw-body-content .portal, .sistersitebox, .boilerplate, .NavFrame, .divbox,
   div.resolved span, div.unresolved span, div.unsure span, div.stale span,
   div.being_worked_on span, div.stuck span, div.disregard span, div.FYI span,
-  .vertical-navbox {
+  .vertical-navbox,
+  .mw-advancedSearch-fieldContainer .oo-ui-labelElement > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label {
     background-color: var(--gray-2) !important;
   }
   #searchInput:focus, #simpleSearch:hover #searchInput:focus {
@@ -326,9 +327,6 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   }
   .oo-ui-inputWidget-input {
     background-color: transparent !important;
-  }
-  .mw-advancedSearch-fieldContainer .oo-ui-labelElement > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label {
-    background-color: var(--gray-2) !important;
   }
   .mw-advancedSearch-namespace-selection {
     background: linear-gradient(var(--gray-1), var(--gray-2) .5em);
