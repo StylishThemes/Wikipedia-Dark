@@ -1,7 +1,7 @@
 {
   "name": "wikipedia-dark",
   "title": "Wikipedia Dark",
-  "version": "2.3.18",
+  "version": "2.3.19",
   "description": "Wikipedia Dark theme",
   "license": "CC-BY-SA-4.0",
   "repository": "https://github.com/StylishThemes/Wikipedia-Dark",
@@ -11,13 +11,13 @@
     "node": ">=10"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-silverwind": "^4.2.3",
+    "eslint": "^6.6.0",
+    "eslint-config-silverwind": "^5.0.0",
     "perfectionist": "^2.4.0",
     "stylelint": "^11.1.1",
     "stylelint-config-standard": "^19.0.0",
     "updates": "^9.0.1",
-    "ver": "^6.0.0"
+    "ver": "^6.0.2"
   },
   "scripts": {
     "authors": "bash tools/authors",
