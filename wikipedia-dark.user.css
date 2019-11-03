@@ -496,9 +496,8 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background: var(--gray-d) !important;
   }
   /* white background to wikEd - see #24 */
-  .wikEdFrameBodySyntax {
-    background: var(--white) !important;
-    filter: invert(100%);
+  .wikEdFrameBodySyntax, #wpTextbox1 {
+    background: var(--gray-18);
   }
 	img[src*="Check_mark_23x20_02.svg"] {
 		filter: invert(100%) brightness(80%);
