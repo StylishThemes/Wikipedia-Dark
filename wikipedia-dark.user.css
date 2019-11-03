@@ -574,7 +574,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   td.import-high[style*="background: #ffacff;"] {
     background: var(--purple-1) !important;
   }
-  .messagebox, .errorbox, .warningbox, .successbox {
+  .messagebox, .errorbox, .warningbox, .successbox, .suggestions-special .special-label  {
     color: var(--gray-c);
   }
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
