@@ -500,6 +500,9 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background: var(--white) !important;
     filter: invert(100%);
   }
+	img[src*="Check_mark_23x20_02.svg"] {
+		filter: invert(100%) brightness(80%);
+	}
   .keyboard-key {
     box-shadow: .1em .2em .2em var(--gray-4) !important;
   }
