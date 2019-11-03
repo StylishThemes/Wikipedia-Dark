@@ -757,7 +757,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   tr:not([style*="border-bottom"]), th, .infobox tr[style*="background-color"],
   td, h1, h2, h3, h4, h5, h6, ul, li, input, select, .mw-body-content code,
   .lang-list-button:hover, .oo-ui-buttonElement-button, #mwe-popups-settings,
-  #mwe-popups-settings header {
+  #mwe-popups-settings header, html .thumbimage {
     border-color: var(--gray-5) !important;
   }
   #mw-editform-cancel > a {
