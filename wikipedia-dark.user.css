@@ -410,7 +410,8 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   .infoboks tr.bilde td, .infoboks tr.overskrift td {
     background-color: var(--gray-2) !important;
   }
-  body .ui-button {
+  body .ui-button,
+	caption[style*="background-color:#f2f2f2"] {
     background: var(--gray-28) !important;
     border-color: var(--gray-5) !important;
   }
