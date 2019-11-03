@@ -297,7 +297,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     border-color: var(--base-color) !important;
   }
 	.suggestions-results .suggestions-result:hover, .suggestions-result-current:hover {
-		background:  var(--base-color);
+		background: var(--base-color);
 	}
   .mw-ui-button.mw-ui-progressive {
     color: var(--gray-e) !important;
