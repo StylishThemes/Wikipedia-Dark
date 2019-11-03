@@ -13,6 +13,7 @@ function cleanup(css) {
     // }/* comment */ => }\n\n  /* comment */
     .replace(/}\/\*(([\s\S])+?)\*\/\s*/g, "}\n\n  /*$1*/\n  ")
     .replace(/,\s\/\*/g, ",\n  /*")
+    .replace(/\s+regexp\(/g, "\nregexp(")
     // Remove extra carriage returns between definitions
     .replace(/\n+/g, "\n");
 }
