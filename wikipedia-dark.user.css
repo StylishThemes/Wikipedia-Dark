@@ -612,7 +612,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   .oo-ui-widget-enabled.mw-rcfilters-ui-rcTopSectionWidget,
   .oo-ui-widget-enabled.oo-ui-tagMultiselectWidget,
   .oo-ui-widget-enabled.mw-rcfilters-ui-watchlistTopSectionWidget,
-  tr[style*="background"], html img[src*=".svg"] {
+  tr[style*="background"] {
     background-color: transparent !important;
   }
   #mw-fr-watchlist-pending-notice {
