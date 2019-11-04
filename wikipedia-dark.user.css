@@ -751,12 +751,14 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     border-color: var(--base-color) !important;
   }
   /* TODO: Sigh! remove these :nots and the div/span etc from here and def not !imporant */
-  div:not([style*="-color"]):not(.uls-menu), div[style*="background-color"],
-  span:not([class*="color"]), table:not(.hp-portalen), #talkheader td,
-  tr:not([style*="border-bottom"]), th, .infobox tr[style*="background-color"],
-  td, h1, h2, h3, h4, h5, h6, ul, li, input, select, .mw-body-content code,
-  .lang-list-button:hover, .oo-ui-buttonElement-button, #mwe-popups-settings,
-  #mwe-popups-settings header, html .thumbimage {
+  div:not([style*="-color"]):not(.uls-menu):not([style*="border"]),
+  div[style*="background-color"],
+  span:not([class*="color"]):not([style*="border-left-color:"]),
+  table:not(.hp-portalen), #talkheader td, tr:not([style*="border-bottom"]), th,
+  .infobox tr[style*="background-color"], td, h1, h2, h3, h4, h5, h6, ul, li,
+  input, select, .mw-body-content code, .lang-list-button:hover,
+  .oo-ui-buttonElement-button, #mwe-popups-settings, #mwe-popups-settings header,
+  html .thumbimage {
     border-color: var(--gray-5) !important;
   }
   #mw-editform-cancel > a {
@@ -1870,6 +1872,21 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   html[lang="de"] body #mw-content-text #hauptseite h2 {
     background: var(--blue-2) !important;
     border: 1px solid var(--blue-3) !important;
+  }
+  table > * > tr.hintergrundfarbe2 > th, table > * > tr > th.hintergrundfarbe2,
+  table.hintergrundfarbe2, .hintergrundfarbe2 {
+    background-color: #222;
+  }
+  .mw-parser-output div.NavHead {
+    background-color: #343434;
+  }
+  .headerSort[style="background-color:#B3B7FF"] {
+    background-color: var(--purple-1) !important;
+  }
+  #Dokumentation\.Info[style*="border: #B3B7FF 3px solid;"],
+  #Vorlagendokumentation[style*="border: #B3B7FF 3px solid;"],
+  #TemplateData[style*="border:2px solid #B3B7FF;"] {
+    border-color: var(--purple-2) !important;
   }
 }
 @-moz-document domain("no.wikipedia.org") {
