@@ -86,6 +86,8 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     --orange-2: #e08b26;
     --purple-1: #382b4a;
     --purple-2: #768;
+    --pink-1: #6b3e68;
+    --pink-2: #965691;
     --cyan-1: #194d41;
     --ores-1: #222800;
     --ores-2: #222000;
@@ -688,6 +690,10 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background: var(--green-2) !important;
     color: var(--gray-d) !important;
   }
+  .MainPageBG[style*="border:1px solid #cef2e0;"],
+  .MainPageBG h2[style*="border:1px solid #a3bfb1;"] {
+    border: 1px solid var(--green-1) !important;
+  }
   html table th[style*="background:#dfc;"] {
     background: var(--green-2) !important;
   }
@@ -712,12 +718,11 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background: var(--gray-5) !important;
   }
   /* Blue */
-  div[style*="background"] h2, div[style*="background"] h2 *, #mp-right h2,
-  #mp-right h2 span, .navbox th, .navbox-title, .navbox-title *,
-  tr[style*="background-color:tan;" i], div[style*="background: #444444;"],
-  div[style*="background: #444444;"] *, ol.references li:target,
-  sup.reference:target, span.citation:target, ol.references li:target *,
-  sup.reference:target *, span.citation:target *,
+  div[style*="background"] h2, div[style*="background"] h2 *, .navbox th,
+  .navbox-title, .navbox-title *, tr[style*="background-color:tan;" i],
+  div[style*="background: #444444;"], div[style*="background: #444444;"] *,
+  ol.references li:target, sup.reference:target, span.citation:target,
+  ol.references li:target *, sup.reference:target *, span.citation:target *,
   td[style*="background:#CEDFF2" i], tr[bgcolor="#CEDFF2" i],
   table[style*="background-color:#cef2e0" i] *,
   div[style*="background-color: #cee0f2" i],
@@ -727,12 +732,23 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   th[style*="background:#d1dbdf" i], td[style*="background:#e6f2ff" i] {
     background-color: var(--blue-2) !important;
   }
+  #mp-right.MainPageBG h2, #mp-right.MainPageBG h2 span {
+    background-color: var(--blue-3) !important;
+  }
   .navbox-abovebelow, th.navbox-group, .navbox-subgroup .navbox-title,
   .navbox-abovebelow *, th.navbox-group *, .navbox-subgroup .navbox-title *,
   tr[bgcolor*="#E1E9F3" i], .infobox th[style*="background-color:#C3D6EF;"] {
     background-color: var(--blue-3) !important;
   }
+  .MainPageBG[style*="border:1px solid #cedff2;"],
+  .MainPageBG h2[style*="border:1px solid #a3b0bf;"] {
+    border-color: var(--blue-1) !important;
+  }
   /* Purple */
+  .MainPageBG[style*="border:1px solid #ddcef2"],
+  .MainPageBG h2[style*="border:1px solid #afa3bf;"] {
+    border-color: var(--purple-2) !important;
+  }
   #mp-lower #mp-bottom h2, #mp-bottom h2 span,
   th[style*="background:lavender" i], td[style*="background:lavender" i],
   th[style*="background:#edf" i], td.import-high[style*="background: #ffacff;"] {
@@ -742,6 +758,16 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   #mp-center #mp-tfl-h2, #mp-center #mp-tfl-h2 span, .table-partial,
   tr[style*="background:orange" i], td[style*="background:#ffd" i] {
     background-color: var(--brown-1) !important;
+  }
+  /* pink */
+  .MainPageBG[style*="border:1px solid #f2cedd; background:#fff5fa;"],
+  #mp-center #mp-tfl-h2[style*="border:1px solid #bfa3af;"] {
+    border-color: var(--pink-2) !important;
+  }
+  #mp-center #mp-tfl-h2[style*="background:#f2cedd;"],
+  #mp-center #mp-tfl-h2[style*="background:#f2cedd;"] span {
+    background-color: var(--pink-1) !important;
+    color: var(--gray-d) !important;
   }
   /*** Border ***/
   fieldset, button[type="submit"]:not(.pure-button-primary-progressive),
@@ -753,10 +779,12 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   div[style*="background-color"],
   span:not([class*="color"]):not([style*="border-left-color:"]),
   table:not(.hp-portalen), #talkheader td, tr:not([style*="border-bottom"]), th,
-  .infobox tr[style*="background-color"], td, h1, h2, h3, h4, h5, h6, ul, li,
-  input, select, .mw-body-content code, .lang-list-button:hover,
-  .oo-ui-buttonElement-button, #mwe-popups-settings, #mwe-popups-settings header,
-  html .thumbimage {
+  .infobox tr[style*="background-color"], td, h1,
+  h2:not([style*="#cef2e0;"]):not([style*="#cedff2;"]):not([style*="#afa3bf;"]),
+  h3, h4, h5, h6, ul, li, input, select, .mw-body-content code,
+  .lang-list-button:hover, .oo-ui-buttonElement-button, #mwe-popups-settings,
+  #mwe-popups-settings header, html .thumbimage,
+  div[style*="border:1px solid #e2e2e2;"] {
     border-color: var(--gray-5) !important;
   }
   #mw-editform-cancel > a {
