@@ -570,9 +570,6 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   td.assess-start[style*="background: #FFAA66;"] {
     background: var(--brown-2) !important;
   }
-  td.import-high[style*="background: #ffacff;"] {
-    background: var(--purple-1) !important;
-  }
   .messagebox, .errorbox, .warningbox, .successbox,
   .suggestions-special .special-label {
     color: var(--gray-c);
@@ -738,7 +735,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   /* Purple */
   #mp-lower #mp-bottom h2, #mp-bottom h2 span,
   th[style*="background:lavender" i], td[style*="background:lavender" i],
-  th[style*="background:#edf" i] {
+  th[style*="background:#edf" i], td.import-high[style*="background: #ffacff;"] {
     background-color: var(--purple-1) !important;
   }
   /* Brown */
