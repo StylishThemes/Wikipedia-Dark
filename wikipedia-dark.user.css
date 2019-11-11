@@ -312,6 +312,12 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   .mw-advancedSearch-fieldContainer {
     background-image: none !important;
   }
+  #ca-nstab-project, #ca-talk, #ca-view, #ca-viewsource, #ca-history,
+  #ca-nstab-main {
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
   .wpb .portal ul, .boilerplate .pullquote, .module-shortcutboxplain,
   .mw-trackedTemplate, .vertical-navbox th, .todo-box {
     background-color: var(--gray-3) !important;
@@ -1998,6 +2004,9 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   }
   .ns-0 .mw-disambig {
     background-color: var(--red-3);
+  }
+  #ca-nstab-портал {
+    border-right: 0 !important;
   }
 }
 @-moz-document domain("wiki.archlinux.org") {
