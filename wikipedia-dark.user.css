@@ -460,7 +460,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   tr[style*="background-color: #f7f7f7;" i], th[style*="background:#F2F2F2" i],
   #filetoc, .toccolours, th[style*="background:#F9F9F9" i],
   th[style*="background-color: lightgrey" i], th[style*="background:#ddd" i],
-  .infobox th[style*="background"]:not([style*="background:#dfc;"]),
+  .infobox th[style*="background"]:not([style*="background:#dfc;"]):not(.infobox-above),
   .infobox tr[style*="background-color"], .infobox td[style*="background"],
   td[style*="background:#F2F2F2" i],
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i], .tlheader,
@@ -781,7 +781,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     border-color: var(--base-color) !important;
   }
   /* TODO: Sigh! remove these :nots and the div/span etc from here and def not !imporant */
-  div:not([style*="-color"]):not(.uls-menu):not([style*="border"]),
+  div:not([style*="-color"]):not(.uls-menu):not([style*="border"]):not(.standard-talk):not([class*="ruwiki-"]),
   div[style*="background-color"],
   span:not([class*="color"]):not([style*="border-left-color:"]),
   table:not(.hp-portalen), #talkheader td, tr:not([style*="border-bottom"]), th,
@@ -1960,11 +1960,22 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   }
   th.infobox-header[style*="background:#b0c4de;"], .standard > tr > th,
   .standard > * > tr > th, .wide > tr > th, .wide > * > tr > th,
-  th[style*="color:#fff; background:#69c;"] {
+  th[style*="color:#fff; background:#69c;"],
+  .infobox td[style*="background-color:#cedff2;"], tr[bgcolor="#cedff2"],
+  td[style*="background:#cfe3ff;"], td[style*="background:#eaf3ff;"] {
     background-color: var(--blue-3) !important;
   }
-  td[style*="background:#eef9ff;"] {
+  th.infobox-above[style*="background:#cedff2;"] {
+    background: var(--blue-3) !important;
+  }
+  td[style*="background:#eef9ff;"], td[style*="background: #f0faff;"] {
     background-color: var(--blue-2) !important;
+  }
+  td[style*="background: #a0e0ff;"] {
+    background-color: var(--blue-1) !important;
+  }
+  div[style*="border: solid #a0e0ff 1px;"] {
+    border-color: var(--blue-1) !important;
   }
   input.mw-ui-button {
     color: var(--white) !important;
@@ -1978,11 +1989,16 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   td[style="background:#ffffec"] {
     background: var(--brown-3) !important;
   }
+  .messagebox.standard-talk, .mw-parser-output .t-Перенесено-movedBox {
+    background: var(--brown-1);
+    border: 1px solid var(--brown-2) !important;
+  }
   .mw-parser-output table tr td[style*="background: #edf3fe;"],
   .mw-parser-output .ts-Родственные_проекты {
     background: var(--gray-2) !important;
   }
-  .mw-parser-output table tr td[style*="background: #ffffff;"] {
+  .mw-parser-output table tr td[style*="background: #ffffff;"],
+  td[style*="background: #f9f9f9;"] {
     background: var(--gray-18) !important;
   }
   div.NavFrame div.NavHead {
@@ -1999,6 +2015,9 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   .wide > * > tr > td {
     border-color: var(--gray-5);
   }
+  div[style*="border: solid #aaa 1px;"] {
+    border-color: var(--gray-5) !important;
+  }
   a span[style*="color"] {
     color: var(--base-color) !important;
   }
@@ -2007,6 +2026,16 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   }
   #ca-nstab-портал {
     border-right: 0 !important;
+  }
+  .ruwiki-addSectionBottom {
+    color: var(--base-color);
+    background: var(--blue-3);
+    border: 1px solid var(--blue-2);
+  }
+  div[style="border-bottom: solid 2px #479429;"],
+  div[style*="border:1px solid #479429;"],
+  div[style="border-bottom: solid 2px #479429;"] {
+    border-color: var(--green-1) !important;
   }
 }
 @-moz-document domain("wiki.archlinux.org") {
