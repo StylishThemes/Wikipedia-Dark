@@ -1892,9 +1892,22 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   }
 }
 @-moz-document domain("de.wikipedia.org") {
+  img[src*="24px-OOjs_UI_icon_signature-ltr.svg"] {
+    filter: invert(1) brightness(75%);
+  }
+  input::placeholder, textarea::placeholder {
+    color: var(--gray-7) !important;
+  }
   #hauptseite .inhalt {
     background: var(--black_25);
     border: 1px solid var(--gray-4) !important;
+  }
+  span[style*="background-image: linear-gradient(#fdfefe 0,#e8f2f8 16px);"],
+  kbd[style*="background: #F7F7F7;"] {
+    background: var(--black_25) !important;
+  }
+  kbd[style*="border-color:#DDDDDD #AAAAAA #888888 #CCCCCC;"], .rahmenfarbe1 {
+    border-color: var(--gray-4) !important;
   }
   html[lang="de"] body #mw-content-text #hauptseite h2 {
     background: var(--blue-2) !important;
@@ -1902,10 +1915,10 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   }
   table > * > tr.hintergrundfarbe2 > th, table > * > tr > th.hintergrundfarbe2,
   table.hintergrundfarbe2, .hintergrundfarbe2 {
-    background-color: #222;
+    background-color: var(--gray-2);
   }
   .mw-parser-output div.NavHead {
-    background-color: #343434;
+    background-color: var(--gray-5);
   }
   .headerSort[style="background-color:#B3B7FF"] {
     background-color: var(--purple-1) !important;
