@@ -595,6 +595,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background-color: var(--red-3) !important;
     border-color: var(--red-0) !important;
   }
+  /*** Background Color Styles ***/
   /* ORES highlight colors */
   .mw-rcfilters-ui-highlights-color-none {
     background-color: var(--gray-7);
@@ -649,12 +650,44 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c3.mw-rcfilters-highlight-color-c4.mw-rcfilters-highlight-color-c5.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
     background-color: var(--ores-3) !important;
   }
-  /*** Background Color Styles ***/
-  /* Red */
+  /* Red
+  ** Red links (non-existant pages) */
+  div.vectorTabs li.new:not(.selected) a, .mw-plusminus-neg, a.new,
+  #p-personal a.new {
+    color: var(--red-1) !important;
+  }
   td[style*="background: #FDD;" i], .table-no, td[style*="background:#fdd" i],
   td[style*="background: #ffdddd" i], tr[style*="background:#FFDDDD" i],
   tr[style*="background:#fbb" i] {
     background: var(--red-3) !important;
+    color: var(--gray-d) !important;
+  }
+  td.projects[style*="border:1px solid #C66; background: #FCC;"] {
+    background: var(--red-0) !important;
+    border-color: var(--red-3) !important;
+  }
+  tbody td[style*="border:1px solid #6BB; background-color: #CFF;"] {
+    background-color: var(--blue-2) !important;
+    border: 1px solid var(--blue-3) !important;
+  }
+  .plainlinks span[style*="background-color: #36c;"],
+  .plainlinks span[style*="border: 1px solid #36c;"] {
+    background-color: var(--base-color) !important;
+    border: 1px solid var(--base-color) !important;
+  }
+  body .ui-button.ui-button-blue {
+    border-color: var(--base-color) !important;
+    background: var(--base-color) !important;
+    background: linear-gradient(to bottom, var(--base-color) 0%, var(--base-color) 90%) !important;
+  }
+  body .ui-button.ui-button-blue:hover {
+    border-color: var(--base-color) !important;
+    background: var(--base-color) !important;
+    background: linear-gradient(to bottom, var(--base-color) 0%, var(--base-color) 90%) !important;
+    color: var(--gray-e) !important;
+    opacity: .9;
+  }
+  .plainlinks span[style="color:white;"], body a span .ui-button-text b {
     color: var(--gray-d) !important;
   }
   /* Green */
@@ -684,7 +717,8 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     color: var(--gray-d) !important;
   }
   .MainPageBG[style*="border:1px solid #cef2e0;"],
-  .MainPageBG h2[style*="border:1px solid #a3bfb1;"] {
+  .MainPageBG h2[style*="border:1px solid #a3bfb1;"],
+  #localNotice table[style="border: 1px solid #009966;"] {
     border: 1px solid var(--green-1) !important;
   }
   html table th[style*="background:#dfc;"] {
@@ -781,6 +815,9 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background-color: var(--pink-1) !important;
     color: var(--gray-d) !important;
   }
+  td[style*="box-shadow: 0px 5px 5px -6px #ccc;"] {
+    box-shadow: 0 5px 5px -6px var(--gray-5) !important;
+  }
   /*** Border ***/
   fieldset, button[type="submit"]:not(.pure-button-primary-progressive),
   .oo-ui-buttonElement-button:focus:not(:active) {
@@ -796,8 +833,17 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   h3, h4, h5, h6, ul, li, input, select, .mw-body-content code,
   .lang-list-button:hover, .oo-ui-buttonElement-button, #mwe-popups-settings,
   #mwe-popups-settings header, html .thumbimage,
-  div[style*="border:1px solid #e2e2e2;"] {
+  div[style*="border:1px solid #e2e2e2;"], div[style*="border:1px solid #aaa;"] {
     border-color: var(--gray-5) !important;
+  }
+  td[style*="box-shadow: 0px 5px 5px -6px #ccc;"], td[style*="#ccc;"] {
+    box-shadow: 0 5px 5px -7px var(--gray-5) !important;
+  }
+  td[style*="box-shadow: 0px 0px 5px #ccc;"] {
+    box-shadow: 0 0 5px var(--gray-5) !important;
+  }
+  #bodyContent .mw-pt-translate-header {
+    border-bottom-color: var(--gray-5) !important;
   }
   #mw-editform-cancel > a {
     border: 0;
@@ -1959,8 +2005,11 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   .mw-parser-output .main-top-right {
     background-image: linear-gradient(to right, transparent 30%, var(--black_5) 95%, transparent);
   }
-  .mw-customtoggle, .mw-collapsible-toggle {
+  .mw-customtoggle {
     filter: invert(80%);
+  }
+  .mw-collapsible-toggle, .mw-parser-output .shortcutbox td a img {
+    filter: grayscale(1) brightness(200%);
   }
   .mw-parser-output .main-top {
     filter: brightness(80%);
@@ -1984,6 +2033,9 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   }
   td[style*="background: #a0e0ff;"] {
     background-color: var(--blue-1) !important;
+  }
+  .mw-parser-output .shortcutbox td {
+    background-color: var(--blue-3);
   }
   div[style*="border: solid #a0e0ff 1px;"] {
     border-color: var(--blue-1) !important;
@@ -2014,6 +2066,9 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   }
   div.NavFrame div.NavHead {
     background: var(--gray-18);
+  }
+  .mw-parser-output .shortcutbox-shortcutsCell.shortcutbox-shortcutsCell {
+    background-color: var(--gray-4);
   }
   .mw-parser-output table tbody tr th[style*="background:#ccccff;"] {
     background: var(--purple-1) !important;
