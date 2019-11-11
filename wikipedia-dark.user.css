@@ -1946,13 +1946,19 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
     background-color: transparent;
   }
   .mw-parser-output .main-top-left {
-    background-image: linear-gradient(to right, var(--black) 70%, transparent);
+    background-image: linear-gradient(to right, var(--gray-2) 75%, transparent);
+  }
+  .ns-0 #mw-content-text h1 {
+    background: transparent;
   }
   .mw-parser-output .main-top-right {
     background-image: linear-gradient(to right, transparent 30%, var(--black_5) 95%, transparent);
   }
   .mw-customtoggle, .mw-collapsible-toggle {
     filter: invert(80%);
+  }
+  .mw-parser-output .main-top {
+    filter: brightness(80%);
   }
   #mw-panel .portal:not(#p-navigation) .body {
     background-image: linear-gradient(to top, transparent, var(--gray-c));
