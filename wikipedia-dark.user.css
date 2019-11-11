@@ -135,6 +135,13 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     border-color: var(--gray-5);
     outline-color: transparent !important;
   }
+  .lang-list-button:focus {
+    box-shadow: inset 0 0 0 1px var(--base-color);
+  }
+  .lang-list-active .lang-list-button {
+    outline: 1px solid var(--base-color);
+    border-color: var(--base-color) !important;
+  }
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption, div,
   span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]):not([class*="oo-ui-labelElement-label"]),
