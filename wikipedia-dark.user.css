@@ -242,14 +242,6 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background-color: var(--base-color) !important;
     color: var(--white) !important;
   }
-  .mw-plusminus-pos {
-    color: var(--green-1) !important;
-  }
-  /*** Red links (non-existant pages) ***/
-  div.vectorTabs li.new:not(.selected) a, .mw-plusminus-neg, a.new,
-  #p-personal a.new {
-    color: var(--red-1) !important;
-  }
   /*** Background ***/
   html, body {
     background-color: var(--gray-2) !important;
@@ -556,34 +548,6 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background-color: var(--red-0);
     border-color: var(--red-1) !important;
   }
-  .userSummaryButtons a, #userSummaryButtons a {
-    background-color: var(--green-4);
-    border-color: var(--green-3);
-    color: var(--gray-a) !important;
-  }
-  .userSummaryButtons a:hover, #userSummaryButtons a:hover {
-    background-color: var(--green-4);
-    border-color: var(--green-3);
-    filter: brightness(120%);
-  }
-  #btn_opisy_zm_waxon_off {
-    background-color: var(--brown-3) !important;
-    border-color: var(--brown-2) !important;
-  }
-  .warningbox {
-    background-color: var(--brown-3);
-    border-color: var(--brown-2);
-  }
-  table.tmbox-protection, html table.tmbox-notice {
-    border-color: var(--brown-2) !important;
-  }
-  html table.tmbox, .tmbox.tmbox-notice table[style*="background:transparent;"] {
-    background-color: var(--brown-3) !important;
-    border-color: var(--brown-2) !important;
-  }
-  td.assess-start[style*="background: #FFAA66;"] {
-    background: var(--brown-2) !important;
-  }
   .messagebox, .errorbox, .warningbox, .successbox,
   .suggestions-special .special-label {
     color: var(--gray-c);
@@ -694,6 +658,23 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     color: var(--gray-d) !important;
   }
   /* Green */
+  .mw-plusminus-pos {
+    color: var(--green-1) !important;
+  }
+  tbody td[style*="border:1px solid #6B6; background: #CFC;"] {
+    background-color: var(--green-4) !important;
+    border-color: var(--green-2) !important;
+  }
+  .userSummaryButtons a, #userSummaryButtons a {
+    background-color: var(--green-4);
+    border-color: var(--green-3);
+    color: var(--gray-a) !important;
+  }
+  .userSummaryButtons a:hover, #userSummaryButtons a:hover {
+    background-color: var(--green-4);
+    border-color: var(--green-3);
+    filter: brightness(120%);
+  }
   #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;" i], .table-yes,
   td[style*="background:#dfd" i], td[style*="background:#bfd" i],
   tr[style*="background:#DDFFDD" i], tr[style*="background:#bfb" i],
@@ -767,6 +748,25 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background-color: var(--purple-1) !important;
   }
   /* Brown */
+  #btn_opisy_zm_waxon_off,
+  div[style*="background:#FFF4B8;border:1px solid #AAA;"] {
+    background-color: var(--brown-3) !important;
+    border-color: var(--brown-2) !important;
+  }
+  .warningbox {
+    background-color: var(--brown-3);
+    border-color: var(--brown-2);
+  }
+  table.tmbox-protection, html table.tmbox-notice {
+    border-color: var(--brown-2) !important;
+  }
+  html table.tmbox, .tmbox.tmbox-notice table[style*="background:transparent;"] {
+    background-color: var(--brown-3) !important;
+    border-color: var(--brown-2) !important;
+  }
+  td.assess-start[style*="background: #FFAA66;"] {
+    background: var(--brown-2) !important;
+  }
   #mp-center #mp-tfl-h2, #mp-center #mp-tfl-h2 span, .table-partial,
   tr[style*="background:orange" i], td[style*="background:#ffd" i] {
     background-color: var(--brown-1) !important;
