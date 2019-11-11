@@ -2084,17 +2084,33 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
     background-color: var(--gray-2) !important;
     border-color: var(--gray-5) !important;
   }
-  div.archwiki-template-message {
+  div.archwiki-template-message, #simpleSearch {
     background-color: var(--gray-2);
   }
   textarea {
     border-color: var(--gray-4);
+  }
+  div[style*="border:1px solid #888;"] {
+    border-color: var(--gray-5) !important;
   }
   #pagehistory li {
     border-color: var(--gray-2) !important;
   }
   .mw-rcfilters-ui-filterTagMultiselectWidget-hideshowButton .oo-ui-labelElement-label {
     border: 0 !important;
+  }
+  #content a:active, #mw-navigation li:not(.new) a:active,
+  #mw-panel li:not(.new) a:active, #column-one li:not(.new) a:active,
+  #footer a:active, #content a:focus, #mw-navigation li:not(.new) a:focus,
+  #mw-panel li:not(.new) a:focus, #column-one li:not(.new) a:focus,
+  #footer a:focus, #content a:active:hover,
+  #mw-navigation li:not(.new) a:active:hover,
+  #mw-panel li:not(.new) a:active:hover, #column-one li:not(.new) a:active:hover,
+  #footer a:active:hover, #content a:focus:hover,
+  #mw-navigation li:not(.new) a:focus:hover,
+  #mw-panel li:not(.new) a:focus:hover, #column-one li:not(.new) a:focus:hover,
+  #footer a:focus:hover {
+    color: var(--base-color) !important;
   }
   /* hack around sidebar bottom border brightness */
   #mw-panel .portal:not(#p-navigation) .body {
