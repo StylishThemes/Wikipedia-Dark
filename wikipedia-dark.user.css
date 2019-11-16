@@ -2061,6 +2061,9 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   td[style="background:#ffffec"] {
     background: var(--brown-3) !important;
   }
+  th[style*="background:#eaecf0;"] {
+    background: var(--gray-3) !important;
+  }
   .messagebox.standard-talk, .mw-parser-output .t-Перенесено-movedBox {
     background: var(--brown-1);
     border: 1px solid var(--brown-2) !important;
