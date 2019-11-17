@@ -680,6 +680,11 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   #p-personal a.new {
     color: var(--red-1) !important;
   }
+  th[style="color:white;background:red"],
+  caption[style="color:white;background:red"] {
+    background: var(--red-2) !important;
+    color: var(--gray-d) !important;
+  }
   td[style*="background: #FDD;" i], .table-no, td[style*="background:#fdd" i],
   td[style*="background: #ffdddd" i], tr[style*="background:#FFDDDD" i],
   tr[style*="background:#fbb" i] {
@@ -718,6 +723,11 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   .mw-plusminus-pos {
     color: var(--green-1) !important;
   }
+  th[style="color:white;background:green"],
+  caption[style="color:white;background:green"] {
+    background-color: var(--green-3) !important;
+    color: var(--gray-d) !important;
+  }
   tbody td[style*="border:1px solid #6B6; background: #CFC;"] {
     background-color: var(--green-4) !important;
     border-color: var(--green-2) !important;
@@ -754,6 +764,11 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background: var(--yellow-1) !important;
     color: var(--gray-3) !important;
   }
+  th[style="color:black;background:gold"],
+  caption[style="color:black;background:gold"] {
+    background: var(--yellow-1) !important;
+    color: var(--gray-1) !important;
+  }
   th[style="border-top: 5px solid #CF9C65;"] {
     border-top-color: var(--yellow-1) !important;
   }
@@ -782,6 +797,11 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   td[bgcolor*="#f0f0ff" i], tr[style*="background-color:#E1E9F3" i],
   th[style*="background:#d1dbdf" i], td[style*="background:#e6f2ff" i] {
     background-color: var(--blue-2) !important;
+  }
+  th[style="color:white;background:blue"],
+  caption[style="color:white;background:blue"] {
+    background: var(--blue-3) !important;
+    color: var(--gray-d) !important;
   }
   div[style*="background: #e7eff5; border: 1px solid #a1cef5;"],
   div[style*="border:1px solid #C8D0DC;background:#E8F1FF"] {
@@ -823,6 +843,9 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   div[style*="background:#FFF4B8;border:1px solid #AAA;"] {
     background-color: var(--brown-3) !important;
     border-color: var(--brown-2) !important;
+  }
+  th[style="background:#ffdead;"] {
+    background: var(--brown-1) !important;
   }
   .warningbox {
     background-color: var(--brown-3);
@@ -1019,6 +1042,9 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   }
   .editOptions, #proveit-body, .wikiEditor-ui-toolbar .booklet .pages {
     background-color: transparent;
+  }
+  td[style="background:#efefef;"] {
+    background: var(--gray-3) !important;
   }
   #proveit-header, #proveit-footer {
     background-color: var(--gray-1);
