@@ -37,7 +37,7 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document
-regexp("https?:\\/\\/(([\\w\\-]{2,}\\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech|incubator)\\.wikimedia)\\.org\\/.*"),
+regexp("https?:\\/\\/(([\\w\\-]{2,}\\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator)\\.wikimedia)\\.org\\/.*"),
 regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
@@ -119,7 +119,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   .mw-body-content #mw-content-text h2:not([id^="mp-"]),
   .mw-body-content .portal ul, div[style*="background"], .wikitable > tr,
   .wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr,
-  .wikitable > * > tr > th, .wikitable > * > tr > td,
+  .wikitable > * > tr > th, .wikitable > * > tr > td:not(.break),
   .wikitable th span[style*="background"], .inline-quote-talk,
   .oo-ui-fieldsetLayout-group .oo-ui-widget,
   .mw-parser-output .mod-gallery .whitebg img,
@@ -171,10 +171,10 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel,
   #content a:not(.new), #mw-navigation li:not(.new) a:not(.new),
   #mw-panel li:not(.new) a:not(.new), #column-one li:not(.new) a:not(.new),
-  #footer a:not(.new), .other-project-title {
+  #footer a:not(.new), .other-project-title, a.wbc-editpage:hover {
     color: var(--base-color) !important;
   }
-  #firstHeading a > span, a.wbc-editpage:hover {
+  #firstHeading a > span {
     color: var(--base-color);
   }
   .wb-langlinks-link > a:link::before, .wb-langlinks-link > a:visited::before {
@@ -322,7 +322,8 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     background-image: none !important;
   }
   #ca-nstab-project, #ca-talk, #ca-view, #ca-viewsource, #ca-history,
-  #ca-nstab-main, #ca-nstab-research, #ca-edit {
+  #ca-nstab-main, #ca-nstab-research, #ca-edit, #ca-addsection, #ca-nstab-2019,
+  #ca-ve-edit {
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 0 !important;
@@ -362,6 +363,12 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
     border-left: 1px solid var(--gray-5) !important;
     border-top: 0 !important;
     border-bottom: 0 !important;
+  }
+  textarea {
+    border-color: var(--gray-5);
+  }
+  textarea:not(input):focus {
+    border-color: var(--base-color);
   }
   .mw-advancedSearch-namespace-selection {
     background: linear-gradient(var(--gray-1), var(--gray-2) .5em);
@@ -923,7 +930,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   /* TODO: Sigh! remove these :nots and the div/span etc from here and def not !imporant */
   div:not([style*="-color"]):not(.uls-menu):not([style*="border"]):not(.standard-talk):not([class*="ruwiki-"]):not([class*="warn"]),
   div[style*="background-color"],
-  span:not([class*="color"]):not([style*="border-left-color:"]),
+  span:not([class*="color"]):not([style*="border-left-color:"]):not([style*="235D2E"]),
   table:not(.hp-portalen), #talkheader td, tr:not([style*="border-bottom"]), th,
   .infobox tr[style*="background-color"], td, h1,
   h2:not([style*="#cef2e0;"]):not([style*="#cedff2;"]):not([style*="#afa3bf;"]),
@@ -1915,6 +1922,9 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   .wikibase-referenceview {
     background-color: transparent;
   }
+  .mediawiki .mp-frame-header, html:not(#X) div[style="background: #339966;"] {
+    background-color: #f3f !important;
+  }
   .mediawiki .warningbox {
     background-color: var(--brown-3);
     border-color: var(--brown-2);
@@ -2307,7 +2317,10 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
     background-color: var(--gray-2);
   }
   textarea {
-    border-color: var(--gray-4);
+    border-color: var(--gray-5);
+  }
+  textarea:not(input):focus {
+    border-color: var(--base-color);
   }
   div[style*="border:1px solid #888;"] {
     border-color: var(--gray-5) !important;
@@ -2384,5 +2397,37 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   }
   tr[style="background-color:#FFFFBB"] {
     background-color: var(--green-a5) !important;
+  }
+}
+@-moz-document domain("wikimania.wikimedia.org") {
+  span[style*="border-bottom:0.3em solid #235D2E;"] {
+    border-bottom: .3em solid var(--green-2) !important;
+  }
+  div[style*="border-color: #aaaaaa;"] {
+    border-color: var(--gray-5) !important;
+  }
+  .mw-parser-output .contentframe-2019 {
+    background: none;
+  }
+  img[src*="19px-Wikimania2019_person_icon.svg.png"],
+  img[src*="20px-Wikimania2019_dove_icon.svg.png"], img[src*="20px"] {
+    filter: invert(90%) hue-rotate(180deg);
+  }
+  img[src*="20px-Wikimania2019_moose_icon.svg.png"][height="18"] {
+    filter: brightness(130%) !important;
+  }
+  .mw-parser-output .schedule .break {
+    background: var(--yellow-1);
+  }
+  #toc {
+    background-color: var(--gray-28) !important;
+  }
+  div[style*="background"] h2 b, div[style*="background"] h2 a,
+  div[style*="background"] h2 center {
+    background-color: inherit !important;
+  }
+  textarea:not(input):focus {
+    outline: 1px inset var(--base-color) !important;
+    border-top: 1px inset var(--base-color);
   }
 }
