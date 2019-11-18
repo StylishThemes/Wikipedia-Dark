@@ -174,7 +174,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   #footer a:not(.new), .other-project-title, a.wbc-editpage:hover {
     color: var(--base-color) !important;
   }
-  #firstHeading a > span {
+  #firstHeading a > span, font[color="#006699"] {
     color: var(--base-color);
   }
   .wb-langlinks-link > a:link::before, .wb-langlinks-link > a:visited::before {
@@ -582,6 +582,9 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   .mw-mmv-ttf-ellipsis, .navpopup, .oo-ui-popupWidget-popup, input + span,
   .pure-form input[type=search], .searchbox .mw-ui-input {
     box-shadow: none !important;
+  }
+  .mw-ui-input {
+    box-shadow: inset 0 0 0 .1em var(--gray-5);
   }
   .pure-button-primary-progressive:focus,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus:not(:active),
@@ -2401,23 +2404,56 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
 }
 @-moz-document domain("wikimania.wikimedia.org") {
   span[style*="border-bottom:0.3em solid #235D2E;"] {
-    border-bottom: .3em solid var(--green-2) !important;
+    border-bottom: .3em solid var(--green-1) !important;
+  }
+  .mw-pt-languages-label {
+    color: var(--gray-c);
   }
   div[style*="border-color: #aaaaaa;"] {
     border-color: var(--gray-5) !important;
   }
-  .mw-parser-output .contentframe-2019 {
-    background: none;
+  body, .mw-parser-output .contentframe-2019,
+  .plainlinks[style*="background: #FFFFFF;"] {
+    background-color: var(--gray-2) !important;
+    background-image: var(--bg-selected) !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    background-attachment: var(--bg-attachment) !important;
+    /*[[bg-options]]*/
+    color: var(--gray-c) !important;
+  }
+  #p-logo .mw-wiki-logo, img[src$="1280px-Wikimania2019_meta_banner.svg.png"],
+  img[src$="500px-Wikimania2019_logo.svg.png"] {
+    filter: invert(90%) hue-rotate(180deg) brightness(90%);
   }
   img[src*="19px-Wikimania2019_person_icon.svg.png"],
-  img[src*="20px-Wikimania2019_dove_icon.svg.png"], img[src*="20px"] {
+  img[src*="20px-Wikimania2019_dove_icon.svg.png"], img[src*="20px"][width="20"],
+  img[src*="22px"][width="22"] {
     filter: invert(90%) hue-rotate(180deg);
   }
-  img[src*="20px-Wikimania2019_moose_icon.svg.png"][height="18"] {
+  img[src*="20px-Wikimania2019_moose_icon.svg.png"][height="18"],
+  img[src$="180px-NMS_partnerlockup_grey_green_CMYK_%281%29.svg.png"],
+  img[src$="320px-Terrapass_logo.png"],
+  img[src$="230px-Eliza_communication.png"] {
     filter: brightness(130%) !important;
   }
+  img[alt*="Wikimedia"], img[src$="160px-SIMPLY_LOGO_HDV1080_black.png"] {
+    filter: invert(90%) hue-rotate(180deg) brightness(80%);
+  }
+  img[src$="220px-RAA_logo.jpg"], img[src$="180px-UEklundCiS.jpg"] {
+    filter: invert(90%) hue-rotate(180deg) brightness(120%);
+  }
+  img[src$="250px-Ministry_for_Foreign_Affairs.png"],
+  img[src$="120px-KB-logo_svart.png"],
+  img[src$="160px-StockholmsStad_logotypeStandardA5_300ppi_svart.png"] {
+    filter: invert(1) hue-rotate(180deg) brightness(90%);
+  }
+  img[src$="140px-Musikverket_logo_liggande_sRGB.png"],
+  img[src$="190px-Riksarkivet_2013_rgb.png"] {
+    filter: invert(1) hue-rotate(180deg) brightness(120%);
+  }
   .mw-parser-output .schedule .break {
-    background: var(--yellow-1);
+    background: var(--brown-2);
   }
   #toc {
     background-color: var(--gray-28) !important;
@@ -2429,5 +2465,17 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   textarea:not(input):focus {
     outline: 1px inset var(--base-color) !important;
     border-top: 1px inset var(--base-color);
+  }
+  .image[href*="Wikimania2019_leaves_icon.svg"] {
+    opacity: .5;
+  }
+  .image[href*="Wikimania2019_leaves_icon.svg"] {
+    opacity: 1;
+  }
+  .mw-parser-output .card {
+    color: var(--gray-e);
+  }
+  a.image img {
+    background: inherit !important;
   }
 }
