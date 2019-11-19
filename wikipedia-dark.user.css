@@ -1922,6 +1922,9 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   }
 }
 @-moz-document domain("wikidata.org") {
+  #p-logo .mw-wiki-logo {
+    filter: brightness(150%) contrast(60%);
+  }
   .wikibase-referenceview {
     background-color: transparent;
   }
