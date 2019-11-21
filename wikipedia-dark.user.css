@@ -2044,6 +2044,108 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
     filter: invert(100%);
   }
 }
+@-moz-document
+regexp("^https://(query)\.wikidata\.org.*$") {
+  :root {
+    --base-color: /*[[base-color]]*/;
+    --visited-color: /*[[visited-color]]*/;
+    --bg-custom: /*[[bg-custom]]*/;
+    --bg-selected: /*[[bg-selected]]*/;
+    --bg-attachment: /*[[bg-attachment]]*/;
+    --black: #000;
+    --gray-1: #111;
+    --gray-2: #222;
+    --gray-3: #333;
+    --gray-4: #444;
+    --gray-5: #555;
+    --gray-7: #777;
+    --gray-a: #aaa;
+    --gray-c: #ccc;
+    --gray-d: #ddd;
+    --gray-e: #eee;
+    --white: #fff;
+    --gray-18: #181818;
+    --gray-28: #282828;
+    --gray-2f: #2f4f4f;
+    --gray-69: #696969;
+    --gray-9a: #9a9a9a;
+    --gray-b9: #b9b9b9;
+    --gray-bc: #bcbcbc;
+    --blue-1: #36c;
+    --blue-2: #182030;
+    --blue-3: #212c43;
+    --blue-4: #3c5487;
+    --red-0: #400;
+    --red-1: #c22;
+    --red-2: #d33;
+    --red-3: #722;
+    --red-4: #ff4242;
+    --green-1: #390;
+    --green-2: #165316;
+    --green-3: #061;
+    --green-4: #002800;
+    --brown-1: #321;
+    --brown-2: #542;
+    --brown-3: #261d08;
+    --yellow-1: #b28200;
+    --orange-1: #e53e00;
+    --orange-2: #e08b26;
+    --purple-0: #312641;
+    --purple-1: #382b4a;
+    --purple-2: #768;
+    --pink-1: #6b3e68;
+    --pink-2: #965691;
+    --cyan-1: #194d41;
+    --ores-1: #222800;
+    --ores-2: #222000;
+    --ores-3: #221800;
+    --black_25: rgba(0, 0, 0, .25);
+    --black_5: rgba(0, 0, 0, .5);
+    --black_8: rgba(0, 0, 0, .8);
+    --gray-2_75: rgba(34, 34, 34, .75);
+    --gray-3_5: rgba(51, 51, 51, .5);
+    --gray-5_25: rgba(85, 85, 85, .25);
+    --white_1: rgba(255, 255, 255, .1);
+    --diff-del: rgba(213, 154, 0, .6);
+    --diff-add: rgba(0, 112, 213, .6);
+    --revs-old: rgba(255, 204, 51, .5);
+    --revs-new: rgba(30, 109, 184, .5);
+  }
+  html, body {
+    background-color: var(--gray-2) !important;
+    background-image: var(--bg-selected) !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    background-attachment: var(--bg-attachment) !important;
+    /*[[bg-options]]*/
+  }
+  .wikibase-queryservice {
+    background-color: var(--gray-2);
+  }
+  #query-box .toolbar {
+    border-right: 1px solid var(--gray-5);
+  }
+  #query-box .status {
+    color: var(--gray-9a);
+  }
+  .navbar-default {
+    background: var(--gray-18);
+    border-bottom: 1px solid var(--gray-4);
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form,
+  .navbar-default {
+    border-color: var(--gray-5);
+  }
+  #execute-button {
+    background: var(--base-color);
+    border: 2px solid var(--base-color);
+  }
+  #execute-button:hover {
+    background: var(--base-color);
+    border-color: var(--base-color);
+    opacity: .9;
+  }
+}
 @-moz-document domain("wikipedia.org") {
   :root {
     --assess-1: #06c;
