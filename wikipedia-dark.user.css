@@ -1939,11 +1939,17 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   #p-logo .mw-wiki-logo {
     filter: brightness(150%) contrast(60%);
   }
+  .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input::placeholder {
+    color: var(--gray-5);
+  }
+  .oo-ui-indicator-required {
+    filter: invert(1) brightness(70%);
+  }
+  #mw-content-text {
+    color: var(--gray-b9);
+  }
   .wikibase-referenceview {
     background-color: transparent;
-  }
-  .mediawiki .mp-frame-header, html:not(#X) div[style="background: #339966;"] {
-    background-color: #f3f !important;
   }
   .mediawiki .warningbox {
     background-color: var(--brown-3);
