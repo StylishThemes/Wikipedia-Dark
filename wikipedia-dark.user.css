@@ -375,7 +375,7 @@ regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled,
   .search-container .js-langpicker-label, .uls-input-settings-disable-info,
-  .uls-input-settings-no-inputmethods
+  .uls-input-settings-no-inputmethods,
 	.languagesettings-menu .menu-section,
   .settings-title, #languagesettings-settings-panel {
     color: var(--gray-9a);
