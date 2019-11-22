@@ -2118,10 +2118,16 @@ regexp("^https://(query)\.wikidata\.org\/.*$") {
     background-clip: border-box !important;
     background-origin: padding-box !important;
     background-attachment: var(--bg-attachment) !important;
+    color: var(--gray-9a);
     /*[[bg-options]]*/
   }
   .wikibase-queryservice {
     background-color: var(--gray-2);
+  }
+  #query-box .status .list-group-item-success {
+    background-color: var(--green-2);
+    color: var(--green-1);
+    text-decoration-color: var(--green-1);
   }
   #query-box .toolbar {
     border-right: 1px solid var(--gray-5);
@@ -2145,6 +2151,288 @@ regexp("^https://(query)\.wikidata\.org\/.*$") {
     background: var(--base-color);
     border-color: var(--base-color);
     opacity: .9;
+  }
+  #query-box .status .list-group-item-danger {
+    background-color: var(--red-0);
+    color: var(--red-1);
+    text-decoration-color: var(--red-1);
+  }
+  #query-box .status .badge {
+    border: 1px solid var(--gray-4);
+  }
+  #query-box .query-helper .panel-heading {
+    background: var(--gray-2);
+    border-bottom: 1px solid var(--gray-4);
+  }
+  #query-box .query-helper .panel-body-sub .query-helper-section {
+    border-bottom: 1px solid var(--gray-4);
+  }
+  .btn-default, .btn-default:not(:active) {
+    background: var(--gray-2);
+    border: 1px solid var(--gray-4);
+    color: var(--gray-a);
+  }
+  .btn-default:hover {
+    background: var(--gray-3);
+    border: 1px solid var(--gray-5);
+    color: var(--gray-b9);
+  }
+  .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: var(--gray-2);
+    border-color: var(--base-color);
+  }
+  .navbar .dropdown-menu, .table-hover > tbody > tr:hover, .brand {
+    background: var(--gray-2);
+  }
+  .dropdown-menu {
+    background-color: var(--gray-2);
+    border: 1px solid var(--gray-4);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  }
+  .dropdown-menu .divider {
+    background-color: var(--gray-4);
+  }
+  .dropdown-menu > li > a {
+    color: var(--gray-9a);
+  }
+  .navbar .dropdown-menu > li > a:hover {
+    background: var(--gray-3);
+    color: var(--gray-a);
+  }
+  .btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
+    color: var(--gray-e);
+    background-color: var(--gray-2);
+    border-color: var(--base-color);
+  }
+  .btn-default.active.focus, .btn-default.active:focus,
+  .btn-default.active:hover, .btn-default:active.focus,
+  .btn-default:active:focus, .btn-default:active:hover,
+  .open > .dropdown-toggle.btn-default.focus,
+  .open > .dropdown-toggle.btn-default:focus,
+  .open > .dropdown-toggle.btn-default:hover {
+    color: var(--gray-e);
+    background-color: var(--gray-3);
+    border-color: var(--gray-5);
+  }
+  a, div.tagCloud span a, a:hover, .panel-info > .panel-heading {
+    color: var(--base-color);
+  }
+  .navbar-brand, .navbar-nav > li > a {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+    color: var(--gray-9a);
+  }
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a:hover {
+    color: var(--gray-9a);
+    background-color: transparent;
+  }
+  .select2-container--default .select2-selection--single {
+    background-color: var(--gray-2);
+    border: 1px solid var(--gray-4);
+  }
+  .select2-container .select2-dropdown {
+    background: var(--gray-2);
+    border-color: var(--gray-4);
+  }
+  .select2-container .select2-results__option--highlighted[aria-selected] {
+    background: var(--gray-2);
+    color: var(--gray-9a);
+  }
+  .select2-container .select2-results__option--highlighted[aria-selected="false"]:hover {
+    background: var(--gray-3);
+    color: var(--gray-9a);
+  }
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    color: var(--gray-9a);
+  }
+  input.select2-search__field[type="search"] {
+    background: var(--gray-18);
+  }
+  input[type="number"] {
+    background: var(--gray-3);
+    border-color: var(--gray-4);
+  }
+  .select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid var(--gray-4);
+  }
+  .splitter {
+    filter: grayscale(1) invert(95%) hue-rotate(180deg) contrast(75%);
+  }
+  a.disabled {
+    color: var(--gray-c);
+    opacity: .8;
+  }
+  .btn.focus, .btn:focus, .btn:hover {
+    color: var(--gray-b);
+  }
+  .fa-play::before {
+    color: var(--gray-e);
+  }
+  .panel {
+    background-color: var(--gray-2);
+  }
+  .modal-content {
+    background-color: var(--gray-1);
+    border-color: var(--gray-4);
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 0 3px 9px rgba(100, 100, 100, .5);
+  }
+  .nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: var(--gray-3);
+  }
+  .QueryExamples .modal-content .input-group-addon,
+  .QueryExamples .modal-content .exampleTable {
+    border-color: var(--gray-5);
+  }
+  .input-group-addon {
+    color: var(--gray-9a);
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+  }
+  .form-control {
+    color: var(--gray-9a);
+    background-color: var(--gray-1);
+    border: 1px solid var(--gray-5);
+  }
+  .table > tbody > tr.active > td, .table > tbody > tr.active > th,
+  .table > tbody > tr > td.active, .table > tbody > tr > th.active,
+  .table > tfoot > tr.active > td, .table > tfoot > tr.active > th,
+  .table > tfoot > tr > td.active, .table > tfoot > tr > th.active,
+  .table > thead > tr.active > td, .table > thead > tr.active > th,
+  .table > thead > tr > td.active, .table > thead > tr > th.active {
+    background-color: var(--gray-2);
+  }
+  .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td,
+  .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: 1px solid var(--gray-5);
+  }
+  .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th,
+  .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th,
+  .table-bordered > thead > tr > td, .table-bordered > thead > tr > th,
+  .table-bordered {
+    border-color: var(--gray-4);
+  }
+  .form-control:focus {
+    border-color: var(--base-color);
+            box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  .popover {
+    background-color: var(--gray-18);
+    border-color: var(--gray-4);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  }
+  .popover-title {
+    background-color: var(--gray-2);
+    border-color: var(--gray-4);
+  }
+  .popover.left > .arrow::after {
+    border-left-color: var(--gray-18);
+  }
+  .popover.top>.arrow:after {
+    border-top-color: var(--gray-18);
+  }
+  .popover.right>.arrow:after {
+    border-right-color: var(--gray-18);
+  }
+  .popover.bottom>.arrow:after {
+    border-bottom-color: var(--gray-2);
+  }
+  .popover.left > .arrow {
+    border-left-color: var(--gray-4);
+  }
+  .popover.top > .arrow {
+    border-top-color: var(--gray-4);
+  }
+  .popover.right > .arrow {
+    border-right-color: var(--gray-4);
+  }
+  .popover.bottom > .arrow {
+    border-bottom-color: var(--gray-4);
+  }
+  .popover pre {
+    background: var(--gray-1);
+    color: inherit;
+    border-color: var(--gray-4);
+  }
+  .cm-comment, .cm-link {
+    font-style: italic;
+  }
+  .CodeMirror {
+    background: #141414;
+  }
+  .CodeMirror-gutters {
+    background: #222;
+    border-right: 1px solid #484848;
+  }
+  .CodeMirror-guttermarker {
+    color: #fff;
+  }
+  .CodeMirror-guttermarker-subtle, .CodeMirror-linenumber {
+    color: #aaa;
+  }
+  .CodeMirror-cursor {
+    border-left: 1px solid #fff;
+  }
+  .CodeMirror-activeline-background {
+    background: #27282e;
+  }
+  .CodeMirror-matchingbracket {
+    outline: grey solid 1px;
+    color: #fff;
+  }
+  .cm-keyword {
+    color: #f9ee98;
+  }
+  .cm-atom {
+    color: #fc0;
+  }
+  .cm-number {
+    color: #ca7841;
+  }
+  .cm-def {
+    color: #8da6ce;
+  }
+  .cm-variable-2, .cm-variable-3, span.cm-def, span.cm-tag {
+    color: #607392;
+  }
+  .cm-builtin, .cm-operator {
+    color: #cda869;
+  }
+  .cm-comment {
+    color: #777;
+    font-weight: 400;
+  }
+  .cm-string {
+    color: #8f9d6a;
+  }
+  .cm-string-2 {
+    color: #bd6b18;
+  }
+  .cm-meta {
+    background-color: #141414;
+    color: #f7f7f7;
+  }
+  .cm-tag {
+    color: #997643;
+  }
+  .cm-attribute {
+    color: #d6bb6d;
+  }
+  .cm-header {
+    color: #ff6400;
+  }
+  .cm-hr {
+    color: #aeaeae;
+  }
+  .cm-link {
+    color: #ad9361;
+    text-decoration: none;
+  }
+  .cm-error {
+    border-bottom: 1px solid red;
   }
 }
 @-moz-document domain("wikipedia.org") {
