@@ -37,8 +37,8 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document
-regexp("https?:\\/\\/(([\\w\\-]{2,}\\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator)\\.wikimedia)\\.org\\/.*"),
-regexp("https?://wiki\\.(rpcs3\\.net|(archlinux|mozilla)\\.org)\\/.*") {
+regexp("https?://(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator)\.wikimedia)\.org\/.*"),
+regexp("https?://wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
     --base-color: /*[[base-color]]*/;
