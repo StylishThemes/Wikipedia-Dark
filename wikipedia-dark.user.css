@@ -1935,7 +1935,8 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
     opacity: 0;
   }
 }
-@-moz-document domain("wikidata.org") {
+@-moz-document
+regexp("^https://([\w\-]{2,}\.)?wikidata\.org\/.*$") {
   #p-logo .mw-wiki-logo {
     filter: brightness(150%) contrast(60%);
   }
