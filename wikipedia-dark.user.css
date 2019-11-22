@@ -117,11 +117,11 @@ regexp("https?://wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table.flextable, table.flextable .invisible, table#noarticletext,
   table#noarticletext table, .metadata.plainlinks.stub,
   .mw-body-content #mw-content-text h2:not([id^="mp-"]),
-  .mw-body-content .portal ul, div[style*="background"], .wikitable > tr,
-  .wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr,
-  .wikitable > * > tr > th, .wikitable > * > tr > td:not(.break),
-  .wikitable th span[style*="background"], .inline-quote-talk,
-  .oo-ui-fieldsetLayout-group .oo-ui-widget,
+  .mw-body-content .portal ul, div[style*="background"]:not[style*="#90EE90"],
+  .wikitable > tr, .wikitable > tr > th, .wikitable > tr > td,
+  .wikitable > * > tr, .wikitable > * > tr > th,
+  .wikitable > * > tr > td:not(.break), .wikitable th span[style*="background"],
+  .inline-quote-talk, .oo-ui-fieldsetLayout-group .oo-ui-widget,
   .mw-parser-output .mod-gallery .whitebg img,
   .mw-parser-output .mod-gallery .gallerybox div, tt[style="background: white;"] {
     background-color: transparent !important;
@@ -145,7 +145,7 @@ regexp("https?://wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   /*** Overall ***/
   td, p, li, th:not([style*="background"]), caption,
-  span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]):not([class*="oo-ui-labelElement-label"]),
+  span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]):not([class*="oo-ui-labelElement-label"]):not([style]),
   p code, label code, dl code, .oo-ui-widget div, .oo-ui-widget label,
   #pagehistory li.selected, #mwe-popups-settings main form label,
   #pt-anonuserpage, .oo-ui-textInputWidget .oo-ui-inputWidget-input,
@@ -156,8 +156,9 @@ regexp("https?://wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     color: var(--gray-9a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li,
-  .infobox th[style*="background"]:not([style*="#eaecf0"]), div[style*="color"],
-  input[type="search"], input[type="submit"], .oo-ui-buttonElement-button,
+  .infobox th[style*="background"]:not([style*="#eaecf0"]),
+  div[style*="color"]:not([style*="black;"]), input[type="search"],
+  input[type="submit"], .oo-ui-buttonElement-button,
   .oo-ui-buttonElement-button:hover, input[type="number"], select,
   .suggestions-result, input, .central-featured-lang .link-box em,
   .central-featured-lang .link-box small, div.flaggedrevs_preview,
@@ -335,7 +336,7 @@ regexp("https?://wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-body-content .portal, .sistersitebox, .boilerplate, .NavFrame, .divbox,
   div.resolved span, div.unresolved span, div.unsure span, div.stale span,
   div.being_worked_on span, div.stuck span, div.disregard span, div.FYI span,
-  .vertical-navbox,
+  .vertical-navbox, .vectorTabs li a,
   .mw-advancedSearch-fieldContainer .oo-ui-labelElement > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label {
     background-color: var(--gray-2) !important;
   }
@@ -440,7 +441,7 @@ regexp("https?://wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table, button, select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"],
   td[style*="background:#F5FAFF" i],
-  #mw-content-text div[style*="background: #"]:not([style*="#e7eff5;"]),
+  #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]),
   .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *,
   .wikiEditor-ui, .mw-search-results li,
@@ -945,11 +946,12 @@ regexp("https?://wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--base-color) !important;
   }
   /* TODO: Sigh! remove these :nots and the div/span etc from here and def not !imporant */
-  div:not([style*="-color"]):not(.uls-menu):not([style*="border"]):not(.standard-talk):not([class*="ruwiki-"]):not([class*="warn"]),
+  div:not([style*="-color"]):not(.uls-menu):not([style*="border"]):not(.standard-talk):not([class*="ruwiki-"]):not([class*="warn"]):not(.tool2):not([style="transparent"]),
   div[style*="background-color"],
   span:not([class*="color"]):not([style*="border-left-color:"]):not([style*="235D2E"]),
-  table:not(.hp-portalen), #talkheader td, tr:not([style*="border-bottom"]), th,
-  .infobox tr[style*="background-color"], td, h1,
+  table:not(.hp-portalen):not([style*="background"]), #talkheader td,
+  tr:not([style*="border-bottom"]), th, .infobox tr[style*="background-color"],
+  td, h1,
   h2:not([style*="#cef2e0;"]):not([style*="#cedff2;"]):not([style*="#afa3bf;"]),
   h3, h4, h5, h6, ul, li, select, .mw-body-content code, .lang-list-button:hover,
   .oo-ui-buttonElement-button, #mwe-popups-settings, #mwe-popups-settings header,
@@ -1946,6 +1948,9 @@ regexp("^https://([\w\-]{2,}\.)?wikidata\.org\/.*$") {
   .oo-ui-indicator-required {
     filter: invert(1) brightness(70%);
   }
+  img[src*="40px-OOjs_UI_icon_info_big_progressive.svg.png"] {
+    filter: brightness(130%);
+  }
   #mw-content-text {
     color: var(--gray-b9);
   }
@@ -2012,8 +2017,12 @@ regexp("^https://([\w\-]{2,}\.)?wikidata\.org\/.*$") {
     background-color: var(--gray-4);
   }
   .wikibase-entityview textarea, .ui-listrotator,
-  .wikiEditor-ui-toolbar .page-table th {
+  .wikiEditor-ui-toolbar .page-table th, .mw-parser-output .chatheader-title,
+  .mw-parser-output .wd-box .header, .mw-parser-output .tool2-title {
     color: var(--gray-9a);
+  }
+  strong[style*="color: #484848"] {
+    color: var(--gray-9a) !important;
   }
   #mw-content-text .mp-frame .mp-frame-header[style*="background: #006699"] {
     background-color: var(--blue-2) !important;
@@ -2043,6 +2052,44 @@ regexp("^https://([\w\-]{2,}\.)?wikidata\.org\/.*$") {
   .wikibase-sitelinkgroupview > .mw-collapsible-toggle-expanded,
   .mw-parser-output .wd-mp-headerimage, .wikibase-toolbar-button-remove .wb-icon {
     filter: invert(100%);
+  }
+  .mw-parser-output .tool2-userscript {
+    border-color: var(--green-3);
+  }
+  .mw-parser-output .tool2-external {
+    border-color: var(--brown-2);
+  }
+  .mw-parser-output .tool2-gadget {
+    border-color: var(--purple-2);
+  }
+  .navbox[style*="background: #CDDDDD"] {
+    border-color: var(--gray-2f) !important;
+  }
+  table[style="box-shadow: 0 0 .2em #999; background-color:white;"] {
+    box-shadow: 0 0 .2em var(--gray-4) !important;
+    background-color: var(--gray-28) !important;
+  }
+  div[style*="background: #90EE90"] {
+    background: var(--green-2) !important;
+  }
+  p {
+    color: var(--gray-c) !important;
+  }
+  th.navbox-title[style*="background: #CDDDDD;"], th.navbox-title div {
+    background: var(--gray-2f) !important;
+    border-color: var(--gray-2f) !important;
+  }
+  th.navbox-group, th.navbox-title abbr, .nv-view, .nv-talk, .navbox tr {
+    background: var(--gray-2f) !important;
+  }
+  .navbox-group a {
+    background: none !important;
+  }
+  td[style*="background: #EFFFFF;"] {
+    background: var(--ores-1) !important;
+  }
+  td[style*="#90EE90"] {
+    border-color: var(--green-2) !important;
   }
 }
 @-moz-document
