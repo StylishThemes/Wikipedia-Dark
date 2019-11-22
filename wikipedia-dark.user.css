@@ -2941,6 +2941,24 @@ regexp("^https://(query)\.wikidata\.org\/.*$") {
   }
 }
 @-moz-document
+regexp("^https://en\.wikiversity\.org\/.*$") {
+  tr + tr > .navbox-abovebelow, tr + tr > .navbox-group, tr + tr > .navbox-image,
+  tr + tr > .navbox-list {
+    border-top: 2px solid var(--gray-5);
+  }
+  .navbox-even {
+    background: var(--gray-18);
+  }
+  td[style*="background-color: Azure; border: 1px solid RoyalBlue;"] {
+    background: var(--green-4) !important;
+    border: 1px solid var(--green-2) !important;
+  }
+  div[style*="background-color:#375acf; width: 20em; border:1px solid #999999;"] {
+    background-color: var(--base-color) !important;
+    border: 1px solid var(--gray-5) !important;
+  }
+}
+@-moz-document
 regexp("^https://(outreach)\.wikimedia\.org\/.*$") {
   div[style*="background-color: whiteSmoke;"] {
     background-color: var(--gray-28) !important;
