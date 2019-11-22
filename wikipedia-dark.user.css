@@ -37,7 +37,7 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document
-regexp("https?://(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator)\.wikimedia)\.org\/.*"),
+regexp("https?://(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach)\.wikimedia)\.org\/.*"),
 regexp("https?://wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   /* Modified from https://userstyles.org/styles/47161/dark-wikipedia-rounded */
   :root {
@@ -2938,5 +2938,58 @@ regexp("^https://(query)\.wikidata\.org\/.*$") {
   }
   a.image img {
     background: inherit !important;
+  }
+}
+@-moz-document
+regexp("^https://(outreach)\.wikimedia\.org\/.*$") {
+  div[style*="background-color: whiteSmoke;"] {
+    background-color: var(--gray-28) !important;
+  }
+  p span[style*="font-weight: bold; color: #404040;"] {
+    color: var(--gray-9a) !important;
+  }
+  .mw-babel-box th[dir], .mw-babel-box th[dir] span {
+    color: var(--gray-1) !important;
+  }
+  img[src*="431px-Wikimedia_Education_horizontal.svg.png"] {
+    filter: invert(1) hue-rotate(180deg) brightness(80%) contrast(110%);
+  }
+  .mw-wiki-logo {
+    filter: invert(1) hue-rotate(180deg) brightness(90%) contrast(110%);
+  }
+  img[src*="20px-Home"], img[src*="20px-About"], img[src*="19px-List"],
+  img[src*="21px-Community"], img[src*="20px-Emojione"],
+  img[src*="20px-Greenhouse"], img[src*="22px-Community"],
+  img[src*="30px-Icon_Facebook"], img[src*="30px-Icon_Twitter"],
+  img[src*="30px-YouTube"] {
+    filter: invert(1) hue-rotate(180deg) brightness(80%) contrast(110%);
+  }
+  div[style*="border-top:0.35em solid #FDFEFE; border-bottom:0.35em solid#FDFEFE;"] {
+    border-top: .35em solid var(--base-color) !important;
+    border-bottom: .35em solid var(--base-color) !important;
+  }
+  span[style*="border-bottom:0.3em solid #FDFEFE;"] {
+    border-bottom: .35em solid var(--base-color) !important;
+  }
+  span[style*="border-bottom:0.3em solid #c8ccd1;"] {
+    border-bottom: .3em solid var(--gray-69) !important;
+  }
+  td[bgcolor="#F0F0F0"] p span {
+    background-color: var(--gray-28) !important;
+  }
+  span[style="color:#3498DB"], span[style="color:#3498DB"]:hover {
+    color: var(--base-color) !important;
+  }
+  table[style*="background-color:#EEEEEE; border:1px solid #EEEEEE;"] {
+    background-color: var(--gray-2) !important;
+    border: 1px solid var(--gray-4) !important;
+  }
+  div[style*="background: #339966; border-radius: .2em; color: #FFFFFF;"] {
+    background: var(--green-2) !important;
+    color: var(--gray-c) !important;
+  }
+  table[style*="border: 1px silver solid; background: whitesmoke;"] {
+    border: 1px var(--gray-69) solid !important;
+    background: var(--gray-3) !important;
   }
 }
