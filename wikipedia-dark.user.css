@@ -2046,7 +2046,7 @@ regexp("^https://([\w\-]{2,}\.)?wikidata\.org\/.*$") {
   }
 }
 @-moz-document
-regexp("^https://(query)\.wikidata\.org.*$") {
+regexp("^https://(query)\.wikidata\.org\/.*$") {
   :root {
     --base-color: /*[[base-color]]*/;
     --visited-color: /*[[visited-color]]*/;
