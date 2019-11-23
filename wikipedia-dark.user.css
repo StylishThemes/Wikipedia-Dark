@@ -1873,7 +1873,7 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   .action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-history-undo a,
   .action-history #pagehistory .mw-changeslist-links:not(.mw-usertoollinks):not(.mw-history-histlinks) .mw-rollback-link a,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button,
-  .previewnote p, .warningbox, .mw-revision, .mw-ui-button {
+  .previewnote p, .mw-revision, .mw-ui-button {
     background-color: var(--gray-3);
     border-color: var(--gray-5);
     color: var(--gray-c);
