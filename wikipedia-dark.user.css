@@ -2721,46 +2721,6 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     color: var(--cm-13);
   }
 }
-@-moz-document domain("wiktionary.org") {
-  .mw-wiki-logo {
-    filter: invert(80%) hue-rotate(180deg);
-  }
-  #main_page_mp-mp {
-    background-color: transparent !important;
-  }
-  #main_page_mp-mp div {
-    background-color: var(--gray-2) !important;
-  }
-  #main_page_mp-mp table {
-    border-color: var(--gray-5) !important;
-  }
-  div.NavFrame div.NavHead {
-    color: var(--gray-2);
-  }
-  div.NavFrame div.NavHead, details.NavFrame summary.NavHead {
-    background: var(--gray-7);
-  }
-  div.NavFrame div.NavHead:hover, details.NavFrame summary.NavHead:hover {
-    background: var(--gray-9a);
-  }
-  .NavContent .translations form span[style*="color"] {
-    color: var(--base-color) !important;
-  }
-}
-@-moz-document domain("www.mediawiki.org") {
-  .mw-parser-output .note-info {
-    background-color: var(--green-4);
-    border-color: var(--green-3) !important;
-  }
-  .navbox.mw-collapsible th[style*="color:"] {
-    color: var(--gray-9a) !important; /* make global? */
-  }
-}
-@-moz-document domain("meta.wikimedia.org") {
-  .mw-parser-output .community-wishlist-header {
-    background: var(--blue-2);
-  }
-}
 @-moz-document domain("de.wikipedia.org") {
   img[src*="24px-OOjs_UI_icon_signature-ltr.svg"] {
     filter: invert(1) brightness(75%);
@@ -2920,195 +2880,30 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     border-color: var(--green-1) !important;
   }
 }
-@-moz-document domain("wiki.archlinux.org") {
-  #content table, #content h1, #content h2, #content h3, #content h4,
-  #content h5, #content pre, #content code, #content tt, table.wikitable,
-  .mw-body, .parsoid-body,
-  .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-title,
-  .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-desc {
-    color: var(--gray-9a);
-  }
-  .oo-ui-tagItemWidget.oo-ui-widget-enabled {
-    color: var(--gray-8);
-  }
-  .mw-rcfilters-ui-filterMenuSectionOptionWidget-header-title.oo-ui-labelElement-label,
-  .mw-rcfilters-ui-viewSwitchWidget label.oo-ui-labelWidget {
-    color: var(--gray-a);
-  }
-  .mw-rcfilters-ui-itemMenuOptionWidget-label-title {
-    color: var(--gray-a) !important;
-  }
-  td[style*="background: #ddd; color: inherit;"] {
-    background: var(--gray-5) !important;
-  }
-  td[style*="background: #faa; color: inherit;"] {
-    background: var(--red-0) !important;
-  }
-  div.archwiki-template-box.archwiki-template-box-note {
-    background-color: var(--purple-1) !important;
-    border-color: var(--purple-2) !important;
-  }
-  div.archwiki-template-box.archwiki-template-box-warning {
-    background-color: var(--red-0) !important;
-    border-color: var(--red-3) !important;
-  }
-  div.archwiki-template-box.archwiki-template-box-tip {
-    background-color: var(--green-4) !important;
-    border-color: var(--green-3) !important;
-  }
-  #toc, .toc, .mw-warning, .toccolours {
-    background-color: var(--gray-2) !important;
-    border-color: var(--gray-5) !important;
-  }
-  div.archwiki-template-message, #simpleSearch {
-    background-color: var(--gray-2);
-  }
-  textarea {
-    border-color: var(--gray-5);
-  }
-  textarea:not(input):focus {
-    border-color: var(--base-color);
-  }
-  div[style*="border:1px solid #888;"] {
-    border-color: var(--gray-5) !important;
-  }
-  #pagehistory li {
-    border-color: var(--gray-2) !important;
-  }
-  .mw-rcfilters-ui-filterTagMultiselectWidget-hideshowButton .oo-ui-labelElement-label {
-    border: 0 !important;
-  }
-  #content a:active, #mw-navigation li:not(.new) a:active,
-  #mw-panel li:not(.new) a:active, #column-one li:not(.new) a:active,
-  #footer a:active, #content a:focus, #mw-navigation li:not(.new) a:focus,
-  #mw-panel li:not(.new) a:focus, #column-one li:not(.new) a:focus,
-  #footer a:focus, #content a:active:hover,
-  #mw-navigation li:not(.new) a:active:hover,
-  #mw-panel li:not(.new) a:active:hover, #column-one li:not(.new) a:active:hover,
-  #footer a:active:hover, #content a:focus:hover,
-  #mw-navigation li:not(.new) a:focus:hover,
-  #mw-panel li:not(.new) a:focus:hover, #column-one li:not(.new) a:focus:hover,
-  #footer a:focus:hover {
-    color: var(--base-color) !important;
-  }
-  /* hack around sidebar bottom border brightness */
-  #mw-panel .portal:not(#p-navigation) .body {
-    background-image: linear-gradient(to top, transparent, var(--gray-c));
-    background-size: auto 1px;
-  }
-}
-@-moz-document domain("wiki.mozilla.org") {
+@-moz-document domain("wiktionary.org") {
   .mw-wiki-logo {
-    filter: invert(100%) hue-rotate(180deg) brightness(50%);
+    filter: invert(80%) hue-rotate(180deg);
   }
-}
-@-moz-document domain("meta.wikimedia.org") {
-  tr[style="background-color:#AAFFD5"] {
-    background-color: var(--bluei-a0) !important;
+  #main_page_mp-mp {
+    background-color: transparent !important;
   }
-  tr[style="background-color:#AAFFFF"] {
-    background-color: var(--bluei-a1) !important;
+  #main_page_mp-mp div {
+    background-color: var(--gray-2) !important;
   }
-  tr[style="background-color:#BBFFF1"] {
-    background-color: var(--bluei-a2) !important;
-  }
-  tr[style="background-color:#CCFFE4"] {
-    background-color: var(--bluei-a3) !important;
-  }
-  tr[style*="background-color:#E3FFAA"] {
-    background-color: var(--green-a0) !important;
-  }
-  tr[style="background-color:#C6FFAA"] {
-    background-color: var(--green-a1) !important;
-  }
-  tr[style="background-color:#AAFFAA"] {
-    background-color: var(--green-a2) !important;
-  }
-  tr[style="background-color:#DDFFD6"] {
-    background-color: var(--green-a3) !important;
-  }
-  tr[style="background-color:#EEFFC9"] {
-    background-color: var(--green-a4) !important;
-  }
-  tr[style="background-color:#FFFFBB"] {
-    background-color: var(--green-a5) !important;
-  }
-}
-@-moz-document domain("wikimania.wikimedia.org") {
-  span[style*="border-bottom:0.3em solid #235D2E;"] {
-    border-bottom: .3em solid var(--green-1) !important;
-  }
-  .mw-pt-languages-label {
-    color: var(--gray-c);
-  }
-  div[style*="border-color: #aaaaaa;"] {
+  #main_page_mp-mp table {
     border-color: var(--gray-5) !important;
   }
-  body, .mw-parser-output .contentframe-2019,
-  .plainlinks[style*="background: #FFFFFF;"] {
-    background-color: var(--gray-2) !important;
-    background-image: var(--bg-selected) !important;
-    background-clip: border-box !important;
-    background-origin: padding-box !important;
-    background-attachment: var(--bg-attachment) !important;
-    /*[[bg-options]]*/
-    color: var(--gray-c) !important;
+  div.NavFrame div.NavHead {
+    color: var(--gray-2);
   }
-  #p-logo .mw-wiki-logo, img[src$="1280px-Wikimania2019_meta_banner.svg.png"],
-  img[src$="500px-Wikimania2019_logo.svg.png"] {
-    filter: invert(90%) hue-rotate(180deg) brightness(90%);
+  div.NavFrame div.NavHead, details.NavFrame summary.NavHead {
+    background: var(--gray-7);
   }
-  img[src*="19px-Wikimania2019_person_icon.svg.png"],
-  img[src*="20px-Wikimania2019_dove_icon.svg.png"], img[src*="20px"][width="20"],
-  img[src*="22px"][width="22"] {
-    filter: invert(90%) hue-rotate(180deg);
+  div.NavFrame div.NavHead:hover, details.NavFrame summary.NavHead:hover {
+    background: var(--gray-9a);
   }
-  img[src*="20px-Wikimania2019_moose_icon.svg.png"][height="18"],
-  img[src$="180px-NMS_partnerlockup_grey_green_CMYK_%281%29.svg.png"],
-  img[src$="320px-Terrapass_logo.png"],
-  img[src$="230px-Eliza_communication.png"] {
-    filter: brightness(130%) !important;
-  }
-  img[alt*="Wikimedia"], img[src$="160px-SIMPLY_LOGO_HDV1080_black.png"] {
-    filter: invert(90%) hue-rotate(180deg) brightness(80%);
-  }
-  img[src$="220px-RAA_logo.jpg"], img[src$="180px-UEklundCiS.jpg"] {
-    filter: invert(90%) hue-rotate(180deg) brightness(120%);
-  }
-  img[src$="250px-Ministry_for_Foreign_Affairs.png"],
-  img[src$="120px-KB-logo_svart.png"],
-  img[src$="160px-StockholmsStad_logotypeStandardA5_300ppi_svart.png"] {
-    filter: invert(1) hue-rotate(180deg) brightness(90%);
-  }
-  img[src$="140px-Musikverket_logo_liggande_sRGB.png"],
-  img[src$="190px-Riksarkivet_2013_rgb.png"] {
-    filter: invert(1) hue-rotate(180deg) brightness(120%);
-  }
-  .mw-parser-output .schedule .break {
-    background: var(--brown-2);
-  }
-  #toc {
-    background-color: var(--gray-28) !important;
-  }
-  div[style*="background"] h2 b, div[style*="background"] h2 a,
-  div[style*="background"] h2 center {
-    background-color: inherit !important;
-  }
-  textarea:not(input):focus {
-    outline: 1px inset var(--base-color) !important;
-    border-top: 1px inset var(--base-color);
-  }
-  .image[href*="Wikimania2019_leaves_icon.svg"] {
-    opacity: .5;
-  }
-  .image[href*="Wikimania2019_leaves_icon.svg"] {
-    opacity: 1;
-  }
-  .mw-parser-output .card {
-    color: var(--gray-e);
-  }
-  a.image img {
-    background: inherit !important;
+  .NavContent .translations form span[style*="color"] {
+    color: var(--base-color) !important;
   }
 }
 @-moz-document domain("wikiversity.org") {
@@ -3238,6 +3033,50 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     color: var(--gray-9a);
   }
 }
+@-moz-document domain("www.mediawiki.org") {
+  .mw-parser-output .note-info {
+    background-color: var(--green-4);
+    border-color: var(--green-3) !important;
+  }
+  .navbox.mw-collapsible th[style*="color:"] {
+    color: var(--gray-9a) !important; /* make global? */
+  }
+}
+@-moz-document domain("meta.wikimedia.org") {
+  .mw-parser-output .community-wishlist-header {
+    background: var(--blue-2);
+  }
+  tr[style="background-color:#AAFFD5"] {
+    background-color: var(--bluei-a0) !important;
+  }
+  tr[style="background-color:#AAFFFF"] {
+    background-color: var(--bluei-a1) !important;
+  }
+  tr[style="background-color:#BBFFF1"] {
+    background-color: var(--bluei-a2) !important;
+  }
+  tr[style="background-color:#CCFFE4"] {
+    background-color: var(--bluei-a3) !important;
+  }
+  tr[style*="background-color:#E3FFAA"] {
+    background-color: var(--green-a0) !important;
+  }
+  tr[style="background-color:#C6FFAA"] {
+    background-color: var(--green-a1) !important;
+  }
+  tr[style="background-color:#AAFFAA"] {
+    background-color: var(--green-a2) !important;
+  }
+  tr[style="background-color:#DDFFD6"] {
+    background-color: var(--green-a3) !important;
+  }
+  tr[style="background-color:#EEFFC9"] {
+    background-color: var(--green-a4) !important;
+  }
+  tr[style="background-color:#FFFFBB"] {
+    background-color: var(--green-a5) !important;
+  }
+}
 @-moz-document domain("outreach.wikimedia.org") {
   div[style*="background-color: whiteSmoke;"] {
     background-color: var(--gray-28) !important;
@@ -3288,5 +3127,164 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   table[style*="border: 1px silver solid; background: whitesmoke;"] {
     border: 1px var(--gray-69) solid !important;
     background: var(--gray-3) !important;
+  }
+}
+@-moz-document domain("wikimania.wikimedia.org") {
+  span[style*="border-bottom:0.3em solid #235D2E;"] {
+    border-bottom: .3em solid var(--green-1) !important;
+  }
+  .mw-pt-languages-label {
+    color: var(--gray-c);
+  }
+  div[style*="border-color: #aaaaaa;"] {
+    border-color: var(--gray-5) !important;
+  }
+  body, .mw-parser-output .contentframe-2019,
+  .plainlinks[style*="background: #FFFFFF;"] {
+    background-color: var(--gray-2) !important;
+    background-image: var(--bg-selected) !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    background-attachment: var(--bg-attachment) !important;
+    /*[[bg-options]]*/
+    color: var(--gray-c) !important;
+  }
+  #p-logo .mw-wiki-logo, img[src$="1280px-Wikimania2019_meta_banner.svg.png"],
+  img[src$="500px-Wikimania2019_logo.svg.png"] {
+    filter: invert(90%) hue-rotate(180deg) brightness(90%);
+  }
+  img[src*="19px-Wikimania2019_person_icon.svg.png"],
+  img[src*="20px-Wikimania2019_dove_icon.svg.png"], img[src*="20px"][width="20"],
+  img[src*="22px"][width="22"] {
+    filter: invert(90%) hue-rotate(180deg);
+  }
+  img[src*="20px-Wikimania2019_moose_icon.svg.png"][height="18"],
+  img[src$="180px-NMS_partnerlockup_grey_green_CMYK_%281%29.svg.png"],
+  img[src$="320px-Terrapass_logo.png"],
+  img[src$="230px-Eliza_communication.png"] {
+    filter: brightness(130%) !important;
+  }
+  img[alt*="Wikimedia"], img[src$="160px-SIMPLY_LOGO_HDV1080_black.png"] {
+    filter: invert(90%) hue-rotate(180deg) brightness(80%);
+  }
+  img[src$="220px-RAA_logo.jpg"], img[src$="180px-UEklundCiS.jpg"] {
+    filter: invert(90%) hue-rotate(180deg) brightness(120%);
+  }
+  img[src$="250px-Ministry_for_Foreign_Affairs.png"],
+  img[src$="120px-KB-logo_svart.png"],
+  img[src$="160px-StockholmsStad_logotypeStandardA5_300ppi_svart.png"] {
+    filter: invert(1) hue-rotate(180deg) brightness(90%);
+  }
+  img[src$="140px-Musikverket_logo_liggande_sRGB.png"],
+  img[src$="190px-Riksarkivet_2013_rgb.png"] {
+    filter: invert(1) hue-rotate(180deg) brightness(120%);
+  }
+  .mw-parser-output .schedule .break {
+    background: var(--brown-2);
+  }
+  #toc {
+    background-color: var(--gray-28) !important;
+  }
+  div[style*="background"] h2 b, div[style*="background"] h2 a,
+  div[style*="background"] h2 center {
+    background-color: inherit !important;
+  }
+  textarea:not(input):focus {
+    outline: 1px inset var(--base-color) !important;
+    border-top: 1px inset var(--base-color);
+  }
+  .image[href*="Wikimania2019_leaves_icon.svg"] {
+    opacity: .5;
+  }
+  .image[href*="Wikimania2019_leaves_icon.svg"] {
+    opacity: 1;
+  }
+  .mw-parser-output .card {
+    color: var(--gray-e);
+  }
+  a.image img {
+    background: inherit !important;
+  }
+}
+@-moz-document domain("wiki.archlinux.org") {
+  #content table, #content h1, #content h2, #content h3, #content h4,
+  #content h5, #content pre, #content code, #content tt, table.wikitable,
+  .mw-body, .parsoid-body,
+  .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-title,
+  .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-desc {
+    color: var(--gray-9a);
+  }
+  .oo-ui-tagItemWidget.oo-ui-widget-enabled {
+    color: var(--gray-8);
+  }
+  .mw-rcfilters-ui-filterMenuSectionOptionWidget-header-title.oo-ui-labelElement-label,
+  .mw-rcfilters-ui-viewSwitchWidget label.oo-ui-labelWidget {
+    color: var(--gray-a);
+  }
+  .mw-rcfilters-ui-itemMenuOptionWidget-label-title {
+    color: var(--gray-a) !important;
+  }
+  td[style*="background: #ddd; color: inherit;"] {
+    background: var(--gray-5) !important;
+  }
+  td[style*="background: #faa; color: inherit;"] {
+    background: var(--red-0) !important;
+  }
+  div.archwiki-template-box.archwiki-template-box-note {
+    background-color: var(--purple-1) !important;
+    border-color: var(--purple-2) !important;
+  }
+  div.archwiki-template-box.archwiki-template-box-warning {
+    background-color: var(--red-0) !important;
+    border-color: var(--red-3) !important;
+  }
+  div.archwiki-template-box.archwiki-template-box-tip {
+    background-color: var(--green-4) !important;
+    border-color: var(--green-3) !important;
+  }
+  #toc, .toc, .mw-warning, .toccolours {
+    background-color: var(--gray-2) !important;
+    border-color: var(--gray-5) !important;
+  }
+  div.archwiki-template-message, #simpleSearch {
+    background-color: var(--gray-2);
+  }
+  textarea {
+    border-color: var(--gray-5);
+  }
+  textarea:not(input):focus {
+    border-color: var(--base-color);
+  }
+  div[style*="border:1px solid #888;"] {
+    border-color: var(--gray-5) !important;
+  }
+  #pagehistory li {
+    border-color: var(--gray-2) !important;
+  }
+  .mw-rcfilters-ui-filterTagMultiselectWidget-hideshowButton .oo-ui-labelElement-label {
+    border: 0 !important;
+  }
+  #content a:active, #mw-navigation li:not(.new) a:active,
+  #mw-panel li:not(.new) a:active, #column-one li:not(.new) a:active,
+  #footer a:active, #content a:focus, #mw-navigation li:not(.new) a:focus,
+  #mw-panel li:not(.new) a:focus, #column-one li:not(.new) a:focus,
+  #footer a:focus, #content a:active:hover,
+  #mw-navigation li:not(.new) a:active:hover,
+  #mw-panel li:not(.new) a:active:hover, #column-one li:not(.new) a:active:hover,
+  #footer a:active:hover, #content a:focus:hover,
+  #mw-navigation li:not(.new) a:focus:hover,
+  #mw-panel li:not(.new) a:focus:hover, #column-one li:not(.new) a:focus:hover,
+  #footer a:focus:hover {
+    color: var(--base-color) !important;
+  }
+  /* hack around sidebar bottom border brightness */
+  #mw-panel .portal:not(#p-navigation) .body {
+    background-image: linear-gradient(to top, transparent, var(--gray-c));
+    background-size: auto 1px;
+  }
+}
+@-moz-document domain("wiki.mozilla.org") {
+  .mw-wiki-logo {
+    filter: invert(100%) hue-rotate(180deg) brightness(50%);
   }
 }
