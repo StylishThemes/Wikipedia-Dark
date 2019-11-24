@@ -181,7 +181,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background-color: transparent !important;
     color: var(--gray-9a);
   }
-  div.thumbinner, .catlinks, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
+  div.thumbinner, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
   .mw-mmv-info-box, .infobox.standard-talk, .mwe-pt-article-row-odd,
   .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options, #mw-page-base,
   .mw-parser-output #siteContainer div:first-child, .vectorTabs .selected {
@@ -653,6 +653,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   body div.ui-dialog .ui-widget-header {
     background: var(--gray-3) !important;
     border-color: var(--gray-5) !important;
+  }
+  .catlinks {
+    background: var(--gray-28);
   }
   body .ui-button:hover {
     background: var(--gray-4) !important;
