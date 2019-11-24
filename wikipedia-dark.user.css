@@ -3105,6 +3105,30 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     background-color: var(--base-color) !important;
     border: 1px solid var(--gray-5) !important;
   }
+  div[style*="background-color: #f6f6f6"] {
+    background-color: var(--gray-2) !important;
+  }
+  div[style*="background-color: #fffcf1" i],
+  .messagebox.standard-talk td[style*="background"], .navbox-list.navbox-even,
+  .navbox-list.navbox-odd {
+    background-color: transparent !important;
+  }
+  div[style*="background-color:#ced1fa" i] {
+    background-color: var(--blue-3) !important;
+  }
+  div[style*="background-color:#e6c6e6" i] {
+    background-color: var(--purple-1) !important;
+  }
+  div[style*="background-color:wheat" i] {
+    background-color: var(--brown-3) !important;
+  }
+  div[style*="background-color:#c0eaa6"] {
+    background-color: var(--brown-2) !important;
+  }
+  div[style*="color:black"], span[style*="color: black"],
+  th[style*="color:#000000"] {
+    color: var(--gray-a) !important;
+  }
 }
 @-moz-document domain("wikisource.org") {
   #navigationNotes div {
