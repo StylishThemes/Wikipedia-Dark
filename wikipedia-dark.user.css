@@ -159,6 +159,15 @@ regexp("https?:\/\/.+wik(i|t).+org.+") {
 regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach)\.wikimedia)\.org\/.*"),
 regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   /* transparent background */
+  html, body {
+    background-color: var(--gray-2) !important;
+    background-image: var(--bg-selected) !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    background-attachment: var(--bg-attachment) !important;
+    /*[[bg-options]]*/
+    color: var(--gray-c);
+  }
   .mw-body, .parsoid-body, #mp-topbanner,
   span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]):not(.wikibase-toolbar-wrapper):not(.tool),
   .MainPageBG, .navbox-list, .mw-wsmfinal-content, .mw-body-content,
@@ -319,14 +328,6 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     color: var(--white) !important;
   }
   /*** Background ***/
-  html, body {
-    background-color: var(--gray-2) !important;
-    background-image: var(--bg-selected) !important;
-    background-clip: border-box !important;
-    background-origin: padding-box !important;
-    background-attachment: var(--bg-attachment) !important;
-    /*[[bg-options]]*/
-  }
   .mw-prefs-buttons {
     background-image: var(--bg-selected);
   }
