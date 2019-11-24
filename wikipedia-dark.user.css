@@ -183,9 +183,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background-color: transparent !important;
     color: var(--gray-9a);
   }
-  div.thumbinner, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
-  .mw-mmv-info-box, .infobox.standard-talk, .mwe-pt-article-row-odd,
-  .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options, #mw-page-base,
+  .mw-mmv-image-metadata, .navbox, .navbox-subgroup, .mw-mmv-info-box,
+  .infobox.standard-talk, .mwe-pt-article-row-odd, .mwe-pt-article-row-even,
+  .ve-ui-mwSaveDialog-options, #mw-page-base,
   .mw-parser-output #siteContainer div:first-child, .vectorTabs .selected,
   .navbox-even {
     background-color: transparent;
@@ -516,17 +516,16 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .template-documentation, .mw-parser-output .quotebox,
   #languagesettings-settings-panel, .uls-language-settings-close-block,
   .uls-input-settings .uls-input-settings-inputmethods-list, .imeselector-menu,
-  .uls-ime-menu-settings-item, .ip-label-container, .mw-pt-languages,
-  .cbnnr-main, .mw_metadata td, .kephir-sagittarius-invite, .infobox,
-  .lang-list-container, .mw-parser-output #bottombox-d, .uls-lcd, .uls-search,
-  div.mw-pt-languages, .ns-0 #mw-content-text h1, .wikiEditor-ui-toolbar,
-  .mw-ext-score-popup,
+  .uls-ime-menu-settings-item, .ip-label-container, .cbnnr-main, .mw_metadata td,
+  .kephir-sagittarius-invite, .infobox, .lang-list-container,
+  .mw-parser-output #bottombox-d, .uls-lcd, .uls-search,
+  .ns-0 #mw-content-text h1, .wikiEditor-ui-toolbar, .mw-ext-score-popup,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle,
   .mw-parser-output .quotebox-title,
   .uls-menu .uls-no-results-view .uls-no-found-more {
     background-color: var(--gray-2); /* non-important */
   }
-  .mw-notification {
+  .mw-notification, .mw-pt-languages, div.mw-pt-languages, div.thumbinner {
     background-color: var(--gray-2);
     border-color: var(--gray-5);
   }
@@ -568,7 +567,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .infoboks tr.bilde td, .infoboks tr.overskrift td {
     background-color: var(--gray-2) !important;
   }
-  body .ui-button, caption[style*="background-color:#f2f2f2"] {
+  body .ui-button, caption[style*="background-color:#f2f2f2"],
+  table[style*="background:#f8f9fa;color:#222;border:1px solid #eaecf0"] {
     background: var(--gray-28) !important;
     border-color: var(--gray-5) !important;
   }
