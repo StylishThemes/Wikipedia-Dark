@@ -1165,7 +1165,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--orange-2) !important;
   }
   table.ambox-content, table.ambox-style {
-    border-left-color: var(--orange-2) !important;
+    border-left: 10px solid var(--orange-2) !important;
+  }
+  table.ambox {
+    border: 1px solid var(--gray-5);
   }
   /* add border */
   div.vectorTabs li, #p-cactions-label, .client-js #preftoc li {
