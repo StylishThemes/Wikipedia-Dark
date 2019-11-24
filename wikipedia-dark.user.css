@@ -2123,7 +2123,8 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     opacity: 0;
   }
 }
-@-moz-document domain("www.wikidata.org") {
+@-moz-document
+regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   #p-logo .mw-wiki-logo {
     filter: brightness(150%) contrast(60%);
   }
@@ -2139,7 +2140,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   #mw-content-text {
     color: var(--gray-b9);
   }
-  .wikibase-referenceview {
+  .wikibase-referenceview, .wikibase-entitytermsview .wikibase-toolbar-container {
     background-color: transparent;
   }
   .mediawiki .warningbox {
@@ -2172,9 +2173,8 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .ui-entityselector-list .ui-entityselector-more,
   .wikibase-entitysearch-list .wb-entitysearch-suggestions,
   .wikibase-statementgrouplistview .wikibase-statementlistview,
-  .articlepreview .container, .wikibase-referenceview.wb-edit,
   .ui-entityselector-list .ui-entityselector-notfound,
-  .mw-parser-output .property-navibox,
+  .mw-parser-output .property-navibox, .articlepreview .container,
   .wikibase-sitelinklistview .wikibase-sitelinkview .wikibase-removetoolbar-container {
     background-color: var(--gray-2);
   }
@@ -2197,9 +2197,13 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .wikibase-snaktypeselector-menu .ui-state-focus {
     background: var(--gray-3) !important;
   }
+  .wikibase-referenceview.wb-edit {
+    background-color: var(--blue-3);
+  }
+  .wikibase-referenceview.wb-edit > .wikibase-referenceview-heading,
   .wikibase-statementgrouplistview .wikibase-statementgroupview-property.wb-edit,
   .wikibase-statementgroupview-property.wb-edit + .wikibase-statementlistview > .wikibase-toolbar-wrapper {
-    background-color: var(--gray-4);
+    background-color: var(--blue-2);
   }
   .wikibase-entityview textarea, .ui-listrotator,
   .wikiEditor-ui-toolbar .page-table th, .mw-parser-output .chatheader-title,
