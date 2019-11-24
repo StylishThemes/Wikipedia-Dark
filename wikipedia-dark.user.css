@@ -2592,6 +2592,16 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .assess-future-text {
     color: var(--assess-12) !important;
   }
+  /* https://en.wikipedia.org/wiki/YAML syntax fixes */
+  .mw-highlight .c1 {
+    color: var(--cm-8);
+  }
+  .mw-highlight .nv, .mw-highlight .nn {
+    color: var(--cm-5);
+  }
+  .mw-highlight .no {
+    color: var(--cm-13);
+  }
 }
 @-moz-document domain("wiktionary.org") {
   .mw-wiki-logo {
