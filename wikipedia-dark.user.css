@@ -2115,6 +2115,23 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     border-color: var(--gray-5);
     color: var(--gray-9a);
   }
+  #gp_head {
+    background-color: var(--blue-3) !important;
+  }
+  #gallerypreview > div {
+    background-color: var(--green-4) !important;
+    color: var(--base-color) !important;
+  }
+  .licensetpl_wrapper {
+    background-color: var(--gray-3) !important;
+  }
+  .type.fileinfo-paramfield {
+    background-color: var(--blue-3);
+  }
+  #gallerypreview_container, .layouttemplate.licensetpl,
+  .layouttemplate.partnershiptemplate {
+    border-color: var(--gray-5) !important;
+  }
   /* Hack to fix Wikimedia logo on MP */
   .mainpage .center > .floatnone {
     background-image: url("//upload.wikimedia.org/wikipedia/commons/thumb/8/81/Wikimedia-logo.svg/45px-Wikimedia-logo.svg.png");
