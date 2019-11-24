@@ -199,13 +199,11 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--base-color) !important;
   }
   /*** Overall ***/
-  td, p, li, th:not([style*="background"]):not([dir]), caption,
-  span:not([class*="color"]):not([class*="wikEd"]):not([style*="background"]):not([class*="oo-ui-labelElement-label"]):not([style]),
-  p code, label code, dl code, .oo-ui-widget:not([placeholder]) div,
-  .oo-ui-widget label, #pagehistory li.selected,
-  #mwe-popups-settings main form label, #pt-anonuserpage,
-  .oo-ui-textInputWidget .oo-ui-inputWidget-input, .oo-ui-messageDialog-title,
-  .oo-ui-messageDialog-message,
+  td, p, li, th:not([style*="background"]):not([dir]), caption, p code,
+  label code, dl code, .oo-ui-widget:not([placeholder]) div, .oo-ui-widget label,
+  #pagehistory li.selected, #mwe-popups-settings main form label,
+  #pt-anonuserpage, .oo-ui-textInputWidget .oo-ui-inputWidget-input,
+  .oo-ui-messageDialog-title, .oo-ui-messageDialog-message,
   .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label, .mw-mmv-image-desc,
   .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected,
   .guider_content h1, .guider_content p, select#searchLanguage option, dt {
@@ -1045,17 +1043,18 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--gray-5) !important;
   }
   /* TODO: Sigh! remove these :nots and the div/span etc from here and def not !imporant */
-  div:not([style*="-color"]):not(.uls-menu):not([style*="border"]):not(.standard-talk):not([class*="ruwiki-"]):not([class*="warn"]):not(.tool2):not([style="transparent"]),
-  div[style*="background-color"],
-  span:not([class*="color"]):not([style*="border-left-color:"]):not([style*="235D2E"]):not([style*="EFE"]):not([style*="cd1"]),
-  table:not(.hp-portalen):not([style*="background"]), #talkheader td,
-  tr:not([style*="border-bottom"]), th, .infobox tr[style*="background-color"],
-  td, h1,
   h2:not([style*="#cef2e0;"]):not([style*="#cedff2;"]):not([style*="#afa3bf;"]),
-  h3, h4, h5, h6, ul, li, select, .mw-body-content code, .lang-list-button:hover,
-  .oo-ui-buttonElement-button, #mwe-popups-settings, #mwe-popups-settings header,
-  html .thumbimage, div[style*="border:1px solid #e2e2e2;"],
-  div[style*="border:1px solid #aaa;"], div[style*="border:1px solid #CCC;"],
+  tr:not([style*="border-bottom"]),
+  table:not(.hp-portalen):not([style*="background"]):not(.plainlinks),
+  div[style*="background-color"], th, td, h1, h3, h4, h5, h6, ul, li, select,
+  .mw-body, .toc, .mw-warning, .toccolours, .navbox, .catlinks {
+    border-color: var(--gray-5);
+  }
+  #talkheader td, .infobox tr[style*="background-color"], .mw-body-content code,
+  .lang-list-button:hover, .oo-ui-buttonElement-button, #mwe-popups-settings,
+  #mwe-popups-settings header, html .thumbimage,
+  div[style*="border:1px solid #e2e2e2;"], div[style*="border:1px solid #aaa;"],
+  div[style*="border:1px solid #CCC;"],
   div[style*="border-bottom: 1px solid #CCC"] {
     border-color: var(--gray-5) !important;
   }
