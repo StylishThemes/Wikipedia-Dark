@@ -2013,8 +2013,7 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
     opacity: 0;
   }
 }
-@-moz-document
-regexp("^https://([\w\-]{2,}\.)?wikidata\.org\/.*$") {
+@-moz-document domain("www.wikidata.org") {
   #p-logo .mw-wiki-logo {
     filter: brightness(150%) contrast(60%);
   }
@@ -2168,8 +2167,7 @@ regexp("^https://([\w\-]{2,}\.)?wikidata\.org\/.*$") {
     border-color: var(--green-2) !important;
   }
 }
-@-moz-document
-regexp("^https://(query)\.wikidata\.org\/.*$") {
+@-moz-document domain("query.wikidata.org") {
   :root {
     --base-color: /*[[base-color]]*/;
     --visited-color: /*[[visited-color]]*/;
@@ -3016,8 +3014,7 @@ regexp("^https://(query)\.wikidata\.org\/.*$") {
     background: inherit !important;
   }
 }
-@-moz-document
-regexp("^https://en\.wikiversity\.org\/.*$") {
+@-moz-document domain("en.wikiversity.org") {
   tr + tr > .navbox-abovebelow, tr + tr > .navbox-group, tr + tr > .navbox-image,
   tr + tr > .navbox-list {
     border-top: 2px solid var(--gray-5);
@@ -3034,8 +3031,7 @@ regexp("^https://en\.wikiversity\.org\/.*$") {
     border: 1px solid var(--gray-5) !important;
   }
 }
-@-moz-document
-regexp("^https://(outreach)\.wikimedia\.org\/.*$") {
+@-moz-document domain("outreach.wikimedia.org") {
   div[style*="background-color: whiteSmoke;"] {
     background-color: var(--gray-28) !important;
   }
