@@ -533,9 +533,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--brown-2);
     background-color: var(--brown-3);
   }
-  table, button, select, textarea:not([class*="mw-editfont"]),
-  tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"],
-  #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]),
+  table:not([style="background-color:transparent"]), button, select,
+  textarea:not([class*="mw-editfont"]), tr[style*="background: antiquewhite" i],
+  #toc, td[style*="background-color"],
+  #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]),
   .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *,
   .wikiEditor-ui, .mw-search-results li,
@@ -553,12 +554,13 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   td[bgcolor="FFF5EE" i], tr[style*="background-color:#f0f0f0" i],
   .wikitable.charts-zebragrey > tbody > tr:nth-of-type(odd),
   td > span[style*="background-color:#eee" i],
-  #mw-content-text div:not(.toctitle) > h2, table.flextable th,
-  tr[style*="background-color:#FFF" i], td[style*="background:#eee" i],
-  #mw-searchoptions, .mw-advancedSearch-namespace-selection,
-  td[style*="background:#fff2e6" i], td[style*="background:#F9F9F0"],
-  td[style*="background:#F4F9F0"], td[style*="background:#F9F0F0"],
-  td[style*="background:#f0f0f0"], #mwe-popups-settings,
+  #mw-content-text div:not(.toctitle):not(.toctitle) > h2:not([style]),
+  table.flextable th, tr[style*="background-color:#FFF" i],
+  td[style*="background:#eee" i], #mw-searchoptions,
+  .mw-advancedSearch-namespace-selection, td[style*="background:#fff2e6" i],
+  td[style*="background:#F9F9F0"], td[style*="background:#F4F9F0"],
+  td[style*="background:#F9F0F0"], td[style*="background:#f0f0f0"],
+  #mwe-popups-settings,
   th[style*="border-bottom: 1px solid #eee; background-color:#ffffff;"],
   .table-na[style*="background:#ececec;"], #js-lang-lists .text, div.arcProg,
   .infoboks.biografi tr.overskrift th, .infoboks tr.rad td,
@@ -735,6 +737,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .suggestions-special .special-label {
     color: var(--gray-c);
   }
+  span[style="color:black"], span[style*="color: black"] {
+    color: var(--gray-c) !important;
+  }
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
     background-color: var(--gray-2);
   }
@@ -885,6 +890,33 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-plusminus-pos {
     color: var(--green-1) !important;
   }
+  div[style*="background:#CEF2E0"] {
+    border-color: var(--green-1) !important;
+    background: var(--green-2) !important;
+  }
+  div[style*="background:#E6FFF2"] {
+    background: var(--green-3) !important;
+  }
+  div[style*="background:#F5FFFA"] {
+    background: var(--green-4) !important;
+    border-color: var(--green-1) !important;
+    color: var(--gray-9a) !important;
+  }
+  div[style*="background:#FFFFFF; border-style:solid; border-width:1px; border-color:#000000;"] {
+    background: var(--gray-2) !important;
+  }
+  div[style*="border-bottom:1px solid #A3BFB1"] {
+    border-bottom: 1px solid var(--green-1) !important;
+    border: 0 solid solid var(--green-1) !important;
+  }
+  div[style*="background:#F5FFFA; border-style:solid; border-width:1px; border-color: #A3BFB1"] {
+    background: var(--green-4) !important;
+    border: 1px solid var(--green-1) !important;
+  }
+  div[style*="border:1px solid #A3BFB1; background-color:#E6FFF2;"] {
+    background: var(--green-2) !important;
+    border-color: var(--green-1) !important;
+  }
   th[style="color:white;background:green"],
   caption[style="color:white;background:green"] {
     background-color: var(--green-3) !important;
@@ -949,8 +981,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background: var(--gray-5) !important;
   }
   /* Blue */
-  div[style*="background"] h2, div[style*="background"] h2 *, .navbox th,
-  .navbox-title, .navbox-title *, tr[style*="background-color:tan;" i],
+  div[style*="background"] h2:not([style]),
+  div[style*="background"] h2:not([style]) *, .navbox th, .navbox-title,
+  .navbox-title *, tr[style*="background-color:tan;" i],
   div[style*="background: #444444;"], div[style*="background: #444444;"] *,
   ol.references li:target, sup.reference:target, span.citation:target,
   ol.references li:target *, sup.reference:target *, span.citation:target *,
