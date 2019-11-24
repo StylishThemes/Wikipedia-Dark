@@ -2709,11 +2709,20 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   #main_page_mp-mp div {
     background-color: var(--gray-2) !important;
   }
+  #main_page_mp-mp table {
+    border-color: var(--gray-5) !important;
+  }
+  div.NavFrame div.NavHead {
+    color: var(--gray-2);
+  }
   div.NavFrame div.NavHead, details.NavFrame summary.NavHead {
     background: var(--gray-7);
   }
   div.NavFrame div.NavHead:hover, details.NavFrame summary.NavHead:hover {
     background: var(--gray-9a);
+  }
+  .NavContent .translations form span[style*="color"] {
+    color: var(--base-color) !important;
   }
 }
 @-moz-document domain("www.mediawiki.org") {
@@ -3095,6 +3104,30 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   div[style*="background-color:#375acf; width: 20em; border:1px solid #999999;"] {
     background-color: var(--base-color) !important;
     border: 1px solid var(--gray-5) !important;
+  }
+}
+@-moz-document domain("wikisource.org") {
+  #navigationNotes div {
+    background-color: transparent !important;
+  }
+  #mf-explore-wikisource div[style*="background"], #plainSister {
+    background-color: var(--gray-2) !important;
+  }
+  .footertemplate {
+    background-color: var(--gray-2);
+  }
+  #navigationHeader > div {
+    background-color: var(--gray-2) !important;
+    border-color: var(--gray-5) !important;
+  }
+  #navigationHeader {
+    border-color: var(--gray-5) !important;
+  }
+  .licFrame-top > div[style*="background"] {
+    background-color: var(--blue-2) !important;
+  }
+  .licFrame-top {
+    border-color: var(--blue-3) !important;
   }
 }
 @-moz-document domain("outreach.wikimedia.org") {
