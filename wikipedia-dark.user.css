@@ -85,6 +85,7 @@ regexp("https?:\/\/.+wiki.+org.+") {
     --brown-2: #542;
     --brown-3: #261d08;
     --yellow-1: #b28200;
+    --yellow-2: #ffdd7f;
     --orange-1: #e53e00;
     --orange-2: #e08b26;
     --purple-0: #312641;
@@ -92,6 +93,7 @@ regexp("https?:\/\/.+wiki.+org.+") {
     --purple-2: #768;
     --pink-1: #6b3e68;
     --pink-2: #965691;
+    --pink-3: #ffbefa;
     --cyan-1: #194d41;
     --ores-1: #222800;
     --ores-2: #222000;
@@ -278,9 +280,6 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th {
     background-color: var(--gray-3) !important;
   }
-  .mw-collapsible:not([class*="navbox-"]) td:not([class*="mbox-"]):not(.assess-start):not(.import-high) {
-    background-color: var(--gray-2) !important;
-  }
   .oo-ui-toolbar-bar, .oo-ui-window-head, .oo-ui-window-foot,
   .oo-ui-popupToolGroup-tools, #language-settings-dialog {
     background: var(--gray-2) !important;
@@ -338,7 +337,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     color: var(--white) !important;
   }
   .oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button {
-    border-color: transparent !important;
+    border-color: 0 !important;
   }
   #languagesettings-panels .mw-ui-pressed {
     background-color: var(--base-color) !important;
@@ -442,13 +441,21 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .wikiEditor-ui-text textarea#wpTextbox1:not(input):focus {
     outline: 1px inset var(--base-color) !important;
   }
+  .tool.oo-ui-buttonElement-frameless.oo-ui-iconElement:hover {
+    outline: 1px solid var(--base-color);
+  }
+  /* fix clipping to right default is margin: 0; */
+  .tool.oo-ui-buttonElement-frameless.oo-ui-iconElement {
+    margin: 0 1px;
+  }
   .mw-advancedSearch-namespace-selection {
     background: linear-gradient(var(--gray-1), var(--gray-2) .5em);
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled,
   .search-container .js-langpicker-label, .uls-input-settings-disable-info,
   .uls-input-settings-no-inputmethods, .languagesettings-menu .menu-section,
-  .settings-title, #languagesettings-settings-panel, legend, .vertical-navbox th {
+  .settings-title, #languagesettings-settings-panel, legend, .vertical-navbox th,
+  .wikiEditor-ui-toolbar .group .label {
     color: var(--gray-9a);
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled:not(.oo-ui-tagItemWidget-fixed) {
@@ -528,7 +535,6 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   table, button, select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"],
-  td[style*="background:#F5FAFF" i],
   #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]),
   .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *,
@@ -957,6 +963,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   th[style*="background:#d1dbdf" i], td[style*="background:#e6f2ff" i] {
     background-color: var(--blue-2) !important;
   }
+  td[style*="background:#F5FAFF;" i] {
+    background-color: var(--blue-2) !important;
+  }
   th[style="color:white;background:blue"],
   caption[style="color:white;background:blue"] {
     background: var(--blue-3) !important;
@@ -978,6 +987,17 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .MainPageBG[style*="border:1px solid #cedff2;"],
   .MainPageBG h2[style*="border:1px solid #a3b0bf;"] {
     border-color: var(--blue-1) !important;
+  }
+  td[style*="border-bottom:1px #B8C7D9 solid;"] {
+    background: var(--blue-3) !important;
+    border-bottom: 1px solid var(--blue-1) !important;
+  }
+  div[style*="border:1px solid #B8C7D9; background-color:#E6F2FF;"] {
+    background: var(--blue-3) !important;
+    border: 1px solid var(--blue-1) !important;
+  }
+  table[style*="border:1px solid #B8C7D9;"] {
+    border: 1px solid var(--blue-1) !important;
   }
   /* Purple */
   div[style*="border:1px solid #ADF;background:#EEF;"] {
@@ -1037,29 +1057,61 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   td[style*="box-shadow: 0px 5px 5px -6px #ccc;"] {
     box-shadow: 0 5px 5px -6px var(--gray-5) !important;
   }
+  .wikiEditor-ui-toolbar .page-characters div span:hover {
+    background-color: var(--gray-28);
+    border-color: var(--base-color);
+  }
+  .wikiEditor-ui-toolbar .page-characters div span {
+    color: var(--gray-d);
+  }
+  .mw-widget-dateInputWidget-calendar:focus {
+    box-shadow: inset 0 0 0 1px var(--base-color), 0 2px 2px 0 rgba(0, 0, 0, .25);
+  }
+  .mw-widget-calendarWidget-item-selected {
+    background-color: var(--base-color);
+    color: var(--gray-d) !important;
+  }
+  .mw-widget-calendarWidget-day-today {
+    box-shadow: inset 0 0 0 1px var(--base-color);
+  }
   /*** Border ***/
   fieldset, button[type="submit"]:not(.pure-button-primary-progressive),
   .oo-ui-buttonElement-button:focus:not(:active) {
     border-color: var(--base-color) !important;
   }
-  .mw-advancedSearch-fieldContainer fieldset {
-    border-color: var(--gray-5) !important;
+  .mw-widget-calendarWidget:focus {
+    border-color: var(--base-color);
+    box-shadow: inset 0 0 0 1px var(--base-color);
   }
   /* TODO: Sigh! remove these :nots and the div/span etc from here and def not !imporant */
   h2:not([style*="#cef2e0;"]):not([style*="#cedff2;"]):not([style*="#afa3bf;"]),
   tr:not([style*="border-bottom"]),
   table:not(.hp-portalen):not([style*="background"]):not(.plainlinks),
   div[style*="background-color"], th, td, h1, h3, h4, h5, h6, ul, li, select,
-  .mw-body, .toc, .mw-warning, .toccolours, .navbox, .catlinks {
+  .mw-body, .toc, .mw-warning, .toccolours, .navbox, .catlinks, table.fmbox,
+  .wikiEditor-ui .wikiEditor-ui-view, .wikiEditor-ui-toolbar .sections .section,
+  .wikiEditor-ui-toolbar .group-search, .wikiEditor-ui-toolbar .group,
+  .wikiEditor-ui-toolbar .group .tool-select,
+  .wikiEditor-ui-toolbar .group .tool-select .options,
+  .wikiEditor-ui-toolbar .page-characters div span, .oo-ui-panelLayout-framed,
+  .mw-widget-dateInputWidget-handle, .mw-widget-calendarWidget,
+  .mw-parser-output .module-shortcutboxplain,
+  .mw-parser-output .module-shortcutlist {
     border-color: var(--gray-5);
   }
+  /* these are OK to be !important soon as a not is needed remove the offending one instead and fix fallback */
   #talkheader td, .infobox tr[style*="background-color"], .mw-body-content code,
   .lang-list-button:hover, .oo-ui-buttonElement-button, #mwe-popups-settings,
   #mwe-popups-settings header, html .thumbimage,
   div[style*="border:1px solid #e2e2e2;"], div[style*="border:1px solid #aaa;"],
-  div[style*="border:1px solid #CCC;"],
-  div[style*="border-bottom: 1px solid #CCC"] {
+  div[style*="border:1px solid #CCC;"], h2[style*="border:1px solid #ddd;"],
+  div[style*="border-bottom: 1px solid #CCC"], .wikiEditor-ui .wikiEditor-ui-top,
+  .mw-advancedSearch-fieldContainer fieldset, .editOptions,
+  div#editpage-specialchars {
     border-color: var(--gray-5) !important;
+  }
+  div[style*="border:1px solid #ddd;"] {
+    border: 1px solid var(--gray-5) !important;
   }
   td[style*="box-shadow: 0px 5px 5px -6px #ccc;"], td[style*="#ccc;"] {
     box-shadow: 0 5px 5px -7px var(--gray-5) !important;
@@ -1684,7 +1736,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .content .thumbcaption, #mw-mf-page-left ul li a:visited,
   #mw-mf-page-left ul li a:active, .toggle-list-item__anchor--menu:visited,
   .toggle-list-item__anchor--menu:active,
-  .mw-rcfilters-ui-tagItemWidget-popup-content {
+  .mw-rcfilters-ui-tagItemWidget-popup-content, .mw-widget-calendarWidget-day {
     color: var(--gray-9a);
   }
   .language-searcher .site-link-list a .autonym,
@@ -1692,7 +1744,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-desc,
   .mw-rcfilters-ui-itemMenuOptionWidget-label-desc,
   .mw-rcfilters-ui-itemMenuOptionWidget-label-title,
-  .oo-ui-tagItemWidget.oo-ui-widget-enabled, .mw-widget-calendarWidget-day,
+  .oo-ui-tagItemWidget.oo-ui-widget-enabled,
   .mw-rcfilters-ui-tagItemWidget.oo-ui-flaggedElement-muted.oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-labelElement-label,
   .mw-rcfilters-ui-savedLinksListWidget-placeholder.oo-ui-optionWidget .oo-ui-labelElement-label,
   .ext-related-articles-card-list h3 a, .category-header li a,
@@ -2591,6 +2643,17 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   }
   .assess-future-text {
     color: var(--assess-12) !important;
+  }
+  /* https://en.wikipedia.org/wiki/YAML fixes */
+  td[style*="background: #FFFF66;"] {
+    background: var(--yellow-2) !important;
+  }
+  td[style*="background: #ffd6ff;"] {
+    background: var(--pink-3) !important;
+  }
+  a.image img[src*="System-installer.svg"], a.image img[src*="Graduation_cap"],
+  a.image img[src*="Crystal_kcontrol"] {
+    background: inherit !important;
   }
   /* https://en.wikipedia.org/wiki/YAML syntax fixes */
   .mw-highlight .c1 {
