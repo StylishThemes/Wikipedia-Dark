@@ -3130,6 +3130,26 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     border-color: var(--blue-3) !important;
   }
 }
+@-moz-document domain("wikivoyage.org") {
+  .mw-parser-output .community-container {
+    background-color: transparent;
+  }
+  .mw-parser-output .community-container h4 span {
+    color: var(--white) !important;
+  }
+  .metadata.plainlinks.ombox {
+    border-color: var(--gray-5) !important;
+  }
+  #shortcut {
+    background-color: var(--gray-3) !important;
+  }
+  .ext-related-articles-card-list .ext-related-articles-card {
+    background-color: var(--gray-2);
+  }
+  .ext-related-articles-card-list h3::after {
+    background: none;
+  }
+}
 @-moz-document domain("outreach.wikimedia.org") {
   div[style*="background-color: whiteSmoke;"] {
     background-color: var(--gray-28) !important;
