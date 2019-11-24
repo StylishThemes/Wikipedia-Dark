@@ -243,7 +243,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
     color: var(--base-color) !important;
   }
-  #firstHeading a > span, font[color="#006699"] {
+  #firstHeading a > span, font[color="#006699"],
+  .mw-rcfilters-ui-filterWrapperWidget-showNewChanges .oo-ui-labelElement-label {
     color: var(--base-color);
   }
   .wb-langlinks-link > a:link::before, .wb-langlinks-link > a:visited::before {
@@ -401,9 +402,12 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-body-content .portal, .sistersitebox, .boilerplate, .NavFrame, .divbox,
   div.resolved span, div.unresolved span, div.unsure span, div.stale span,
   div.being_worked_on span, div.stuck span, div.disregard span, div.FYI span,
-  .vertical-navbox, #mp-topbanner,
+  .vertical-navbox:not(.nowraplinks), #mp-topbanner,
   .mw-advancedSearch-fieldContainer .oo-ui-labelElement > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label {
     background-color: var(--gray-2) !important;
+  }
+  table[style*="background-color: #f9f9f9; border: 1px solid #aaa;"] {
+    background-color: var(--gray-3) !important;
   }
   #searchInput:focus, #simpleSearch:hover #searchInput:focus {
     -webkit-box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 1px var(--base-color);
@@ -534,9 +538,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--brown-2);
     background-color: var(--brown-3);
   }
-  table:not([style="background-color:transparent"]), button, select,
-  textarea:not([class*="mw-editfont"]), tr[style*="background: antiquewhite" i],
-  #toc, td[style*="background-color"],
+  table:not([style="background-color:transparent"]):not(.vertical-navbox),
+  button, select, textarea:not([class*="mw-editfont"]),
+  tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"],
   #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]),
   .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *,
@@ -688,7 +692,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   img[resource*="OOjs_UI_icon_userTalk-ltr.svg"] {
     filter: invert(100%) brightness(80%);
   }
-  img[src*="76px-Wikimedia_Research_Newsletter_Logo.png"] {
+  img[src*="76px-Wikimedia_Research_Newsletter_Logo.png"],
+  img[src*="OOjs_UI_icon_download-ltr-progressive.svg.png"],
+  .mw-rcfilters-ui-filterWrapperWidget-showNewChanges .oo-ui-iconElement-icon {
     filter: invert(100%) hue-rotate(180deg);
   }
   div[style="float:right; border:1px solid #CCC"] {
@@ -797,6 +803,24 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   #mw-fr-watchlist-pending-notice {
     background-color: var(--red-3) !important;
     border-color: var(--red-0) !important;
+  }
+  table[style*="border:1px solid #a2a9b1"] {
+    border: 1px solid var(--gray-4) !important;
+  }
+  table[style*="border:1px solid #a2a9b1"] td,
+  .mw-rcfilters-ui-changesListWrapperWidget .mw-changeslist-legend {
+    border-color: var(--gray-4) !important;
+  }
+  .oo-ui-tagItemWidget {
+    border-color: var(--gray-5);
+  }
+  .mw-rcfilters-ui-filterTagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle,
+  .mw-rcfilters-ui-filterTagMultiselectWidget-views-select-widget.oo-ui-widget {
+    border-color: var(--gray-4);
+  }
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5) !important;
   }
   /*** Background Color Styles ***/
   /* ORES highlight colors */
@@ -1161,7 +1185,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-widget-dateInputWidget-handle, .mw-widget-calendarWidget,
   .mw-parser-output .module-shortcutboxplain,
   .mw-parser-output .module-shortcutlist, .flow-ui-navigationWidget,
-  .wikitable [data-parsoid] {
+  .wikitable [data-parsoid], .mw-parser-output .wiki-template-infocard,
+  .mw-parser-output .mainpage_box, .mw-parser-output .mainpage_box .items {
     border-color: var(--gray-5);
   }
   /* these are OK to be !important soon as a not is needed remove the offending one instead and fix fallback */
@@ -1175,7 +1200,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div#editpage-specialchars, .nmbox[style*="border: 1px solid #a2a9b1;"] {
     border-color: var(--gray-5) !important;
   }
-  div[style*="border:1px solid #ddd;"] {
+  .oo-ui-tagItemWidget.oo-ui-widget-enabled:hover {
+    border-color: var(--gray-69) !important;
+  }
+  div[style*="border:1px solid #ddd;"], table[style*="border: 1px solid #aaa;"] {
     border: 1px solid var(--gray-5) !important;
   }
   td[style*="box-shadow: 0px 5px 5px -6px #ccc;"], td[style*="#ccc;"] {
@@ -3075,6 +3103,13 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   .navbox.mw-collapsible th[style*="color:"] {
     color: var(--gray-9a) !important; /* make global? */
+  }
+  a img[src*="Community_Noun_project_2280.svg"],
+  a img[src*="Octicons-terminal.svg"],
+  a img[src*="Source_code_project_1171.svg"],
+  a img[src*="OOjs_UI_icon_language-ltr.svg"] {
+    background: inherit !important;
+    filter: invert(1) !important;
   }
 }
 @-moz-document domain("meta.wikimedia.org") {
