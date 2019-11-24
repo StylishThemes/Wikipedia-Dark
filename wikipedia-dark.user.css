@@ -186,7 +186,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div.thumbinner, .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
   .mw-mmv-info-box, .infobox.standard-talk, .mwe-pt-article-row-odd,
   .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options, #mw-page-base,
-  .mw-parser-output #siteContainer div:first-child, .vectorTabs .selected {
+  .mw-parser-output #siteContainer div:first-child, .vectorTabs .selected,
+  .navbox-even {
     background-color: transparent;
   }
   .lang-list-button {
@@ -1596,7 +1597,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   }
   #helpdeskheader[style*="border: 1px solid #ccc; background-color: #f9f9f9;"],
   #villagepumpheader[style*="border:1px solid #AAA;background:#F9F9F9"] {
-    border: 1x solid var(--gray-5) !important;
+    border: 1px solid var(--gray-5) !important;
     background: none !important;
   }
   .oo-ui-image-progressive.oo-ui-icon-eye, .mw-ui-icon-eye-progressive::before,
