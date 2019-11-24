@@ -908,7 +908,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   div[style*="border-bottom:1px solid #A3BFB1"] {
     border-bottom: 1px solid var(--green-1) !important;
-    border: 0 solid solid var(--green-1) !important;
+    border: 0 solid var(--green-1) !important;
   }
   div[style*="background:#F5FFFA; border-style:solid; border-width:1px; border-color: #A3BFB1"] {
     background: var(--green-4) !important;
