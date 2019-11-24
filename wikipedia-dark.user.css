@@ -461,7 +461,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .search-container .js-langpicker-label, .uls-input-settings-disable-info,
   .uls-input-settings-no-inputmethods, .languagesettings-menu .menu-section,
   .settings-title, #languagesettings-settings-panel, legend, .vertical-navbox th,
-  .wikiEditor-ui-toolbar .group .label, .flow-topic-meta {
+  .wikiEditor-ui-toolbar .group .label, .flow-topic-meta,
+  .mw-parser-output .chatheader-description {
     color: var(--gray-9a);
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled:not(.oo-ui-tagItemWidget-fixed) {
@@ -598,7 +599,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .wikitable.charts-zebragrey > tbody > tr:nth-of-type(even),
   tr[style*="background:#fbf8d6" i], table.flextable td, table.nmbox td,
   tr[style*="background-color:#f7f7f7"],
-  .mw-changeslist-line tr.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey td:not(:nth-child(-n+2)) {
+  .mw-changeslist-line tr.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey td:not(:nth-child(-n+2)),
+  div[style*="background-color: #fff"] {
     background-color: var(--gray-28) !important;
   }
   .flow-ui-boardDescriptionWidget-editButton a.oo-ui-buttonElement-button:hover {
