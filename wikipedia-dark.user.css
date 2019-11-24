@@ -236,9 +236,11 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     color: var(--gray-9a) !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel,
-  #content a:not(.new), #mw-navigation li:not(.new) a:not(.new),
-  #mw-panel li:not(.new) a:not(.new), #column-one li:not(.new) a:not(.new),
-  #footer a:not(.new), .other-project-title, a.wbc-editpage:hover {
+  #content a:not(.new):not([role="button"]),
+  #mw-navigation li:not(.new) a:not(.new), #mw-panel li:not(.new) a:not(.new),
+  #column-one li:not(.new) a:not(.new), #footer a:not(.new),
+  .other-project-title, a.wbc-editpage:hover,
+  .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
     color: var(--base-color) !important;
   }
   #firstHeading a > span, font[color="#006699"] {
@@ -253,7 +255,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     opacity: 1 !important;
   }
   a:visited, #toc a:visited, #toc a:visited span,
-  .vectorTabs li.new:not(.selected) a:visited, #content a:not(.new):visited,
+  .vectorTabs li.new:not(.selected) a:visited,
+  #content a:not(.new):not([role="button"]):visited,
   #mw-panel li:not(.new) a:not(.new):visited,
   #p-navigation li:not(.new) a:not(.new):visited,
   #p-tb li:not(.new) a:not(.new):visited {
@@ -337,9 +340,6 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background-color: var(--base-color) !important;
     border-color: transparent !important;
     color: var(--white) !important;
-  }
-  .oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button {
-    border-color: 0 !important;
   }
   #languagesettings-panels .mw-ui-pressed {
     background-color: var(--base-color) !important;
@@ -457,7 +457,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .search-container .js-langpicker-label, .uls-input-settings-disable-info,
   .uls-input-settings-no-inputmethods, .languagesettings-menu .menu-section,
   .settings-title, #languagesettings-settings-panel, legend, .vertical-navbox th,
-  .wikiEditor-ui-toolbar .group .label {
+  .wikiEditor-ui-toolbar .group .label, .flow-topic-meta {
     color: var(--gray-9a);
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled:not(.oo-ui-tagItemWidget-fixed) {
@@ -537,15 +537,16 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table:not([style="background-color:transparent"]), button, select,
   textarea:not([class*="mw-editfont"]), tr[style*="background: antiquewhite" i],
   #toc, td[style*="background-color"],
-  #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]),
+  #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]),
   .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *,
   .wikiEditor-ui, .mw-search-results li,
   table.navbox.collapsible tr:nth-child(2) > td, div.menu, ul.menu,
-  .oo-ui-popupWidget-popup, .oo-ui-buttonElement-button, .mwe-popups,
-  .mwe-popups-is-not-tall, .mwe-popups-is-tall, .ui-widget-content,
-  .oo-ui-window-body, #pagehistory li.selected, .tracklist tr,
-  .mw-searchresults-has-iw .iw-resultset, .cx-callout-content, .oo-ui-widget,
+  .oo-ui-popupWidget-popup, .mwe-popups, .mwe-popups-is-not-tall,
+  .mwe-popups-is-tall, .ui-widget-content, .oo-ui-window-body,
+  #pagehistory li.selected, .tracklist tr,
+  .mw-searchresults-has-iw .iw-resultset, .cx-callout-content,
+  .oo-ui-widget:not(.flow-ui-boardDescriptionWidget):not(.oo-ui-buttonWidget),
   tr[style*="background:#f2f2f2" i], th[style*="background:#EDF1F1" i],
   td[style*="background:#EDF1F1" i], tr[style*="background-color:white" i],
   tr[style*="background:#f9f9f9" i], td[bgcolor="#FFFFFF" i],
@@ -555,7 +556,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   td[bgcolor="FFF5EE" i], tr[style*="background-color:#f0f0f0" i],
   .wikitable.charts-zebragrey > tbody > tr:nth-of-type(odd),
   td > span[style*="background-color:#eee" i],
-  #mw-content-text div:not(.toctitle):not(.toctitle) > h2:not([style]),
+  #mw-content-text div:not(.toctitle):not(.toctitle) > h2:not([style]):not(.flow-board-header-title),
   table.flextable th, tr[style*="background-color:#FFF" i],
   td[style*="background:#eee" i], #mw-searchoptions,
   .mw-advancedSearch-namespace-selection, td[style*="background:#fff2e6" i],
@@ -584,7 +585,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table.infobox.hproduct > tbody > tr[style*="background: #F0F0F0;" i],
   tr[style*="background:#f0f0f0;" i], td[style*="background:lightyellow" i],
   td[style*="background:#eeeeff" i], td[style*="background:#ddddff" i],
-  .oo-ui-buttonElement-button:hover,
+  .oo-ui-buttonElement-button:not(.flow-ui-boardDescriptionWidget-editButton):hover,
   .tracklist tr[style*="background-color:#f7f7f7" i],
   td[style*="background:#F9F9F9" i], th[style*="background:gainsboro" i],
   td[style*="background:gainsboro" i], h2[style*="background:#eeeeee" i],
@@ -595,6 +596,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   tr[style*="background-color:#f7f7f7"],
   .mw-changeslist-line tr.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey td:not(:nth-child(-n+2)) {
     background-color: var(--gray-28) !important;
+  }
+  .flow-ui-boardDescriptionWidget-editButton a.oo-ui-buttonElement-button:hover {
+    background: inherit !important;
   }
   div.barbox > table > tbody > tr > th, .cx-campaign-contributionsmenu li:hover,
   .suggestions-results, .suggestions-special, #mwe-pt-list-more,
@@ -680,7 +684,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .wikEdFrameBodySyntax, #wpTextbox1 {
     background: var(--gray-18);
   }
-  img[src*="Check_mark_23x20_02.svg"] {
+  img[src*="Check_mark_23x20_02.svg"],
+  img[resource*="OOjs_UI_icon_userTalk-ltr.svg"] {
     filter: invert(100%) brightness(80%);
   }
   img[src*="76px-Wikimedia_Research_Newsletter_Logo.png"] {
@@ -742,16 +747,21 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   span[style="color:black"], span[style*="color: black"] {
     color: var(--gray-c) !important;
   }
+  span[style*="color: #000000;"] {
+    color: var(--gray-a) !important;
+  }
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
-    background-color: var(--gray-2);
+    background-color: var(--gray-3);
+  }
+  div[style*="background: #FFF;"] {
+    background: var(--gray-4) !important;
   }
   .mw-ui-icon.mw-ui-icon-before::before, .mw-ui-icon.mw-ui-icon-element::before,
   .mw-parser-output .helpContents-icon, img[src*="9px-AnonEditWarning.svg.png"],
   img[src*="50px-OOjs_UI_icon_speechBubbles-ltr.svg.png"] {
     filter: invert(80%);
   }
-  div > .flow-menu li a,
-  .flow-component.flow-board-page .flow-board-header .side-rail-toggle-button {
+  div > .flow-menu li a {
     background-color: var(--gray-2) !important;
   }
   .mw-mmv-post-image {
@@ -896,7 +906,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--green-1) !important;
     background: var(--green-2) !important;
   }
-  div[style*="background:#E6FFF2"] {
+  div[style*="background:#E6FFF2"], div[style*=";background:#14866d"] {
     background: var(--green-3) !important;
   }
   div[style*="background:#F5FFFA"] {
@@ -982,13 +992,17 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table.ext-status-unknown > tbody > tr.tpl-infobox-header {
     background: var(--gray-5) !important;
   }
+  .flow-topic-titlebar {
+    background: var(--gray-2);
+  }
   /* Blue */
-  div[style*="background"] h2:not([style]),
-  div[style*="background"] h2:not([style]) *, .navbox th, .navbox-title,
-  .navbox-title *, tr[style*="background-color:tan;" i],
-  div[style*="background: #444444;"], div[style*="background: #444444;"] *,
-  ol.references li:target, sup.reference:target, span.citation:target,
-  ol.references li:target *, sup.reference:target *, span.citation:target *,
+  div[style*="background"] h2:not([style]):not(#Before_you_post):not(#Post_a_new_question),
+  div[style*="background"] h2:not([style]):not(#Before_you_post):not(#Post_a_new_question) *,
+  .navbox th, .navbox-title, .navbox-title *,
+  tr[style*="background-color:tan;" i], div[style*="background: #444444;"],
+  div[style*="background: #444444;"] *, ol.references li:target,
+  sup.reference:target, span.citation:target, ol.references li:target *,
+  sup.reference:target *, span.citation:target *,
   td[style*="background:#CEDFF2" i], tr[bgcolor="#CEDFF2" i],
   table[style*="background-color:#cef2e0" i] *,
   div[style*="background-color: #cee0f2" i],
@@ -1089,6 +1103,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background-color: var(--pink-1) !important;
     color: var(--gray-d) !important;
   }
+  /* end pink */
   td[style*="box-shadow: 0px 5px 5px -6px #ccc;"] {
     box-shadow: 0 5px 5px -6px var(--gray-5) !important;
   }
@@ -1109,7 +1124,21 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-widget-calendarWidget-day-today {
     box-shadow: inset 0 0 0 1px var(--base-color);
   }
+  .mw-ui-button.mw-ui-quiet, .mw-ui-button.mw-ui-quiet.mw-ui-progressive,
+  .mw-ui-button.mw-ui-quiet.mw-ui-destructive {
+    background-color: transparent !important;
+    color: var(--gray-a) !important;
+    border-color: transparent !important;
+  }
   /*** Border ***/
+  /* default in some pages is different like 0, but transparent covers more than one case */
+  .oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button,
+  .oo-ui-buttonElement-frameless.oo-ui-labelElement > .oo-ui-buttonElement-button {
+    border-color: transparent !important;
+  }
+  table.wikitable {
+    border: 1px solid var(--gray-5) !important;
+  }
   fieldset, button[type="submit"]:not(.pure-button-primary-progressive),
   .oo-ui-buttonElement-button:focus:not(:active) {
     border-color: var(--base-color) !important;
@@ -1120,7 +1149,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   /* TODO: Sigh! remove these :nots and the div/span etc from here and def not !imporant */
   h2:not([style*="#cef2e0;"]):not([style*="#cedff2;"]):not([style*="#afa3bf;"]),
-  tr:not([style*="border-bottom"]),
+  tr:not([style*="border-bottom"]):not([style*="background: #eaecf0;"]),
   table:not(.hp-portalen):not([style*="background"]):not(.plainlinks),
   div[style*="background-color"], th, td, h1, h3, h4, h5, h6, ul, li, select,
   .mw-body, .toc, .mw-warning, .toccolours, .navbox, .catlinks, table.fmbox,
@@ -1131,7 +1160,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .wikiEditor-ui-toolbar .page-characters div span, .oo-ui-panelLayout-framed,
   .mw-widget-dateInputWidget-handle, .mw-widget-calendarWidget,
   .mw-parser-output .module-shortcutboxplain,
-  .mw-parser-output .module-shortcutlist {
+  .mw-parser-output .module-shortcutlist, .flow-ui-navigationWidget,
+  .wikitable [data-parsoid] {
     border-color: var(--gray-5);
   }
   /* these are OK to be !important soon as a not is needed remove the offending one instead and fix fallback */
@@ -1142,7 +1172,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div[style*="border:1px solid #CCC;"], h2[style*="border:1px solid #ddd;"],
   div[style*="border-bottom: 1px solid #CCC"], .wikiEditor-ui .wikiEditor-ui-top,
   .mw-advancedSearch-fieldContainer fieldset, .editOptions,
-  div#editpage-specialchars {
+  div#editpage-specialchars, .nmbox[style*="border: 1px solid #a2a9b1;"] {
     border-color: var(--gray-5) !important;
   }
   div[style*="border:1px solid #ddd;"] {
@@ -1336,7 +1366,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .wikiEditor-ui-toolbar .booklet .index div, .site-license a:hover {
     color: var(--base-color);
   }
-  .site-license a:hover {
+  .site-license a:hover,
+  .flow-ui-boardDescriptionWidget-editButton .oo-ui-labelElement-label {
     color: var(--base-color) !important;
   }
   #proveit-header button, #proveit-footer button {
@@ -1349,6 +1380,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .wikEdButton, .wikEdButtonDummy, .wikEdButtonChecked, .wikEdButtonUnchecked {
     background-color: transparent;
     filter: invert(100%) hue-rotate(180deg);
+  }
+  .oo-ui-iconElement-icon.oo-ui-icon-edit {
+    filter: grayscale(1) brightness(180%);
   }
   .wikEdButtonChecked {
     border-color: var(--gray-e) var(--gray-1) var(--gray-1) var(--gray-e) !important;
