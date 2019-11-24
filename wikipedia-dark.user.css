@@ -3089,7 +3089,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     background: inherit !important;
   }
 }
-@-moz-document domain("en.wikiversity.org") {
+@-moz-document domain("wikiversity.org") {
   tr + tr > .navbox-abovebelow, tr + tr > .navbox-group, tr + tr > .navbox-image,
   tr + tr > .navbox-list {
     border-top: 2px solid var(--gray-5);
@@ -3172,6 +3172,23 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   }
   .ext-related-articles-card-list h3::after {
     background: none;
+  }
+}
+@-moz-document domain("wikiquote.org") {
+  div[style*="background-color: #f8f8ff"], #mf-qotd > div {
+    background-color: var(--gray-2) !important;
+  }
+  div[style*="border: 2px solid #faf9b2"], .MainPageLetterHead {
+    border-color: var(--gray-5) !important;
+  }
+  div[style*="background-color: #e2e2ff"] {
+    background-color: var(--blue-2) !important;
+  }
+  div[style*="background-color: #e2e2ff"] {
+    background-color: var(--blue-3) !important;
+  }
+  div[style*="background-color: #faf9b2"] {
+    background-color: var(--brown-3) !important;
   }
 }
 @-moz-document domain("outreach.wikimedia.org") {
