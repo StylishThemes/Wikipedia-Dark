@@ -3070,8 +3070,8 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
 }
 @-moz-document domain("www.mediawiki.org") {
   .mw-parser-output .note-info {
-    background-color: var(--green-4);
-    border-color: var(--green-3) !important;
+    background-color: var(--brown-3);
+    border-color: var(--brown-2) !important;
   }
   .navbox.mw-collapsible th[style*="color:"] {
     color: var(--gray-9a) !important; /* make global? */
