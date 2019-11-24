@@ -2457,7 +2457,7 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   .dropdown-menu {
     background-color: var(--gray-2);
     border: 1px solid var(--gray-4);
-    box-shadow: 0 6px 12px var(--blach_17);
+    box-shadow: 0 6px 12px var(--black_17);
   }
   .dropdown-menu .divider {
     background-color: var(--gray-4);
