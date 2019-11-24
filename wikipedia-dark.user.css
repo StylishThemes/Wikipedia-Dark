@@ -2637,6 +2637,15 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   #main_page_mp-mp {
     background-color: transparent !important;
   }
+  #main_page_mp-mp div {
+    background-color: var(--gray-2) !important;
+  }
+  div.NavFrame div.NavHead, details.NavFrame summary.NavHead {
+    background: var(--gray-7);
+  }
+  div.NavFrame div.NavHead:hover, details.NavFrame summary.NavHead:hover {
+    background: var(--gray-9a);
+  }
 }
 @-moz-document domain("www.mediawiki.org") {
   .mw-parser-output .note-info {
