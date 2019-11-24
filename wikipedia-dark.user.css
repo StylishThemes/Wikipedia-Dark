@@ -37,7 +37,7 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document
-regexp("https?:\/\/.+wiki.+org.+") {
+regexp("https?:\/\/.+wik(i|t).+org.+") {
   /* Global color palette */
   :root {
     --base-color: /*[[base-color]]*/;
