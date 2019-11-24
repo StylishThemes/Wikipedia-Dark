@@ -65,15 +65,18 @@ regexp("https?:\/\/.+wiki.+org.+") {
     --gray-9a: #9a9a9a;
     --gray-b9: #b9b9b9;
     --gray-bc: #bcbcbc;
+    --blue: #00f;
     --blue-1: #36c;
     --blue-2: #182030;
     --blue-3: #212c43;
     --blue-4: #3c5487;
+    --red: #f00;
     --red-0: #400;
     --red-1: #c22;
     --red-2: #d33;
     --red-3: #722;
     --red-4: #ff4242;
+    --green: #0f0;
     --green-1: #390;
     --green-2: #165316;
     --green-3: #061;
@@ -93,13 +96,17 @@ regexp("https?:\/\/.+wiki.+org.+") {
     --ores-1: #222800;
     --ores-2: #222000;
     --ores-3: #221800;
+    --black_17: rgba(0, 0, 0, .175);
+    --black_2: rgba(0, 0, 0, .2);
     --black_25: rgba(0, 0, 0, .25);
     --black_5: rgba(0, 0, 0, .5);
     --black_8: rgba(0, 0, 0, .8);
     --gray-2_75: rgba(34, 34, 34, .75);
     --gray-3_5: rgba(51, 51, 51, .5);
     --gray-5_25: rgba(85, 85, 85, .25);
+    --gray-6_5: rgba(100, 100, 100, .5);
     --white_1: rgba(255, 255, 255, .1);
+    --white_25: rgba(255, 255, 255, .25);
     --diff-del: rgba(213, 154, 0, .6);
     --diff-add: rgba(0, 112, 213, .6);
     --revs-old: rgba(255, 204, 51, .5);
@@ -128,6 +135,22 @@ regexp("https?:\/\/.+wiki.+org.+") {
     --bluei-a1: #004e4e;
     --bluei-a2: #05493b;
     --bluei-a3: #1b3a2a;
+    /* WD query service */
+    --cm-1: #27282e;
+    --cm-2: #f9ee98;
+    --cm-3: #fc0;
+    --cm-4: #ca7841;
+    --cm-5: #8da6ce;
+    --cm-6: #607392;
+    --cm-7: #cda869;
+    --cm-8: #8f9d6a;
+    --cm-9: #bd6b18;
+    --cm-10: #f7f7f7;
+    --cm-11: #997643;
+    --cm-12: #d6bb6d;
+    --cm-13: #ff6400;
+    --cm-14: #aeaeae;
+    --cm-15: #ad9361;
   }
 }
 @-moz-document
@@ -2227,7 +2250,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .dropdown-menu {
     background-color: var(--gray-2);
     border: 1px solid var(--gray-4);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px var(--blach_17);
   }
   .dropdown-menu .divider {
     background-color: var(--gray-4);
@@ -2258,7 +2281,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     color: var(--base-color);
   }
   .navbar-brand, .navbar-nav > li > a {
-    text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+    text-shadow: 0 1px 0 var(--white_25);
     color: var(--gray-9a);
   }
   .navbar-default .navbar-nav > li > a:focus,
@@ -2314,8 +2337,8 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .modal-content {
     background-color: var(--gray-1);
     border-color: var(--gray-4);
-    border: 1px solid rgba(0, 0, 0, .2);
-    box-shadow: 0 3px 9px rgba(100, 100, 100, .5);
+    border: 1px solid var(--black_2);
+    box-shadow: 0 3px 9px var(--gray-6_5);
   }
   .nav > li > a:focus, .nav > li > a:hover {
     text-decoration: none;
@@ -2361,8 +2384,8 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .popover {
     background-color: var(--gray-18);
     border-color: var(--gray-4);
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 5px 10px var(--black_2);
+            box-shadow: 0 5px 10px var(--black_2);
   }
   .popover-title {
     background-color: var(--gray-2);
@@ -2401,78 +2424,78 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     font-style: italic;
   }
   .CodeMirror {
-    background: #141414;
+    background: var(--gray-18);
   }
   .CodeMirror-gutters {
-    background: #222;
-    border-right: 1px solid #484848;
+    background: var(--gray-2);
+    border-right: 1px solid var(--gray-4);
   }
   .CodeMirror-guttermarker {
-    color: #fff;
+    color: var(--white);
   }
   .CodeMirror-guttermarker-subtle, .CodeMirror-linenumber {
-    color: #aaa;
+    color: var(--gray-a);
   }
   .CodeMirror-cursor {
-    border-left: 1px solid #fff;
+    border-left: 1px solid var(--white);
   }
   .CodeMirror-activeline-background {
-    background: #27282e;
+    background: var(--cm-1);
   }
   .CodeMirror-matchingbracket {
-    outline: grey solid 1px;
-    color: #fff;
+    outline: 1px solid var(--gray);
+    color: var(--white);
   }
   .cm-keyword {
-    color: #f9ee98;
+    color: var(--cm-2);
   }
   .cm-atom {
-    color: #fc0;
+    color: var(--cm-3);
   }
   .cm-number {
-    color: #ca7841;
+    color: var(--cm-4);
   }
   .cm-def {
-    color: #8da6ce;
+    color: var(--cm-5);
   }
   .cm-variable-2, .cm-variable-3, span.cm-def, span.cm-tag {
-    color: #607392;
+    color: var(--cm-6);
   }
   .cm-builtin, .cm-operator {
-    color: #cda869;
+    color: var(--cm-7);
   }
   .cm-comment {
-    color: #777;
+    color: var(--gray-7);
     font-weight: 400;
   }
   .cm-string {
-    color: #8f9d6a;
+    color: var(--cm-8);
   }
   .cm-string-2 {
-    color: #bd6b18;
+    color: var(--cm-9);
   }
   .cm-meta {
-    background-color: #141414;
-    color: #f7f7f7;
+    background-color: var(--gray-18);
+    color: var(--cm-10);
   }
   .cm-tag {
-    color: #997643;
+    color: var(--cm-11);
   }
   .cm-attribute {
-    color: #d6bb6d;
+    color: var(--cm-12);
   }
   .cm-header {
-    color: #ff6400;
+    color: var(--cm-13);
   }
   .cm-hr {
-    color: #aeaeae;
+    color: var(--cm-14);
   }
   .cm-link {
-    color: #ad9361;
+    color: var(--cm-15);
     text-decoration: none;
   }
   .cm-error {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid var(--red);
   }
 }
 @-moz-document domain("wikipedia.org") {
