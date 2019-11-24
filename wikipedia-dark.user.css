@@ -493,7 +493,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .oo-ui-windowManager-modal > .oo-ui-dialog {
     background-color: var(--gray-3_5);
   }
-  .mw-body-content pre, .mw-body-content code, span.plainlinks,
+  .mw-body-content pre, .mw-body-content code,
   td[style*="border-bottom: 1px solid #eee; background-color:#ffffff"] {
     background-color: var(--gray-1) !important;
     border-color: var(--gray-5) !important;
@@ -1501,6 +1501,14 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .central-textlogo a > img {
     filter: invert(80%);
   }
+  img[src*="61px-Gnome-dialog-question.svg"] {
+    filter: invert(1) hue-rotate(180deg) contrast(111%) brightness(150%);
+  }
+  #helpdeskheader[style*="border: 1px solid #ccc; background-color: #f9f9f9;"],
+  #villagepumpheader[style*="border:1px solid #AAA;background:#F9F9F9"] {
+    border: 1x solid var(--gray-5) !important;
+    background: none !important;
+  }
   .oo-ui-image-progressive.oo-ui-icon-eye, .mw-ui-icon-eye-progressive::before,
   .oo-ui-image-progressive.oo-ui-icon-edit, .mw-ui-icon-edit-progressive::before {
     filter: invert(0);
@@ -1544,6 +1552,10 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   td[style*="background"] {
     background-color: var(--gray-28) !important;
   }
+  div[style*="border-bottom:1px solid; border-bottom-color:#8B0000; background:transparent;"] {
+    border-bottom: 1px solid var(--red-2) !important;
+    background: transparent;
+  }
   .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted.oo-ui-optionWidget-highlighted,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .mw-rcfilters-ui-tagItemWidget-selected.oo-ui-tagItemWidget.oo-ui-widget-enabled,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled,
@@ -1563,6 +1575,17 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   }
   th[style*="background"], .ombox-notice[style*="background"] {
     background-color: var(--gray-3) !important;
+  }
+  td[style="background:#d7e8f9;"] {
+    background: var(--blue-2) !important;
+  }
+  .mw-parser-output a.external {
+    color: #36b;
+  }
+  /* plainlinks a.external is default style and needed */
+  .plainlinks a.external {
+    background: none !important;
+    padding: 0 !important;
   }
   .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted:not(.oo-ui-optionWidget-selected),
   .mw-rcfilters-ui-itemMenuOptionWidget:hover,
@@ -1636,6 +1659,13 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   a, a:not([href]), .last-modified-bar a, .last-modified-bar a:visited,
   .page-summary a h2, .page-summary a h3 {
     color: var(--base-color);
+  }
+  th[style*="color:#244C85;"] {
+    color: var(--base-color) !important;
+  }
+  .messagebox.standard-talk {
+    border: 1px solid var(--brown-1) !important;
+    background: var(--brown-1) !important;
   }
   a.new, a.new:visited, a.new:hover, a.new > *, a.new:visited > *,
   a.new:hover > * {
