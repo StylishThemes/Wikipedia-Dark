@@ -1406,7 +1406,7 @@ regexp("https?://wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
 }
 @-moz-document
-regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|www\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\\.wikimedia)\\.org\\/.+") {
+regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|m\\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\\.m\\.wikimedia)\\.org\\/.+") {
   :root {
     --base-color: /*[[base-color]]*/;
     --visited-color: /*[[visited-color]]*/;
@@ -2165,6 +2165,23 @@ regexp("https?:\\/\\/([\\w\\-]{2,}\\.m\\.(wiki(pedia|books|news|quote|source|ver
   }
   td[style*="#90EE90"] {
     border-color: var(--green-2) !important;
+  }
+}
+@-moz-document domain("m.wikidata.org") {
+  .mw-parser-output .wd-mp-headerimage {
+    filter: invert(100%);
+  }
+  .mw-parser-output .wd-mp-headerbox {
+    background-color: var(--gray-2) !important;
+  }
+  .mw-parser-output .wd-mp-subheader > div {
+    background-color: var(--gray-2);
+  }
+  .mw-parser-output .wd-mp-header {
+    color: var(--gray-c);
+  }
+  .header .branding-box h1, .header .branding-box a {
+    color: var(--gray-9a);
   }
 }
 @-moz-document domain("query.wikidata.org") {
