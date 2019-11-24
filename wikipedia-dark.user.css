@@ -3195,6 +3195,31 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     background-color: var(--brown-3) !important;
   }
 }
+@-moz-document domain("wikibooks.org") {
+  .PrettyTextBox {
+    background-color: var(--gray-3);
+    color: var(--gray-9a);
+  }
+  table[style*="border: 2px solid #ccccff" i] {
+    border-color: var(--blue-2) !important;
+  }
+  td[style*="background:#ccccee" i], th[style*="background-color: #dfefff" i] {
+    background-color: var(--blue-3) !important;
+  }
+  table[style*="border:solid #bbbbbb 1px" i] {
+    border-color: var(--gray-5) !important;
+  }
+  table[style*="background:#eeeeee" i] {
+    background-color: var(--gray-2) !important;
+  }
+  .collapsible[style*="background"] {
+    background-color: var(--gray-3) !important;
+  }
+  .collapsible .title, .collapsible tr:first-child th,
+  .collapsible tr:first-child td {
+    color: var(--gray-9a);
+  }
+}
 @-moz-document domain("outreach.wikimedia.org") {
   div[style*="background-color: whiteSmoke;"] {
     background-color: var(--gray-28) !important;
