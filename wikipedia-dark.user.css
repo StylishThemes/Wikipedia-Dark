@@ -544,7 +544,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--brown-2);
     background-color: var(--brown-3);
   }
-  table:not([style*="background-color:transparent"]):not(.vertical-navbox):not([style*="#F5FAFF"]):not([style*="background color:transparent"]):not(#cite-err-report):not(.tmbox-notice):not([style*="background:transparent"]):not([style*="f5faff"]):not(.messagebox),
+  table:not([style*="background-color:transparent"]):not(.vertical-navbox):not([style*="#F5FAFF"]):not([style*="background color:transparent"]):not(#cite-err-report):not(.tmbox-notice):not([style*="background:transparent"]):not([style*="f5faff"]):not(.messagebox):not(#sisterwikis),
   button, select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"],
   #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]):not([style*="F5FAFF"]):not([style*="A3B1BF"]),
@@ -747,6 +747,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   .mw-editfont-monospace {
     background-color: var(--gray-2);
+    color: var(--gray-9a);
+  }
+  .mw-parser-output .mainpage-welcome-slogan {
     color: var(--gray-9a);
   }
   .mw-body pre, .mw-body code, .mw-body .mw-code {
@@ -954,6 +957,14 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-plusminus-pos {
     color: var(--green-1) !important;
   }
+  .mw-parser-output .mainpage-box-green,
+  .mw-parser-output .mainpage-box-green .mainpage-box-seealso {
+    border-color: var(--green-1);
+  }
+  table[style*="border: #9BF solid 1px; background: #F1F8F1;"] {
+    border-color: var(--green-2) !important;
+    background: var(--green-4) !important;
+  }
   div[style*="background:#CEF2E0"] {
     border-color: var(--green-1) !important;
     background: var(--green-2) !important;
@@ -1065,6 +1076,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .flow-topic-titlebar {
     background: var(--gray-2);
   }
+  div[style*="border:0 solid #CCC; background:#FFF;"] {
+    background: var(--gray-28) !important;
+  }
   u[style*="color:#087643;font-face:arial;text-shadow:gray 0.2em 0.2em 0.4em;"] {
     color: var(--green-1) !important;
     text-shadow: none !important;
@@ -1089,6 +1103,14 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   tr[style*="background-color:#E1E9F3" i], th[style*="background:#d1dbdf" i],
   td[style*="background:#e6f2ff" i], td[style*="background:#F5FAFF;" i] {
     background-color: var(--blue-2) !important;
+  }
+  .mw-parser-output .mainpage-box-blue,
+  .mw-parser-output .mainpage-box-blue .mainpage-box-seealso {
+    border-color: var(--blue-1);
+  }
+  table[style*="border:2px solid #48d;background:#fbfcff;color:#222;"] {
+    border-color: var(--blue-4) !important;
+    background-color: var(--gray-2) !important;
   }
   div[style*="border-bottom:2px solid #FFFFFF; padding:0.1em; background-color:#E6FFF2;"],
   div[style*="border-bottom: 1px solid #abd5f5; background-color: #d0e5f5;"] {
@@ -1179,6 +1201,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div[style*="border-right:1px solid #FFFFFF; padding:0.1em; background-color:#FAF5FF"] {
     background: var(--purple-d) !important;
     border-color: var(--purple-d) !important;
+  }
+  table[style*="border:2px solid #93c;color:#222;"] {
+    border-color: var(--purple-2) !important;
   }
   div[style*="border-bottom:2px solid #FFFFFF; padding:0.1em; background-color:#F2E6FF;"] {
     background: var(--purple-1) !important;
@@ -1343,7 +1368,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table[style*="border:1px solid #AAA;background:#F9F9F9"],
   table[style*="border: 1px solid Silver;"],
   table[style*="border: 1px solid #ccc;"],
-  table[style*="border: 1px solid #cccccc;"] {
+  table[style*="border: 1px solid #cccccc;"],
+  div[style*="border-top:3px double #CCC;"],
+  table[style*="border: 1px solid #808080;"] {
     border-color: var(--gray-5) !important;
   }
   #specialchars button {
@@ -2341,8 +2368,13 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .mw-parser-output .mainpage-welcome-sitename {
     color: var(--gray-91);
   }
+  /* this isnt actually orange in default */
   .mw-parser-output .mainpage-box-orange .mainpage-box-title {
-    background-color: var(--orange-1);
+    background-color: var(--brown-2);
+  }
+  .mw-parser-output .mainpage-box-orange,
+  .mw-parser-output .mainpage-box-orange .mainpage-box-seealso {
+    border-color: var(--brown-2);
   }
   .mw-parser-output .mainpage-box-green .mainpage-box-title {
     background-color: var(--green-2);
