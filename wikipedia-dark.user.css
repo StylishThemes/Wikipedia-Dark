@@ -539,10 +539,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--brown-2);
     background-color: var(--brown-3);
   }
-  table:not([style="background-color:transparent"]):not(.vertical-navbox),
+  table:not([style*="background-color:transparent"]):not(.vertical-navbox):not([style*="#F5FAFF"]):not([style*="background color:transparent"]):not(#cite-err-report):not(.tmbox-notice):not([style*="background:transparent"]),
   button, select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"],
-  #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]),
+  #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]):not([style*="F5FAFF"]):not([style*="A3B1BF"]),
   .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *,
   .wikiEditor-ui, .mw-search-results li,
@@ -622,6 +622,12 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   .uls-ime-more-settings-link:hover {
     filter: brightness(130%);
+  }
+  .ui-state-hover, .ui-widget-content .ui-state-hover,
+  .ui-widget-header .ui-state-hover, .ui-state-focus,
+  .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border: 1px solid var(--gray-4) !important;
+    background: var(--gray-5);
   }
   .client-js .mw-ui-radio:not(#noop) [type="radio"]:enabled:checked + label::before {
     border-color: var(--base-color);
@@ -1046,6 +1052,26 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background: var(--blue-3) !important;
     color: var(--gray-d) !important;
   }
+  a > b > span[style*="background:#00CCFF"] {
+    background: var(--blue-4) !important;
+    color: var(--gray-d) !important;
+  }
+  table[style*="background:#F5FAFF;"] {
+    background: var(--blue-2) !important;
+    border-color: var(--blue-4) !important;
+  }
+  div[style*="border-bottom:1px solid #A3B1BF;"] {
+    border-bottom: 1px solid var(--blue-1) !important;
+    background: var(--blue-3) !important;
+  }
+  div[style*="background:#CEE0F2"] {
+    border-bottom: 1px solid var(--blue-4) !important;
+  }
+  div[style*="border-bottom:0px solid #A3B1BF"] {
+    background: var(--blue-2) !important;
+    border-color: var(--blue-4) !important;
+    color: var(--gray-9a) !important;
+  }
   div[style*="background: #e7eff5; border: 1px solid #a1cef5;"],
   div[style*="border:1px solid #C8D0DC;background:#E8F1FF"] {
     background: var(--blue-2) !important;
@@ -1094,7 +1120,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   /* Brown */
   #btn_opisy_zm_waxon_off, tr[style="background-color:#FFFFAA"],
-  div[style*="background:#FFF4B8;border:1px solid #AAA;"] {
+  div[style*="background:#FFF4B8;border:1px solid #AAA;"],
+  table[style*="border:1px solid #A9A9A9; background-color:#FFEFD5;"] {
     background-color: var(--brown-3) !important;
     border-color: var(--brown-2) !important;
   }
@@ -1112,7 +1139,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background-color: var(--brown-3) !important;
     border-color: var(--brown-2) !important;
   }
-  td.assess-start[style*="background: #FFAA66;"] {
+  td.assess-start[style*="background: #FFAA66;"],
+  a > b[style="background:#FAFAD2;color:#C08000"] {
     background: var(--brown-2) !important;
   }
   #mp-center #mp-tfl-h2, #mp-center #mp-tfl-h2 span, .table-partial,
@@ -1413,6 +1441,11 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   .oo-ui-iconElement-icon.oo-ui-icon-edit {
     filter: grayscale(1) brightness(180%);
+  }
+  img[src*="P_literature.svg"], img[src*="Portal-puzzle.svg"],
+  img[src*="C_Puzzle.png"], img[src*="Wikipedia%27s_W.svg"] {
+    background: transparent !important;
+    filter: invert(1) hue-rotate(180deg) contrast(84%);
   }
   .wikEdButtonChecked {
     border-color: var(--gray-e) var(--gray-1) var(--gray-1) var(--gray-e) !important;
