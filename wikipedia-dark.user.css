@@ -277,7 +277,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   a:hover,
   a:not(.link-box):hover span:not(.oo-ui-labelElement-label):not([class*="other-project-"]):not([class*="help"]):not([style*="8DB"]),
-  #toc a:hover, #toc a:hover span, .suggestions-result .highlight,
+  #toc a:hover, .suggestions-result .highlight,
   .suggestions-special .special-query {
     color: var(--white) !important;
   }
@@ -300,7 +300,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
     background-color: var(--gray-2f) !important;
   }
-  .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th {
+  .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th:not([style*="transparent"]) {
     background-color: var(--gray-3) !important;
   }
   .oo-ui-toolbar-bar, .oo-ui-window-head, .oo-ui-window-foot,
@@ -553,7 +553,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--brown-2);
     background-color: var(--brown-3);
   }
-  table:not([style*="background-color:transparent"]):not(.vertical-navbox):not([style*="#F5FAFF"]):not([style*="background color:transparent"]):not(#cite-err-report):not(.tmbox-notice):not([style*="background:transparent"]):not([style*="f5faff"]):not(.messagebox):not(#sisterwikis),
+  table:not([style*="background-color:transparent"]):not(.vertical-navbox):not([style*="#F5FAFF"]):not([style*="background color:transparent"]):not(#cite-err-report):not(.tmbox-notice):not([style*="background:transparent"]):not([style*="f5faff"]):not(.messagebox):not(#sisterwikis):not([class*="Caution"]):not(.tmbox-style),
   button, select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"],
   #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]):not([style*="F5FAFF"]):not([style*="A3B1BF"]):not([style*="fff5fa"]):not([style*="faf5ff"]),
@@ -583,7 +583,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   th[style*="border-bottom: 1px solid #eee; background-color:#ffffff;"],
   .table-na[style*="background:#ececec;"], #js-lang-lists .text, div.arcProg,
   .infoboks.biografi tr.overskrift th, .infoboks tr.rad td,
-  .infoboks tr.bilde td, .infoboks tr.overskrift td {
+  .infoboks tr.bilde td, .infoboks tr.overskrift td,
+  table[style*="background:#f9f9f9;"] {
     background-color: var(--gray-2) !important;
   }
   body .ui-button, caption[style*="background-color:#f2f2f2"],
@@ -785,7 +786,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
     background-color: var(--gray-3);
   }
-  div[style*="background: #FFF;"] {
+  div[style*="background: #FFF;"], div[style*="background:gainsboro;"] {
     background: var(--gray-4) !important;
   }
   .mw-ui-icon.mw-ui-icon-before::before, .mw-ui-icon.mw-ui-icon-element::before,
@@ -850,6 +851,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div[style*="background-color:white; border"] {
     background-color: transparent !important;
     border: 1px solid var(--green-3) !important;
+  }
+  .mw-highlight .gh {
+    color: var(--cm-5) !important;
   }
   /* ORES highlight colors */
   .mw-rcfilters-ui-highlights-color-none {
@@ -1107,8 +1111,12 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div[style*="background-color: #cedff2" i], div[role="region"] h2,
   tr[style*="background-color: #cedff2" i], td[bgcolor*="#f0f0ff" i],
   tr[style*="background-color:#E1E9F3" i], th[style*="background:#d1dbdf" i],
-  td[style*="background:#e6f2ff" i], td[style*="background:#F5FAFF;" i] {
+  td[style*="background:#e6f2ff" i], td[style*="background:#F5FAFF;" i],
+  table[style*="background:#f5faff;"] {
     background-color: var(--blue-2) !important;
+  }
+  .vertical-navbox th[style*="background:#cee0f2;"] {
+    background: var(--blue-3) !important;
   }
   .mw-parser-output .mainpage-box-blue,
   .mw-parser-output .mainpage-box-blue .mainpage-box-seealso {
@@ -1365,7 +1373,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-parser-output .community-tabs td,
   .mw-parser-output .community-page-wrapper, .wikitable > tr > th,
   .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td,
-  #specialchars, .bookshelf {
+  #specialchars, .bookshelf, table.ombox-notice {
     border-color: var(--gray-5);
   }
   /* these are OK to be !important soon as a not is needed remove the offending one instead and fix fallback */
@@ -1383,7 +1391,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table[style*="border: 1px solid #ccc;"],
   table[style*="border: 1px solid #cccccc;"],
   div[style*="border-top:3px double #CCC;"],
-  table[style*="border: 1px solid #808080;"] {
+  table[style*="border: 1px solid #808080;"],
+  td[style*="border-bottom:1px solid #aaa;"],
+  .vertical-navbox td[style*="border-bottom:1px solid;"],
+  div[style*="border: 1px solid #aaa;"] {
     border-color: var(--gray-5) !important;
   }
   .bookshelf {
@@ -1531,6 +1542,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border: 1px solid var(--gray-4) !important;
     margin: -1px !important;
   }
+  tr + tr > .navbox-abovebelow, tr + tr > .navbox-group, tr + tr > .navbox-image,
+  tr + tr > .navbox-list {
+    border-top: 2px solid var(--gray-2);
+  }
   /*** Text ***/
   .wikitable tr:not([style*="color:black" i]) th:not([style*="color: black" i]):not([style*="FF"]):not([style*="77"]),
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i] > td > *,
@@ -1586,7 +1601,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .wikEdConsoleWrapper, .wikiEditor-ui-toolbar .group .tool-select {
     background-color: var(--gray-2);
   }
-  #proveit {
+  #proveit, ul[style*="background:#f9f9f9"] {
     background-color: var(--gray-2) !important;
   }
   .wikEdButtonBarButtonsWrapperVisible, .wikEdButtonBarButtonsWrapperHidden,
