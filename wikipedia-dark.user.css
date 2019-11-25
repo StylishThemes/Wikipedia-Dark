@@ -2966,12 +2966,12 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   #p-logo a::before {
     background-position: center 0 !important;
-    filter: brightness(60.5%) !important;
+    filter: brightness(90.5%) !important;
     height: 108px !important;
   }
   #p-logo a::after {
     background-position: center -108px !important;
-    filter: invert(60.5%) !important;
+    filter: invert(90.5%) !important;
     height: 47px !important;
   }
   /* Article assessment colors */
