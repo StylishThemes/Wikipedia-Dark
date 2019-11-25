@@ -84,10 +84,12 @@ regexp("https?:\/\/.+wik(i|t).+org.+") {
     --brown-1: #321;
     --brown-2: #542;
     --brown-3: #261d08;
+    --brown-4: #4b380d;
     --yellow-1: #b28200;
     --yellow-2: #ffdd7f;
     --orange-1: #e53e00;
     --orange-2: #e08b26;
+    --purple-d: #241738;
     --purple-0: #312641;
     --purple-1: #382b4a;
     --purple-2: #768;
@@ -900,6 +902,14 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   #p-personal a.new {
     color: var(--red-1) !important;
   }
+  div[style*="border-right:1px solid #FFFFFF; padding:0.1em; background-color:#FFFAF5"] {
+    background: var(--red-0) !important;
+    border-color: var(--red-0) !important;
+  }
+  div[style*="border-bottom:2px solid #FFFFFF; padding:0.1em; background-color:#FFF2E6;"] {
+    background: var(--red-3) !important;
+    border-color: var(--red-3) !important;
+  }
   th[style="color:white;background:red"],
   caption[style="color:white;background:red"] {
     background: var(--red-2) !important;
@@ -971,6 +981,14 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div[style*="border:1px solid #A3BFB1; background-color:#E6FFF2;"] {
     background: var(--green-2) !important;
     border-color: var(--green-1) !important;
+  }
+  div[style*="border-bottom:2px solid #FFFFFF; padding:0.1em; background-color:#E0F2CE;"] {
+    background: var(--green-2) !important;
+    border-color: var(--green-2) !important;
+  }
+  div[style="float:left; box-sizing:border-box; margin:0.2em 0; width:50%; border-left:1px solid #FFFFFF; border-right:1px solid #FFFFFF; padding:0.1em; background-color:#F2FFE6"] {
+    background: var(--green-4) !important;
+    border-color: var(--green-4) !important;
   }
   th[style="color:white;background:green"],
   caption[style="color:white;background:green"] {
@@ -1055,7 +1073,17 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   td[style*="background:#e6f2ff" i], td[style*="background:#F5FAFF;" i] {
     background-color: var(--blue-2) !important;
   }
-  div[style*="background-color:#f5faff;"] {
+  div[style*="border-bottom:2px solid #FFFFFF; padding:0.1em; background-color:#E6FFF2;"] {
+    background: var(--blue-3) !important;
+    border-color: var(--blue-3) !important;
+  }
+  div[style*="border-right:1px solid #FFFFFF; padding:0.1em; background-color:#F5FFFA"] {
+    background: var(--blue-2) !important;
+    border-color: var(--blue-2) !important;
+  }
+  div[style*="background-color:#f5faff;"],
+  td[style*="border:1px solid #A3B1BF; background-color:#eaf3ff;"],
+  td[style*="border:1px solid #A3B1BF; background-color:#E6F2FF"] {
     background-color: var(--blue-3) !important;
     border-color: var(--blue-4) !important;
   }
@@ -1079,7 +1107,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table[style*="background-color:#f5faff;border:1px solid #cedff2;"],
   .infobox[style*="background-color:#f5faff;border:1px solid #cedff2;"],
   div[style*="border:1px solid #cedff2; padding:0.7em 0.5em; background-color: #f8f9fa;"],
-  div[style*="border:2px solid #cedff2; background-color:#f5faff"] {
+  div[style*="border:2px solid #cedff2; background-color:#f5faff"],
+  div[style*="border:1px solid #A3B1BF; padding:5px; background-color:#F5FAFF;"] {
     background: var(--blue-2) !important;
     border-color: var(--blue-4) !important;
   }
@@ -1129,6 +1158,14 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border: 1px solid var(--blue-1) !important;
   }
   /* Purple */
+  div[style*="border-right:1px solid #FFFFFF; padding:0.1em; background-color:#FAF5FF"] {
+    background: var(--purple-d) !important;
+    border-color: var(--purple-d) !important;
+  }
+  div[style*="border-bottom:2px solid #FFFFFF; padding:0.1em; background-color:#F2E6FF;"] {
+    background: var(--purple-1) !important;
+    border-color: var(--purple-1) !important;
+  }
   div[style*="border:1px solid #ADF;background:#EEF;"] {
     background-color: var(--purple-0) !important;
     border-color: var(--purple-2) !important;
@@ -1153,6 +1190,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background-color: var(--brown-3) !important;
     border-color: var(--brown-2) !important;
   }
+  div[style*="background-color: #FFFFCC; border: 1px solid #FFCC00;"] {
+    background-color: var(--brown-4) !important;
+    border-color: var(--brown-4) !important;
+  }
   th[style="background:#ffdead;"] {
     background: var(--brown-1) !important;
   }
@@ -1160,7 +1201,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background-color: var(--brown-3);
     border-color: var(--brown-2);
   }
-  table.tmbox-protection, html table.tmbox-notice {
+  table.tmbox-protection, html table.tmbox-notice,
+  div[style*="border-bottom: 1px solid #c0c090;"] {
     border-color: var(--brown-2) !important;
   }
   html table.tmbox, .tmbox.tmbox-notice table[style*="background:transparent;"] {
@@ -1246,7 +1288,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .wikitable [data-parsoid], .mw-parser-output .wiki-template-infocard,
   .mw-parser-output .mainpage_box, .mw-parser-output .mainpage_box .items,
   div[style*="border:1px solid #A3BFB1 solid;"], .ui-widget-content,
-  .mw-rcfilters-ui-datePopupWidget {
+  .mw-rcfilters-ui-datePopupWidget, table.ombox-protection {
     border-color: var(--gray-5);
   }
   /* these are OK to be !important soon as a not is needed remove the offending one instead and fix fallback */
@@ -1620,8 +1662,12 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background-color: transparent !important;
   }
   img[src*="Portal.svg"], img[src*="Information.svg"],
-  img[src*="Global_thinking.svg"], img[src*="Clipboard.svg"] {
+  img[src*="Global_thinking.svg"], img[src*="Clipboard.svg"],
+  img[src*="Darkgreen_flag_waving.svg"] {
     filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(102%);
+  }
+  img[src*="Newspaper_Cover.svg"], img[src*="Cscr-former.svg"] {
+    filter: invert(100%) hue-rotate(180deg) brightness(250%) contrast(210%);
   }
   .oo-ui-pendingElement-pending {
     background-color: var(--gray-1);
