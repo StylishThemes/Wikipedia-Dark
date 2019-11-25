@@ -1087,7 +1087,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background-color: var(--blue-3) !important;
     border-color: var(--blue-4) !important;
   }
-  div[style*="border:1px solid #cedff2;"] {
+  div[style*="border:1px solid #cedff2;"],
+  .infobox tr[style="background-color:#cedff2"],
+  div.plainlinks[style*="background-color:#cedff2;"] {
     border-color: var(--blue-4) !important;
   }
   th[style="color:white;background:blue"],
@@ -1098,10 +1100,6 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   a > b > span[style*="background:#00CCFF"] {
     background: var(--blue-4) !important;
     color: var(--gray-d) !important;
-  }
-  .infobox tr[style="background-color:#cedff2"],
-  div.plainlinks[style*="background-color:#cedff2;"] {
-    background: var(--blue-4) !important;
   }
   table[style*="background:#F5FAFF;"], div[style*="background-color:#f8f9fa;"],
   table[style*="background-color:#f5faff;border:1px solid #cedff2;"],
