@@ -462,7 +462,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .uls-input-settings-no-inputmethods, .languagesettings-menu .menu-section,
   .settings-title, #languagesettings-settings-panel, legend, .vertical-navbox th,
   .wikiEditor-ui-toolbar .group .label, .flow-topic-meta,
-  .mw-parser-output .chatheader-description {
+  .mw-parser-output .chatheader-description, .ui-widget-content,
+  span.mw-redirectedfrom, span.subpages {
     color: var(--gray-9a);
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled:not(.oo-ui-tagItemWidget-fixed) {
@@ -483,7 +484,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--base-color);
     box-shadow: inset 0 0 0 1px var(--base-color);
   }
-  .languagesettings-menu .menu-section.active {
+  .languagesettings-menu .menu-section.active, .ui-widget-header {
     color: var(--gray-a);
   }
   /* this is a hack for the display/keybord svg cause both use same selectors,
@@ -623,6 +624,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .uls-ime-more-settings-link:hover {
     filter: brightness(130%);
   }
+  body .ui-dialog .ui-icon-closethick {
+    filter: invert(1) brightness(80%);
+  }
   .ui-state-hover, .ui-widget-content .ui-state-hover,
   .ui-widget-header .ui-state-hover, .ui-state-focus,
   .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
@@ -761,7 +765,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   span[style="color:black"], span[style*="color: black"] {
     color: var(--gray-c) !important;
   }
-  span[style*="color: #000000;"] {
+  span[style*="color: #000000;"], .wikiEditor-ui-toolbar .page-table td {
     color: var(--gray-a) !important;
   }
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
@@ -819,11 +823,12 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-rcfilters-ui-changesListWrapperWidget .mw-changeslist-legend {
     border-color: var(--gray-4) !important;
   }
-  .oo-ui-tagItemWidget {
+  .oo-ui-tagItemWidget, .wikiEditor-ui-toolbar .page-table td {
     border-color: var(--gray-5);
   }
   .mw-rcfilters-ui-filterTagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle,
-  .mw-rcfilters-ui-filterTagMultiselectWidget-views-select-widget.oo-ui-widget {
+  .mw-rcfilters-ui-filterTagMultiselectWidget-views-select-widget.oo-ui-widget,
+  .ui-dialog {
     border-color: var(--gray-4);
   }
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
@@ -1216,7 +1221,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-parser-output .module-shortcutboxplain,
   .mw-parser-output .module-shortcutlist, .flow-ui-navigationWidget,
   .wikitable [data-parsoid], .mw-parser-output .wiki-template-infocard,
-  .mw-parser-output .mainpage_box, .mw-parser-output .mainpage_box .items {
+  .mw-parser-output .mainpage_box, .mw-parser-output .mainpage_box .items,
+  div[style*="border:1px solid #A3BFB1 solid;"], .ui-widget-content,
+  .mw-rcfilters-ui-datePopupWidget {
     border-color: var(--gray-5);
   }
   /* these are OK to be !important soon as a not is needed remove the offending one instead and fix fallback */
@@ -1227,7 +1234,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div[style*="border:1px solid #CCC;"], h2[style*="border:1px solid #ddd;"],
   div[style*="border-bottom: 1px solid #CCC"], .wikiEditor-ui .wikiEditor-ui-top,
   .mw-advancedSearch-fieldContainer fieldset, .editOptions,
-  div#editpage-specialchars, .nmbox[style*="border: 1px solid #a2a9b1;"] {
+  div#editpage-specialchars, .nmbox[style*="border: 1px solid #a2a9b1;"],
+  div[style*="border:solid #aaa 1px"] {
     border-color: var(--gray-5) !important;
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled:hover {
@@ -1563,19 +1571,34 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .oo-ui-dropdownWidget.oo-ui-widget-enabled.oo-ui-dropdownWidget-open .oo-ui-dropdownWidget-handle {
     background-color: var(--gray-3);
   }
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button {
+    background-color: var(--base-color) !important;
+    border-color: var(--base-color) !important;
+  }
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button:hover {
+    background-color: var(--base-color) !important;
+    border-color: var(--base-color) !important;
+  }
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button .oo-ui-labelElement-label {
+    color: var(--gray-e) !important;
+  }
   /*** invert images ***/
   img[title="Wikipedia"], .bookshelf-container .bookend,
   img.mwe-math-fallback-image-inline, #mw-wsmfinal-close,
   img[src*="Speaker_Icon"], .infobox img[alt*="structure"][src*=".svg"],
   img[src*=".svg"][height="16"], img[src*=".svg"][height="17"],
   img[src*=".svg"][height="18"], #gtx-host, .jfk-bubble-closebtn,
-  .oo-ui-iconElement-icon:not(.oo-ui-image-progressive), .RTsettings,
-  #pt-notifications-notice .mw-echo-notifications-badge,
+  .oo-ui-iconElement-icon:not(.oo-ui-image-progressive):not(.oo-ui-icon-stop),
+  .RTsettings, #pt-notifications-notice .mw-echo-notifications-badge,
   #pt-notifications-alert .mw-echo-notifications-badge,
   img.mwe-math-fallback-image-display, #cnotice-toggle-icon {
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
     background-color: transparent !important;
+  }
+  img[src*="Portal.svg"], img[src*="Information.svg"],
+  img[src*="Global_thinking.svg"], img[src*="Clipboard.svg"] {
+    filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(102%);
   }
   .oo-ui-pendingElement-pending {
     background-color: var(--gray-1);
@@ -1587,7 +1610,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     filter: invert(60.5%) !important;
   }
   .mw-ui-icon-popups-close::before, .mw-ui-icon-footer::before,
-  .oo-ui-iconElement-icon:not(.oo-ui-image-progressive) {
+  .oo-ui-iconElement-icon:not(.oo-ui-image-progressive):not(.oo-ui-icon-stop) {
     filter: invert(86.5%) !important;
   }
   .central-featured-logo {
