@@ -793,10 +793,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   img[src*="50px-OOjs_UI_icon_speechBubbles-ltr.svg.png"] {
     filter: invert(80%);
   }
-  div > .flow-menu li a {
-    background-color: var(--gray-2) !important;
-  }
-  .mw-mmv-post-image {
+  div > .flow-menu li a, .mw-mmv-post-image {
     background-color: var(--gray-2) !important;
   }
   .mw-mmv-download-button, .mw-mmv-reuse-button, .mw-mmv-options-button,
