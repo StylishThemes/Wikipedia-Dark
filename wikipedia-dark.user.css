@@ -452,6 +452,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   .tool.oo-ui-buttonElement-frameless.oo-ui-iconElement:hover {
     outline: 1px solid var(--base-color);
+    background-color: inherit !important;
   }
   /* fix clipping to right default is margin: 0; */
   .tool.oo-ui-buttonElement-frameless.oo-ui-iconElement {
@@ -543,7 +544,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--brown-2);
     background-color: var(--brown-3);
   }
-  table:not([style*="background-color:transparent"]):not(.vertical-navbox):not([style*="#F5FAFF"]):not([style*="background color:transparent"]):not(#cite-err-report):not(.tmbox-notice):not([style*="background:transparent"]):not([style*="f5faff"]),
+  table:not([style*="background-color:transparent"]):not(.vertical-navbox):not([style*="#F5FAFF"]):not([style*="background color:transparent"]):not(#cite-err-report):not(.tmbox-notice):not([style*="background:transparent"]):not([style*="f5faff"]):not(.messagebox),
   button, select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"],
   #mw-content-text div[style*="background:"]:not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]):not([style*="F5FAFF"]):not([style*="A3B1BF"]),
@@ -1068,6 +1069,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     color: var(--green-1) !important;
     text-shadow: none !important;
   }
+  .messagebox {
+    background: var(--gray-2);
+    border-color: var(--gray-5) !important;
+  }
   /* Blue */
   div[style*="background"]:not(.boilerplate) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question),
   div[style*="background"]:not(.boilerplate) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question) *,
@@ -1085,11 +1090,13 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   td[style*="background:#e6f2ff" i], td[style*="background:#F5FAFF;" i] {
     background-color: var(--blue-2) !important;
   }
-  div[style*="border-bottom:2px solid #FFFFFF; padding:0.1em; background-color:#E6FFF2;"] {
+  div[style*="border-bottom:2px solid #FFFFFF; padding:0.1em; background-color:#E6FFF2;"],
+  div[style*="border-bottom: 1px solid #abd5f5; background-color: #d0e5f5;"] {
     background: var(--blue-3) !important;
     border-color: var(--blue-3) !important;
   }
-  div[style*="border-right:1px solid #FFFFFF; padding:0.1em; background-color:#F5FFFA"] {
+  div[style*="border-right:1px solid #FFFFFF; padding:0.1em; background-color:#F5FFFA"],
+  td[style*="border: 1px solid #abd5f5; background-color: #f1f5fc;"] {
     background: var(--blue-2) !important;
     border-color: var(--blue-2) !important;
   }
@@ -1185,7 +1192,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div.boilerplate[style*="background-color: #edeaff;"] h2 * {
     background-color: var(--purple-d) !important;
   }
-  div[style*="border:1px solid #ADF;background:#EEF;"] {
+  div[style*="border:1px solid #ADF;background:#EEF;"],
+  th[style*="border: 1px dashed blue; background: #eef;"] {
     background-color: var(--purple-0) !important;
     border-color: var(--purple-2) !important;
   }
@@ -1205,7 +1213,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   /* Brown */
   #btn_opisy_zm_waxon_off, tr[style="background-color:#FFFFAA"],
   div[style*="background:#FFF4B8;border:1px solid #AAA;"],
-  table[style*="border:1px solid #A9A9A9; background-color:#FFEFD5;"] {
+  table[style*="border:1px solid #A9A9A9; background-color:#FFEFD5;"],
+  .messagebox.standard-talk {
     background-color: var(--brown-3) !important;
     border-color: var(--brown-2) !important;
   }
@@ -1224,7 +1233,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div[style*="border-bottom: 1px solid #c0c090;"] {
     border-color: var(--brown-2) !important;
   }
-  html table.tmbox, .tmbox.tmbox-notice table[style*="background:transparent;"] {
+  html table.tmbox, .tmbox.tmbox-notice table[style*="background:transparent;"],
+  td[style*="border: 1px solid #fad67d; background-color: #faf6ed;"] {
     background-color: var(--brown-3) !important;
     border-color: var(--brown-2) !important;
   }
@@ -1235,6 +1245,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   #mp-center #mp-tfl-h2, #mp-center #mp-tfl-h2 span, .table-partial,
   tr[style*="background:orange" i], td[style*="background:#ffd" i] {
     background-color: var(--brown-1) !important;
+  }
+  div[style*="border-bottom: 1px solid #fad67d; background-color: #faecc8;"] {
+    background-color: var(--brown-2) !important;
+    border-color: var(--brown-2) !important;
   }
   /* pink */
   .MainPageBG[style*="border:1px solid #f2cedd; background:#fff5fa;"],
@@ -1276,7 +1290,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   /*** Border ***/
   /* default in some pages is different like 0, but transparent covers more than one case */
   .oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button,
-  .oo-ui-buttonElement-frameless.oo-ui-labelElement > .oo-ui-buttonElement-button {
+  .oo-ui-buttonElement-frameless.oo-ui-labelElement > .oo-ui-buttonElement-button,
+  .navbox-list {
     border-color: transparent !important;
   }
   table.wikitable {
@@ -1311,7 +1326,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-rcfilters-ui-datePopupWidget, table.ombox-protection,
   .mw-parser-output .community-tabs td,
   .mw-parser-output .community-page-wrapper, .wikitable > tr > th,
-  .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td {
+  .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td,
+  #specialchars {
     border-color: var(--gray-5);
   }
   /* these are OK to be !important soon as a not is needed remove the offending one instead and fix fallback */
@@ -1325,8 +1341,20 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div#editpage-specialchars, .nmbox[style*="border: 1px solid #a2a9b1;"],
   div[style*="border:solid #aaa 1px"], table[style*="border:1px solid #aaa;"],
   table[style*="border:1px solid #AAA;background:#F9F9F9"],
-  table[style*="border: 1px solid Silver;"] {
+  table[style*="border: 1px solid Silver;"],
+  table[style*="border: 1px solid #ccc;"],
+  table[style*="border: 1px solid #cccccc;"] {
     border-color: var(--gray-5) !important;
+  }
+  #specialchars button {
+    background: var(--gray-3) !important;
+    border-color: var(--gray-5) !important;
+    color: var(--gray-9a) !important;
+  }
+  #specialchars button:hover {
+    background: var(--gray-2) !important;
+    border-color: var(--base-color) !important;
+    color: var(--gray-a) !important;
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled:hover {
     border-color: var(--gray-69) !important;
@@ -1452,6 +1480,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   div.vectorTabs li.selected, .client-js #preftoc li.selected {
     border-bottom: 1px solid var(--orange-2) !important;
+  }
+  .oo-ui-window-content.oo-ui-messageDialog-content {
+    border: 1px solid var(--gray-4) !important;
+    margin: -1px !important;
   }
   /*** Text ***/
   .wikitable tr:not([style*="color:black" i]) th:not([style*="color: black" i]):not([style*="FF"]):not([style*="77"]),
@@ -1688,11 +1720,15 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   img[src*="Portal.svg"], img[src*="Information.svg"],
   img[src*="Global_thinking.svg"], img[src*="Clipboard.svg"],
-  img[src*="Darkgreen_flag_waving.svg"] {
+  img[src*="Darkgreen_flag_waving.svg"],
+  img[src*="Replacement_filing_cabinet.svg"] {
     filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(102%);
   }
   img[src*="Newspaper_Cover.svg"], img[src*="Cscr-former.svg"] {
     filter: invert(100%) hue-rotate(180deg) brightness(250%) contrast(210%);
+  }
+  img[src*="Emblem-important.svg"] {
+    filter: invert(90%) hue-rotate(180deg) brightness(140%) contrast(200%);
   }
   .oo-ui-pendingElement-pending {
     background-color: var(--gray-1);
