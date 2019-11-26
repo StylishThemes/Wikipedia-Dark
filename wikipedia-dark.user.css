@@ -3276,7 +3276,9 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     border: 1px solid var(--blue-3) !important;
   }
   table > * > tr.hintergrundfarbe2 > th, table > * > tr > th.hintergrundfarbe2,
-  table.hintergrundfarbe2, .hintergrundfarbe2 {
+  table.hintergrundfarbe2, .hintergrundfarbe2,
+  table > * > tr.hintergrundfarbe1 > th, table > * > tr > th.hintergrundfarbe1,
+  table.hintergrundfarbe1, .hintergrundfarbe1 {
     background-color: var(--gray-2);
   }
   .mw-parser-output div.NavHead {
