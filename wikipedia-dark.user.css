@@ -224,7 +224,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-echo-ui-menuItemWidget > .oo-ui-labelElement-label, .mw-mmv-image-desc,
   .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected,
   .guider_content h1, .guider_content p, select#searchLanguage option, dt,
-  .tfa-recent {
+  .tfa-recent, #contentSub, #contentSub2 {
     color: var(--gray-9a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li,
