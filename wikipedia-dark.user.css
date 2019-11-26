@@ -1664,6 +1664,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background: transparent !important;
     filter: invert(1) hue-rotate(180deg) contrast(84%);
   }
+  .mw-graph-img {
+    filter: invert(1) hue-rotate(180deg) contrast(60%);
+  }
   .wikEdButtonChecked {
     border-color: var(--gray-e) var(--gray-1) var(--gray-1) var(--gray-e) !important;
   }
@@ -1811,7 +1814,11 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   img[src*="Portal.svg"], img[src*="Information.svg"],
   img[src*="Global_thinking.svg"], img[src*="Clipboard.svg"],
   img[src*="Darkgreen_flag_waving.svg"],
-  img[src*="Replacement_filing_cabinet.svg"] {
+  img[src*="Replacement_filing_cabinet.svg"], img[src*="Splitsection.svg"],
+  img[src*="Ambox_warning_blue.svg"], img[src*="Ambox_warning_blue.svg"],
+  img[src*="uvola_apps_date.svg"], img[src*="Stock_post_message.svg"],
+  img[src*="Featured_article_star_-_cross.svg"],
+  img[src*="C%C3%ADrculos_Conc%C3%A9ntricos.svg"] {
     filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(102%);
   }
   img[src*="Newspaper_Cover.svg"], img[src*="Cscr-former.svg"] {
