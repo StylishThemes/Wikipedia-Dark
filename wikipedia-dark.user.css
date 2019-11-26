@@ -672,7 +672,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   td[style*="background: #ececec;" i], th[style*="background:#eee" i],
   th[style*="background-color: #eee" i], tr[style*="background: #dddddd" i],
   tr[style*="background-color: #f7f7f7;" i], th[style*="background:#F2F2F2" i],
-  #filetoc, .toccolours, th[style*="background:#F9F9F9" i],
+  #filetoc, th[style*="background:#F9F9F9" i],
   th[style*="background-color: lightgrey" i], th[style*="background:#ddd" i],
   .infobox th[style*="background"]:not([style*="background:#dfc;"]):not(.infobox-above),
   .infobox tr[style*="background-color"], .infobox td[style*="background"],
@@ -1124,7 +1124,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table.ext-status-unknown > tbody > tr.tpl-infobox-header {
     background: var(--gray-5) !important;
   }
-  div[style*="background-color:rgb(200,200,200);"], .collection-warning-box {
+  div[style*="background-color:rgb(200,200,200);"], .collection-warning-box,
+  tr[style*="background-color: white;"] {
     background-color: var(--gray-3) !important;
   }
   div[style*="background-color: #F9F9F9;"] {
@@ -1316,6 +1317,12 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background: var(--purple-d) !important;
     border-color: var(--purple-d) !important;
   }
+  tr[style="background-color: #ccccff;"] {
+    background: var(--purple-2) !important;
+  }
+  tr[style="background-color: #ccccff;"]  th {
+    color: var(--gray-d) !important;
+  }
   table[style*="border:2px solid #93c;color:#222;"] {
     border-color: var(--purple-2) !important;
   }
@@ -1473,8 +1480,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table:not(.hp-portalen):not([style*="background"]):not(.plainlinks),
   div[style*="background-color"]:not([style*="#edeaff"]):not([style*="border:1px solid ;"]),
   th, td, h1, h3, h4, h5, h6, ul, li, select, .mw-body, .toc, .mw-warning,
-  .toccolours, .navbox, .catlinks, table.fmbox,
-  .wikiEditor-ui .wikiEditor-ui-view, .wikiEditor-ui-toolbar .sections .section,
+  .navbox, .catlinks, table.fmbox, .wikiEditor-ui .wikiEditor-ui-view,
+  .wikiEditor-ui-toolbar .sections .section,
   .wikiEditor-ui-toolbar .group-search, .wikiEditor-ui-toolbar .group,
   .wikiEditor-ui-toolbar .group .tool-select,
   .wikiEditor-ui-toolbar .group .tool-select .options,
@@ -1536,7 +1543,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table[style*="border:1px solid #999999"], div[style*="; border:1px solid ;"],
   div[style*="border:solid #aaaaaa 1px;"],
   table[style*="border:solid 1px #A8A8A8"],
-  td[style*="border: 1px solid #FFFFFF"] {
+  td[style*="border: 1px solid #FFFFFF"],
+  th[style="border-right: 1px solid #ccccff;"],
+  table[style*="border: 1px solid gray;"] {
     border-color: var(--gray-5) !important;
   }
   td[style="border-right:solid black 1px;"] {
@@ -1554,6 +1563,14 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   table.xambox {
     border: 1px solid var(--gray-5);
+  }
+  .toccolours {
+    border-color: var(--gray-5) !important;
+    background-color: var(--gray-2);
+  }
+  .toc, .mw-warning {
+    border: 1px solid var(--gray-5);
+    background-color: var(--gray-2);
   }
   #specialchars button {
     background: var(--gray-3) !important;
@@ -2031,6 +2048,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   #mwe-popups-settings {
     box-shadow: 0 2px 2px 0 var(--gray-5_25) !important;
+  }
+  a.image img[src*="Stop_hand.svg"] {
+    filter: invert(1) hue-rotate(180deg) brightness(90%);
   }
 }
 @-moz-document
