@@ -1320,7 +1320,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   tr[style="background-color: #ccccff;"] {
     background: var(--purple-2) !important;
   }
-  tr[style="background-color: #ccccff;"]  th {
+  tr[style="background-color: #ccccff;"] th {
     color: var(--gray-d) !important;
   }
   table[style*="border:2px solid #93c;color:#222;"] {
