@@ -1540,6 +1540,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div.vectorTabs li.selected, .client-js #preftoc li.selected {
     border-bottom: 2px solid var(--tab-color);
   }
+  div.vectorTabs li {
+    margin-top: -1px;
+  }
   .oo-ui-window-content.oo-ui-messageDialog-content {
     border: 1px solid var(--gray-4) !important;
     margin: -1px !important;
@@ -3558,6 +3561,8 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   input[type="radio"], input[type="checkbox"] {
     background-color: var(--gray-1) !important;
+  div.vectorTabs li {
+    margin-top: 1px;
   }
   #content table, #content h1, #content h2, #content h3, #content h4,
   #content h5, #content pre, #content code, #content tt, table.wikitable,
