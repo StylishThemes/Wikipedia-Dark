@@ -3559,8 +3559,6 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   #archnavbar ul#archnavbarlist li a:hover {
     color: var(--gray-d) !important;
   }
-  input[type="radio"], input[type="checkbox"] {
-    background-color: var(--gray-1) !important;
   div.vectorTabs li {
     margin-top: 1px;
   }
