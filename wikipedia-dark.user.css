@@ -401,7 +401,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   #ca-nstab-project, #ca-talk, #ca-view, #ca-viewsource, #ca-history,
   #ca-nstab-main, #ca-nstab-research, #ca-edit, #ca-addsection, #ca-nstab-2019,
-  #ca-ve-edit, #ca-nstab-special {
+  #ca-ve-edit, #ca-nstab-special, #ca-nstab-help {
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 0 !important;
@@ -1110,15 +1110,21 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--gray-5) !important;
     color: var(--base-color) !important;
   }
-  .flow-topic-titlebar {
+  h2[style*="border:1px solid #AAAAAA; background-color:#F0F0F0;"],
+  div[style*="background-color:#F5F5F5; font-size:100%; padding: 0.5em; border-bottom-style: solid;"] {
+    background: var(--gray-3) !important;
+    border-color: var(--gray-5) !important;
+  }
+  div[style*="border:1px solid #AAAAAA; border-top:0px solid #FFFFFF; background-color:#FFFFFF;"],
+  div[style*="border:1px solid #AAAAAA; border-top:0; background-color:#FFFFFF;"] {
+    background: var(--gray-2) !important;
+    border-color: var(--gray-5) !important;
+  }
+  .flow-topic-titlebar, .fieldsetlike .legendtextlike {
     background: var(--gray-2);
   }
   div[style*="border:0 solid #CCC; background:#FFF;"] {
     background: var(--gray-28) !important;
-  }
-  u[style*="color:#087643;font-face:arial;text-shadow:gray 0.2em 0.2em 0.4em;"] {
-    color: var(--green-1) !important;
-    text-shadow: none !important;
   }
   .messagebox {
     background: var(--gray-2);
@@ -3198,6 +3204,83 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     border-color: var(--brown-2) !important;
   }
 }
+@-moz-document domain("fr.wikipedia.org") {
+  #accueil_2017_en-tete {
+    background: linear-gradient(to bottom, var(--gray-2), var(--blue-2));
+    border-bottom: solid 1px var(--blue-4);
+  }
+  .accueil_2017_cadre {
+    box-shadow: 0 0 .2rem var(--gray-7);
+  }
+  #mw-content-text .accueil_2017_cadre h2 {
+    border-bottom: solid .2rem var(--blue-4);
+  }
+  .aa-fond-gris {
+    background-color: var(--gray-28);
+  }
+  .aa-fond-blanc, .aa-en-tete-aide-droite {
+    background-color: var(--gray-2);
+  }
+  div[style*="border-color: #AAA; background-color: #FFF;"] {
+    background-color: var(--gray-3) !important;
+    border-color: var(--gray-4) !important;
+  }
+  div.NavFrame div.NavHead {
+    background: var(--gray-3) !important;
+  }
+  div[style*="background-color: rgb(239, 239, 239); color: black;"] {
+    background: var(--gray-3) !important;
+    color: var(--gray-a) !important;
+  }
+  .bandeau-simple.bandeau-niveau-information,
+  .bandeau-discussion.bandeau-niveau-information {
+    border-color: var(--blue-4) !important;
+    background-color: var(--blue-2);
+  }
+  .boite-grise {
+    background-color: var(--gray-2);
+    border-color: var(--gray-4);
+  }
+  .ns-talk #mw-content-text dl, .ns-talk #mw-content-text dl dl dl,
+  .ns-talk #mw-content-text dl dl dl dl dl,
+  .ns-talk #mw-content-text dl dl dl dl dl dl dl,
+  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl,
+  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl dl dl,
+  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl dl dl dl dl {
+    background: var(--blue-2);
+  }
+  .ns-talk #mw-content-text dl {
+    border-top: solid 1px var(--blue-4);
+    border-left: solid 1px var(--blue-4);
+  }
+  .ns-talk #mw-content-text dl dl, .ns-talk #mw-content-text dl dl dl dl,
+  .ns-talk #mw-content-text dl dl dl dl dl dl,
+  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl,
+  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl dl,
+  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl dl dl dl,
+  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl dl dl dl dl dl {
+    background: var(--gray-2);
+  }
+  .aa-filet-bleu {
+    border-left: 6px solid var(--blue-1);
+  }
+  .mw-alerte, .bandeau-niveau-modere {
+    background: var(--brown-1);
+    border: 2px solid var(--yellow-1);
+  }
+  #wpTextbox1[readonly], #wpTextbox1[readonly] + .ui-resizable > .ace_editor {
+    background: var(--gray-18);
+  }
+  span[style="color:#0645AD"] {
+    color: var(--base-color) !important;
+  }
+  div[style*="background-color: #f9eaea; border-color: #C00;"] {
+    background-color: var(--red-0) !important;
+    border-color: var(--red-1) !important;
+  }
+  .aa-titre-rouge {
+    color: var(--red-2);
+  }
 }
 @-moz-document domain("no.wikipedia.org") {
   .infoboks.biografi tr.overskrift th, .infoboks tr.rad td,
