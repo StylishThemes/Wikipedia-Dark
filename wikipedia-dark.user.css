@@ -198,7 +198,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-mmv-image-metadata, .navbox, .navbox-subgroup, .mw-mmv-info-box,
   .infobox.standard-talk, .mwe-pt-article-row-odd, .mwe-pt-article-row-even,
   .ve-ui-mwSaveDialog-options, #mw-page-base,
-  .mw-parser-output #siteContainer div:first-child, .vectorTabs .selected,
+  .mw-parser-output #siteContainer div:first-child, div.vectorTabs li.selected,
   .navbox-even {
     background-color: transparent;
   }
