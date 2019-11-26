@@ -399,7 +399,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   #ca-nstab-project, #ca-talk, #ca-view, #ca-viewsource, #ca-history,
   #ca-nstab-main, #ca-nstab-research, #ca-edit, #ca-addsection, #ca-nstab-2019,
-  #ca-ve-edit {
+  #ca-ve-edit, #ca-nstab-special {
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 0 !important;
@@ -1373,7 +1373,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .mw-parser-output .community-tabs td,
   .mw-parser-output .community-page-wrapper, .wikitable > tr > th,
   .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td,
-  #specialchars, .bookshelf, table.ombox-notice {
+  #specialchars, .bookshelf, table.ombox-notice, #content, .suggestions-special {
     border-color: var(--gray-5);
   }
   /* these are OK to be !important soon as a not is needed remove the offending one instead and fix fallback */
@@ -3538,6 +3538,25 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
 }
 @-moz-document domain("wiki.archlinux.org") {
+  /* some styling fix hacks */
+  #searchform #simpleSearch {
+    background-color: var(--gray-1);
+    color: var(--gray-9a) !important;
+    border: 1px solid var(--gray-5);
+    padding-bottom: 1px !important;
+  }
+  #searchform #simpleSearch #searchInput:focus {
+    box-shadow: none !important;
+  }
+  #archnavbar ul#archnavbarlist li a {
+    color: var(--gray-a) !important;
+  }
+  #archnavbar ul#archnavbarlist li a:hover {
+    color: var(--gray-d) !important;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    background-color: var(--gray-1) !important;
+  }
   #content table, #content h1, #content h2, #content h3, #content h4,
   #content h5, #content pre, #content code, #content tt, table.wikitable,
   .mw-body, .parsoid-body,
