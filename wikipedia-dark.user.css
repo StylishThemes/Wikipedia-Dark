@@ -778,12 +778,6 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--gray-5) !important;
     color: var(--gray-b9) !important;
   }
-  div.mw-warning-with-logexcerpt, div.mw-lag-warn-high,
-  div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon,
-  div.titleblacklist-warning, div.locked-warning {
-    background-color: var(--red-0);
-    border-color: var(--red-1) !important;
-  }
   .messagebox, .errorbox, .warningbox, .successbox,
   .suggestions-special .special-label {
     color: var(--gray-c);
@@ -922,6 +916,11 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   }
   /* Red
   ** Red links (non-existant pages) */
+  div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon,
+  div.titleblacklist-warning, div.locked-warning {
+    background-color: var(--red-0);
+    border-color: var(--red-1) !important;
+  }
   div.vectorTabs li.new:not(.selected) a, .mw-plusminus-neg, a.new,
   #p-personal a.new {
     color: var(--red-1) !important;
