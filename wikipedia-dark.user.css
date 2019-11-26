@@ -558,7 +558,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table:not(.mw-alerte):not([style*="#FFDBDB"]):not([style*="background: transparent"]):not([style*="background-color:transparent"]):not([style*="rgba(0,0,255,0.1)"]):not(.vertical-navbox):not([style*="#F5FAFF"]):not([style*="background color:transparent"]):not(#cite-err-report):not(.tmbox-notice):not([style*="background:transparent"]):not([style*="f5faff"]):not(.messagebox):not(#sisterwikis):not([class*="Caution"]):not(.tmbox-style),
   button, select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i], #toc, td[style*="background-color"],
-  #mw-content-text div[style*="background:"]:not([style*="006699"]):not([style*="990000"]):not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]):not([style*="F5FAFF"]):not([style*="A3B1BF"]):not([style*="fff5fa"]):not([style*="faf5ff"]),
+  #mw-content-text div[style*="background:"]:not([style*="D33"]):not([style*="00AF89"]):not([style*="36C"]):not([style*="006699"]):not([style*="990000"]):not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]):not([style*="F5FAFF"]):not([style*="A3B1BF"]):not([style*="fff5fa"]):not([style*="faf5ff"]),
   .vevent td, .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"], .mw-ui-button[style*="background"] *,
   .wikiEditor-ui, .mw-search-results li,
@@ -3280,6 +3280,24 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   .aa-titre-rouge {
     color: var(--red-2);
+  }
+}
+@-moz-document domain("fr.wikinews.org") {
+  .ns-4 #content, .ns-5 #content {
+    border-left: 1px solid var(--gray-5);
+  }
+  div[style*="background: #00AF89;"] {
+    background: var(--green-2) !important;
+  }
+  div[style*="background: #36C;"] {
+    background: var(--blue-4) !important;
+  }
+  div[style*="background: #D33;"] {
+    background: var(--red-3) !important;
+  }
+  .bandeau-niveau-ebauche, .bandeau-niveau-information {
+    border-color: var(--blue-4);
+    background-color: var(--gray-2);
   }
 }
 @-moz-document domain("no.wikipedia.org") {
