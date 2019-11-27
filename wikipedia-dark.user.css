@@ -1269,6 +1269,12 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   table[style*="border: #3366FF solid 1px"] {
     border-color: var(--blue-4) !important;
   }
+  td[style*="color: #000000; background-color: #f8f8ff"],
+  div[style*="border:1px solid #ADF;background:#EEF;"],
+  th[style*="border: 1px dashed blue; background: #eef;"] {
+    background-color: var(--blue-2) !important;
+    border-color: var(--blue-4) !important;
+  }
   table[style*="border:2px solid #48d;background:#fbfcff;color:#222;"] {
     border-color: var(--blue-4) !important;
     background-color: var(--gray-2) !important;
@@ -1406,12 +1412,6 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   div.boilerplate[style*="background-color: #edeaff;"] h2 *,
   td[style="background-color:#eeeeff;"], td[style="background-color: #9fade8"] {
     background-color: var(--purple-d) !important;
-  }
-  td[style*="color: #000000; background-color: #f8f8ff"],
-  div[style*="border:1px solid #ADF;background:#EEF;"],
-  th[style*="border: 1px dashed blue; background: #eef;"] {
-    background-color: var(--purple-0) !important;
-    border-color: var(--purple-2) !important;
   }
   div[style*="border:1px solid #ADF;background:#FFF;"] {
     background: var(--gray-18) !important;
