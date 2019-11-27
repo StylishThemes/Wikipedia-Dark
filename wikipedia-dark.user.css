@@ -967,10 +967,11 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     border-color: var(--red-3) !important;
     color: var(--gray-a) !important;
   }
-  div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon,
+  div.mw-warning-with-logexcerpt, div.mw-lag-warn-high,
+  div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon,
   div.titleblacklist-warning, div.locked-warning {
     background-color: var(--red-0);
-    border-color: var(--red-1) !important;
+    border-color: var(--red-1);
   }
   div[style*="border-right:1px solid #FFFFFF; padding:0.1em; background-color:#FFFAF5"] {
     background: var(--red-0) !important;
@@ -3569,6 +3570,10 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   a.image img[src*="Wikinews_Africa"] {
     filter: invert(1) hue-rotate(180deg) brightness(150%) contrast(69%);
+  }
+  div.mw-warning-with-logexcerpt {
+    background-color: var(--brown-3);
+    border-color: var(--brown-2);
   }
 }
 @-moz-document domain("no.wikipedia.org") {
