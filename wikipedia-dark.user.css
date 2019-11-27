@@ -647,6 +647,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background-color: var(--gray-28) !important;
   }
   .flow-ui-boardDescriptionWidget-editButton a.oo-ui-buttonElement-button:hover {
+  .flow-ui-boardDescriptionWidget-editButton a.oo-ui-buttonElement-button:hover,
+  a.image img[src*="Copyright_maybe"] {
     background: inherit !important;
   }
   div.barbox > table > tbody > tr > th, .cx-campaign-contributionsmenu li:hover,
@@ -2053,8 +2055,11 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   img[src*="C%C3%ADrculos_Conc%C3%A9ntricos.svg"] {
     filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(102%);
   }
-  img[src*="Newspaper_Cover.svg"], img[src*="Cscr-former.svg"] {
+  img[src*="Cscr-former.svg"] {
     filter: invert(100%) hue-rotate(180deg) brightness(250%) contrast(210%);
+  }
+  a.image img[src*="Newspaper_Cover.svg"] {
+    background: inherit !important;
   }
   img[src*="Emblem-important.svg"] {
     filter: invert(90%) hue-rotate(180deg) brightness(140%) contrast(200%);
@@ -3318,7 +3323,11 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     background: var(--pink-3) !important;
   }
   a.image img[src*="System-installer.svg"], a.image img[src*="Graduation_cap"],
-  a.image img[src*="Crystal_kcontrol"] {
+  a.image img[src*="Crystal_kcontrol"],
+  a.image img[src*="Wikipedia_New_page_reviewer.svg"],
+  a.image img[src*="Scale_of_justice_2.svg"],
+  a.image img[src*="Crystal_kthememgr.svg"],
+  a.image img[src*="Question_book-new.svg"] {
     background: inherit !important;
   }
   /* https://en.wikipedia.org/wiki/YAML syntax fixes */
@@ -3538,8 +3547,28 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     border-color: var(--blue-4);
     background-color: var(--gray-2);
   }
-  a.image img[src*="Factory.svg"], a.image img[src*="Euro_symbol_black.svg"] {
+  a.image img[src*="Factory.svg"], a.image img[src*="Euro_symbol_black.svg"],
+  a.image img[src*="Biohazard_symbol.svg"], a img[src*="Biohazard_symbol.svg"],
+  a.image img[src*="Society.svg"], a.image img[src*="Sports_icon_block_1.png"],
+  a.image img[src*="Crime.svg"], a.image img[src*="Do_dans_huit_clefs.svg"],
+  a img[src*="GClef.svg"], a img[src*="Black_Ribbon.svg"] {
     filter: invert(1) brightness(70%) contrast(90%);
+  }
+  a.image img[src*="Bullseye1.png"],
+  a.image img[src*="%28orthographic_projection%29.svg"],
+  a.image img[src*="Europe_orthographic_Caucasus_Urals_boundary"],
+  a.image img[src*="Nuvola_apps_kchart"], a.image img[src*="Sciences_exactes"],
+  a.image img[src*="Gnome-applications-science"],
+  a.image img[src*="Wiki-black.png"], a.image img[src*="P_culture"],
+  a.image img[src*="Sport_balls.svg"], a.image img[src*="Terra"],
+  a.image img[src*="View-refresh.svg"],
+  a.image img[src*="Scale_of_justice_2.svg"],
+  a.image img[src*="P_parthenon.svg"], a.image img[src*="Weather-clear.svg"],
+  a.image img[src*="Weather-heavy-overcast.svg"] {
+    background: inherit !important;
+  }
+  a.image img[src*="Wikinews_Africa"] {
+    filter: invert(1) hue-rotate(180deg) brightness(150%) contrast(69%);
   }
 }
 @-moz-document domain("no.wikipedia.org") {
