@@ -1254,7 +1254,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background: var(--gray-5) !important;
   }
   div[style*="background-color:rgb(200,200,200);"], .collection-warning-box,
-  tr[style*="background-color: white;"] {
+  tr[style*="background-color: white;"], th[style*="background: #ccc;"] {
     background-color: var(--gray-3) !important;
   }
   .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover {
@@ -2246,10 +2246,15 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   img[src*="Cscr-former.svg"] {
     filter: invert(100%) hue-rotate(180deg) brightness(250%) contrast(210%);
   }
-  a.image img[src*="Newspaper_Cover.svg"] {
+  a.image img[src*="Newspaper_Cover.svg"],
+  a.image img[src*="Question_book-4.svg"],
+  a.image img[src*="Wiktionary-logo.svg"],
+  a.image img[src*="Disambig_bordered_fade.svg"] {
     background: inherit !important;
   }
-  img[src*="Emblem-important.svg"] {
+  img[src*="Emblem-important.svg"], a.image img[src*="Daggers.svg"],
+  a.image img[src*="Acap.svg"] {
+    background: inherit !important;
     filter: invert(90%) hue-rotate(180deg) brightness(140%) contrast(200%);
   }
   .oo-ui-pendingElement-pending {
