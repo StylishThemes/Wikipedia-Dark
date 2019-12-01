@@ -630,7 +630,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background: var(--gray-18) !important;
     border-color: var(--gray-18) !important;
   }
-  tr[bgcolor], td[bgcolor]:not([bgcolor="#cfefcf"]),
+  table:not(.wikitable) td[bgcolor]:not([bgcolor="fcf"]), tr[bgcolor],
   .app-badges .footer-sidebar-content {
     background-color: var(--gray-28);
   }
