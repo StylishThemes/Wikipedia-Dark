@@ -1501,7 +1501,6 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background: var(--blue-4) !important;
     color: var(--gray-a);
   }
-  .navbox-subgroup .navbox-title, .navbox-subgroup .navbox-title *,
   tr[bgcolor*="#E1E9F3" i], .infobox th[style*="background-color:#C3D6EF;"] {
     background-color: var(--blue-3) !important;
   }
@@ -1529,11 +1528,15 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
     background: var(--purple-d) !important;
     border-color: var(--purple-d) !important;
   }
-  .navbox-title, .navbox-title *, table.navbox th, .navbox th,
+  .navbox-subgroup .navbox-title, .navbox-subgroup .navbox-title *,
   td[style*="background-color:#ccccff;"],
   li[style*="border:1px solid #CCF; background-color:#F0EEFF"] {
     background: var(--purple-1) !important;
     border-color: var(--purple-1) !important;
+  }
+  .navbox-title, .navbox-title *, table.navbox th, .navbox th {
+    background: var(--purple-0) !important;
+    border-color: var(--gray-2) !important;
   }
   tr[style="background-color: #ccccff;"] {
     background: var(--purple-2) !important;
@@ -1541,9 +1544,12 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.org)\/.*") {
   .fileinfo-paramfield {
     background: var(--purple-1);
   }
+  th.navbox-group, th.navbox-group * {
+    background: var(--purple-d) !important;
+  }
   td[style="background-color: #c9d4f5"], td[style="background-color: #d2dbf7"],
   td[style="background-color: #b1bced"], td[style*="background: #ccf;"],
-  .navbox-abovebelow, .navbox-abovebelow *, th.navbox-group, th.navbox-group * {
+  .navbox-abovebelow, .navbox-abovebelow * {
     background: var(--purple-1) !important;
   }
   td[style="background-color: #a8b4ea"] {
