@@ -581,8 +581,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     background-color: var(--brown-3);
   }
   table:not(.authortemplate):not(.fmbox-editnotice):not([style*="Alice"]):not([style*="efe"]):not([style*="transparent"]):not(.tmbox):not(.standard-talk):not(.cmbox-notice):not([style*="e4f2e4"]):not([style*="feeeee"]):not([style*="dfd"]):not(.processheadertemplate):not(.statstable):not([style*="eeeeff"]):not([style*="yellow"]):not([style*="#f7f8ff"]):not(.mw-alerte):not(.mp_header):not([style*="#FFDBDB"]):not([style*="#F0F8FF"]):not([style*="background: transparent"]):not([style*="background-color:transparent"]):not([style*="rgba(0,0,255,0.1)"]):not(.vertical-navbox):not([style*="#F5FAFF"]):not([style*="background color:transparent"]):not(#cite-err-report):not(.tmbox-notice):not([style*="background:transparent"]):not([style*="f5faff"]):not(.messagebox):not(#sisterwikis):not([class*="Caution"]):not(.tmbox-style),
-  button, select, textarea:not([class*="mw-editfont"]),
-  tr[style*="background: antiquewhite" i], #toc,
+  button:not([class*="-settings-block"]), select,
+  textarea:not([class*="mw-editfont"]), tr[style*="background: antiquewhite" i],
+  #toc,
   td[style*="background-color"]:not([style*="f4e"]):not([style*="cdde"]):not([style*="8"]):not([style*="00"]):not([style*="FF6"]):not([style*="f2f2f4"]):not([style*="fc3"]):not([style*="E6F2FF"]):not([style*="ccccff"]):not([style*="f89b8f"]):not([style*="fba89d"]):not([style*="fecec8"]):not([style*="f68d81"]):not([style*="c1ccf2"]):not([style*="b8c4ef"]):not([style*="fcb5ab"]):not([style*="d33"]):not([style*="fec1b9"]):not([style*="fedbd7"]):not([style*="f0f0ff"]):not([style*="a8b4ea"]):not([style*="b1bced"]):not([style*="c9d4f5"]):not([style*="d2dbf7"]):not([style*="9fade8"]):not([style*="eaf3ff"]):not([style*="e2ebfc"]):not([style*="f8f8ff"]):not([style*="f8fff8"]):not([style*="ddddff"]):not([style*="eeeeff"]),
   #mw-content-text div[style*="background:"]:not([style*="EDD"]):not([style*="bff"]):not([style*="f7f7"]):not([style*="444"]):not([style*="fdf6e3"]):not([style*="CCF"]):not([style*="F9FCFF"]):not([style*="2a4b8d"]):not([style*="E0EEE0"]):not([style*="E8F1FF"]):not([style*="EEF"]):not([style*="7DC2F5"]):not([style*="CCC"]):not([style*="F16633"]):not([style*="F0F0FF"]):not([style*="336"]):not([style*="D33"]):not([style*="F0F8FF"]):not([style*="00AF89"]):not([style*="36C"]):not([style*="006699"]):not([style*="990000"]):not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]):not([style*="F5FAFF"]):not([style*="A3B1BF"]):not([style*="fff5fa"]):not([style*="faf5ff"]),
   .vevent td:not(.fileinfo-paramfield), .referencetooltip li, .suggestions,
@@ -4902,7 +4903,10 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
   #content h5, #content pre, #content code, #content tt, table.wikitable,
   .mw-body, .parsoid-body,
   .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-title,
-  .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-desc {
+  .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-desc,
+  .languagesettings-menu .menu-section .settings-text,
+  .languagesettings-menu .menu-section:hover .settings-text, .uls-ui-languages p,
+  .checkbox, label.uls-font-label strong, label.uls-font-label {
     color: var(--gray-9a);
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled {
@@ -4921,17 +4925,23 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
   td[style*="background: #faa; color: inherit;"] {
     background: var(--red-0) !important;
   }
-  div.archwiki-template-box.archwiki-template-box-note {
+  div.archwiki-template-box.archwiki-template-box-note,
+  div[style*="background-color: #DDDDFF; border: thin solid #BBBBDD;"] {
     background-color: var(--purple-1) !important;
     border-color: var(--purple-2) !important;
   }
-  div.archwiki-template-box.archwiki-template-box-warning {
+  div.archwiki-template-box.archwiki-template-box-warning,
+  div[style*="background-color: #FFDDDD; border: thin solid #DDBBBB;"] {
     background-color: var(--red-0) !important;
     border-color: var(--red-3) !important;
   }
-  div.archwiki-template-box.archwiki-template-box-tip {
+  div.archwiki-template-box.archwiki-template-box-tip,
+  div[style*="background-color: #DDFFDD; border: thin solid #BBDDBB;"] {
     background-color: var(--green-4) !important;
     border-color: var(--green-3) !important;
+  }
+  .uls-button-group .mw-ui-button:hover {
+    background-color: var(--gray-1) !important;
   }
   #toc, .toc, .mw-warning, .toccolours {
     background-color: var(--gray-2) !important;
@@ -4944,7 +4954,50 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
   #simpleSearch {
     background-color: var(--gray-2);
   }
-  textarea {
+  tt {
+    background: var(--gray-1) !important;
+  }
+  #uls-settings-block {
+    background-color: var(--gray-18);
+    border-top: 1px solid var(--gray-5);
+  }
+  .skin-vector .uls-search {
+    border-bottom-color: var(--gray-5);
+  }
+  .uls-search {
+    background-color: var(--gray-18);
+    border-bottom: 1px solid var(--gray-5) !important;
+  }
+  .uls-font-item {
+    border-bottom: 1px solid var(--gray-5);
+    background: var(--gray-28);
+  }
+  #uls-settings-block > button.display-settings-block {
+    background-image: linear-gradient(transparent, transparent),
+                          url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Cpath fill=%22%23ddd%22 d=%22M.002 2.275V15.22h8.405c.535 1.624-.975 1.786-1.902 2.505 0 0 2.293-.024 3.439-.024 1.144 0 3.432.024 3.432.024-.905-.688-2.355-.868-1.902-2.505h8.527V2.275h-20zm6.81 1.84h.797l3.313 8.466H9.879L8.836 9.943H5.462l-1.043 2.638h-.982zm.368 1.104c-.084.369-.211.785-.368 1.227L5.83 9.023h2.699l-.982-2.577c-.128-.33-.234-.747-.368-1.227zm7.117.982c.753 0 1.295.157 1.656.491.365.334.552.858.552 1.595v4.294h-.675l-.184-.859h-.062c-.315.396-.605.655-.92.798-.311.138-.758.184-1.227.184-.626 0-1.115-.168-1.472-.491-.353-.323-.491-.754-.491-1.35 0-1.275 1.028-1.963 3.068-2.025h1.043v-.429c0-.495-.091-.87-.307-1.104-.211-.238-.574-.307-1.043-.307-.526 0-1.115.107-1.779.429l-.307-.675a4.748 4.748 0 0 1 1.043-.429 4.334 4.334 0 0 1 1.104-.123zm.307 3.313c-.761.027-1.318.157-1.656.368-.334.207-.491.54-.491.982 0 .346.1.617.307.798.211.181.544.245.92.245.595 0 1.012-.164 1.35-.491.342-.326.552-.762.552-1.35v-.552z%22/%3E %3C/svg%3E");
+  }
+  #uls-settings-block > button.input-settings-block {
+    background-image: linear-gradient(transparent, transparent),
+                          url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Cpath fill=%22%23ddd%22 d=%22M9 1.281c-.124.259-.185.599-.5.688-.55.081-1.133.018-1.688 0-.866-.032-1.733-.148-2.594 0-.588.157-.953.727-1.188 1.25-.178.416-.271.836-.344 1.281H-.002V16h20V4.5H3.654c.109-.52.203-1.057.563-1.469.222-.231.587-.17.875-.188 1.212.003 2.415.179 3.625.063.463-.058.812-.455.969-.875l.188-.438-.875-.313zM1.875 7.125h1.563c.094 0 .188.093.188.188v1.531a.201.201 0 0 1-.188.188H1.875c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.563c.094 0 .156.093.156.188v1.531c0 .094-.062.188-.156.188H4.719c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.563c.094 0 .156.093.156.188v1.531c0 .094-.062.188-.156.188H7.563a.201.201 0 0 1-.188-.188V7.313c0-.094.093-.188.188-.188zm2.813 0h1.563c.094 0 .188.093.188.188v1.531a.201.201 0 0 1-.188.188h-1.563c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.563c.094 0 .156.093.156.188v1.531c0 .094-.062.188-.156.188H13.22c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.531c.094 0 .188.093.188.188v1.531a.201.201 0 0 1-.188.188h-1.531a.201.201 0 0 1-.188-.188V7.313c0-.094.093-.188.188-.188zm-12.844 3h1.563c.094 0 .156.093.156.188v1.563c0 .094-.062.156-.156.156H3.22c-.094 0-.156-.062-.156-.156v-1.563c0-.094.062-.188.156-.188zm2.906 0h1.563c.094 0 .188.093.188.188v1.563c0 .094-.093.156-.188.156H6.126c-.094 0-.156-.062-.156-.156v-1.563c0-.094.062-.188.156-.188zm2.938 0h1.531c.094 0 .188.093.188.188v1.563c0 .094-.093.156-.188.156H9.064c-.094 0-.188-.062-.188-.156v-1.563c0-.094.093-.188.188-.188zm2.906 0h1.563c.094 0 .156.093.156.188v1.563c0 .094-.062.156-.156.156H11.97c-.094 0-.188-.062-.188-.156v-1.563c0-.094.093-.188.188-.188zm2.906 0h1.563c.094 0 .156.093.156.188v1.563c0 .094-.062.156-.156.156h-1.563c-.094 0-.156-.062-.156-.156v-1.563c0-.094.062-.188.156-.188zM4.001 13.688h12c.088 0 .156.068.156.156v.844a.154.154 0 0 1-.156.156h-12a.154.154 0 0 1-.156-.156v-.844c0-.088.068-.156.156-.156z%22/%3E %3C/svg%3E");
+  }
+  #uls-settings-block > button {
+    color: var(--gray-9a);
+    border: 0 !important;
+  }
+  #uls-settings-block > button:hover {
+    color: var(--gray-c);
+  }
+  .languagesettings-menu .menu-section.active {
+    color: var(--gray-9a) !important;
+    background-color: var(--gray-28) !important;
+    border-left: 3px solid var(--base-color) !important;
+    border-color: var(--gray-2);
+  }
+  .languagesettings-menu .menu-section:hover,
+  .languagesettings-menu #input-panel-trigger:hover {
+    background-color: var(--gray-3);
+  }
+  textarea, .language-settings-buttons {
     border-color: var(--gray-5);
   }
   textarea:not(input):focus {
@@ -4955,6 +5008,34 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
   }
   #pagehistory li {
     border-color: var(--gray-2) !important;
+  }
+  .ns-talk .mw-body-content dl, .ns-talk .mw-body-content dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl dl dl {
+    background: inherit;
+  }
+  a.image img[src*="Tango"] {
+    background: inherit !important;
+  }
+  .ext-related-articles-card-list .ext-related-articles-card-thumb {
+    background-color: var(--gray-28) !important;
+  }
+  .ext-related-articles-card-list .ext-related-articles-card {
+    background-color: var(--gray-28);
+  }
+  .ext-related-articles-card-list .ext-related-articles-card-thumb,
+  .uls-icon-close {
+    filter: invert(1) grayscale(1) brightness(140%) contrast(105%);
+  }
+  .ext-related-articles-card-list h3::after {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), var(--gray-28) 50%);
+  }
+  .ns-talk .mw-body-content dl {
+    border-top: 0;
+    border-left: 0;
   }
   .mw-rcfilters-ui-filterTagMultiselectWidget-hideshowButton .oo-ui-labelElement-label {
     border: 0 !important;
@@ -4969,7 +5050,7 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
   #footer a:active:hover, #content a:focus:hover,
   #mw-navigation li:not(.new) a:focus:hover,
   #mw-panel li:not(.new) a:focus:hover, #column-one li:not(.new) a:focus:hover,
-  #footer a:focus:hover {
+  #footer a:focus:hover, .uls-language-block a:hover {
     color: var(--base-color) !important;
   }
   /* hack around sidebar bottom border brightness */
