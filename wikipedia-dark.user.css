@@ -12,13 +12,18 @@
 @advanced color      tab-color "Tab color"     #e08b26
 @advanced color  visited-color "Visited color" #295887
 @advanced dropdown bg-selected "Background image" {
-  dft "Default" <<<EOT url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) EOT;
-  cst "Custom" <<<EOT
-  var(--bg-custom, none) EOT;
-  nbg "None" <<<EOT
+  crosshatch "Cross-Hatch" <<<EOT
+  url(https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67) EOT;
+  uniform "Uniform Tile" <<<EOT
+  url(https://camo.githubusercontent.com/f83a9a60a2c64be0c88833ccb436e32a458cd2ce/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d74696c652d756e69666f726d2e706e67) EOT;
+  random "Random Tile" <<<EOT
+  url(https://camo.githubusercontent.com/3beb850d8069e424480199a09899030c9e58e85f/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d74696c65312e706e67) EOT;
+  custom "Custom" <<<EOT
+  var(--bg-custom) EOT;
+  none "None" <<<EOT
   none EOT;
 }
-@advanced text bg-custom "Custom Background; include url()" "url()"
+@advanced text bg-custom "Custom background; include url()" "url()"
 @advanced dropdown bg-options "Background image type" {
   Tiled "Tiled" <<<EOT
   background-repeat: repeat !important;
@@ -165,11 +170,11 @@ regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|v
 regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   /* transparent background */
   html, body {
-    background-color: var(--gray-2) !important;
-    background-image: var(--bg-selected) !important;
-    background-clip: border-box !important;
-    background-origin: padding-box !important;
-    background-attachment: var(--bg-attachment) !important;
+    background-color: var(--gray-2);
+    background-image: var(--bg-selected);
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-attachment: var(--bg-attachment);
     /*[[bg-options]]*/
     color: var(--gray-c);
   }
@@ -4978,13 +4983,13 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   body, .mw-parser-output .contentframe-2019,
   .plainlinks[style*="background: #FFFFFF;"] {
-    background-color: var(--gray-2) !important;
-    background-image: var(--bg-selected) !important;
-    background-clip: border-box !important;
-    background-origin: padding-box !important;
-    background-attachment: var(--bg-attachment) !important;
+    background-color: var(--gray-2);
+    background-image: var(--bg-selected);
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-attachment: var(--bg-attachment);
     /*[[bg-options]]*/
-    color: var(--gray-c) !important;
+    color: var(--gray-c);
   }
   #p-logo .mw-wiki-logo, img[src$="1280px-Wikimania2019_meta_banner.svg.png"],
   img[src$="500px-Wikimania2019_logo.svg.png"] {
