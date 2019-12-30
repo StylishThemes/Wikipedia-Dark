@@ -166,7 +166,7 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
   }
 }
 @-moz-document
-regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach)\.wikimedia)\.org\/.*"),
+regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach|foundation)\.wikimedia)\.org\/.*"),
 regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   /* transparent background */
   html, body {
@@ -244,7 +244,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   span[style*="white-space:nowrap; line-height:120%; font-size:155%; color:#333;"],
   tr[style^="color:black"], span[title="To be announced"],
   div[style*="color: black;"], td[style*="color: #000000;"],
-  td[style*="color:#000"], div[style*="color:black"] {
+  td[style*="color:#000"], div[style*="color:black"],
+  td[style*="color:darkslategray;"] {
     color: var(--gray-9a) !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel,
@@ -371,8 +372,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     background-image: var(--bg-selected);
   }
   button[type="submit"], .pure-button-primary-progressive,
-  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button,
-  .mw-ui-button.mw-ui-progressive {
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
     background-color: var(--base-color) !important;
     border-color: transparent !important;
     color: var(--white) !important;
@@ -590,7 +590,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i], #toc,
   td[style*="background-color"]:not([style*="f4e"]):not([style*="B0C4DE"]):not([style*="cdde"]):not([style*="8"]):not([style*="00"]):not([style*="FF6"]):not([style*="f2f2f4"]):not([style*="fc3"]):not([style*="E6F2FF"]):not([style*="ccccff"]):not([style*="f89b8f"]):not([style*="fba89d"]):not([style*="fecec8"]):not([style*="f68d81"]):not([style*="c1ccf2"]):not([style*="b8c4ef"]):not([style*="fcb5ab"]):not([style*="d33"]):not([style*="fec1b9"]):not([style*="fedbd7"]):not([style*="f0f0ff"]):not([style*="a8b4ea"]):not([style*="b1bced"]):not([style*="c9d4f5"]):not([style*="d2dbf7"]):not([style*="9fade8"]):not([style*="eaf3ff"]):not([style*="e2ebfc"]):not([style*="f8f8ff"]):not([style*="f8fff8"]):not([style*="ddddff"]):not([style*="eeeeff"]),
-  #mw-content-text div[style*="background:"]:not([style*="ffee"]):not([style*="bce1"]):not([style*="ebb"]):not([style*="EDD"]):not([style*="bff"]):not([style*="f7f7"]):not([style*="444"]):not([style*="fdf6e3"]):not([style*="CCF"]):not([style*="F9FCFF"]):not([style*="2a4b8d"]):not([style*="E0EEE0"]):not([style*="E8F1FF"]):not([style*="EEF"]):not([style*="7DC2F5"]):not([style*="CCC"]):not([style*="F16633"]):not([style*="F0F0FF"]):not([style*="336"]):not([style*="D33"]):not([style*="F0F8FF"]):not([style*="00AF89"]):not([style*="36C"]):not([style*="006699"]):not([style*="990000"]):not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]):not([style*="F5FAFF"]):not([style*="A3B1BF"]):not([style*="fff5fa"]):not([style*="faf5ff"]),
+  #mw-content-text div[style*="background:"]:not([style*="3ff"]):not([style*="ffee"]):not([style*="bce1"]):not([style*="ebb"]):not([style*="EDD"]):not([style*="bff"]):not([style*="f7f7"]):not([style*="444"]):not([style*="fdf6e3"]):not([style*="CCF"]):not([style*="F9FCFF"]):not([style*="2a4b8d"]):not([style*="E0EEE0"]):not([style*="E8F1FF"]):not([style*="EEF"]):not([style*="7DC2F5"]):not([style*="CCC"]):not([style*="F16633"]):not([style*="F0F0FF"]):not([style*="336"]):not([style*="D33"]):not([style*="F0F8FF"]):not([style*="00AF89"]):not([style*="36C"]):not([style*="006699"]):not([style*="990000"]):not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]):not([style*="F5FAFF"]):not([style*="A3B1BF"]):not([style*="fff5fa"]):not([style*="faf5ff"]),
   .vevent td:not(.fileinfo-paramfield), .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"]:not([style*="d33682"]):not([style*="6c71c4"]):not([style*="268bd2"]),
   .mw-ui-button[style*="background"] *, .wikiEditor-ui, .mw-search-results li,
@@ -1288,7 +1288,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     border-color: var(--blue-4) !important;
   }
   div[style*="border: 1px solid #CCC; border-top-width: 1px; vertical-align: top;background: white;"],
-  div[style*="border: 1px solid #a2a9b1; padding: 0.2em; background-color: white;"] {
+  div[style*="border: 1px solid #a2a9b1; padding: 0.2em; background-color: white;"],
+  td[style*="background: #ffffff"] {
     background-color: var(--gray-2) !important;
     border-color: var(--gray-5) !important;
   }
@@ -1753,6 +1754,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     background-color: var(--brown-2) !important;
     border-color: var(--brown-2) !important;
   }
+  th[style*="background-color: #e7c6a5"] {
+    background-color: var(--brown-2) !important;
+  }
   /* pink */
   .MainPageBG[style*="border:1px solid #f2cedd; background:#fff5fa;"],
   #mp-center #mp-tfl-h2[style*="border:1px solid #bfa3af;"] {
@@ -1872,7 +1876,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .oo-ui-tagMultiselectWidget-handle, .imeselector-menu,
   .language-settings-buttons, .uls-icon-back, #uls-settings-block,
   .mw-advancedSearch-namespace-selection, .mw-advancedSearch-namespace-border,
-  .wikibase-statementview, .mw-parser-output .quotebox {
+  .wikibase-statementview, .mw-parser-output .quotebox, .ext-uls-sub-panel {
     border-color: var(--gray-5);
   }
   table.ambox-protection {
@@ -2130,6 +2134,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .languagesettings-menu .menu-section.active,
   .languagesettings-menu .menu-section:focus {
     border-color: var(--base-color);
+    background-color: var(--gray-28);
+  }
+  .languagesettings-menu .menu-section .settings-text {
+    color: var(--gray-9a);
   }
   /* arrow down */
   .referencetooltip > li + li, .referencetooltip > li + li::after {
@@ -2452,7 +2460,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   img[src*="Darkgreen_flag_waving.svg"], img[src*="Stock_post_message.svg"],
   img[src*="Featured_article_star_-_cross.svg"],
   img[src*="C%C3%ADrculos_Conc%C3%A9ntricos.svg"],
-  img[src*="Johnny-automatic-scales-of-justice"] {
+  img[src*="Johnny-automatic-scales-of-justice"], img[src*="_scales"],
+  a.image img[src*="Cross_country_skiing_pictogram"] {
     filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(102%);
   }
   a.image img[src*="Newspaper_Cover.svg"],
@@ -2487,19 +2496,22 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   a.image img[src*="Copyright_maybe"], a.image img[src*="Crystal"],
   a.image img[src*="Pillar"], a.image img[src*="map_"], a.image img[src*="box_"],
   a.image img[src*="Globe"], a.image img[src*="Paper"],
-  a.image img[src*="Contact"], a.image img[src*="WP"] {
+  a.image img[src*="Contact"], a.image img[src*="WP"],
+  a.image img[src*="Sport3_icone"] {
     background: inherit !important;
   }
-  .vertical-navbox th, div[class*="mw-echo-ui"], span[class*="mw-echo-ui"] {
+  .vertical-navbox th:not([style*="6a5"]), div[class*="mw-echo-ui"],
+  span[class*="mw-echo-ui"] {
     background-color: inherit !important;
   }
   img[src*="P_literature.svg"], img[src*="Portal-puzzle.svg"],
   img[src*="Wikipedia%27s_W.svg"], a img[src*="Wikimedia_A"],
-  a img[src*="Wikimedia_%C3%96sterreich_logo_black"], a img[src*="Wikimedia_C"],
-  a img[src*="Wikimedia_De"], a img[src*="Wikimedia_Es"],
-  a img[src*="Wikimedia_S"], a img[src*="Wikimedia_K"],
-  a img[src*="Wikimedia_N"], a img[src*="Wikimedia_RU"],
-  a img[src*="Wikimedia_T"], a img[src*="Wikimedistas_de_Bolivia"],
+  a img[src*="Wikimedia_%C3%96sterreich_logo_black"],
+  a img[src*="Wikimedia_C"]:not([src*="2016"]), a img[src*="Wikimedia_De"],
+  a img[src*="Wikimedia_Es"], a img[src*="Wikimedia_S"],
+  a img[src*="Wikimedia_K"], a img[src*="Wikimedia_N"],
+  a img[src*="Wikimedia_RU"], a img[src*="Wikimedia_T"],
+  a img[src*="Wikimedistas_de_Bolivia"],
   a img[src*="Affiliations_Committee_logo_black"], img[src*="Simple_light_bulb"],
   a.image img[src*="Semi-protection-shackle"] {
     background: transparent !important;
@@ -3836,6 +3848,22 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   table.cmbox-notice {
     background-color: var(--blue-2) !important;
+  }
+}
+@-moz-document domain("foundation.wikimedia.org") {
+  .mw-wiki-logo {
+    filter: invert(1) brightness(80%);
+  }
+  img[src*="OOjs_UI_icon_info"] {
+    filter: invert(1) brightness(75%);
+  }
+  div[style*="background: #eaf3ff;"] {
+    background: var(--blue-2) !important;
+    border-top-color: var(--blue-1) !important;
+  }
+  div[style*="background-color: none; border:6px solid #36c;"] {
+    background: none !important;
+    border-color: var(--blue-1) !important;
   }
 }
 @-moz-document domain("de.wikipedia.org") {
