@@ -4373,7 +4373,7 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
 }
 @-moz-document domain("en.wiktionary.org") {
   .mw-wiki-logo {
-    background-image: url(https://upload.wikimedia.org/wikipedia/meta/2/21/Wiktionary-logo-tiles_1x.png);
+    background-image: url("https://upload.wikimedia.org/wikipedia/meta/2/21/Wiktionary-logo-tiles_1x.png");
     width: 120px !important;
     height: 120px !important;
     margin-left: 30px !important;

@@ -15,12 +15,13 @@ rules:
   comment-whitespace-inside: null
   declaration-bang-space-before: null
   declaration-block-no-duplicate-properties: null
+  declaration-block-no-shorthand-property-overrides: null
   declaration-block-single-line-max-declarations: null
   declaration-colon-newline-after: null
   font-family-name-quotes: always-where-recommended
   font-family-no-duplicate-names: true
-  function-url-quotes: always
   function-comma-space-after: null
+  function-url-quotes: always
   indentation: null
   max-empty-lines: 0
   no-descending-specificity: null
@@ -28,6 +29,7 @@ rules:
   number-leading-zero: never
   number-max-precision: 3
   number-no-trailing-zeros: true
+  property-no-unknown: null
   rule-empty-line-before: null
   selector-combinator-space-after: null
   selector-combinator-space-before: null
@@ -36,4 +38,3 @@ rules:
   selector-type-no-unknown: null
   string-quotes: double
   value-list-comma-newline-after: null
-  property-no-unknown: null
