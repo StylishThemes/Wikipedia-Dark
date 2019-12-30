@@ -5265,3 +5265,192 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
     filter: invert(100%) hue-rotate(180deg) brightness(50%);
   }
 }
+@-moz-document domain("wikimediafoundation.org") {
+  body {
+    background: var(--gray-18);
+    color: var(--gray-c);
+  }
+  .top-nav, .header-home, .focus-block, .card-vertical.card-person,
+  .card-vertical.card-person .card-content {
+    background: var(--gray-18);
+  }
+  .logo-container a, .language-dropdown button img[src*="down"],
+  .connect-container .icon, img[src*="Wikimedia-Foundation-trademarked-logo"],
+  img[src*="Wikipedia_wordmark"] {
+    filter: invert(1) brightness(80%);
+  }
+  .language-list, .home-project-list-item--gray {
+    background: var(--gray-28);
+  }
+  .language-dropdown button {
+    color: var(--blue-1);
+    background: var(--pink-0);
+    border: 1px solid var(--pink-1);
+  }
+  .language-dropdown button:hover {
+    border: 1px solid var(--pink-3);
+  }
+  .donate-btn {
+    background: var(--pink-1);
+    border: 1px solid var(--pink-2);
+    color: var(--pink-3);
+  }
+  .donate-btn:hover {
+    border: 1px solid var(--pink-3);
+  }
+  .shadow, .pagination-container,
+  .header-home.featured-photo--content-left .page-intro-text .w-32p {
+    border-color: var(--gray-5);
+  }
+  .language-list ul li a.selected {
+    border-color: var(--blue-1);
+  }
+  button img[src*="language"] {
+    filter: grayscale(1) brightness(325%);
+  }
+  .donate-btn img[src*="lock-pink"] {
+    filter: brightness(800%);
+  }
+  .main-nav {
+    border-top: 1px solid var(--gray-5);
+  }
+  .main-nav a {
+    background-image: linear-gradient(to top, var(--gray-18), var(--gray-1));
+  }
+  .header-default .post-meta a {
+    background-image: linear-gradient(to top, var(--gray-18), var(--gray-1));
+    color: var(--gray-a);
+    border-color: var(--blue-1);
+  }
+  .toc-link.-active, .people .person-name {
+    color: var(--gray-e);
+  }
+  .header-default ul li a, .header-home ul li a, .bg-ltgray .color-gray,
+  .language-list ul li a {
+    color: var(--gray-c);
+  }
+  .module-mu .email-signup, .bg-ltgray .related-news .card .date, .color-gray,
+  .article-img .img-caption, .translation-bar li,
+  .header-home.featured-photo--content-left .page-intro-text .secure {
+    color: var(--gray-9a);
+  }
+  .module-mu .email-signup input::placeholder, .nav-newer, .nav-older {
+    color: var(--gray-69);
+  }
+  .nav-newer svg, .nav-older svg {
+    fill: var(--gray-69);
+  }
+  #News\ Index path[fill="#FFFFFF"] {
+    fill: var(--gray-18);
+  }
+  .nav-newer a:hover svg, .nav-older a:hover svg,
+  .elsewhere-wikimedia .link-external a:hover .icon {
+    fill: var(--base-color);
+  }
+  .elsewhere-wikimedia .link-external a .icon {
+    fill: var(--gray-c);
+    transition: .3s all;
+  }
+  .header-default ul li.current_page_item a,
+  footer ul:not(.social-list) li a:hover {
+    color: var(--base-color);
+    border-color: var(--base-color);
+  }
+  .header-default.header-pink .ungrid {
+    background: var(--pink-0);
+  }
+  .cta-primary {
+    background: var(--pink-1);
+  }
+  .cta-primary .h2, .cta-description {
+    color: var(--pink-3);
+  }
+  .module-mu.w-23p .h2.no-border span, .module-mu.w-50p .h2.no-border span {
+    color: var(--purple-2);
+  }
+  .header-default .ungrid .content,
+  .connect-container .email-signup #wmf-subscribe-input-email {
+    background: var(--gray-18);
+  }
+  .page-number-list a:hover, .page-number-list span:hover {
+    background: var(--gray-3);
+  }
+  .page-number-list li.active a, .page-number-list .current {
+    background: var(--base-color);
+  }
+  .main-nav a:hover, .wysiwyg p a, .wysiwyg .p a, .wysiwyg li a, .arrow-link,
+  .bg-white .related-news .card .card-heading:hover h3,
+  .bg-white .related-news .card .card-heading .date h3,
+  .module-mu .email-signup input, .photo-credits a:hover,
+  .header-default .eyebrow a, .toc-link, .article-img .img-caption a:hover,
+  .link-list a, .news-list-container .h3 a:hover, .nav-newer a:hover,
+  .nav-older a:hover, .elsewhere-wikimedia .link-external a:hover,
+  .article-footer .read-more a, .translation-bar a:hover,
+  a.hover-img-zoom:hover .person-name {
+    color: var(--base-color);
+  }
+  .article-footer .read-more a:hover {
+    color: var(--base-color);
+    opacity: .9;
+  }
+  .header-default .ungrid .h2.eyebrow, .framing-copy-ungrid code,
+  .card .post-meta a {
+    color: var(--blue-1);
+  }
+  .card .post-meta a:hover {
+    color: var(--blue-1);
+    border-color: var(--blue-1);
+    opacity: .9;
+  }
+  .framing-copy-ungrid .ungrid-line {
+    background: var(--blue-1);
+  }
+  .btn-blue .btn, .btn.btn-blue {
+    background-color: var(--blue-1);
+    color: var(--gray-e);
+  }
+  .btn-blue .btn:hover, .btn.btn-blue:hover {
+    background-color: var(--blue-1);
+    color: var(--gray-e);
+  }
+  .fact-inner {
+    background: var(--pink-0);
+  }
+  .connect-container .module-mu.gray-module, .bg-ltgray {
+    background: var(--gray-28);
+  }
+  .connect-container .module-mu {
+    border: 1px solid var(--gray-4);
+  }
+  input, textarea {
+    border: 1px solid var(--gray-5);
+  }
+  .connect-container .module-mu .email-signup input:focus {
+    background: var(--gray-1);
+    outline: 1px solid var(--base-color);
+    box-shadow: 0 0 1px 1px var(--base-color);
+  }
+  .header-default .ungrid,
+  .header-home.featured-photo--content-left .vision_container {
+    background: var(--brown-4);
+  }
+  footer.bg-black {
+    background: var(--gray-3);
+  }
+  footer #menu-footer-under-text li a, .module-mu h4.category,
+  .module-mu h4 a.category {
+    background: var(--gray-28);
+    color: var(--base-color);
+  }
+  footer #menu-footer-under-text li a:hover {
+    box-shadow: 0 2px 10px 0 var(--gray-69);
+  }
+  .module-mu h4.category:hover, .module-mu h4 a.category:hover {
+    background: var(--blue-1);
+    color: var(--gra-e);
+  }
+  .translation-bar {
+    color: var(--base-color);
+    border-color: var(--gray-5);
+  }
+}
