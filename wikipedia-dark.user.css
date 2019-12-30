@@ -401,21 +401,24 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary > .oo-ui-tool-link {
     background-color: var(--gray-7);
   }
-  .mw-ui-button.mw-ui-progressive:hover, .pure-button-primary-progressive:hover,
+  .pure-button-primary-progressive:hover,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover {
     background-image: linear-gradient(var(--white_1), var(--white_1)) !important;
   }
-  .mw-ui-button.mw-ui-progressive:hover {
+  .mw-ui-button.mw-ui-progressive {
+    color: var(--gray-e) !important;
     background-color: var(--base-color) !important;
     border-color: var(--base-color) !important;
+  }
+  .mw-ui-button.mw-ui-progressive:hover {
+    background-color: var(--base-color);
+    border-color: var(--base-color);
+    opacity: .9;
   }
   .suggestions-results .suggestions-result:hover,
   .suggestions-result-current:hover, .mw-pulsating-dot::before,
   .mw-pulsating-dot::after {
     background: var(--base-color);
-  }
-  .mw-ui-button.mw-ui-progressive {
-    color: var(--gray-e) !important;
   }
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar,
   #p-cactions-label, .client-js #preftoc, .client-js #preftoc li,
@@ -586,7 +589,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     background-color: var(--brown-3);
   }
   table:not(.authortemplate):not(.fmbox-editnotice):not([style*="Alice"]):not([style*="efe"]):not([style*="transparent"]):not(.tmbox):not(.standard-talk):not(.cmbox-notice):not([style*="e4f2e4"]):not([style*="feeeee"]):not([style*="dfd"]):not(.processheadertemplate):not(.statstable):not([style*="eeeeff"]):not([style*="yellow"]):not([style*="#f7f8ff"]):not(.mw-alerte):not(.mp_header):not([style*="#FFDBDB"]):not([style*="#F0F8FF"]):not([style*="background: transparent"]):not([style*="background-color:transparent"]):not([style*="rgba(0,0,255,0.1)"]):not(.vertical-navbox):not([style*="#F5FAFF"]):not([style*="background color:transparent"]):not(#cite-err-report):not(.tmbox-notice):not([style*="background:transparent"]):not([style*="f5faff"]):not(.messagebox):not(#sisterwikis):not([class*="Caution"]):not(.tmbox-style),
-  button:not([class*="-settings-block"]):not([class*="mw-mmv-"]):not(.pure-button):not(.wikidialog-button):not(.uls-input-toggle-button),
+  button:not(.save):not([class*="-settings-block"]):not([class*="mw-mmv-"]):not(.pure-button):not(.wikidialog-button):not(.uls-input-toggle-button),
   select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i], #toc,
   td[style*="background-color"]:not([style*="f4e"]):not([style*="B0C4DE"]):not([style*="cdde"]):not([style*="8"]):not([style*="00"]):not([style*="FF6"]):not([style*="f2f2f4"]):not([style*="fc3"]):not([style*="E6F2FF"]):not([style*="ccccff"]):not([style*="f89b8f"]):not([style*="fba89d"]):not([style*="fecec8"]):not([style*="f68d81"]):not([style*="c1ccf2"]):not([style*="b8c4ef"]):not([style*="fcb5ab"]):not([style*="d33"]):not([style*="fec1b9"]):not([style*="fedbd7"]):not([style*="f0f0ff"]):not([style*="a8b4ea"]):not([style*="b1bced"]):not([style*="c9d4f5"]):not([style*="d2dbf7"]):not([style*="9fade8"]):not([style*="eaf3ff"]):not([style*="e2ebfc"]):not([style*="f8f8ff"]):not([style*="f8fff8"]):not([style*="ddddff"]):not([style*="eeeeff"]),
