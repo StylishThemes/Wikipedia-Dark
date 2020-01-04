@@ -230,7 +230,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .guider_content h1, .guider_content p, select#searchLanguage option, dt,
   .tfa-recent, #contentSub, #contentSub2, .central-featured-lang .link-box small,
   .central-featured-lang .link-box small, .other-project-tagline {
-    color: var(--gray-9a);
+    color: var(--gray-a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li,
   .infobox th[style*="background"]:not([style*="#eaecf0"]),
