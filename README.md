@@ -46,6 +46,10 @@ This theme also works with the mobile sites (Minerva skin). For more comparisons
 ## Additional Userstyles
 
 ⚙️ [Overlay-Scrollbars](https://github.com/StylishThemes/Overlay-Scrollbars)
+⚙️ [Wikipedia Dark Gray Text Colors](https://github.com/StylishThemes/Feature-Override-Styles)
+⚙️ [Wikipedia Dark IMG Styles](https://github.com/StylishThemes/Feature-Override-Styles)
+
+>Note: With exception of the Overlay Scrollbars style the Wiki additional styles are NOT to be used on their own without the Wikipedia Dark style also installed ;)
 
 ## Limitations
 
