@@ -383,14 +383,14 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     color: var(--white) !important;
   }
   .mw-ui-button {
-    background-color: var(--black) !important;
-    color: var(--gray-c);
-    border-color: var(--gray-5) !important;
+    background-color: var(--gray-3) !important;
+    color: var(--gray-d);
+    border-color: var(--gray-4) !important;
   }
   .mw-ui-button:hover {
-    background-color: var(--black_25) !important;
-    color: var(--gray-c) !important;
-    border-color: var(--gray-69);
+    background-color: var(--gray-4) !important;
+    color: var(--gray-e) !important;
+    border-color: var(--gray-5);
   }
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
     background-color: var(--red-2) !important;
@@ -413,6 +413,13 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .mw-ui-button.mw-ui-progressive:hover {
     background-color: var(--base-color);
     border-color: var(--base-color);
+    opacity: .9;
+  }
+  .mw-ui-button.mw-ui-progressive:disabled,
+  button.mw-ui-button.mw-ui-progressive:active {
+    background-color: var(--gray-3) !important;
+    color: var(--gray-5) !important;
+    border-color: var(--gray-4) !important;
     opacity: .9;
   }
   .suggestions-results .suggestions-result:hover,
@@ -469,8 +476,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     border-left: 1em solid var(--blue-4) !important;
   }
   input, input.mw-ui-input {
-    background-color: var(--gray-18) !important;
-    border-color: var(--gray-5) !important;
+    background-color: var(--gray-1) !important;
+    border-color: var(--gray-4) !important;
   }
   input.mw-ui-input:focus {
     box-shadow: inset 0 0 0 1px var(--base-color) !important;
