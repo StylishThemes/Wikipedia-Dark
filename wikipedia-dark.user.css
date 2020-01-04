@@ -469,7 +469,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     border-color: var(--base-color) !important;
   }
   .oo-ui-inputWidget-input {
-    background-color: transparent !important;
+    background-color: var(--gray-1) !important;
   }
   .help-intro-sidetab.help-intro-sidetab-active[style*="border-left: 1em solid #36c;"] {
     background-color: var(--blue-2) !important;
