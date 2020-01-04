@@ -2572,7 +2572,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   a.image img[src*="Pillar"], a.image img[src*="map_"], a.image img[src*="box_"],
   a.image img[src*="Globe"], a.image img[src*="Paper"],
   a.image img[src*="Contact"], a.image img[src*="WP"],
-  a.image img[src*="Sport3_icone"] {
+  a.image img[src*="Sport3_icone"], a.image img[src*="Twemoji"],
+  a.image img[src*="Information_icon"], a.image img[src*="_check"],
+  a.image img[src*="Gnome-dialog-"] {
     background: inherit !important;
   }
   .vertical-navbox th:not([style*="6a5"]), div[class*="mw-echo-ui"],
@@ -2588,7 +2590,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   a img[src*="Wikimedia_RU"], a img[src*="Wikimedia_T"],
   a img[src*="Wikimedistas_de_Bolivia"],
   a img[src*="Affiliations_Committee_logo_black"], img[src*="Simple_light_bulb"],
-  a.image img[src*="Semi-protection-shackle"] {
+  a.image img[src*="Semi-protection-shackle"], img[src*="Wikimedia-logo_black"] {
     background: transparent !important;
     filter: invert(1) hue-rotate(180deg) contrast(84%);
   }
@@ -2603,6 +2605,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   a.image img[src*="Wiktionary-logo-en"] {
     background: inherit !important;
     filter: invert(90%) hue-rotate(180deg) brightness(140%) contrast(200%);
+  }
+  img[src*="Black_W_for_promotion"] {
+    filter: invert(1) brightness(80%) contrast(90%);
+    background-color: #bbb !important;
   }
   /* fix border due to image inversion in above rule */
   div.thumbinner a.image img[src*="Daggers.svg"],
