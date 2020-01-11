@@ -3997,6 +3997,17 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     color: var(--base-color);
   }
 }
+@-moz-document domain("sl.wikipedia.org") {
+  th[style*="color:black"], td[style*="color:black;background:Gainsboro"] {
+    color: var(--gray-c) !important;
+    background: var(--purple-1) !important;
+  }
+  td[style*="color:black;background:Gainsboro"] {
+    color: var(--gray-a) !important;
+  }
+  td[style="background:SkyBlue; color:black"] {
+    background: var(--purple-1) !important;
+  }
 }
 @-moz-document domain("de.wikipedia.org") {
   img[src*="24px-OOjs_UI_icon_signature-ltr.svg"] {
