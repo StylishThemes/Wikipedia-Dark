@@ -166,7 +166,7 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
   }
 }
 @-moz-document
-regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach|foundation)\.wikimedia)\.org\/.*"),
+regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach|foundation|donate)\.wikimedia)\.org\/.*"),
 regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   /* transparent background */
   html, body {
@@ -3940,7 +3940,8 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     background-color: var(--blue-2) !important;
   }
 }
-@-moz-document domain("foundation.wikimedia.org") {
+@-moz-document
+regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .mw-wiki-logo {
     filter: invert(1) brightness(80%);
   }
