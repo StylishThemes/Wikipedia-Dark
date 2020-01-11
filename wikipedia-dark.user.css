@@ -1422,14 +1422,6 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     border-color: var(--blue-4);
   }
   /* Blue */
-  .ns-talk .mw-body-content dl, .ns-talk .mw-body-content dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl dl dl {
-    background: var(--blue-2);
-  }
   .lang-quote {
     border-bottom: 1px dotted var(--gray-c);
     color: var(--base-color);
@@ -1451,10 +1443,6 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   }
   table.xambox-type-notice {
     border-left: 1em solid var(--blue-1) !important;
-  }
-  .ns-talk .mw-body-content dl {
-    border-top: solid 1px var(--blue-4);
-    border-left: solid 1px var(--blue-4);
   }
   div[style*="background"]:not(.boilerplate):not([style*="#fff"]) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question),
   div[style*="background"]:not(.boilerplate):not([style*="#fff"]) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question) *,
