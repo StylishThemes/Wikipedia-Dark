@@ -3956,6 +3956,47 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: none !important;
     border-color: var(--blue-1) !important;
   }
+@-moz-document domain("es.wikipedia.org") {
+  .mw-parser-output .main-top-left {
+    background-image: linear-gradient(to right, var(--gray-28) 10%, var(--gray-2) 70%, transparent 100%);
+  }
+  .mw-parser-output .main-top, .mw-parser-output .main-box {
+    background-color: var(--gray-28);
+    border: 1px solid var(--gray-4);
+  }
+  .mw-parser-output .main-box-section, h1, h2, h3, h4, h5, h6 {
+    color: var(--gray-a);
+  }
+  a.image img[src*="Science"] {
+    background: inherit !important;
+    filter: brightness(280%);
+  }
+  a.image img[src*="History2"], a.image img[src*="Vote"],
+  a.image img[src*="Tecno"] {
+    background: inherit !important;
+  }
+  div[style*="background-color: #EEEEEE"] {
+    background-color: var(--gray-28) !important;
+  }
+  .ambox-notice {
+    border-top: 5px solid var(--blue-1) !important;
+  }
+  .not-patrolled {
+    background-color: var(--brown-4);
+  }
+  .mw-tag-marker {
+    background-color: var(--brown-2);
+  }
+  .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget,
+  .footer-sidebar-text, .site-license,
+  .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle {
+    color: var(--gray-9a);
+  }
+  .oo-ui-menuOptionWidget.oo-ui-optionWidget-selected.oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted,
+  .oo-ui-menuOptionWidget.oo-ui-optionWidget-pressed.oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted {
+    color: var(--base-color);
+  }
+}
 }
 @-moz-document domain("de.wikipedia.org") {
   img[src*="24px-OOjs_UI_icon_signature-ltr.svg"] {
