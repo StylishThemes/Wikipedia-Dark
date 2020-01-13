@@ -1033,6 +1033,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   table.xambox.xambox-type-serious {
     border-left: 1em solid var(--red-2);
   }
+  .mw-translate-fuzzy {
+    background-color: var(--red-3);
+  }
   span[style*="color:black;background:white;border:3px solid red;"] {
     background-color: var(--gray-2) !important;
     border-color: var(--red-3) !important;
@@ -1377,6 +1380,105 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   div[style*="background-color: #F9F9F9;"] {
     background-color: var(--gray-2) !important;
     border-color: var(--gray-5) !important;
+  }
+  .tux-message-editor {
+    border: 1px solid var(--gray-5);
+    background-color: var(--gray-2);
+  }
+  .ext-translate-container .tux-messagelist .tux-message-pagemode:first-child .tux-message-item-compact,
+  .tux-message-editor .editcolumn,
+  .ext-translate-container .tux-messagelist .tux-message-pagemode:last-child .tux-message-item-compact {
+    border-color: var(--gray-5);
+  }
+  .ext-translate-container .tux-messagelist .tux-message-pagemode .tux-message-item-compact,
+  .tux-message-item, .tux-message-selector .more ul {
+    background: var(--gray-2);
+    border-color: var(--gray-5);
+  }
+  .tux-dropdown-menu {
+    background: var(--gray-2);
+    border-color: var(--gray-3) var(--gray-7) var(--gray-7) var(--gray-7) !important;
+  }
+  .tux-message-editor__caret::before, .tux-message-editor__caret::after {
+    border-top: 20px solid transparent;
+    border-right: 20px solid var(--gray-5);
+    border-bottom: 20px solid transparent;
+  }
+  .tux-message-editor__caret::after {
+    border-right: 20px solid var(--gray-28);
+  }
+  .tux-messagelist, .tux-message-editor .editcolumn,
+  .grid .tux-message-editor .infocolumn-block {
+    background-color: var(--gray-28) !important;
+    color: var(--gray-a) !important;
+  }
+  .tux-pagemode-status.fuzzy {
+    background-image: linear-gradient(transparent, transparent),
+                          url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2233.389%22 height=%2222.857%22 viewBox=%220 0 33.389 22.857%22%3E %3Cpath fill=%22%234b380d%22 d=%22M0 0h25.922l7.467 11.43-7.468 11.428H0V0z%22/%3E %3Cpath fill=%22%23999%22 d=%22M17.98 4.357c-4.06 0-7.374 3.316-7.374 7.375 0 4.06 3.315 7.375 7.375 7.375 4.06 0 7.376-3.316 7.376-7.375 0-4.06-3.316-7.375-7.375-7.375zm0 1.768c3.105 0 5.608 2.504 5.608 5.607s-2.504 5.607-5.607 5.607c-3.102 0-5.606-2.505-5.606-5.608 0-3.103 2.504-5.607 5.607-5.607z%22/%3E %3Cpath fill=%22%23999%22 d=%22M17.19 7.223v5.761h3.427v-1.21H18.4V7.223h-1.21z%22/%3E %3C/svg%3E");
+  }
+  .tux-workflow-status-selector li.selected {
+    background-image: linear-gradient(transparent, transparent),
+                          url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2215%22 viewBox=%220 0 15 15%22%3E %3Cpath fill=%22%23999%22 d=%22M10.765 1.078l-5.188 8.938-2.03-1.5L1.95 10.64l3.25 2.407 1.188.875.75-1.28 5.906-10.25-2.28-1.314z%22/%3E %3C/svg%3E");
+    color: var(--gray-a) !important;
+  }
+  .grid .tux-message-editor .close, .tux-action-bar .page-mode-button::before {
+    filter: invert(1) brightness(80%);
+  }
+  .tux-status-fuzzy {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%3E%3Cpath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23999%22%20d%3D%22M7.5.125C3.44.125.125%203.44.125%207.5c0%204.06%203.316%207.375%207.375%207.375%204.06%200%207.375-3.316%207.375-7.375C14.875%203.44%2011.56.125%207.5.125zm0%201.768c3.104%200%205.607%202.504%205.607%205.607s-2.504%205.607-5.607%205.607S1.893%2010.604%201.893%207.5%204.396%201.893%207.5%201.893z%22%2F%3E%3Cpath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23999%22%20d%3D%22M6.708%202.99v5.763h3.428v-1.21H7.918V2.99h-1.21z%22%2F%3E%3C%2Fsvg%3E");
+  }
+  .tux-dropdown-menu .unchangeable, .tux-message-editor .shortcutinfo,
+  .grid .tux-message-editor .messagekey, .tux-message-selector label {
+    color: var(--gray-a);
+  }
+  .tm-suggestion, .in-other-language {
+    border: 1px solid var(--gray-5);
+    border-left: 2px solid var(--base-color);
+    background-color: var(--gray-28);
+  }
+  .ext-translate-container .tux-messagelist .tux-message-pagemode .tux-message-item-compact:hover,
+  .ext-translate-container .tux-messagelist .tux-message-pagemode,
+  .tux-message-item:hover, .tux-messagetable-header.floating {
+    background: var(--gray-28);
+  }
+  .tux-textarea-translation,
+  .tux-messagelist .tux-message-pagemode .tux-pagemode-source,
+  .tux-list-translation, .infocolumn .loading {
+    color: var(--gray-9a);
+  }
+  .tux-action-bar, .tux-message-item.translated,
+  .tux-message-item.translated:hover, .tux-message-item.proofread,
+  .tux-message-item.proofread:hover {
+    background: var(--gray-18);
+  }
+  .tux-messagetable-loader {
+    background: var(--gray-18);
+    color: var(--gray-a);
+  }
+  .tux-action-bar button {
+    background-color: var(--gray-3);
+    background-image: linear-gradient(var(--gray-3), var(--gray-4));
+    border-color: var(--gray-5);
+    color: var(--gray-a);
+  }
+  .tux-action-bar button:hover {
+    background-color: var(--gray-3);
+    background-image: linear-gradient(var(--gray-4), var(--gray-5));
+  }
+  .tux-notice, .group-warning {
+    background-color: var(--brown-3);
+  }
+  .tux-statsbar {
+    background-color: var(--gray-5);
+  }
+  .tux-message-selector li.selected {
+    border-color: var(--base-color);
+  }
+  .tux-action-bar.floating {
+    border-color: var(--gray-5);
+  }
+  .tux-messagetable-header {
+    border-color: var(--gray-3);
   }
   th[style*="background:#fff; border-bottom:1px solid #aaa; padding:6px; color:#244C85;"] {
     background: var(--gray-2) !important;
