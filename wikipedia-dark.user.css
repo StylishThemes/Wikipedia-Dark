@@ -766,7 +766,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   tr[style*="background-color: #f7f7f7;" i], th[style*="background:#F2F2F2" i],
   #filetoc, th[style*="background:#F9F9F9" i],
   th[style*="background-color: lightgrey" i], th[style*="background:#ddd" i],
-  .infobox th[style*="background"]:not([style*="background:#dfc;"]):not(.infobox-above):not([style*="lavender"]):not([style*="cfe3ff"]):not([style*="rgb(235,235,210)"]),
+  .infobox th[style*="background"]:not([style*="green"]):not([style*="background:#dfc;"]):not(.infobox-above):not([style*="lavender"]):not([style*="cfe3ff"]):not([style*="rgb(235,235,210)"]),
   .infobox tr[style*="background-color"]:not([style*="cedff2"]),
   .infobox td[style*="background"]:not([style*="cdde"]):not([style*="e8dbae"]),
   td[style*="background:#F2F2F2" i],
@@ -1051,6 +1051,19 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .mw-translate-fuzzy {
     background-color: var(--red-3);
   }
+  td[style*="background:#ff9292;"] {
+    background-color: var(--red-2) !important;
+    color: var(--gray-e);
+    filter: contrast(130%);
+  }
+  .wikitable td[style*="background:#ffdbdb;"] {
+    background-color: var(--red-2) !important;
+    color: var(--gray-e);
+    filter: contrast(120%);
+  }
+  td[style*="background:#fff;"] {
+    background-color: var(--gray-28) !important;
+  }
   span[style*="color:black;background:white;border:3px solid red;"] {
     background-color: var(--gray-2) !important;
     border-color: var(--red-3) !important;
@@ -1142,6 +1155,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   }
   th[style*="background:#EEF3E2"] {
     background-color: var(--green-3) !important;
+  }
+  th[style*="background:palegreen;"] {
+    background-color: var(--green-2) !important;
+    color: var(--gray-e) !important;
   }
   td.mbox-text[style*="border: 1px solid #AAA;"],
   tr[style*="background-color: #E4F2E4;"], div[style*="background:#00af89;"] {
@@ -2732,7 +2749,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   a.image img[src*="Gnome-dialog-"], a.image [src*="Writing_Magnifying"],
   a.image [src*="Postscript"], a.image [src*="People_"],
   a.image [src*="Fairytale_"], a.image [src*="Pod_l"],
-  a.image [src*="-file-manager"] {
+  a.image [src*="-file-manager"], a.image [src*="Chilli"] {
     background: inherit !important;
   }
   .vertical-navbox th:not([style*="6a5"]), div[class*="mw-echo-ui"],
