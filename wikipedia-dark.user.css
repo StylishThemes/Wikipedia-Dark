@@ -4140,7 +4140,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   input[type="radio"]:checked + .frb-btn {
     background-color: var(--base-color);
-    color: var(-gray-e);
+    color: var(--gray-e);
     border-color: var(--base-color);
   }
   .frb-btn, .payment-method-button {
