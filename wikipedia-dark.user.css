@@ -897,7 +897,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     color: var(--gray-c);
   }
   span[style="color:black"], span[style*="color: black"],
-  span[style*="color:black"] {
+  span[style*="color:black"], td[style*="color: black"],
+  td[style*="color: #2C2C2C"] {
     color: var(--gray-c) !important;
   }
   span[style*="color: #000000;"], .wikiEditor-ui-toolbar .page-table td,
@@ -1041,8 +1042,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   }
   /* Red
   ** Red links (non-existant pages) */
-  div.vectorTabs li.new:not(.selected) a, .mw-plusminus-neg, a.new,
-  #p-personal a.new {
+  div.vectorTabs li.new:not(.selected) a, .mw-plusminus-neg {
     color: var(--red-1) !important;
   }
   table.xambox.xambox-type-serious {
@@ -1933,8 +1933,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   }
   html table.tmbox, .tmbox.tmbox-notice table[style*="background:transparent;"],
   td[style*="border: 1px solid #fad67d; background-color: #faf6ed;"] {
-    background-color: var(--brown-3) !important;
     background: var(--brown-3) !important;
+    background-color: var(--brown-3) !important;
     border-color: var(--brown-2) !important;
   }
   .infobox.standard-talk {
@@ -2469,6 +2469,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
     color: var(--gray-bc) !important;
+  }
+  a.new, #p-personal a.new {
+    color: var(--red-4) !important;
   }
   #mw-editform-cancel > a > span.oo-ui-labelElement-label {
     color: var(--red-4);
