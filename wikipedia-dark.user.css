@@ -231,7 +231,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .tfa-recent, #contentSub, #contentSub2, .central-featured-lang .link-box small,
   .central-featured-lang .link-box small, .other-project-tagline,
   .mw-number-text, .tux-editor-header, .tux-breadcrumb,
-  .ext-translate-language-selector-label {
+  .ext-translate-language-selector-label, .mw-mmv-title {
     color: var(--gray-a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li,
