@@ -22,7 +22,7 @@
   },
   "scripts": {
     "authors": "bash tools/authors",
-    "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
+    "clean": "npm run perfectionist && node tools/clean.js",
     "eslint": "eslint tools/*.js",
     "patch": "versions -p -C patch wikipedia-dark.user.css",
     "minor": "versions -p -C minor wikipedia-dark.user.css",
