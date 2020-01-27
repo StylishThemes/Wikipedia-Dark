@@ -2604,7 +2604,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted:not(.oo-ui-optionWidget-selected) {
     background-color: var(--gray-2);
   }
-  div[style*="background-color:#f9f9f9"] {
+  div[style*="background-color:#f9f9f9"], div[style*="background-color:#fffaf5"] {
     background-color: var(--gray-2) !important;
   }
   table.fmbox-warning {
