@@ -708,7 +708,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   tr[style*="background:#fbf8d6" i], table.flextable td,
   table.nmbox td:not(.mbox-text), tr[style*="background-color:#f7f7f7"],
   .mw-changeslist-line tr.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey td:not(:nth-child(-n+2)),
-  div[style*="background-color: #fff"]:not([style*="ff3"]):not([style*="fff5"]),
+  div[style*="background-color: #fff"]:not([style*="ff3"]):not([style*="fff5"]):not([style*="fffd"]),
   div[style*="background:#FFF;"] {
     background-color: var(--gray-28) !important;
   }
@@ -2637,6 +2637,40 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     background-color: var(--gray-2) !important;
   }
   .wikipediauserbox, .wikipediauserbox td * {
+    border-color: var(--gray-5) !important;
+  }
+  .boilerplate.archived[style="background-color: #edeaff" i] {
+    background-color: var(--blue-2) !important;
+    border-color: var(--blue-4) !important;
+  }
+  .boilerplate.archived[style*="background-color: #eaffea" i] {
+    background-color: var(--green-4) !important;
+    border-color: var(--green-2) !important;
+  }
+  .boilerplate.archived[style*="background-color: #ffeaea" i] {
+    background-color: var(--red-3) !important;
+    border-color: var(--red-2) !important;
+  }
+  .boilerplate.archived[style*="background-color: #ffffd1" i] {
+    background-color: var(--brown-1) !important;
+    border-color: var(--brown-2) !important;
+  }
+  .boilerplate.xfd-closed[style*="background-color: #f3f9ff" i] {
+    background-color: var(--blue-3) !important;
+    border-color: var(--blue-1) !important;
+  }
+  .boilerplate[style*="background-color: #efe" i] {
+    background-color: var(--green-2) !important;
+    border-color: var(--green-1) !important;
+  }
+  .mw-collapsible.mw-made-collapsible th[style*="background"] {
+    background-color: var(--green-2) !important;
+  }
+  .mw-collapsible.mw-made-collapsible td[style*="background-color: #fcf4ef" i] {
+    background-color: var(--gray-3) !important;
+    border-color: var(--gray-5) !important;
+  }
+  .mw-collapsible.mw-made-collapsible[style*="border"] {
     border-color: var(--gray-5) !important;
   }
   /*** diff pages ***/
