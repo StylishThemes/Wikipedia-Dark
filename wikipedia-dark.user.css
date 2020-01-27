@@ -230,8 +230,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .guider_content h1, .guider_content p, select#searchLanguage option, dt,
   .tfa-recent, #contentSub, #contentSub2, .central-featured-lang .link-box small,
   .central-featured-lang .link-box small, .other-project-tagline,
-  .mw-number-text, .tux-editor-header, .tux-breadcrumb,
-  .ext-translate-language-selector-label, .mw-mmv-title {
+  .mw-number-text, .tux-editor-header, .tux-breadcrumb, .mw-mmv-title,
+  .ext-translate-language-selector-label, #mw-mwoauth-authorize-form {
     color: var(--gray-a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li,
@@ -614,7 +614,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .mw-parser-output #bottombox-d, .uls-lcd, .uls-search,
   .ns-0 #mw-content-text h1, .wikiEditor-ui-toolbar, .mw-ext-score-popup,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle,
-  .mw-parser-output .quotebox-title,
+  .mw-parser-output .quotebox-title, .mw-parser-output .portal > ul,
   .uls-menu .uls-no-results-view .uls-no-found-more {
     background-color: var(--gray-2); /* non-important */
   }
@@ -2079,8 +2079,9 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   tr:not([style*="border-bottom"]):not(:hover):not([style*="background: #eaecf0;"]):not([style*="#ccccff"]):not([style*="#cedff2"]),
   table:not(.authortemplate):not(.standard-talk):not([style*="#F6F9ED"]):not([style*="#feeeee"]):not(.hp-portalen):not([style*="background"]):not(.plainlinks):not([style*="#99b2cc"]):not(.processheadertemplate),
   div[style*="background-color"]:not([style*="#88A"]):not([style*="#36A"]):not([style*="#ACA"]):not([style*="#edeaff"]):not([style*="border:1px solid ;"]):not([style*="#99b2cc"]),
-  th, td:not(:hover), h1, h3, h4, h5, h6, ul, li, select, .mw-body, .toc,
-  .mw-warning, .navbox, .catlinks, table.fmbox,
+  th, td:not(:hover), h1, h3, h4, h5, h6, ul, li, select, .mw-body, .toc, #toc,
+  .mw-gallery-traditional li.gallerybox div.thumb, div.thumbinner,
+  .mw-parser-output .portal, .mw-warning, .navbox, .catlinks, table.fmbox,
   .wikiEditor-ui .wikiEditor-ui-view, .wikiEditor-ui-toolbar .sections .section,
   .wikiEditor-ui-toolbar .group-search, .wikiEditor-ui-toolbar .group,
   .wikiEditor-ui-toolbar .group .tool-select,
@@ -2130,7 +2131,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .wikibase-statementview, .mw-parser-output .quotebox, .ext-uls-sub-panel,
   .rt-tooltip, .uls-ime-more-settings-link,
   .oo-ui-windowManager-modal.oo-ui-windowManager-floating > .oo-ui-dialog > .oo-ui-window-frame,
-  .client-js .mw-recentchanges-toplinks:not(.mw-recentchanges-toplinks-collapsed) {
+  .client-js .mw-recentchanges-toplinks:not(.mw-recentchanges-toplinks-collapsed),
+  .mw-rcfilters-ui-watchlistTopSectionWidget-separator {
     border-color: var(--gray-5);
   }
   table.ambox-protection {
@@ -2208,7 +2210,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .uls-search, .uls-menu, .mw-datatable td, .mw-datatable th,
   table[style*="border:1px solid #ddd;"], div[style*="border:1px solid #999;"],
   span[style*="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0;"],
-  table[style*="border:2px solid #e0e0e0"] {
+  table[style*="border:2px solid #e0e0e0"], tr.expand-child .description {
     border-color: var(--gray-5) !important;
   }
   div[style*="border:1px #FFFFFF"] {
@@ -2325,8 +2327,8 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
   .ve-ui-mwHelpPopupTool-item:not(:first-child), .oo-ui-popupWidget-popup {
     border-color: var(--gray-5);
   }
-  .mwe-popups::before, .cx-callout-1::before {
-    border-bottom-color: var(--gray-e);
+  .cx-callout, .mwe-popups::before, .cx-callout-1::before {
+    border-bottom-color: var(--gray-7);
   }
   .mwe-popups.mwe-popups-image-pointer::after {
     border-bottom: 12px solid var(--gray-2) !important;
@@ -2625,10 +2627,23 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     background-color: var(--gray-18);
     border-color: var(--brown-2);
   }
+  .wikipediauserbox td {
+    color: var(--gray-a) !important;
+  }
+  .wikipediauserbox td a, .wikipediauserbox td a span {
+    color: var(--base-color) !important;
+  }
+  .wikipediauserbox table[style*="background"] {
+    background-color: var(--gray-2) !important;
+  }
+  .wikipediauserbox, .wikipediauserbox td * {
+    border-color: var(--gray-5) !important;
+  }
   /*** diff pages ***/
   table.diff, td.diff-otitle, td.diff-ntitle, td.diff-addedline,
   td.diff-deletedline, td.diff-context {
     background-color: transparent !important;
+    color: var(--gray-9a);
   }
   .wikEdDiffButtonUnchecked {
     border-color: var(--gray-4) !important;
