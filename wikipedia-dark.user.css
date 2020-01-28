@@ -4241,6 +4241,9 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .mw-parser-output .main-top-left {
     background-image: linear-gradient(to right, var(--gray-28) 10%, var(--gray-2) 70%, transparent 100%);
   }
+  .mw-parser-output .main-top-right {
+    background-image: linear-gradient(to left, transparent, var(--gray-2_75) 10% 50%, transparent 70%);
+  }
   .mw-parser-output .main-top, .mw-parser-output .main-box {
     background-color: var(--gray-28);
     border: 1px solid var(--gray-4);
