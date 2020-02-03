@@ -941,6 +941,19 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     background-color: var(--gray-2);
     border: 0 !important;
   }
+  .k-player .lButton, .k-player .rButton {
+    border: medium none;
+  }
+  .k-player .volume-slider a.ui-slider-handle.ui-state-hover,
+  .k-player .volume-slider a.ui-slider-handle.ui-state-focus {
+    border: 0 !important;
+  }
+  .k-player .k-options:hover {
+    border-bottom: 1ps solid transparent !important;
+  }
+  .k-player .ui-widget-content {
+    color: #ccc;
+  }
   div > .flow-menu li a, .mw-mmv-post-image {
     background-color: var(--gray-2) !important;
   }
