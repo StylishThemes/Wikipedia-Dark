@@ -4861,13 +4861,34 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     color: #aaa;
     vertical-align: text-top;
   }
+  span a img[src*="Wikinews_commentary"] {
+    filter: invert(1) hue-rotate(180deg) brightness(150%) !important;
+  }
   #main_page_mp-mp {
     background-color: transparent !important;
   }
-  #main_page_mp-mp div {
+  #main_page_mp-mp div:not(.ui-widget):not(.control-bar):not(.lButton ):not(.bodySearchWrap):not(#WOTD-rss-description):not([style*="border"]):not([style="text-align:center;"]) {
+    background-color: var(--gray-2);
+  }
+  div[style*="background-color: #FFFFFF;"] {
     background-color: var(--gray-2) !important;
   }
-  #main_page_mp-mp table {
+  table[style*="background-color:#E9E9FF; width: 100%; border: 3px solid #AAAAEE;"] {
+    background-color: var(--purple-0) !important;
+    border: 3px solid var(--purple-2) !important;
+  }
+  table[style*="border:3px solid #AABBDD; background:#E9F3FF;"] {
+    background-color: var(--blue-2) !important;
+    border: 3px solid var(--blue-4) !important;
+  }
+  div[style*="border: 3px solid #AAAAAA;padding:5px;background-color: #F0F0F0"] {
+    background-color: var(--gray-28) !important;
+    border: 3px solid var(--gray-4) !important;
+  }
+  td[style*="border: 1px solid #FFFFFF;padding:5px;background-color: #FFFFFF"] {
+    border-color: var(--gray-2) !important;
+  }
+  #main_page_mp-mp table:not([style*="#AAAAEE;"]):not([style*="#AABBDD;"]) {
     border-color: var(--gray-5) !important;
   }
   div.NavFrame div.NavHead {
