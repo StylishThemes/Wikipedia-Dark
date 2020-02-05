@@ -950,10 +950,10 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     border: 0 !important;
   }
   .k-player .k-options:hover {
-    border-bottom: 1ps solid transparent !important;
+    border-bottom: 1px solid transparent !important;
   }
   .k-player .ui-widget-content {
-    color: #ccc;
+    color: var(--gray-c);
   }
   div > .flow-menu li a, .mw-mmv-post-image {
     background-color: var(--gray-2) !important;
@@ -1426,7 +1426,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     border-color: var(--gray-5) !important;
   }
   .tux-workflow-status-triangle::after {
-    border-top: 6px solid #aaa;
+    border-top: 6px solid var(--gray-a);
   }
   .wikidialog-button.wikidialog-delegable, .tux-workflow-status {
     background-color: var(--gray-4);
@@ -4955,13 +4955,13 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     content: "Wiktionary";
     margin-left: 40px !important;
     font-size: 20px;
-    color: #aaa;
+    color: var(--gray-a);
   }
   #p-logo:after {
     content: "The free Dictionary";
     margin-left: 26px !important;
     font-size: 14px;
-    color: #aaa;
+    color: var(--gray-a);
     vertical-align: text-top;
   }
   span a img[src*="Wikinews_commentary"] {
@@ -4970,7 +4970,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   #main_page_mp-mp {
     background-color: transparent !important;
   }
-  #main_page_mp-mp div:not(.ui-widget):not(.control-bar):not(.lButton ):not(.bodySearchWrap):not(#WOTD-rss-description):not([style*="border"]):not([style="text-align:center;"]) {
+  #main_page_mp-mp div:not(.ui-widget):not(.control-bar):not(.lButton):not(.bodySearchWrap):not(#WOTD-rss-description):not([style*="border"]):not([style="text-align:center;"]) {
     background-color: var(--gray-2);
   }
   div[style*="background-color: #FFFFFF;"] {
@@ -5137,7 +5137,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   /* define white https://en.wikibooks.org/wiki/LaTeX/Colors#The_68_standard_colors_known_to_dvips */
   td[bgcolor=""] {
-    background-color: #fff;
+    background-color: var(--white);
   }
   .ns-talk .mw-body-content dl, .ns-talk .mw-body-content dl dl dl,
   .ns-talk .mw-body-content dl dl dl dl dl,
