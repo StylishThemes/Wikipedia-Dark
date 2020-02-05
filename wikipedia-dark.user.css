@@ -3473,6 +3473,48 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     background: var(--gray-3) !important;
     border-color: var(--gray-5) !important;
   }
+  .mw-parser-output .MainPage__column--left {
+    background-color: var(--green-4);
+    border-color: var(--green-1);
+    color: var(--gray-e);
+  }
+  .mw-parser-output .MainPage__heading--featured-article,
+  .mw-parser-output .MainPage__heading-dyk {
+    background-color: var(--green-2);
+    border-color: var(--green-1);
+    color: var(--gray-c);
+  }
+  .mw-parser-output .MainPage__banner {
+    background-color: var(--gray-28);
+    border-color: var(--gray-4);
+    color: var(--gray-e);
+  }
+  .mw-parser-output .MainPage__heading--other,
+  .mw-parser-output .MainPage__heading--sister,
+  .mw-parser-output .MainPage__heading--languages {
+    background-color: var(--gray-3);
+    border-color: var(--gray-5);
+    color: var(--gray-c);
+  }
+  .mw-parser-output .MainPage__column--right {
+    background-color: var(--blue-2);
+    border-color: var(--blue-4);
+  }
+  .mw-parser-output .MainPage__heading--itn,
+  .mw-parser-output .MainPage__heading--otd {
+    background-color: var(--blue-4);
+    border-color: var(--blue-1);
+    color: var(--gray-c);
+  }
+  .mw-parser-output .MainPageBG--featured-picture {
+    background-color: var(--purple-d);
+    border-color: var(--purple-2);
+  }
+  .mw-parser-output .MainPage__heading--featured-picture {
+    background-color: var(--purple-1);
+    border: var(--purple-2);
+    color: var(--gray-c);
+  }
   /* Animation fixes */
   .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link {
     -webkit-transition: none;
