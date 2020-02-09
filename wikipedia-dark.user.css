@@ -918,7 +918,7 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     color: var(--gray-c) !important;
   }
   span[style*="color: #000000;"], .wikiEditor-ui-toolbar .page-table td,
-  sup[style*="color:#000;"], div[style*="color:#000;"] {
+  sup[style*="color:#000;"], div[style*="color:#000;"], .editOptions {
     color: var(--gray-a) !important;
   }
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
