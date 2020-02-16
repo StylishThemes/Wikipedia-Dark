@@ -23,13 +23,12 @@
   "scripts": {
     "authors": "bash tools/authors",
     "clean": "npm run perfectionist && node tools/clean.js",
-    "eslint": "eslint tools/*.js",
+    "lint": "eslint tools/*.js && stylelint wikipedia-dark.user.css",
     "patch": "versions -p -C patch wikipedia-dark.user.css",
     "minor": "versions -p -C minor wikipedia-dark.user.css",
     "major": "versions -p -C major wikipedia-dark.user.css",
     "perfectionist": "perfectionist wikipedia-dark.user.css wikipedia-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "stylelint wikipedia-dark.user.css",
-    "test": "npm run eslint && npm run stylelint",
+    "test": "npm run lint",
     "update": "updates -cu && npm install"
   }
 }
