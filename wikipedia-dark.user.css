@@ -1496,8 +1496,12 @@ regexp("https?:\/\/wiki\.(rpcs3\.net|(archlinux|mozilla)\.(org|jp))\/.*$") {
     background-color: var(--gray-28) !important;
     border-color: var(--gray-5) !important;
   }
-  .oo-ui-menuSelectWidget, html .thumbimage {
+  html .thumbimage {
     background-color: var(--gray-28);
+    border-color: var(--gray-5);
+  }
+  .oo-ui-menuSelectWidget {
+    background-color: var(--gray-18);
     border-color: var(--gray-5);
   }
   table.ext-status-unknown > tbody > tr.tpl-infobox-header {
