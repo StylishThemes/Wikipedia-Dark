@@ -5168,6 +5168,9 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .ext-related-articles-card-list h3::after {
     background: none;
   }
+  #www-wikivoyage-org .search-form fieldset {
+    background: none !important;
+  }
 }
 @-moz-document domain("wikiquote.org") {
   div[style*="background-color: #f8f8ff"], #mf-qotd > div {
@@ -5341,7 +5344,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .mw-parser-output .tech-header-currentpage-news .tech-header-intro {
     border-color: var(--purple-2);
   }
-  .mw-parser-output .tech-header {
+  .mw-parser-output .tech-header, .mw-parser-output .MainPage__block_heading {
     background: var(--gray-28);
   }
   .mw-parser-output .tech-header-currentpage-forum .tech-header-tab-forum,
