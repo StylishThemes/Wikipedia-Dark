@@ -913,12 +913,13 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     color: var(--gray-b9) !important;
   }
   .messagebox, .errorbox, .warningbox, .successbox,
-  .suggestions-special .special-label {
+  .suggestions-special .special-label, .reference-text,
+  .mwe-popups .mwe-popups-container {
     color: var(--gray-c);
   }
   span[style="color:black"], span[style*="color: black"],
   span[style*="color:black"], td[style*="color: black"],
-  td[style*="color: #2C2C2C"] {
+  td[style*="color: #2C2C2C"], .mwe-popups-container a {
     color: var(--gray-c) !important;
   }
   span[style*="color: #000000;"], .wikiEditor-ui-toolbar .page-table td,
