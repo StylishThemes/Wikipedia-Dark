@@ -294,7 +294,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   legend .oo-ui-labelElement-label, .cnotice-message p,
   #mwe-popups-settings header h1, #mwe-popups-settings main form label > span,
   .mwe-popups-settings-help p, font[color="black"],
-  #content td[style*="background: #f9f9e9;" i] a {
+  #content td[style*="background: #f9f9e9;" i] a,
+  .reference-text {
     color: var(--gray-d) !important;
   }
   a:hover,
