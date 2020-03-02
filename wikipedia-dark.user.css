@@ -1697,6 +1697,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   table.xambox-type-notice {
     border-left: 1em solid var(--blue-1) !important;
   }
+  .rt-target {
+    background-color: var(--blue-2);
+  }
   div[style*="background"]:not(.boilerplate):not([style*="#FFE"]):not([style*="#fff"]) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question),
   div[style*="background"]:not(.boilerplate):not([style*="#FFE"]):not([style*="#fff"]) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question) *,
   tr[style*="background-color:tan;" i], div[style*="background: #444444;"],
