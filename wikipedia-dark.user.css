@@ -1167,6 +1167,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   td[style="background-color: #fec1b9"], td[style="background-color: #fcb5ab"] {
     background-color: var(--red-3) !important;
   }
+  table[style="background-color: #fee;"] {
+    background-color: var(--red-0) !important;
+  }
   tbody td[style*="border:1px solid #6BB; background-color: #CFF;"] {
     background-color: var(--blue-2) !important;
     border: 1px solid var(--blue-3) !important;
