@@ -2889,9 +2889,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     color: var(--gray-e) !important;
   }
   /*** invert images ***/
-  img[title="Wikipedia"], img.mwe-math-fallback-image-inline, #mw-wsmfinal-close,
-  img[src*="Speaker_Icon"], .infobox img[alt*="structure"][src*=".svg"],
-  img[src*=".svg"][height="16"], img[src*=".svg"][height="17"],
+  img[title="Wikipedia"], #mw-wsmfinal-close, img[src*="Speaker_Icon"],
+  .infobox img[alt*="structure"][src*=".svg"], img[src*=".svg"][height="16"],
+  img[src*=".svg"][height="17"],
   img[src*=".svg"]:not([src*="check"])[height="18"], #gtx-host,
   .jfk-bubble-closebtn, .RTsettings,
   #pt-notifications-notice .mw-echo-notifications-badge,
@@ -2900,6 +2900,15 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     -webkit-filter: invert(100%) !important;
             filter: invert(100%) !important;
     background-color: transparent !important;
+  }
+  img.mwe-math-fallback-image-inline {
+    filter: invert(1) brightness(90%);
+  }
+  div.equation-box[style*="background-color: #F5FFFA"] {
+    background-color: var(--gray-1) !important;
+  }
+  div.equation-box[style*="border-color: #0073CF"] {
+    border-color: var(--base-color) !important;
   }
   img[src*="Portal.svg"], img[src*="Information.svg"],
   img[src*="Global_thinking.svg"], img[src*="Clipboard.svg"],
