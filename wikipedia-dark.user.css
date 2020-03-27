@@ -4953,6 +4953,32 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background-color: var(--gray-2) !important;
   }
 }
+@-moz-document domain("pt.wikipedia.org") {
+  div[style*="background:#FFFFFF"] {
+    background-color: var(--gray-2) !important;
+  }
+  td[style*="border-left:1px solid #cccccc"] {
+    border-color: var(--gray-5) !important;
+  }
+  div[style*="border:1px solid #a3b0bf"],
+  table[style*="border: 1px solid #b5cde3"],
+  td[style*="border-top: 1px solid #b5cde3"] {
+    border-color: var(--blue-4) !important;
+  }
+  th[style*="border-bottom: 1px solid #c0c090"],
+  #talkheader > tbody > tr > td[style*="border-top: 1px solid #c0c090"] {
+    border-color: var(--brown-2) !important;
+  }
+  td[style*="border: 1px solid #cedff2"] {
+    border-color: var(--blue-2) !important;
+  }
+  div.mw-inputbox-centered[style*="background-color: #f8f8ff"] {
+    background-color: transparent !important;
+  }
+  div[style*="background:#99CCFF"] {
+    background: var(--blue-2) !important;
+  }
+}
 @-moz-document domain("ru.wikipedia.org"), domain("ru.wiktionary.org") {
   .mw-parser-output .main-top, .mw-parser-output .main-box, #mw-page-base {
     background-color: transparent;
