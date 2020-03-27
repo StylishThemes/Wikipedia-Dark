@@ -983,7 +983,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .oo-ui-widget-enabled.mw-rcfilters-ui-rcTopSectionWidget,
   .oo-ui-widget-enabled.oo-ui-tagMultiselectWidget,
   .oo-ui-widget-enabled.mw-rcfilters-ui-watchlistTopSectionWidget,
-  tr[style*="background"]:not([style*="cedff2"]):not([style*="E4F2E4"]):not([style*="ccccff"]):not([style*="white"]) {
+  tr[style*="background"]:not([style*="ABCDEF"]):not([style*="cedff2"]):not([style*="E4F2E4"]):not([style*="ccccff"]):not([style*="white"]) {
     background-color: transparent !important;
   }
   #mw-fr-watchlist-pending-notice {
@@ -2969,7 +2969,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   a.image [src*="Fairytale_"], a.image [src*="Pod_l"],
   a.image [src*="-file-manager"], a.image [src*="Chilli"],
   a.image [src*="Vista_"], a.image [src*="Trivialpursuit"],
-  a.image [src*="Fisher"] {
+  a.image [src*="Fisher"], a.image img[src*="Icon_tools"] {
     background: inherit !important;
   }
   .vertical-navbox th:not([style*="6a5"]), div[class*="mw-echo-ui"],
@@ -4469,6 +4469,18 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .ambox-notice {
     border-top: 5px solid var(--blue-1) !important;
   }
+  th[style*="background-color: #F8EABA"], td[style*="background-color:#F8EABA"] {
+    background-color: var(--brown-3) !important;
+  }
+  th[style*="border:1px solid #C0C090"], td[style*="border: 1px solid #C0C090"] {
+    border-color: var(--brown-2) !important;
+  }
+  div[style*="border: 1px solid #e6e6e6"] {
+    border-color: var(--gray-5) !important;
+  }
+  div[style*="border-color:red"] {
+    border: 4px solid var(--red-1) !important;
+  }
   .not-patrolled {
     background-color: var(--brown-4);
   }
@@ -4507,6 +4519,9 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: inherit !important;
     filter: invert(90%) hue-rotate(180deg) brightness(90%) contrast(100%);
   }
+  a.image img[src*="SARS-CoV-2_without_background"] {
+    background: inherit !important;
+  }
   /* fix border due to image inversion in above rule */
   a.image img[src*="Familiae_Augustae_Franconicae_Genealogia_%28ca._1650%29_tabula_ad_p.10_%28excerpt%29"],
   img[src*="Kreuz_als_Fu%C3%9Fnotenzeichen_in_Henderson"],
@@ -4526,21 +4541,21 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: var(--black_25);
     border: 1px solid var(--gray-4) !important;
   }
-  span[style*="background-image: linear-gradient(#fdfefe 0,#e8f2f8 16px);"],
-  kbd[style*="background: #F7F7F7;"] {
+  span[style*="background-image: linear-gradient(#fdfefe 0,#e8f2f8 16px)"],
+  kbd[style*="background: #F7F7F7"] {
     background: var(--black_25) !important;
   }
-  td[style*="background:#f2f2f4;"], td[style*="background-color:#f2f2f4;"] {
+  td[style*="background:#f2f2f4"], td[style*="background-color:#f2f2f4"] {
     background: var(--gray-28) !important;
   }
-  td[style*="background: #EAEAEA;"] {
+  td[style*="background: #EAEAEA"] {
     background: var(--gray-28) !important;
     border-color: var(--gray-1) !important;
   }
   .zebra td[style*="border-color: #fdfdfd"] {
     border-color: var(--gray-1) !important;
   }
-  kbd[style*="border-color:#DDDDDD #AAAAAA #888888 #CCCCCC;"], .rahmenfarbe1 {
+  kbd[style*="border-color:#DDDDDD #AAAAAA #888888 #CCCCCC"], .rahmenfarbe1 {
     border-color: var(--gray-4) !important;
   }
   .rahmenfarbe2 {
@@ -4548,7 +4563,8 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   html[lang="de"] body #mw-content-text #hauptseite h2 {
     background: var(--blue-2) !important;
-    border: 1px solid var(--blue-3) !important;
+    border: 1px solid var(--gray-4) !important;
+    border-bottom: 0 !important;
   }
   table > * > tr.hintergrundfarbe2 > th, table > * > tr > th.hintergrundfarbe2,
   table.hintergrundfarbe2, .hintergrundfarbe2,
@@ -4563,13 +4579,12 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .mw-parser-output div.NavHead {
     background-color: var(--gray-5);
   }
-  td[style*="background:#CEDAF2;"],
-  .headerSort[style="background-color:#B3B7FF"] {
+  td[style*="background:#CEDAF2"], .headerSort[style="background-color:#B3B7FF"] {
     background-color: var(--purple-1) !important;
   }
-  #Dokumentation\.Info[style*="border: #B3B7FF 3px solid;"],
-  #Vorlagendokumentation[style*="border: #B3B7FF 3px solid;"],
-  #TemplateData[style*="border:2px solid #B3B7FF;"] {
+  #Dokumentation\.Info[style*="border: #B3B7FF 3px solid"],
+  #Vorlagendokumentation[style*="border: #B3B7FF 3px solid"],
+  #TemplateData[style*="border:2px solid #B3B7FF"] {
     border-color: var(--purple-2) !important;
   }
   table.rahmenfarbe3 {
@@ -4584,17 +4599,39 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: var(--gray-2);
     border-color: var(--base-color);
   }
-  div[style*="background-color: rgb(255, 255, 255); clear: both; color: rgb(0, 0, 0);"] {
+  div[style*="background-color: rgb(255, 255, 255); clear: both; color: rgb(0, 0, 0)"] {
     background: transparent !important;
     border-color: var(--gray-5);
   }
-  a.menuSwitcher-help-button[style*="background-color: rgb(0, 128, 0);"] {
+  div[style*="background:#F9F9F9"] {
+    background: var(--gray-28) !important;
+  }
+  div[style*="border:1px solid #CCD2D9"] {
+    border-color: var(--gray-5) !important;
+  }
+  div[style*="border:1px solid #8898bf"] {
+    border-color: var(--blue-4) !important;
+  }
+  tr[style*="background-color:#ABCDEF"] {
+    background: var(--blue-4) !important;
+  }
+  tr[style*="border:1px solid #ABCDEF"] {
+    border-color: var(--blue-1) !important;
+  }
+  td[style*="border-top:solid 1px #CCD2D9"] {
+    border-color: var(--gray-5) !important;
+  }
+  a.menuSwitcher-help-button[style*="background-color: rgb(0, 128, 0)"] {
     background-color: var(--green-2) !important;
     border: 2px solid var(--green-1) !important;
     color: var(--gray-d) !important;
     padding: 2px 4px !important;
   }
-  a[style*="background-color: rgb(255, 0, 0); border-color: rgb(128, 128, 128);"] {
+  .mw-parser-output table.taxobox > * > * > th {
+    background-color: var(--green-4);
+    border-color: var(--gray-5);
+  }
+  a[style*="background-color: rgb(255, 0, 0); border-color: rgb(128, 128, 128)"] {
     background-color: var(--red-3) !important;
     border: 2px solid var(--red-2) !important;
     color: var(--gray-d) !important;
@@ -4618,7 +4655,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     border: 1px solid var(--gray-5);
     background-color: var(--gray-28);
   }
-  .oo-ui-icon-add, .mw-ui-icon-add::before {
+  .oo-ui-icon-add, .mw-ui-icon-add::before, [alt*="arrowPrevious-ltr.svg"] {
     filter: invert(1);
   }
   #accueil_2017_en-tete {
