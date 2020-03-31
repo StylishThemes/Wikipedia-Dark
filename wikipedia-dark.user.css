@@ -2964,7 +2964,13 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   a.image [src*="Fairytale_"], a.image [src*="Pod_l"],
   a.image [src*="-file-manager"], a.image [src*="Chilli"],
   a.image [src*="Vista_"], a.image [src*="Trivialpursuit"],
-  a.image [src*="Fisher"], a.image img[src*="Icon_tools"] {
+  a.image [src*="Fisher"], a.image img[src*="Icon_tools"],
+  a.image img[src*="Puzzle_stub"], a.image img[src*="Gnome-"],
+  a.image img[src*="copyright_icon"], a.image img[src*="Arrows"],
+  a.image img[src*="Squola"], a.image img[src*="scales"],
+  a.image img[src*="DeadEnd"], a.image img[src*="Local"],
+  a.image img[src*="Merge-"], a.image img[src*="delete"],
+  a.image img[src*="Merge-"] {
     background: inherit !important;
   }
   .vertical-navbox th:not([style*="6a5"]), div[class*="mw-echo-ui"],
@@ -2985,7 +2991,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   a.image [src*="Etiquettes_Wikipetcia_Atikamekw"],
   img[src*="Etiquettes_Wikipetcia_Atikamekw"], a.image [src*="Psi2"],
   img[src*="Psi2"], a.image [src*="Draig"], img[src*="Draig"],
-  a.image [src*="Social_sciences"] {
+  a.image [src*="Social_sciences"], img[src*="UserAvatar"],
+  img[src*="external-link"] {
     background: transparent !important;
     filter: invert(1) hue-rotate(180deg) contrast(84%);
   }
@@ -2997,7 +3004,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   a.image img[src*="Dagger-and-double-dagger-in-times-new-roman"],
   img[src*="Kreuz_als_Fu%C3%9Fnotenzeichen_in_Henderson"],
   a img[src*="Audio_a.svg"], a img[src*="Quill_and_ink.svg"],
-  a.image img[src*="Wiktionary-logo-en"] {
+  a.image img[src*="Wiktionary-logo-en"], a.image img[src*="Wikitext"] {
     background: inherit !important;
     filter: invert(90%) hue-rotate(180deg) brightness(140%) contrast(200%);
   }
