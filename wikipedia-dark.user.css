@@ -1359,6 +1359,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   html table th[style*="background:#dfc;"] {
     background: var(--green-2) !important;
   }
+  .mw-tag-marker {
+    background: var(--green-4);
+  }
   /* Yellow */
   table.ext-status-beta > tbody > tr.tpl-infobox-header,
   td[style*="background: #f9f9e9;" i], span[style*="background: #f9f9e9;" i] {
