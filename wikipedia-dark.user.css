@@ -493,14 +493,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   table[style*="background-color: #f9f9f9; border: 1px solid #aaa;"] {
     background-color: var(--gray-3) !important;
   }
-  #searchInput:focus, #simpleSearch:hover #searchInput:focus {
-    -webkit-box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 1px var(--base-color);
-            box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 1px var(--base-color);
-    border-color: var(--base-color) !important;
-  }
-  input[type="search"]#searchInput:focus {
-    -webkit-box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 1px var(--base-color) !important;
-            box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 1px var(--base-color) !important;
+  input[type="search"]#searchInput:focus, #simpleSearch:hover #searchInput:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
     border-color: var(--base-color) !important;
   }
   .oo-ui-inputWidget-input, .oo-ui-checkboxInputWidget-checkIcon {
