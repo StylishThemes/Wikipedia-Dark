@@ -4528,6 +4528,62 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: var(--purple-1) !important;
   }
 }
+@-moz-document domain("pl.wikipedia.org") {
+  [id*="main-page-column"], #main-page-sister-projects, #main-page-wikimedia {
+    background: var(--gray-18);
+  }
+  #main-page #main-page-header {
+    background: var(--gray-18) url("https://upload.wikimedia.org/wikipedia/commons/3/3e/MP-open-book4.png") -20px -15px no-repeat;
+  }
+  #main-page-welcome strong {
+    color: var(--gray-18);
+  }
+  #main-page #main-page-content h2 {
+    background-image: none;
+    background: linear-gradient(to right, var(--blue-1) 0%, transparent 90%);
+    border-radius: 18px;
+  }
+  #main-page #main-page-column1, #main-page #main-page-column2,
+  #main-page #main-page-footer .section.blue {
+    border-color: var(--blue-1);
+  }
+  #main-page #main-page-footer h2 {
+    background-image: none;
+    background: linear-gradient(to right, var(--green-3) 0%, transparent 90%);
+    border-radius: 18px;
+  }
+  #main-page #main-page-footer .section {
+    border-color: var(--green-3);
+  }
+  #main-page #main-page-header, #main-page #main-page-wiki-events {
+    border-color: var(--gray-5);
+  }
+  .tool-button {
+    filter: invert(60%) brightness(140%);
+  }
+  tr[style*="background:white"], td[style*="background-color:white"],
+  div[style*="background-color: white"] {
+    background: var(--gray-2) !important;
+  }
+  td[style*="background-color:#f8f8f8"] {
+    background: var(--gray-28) !important;
+  }
+  tr[style*="border-top:1px solid #aaa"], td[style*="border:1px solid #aaa"] {
+    border-color: var(--gray-5) !important;
+  }
+  .mw-parser-output table.duchowny-kardynal td.naglowek,
+  .mw-parser-output table.duchowny-kardynal tr.naglowek {
+    color: var(--gray-e) !important;
+    background: var(--red-3) !important;
+  }
+  .global-nav td:hover, .global-nav td:focus {
+    border-color: var(--base-color) !important;
+    background-color: var(--blue-3) !important;
+  }
+  td[style*="border: #0645AD solid"] {
+    border-color: var(--base-color) !important;
+  }
+}
 @-moz-document domain("de.wikipedia.org") {
   img[src*="24px-OOjs_UI_icon_signature-ltr.svg"] {
     filter: invert(1) brightness(75%);
