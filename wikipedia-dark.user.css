@@ -4584,6 +4584,45 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     border-color: var(--base-color) !important;
   }
 }
+@-moz-document domain("it.wikipedia.org") {
+  td[style*="background:white"], td[style*="background:#FDFFFF"],
+  td[style*="background:#f0eeff"] {
+    background: var(--gray-2) !important;
+  }
+  td[style*="border:1px solid #a7d7f9"] {
+    border-color: var(--blue-4) !important;
+  }
+  p img[src*="bg_rounded"] {
+    opacity: 0;
+  }
+  td[style*="background:#F5FAFF;" i] div, td[style*="background:#F5FAFF;" i] td {
+    background-color: var(--blue-2) !important;
+  }
+  td[style*="border-bottom: 1px solid #a7d7f9"],
+  div[style*="border-top: 1px solid #a7d7f9"] {
+    border-color: var(--blue-4) !important;
+  }
+  div[style*="background:#F0F0FF"], td[style*="background-color:#F0DFFE"],
+  table[style*="background:#f5faff"] {
+    background: var(--purple-0) !important;
+  }
+  div[style*="border:1px solid #c6c9ff"],
+  div[style*="border-top:1px solid #c6c9ff"],
+  td[style*="border:1px solid #D0B0FF"],
+  div[style*="border-top: 1px solid #D0B0FF"] {
+    border-color: var(--purple-2) !important;
+  }
+  div[style*="background:#ffeedd"], div[style*="background-color:#FFFFDD"],
+  div[style*="background:#ffeedd"] table tr {
+    background: var(--brown-3) !important;
+  }
+  div[style*="border:3px solid #ffdd44"] {
+    border-color: var(--yellow-1) !important;
+  }
+  div[style*="background:#FFFF66"] {
+    background: var(--brown-4) !important;
+  }
+}
 @-moz-document domain("de.wikipedia.org") {
   img[src*="24px-OOjs_UI_icon_signature-ltr.svg"] {
     filter: invert(1) brightness(75%);
