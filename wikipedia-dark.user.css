@@ -512,6 +512,23 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   input.mw-ui-input:focus {
     box-shadow: inset 0 0 0 1px var(--base-color) !important;
   }
+  .mw-ui-checkbox:not(#noop) [type="checkbox"] + label::before {
+    background-color: var(--gray-1);
+    border-color: var(--gray-4);
+  }
+  .mw-ui-checkbox:not(#noop) [type="checkbox"]:enabled:checked + label::before {
+    background-color: var(--base-color);
+    border-color: var(--base-color);
+  }
+  .mw-ui-checkbox:not(#noop) [type="checkbox"]:enabled:checked:hover + label::before {
+    background-color: var(--base-color);
+    border-color: var(--base-color);
+    opacity: .9;
+  }
+  .mw-ui-checkbox:not(#noop) [type="checkbox"]:enabled:checked:not(:active) + label::before {
+    background-color: var(--base-color);
+    border-color: var(--base-color);
+  }
   input#searchButton {
     border-left: 1px solid var(--gray-5) !important;
     border-top: 0 !important;
