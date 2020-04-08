@@ -53,6 +53,10 @@ This theme also works with the mobile sites (Minerva skin). For more comparisons
 
 ## Limitations
 
+### Wikipedia Dark only supports the default wikipedia `vector` theme. 
+
+> Support for other themes are graciously accepted via a pull request... If interested please open a new issue to discuss your intentions before proceeding.   
+
 * Many of the table cells have inline styling to add a background colors.
   * Some of the very common stylings have been replaced using attribute selectors ( e.g. `th[style*="background:#eee" i]` ).
   * But due to the sheer number of possiblities, the replaced css style would also need to include selectors such as `th[style*="background-color: #eee" i]` and `th[style*="background-color:#eee" i]`, `th[bgcolor="eee" i]` and `th[style*="background-color: #eeeeee" i]`, etc.
