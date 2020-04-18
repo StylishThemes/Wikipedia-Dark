@@ -231,7 +231,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .tfa-recent, #contentSub, #contentSub2, .central-featured-lang .link-box small,
   .central-featured-lang .link-box small, .other-project-tagline,
   .mw-number-text, .tux-editor-header, .tux-breadcrumb, .mw-mmv-title,
-  .ext-translate-language-selector-label, #mw-mwoauth-authorize-form {
+  .ext-translate-language-selector-label, #mw-mwoauth-authorize-form, .mw-parser-output > div > blockquote > p {
     color: var(--gray-a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li,
@@ -269,6 +269,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .fancycaptcha-reload, .tux-breadcrumb__item--aggregate,
   .ext-translate-language-selector .uls {
     color: var(--base-color);
+  }
+  .mw-parser-output > div::before, .uls-icon-close {
+    filter: invert(1);
   }
   .wb-langlinks-link > a:link::before, .wb-langlinks-link > a:visited::before,
   .search-container .sprite.svg-arrow-down {
@@ -354,6 +357,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-tool-active > .oo-ui-tool-link,
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
     background-color: var(--gray-3);
+  }
+   div[style*="background-color: rgb(249, 249, 249)"] {
+    background-color: var(--gray-18) !important;
+    border-top-color: var(--gray-5) !important;
   }
   .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:checked + span,
   .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:indeterminate + span {
@@ -2653,7 +2660,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   /*** Quotes ***/
   blockquote {
     background-color: transparent !important;
-    border: none !important;
+    border-color: var(--gray-5) !important;
   }
   /*** Misc ***/
   .bookshelf {
