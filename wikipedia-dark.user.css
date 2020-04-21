@@ -231,7 +231,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .tfa-recent, #contentSub, #contentSub2, .central-featured-lang .link-box small,
   .central-featured-lang .link-box small, .other-project-tagline,
   .mw-number-text, .tux-editor-header, .tux-breadcrumb, .mw-mmv-title,
-  .ext-translate-language-selector-label, #mw-mwoauth-authorize-form, .mw-parser-output > div > blockquote > p {
+  .ext-translate-language-selector-label, #mw-mwoauth-authorize-form,
+  .mw-parser-output > div > blockquote > p {
     color: var(--gray-a);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li,
@@ -358,7 +359,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
     background-color: var(--gray-3);
   }
-   div[style*="background-color: rgb(249, 249, 249)"] {
+  div[style*="background-color: rgb(249, 249, 249)"] {
     background-color: var(--gray-18) !important;
     border-top-color: var(--gray-5) !important;
   }
