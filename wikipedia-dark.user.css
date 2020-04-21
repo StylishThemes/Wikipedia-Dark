@@ -481,7 +481,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   #ca-ve-edit, #ca-nstab-special, #ca-nstab-help, #ca-nstab-category,
   #ca-comments, #ca-proofread-source, #ca-nstab-author, #ca-nstab-portal,
   #ca-nstab-user, #ca-nstab-comments, #ca-main-talk, #ca-nstab-template,
-  #ca-nstab-image, #ca-translate, #ca-lstats, #ca-mstats, #ca-export {
+  #ca-nstab-image, #ca-translate, #ca-lstats, #ca-mstats, #ca-export,
+  #ca-proofreadPageNextLink, #ca-proofreadPagePrevLink, #ca-nstab-page,
+  #ca-proofreadPageIndexLink, #ca-proofreadPageScanLink, #ca-ns0_0,
+  #ca-nstab-index {
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 0 !important;
@@ -945,7 +948,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
     background-color: var(--gray-3);
   }
-  div[style*="background: #FFF;"], div[style*="background:gainsboro;"] {
+  div[style*="background: #FFF;"], div[style*="background:gainsboro;"],
+  div[style*="background:#eee"] {
     background: var(--gray-4) !important;
   }
   .mw-ui-icon.mw-ui-icon-before::before, .mw-ui-icon.mw-ui-icon-element::before,
@@ -1413,7 +1417,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background: var(--yellow-1) !important;
   }
   /* Grey */
-  h2[style*="color:white;"] {
+  h2[style*="color:white;"], th a span[style*="color:#FFFFFF"] {
     color: var(--gray-e) !important;
   }
   .mw-parser-output .MainPage__banner {
@@ -1916,6 +1920,12 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background: var(--blue-2) !important;
     border-color: var(--purple-1) !important;
   }
+  th.navbox-title[style*="background:#3C3B6E"] {
+    background: var(--purple-0) !important;
+  }
+  th.navbox-title[style*="border:1px double #8C959A;"] {
+    border-color: var(--purple-0) !important;
+  }
   div[style*="border-right:1px solid #FFFFFF; padding:0.1em; background-color:#FAF5FF"] {
     background: var(--purple-d) !important;
     border-color: var(--purple-d) !important;
@@ -2021,11 +2031,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border-color: var(--brown-2);
     background-color: var(--brown-3);
   }
-  div[style*="border:solid #aaaaaa"] {
-    border-color: var(--gray-5) !important;
-  }
   div[style*="background:#ffe496"] {
     background-color: var(--brown-3) !important;
+  }
+  span[style*="background:moccasin"] {
+    background-color: var(--brown-2) !important;
   }
   div[style*="background-color: #FFE"] div h2 span#Add_your_project {
     background-color: var(--brown-3);
@@ -2296,7 +2306,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .client-js .mw-recentchanges-toplinks:not(.mw-recentchanges-toplinks-collapsed),
   .mw-rcfilters-ui-watchlistTopSectionWidget-separator,
   .mw-revslider-slider-wrapper, .mw-revslider-container,
-  .mw-parser-output .MainPage__other-areas, .otherprojects {
+  .mw-parser-output .MainPage__other-areas, .otherprojects, .infobox.bordered td,
+  .infobox.bordered th {
     border-color: var(--gray-5);
   }
   table.ambox-protection {
@@ -2374,7 +2385,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .uls-search, .uls-menu, .mw-datatable td, .mw-datatable th,
   table[style*="border:1px solid #ddd;"], div[style*="border:1px solid #999;"],
   span[style*="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0;"],
-  table[style*="border:2px solid #e0e0e0"], tr.expand-child .description {
+  table[style*="border:2px solid #e0e0e0"], tr.expand-child .description,
+  div[style*="border:solid #aaaaaa"], td[style*="border-bottom: 1px solid #ccc"],
+  th[style*="border:1px double #8C959A;"] {
     border-color: var(--gray-5) !important;
   }
   div[style*="border:1px #FFFFFF"] {
@@ -2661,7 +2674,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   /*** Quotes ***/
   blockquote {
     background-color: transparent !important;
-    border-color: var(--gray-5) !important;
+    border: none !important;
   }
   /*** Misc ***/
   .bookshelf {
@@ -3001,8 +3014,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   a.image img[src*="Merge-"] {
     background: inherit !important;
   }
-  .vertical-navbox th:not([style*="6a5"]), div[class*="mw-echo-ui"],
-  span[class*="mw-echo-ui"] {
+  .vertical-navbox th:not([style*="6a5"]):not([style*="3C3"]):not([style*="B22"]),
+  div[class*="mw-echo-ui"], span[class*="mw-echo-ui"] {
     background-color: inherit !important;
   }
   img[src*="P_literature.svg"], img[src*="Portal-puzzle.svg"],
@@ -5347,7 +5360,8 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   #navigationNotes div {
     background-color: transparent !important;
   }
-  #mf-explore-wikisource div[style*="background"], #plainSister {
+  #mf-explore-wikisource div[style*="background"], #plainSister,
+  div[style*="background:#FFFFFF"], span[style="background:#FFFFFF"] {
     background-color: var(--gray-2) !important;
   }
   .footertemplate {
@@ -5365,6 +5379,24 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   .licFrame-top {
     border-color: var(--blue-3) !important;
+  }
+  .quality1 {
+    background-color: var(--red-3);
+    color: var(--gray-c);
+    text-shadow: none;
+  }
+  #ca-proofreadPagePrevLink.icon a {
+    background-image: url(https://wikisource.org/w/extensions/ProofreadPage/modules/page/images/next-rtl.svg?ab6ad) !important;
+  }
+  #ca-proofreadPageNextLink.icon a {
+    background-image: url(https://wikisource.org/w/extensions/ProofreadPage/modules/page/images/next-ltr.svg?1aefc) !important;
+  }
+  #ca-proofreadPageIndexLink.icon a {
+    background-image: url(https://wikisource.org/w/extensions/ProofreadPage/modules/page/images/collapse.svg?aa8bb) !important;
+  }
+  #ca-proofreadPagePrevLink.icon a, #ca-proofreadPageNextLink.icon a,
+  #ca-proofreadPageIndexLink.icon a {
+    filter: invert(1) brightness(80%);
   }
 }
 @-moz-document domain("wikivoyage.org") {
