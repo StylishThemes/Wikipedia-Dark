@@ -2387,7 +2387,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   span[style*="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0;"],
   table[style*="border:2px solid #e0e0e0"], tr.expand-child .description,
   div[style*="border:solid #aaaaaa"], td[style*="border-bottom: 1px solid #ccc"],
-  th[style*="border:1px double #8C959A;"] {
+  th[style*="border:1px double #8C959A;"],
+  ul[style*="border-top: 1px solid rgb(170, 170, 170)"] {
     border-color: var(--gray-5) !important;
   }
   div[style*="border:1px #FFFFFF"] {
