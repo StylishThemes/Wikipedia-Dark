@@ -592,7 +592,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border-color: var(--base-color);
     box-shadow: inset 0 0 0 1px var(--base-color);
   }
-  .languagesettings-menu .menu-section.active, .ui-widget-header {
+  .languagesettings-menu .menu-section.active, .ui-widget-header, .rt-tooltip {
     color: var(--gray-a);
   }
   .uls-search-label {
