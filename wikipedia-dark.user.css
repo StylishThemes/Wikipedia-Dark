@@ -1566,7 +1566,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border-color: var(--gray-5);
   }
   .ext-translate-container .tux-messagelist .tux-message-pagemode .tux-message-item-compact,
-  .tux-message-item, .tux-message-selector .more ul {
+  .tux-message-item, .tux-message-selector .more ul, table.fmbox {
     background: var(--gray-2);
     border-color: var(--gray-5);
   }
@@ -1619,7 +1619,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .tux-textarea-translation,
   .tux-messagelist .tux-message-pagemode .tux-pagemode-source,
   .tux-list-translation, .infocolumn .loading {
-    color: var(--gray-9a);
+    color: var(--gray-a);
   }
   .tux-action-bar, .tux-message-item.translated,
   .tux-message-item.translated:hover, .tux-message-item.proofread,
@@ -1746,12 +1746,12 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   div[style*="background-color: #cedff2" i], div[role="region"] h2,
   tr[style*="background-color: #cedff2" i], td[bgcolor*="#f0f0ff" i],
   tr[style*="background-color:#E1E9F3" i], th[style*="background:#d1dbdf" i],
-  td[style*="background:#e6f2ff" i], td[style*="background:#F5FAFF;" i],
-  table[style*="background:#f5faff;"],
+  td[style*="background:#e6f2ff" i], td[style*="background:#F5FAFF" i],
+  table[style*="background:#f5faff"],
   table[style*="background-color:rgba(0,0,255,0.1)"],
-  div[style*="background-color: #eaf3ff;"],
-  td[style="background-color: #eaf3ff"], div[style*="background-color:#DDE;"],
-  td[style*="background:SkyBlue"] {
+  div[style*="background-color: #eaf3ff"], td[style="background-color: #eaf3ff"],
+  div[style*="background-color:#DDE"], td[style*="background:SkyBlue"],
+  div[style*="background:#fafcfe" i] {
     background-color: var(--blue-2) !important;
   }
   .vertical-navbox th[style*="background:#cee0f2;"],
@@ -2118,7 +2118,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--brown-3);
     border-color: var(--brown-2);
   }
-  table.tmbox-protection, html table.tmbox-notice,
+  table.tmbox-protection, html table.tmbox-notice:not(#TMPedn),
   div[style*="border-bottom: 1px solid #c0c090;"] {
     border-color: var(--brown-2) !important;
   }
@@ -2396,7 +2396,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   table[style*="border:2px solid #e0e0e0"], tr.expand-child .description,
   div[style*="border:solid #aaaaaa"], td[style*="border-bottom: 1px solid #ccc"],
   th[style*="border:1px double #8C959A;"],
-  ul[style*="border-top: 1px solid rgb(170, 170, 170)"] {
+  ul[style*="border-top: 1px solid rgb(170, 170, 170)"],
+  div[style*="border:1px solid #a3b0bf"], .tux-action-bar button {
     border-color: var(--gray-5) !important;
   }
   div[style*="border:1px #FFFFFF"] {
@@ -2627,8 +2628,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   #centralNotice > div {
     border-color: var(--orange-2) !important;
   }
-  table.ambox-content, table.ambox-style {
-    border-left: 10px solid var(--orange-2) !important;
+  table.ambox-content:not(td), table.ambox-style {
+    border-left: 10px solid var(--orange-2);
   }
   table.box-No_footnotes.ambox-style {
     border-left: 10px solid var(--yellow-2) !important;
@@ -2763,8 +2764,20 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .oo-ui-iconElement-icon.oo-ui-icon-edit {
     filter: grayscale(1) brightness(180%);
   }
-  .mw-graph-img {
+  .mw-graph-img, .mw-graph .vega canvas {
     filter: invert(1) hue-rotate(180deg) contrast(60%);
+  }
+  .client-js .mw-graph-interactable:hover .mw-graph-layover,
+  .client-js .mw-graph-hover-title {
+    background-color: var(--gray-2_75);
+  }
+  .client-js .mw-graph-interactable:hover .mw-graph-switch:hover {
+    background-color: var(--gray-4);
+  }
+  .client-js .mw-graph-switch:hover, .client-js .mw-graph-switch {
+    background-color: var(--gray-3);
+    border-color: var(--base-color);
+    color: var(--base-color);
   }
   .wikEdButtonChecked {
     border-color: var(--gray-e) var(--gray-1) var(--gray-1) var(--gray-e) !important;
