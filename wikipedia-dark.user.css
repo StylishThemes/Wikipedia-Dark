@@ -1596,11 +1596,53 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
                           url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2215%22 viewBox=%220 0 15 15%22%3E %3Cpath fill=%22%23999%22 d=%22M10.765 1.078l-5.188 8.938-2.03-1.5L1.95 10.64l3.25 2.407 1.188.875.75-1.28 5.906-10.25-2.28-1.314z%22/%3E %3C/svg%3E");
     color: var(--gray-a) !important;
   }
-  .grid .tux-message-editor .close, .tux-action-bar .page-mode-button::before {
+  .grid .tux-message-editor .close {
     filter: invert(1) brightness(80%);
+  }
+  .tux-grouplist__item__icon {
+    filter: invert(1) brightness(180%);
+  }
+  .tux-groupselector {
+    border: 1px solid var(--gray-5);
+    background-color: var(--gray-28);
+    box-shadow: 0 5px 10px rgba(200, 200, 200, .2);
+  }
+  .tux-grouplist {
+    background-color: var(--gray-18);
+  }
+  .tux-grouplist__item {
+    border-color: var(--gray-5);
+  }
+  .tux-grouplist__item:hover {
+    background-color: var(--gray-2_75);
+  }
+  .tux-grouptab--selected {
+    border-bottom: 2px solid var(--base-color);
+  }
+  .ext-translate-language-selector .uls::after {
+    border-top: 4px solid var(--base-color);
+  }
+  .tux-groupselector::after {
+    border-bottom: 6px solid var(--gray-28);
+  }
+  .tux-groupselector::before {
+    border-bottom: 7px solid var(--gray-5);
+  }
+  .tux-action-bar .translate-mode-button::before {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='25' height='15' viewBox='0 0 25 15'><path fill='%23eee' d='M5.954 1.63h13.092V4.3H5.954zM5.954 6.166h13.092v2.668H5.954zM5.954 10.7h13.092v2.67H5.954z'/></svg>");
+  }
+  .tux-action-bar .page-mode-button::before {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='25' height='15' viewBox='0 0 25 15'><g fill='%23eee'><path d='M5.97 1.625v2.688h5.655V1.624H5.97zm7.405 0v2.688h5.656V1.624h-5.655zM5.97 6.156v2.688h5.655V6.156H5.97zm7.405 0v2.688h5.656V6.156h-5.655zM5.97 10.688v2.687h5.655v-2.688H5.97zm7.405 0v2.687h5.656v-2.688h-5.655z'/></g></svg>");
+  }
+  .tux-list-edit a, .message-desc-edit {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15'><path d='M9.825 1.975l-6.218 8.888h-.015l-.19 2.164 1.977-.92 6.217-8.89-1.772-1.244z' fill='rgb(/*[[base-color-rgb]]*/)'/></svg>");
   }
   .tux-status-fuzzy {
     background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%3E%3Cpath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23999%22%20d%3D%22M7.5.125C3.44.125.125%203.44.125%207.5c0%204.06%203.316%207.375%207.375%207.375%204.06%200%207.375-3.316%207.375-7.375C14.875%203.44%2011.56.125%207.5.125zm0%201.768c3.104%200%205.607%202.504%205.607%205.607s-2.504%205.607-5.607%205.607S1.893%2010.604%201.893%207.5%204.396%201.893%207.5%201.893z%22%2F%3E%3Cpath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23999%22%20d%3D%22M6.708%202.99v5.763h3.428v-1.21H7.918V2.99h-1.21z%22%2F%3E%3C%2Fsvg%3E");
+  }
+  .tux-loading-indicator {
+    background-image: linear-gradient(transparent, transparent),
+                          url("data:image/svg+xml,<?xml version='1.0' standalone='no'?><svg version='1.0' xmlns='http://www.w3.org/2000/svg' width='34px' height='34px' viewBox='0 0 34.000000 34.000000' preserveAspectRatio='xMidYMid meet'><g transform='translate(0.000000,34.000000) scale(0.100000,-0.100000)' fill='rgb(/*[[base-color-rgb]]*/)' stroke='none'><path d='M285 103 c-16 -29 -32 -43 -75 -60 -48 -19 -51 -22 -25 -23 39 0 90 32 115 72 21 35 25 48 13 48 -5 0 -17 -17 -28 -37z'/></g></svg>");
   }
   .tux-dropdown-menu .unchangeable, .tux-message-editor .shortcutinfo,
   .grid .tux-message-editor .messagekey, .tux-message-selector label {
@@ -1645,6 +1687,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   .tux-statsbar {
     background-color: var(--gray-5);
+  }
+  .tux-statsbar .tux-translated {
+    background-color: var(--base-color);
   }
   .tux-message-selector li.selected {
     border-color: var(--base-color);
