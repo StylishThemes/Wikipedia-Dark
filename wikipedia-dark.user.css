@@ -5491,13 +5491,13 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: var(--green-3);
   }
   #ca-proofreadPagePrevLink.icon a {
-    background-image: url(https://wikisource.org/w/extensions/ProofreadPage/modules/page/images/next-rtl.svg?ab6ad) !important;
+    background-image: url("https://wikisource.org/w/extensions/ProofreadPage/modules/page/images/next-rtl.svg?ab6ad") !important;
   }
   #ca-proofreadPageNextLink.icon a {
-    background-image: url(https://wikisource.org/w/extensions/ProofreadPage/modules/page/images/next-ltr.svg?1aefc) !important;
+    background-image: url("https://wikisource.org/w/extensions/ProofreadPage/modules/page/images/next-ltr.svg?1aefc") !important;
   }
   #ca-proofreadPageIndexLink.icon a {
-    background-image: url(https://wikisource.org/w/extensions/ProofreadPage/modules/page/images/collapse.svg?aa8bb) !important;
+    background-image: url("https://wikisource.org/w/extensions/ProofreadPage/modules/page/images/collapse.svg?aa8bb") !important;
   }
   #ca-proofreadPagePrevLink.icon a, #ca-proofreadPageNextLink.icon a,
   #ca-proofreadPageIndexLink.icon a {
