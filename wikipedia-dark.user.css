@@ -2360,7 +2360,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-rcfilters-ui-watchlistTopSectionWidget-separator,
   .mw-revslider-slider-wrapper, .mw-revslider-container,
   .mw-parser-output .MainPage__other-areas, .otherprojects, .infobox.bordered td,
-  .infobox.bordered th {
+  .infobox.bordered th, .mw-parser-output .covid-sticky th::before,
+  .mw-parser-output .covid-sticky th::after {
     border-color: var(--gray-5);
   }
   table.ambox-protection {
@@ -3100,7 +3101,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   img[src*="Etiquettes_Wikipetcia_Atikamekw"], a.image [src*="Psi2"],
   img[src*="Psi2"], a.image [src*="Draig"], img[src*="Draig"],
   a.image [src*="Social_sciences"], img[src*="UserAvatar"],
-  img[src*="external-link"] {
+  img[src*="external-link"], img[src*="_Silhouette"], img[src*="ship_side_view"],
+  img[src*="Sub"], img[src*="Frigate"] {
     background: transparent !important;
     filter: invert(1) hue-rotate(180deg) contrast(84%);
   }
@@ -3170,6 +3172,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   table.jquery-tablesorter th.headerSort {
     background-image: url('data:image/svg+xml;utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="21" height="9"%3E%3Cpath d="M14.5 5l-4 4-4-4zm0-1l-4-4-4 4z" fill="%23ccc"/%3E%3C/svg%3E');
+  }
+  img[src*="Sort_both_small.svg"] {
+    filter: invert(.8);
   }
   .oo-ui-indicator-down, .oo-ui-indicator-clear {
     filter: invert(100%);
