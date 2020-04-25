@@ -232,8 +232,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .central-featured-lang .link-box small, .other-project-tagline,
   .mw-number-text, .tux-editor-header, .tux-breadcrumb, .mw-mmv-title,
   .ext-translate-language-selector-label, #mw-mwoauth-authorize-form,
-  .mw-parser-output > div > blockquote > p {
-    color: var(--gray-a);
+  .mw-parser-output > div > blockquote > p, #mp-middle p, #mp-other-lower p,
+  .mw-parser-output {
+    color: var(--gray-c);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li,
   .infobox th[style*="background"]:not([style*="#eaecf0"]),
@@ -249,7 +250,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   div[style*="color: black;"], td[style*="color: #000000;"],
   td[style*="color:#000"], div[style*="color:black"],
   td[style*="color:darkslategray;"] {
-    color: var(--gray-9a) !important;
+    color: var(--gray-c) !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel,
   #content a:not(.new):not([role="button"]):not(.mw-charinsert-item):not([title="Help:Template"]),
@@ -571,8 +572,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .settings-title, #languagesettings-settings-panel, legend, .vertical-navbox th,
   .wikiEditor-ui-toolbar .group .label, .flow-topic-meta,
   .mw-parser-output .chatheader-description, .ui-widget-content,
-  span.mw-redirectedfrom, span.subpages {
-    color: var(--gray-9a);
+  span.mw-redirectedfrom, span.subpages, .mw-parser-output > p,
+  .hatnote.navigation-not-searchable, .thumbcaption {
+    color: var(--gray-a);
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled:not(.oo-ui-tagItemWidget-fixed) {
     background-color: var(--gray-2);
@@ -592,8 +594,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border-color: var(--base-color);
     box-shadow: inset 0 0 0 1px var(--base-color);
   }
-  .languagesettings-menu .menu-section.active, .ui-widget-header, .rt-tooltip {
-    color: var(--gray-a);
+  .languagesettings-menu .menu-section.active, .ui-widget-header, .rt-tooltip,
+  .mw-body-content p {
+    color: var(--gray-c);
   }
   .uls-search-label {
     filter: invert(1);
@@ -796,7 +799,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   .uls-no-found-more {
     border-top: 1px solid var(--gray-4);
-    color: var(--gray-a);
+    color: var(--gray-c);
   }
   table.wikitable > tr > th,
   table.wikitable > * > tr > th:not([style*="#ABC;"]):not([style*="#fdb"]):not([style*="#fed"]):not([style*="#fef"]):not([style*="#d4f"]),
@@ -917,14 +920,15 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   .mw-editfont-monospace {
     background-color: var(--gray-2);
-    color: var(--gray-9a);
+    color: var(--gray-b9);
   }
   .mw-parser-output .mainpage-welcome-slogan,
   .flow-topic-summary-container .flow-topic-summary .flow-topic-summary-author,
   .flow-topic-summary-container .flow-ui-editTopicSummaryWidget .flow-topic-summary-author,
   .mw-mmv-options-text-header, .imeselector a,
-  .languagesettings-menu .menu-section:hover .settings-text, .ime-disable-link {
-    color: var(--gray-9a);
+  .languagesettings-menu .menu-section:hover .settings-text, .ime-disable-link,
+  span[style="white-space:nowrap;"], .mw-history-legend, #mw-content-text {
+    color: var(--gray-c);
   }
   .mw-body pre, .mw-body code, .mw-body .mw-code {
     background-color: var(--gray-1) !important;
@@ -933,7 +937,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   .messagebox, .errorbox, .warningbox, .successbox,
   .suggestions-special .special-label, .reference-text,
-  .mwe-popups .mwe-popups-container {
+  .mwe-popups .mwe-popups-container, #viewsourcetext {
     color: var(--gray-c);
   }
   span[style="color:black"], span[style*="color: black"],
@@ -941,9 +945,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   td[style*="color: #2C2C2C"], .mwe-popups-container a {
     color: var(--gray-c) !important;
   }
-  span[style*="color: #000000;"], .wikiEditor-ui-toolbar .page-table td,
-  sup[style*="color:#000;"], div[style*="color:#000;"], .editOptions {
-    color: var(--gray-a) !important;
+  span[style*="color: #000"], .wikiEditor-ui-toolbar .page-table td,
+  sup[style*="color:#000"], div[style*="color:#000"], .editOptions {
+    color: var(--gray-c) !important;
   }
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
     background-color: var(--gray-3);
