@@ -5000,6 +5000,15 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     border-color: var(--gray-5);
     background: var(--gray-2);
   }
+  select:not(#searchLanguage) {
+    background-color: var(--gray-1);
+  }
+  .search-form button[type="submit"] {
+    height: 22px;
+  }
+  .search-form button img {
+    filter: invert(1) brightness(150%);
+  }
 }
 @-moz-document domain("fr.wikinews.org") {
   #bandeau-page {
@@ -5408,6 +5417,17 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   th[style*="color:#000000"] {
     color: var(--gray-a) !important;
   }
+  select {
+    background-color: var(--gray-18) !important;
+    border-color: var(--gray-4);
+    color: var(--gray-e);
+  }
+  .search-form button[type="submit"] {
+    height: 22px;
+  }
+  .search-form button img {
+    filter: invert(1) brightness(150%);
+  }
 }
 @-moz-document domain("wikisource.org") {
   .mw-wiki-logo {
@@ -5452,10 +5472,23 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .licFrame-top {
     border-color: var(--blue-3) !important;
   }
+  .quality0 {
+    background-color: var(--gray-4);
+    border-color: var(--gray-4);
+  }
   .quality1 {
     background-color: var(--red-3);
     color: var(--gray-c);
     text-shadow: none;
+  }
+  .quality2 {
+    background: var(--purple-1);
+  }
+  .quality3 {
+    background: var(--yellow-1);
+  }
+  .quality4 {
+    background: var(--green-3);
   }
   #ca-proofreadPagePrevLink.icon a {
     background-image: url(https://wikisource.org/w/extensions/ProofreadPage/modules/page/images/next-rtl.svg?ab6ad) !important;
@@ -5493,6 +5526,17 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   #www-wikivoyage-org .search-form fieldset {
     background: none !important;
   }
+  select#searchLanguage {
+    background-color: var(--gray-18);
+    border-color: var(--gray-4);
+    color: var(--gray-e);
+  }
+  select#searchLanguage option[selected],
+  select#searchLanguage option[selected]:hover {
+    background-color: var(--base-color);
+    border-color: var(--base-color);
+    color: var(--gray-e);
+  }
 }
 @-moz-document domain("wikiquote.org") {
   div[style*="background-color: #f8f8ff"], #mf-qotd > div {
@@ -5510,10 +5554,24 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   div[style*="background-color: #faf9b2"] {
     background-color: var(--brown-3) !important;
   }
+  select {
+    background-color: var(--gray-18) !important;
+    border-color: var(--gray-4);
+    color: var(--gray-e);
+  }
+  .search-form button[type="submit"] {
+    height: 22px;
+  }
+  .search-form button img {
+    filter: invert(1) brightness(150%);
+  }
 }
 @-moz-document domain("wikibooks.org") {
-  .mw-wiki-logo {
-    filter: invert(1) hue-rotate(180deg) brightness(90%) contrast(80%);
+  .central-textlogo span[style*="color: #15304f"] {
+    color: #2a62a1 !important;
+  }
+  .central-textlogo span[style*="color: #2a62a1"] {
+    color: #4186d4 !important;
   }
   span[style*="color: #2020C0;"] {
     color: var(--cm-5) !important;
@@ -5602,6 +5660,12 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: inherit !important;
     filter: invert(1) hue-rotate(180deg) !important;
   }
+  .search-form button[type="submit"] {
+    height: 22px;
+  }
+  .search-form button img {
+    filter: invert(1) brightness(150%);
+  }
 }
 @-moz-document domain("mediawiki.org") {
   .mw-parser-output .tech-header {
@@ -5609,6 +5673,9 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   .mw-parser-output .tech-header-intro {
     background: var(--gray-2);
+  }
+  td[style="background: #f8f9fa"] {
+    background: var(--gray-28) !important;
   }
   .mw-parser-output .tech-header-currentpage-forum .tech-header-tab-forum,
   .mw-parser-output .tech-header-currentpage-news .tech-header-tab-news,
@@ -5676,6 +5743,10 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .mw-parser-output .tech-header-currentpage-wikimedia-prod .tech-header-tab-wikimedia-prod,
   .mw-parser-output .tech-header-currentpage-mediawiki .tech-header-tab-mediawiki {
     background-color: var(--gray-18);
+  }
+  .mw-parser-output .MainPageSisterProjects__wrapper,
+  .mw-parser-output .MainPageSisterProjects__group {
+    border-color: var(--gray-5);
   }
   .navbox th, table .navbox-title {
     background: var(--purple-1) !important;
@@ -6397,5 +6468,8 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
   .translation-bar {
     color: var(--base-color);
     border-color: var(--gray-5);
+  }
+  .urgent-header {
+    background: var(--red-3);
   }
 }
