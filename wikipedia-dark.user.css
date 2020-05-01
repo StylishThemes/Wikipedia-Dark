@@ -1779,8 +1779,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .rt-target {
     background-color: var(--blue-2);
   }
-  div[style*="background"]:not(.boilerplate):not([style*="#FFE"]):not([style*="#fff"]) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question),
-  div[style*="background"]:not(.boilerplate):not([style*="#FFE"]):not([style*="#fff"]) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question) *,
+  div[style*="background"]:not([style*="order"]):not(.boilerplate):not([style*="#FFE"]):not([style*="#fff"]) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question),
+  div[style*="background"]:not([style*="order"]):not(.boilerplate):not([style*="#FFE"]):not([style*="#fff"]) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question) *,
   tr[style*="background-color:tan" i], div[style*="background: #444444"],
   div[style*="background: #444444"] *, ol.references li:target,
   sup.reference:target, span.citation:target, ol.references li:target *,
@@ -6278,7 +6278,66 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
 }
 @-moz-document domain("wiki.mozilla.org") {
   .mw-wiki-logo {
-    filter: invert(100%) hue-rotate(180deg) brightness(50%);
+    filter: invert(100%) hue-rotate(180deg) brightness(80%);
+  }
+  img[alt="Sumo-banner.png"] {
+    filter: invert(100%) hue-rotate(180deg) brightness(90%);
+  }
+  div#simpleSearch {
+    border: solid 1px var(--gray-5);
+    color: var(--gray-c);
+    background-color: var(--gray-18);
+  }
+  input[type="search"]#searchInput:focus, #simpleSearch:hover #searchInput:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: var(--base-color) !important;
+    -webkit-appearance: none;
+  }
+  input#searchButton {
+    border-left: 1px solid var(--gray-5) !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+  }
+  div.vectorTabs ul li {
+    background-color: transparent !important;
+  }
+  div.vectorTabs li:not(.selected) {
+    border-bottom: 0 !important;
+  }
+  #mw-panel .portal:not(#p-navigation) .body {
+    background-image: none;
+  }
+  div#mw-panel div.portal {
+    background-image: linear-gradient(to top, transparent, var(--gray-c));
+    background-size: auto 1px;
+  }
+  div[style*="background-color: lightcyan"] {
+    background-color: var(--blue-2) !important;
+  }
+  div[style*="border: 0.1em solid darkcyan"] {
+    border-color: var(--blue-4) !important;
+  }
+  div[style*="background-color: lightyellow"] {
+    background-color: var(--brown-1) !important;
+  }
+  div[style*="border: 0.1em solid olive"] {
+    border-color: var(--brown-2) !important;
+  }
+  div[style*="background-color: lightyellow"] div h2 {
+    background-color: var(--brown-1) !important;
+  }
+  div[style*="ackground-color: palegreen"] {
+    background-color: var(--green-4) !important;
+  }
+  div[style*="background-color: #FFEA00; color: black"] {
+    color: var(--gray-1) !important;
+  }
+  #wpTextbox1 {
+    color: var(--gray-b);
+  }
+  #pagehistory li {
+    border-color: var(--gray-5);
   }
 }
 @-moz-document domain("wikimediafoundation.org") {
