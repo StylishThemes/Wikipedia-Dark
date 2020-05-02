@@ -59,7 +59,7 @@ This theme also works with the mobile sites (Minerva skin). For more comparisons
 
 * Many of the table cells have inline styling to add a background colors.
   * Some of the very common stylings have been replaced using attribute selectors ( e.g. `th[style*="background:#eee" i]` ).
-  * But due to the sheer number of possiblities, the replaced css style would also need to include selectors such as `th[style*="background-color: #eee" i]` and `th[style*="background-color:#eee" i]`, `th[bgcolor="eee" i]` and `th[style*="background-color: #eeeeee" i]`, etc.
+  * But due to the sheer number of possibilities, the replaced css style would also need to include selectors such as `th[style*="background-color: #eee" i]` and `th[style*="background-color:#eee" i]`, `th[bgcolor="eee" i]` and `th[style*="background-color: #eeeeee" i]`, etc.
   * It would be a daunting task to find and replace *all* of these colors. I hope you see my point.
   * If you *really* want a background color to be fixed, please share a pull request of the fix. We may not always have time to get to it.
 * Not all images can be made readable.
