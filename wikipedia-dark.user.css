@@ -858,6 +858,13 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .wikEdFrameBodySyntax, #wpTextbox1 {
     background: var(--gray-18);
   }
+  #wmhu-tax-banner-text {
+    color: var(--base-color);
+  }
+  #wmhu-tax-banner {
+    background-color: var(--gray-18);
+    border: 0;
+  }
   img[src*="Check_mark_23x20_02.svg"],
   img[resource*="OOjs_UI_icon_userTalk-ltr.svg"] {
     filter: invert(100%) brightness(80%);
