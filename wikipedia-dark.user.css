@@ -5213,6 +5213,11 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: var(--blue-2) !important;
   }
 }
+@-moz-document domain("ru.wiktionary.org") {
+  .mw-wiki-logo {
+    filter: invert(80%);
+  }
+}
 @-moz-document domain("ru.wikipedia.org"), domain("ru.wiktionary.org") {
   .mw-parser-output .main-top, .mw-parser-output .main-box, #mw-page-base {
     background-color: transparent;
@@ -5226,8 +5231,14 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .mw-parser-output .main-top-right {
     background-image: linear-gradient(to right, transparent 30%, var(--black_5) 95%, transparent);
   }
-  .mw-customtoggle {
+  .mw-customtoggle, .tool-button, .mbox-image img[src*="OOjs_UI_icon_info"] {
     filter: invert(80%);
+  }
+  div[style*="background-color:#ddd"] {
+    background-color: var(--gray-28) !important;
+  }
+  div[style*="color:#111"] {
+    color: var(--gray-e) !important;
   }
   .mw-collapsible-toggle, .mw-parser-output .shortcutbox td a img {
     filter: grayscale(1) brightness(200%);
@@ -5235,9 +5246,14 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .mw-parser-output .main-top {
     filter: brightness(80%);
   }
-  #mw-panel .portal:not(#p-navigation) .body {
-    background-image: linear-gradient(to top, transparent, var(--gray-c));
-    background-size: auto 1px;
+  .mw-parser-output .main-top, .mw-parser-output .main-box {
+    border-color: var(--gray-5);
+  }
+  div#mw-panel div.portal .body {
+    background-image: none !important;
+  }
+  div#mw-panel div.portal h3 {
+    background-image: linear-gradient(to right, var(--gray-5) 0%, var(--gray-5) 100%);
   }
   th.infobox-header[style*="background:#b0c4de;"], .standard > tr > th,
   .standard > * > tr > th, .wide > tr > th, .wide > * > tr > th,
@@ -5326,6 +5342,14 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   div[style*="border:1px solid #479429;"],
   div[style="border-bottom: solid 2px #479429;"] {
     border-color: var(--green-1) !important;
+  }
+  .mw-parser-output .ts-editnotice-error {
+    background: var(--red-0);
+    border: 1px solid var(--red-1);
+  }
+  .mw-parser-output .ts-editnotice-neutral {
+    background: var(--gray-28);
+    border-color: var(--gray-5);
   }
 }
 @-moz-document domain("en.wiktionary.org") {
