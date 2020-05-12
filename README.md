@@ -41,21 +41,19 @@ This theme also works with the mobile sites (Minerva skin). For more comparisons
 
 📦 [Install the usercss](https://github.com/StylishThemes/Wikipedia-Dark/raw/master/wikipedia-dark.user.css) with Stylus or xStyle. Supports automatic updates.
 
-📦 [Install from userstyles.org](https://userstyles.org/styles/105844) with customization, does not support automatic updates **(NO LONGER UPDATED)**.
-
 ## Additional Userstyles
 
-⚙️ [Overlay-Scrollbars](https://github.com/StylishThemes/Overlay-Scrollbars)
-⚙️ [Wikipedia Dark Gray Text Colors](https://github.com/StylishThemes/Feature-Override-Styles)
-⚙️ [Wikipedia Dark IMG Styles](https://github.com/StylishThemes/Feature-Override-Styles)
+⚙️ [Overlay-Scrollbars](https://github.com/StylishThemes/Overlay-Scrollbars)<br>
+⚙️ [Wikipedia Dark Gray Text Colors](https://github.com/StylishThemes/Feature-Override-Styles)<br>
+⚙️ [Wikipedia Dark IMG Styles](https://github.com/StylishThemes/Feature-Override-Styles)<br>
 
 >Note: With exception of the Overlay Scrollbars style the Wiki additional styles are NOT to be used on their own without the Wikipedia Dark style also installed ;)
 
 ## Limitations
 
-### Wikipedia Dark only supports the default wikipedia `vector` theme. 
+### Wikipedia Dark only supports the default wikipedia `vector` theme.
 
-> Support for other themes are graciously accepted via a pull request... If interested please open a new issue to discuss your intentions before proceeding.   
+> Support for other themes are graciously accepted via a pull request... If interested please open a new issue to discuss your intentions before proceeding.
 
 * Many of the table cells have inline styling to add a background colors.
   * Some of the very common stylings have been replaced using attribute selectors ( e.g. `th[style*="background:#eee" i]` ).
