@@ -3188,9 +3188,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   #pt-uls a.uls-trigger, .sprite.svg-Wikimedia-logo_black {
     filter: invert(100%) hue-rotate(180deg);
   }
-  #mw-panel .portal:not(#p-navigation) .body {
-    background-image: linear-gradient(to top, transparent, var(--gray-c));
-    background-size: auto 1px;
+  div#mw-panel div.portal .body {
+    background-image: none !important;
+  }
+  div#mw-panel div.portal h3 {
+    background-image: linear-gradient(to right, var(--gray-5) 0%, var(--gray-5) 100%);
   }
   /*** Reference tooltips ***/
   .rt-tooltip, .rt-tooltipTail::after {
