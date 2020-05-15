@@ -485,7 +485,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   #ca-nstab-image, #ca-translate, #ca-lstats, #ca-mstats, #ca-export,
   #ca-proofreadPageNextLink, #ca-proofreadPagePrevLink, #ca-nstab-page,
   #ca-proofreadPageIndexLink, #ca-proofreadPageScanLink, #ca-ns0_0,
-  #ca-nstab-index {
+  #ca-nstab-index, #ca-nstab-citations {
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 0 !important;
@@ -1497,7 +1497,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   div[style*="border: 1px solid #CCC; border-top-width: 1px; vertical-align: top;background: white;"],
   div[style*="border: 1px solid #a2a9b1; padding: 0.2em; background-color: white;"],
-  td[style*="background: #ffffff"] {
+  td[style*="background: #ffffff"], td[style*="background-color: #FFFFFF"] {
     background-color: var(--gray-2) !important;
     border-color: var(--gray-5) !important;
   }
@@ -1536,6 +1536,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   div[style*="border:1px solid #CCC; background-color: #FCFCFC;"] {
     background-color: var(--gray-28) !important;
     border-color: var(--gray-5) !important;
+  }
+  td[style*="background: #F5F5FF"] {
+    background-color: var(--gray-28) !important;
   }
   html .thumbimage {
     background-color: var(--gray-28);
@@ -1759,6 +1762,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background: var(--blue-4);
     border: 1px solid var(--blue-1);
     color: var(--gray-c) !important;
+  }
+  th[style*="background: #E0FFFF"] {
+    background: var(--blue-2) !important;
   }
   .lang-quote {
     border-bottom: 1px dotted var(--gray-c);
@@ -2091,6 +2097,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--brown-3);
   }
   div[style*="background:#ffe496"] {
+    background-color: var(--brown-3) !important;
+  }
+  th[style*="background:#F5F5DC"] {
     background-color: var(--brown-3) !important;
   }
   span[style*="background:moccasin"] {
@@ -2449,7 +2458,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   div[style*="border:solid #aaaaaa"], td[style*="border-bottom: 1px solid #ccc"],
   th[style*="border:1px double #8C959A;"],
   ul[style*="border-top: 1px solid rgb(170, 170, 170)"],
-  div[style*="border:1px solid #a3b0bf"], .tux-action-bar button {
+  div[style*="border:1px solid #a3b0bf"], .tux-action-bar button,
+  div[style*="border: 1px solid #ccc"],
+  td[style*="border-right: 1px solid #aaa;border-bottom: 1px solid #aaa"],
+  td[style*="border-bottom: 1px solid #aaa"] {
     border-color: var(--gray-5) !important;
   }
   div[style*="border:1px #FFFFFF"] {
