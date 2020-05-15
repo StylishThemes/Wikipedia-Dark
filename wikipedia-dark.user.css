@@ -5199,6 +5199,16 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background-color: var(--gray-2) !important;
   }
 }
+@-moz-document domain("incubator.wikimedia.org") {
+  div[style*="background-color: #f9f9f9"],
+  td[style*="background-color: #F9F9F9"] {
+    background-color: var(--gray-18) !important;
+  }
+  div[style*="border: 2px solid #025E8D"],
+  td[style*="border: 1px solid #025E8D"] {
+    border-color: var(--blue-2) !important;
+  }
+}
 @-moz-document domain("pt.wikipedia.org") {
   div[style*="background:#FFFFFF"] {
     background-color: var(--gray-2) !important;
