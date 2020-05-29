@@ -235,7 +235,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-parser-output > div > blockquote > p, .mw-parser-output {
     color: var(--gray-c);
   }
-  body, h1, h2, h3, h4, h5, h6, #footer li,
+  h1, h2, h3, h4, h5, h6, #footer li,
   .infobox th[style*="background"]:not([style*="#eaecf0"]),
   div[style*="color"]:not([style*="black;"]):not([style*="back"]):not([style*="966"]):not([style*="red"]),
   input[type="search"], input[type="submit"], .oo-ui-buttonElement-button,
