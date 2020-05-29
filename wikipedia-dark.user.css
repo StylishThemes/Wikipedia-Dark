@@ -488,6 +488,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 0 !important;
+    background: var(--bg-selected) !important;
   }
   .wpb .portal ul, .boilerplate .pullquote, .module-shortcutboxplain,
   .mw-trackedTemplate, .todo-box {
