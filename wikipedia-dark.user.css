@@ -47,6 +47,7 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
   /* Global color palette */
   :root {
     --base-color: /*[[base-color]]*/;
+    --base-color-rgb: rgba(/*[[base-color-rgb]]*/, .8);
     --tab-color: /*[[tab-color]]*/;
     --visited-color: /*[[visited-color]]*/;
     --bg-custom: /*[[bg-custom]]*/;
@@ -523,6 +524,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   input.mw-ui-input:focus {
     box-shadow: inset 0 0 0 1px var(--base-color) !important;
+  }
+  .mw-ui-checkbox:not(#noop) [type="checkbox"] + label:hover::before {
+    background-color: var(--gray-1);
+    border: 1px solid var(--base-color) !important;
   }
   .mw-ui-checkbox:not(#noop) [type="checkbox"] + label::before {
     background-color: var(--gray-1);
@@ -1418,6 +1423,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   /* Grey */
   h2[style*="color:white;"], th a span[style*="color:#FFFFFF"] {
     color: var(--gray-e) !important;
+  }
+  .uls-ui-languages p, .checkbox {
+    color: var(--gray-a);
   }
   .mw-parser-output .MainPage__banner {
     border: 1px solid var(--gray-4);
@@ -3254,6 +3262,143 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     background-attachment: var(--bg-attachment);
     /*[[bg-options]]*/
     color: var(--gray-c);
+  }
+  /*** main page ***/
+  #mw-mf-page-left ul li a:hover {
+    box-shadow: inset 4px 0 0 0 var(--base-color);
+  }
+  #mw-mf-page-left ul.hlist li a {
+    color: var(--base-color);
+  }
+  .header .branding-box a img[src*="wikipedia-wordmark"],
+  footer > .post-content > h2 > img[src*="wikipedia-wordmark"] {
+    filter: invert(1) !important;
+  }
+  .mw-parser-output #mp-topbanner {
+    border-color: var(--gray-5);
+    background-color: var(--gray-2);
+  }
+  .mw-parser-output #mp-topbanner, .mw-parser-output .mp-h2,
+  .mw-parser-output #mp-left {
+    color: var(--gray-c);
+  }
+  .mw-parser-output #mp-right {
+    border-color: var(--blue-1);
+    background: var(--blue-2);
+  }
+  .mw-parser-output #mp-right .mp-h2 {
+    border-color: var(--blue-1);
+  }
+  .mw-parser-output #mp-left {
+    border-color: var(--green-1);
+    background: var(--green-4);
+  }
+  .mw-parser-output #mp-left .mp-h2 {
+    border-color: var(--green-1);
+  }
+  .mw-parser-output #mp-middle {
+    border-color: var(--pink-2);
+    background: var(--pink-0);
+  }
+  .mw-parser-output #mp-tfl-h2 {
+    border-color: var(--pink-2);
+  }
+  .mw-parser-output #mp-lower {
+    border-color: var(--purple-2);
+    background: var(--purple-d);
+  }
+  .mw-parser-output #mp-tfp-h2 {
+    border-color: var(--purple-2);
+  }
+  .mw-parser-output #mp-other-lower {
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output #mp-other-lower .mp-h2 {
+    background: var(--gray-28);
+    border-color: var(--gray-5);
+  }
+  #mp-middle p, #mp-other-lower p {
+    color: var(--gray-c);
+  }
+  #mp-left h2, #mp-left h2 span {
+    background: var(--green-2) !important;
+    color: var(--gray-d) !important;
+  }
+  #mp-right h2, #mp-right h2 span {
+    background-color: var(--blue-3) !important;
+  }
+  #mp-center #mp-tfl-h2, #mp-center #mp-tfl-h2 span {
+    background-color: var(--pink-1) !important;
+    color: var(--gray-d) !important;
+  }
+  #mp-lower #mp-bottom h2, #mp-bottom h2 span {
+    background-color: var(--purple-1) !important;
+  }
+  .mw-parser-output .itn-special {
+    background-color: var(--blue-3);
+    border-color: var(--blue-4);
+  }
+  /* Search */
+  .client-nojs .search-box .search:focus,
+  .search-overlay .search-box .search:focus {
+    border-color: var(--base-color);
+  }
+  .page-list li > a:active, .topic-title-list li > a:active,
+  .site-link-list li > a:active, .page-list li > a:hover,
+  .topic-title-list li > a:hover, .site-link-list li > a:hover,
+  .page-list li > a:visited, .topic-title-list li > a:visited,
+  .site-link-list li > a:visited {
+    color: var(--gray-c);
+  }
+  .overlay.search-overlay .results, .overlay.search-overlay .search-feedback {
+    background-color: var(--gray-28) !important;
+  }
+  /* Login */
+  .warningbox, .mw-revision {
+    background-color: var(--gray-18);
+    border: 1px solid var(--gray-4);
+  }
+  .errorbox, .warningbox, .successbox, .mw-revision {
+    color: var(--gray-a);
+  }
+  .mw-ui-checkbox:not(#noop) [type="checkbox"]:enabled:checked + label::before,
+  .mw-ui-checkbox:not(#noop) [type="checkbox"]:hover:enabled:checked + label::before {
+    background-color: var(--base-color);
+    border-color: var(--base-color);
+  }
+  .mw-ui-checkbox:not(#noop) [type="checkbox"]:hover:enabled + label::before {
+    border-color: var(--base-color);
+  }
+  .mw-ui-button.mw-ui-progressive {
+    background-color: var(--base-color);
+    color: var(--gray-e);
+    border: 1px solid var(--base-color);
+  }
+  .mw-ui-checkbox:not(#noop) [type="checkbox"] + label::before {
+    background-color: var(--gray-1);
+    border: 1px solid var(--gray-5);
+  }
+  .mw-ui-button.mw-ui-progressive:hover {
+    background-color: var(--base-color-rgb);
+    border-color: var(--base-color-rgb);
+  }
+  .mw-ui-button.mw-ui-progressive:active, .mw-ui-button.mw-ui-progressive.is-on {
+    background-color: var(--base-color-rgb);
+    border-color: var(--base-color-rgb);
+    color: var(--gray-e);
+  }
+  .mw-ui-button:hover {
+    background-color: var(--gray-4);
+    border-color: var(--gray-5);
+    color: var(--gray-e);
+  }
+  .mw-ui-input:focus {
+    border-color: var(--base-color);
+    box-shadow: inset 0 0 0 1px var(--base-color);
+  }
+  /* footer */
+  footer > .post-content > h2, .mw-footer > .post-content > h2 {
+    border-color: var(--gray-5);
   }
   /* Icon fixes */
   footer > .post-content > h2 > img, .header-container button.mw-ui-icon,
