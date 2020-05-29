@@ -272,7 +272,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .ext-translate-language-selector .uls {
     color: var(--base-color);
   }
-  .mw-parser-output > div::before, .uls-icon-close {
+  .mw-parser-output > div::before, .uls-icon-close,
+  .tool-button[style*="Button_underline"],
+  .tool-button[style*="Vector_strikeout"] {
     filter: invert(1);
   }
   .wb-langlinks-link > a:link::before, .wb-langlinks-link > a:visited::before,
@@ -5895,10 +5897,16 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   td[style*="background:#ccccee" i], th[style*="background-color: #dfefff" i] {
     background-color: var(--blue-3) !important;
   }
-  table[style*="border:solid #bbbbbb 1px" i] {
+  table[style*="border:solid #bbbbbb 1px" i],
+  table[style*="border: 2px solid #CCCCFF;"],
+  td[style*="border-right: 1px solid #CCCCCC"],
+  div[style*="border-top: 2px solid #ddd; border-bottom: 2px solid #ddd;"],
+  #mw-content-text table[style*="border: 1px solid rgb(170, 170, 170)" i] {
     border-color: var(--gray-5) !important;
   }
-  table[style*="background:#eeeeee" i] {
+  table[style*="background:#eeeeee" i],
+  table[style*="background-color: #F7F7FF" i],
+  #mw-content-text table[style*="background-color:#fff !important" i] * {
     background-color: var(--gray-2) !important;
   }
   .collapsible[style*="background"]:not(td) {
