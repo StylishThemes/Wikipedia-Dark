@@ -2927,6 +2927,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background: var(--gray-28);
     border-color: var(--gray-5);
   }
+  .mw-parser-output .itn-special {
+    background-color: var(--blue-3);
+    border-color: var(--blue-4);
+  }
   #mp-middle p, #mp-other-lower p {
     color: var(--gray-c);
   }
@@ -5669,6 +5673,10 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   .search-form button img {
     filter: invert(1) brightness(150%);
+  }
+  div[style*="border: 1px solid black; background-color: #FCFCCC"] {
+    background-color: var(--brown-3) !important;
+    border-color: var(--brown-4) !important;
   }
 }
 @-moz-document domain("wikibooks.org") {
