@@ -232,8 +232,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .central-featured-lang .link-box small, .other-project-tagline,
   .mw-number-text, .tux-editor-header, .tux-breadcrumb, .mw-mmv-title,
   .ext-translate-language-selector-label, #mw-mwoauth-authorize-form,
-  .mw-parser-output > div > blockquote > p, #mp-middle p, #mp-other-lower p,
-  .mw-parser-output {
+  .mw-parser-output > div > blockquote > p, .mw-parser-output {
     color: var(--gray-c);
   }
   body, h1, h2, h3, h4, h5, h6, #footer li,
@@ -1344,7 +1343,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border-color: var(--green-3);
     filter: brightness(120%);
   }
-  #mp-left h2, #mp-left h2 span, td[style*="background: #99FF99;" i], .table-yes,
+  td[style*="background: #99FF99;" i], .table-yes,
   td[style*="background:#dfd" i], td[style*="background:#bfd" i],
   tr[style*="background:#DDFFDD" i], tr[style*="background:#bfb" i],
   tr[style*="background-color:#CCFFCC" i],
@@ -1907,7 +1906,6 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--blue-2);
     border-color: var(--blue-4);
   }
-  #mp-right h2, #mp-right h2 span,
   div.mw-collapsible-content[style*="background-color: #f5faff;"],
   div[style*="border:1px solid #cedff2;"] div[style*="background-color: #f5faff;"],
   td[style="background:#d7e8f9;"] {
@@ -2031,7 +2029,6 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background: var(--gray-18) !important;
     border-color: var(--purple-2) !important;
   }
-  #mp-lower #mp-bottom h2, #mp-bottom h2 span,
   th[style*="background:lavender" i], td[style*="background:lavender" i],
   th[style*="background:#edf" i], td.import-high[style*="background: #ffacff"],
   div[style*="background:#CCF;padding"],
@@ -2194,13 +2191,6 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--brown-2) !important;
   }
   /* pink */
-  #mp-center #mp-tfl-h2 {
-    border-color: var(--pink-2) !important;
-  }
-  #mp-center #mp-tfl-h2, #mp-center #mp-tfl-h2 span {
-    background-color: var(--pink-1) !important;
-    color: var(--gray-d) !important;
-  }
   div[style*="background:#fff5fa;"] {
     background-color: var(--pink-0) !important;
   }
@@ -2936,6 +2926,23 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-parser-output #mp-other-lower .mp-h2 {
     background: var(--gray-28);
     border-color: var(--gray-5);
+  }
+  #mp-middle p, #mp-other-lower p {
+    color: var(--gray-c);
+  }
+  #mp-left h2, #mp-left h2 span {
+    background: var(--green-2) !important;
+    color: var(--gray-d) !important;
+  }
+  #mp-right h2, #mp-right h2 span {
+    background-color: var(--blue-3) !important;
+  }
+  #mp-center #mp-tfl-h2, #mp-center #mp-tfl-h2 span {
+    background-color: var(--pink-1) !important;
+    color: var(--gray-d) !important;
+  }
+  #mp-lower #mp-bottom h2, #mp-bottom h2 span {
+    background-color: var(--purple-1) !important;
   }
   /*** diff pages ***/
   table.diff, td.diff-otitle, td.diff-ntitle, td.diff-addedline,
