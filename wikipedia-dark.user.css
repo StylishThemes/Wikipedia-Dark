@@ -2397,10 +2397,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .oo-ui-windowManager-modal.oo-ui-windowManager-floating > .oo-ui-dialog > .oo-ui-window-frame,
   .client-js .mw-recentchanges-toplinks:not(.mw-recentchanges-toplinks-collapsed),
   .mw-rcfilters-ui-watchlistTopSectionWidget-separator,
-  .mw-revslider-slider-wrapper, .mw-revslider-container,
-  .mw-parser-output .MainPage__other-areas, .otherprojects, .infobox.bordered td,
-  .infobox.bordered th, .mw-parser-output .covid-sticky th::before,
-  .mw-parser-output .covid-sticky th::after, .mw-mmv-permission-box.full-size .mw-mmv-permission-html {
+  .mw-revslider-slider-wrapper, .mw-revslider-container, .otherprojects,
+  .infobox.bordered td, .infobox.bordered th,
+  .mw-parser-output .covid-sticky th::before,
+  .mw-parser-output .covid-sticky th::after,
+  .mw-mmv-permission-box.full-size .mw-mmv-permission-html {
     border-color: var(--gray-5);
   }
   table.ambox-protection {
