@@ -203,14 +203,15 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: transparent !important;
     color: var(--gray-9a);
   }
-  .mw-mmv-info-box {
-    border-color: var(--gray-5) !important;
+  .mw-mmv-permission-box, .mw-mmv-info-box {
+    border-color: var(--gray-5);
+    background-color: transparent !important;
   }
-  .mw-mmv-image-metadata, .navbox, .navbox-subgroup, .mw-mmv-info-box,
+  .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
   .mwe-pt-article-row-odd, .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options,
   #mw-page-base, .mw-parser-output #siteContainer div:first-child,
   div.vectorTabs li.selected {
-    background-color: transparent !important;
+    background-color: transparent;
   }
   .lang-list-button {
     border-color: var(--gray-5);
