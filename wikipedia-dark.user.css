@@ -1989,8 +1989,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background: var(--purple-d) !important;
   }
   td[style="background-color: #c9d4f5"], td[style="background-color: #d2dbf7"],
-  td[style="background-color: #b1bced"], td[style*="background: #ccf;"],
-  .navbox-abovebelow, .navbox-abovebelow * {
+  td[style="background-color: #b1bced"], td[style*="background: #ccf"],
+  .navbox-abovebelow, .navbox-abovebelow *, div[style*="background:#ddddff"] {
     background: var(--purple-1) !important;
   }
   td[style="background-color: #a8b4ea"] {
