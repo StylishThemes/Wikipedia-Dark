@@ -701,7 +701,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: transparent !important;
   }
   body .ui-button, caption[style*="background-color:#f2f2f2"],
-  table[style*="background:#f8f9fa;color:#222;border:1px solid #eaecf0"] {
+  table[style*="background:#f8f9fa"] {
     background: var(--gray-28) !important;
     border-color: var(--gray-5) !important;
   }
