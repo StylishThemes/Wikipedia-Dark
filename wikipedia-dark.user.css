@@ -3121,7 +3121,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   a.image img[src*="DeadEnd"], a.image img[src*="Local"],
   a.image img[src*="Merge-"], a.image img[src*="delete"],
   a.image img[src*="Filing_"], a.image img[src*="Lens_"],
-  a.image img[src*="Wikimedia_logo_family_complete"] {
+  a.image img[src*="Wikimedia_logo_family_complete"], a.image img[src*="Propan"],
+  a.image img[src*="pictogram"] {
     background: inherit !important;
   }
   .vertical-navbox th:not([style*="6a5"]):not([style*="3C3"]):not([style*="B22"]),
@@ -3144,7 +3145,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   img[src*="Psi2"], a.image [src*="Draig"], img[src*="Draig"],
   a.image [src*="Social_sciences"], img[src*="UserAvatar"],
   img[src*="external-link"], img[src*="_Silhouette"], img[src*="ship_side_view"],
-  img[src*="Sub"], img[src*="Frigate"] {
+  img[src*="Sub"], img[src*="Frigate"], a.image img[src*="Propanol"] {
     background: transparent !important;
     filter: invert(1) hue-rotate(180deg) contrast(84%);
   }
