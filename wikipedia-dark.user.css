@@ -207,10 +207,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border-color: var(--gray-5);
     background-color: transparent !important;
   }
-  .mw-mmv-image-metadata, .navbox, .navbox-subgroup,
-  .mwe-pt-article-row-odd, .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options,
-  #mw-page-base, .mw-parser-output #siteContainer div:first-child,
-  div.vectorTabs li.selected {
+  .mw-mmv-image-metadata, .navbox, .navbox-subgroup, .mwe-pt-article-row-odd,
+  .mwe-pt-article-row-even, .ve-ui-mwSaveDialog-options, #mw-page-base,
+  .mw-parser-output #siteContainer div:first-child, div.vectorTabs li.selected {
     background-color: transparent;
   }
   .lang-list-button {
@@ -253,7 +252,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   tr[style^="color:black"], span[title="To be announced"],
   div[style*="color: black;"], td[style*="color: #000000;"],
   td[style*="color:#000"], div[style*="color:black"],
-  td[style*="color:darkslategray;"], .mw-mmv-post-image, .mw-mmv-permission-box .mw-mmv-permission-text {
+  td[style*="color:darkslategray;"], .mw-mmv-post-image,
+  .mw-mmv-permission-box .mw-mmv-permission-text {
     color: var(--gray-c) !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel,
@@ -480,7 +480,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   #mw-page-base, div.vectorTabs, div.vectorTabs *, .wikiEditor-ui-toolbar,
   #p-cactions-label, .client-js #preftoc, .client-js #preftoc li,
   .client-js #preftoc li.selected a, .ui-widget-content,
-  .ext-cards-card-list h3::after, #simpleSearch, .mw-advancedSearch-fieldContainer {
+  .ext-cards-card-list h3::after, #simpleSearch,
+  .mw-advancedSearch-fieldContainer {
     background-image: none !important;
   }
   #ca-nstab-project, #ca-talk, #ca-view, #ca-viewsource, #ca-history,
@@ -641,10 +642,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mwe-popups-extract::after {
     background-image: linear-gradient(to right, transparent, var(--gray-2) 50%) !important;
   }
-  .mw-mmv-ttf-ellipsis::before{
+  .mw-mmv-ttf-ellipsis::before {
     background-image: linear-gradient(to right, transparent, var(--gray-2)) !important;
   }
-  .mwe-popups-extract .mwe-popups-fade, .mw-mmv-permission-box .mw-mmv-permission-text .mw-mmv-permission-text-fader {
+  .mwe-popups-extract .mwe-popups-fade,
+  .mw-mmv-permission-box .mw-mmv-permission-text .mw-mmv-permission-text-fader {
     background-image: linear-gradient(to bottom, transparent, var(--gray-2)) !important;
   }
   .ui-widget-overlay {
@@ -1019,7 +1021,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .k-player .ui-widget-content {
     color: var(--gray-c);
   }
-  div > .flow-menu li a, .mw-mmv-post-image, .mw-mmv-permission-box .mw-mmv-permission-text .mw-mmv-permission-text-fader a {
+  div > .flow-menu li a, .mw-mmv-post-image,
+  .mw-mmv-permission-box .mw-mmv-permission-text .mw-mmv-permission-text-fader a {
     background-color: var(--gray-2) !important;
   }
   .mw-mmv-download-button, .mw-mmv-reuse-button, .mw-mmv-options-button,
@@ -1610,10 +1613,12 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     color: var(--gray-a) !important;
   }
   .tux-pagemode-status.fuzzy {
-    background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2233.389%22 height=%2222.857%22 viewBox=%220 0 33.389 22.857%22%3E %3Cpath fill=%22%234b380d%22 d=%22M0 0h25.922l7.467 11.43-7.468 11.428H0V0z%22/%3E %3Cpath fill=%22%23999%22 d=%22M17.98 4.357c-4.06 0-7.374 3.316-7.374 7.375 0 4.06 3.315 7.375 7.375 7.375 4.06 0 7.376-3.316 7.376-7.375 0-4.06-3.316-7.375-7.375-7.375zm0 1.768c3.105 0 5.608 2.504 5.608 5.607s-2.504 5.607-5.607 5.607c-3.102 0-5.606-2.505-5.606-5.608 0-3.103 2.504-5.607 5.607-5.607z%22/%3E %3Cpath fill=%22%23999%22 d=%22M17.19 7.223v5.761h3.427v-1.21H18.4V7.223h-1.21z%22/%3E %3C/svg%3E");
+    background-image: linear-gradient(transparent, transparent),
+                          url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2233.389%22 height=%2222.857%22 viewBox=%220 0 33.389 22.857%22%3E %3Cpath fill=%22%234b380d%22 d=%22M0 0h25.922l7.467 11.43-7.468 11.428H0V0z%22/%3E %3Cpath fill=%22%23999%22 d=%22M17.98 4.357c-4.06 0-7.374 3.316-7.374 7.375 0 4.06 3.315 7.375 7.375 7.375 4.06 0 7.376-3.316 7.376-7.375 0-4.06-3.316-7.375-7.375-7.375zm0 1.768c3.105 0 5.608 2.504 5.608 5.607s-2.504 5.607-5.607 5.607c-3.102 0-5.606-2.505-5.606-5.608 0-3.103 2.504-5.607 5.607-5.607z%22/%3E %3Cpath fill=%22%23999%22 d=%22M17.19 7.223v5.761h3.427v-1.21H18.4V7.223h-1.21z%22/%3E %3C/svg%3E");
   }
   .tux-workflow-status-selector li.selected {
-    background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2215%22 viewBox=%220 0 15 15%22%3E %3Cpath fill=%22%23999%22 d=%22M10.765 1.078l-5.188 8.938-2.03-1.5L1.95 10.64l3.25 2.407 1.188.875.75-1.28 5.906-10.25-2.28-1.314z%22/%3E %3C/svg%3E");
+    background-image: linear-gradient(transparent, transparent),
+                          url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2215%22 viewBox=%220 0 15 15%22%3E %3Cpath fill=%22%23999%22 d=%22M10.765 1.078l-5.188 8.938-2.03-1.5L1.95 10.64l3.25 2.407 1.188.875.75-1.28 5.906-10.25-2.28-1.314z%22/%3E %3C/svg%3E");
     color: var(--gray-a) !important;
   }
   .grid .tux-message-editor .close {
@@ -1661,7 +1666,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%3E%3Cpath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23999%22%20d%3D%22M7.5.125C3.44.125.125%203.44.125%207.5c0%204.06%203.316%207.375%207.375%207.375%204.06%200%207.375-3.316%207.375-7.375C14.875%203.44%2011.56.125%207.5.125zm0%201.768c3.104%200%205.607%202.504%205.607%205.607s-2.504%205.607-5.607%205.607S1.893%2010.604%201.893%207.5%204.396%201.893%207.5%201.893z%22%2F%3E%3Cpath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23999%22%20d%3D%22M6.708%202.99v5.763h3.428v-1.21H7.918V2.99h-1.21z%22%2F%3E%3C%2Fsvg%3E");
   }
   .tux-loading-indicator {
-    background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,<?xml version='1.0' standalone='no'?><svg version='1.0' xmlns='http://www.w3.org/2000/svg' width='34px' height='34px' viewBox='0 0 34.000000 34.000000' preserveAspectRatio='xMidYMid meet'><g transform='translate(0.000000,34.000000) scale(0.100000,-0.100000)' fill='rgb(/*[[base-color-rgb]]*/)' stroke='none'><path d='M285 103 c-16 -29 -32 -43 -75 -60 -48 -19 -51 -22 -25 -23 39 0 90 32 115 72 21 35 25 48 13 48 -5 0 -17 -17 -28 -37z'/></g></svg>");
+    background-image: linear-gradient(transparent, transparent),
+                          url("data:image/svg+xml,<?xml version='1.0' standalone='no'?><svg version='1.0' xmlns='http://www.w3.org/2000/svg' width='34px' height='34px' viewBox='0 0 34.000000 34.000000' preserveAspectRatio='xMidYMid meet'><g transform='translate(0.000000,34.000000) scale(0.100000,-0.100000)' fill='rgb(/*[[base-color-rgb]]*/)' stroke='none'><path d='M285 103 c-16 -29 -32 -43 -75 -60 -48 -19 -51 -22 -25 -23 39 0 90 32 115 72 21 35 25 48 13 48 -5 0 -17 -17 -28 -37z'/></g></svg>");
   }
   .tux-dropdown-menu .unchangeable, .tux-message-editor .shortcutinfo,
   .grid .tux-message-editor .messagekey, .tux-message-selector label {
@@ -2302,9 +2308,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .wikiEditor-ui-toolbar .group .tool-select .options,
   .wikiEditor-ui-toolbar .page-characters div span, .oo-ui-panelLayout-framed,
   .mw-prefs-tabs-wrapper.oo-ui-panelLayout-framed, .mw-prefs-buttons,
-  .mw-ui-feature-header, .mw-ui-feature-discussion-link, .mw-ui-feature-info-link,
-  .mw-widget-dateInputWidget-handle, .mw-widget-calendarWidget,
-  .mw-parser-output .module-shortcutboxplain,
+  .mw-ui-feature-header, .mw-ui-feature-discussion-link,
+  .mw-ui-feature-info-link, .mw-widget-dateInputWidget-handle,
+  .mw-widget-calendarWidget, .mw-parser-output .module-shortcutboxplain,
   .mw-parser-output .module-shortcutlist, .flow-ui-navigationWidget,
   .wikitable [data-parsoid], .mw-parser-output .wiki-template-infocard,
   div[style*="border:1px solid #A3BFB1 solid;"], .ui-widget-content,
@@ -3032,13 +3038,15 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-mmv-title-para .mw-mmv-ttf-ellipsis {
     background-color: var(--gray-2);
   }
-  .oo-ui-dropdownInputWidget.oo-ui-widget-enabled, .oo-ui-dropdownInputWidget.oo-ui-widget-enabled:hover {
+  .oo-ui-dropdownInputWidget.oo-ui-widget-enabled,
+  .oo-ui-dropdownInputWidget.oo-ui-widget-enabled:hover {
     background-color: transparent !important;
   }
   .oo-ui-labelWidget.oo-ui-inline-help {
     color: var(--gray-9a);
   }
-  .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle, .mw-mmv-label,
+  .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle,
+  .mw-mmv-label,
   .mw-mmv-ttf-ellipsis-container:hover .mw-mmv-ttf-container .mw-mmv-ttf-ellipsis,
   .wbmi-item .wbmi-item-container .wbmi-entity-header {
     background-color: var(--gray-28);
@@ -3641,7 +3649,8 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   }
   .page-list.side-list .list-thumb, .topic-title-list.side-list .list-thumb,
   .site-link-list.side-list .list-thumb, .content figcaption,
-  .content .thumbcaption, #mw-mf-page-left ul li a:active:not(.secondary-action), .toggle-list-item__anchor--menu:visited,
+  .content .thumbcaption, #mw-mf-page-left ul li a:active:not(.secondary-action),
+  .toggle-list-item__anchor--menu:visited,
   .toggle-list-item__anchor--menu:active,
   .mw-rcfilters-ui-tagItemWidget-popup-content, .mw-widget-calendarWidget-day {
     color: var(--gray-9a);
