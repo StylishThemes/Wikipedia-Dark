@@ -484,6 +484,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-advancedSearch-fieldContainer {
     background-image: none !important;
   }
+  /* hack around sidebar bottom border brightness */
+  .portal h3, .vector-menu-portal h3 {
+    background-image: linear-gradient(to top, transparent, var(--gray-c));
+    background-size: auto 1px;
+  }
   #ca-nstab-project, #ca-talk, #ca-view, #ca-viewsource, #ca-history,
   #ca-nstab-main, #ca-nstab-research, #ca-edit, #ca-addsection, #ca-nstab-2019,
   #ca-ve-edit, #ca-nstab-special, #ca-nstab-help, #ca-nstab-category,
@@ -6566,7 +6571,7 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
     color: var(--base-color) !important;
   }
   /* hack around sidebar bottom border brightness */
-  #mw-panel .portal:not(#p-navigation) .body {
+  .portal h3, .vector-menu-portal h3 {
     background-image: linear-gradient(to top, transparent, var(--gray-c));
     background-size: auto 1px;
   }
