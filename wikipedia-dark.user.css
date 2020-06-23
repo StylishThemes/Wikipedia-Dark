@@ -496,7 +496,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 0 !important;
-    background-color: var(--bg-selected) !important;
+    background-color: var(--bg-selected);
+    background-image: none;
+  }
+  .vector-menu-tabs, .vector-menu-tabs a, #mw-head .vector-menu-dropdown h3 {
+    background-image: none;
   }
   .wpb .portal ul, .boilerplate .pullquote, .module-shortcutboxplain,
   .mw-trackedTemplate, .todo-box {
@@ -2681,15 +2685,12 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border: 1px solid var(--gray-5);
   }
   /* add border */
-  div.vectorTabs li, .client-js #preftoc li {
+  .vector-menu-tabs li, .client-js #preftoc li {
     border-right: 1px solid var(--gray-5) !important;
   }
-  div.vectorTabs li.selected, .client-js #preftoc li.selected {
+  .vector-menu-tabs .selected, .client-js #preftoc li.selected {
     border-bottom: 2px solid var(--tab-color);
     box-shadow: none !important;
-  }
-  div.vectorTabs li {
-    margin-top: -1px;
   }
   .oo-ui-window-content.oo-ui-messageDialog-content {
     border: 1px solid var(--gray-4) !important;
@@ -6067,7 +6068,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   td[style*="border: 1px solid gray"] {
     border-color: var(--gray-5) !important;
   }
-  div.vectorTabs li.selected {
+  .vector-menu-tabs .selected {
     border-bottom: 3px solid var(--tab-color);
     box-shadow: none !important;
   }
