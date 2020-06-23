@@ -4818,8 +4818,8 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     color: var(--gray-18);
   }
   #main-page #main-page-content h2 {
-    background-image: none;
     background: linear-gradient(to right, var(--blue-1) 0%, transparent 90%);
+    background-image: none;
     border-radius: 18px;
   }
   #main-page #main-page-column1, #main-page #main-page-column2,
@@ -4827,8 +4827,8 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     border-color: var(--blue-1);
   }
   #main-page #main-page-footer h2 {
-    background-image: none;
     background: linear-gradient(to right, var(--green-3) 0%, transparent 90%);
+    background-image: none;
     border-radius: 18px;
   }
   #main-page #main-page-footer .section {
