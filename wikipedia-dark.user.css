@@ -1077,7 +1077,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   .mw-rcfilters-ui-filterTagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle,
   .mw-rcfilters-ui-filterTagMultiselectWidget-views-select-widget.oo-ui-widget,
-  .ui-dialog {
+  .ui-dialog, .mw-parser-output table.dmbox {
     border-color: var(--gray-4);
   }
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
@@ -2464,7 +2464,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   /* stop hovering effects on tr/td borders
 	   https://species.wikimedia.org/wiki/Wikispecies:Templates#Link_Templates */
   tr:hover,
-  td:not([style*="border:1px solid transparent"]):not(.navbox-abovebelow):not(.navbox-list):not([style]):not(.MainPageBG):hover {
+  td:not(.mid-table):not([style*="border:1px solid transparent"]):not(.navbox-abovebelow):not(.navbox-list):not([style]):not(.MainPageBG):hover {
     border-color: var(--gray-5) !important;
   }
   .tux-workflow-status:hover {
@@ -3207,6 +3207,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   img[src*="Black_W_for_promotion"] {
     filter: invert(1) brightness(80%) contrast(90%);
     background-color: #bbb !important;
+  }
+  .mbox-image img[src*="Wiktionary-logo"] {
+    filter: invert(90%) hue-rotate(180deg) brightness(120%);
   }
   /* fix border due to image inversion in above rule */
   div.thumbinner a.image img[src*="Daggers.svg"],
@@ -4810,9 +4813,6 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
 @-moz-document domain("pl.wikipedia.org") {
   [id*="main-page-column"], #main-page-sister-projects, #main-page-wikimedia {
     background: var(--gray-18);
-  }
-  #main-page #main-page-header {
-    background: var(--gray-18) url("https://upload.wikimedia.org/wikipedia/commons/3/3e/MP-open-book4.png") -20px -15px no-repeat;
   }
   #main-page-welcome strong {
     color: var(--gray-18);
