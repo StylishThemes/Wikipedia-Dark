@@ -1774,6 +1774,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   div[style*="background-color:#ccc;"] {
     background: var(--gray-2) !important;
   }
+  th[style*="background:linear-gradient(to top right,#eaecf0 49.5%,#aaa 49.5%,#aaa 50.5%,#eaecf0 50.5%)"] {
+    background: var(--gray-3) !important;
+  }
   .messagebox {
     background: var(--gray-2);
     border-color: var(--gray-5) !important;
