@@ -2017,6 +2017,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .navbox-title, .navbox-title *, table.navbox th, .navbox th {
     background: var(--purple-0) !important;
     border-color: var(--gray-2) !important;
+    color: var(--gray-c) !important;
   }
   div[style="background-color: #E3D2FB; margin: 2em 0 0 0; padding: 0 10px 0 10px; border: 1px solid #AAAAAA;"],
   td[style*="border-bottom:1px solid gray; background-color:#eeeeff;"] {
