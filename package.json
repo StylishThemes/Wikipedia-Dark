@@ -11,8 +11,8 @@
     "node": ">=10"
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
-    "eslint-config-silverwind": "^18.0.1",
+    "eslint": "^7.6.0",
+    "eslint-config-silverwind": "^18.0.2",
     "perfectionist": "^2.4.0",
     "stylelint": "^13.6.1",
     "stylelint-config-silverwind": "2.0.8",
