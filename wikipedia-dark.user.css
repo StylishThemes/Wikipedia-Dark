@@ -505,7 +505,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   #ca-nstab-image, #ca-translate, #ca-lstats, #ca-mstats, #ca-export,
   #ca-proofreadPageNextLink, #ca-proofreadPagePrevLink, #ca-nstab-page,
   #ca-proofreadPageIndexLink, #ca-proofreadPageScanLink, #ca-ns0_0,
-  #ca-nstab-index, #ca-nstab-citations {
+  #ca-nstab-index, #ca-nstab-citations, #ca-current, #ca-view-foreign {
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 0 !important;
@@ -2900,10 +2900,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .wikipediauserbox td a, .wikipediauserbox td a span {
     color: var(--base-color) !important;
   }
-  .wikipediauserbox table[style*="background"] {
+  .wikipediauserbox table[style*="background"], table[style*="background:#DDD"] {
     background-color: var(--gray-2) !important;
   }
-  .wikipediauserbox, .wikipediauserbox td * {
+  .wikipediauserbox, .wikipediauserbox td *,
+  table[style*="border:1px solid #BBB"] {
     border-color: var(--gray-5) !important;
   }
   .boilerplate.archived[style="background-color: #edeaff" i] {
@@ -3184,7 +3185,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   a.image img[src*="Merge-"], a.image img[src*="delete"],
   a.image img[src*="Filing_"], a.image img[src*="Lens_"],
   a.image img[src*="Wikimedia_logo_family_complete"], a.image img[src*="Propan"],
-  a.image img[src*="pictogram"] {
+  a.image img[src*="pictogram"], a img[src*="Commons-logo.svg"] {
     background: inherit !important;
   }
   .vertical-navbox th:not([style*="6a5"]):not([style*="3C3"]):not([style*="B22"]),
