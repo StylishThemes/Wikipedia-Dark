@@ -741,6 +741,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   table[style*="background-color: white; font-size:100%; border:1px solid #CCC;"] th {
     background-color: var(--gray-2) !important;
   }
+  div[style*="background-color: #f0f0f0" i],
   table[style*="background: transparent"],
   table[style*="background-color:transparent"],
   table.navbox-inner[style*="background:transparent"],
@@ -984,7 +985,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .flow-topic-summary-container .flow-ui-editTopicSummaryWidget .flow-topic-summary-author,
   .mw-mmv-options-text-header, .imeselector a,
   .languagesettings-menu .menu-section:hover .settings-text, .ime-disable-link,
-  span[style="white-space:nowrap;"], .mw-history-legend, #mw-content-text {
+  span[style="white-space:nowrap;"], .mw-history-legend, #mw-content-text,
+  .mw-mmv-options-text-body {
     color: var(--gray-c);
   }
   .mw-body pre, .mw-body code, .mw-body .mw-code {
@@ -2470,7 +2472,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   div[style*="border: 1px solid #ccc"],
   td[style*="border-right: 1px solid #aaa;border-bottom: 1px solid #aaa"],
   td[style*="border-bottom: 1px solid #aaa"],
-  td[style*="border-left:solid 2px #AAA;border-right:solid 1px #AAA"] {
+  td[style*="border-left:solid 2px #AAA;border-right:solid 1px #AAA"],
+  div[style*="border: 2px solid #ccc" i] {
     border-color: var(--gray-5) !important;
   }
   div[style*="border:1px #FFFFFF"], td[style*="border-right:solid 2px #AAA"],
@@ -5592,10 +5595,17 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   #main_page_mp-mp {
     background-color: transparent !important;
   }
-  #main_page_mp-mp div:not(.ui-widget):not(.control-bar):not(.lButton):not(.bodySearchWrap):not(#WOTD-rss-description):not([style*="border"]):not([style="text-align:center;"]) {
+  #main_page_mp-mp div:not(.ui-widget):not(.control-bar):not(.lButton):not(.bodySearchWrap):not(#WOTD-rss-description):not([style*="border"]):not([style="text-align:center;"]),
+  [id*="Translations-"] .NavContent, .noShowEditText, div.mw-editnotice div,
+  .mw-htmlform-ooui-wrapper.oo-ui-layout {
     background-color: var(--gray-2);
   }
-  div[style*="background-color: #FFFFFF;"] {
+  div[style*="background-color: #FFFFFF;"],
+  div[style*="background-color: #F8F8FF"],
+  div[class=""][style*="border: 2px solid #ccc"] {
+    background-color: var(--gray-2) !important;
+  }
+  span[style*="background-color: rgb(248, 248, 255)"] {
     background-color: var(--gray-2) !important;
   }
   table[style*="background-color:#E9E9FF; width: 100%; border: 3px solid #AAAAEE;"] {
@@ -5617,16 +5627,26 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     border-color: var(--gray-5) !important;
   }
   div.NavFrame div.NavHead {
-    color: var(--gray-2);
+    color: var(--gray-e);
   }
   div.NavFrame div.NavHead, details.NavFrame summary.NavHead {
-    background: var(--gray-7);
+    background: var(--gray-4);
   }
   div.NavFrame div.NavHead:hover, details.NavFrame summary.NavHead:hover {
-    background: var(--gray-9a);
+    background: var(--gray-5);
   }
-  .NavContent .translations form span[style*="color"] {
+  .NavContent .translations form span[style*="color"],
+  .list-switcher-element a[role="button"] {
     color: var(--base-color) !important;
+  }
+  .HQToggle::before, .NavToggle::before, .HQToggle::after, .NavToggle::after {
+    color: var(--base-color);
+  }
+  td[style*="background-color:#ffffe0"] {
+    background-color: var(--brown-1) !important;
+  }
+  .trreq {
+    background-color: var(--green-4);
   }
 }
 @-moz-document domain("wikiversity.org") {
