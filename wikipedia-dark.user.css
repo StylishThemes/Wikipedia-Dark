@@ -120,10 +120,10 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
     --gray-6_5: rgba(100, 100, 100, .5);
     --white_1: rgba(255, 255, 255, .1);
     --white_25: rgba(255, 255, 255, .25);
-    --diff-del: rgba(213, 154, 0, .6);
-    --diff-add: rgba(0, 112, 213, .6);
-    --revs-old: rgba(255, 204, 51, .5);
-    --revs-new: rgba(30, 109, 184, .5);
+    --diff-del: #c22;
+    --diff-add: #36c;
+    --revs-old: #b28200;
+    --revs-new: #070;
     /* assessment colors */
     --assess-1: #06c;
     --assess-2: #29c;
@@ -600,7 +600,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .hatnote.navigation-not-searchable, .thumbcaption {
     color: var(--gray-a);
   }
-  .oo-ui-tagItemWidget.oo-ui-widget-enabled:not(.oo-ui-tagItemWidget-fixed) {
+  .oo-ui-tagItemWidget.oo-ui-widget-enabled:not(.oo-ui-tagItemWidget-fixed),
+  .mw-revslider-container .mw-revslider-toggle-button.oo-ui-buttonElement-frameless.oo-ui-labelElement {
     background-color: var(--gray-2);
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-invalid {
@@ -1511,7 +1512,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--gray-2);
     box-shadow: 0 2px 2px 0 var(--gray-5);
   }
-  .mw-mmv-dialog .mw-mmv-dialog-down-arrow {
+  .mw-mmv-dialog .mw-mmv-dialog-down-arrow, .oo-ui-panelLayout-framed {
     background-color: var(--gray-2);
   }
   .flow-topic-titlebar, .fieldsetlike .legendtextlike,
@@ -1935,7 +1936,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .infobox[style*="background-color:#f5faff;border:1px solid #cedff2;"],
   div[style*="border:1px solid #cedff2; padding:0.7em 0.5em; background-color: #f8f9fa;"],
   div[style*="border:2px solid #cedff2; background-color:#f5faff"],
-  div[style*="border:1px solid #A3B1BF; padding:5px; background-color:#F5FAFF;"] {
+  div[style*="border:1px solid #A3B1BF; padding:5px; background-color:#F5FAFF;"],
+  div[style*="background-color: #f5faff"] {
     background: var(--blue-2) !important;
     border-color: var(--blue-4) !important;
   }
@@ -3018,6 +3020,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--diff-del) !important;
     color: var(--gray-d) !important;
   }
+  .mw-revslider-revision-tooltip .mw-revslider-change-negative {
+    color: var(--diff-del);
+  }
   td.diff-addedline .diffchange, .wikEdDiffInsert,
   .wikEdDiffFragment:hover .wikEdDiffInsert {
     background-color: var(--diff-add) !important;
@@ -3072,7 +3077,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle,
   .mw-mmv-label,
   .mw-mmv-ttf-ellipsis-container:hover .mw-mmv-ttf-container .mw-mmv-ttf-ellipsis,
-  .wbmi-item .wbmi-item-container .wbmi-entity-header {
+  .wbmi-item .wbmi-item-container .wbmi-entity-header,
+  .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle:active {
     background-color: var(--gray-28);
     color: var(--gray-b);
   }
@@ -3261,6 +3267,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   .sprite.svg-translate-icon, .sprite.svg-arrow-down-blue {
     filter: grayscale(100%) brightness(200%);
+  }
+  .svg-language-icon {
+    background-position: 0 -617px;
+    filter: grayscale(1) brightness(2);
   }
   .bookshelf-container .bookend {
     filter: invert(1) grayscale(1) brightness(120%);
