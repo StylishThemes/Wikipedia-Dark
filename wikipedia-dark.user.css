@@ -500,15 +500,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-image: linear-gradient(to top, transparent, var(--gray-c));
     background-size: auto 1px;
   }
-  #ca-nstab-project, #ca-talk, #ca-view, #ca-viewsource, #ca-history,
-  #ca-nstab-main, #ca-nstab-research, #ca-edit, #ca-addsection, #ca-nstab-2019,
-  #ca-ve-edit, #ca-nstab-special, #ca-nstab-help, #ca-nstab-category,
-  #ca-comments, #ca-proofread-source, #ca-nstab-author, #ca-nstab-portal,
-  #ca-nstab-user, #ca-nstab-comments, #ca-main-talk, #ca-nstab-template,
-  #ca-nstab-image, #ca-translate, #ca-lstats, #ca-mstats, #ca-export,
-  #ca-proofreadPageNextLink, #ca-proofreadPagePrevLink, #ca-nstab-page,
-  #ca-proofreadPageIndexLink, #ca-proofreadPageScanLink, #ca-ns0_0,
-  #ca-nstab-index, #ca-nstab-citations, #ca-current, #ca-view-foreign {
+  .vector-menu-content-list li[id*="ca-"] {
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 0 !important;
