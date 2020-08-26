@@ -149,6 +149,7 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
     --bluei-a2: #05493b;
     --bluei-a3: #1b3a2a;
     /* WD query service */
+    --cm-0: #141414;
     --cm-1: #27282e;
     --cm-2: #f9ee98;
     --cm-3: #fc0;
@@ -164,6 +165,214 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
     --cm-13: #ff6400;
     --cm-14: #aeaeae;
     --cm-15: #ad9361;
+  }
+  .cm-comment, .cm-link {
+    font-style: italic;
+  }
+  .CodeMirror {
+    background: var(--gray-18);
+  }
+  .CodeMirror-gutters {
+    background: var(--gray-2);
+    border-right: 1px solid var(--gray-4);
+  }
+  .CodeMirror-guttermarker {
+    color: var(--white);
+  }
+  .CodeMirror-guttermarker-subtle, .CodeMirror-linenumber {
+    color: var(--gray-a);
+  }
+  .CodeMirror-cursor {
+    border-left: 2px solid var(--white);
+  }
+  .CodeMirror-activeline-background {
+    background: var(--cm-1);
+  }
+  .CodeMirror-matchingbracket {
+    outline: 1px solid var(--gray);
+    color: var(--white);
+  }
+  .CodeMirror-line::selection, .CodeMirror-line > span::selection,
+  .CodeMirror-line > span > span::selection {
+    background: var(--cm-1);
+  }
+  .cm-keyword {
+    color: var(--cm-2);
+  }
+  .cm-atom {
+    color: var(--cm-3);
+  }
+  .cm-number {
+    color: var(--cm-4);
+  }
+  .cm-def, .cm-mw-section-header, .cm-mw-link-pagename, .cm-mw-link-bracket,
+  .cm-mw-link-delimiter, .cm-mw-indenting, .cm-mw-extlink-bracket, .cm-mw-list,
+  .cm-mw-apostrophes-bold, .cm-mw-apostrophes-italic {
+    color: var(--cm-5);
+  }
+  .cm-variable-2, .cm-variable-3, span.cm-def, span.cm-tag,
+  .cm-mw-extlink-protocol, .cm-mw-free-extlink-protocol, .cm-mw-extlink,
+  .cm-mw-free-extlink {
+    color: var(--cm-6);
+  }
+  .cm-builtin, .cm-operator {
+    color: var(--cm-7);
+  }
+  .cm-comment {
+    color: var(--gray-7);
+    font-weight: 400;
+  }
+  .cm-string {
+    color: var(--cm-8);
+  }
+  .cm-string-2 {
+    color: var(--cm-9);
+  }
+  .cm-meta {
+    background-color: var(--gray-18);
+    color: var(--cm-10);
+  }
+  .cm-tag {
+    color: var(--cm-11);
+  }
+  .cm-attribute {
+    color: var(--cm-12);
+  }
+  .cm-header {
+    color: var(--cm-13);
+  }
+  .cm-hr {
+    color: var(--cm-14);
+  }
+  .cm-link {
+    color: var(--cm-15);
+    text-decoration: none;
+  }
+  .cm-error {
+    border-bottom: 1px solid var(--red);
+  }
+  .cm-mw-template-name, .cm-mw-template-bracket, .cm-mw-template,
+  .cm-mw-template-argument-name, .cm-mw-template-delimiter {
+    color: var(--cm-10);
+  }
+  /*# sourceURL=ace/css/ace-tm */
+  .ace-tm .ace_gutter {
+    background: var(--cm-1);
+    color: var(--cm-10);
+  }
+  .ace-tm .ace_print-margin {
+    background: var(--cm-1);
+  }
+  .ace-tm .ace_fold {
+    background-color: var(--cm-6);
+  }
+  .ace-tm {
+    background-color: var(--cm-0);
+    color: var(--cm-10);
+  }
+  .ace-tm .ace_cursor {
+    color: var(--cm-10);
+  }
+  .ace-tm .ace_invisible {
+    color: rgb(191, 191, 191);
+  }
+  .ace-tm .ace_storage, .ace-tm .ace_keyword {
+    color: var(--cm-5);
+  }
+  .ace-tm .ace_constant {
+    color: rgb(197, 6, 11);
+  }
+  .ace-tm .ace_constant.ace_buildin {
+    color: rgb(88, 72, 246);
+  }
+  .ace-tm .ace_constant.ace_language {
+    color: rgb(88, 92, 246);
+  }
+  .ace-tm .ace_constant.ace_library {
+    color: var(--cm-8);
+  }
+  .ace-tm .ace_invalid {
+    background-color: rgba(255, 0, 0, .1);
+    color: red;
+  }
+  .ace-tm .ace_support.ace_function {
+    color: var(--cm-5);
+  }
+  .ace-tm .ace_support.ace_constant {
+    color: var(--cm-8);
+  }
+  .ace-tm .ace_support.ace_type, .ace-tm .ace_support.ace_class {
+    color: rgb(109, 121, 222);
+  }
+  .ace-tm .ace_keyword.ace_operator {
+    color: rgb(104, 118, 135);
+  }
+  .ace-tm .ace_string {
+    color: var(--cm-8);
+  }
+  .ace-tm .ace_comment {
+    color: var(--cm-14);
+  }
+  .ace-tm .ace_comment.ace_doc {
+    color: rgb(0, 102, 255);
+  }
+  .ace-tm .ace_comment.ace_doc.ace_tag {
+    color: rgb(128, 159, 191);
+  }
+  .ace-tm .ace_constant.ace_numeric {
+    color: var(--cm-5);
+  }
+  .ace-tm .ace_variable {
+    color: rgb(49, 132, 149);
+  }
+  .ace-tm .ace_xml-pe {
+    color: rgb(104, 104, 91);
+  }
+  .ace-tm .ace_entity.ace_name.ace_function {
+    color: #0000a2;
+  }
+  .ace-tm .ace_heading {
+    color: var(--cm-5);
+  }
+  .ace-tm .ace_list {
+    color: rgb(185, 6, 144);
+  }
+  .ace-tm .ace_meta.ace_tag {
+    color: var(--cm-6);
+  }
+  .ace-tm .ace_string.ace_regex {
+    color: rgb(255, 0, 0);
+  }
+  .ace-tm .ace_marker-layer .ace_selection {
+    background: rgb(181, 213, 255);
+  }
+  .ace-tm.ace_multiselect .ace_selection.ace_start {
+    box-shadow: 0 0 3px 0 white;
+  }
+  .ace-tm .ace_marker-layer .ace_step {
+    background: rgb(252, 255, 0);
+  }
+  .ace-tm .ace_marker-layer .ace_stack {
+    background: var(--cm-2);
+  }
+  .ace-tm .ace_marker-layer .ace_bracket {
+    border: 1px solid rgb(192, 192, 192);
+  }
+  .ace-tm .ace_marker-layer .ace_active-line {
+    background: rgba(0, 0, 0, .07);
+  }
+  .ace-tm .ace_gutter-active-line {
+    background-color: var(--gray-3);
+  }
+  .ace-tm .ace_marker-layer .ace_selected-word {
+    background: var(--gray-3);
+    border: 1px solid var(--cm-11);
+  }
+  .ace-tm .ace_indent-guide {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;
+  }
+  .ve-ui-mwAceEditorWidget .ace_editor {
+    border-color: var(--cm-6);
   }
 }
 @-moz-document
@@ -333,7 +542,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     outline: 1px dashed var(--gray-5);
     background-color: var(--gray-3);
   }
-  .central-featured-lang a:focus, .other-project a:focus {
+  .central-featured-lang a:focus, .other-project a:focus,
+  #p-lang .uls-settings-trigger:focus {
     outline: 1px solid var(--base-color);
   }
   .oo-ui-messageDialog-content > .oo-ui-window-foot,
@@ -342,11 +552,25 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     outline: 1px solid var(--gray-5);
   }
   .ve-ce-focusableNode-highlight {
-    background: var(--base-color);
-    box-shadow: inset 0 0 0 1px var(--base-color);
+    background: rgba(/*[[base-color-rgb]]*/, .3);
+    box-shadow: inset 0 0 0 1px rgba(/*[[base-color-rgb]]*/, .3);
+  }
+  .ve-ce-linkAnnotation.ve-ce-annotation-active {
+    box-shadow: 0 0 0 1px var(--gray-5);
+    background-color: var(--gray-1);
+  }
+  .ve-ui-desktopContext .ve-ui-linkContextItem .ve-ui-linkContextItem-label {
+    border-top-color: var(--gray-4);
   }
   .ve-ce-attachedRootNode::selection, .ve-ce-attachedRootNode ::selection {
     background: var(--base-color);
+  }
+  .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
+    color: var(--base-color);
+    box-shadow: inset 0 -2px 0 0 var(--base-color);
+  }
+  tt, tt[style*="background: white"] {
+    background: var(--gray-1) !important;
   }
   div.mw-echo-ui-toggleReadCircleButtonWidget-circle {
     background-color: var(--gray-7) !important;
@@ -374,7 +598,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active,
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active:focus,
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-tool-active > .oo-ui-tool-link,
-  .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
+  .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link,
+  .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover {
     background-color: var(--gray-3);
   }
   div[style*="background-color: rgb(249, 249, 249)"] {
@@ -449,6 +674,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .pure-button-primary-progressive:hover,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover {
     background-image: linear-gradient(var(--white_1), var(--white_1)) !important;
+  }
+  .oo-ui-outlineOptionWidget.oo-ui-optionWidget-selected,
+  .oo-ui-outlineOptionWidget.oo-ui-optionWidget-highlighted {
+    background-color: var(--gray-28);
   }
   .mw-ui-button.mw-ui-progressive {
     color: var(--gray-e) !important;
@@ -597,7 +826,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .wikiEditor-ui-toolbar .group .label, .flow-topic-meta,
   .mw-parser-output .chatheader-description, .ui-widget-content,
   span.mw-redirectedfrom, span.subpages, .mw-parser-output > p,
-  .hatnote.navigation-not-searchable, .thumbcaption {
+  .hatnote.navigation-not-searchable, .thumbcaption,
+  .oo-ui-fieldLayout-disabled > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label {
     color: var(--gray-a);
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled:not(.oo-ui-tagItemWidget-fixed),
@@ -762,6 +992,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .languagesettings-menu .menu-section:hover {
     background-color: var(--gray-28);
   }
+  #mw-sidebar-button:focus {
+    border-color: var(--base-color);
+    box-shadow: inset 0 0 0 1px var(--base-color);
+  }
   table[style*="background-color:#fff;" i], .search-form fieldset, table.ambox,
   tr[style*="background-color: #fff;" i],
   .mw-ui-button[style*="background-color:#008B6D" i],
@@ -821,7 +1055,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-ui-icon-add::before {
     filter: invert(1) brightness(80%);
   }
-  .oo-ui-buttonElement-button .oo-ui-icon-add {
+  .oo-ui-buttonElement-button .oo-ui-icon-add, .oo-ui-icon-highlight {
     filter: grayscale(1) brightness(250%);
   }
   .ui-state-hover, .ui-widget-content .ui-state-hover,
@@ -944,7 +1178,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     outline: 0;
     box-shadow: inset 0 0 0 2px var(--base-color);
   }
-  .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:focus {
+  .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:focus,
+  .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:focus {
     outline: 1px solid var(--base-color);
     box-shadow: inset 0 0 0 1px var(--base-color);
   }
@@ -1088,9 +1323,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .ui-dialog, .mw-parser-output table.dmbox {
     border-color: var(--gray-4);
   }
-  .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button,
+  .oo-ui-buttonElement-framed.oo-ui-widget-disabled > .oo-ui-buttonElement-button {
     background-color: var(--gray-2);
-    border-color: var(--gray-5) !important;
+    border-color: var(--gray-3) !important;
   }
   /*** Background Color Styles ***/
   div[style*="background-color:white; border"] {
@@ -1425,6 +1661,18 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-tag-marker {
     background: var(--green-4);
   }
+  span[style="background-color:#EFF; color:#000"] {
+    background-color: var(--green-4) !important;
+    color: var(--gray-e) !important;
+  }
+  span[style="background-color:#EFE; color:#000"] {
+    background-color: var(--green-a0) !important;
+    color: var(--gray-e) !important;
+  }
+  span[style="background-color:#DFD; color:#000"] {
+    background-color: var(--green-a1) !important;
+    color: var(--gray-e) !important;
+  }
   /* Yellow */
   table.ext-status-beta > tbody > tr.tpl-infobox-header,
   td[style*="background: #f9f9e9;" i], span[style*="background: #f9f9e9;" i] {
@@ -1443,6 +1691,14 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background: var(--brown-4);
     border-color: var(--yellow-1);
     color: var(--gray-c);
+  }
+  span[style="background-color:#FFC; color:#000"] {
+    background-color: var(--brown-1) !important;
+    color: var(--gray-e) !important;
+  }
+  span[style="background-color:#FC6; color:#000"] {
+    background-color: var(--brown-2) !important;
+    color: var(--gray-e) !important;
   }
   /* Orange */
   th[style="border-top: 5px solid #FFF157;"] {
@@ -1503,6 +1759,14 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   span[style*="border:1px solid #aaa; background:#fcf9f9;"] {
     background: var(--gray-3) !important;
     border-color: var(--gray-5) !important;
+  }
+  span[style="background-color:#EEE; color:#000"] {
+    background-color: var(--grey-2) !important;
+    color: var(--gray-e) !important;
+  }
+  span[style="background-color:#FFF; color:#000"] {
+    background-color: var(--grey-1) !important;
+    color: var(--gray-e) !important;
   }
   div[style*="background-color: #f5f3ef;"] {
     background: var(--gray-2) !important;
@@ -1769,8 +2033,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   div[style*="background-color:#FCFBFF;"],
   div[style*="background:#FFFFFF; border-style:solid; border-width:1px; border-color:#000000;"],
-  div[style*="background-color:#ccc;"] {
+  div[style*="background-color:#ccc;"], div[style*="background: #FFF"] {
     background: var(--gray-2) !important;
+  }
+  div[style*="background: #FFF"] {
+    background: var(--gray-18) !important;
   }
   th[style*="background:linear-gradient(to top right,#eaecf0 49.5%,#aaa 49.5%,#aaa 50.5%,#eaecf0 50.5%)"] {
     background: var(--gray-3) !important;
@@ -2102,6 +2369,14 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   span[style*="color: purple"] {
     color: var(--purple-2) !important;
   }
+  span[style="background-color:#EEF; color:#000"] {
+    background-color: var(--purple-d) !important;
+    color: var(--gray-e) !important;
+  }
+  span[style="background-color:#FEF; color:#000"] {
+    background-color: var(--purple-0) !important;
+    color: var(--gray-e) !important;
+  }
   /* Brown */
   .mw-notification.mw-notification-type-warn {
     border-color: var(--brown-2);
@@ -2380,7 +2655,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .infobox.bordered td, .infobox.bordered th,
   .mw-parser-output .covid-sticky th::before,
   .mw-parser-output .covid-sticky th::after,
-  .mw-mmv-permission-box.full-size .mw-mmv-permission-html {
+  .mw-mmv-permission-box.full-size .mw-mmv-permission-html,
+  .oo-ui-bookletLayout > .oo-ui-menuLayout-menu {
     border-color: var(--gray-5);
   }
   table.ambox-protection {
@@ -2607,8 +2883,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mwe-popups.mwe-popups-no-image-pointer::after {
     border-bottom-color: var(--gray-5) !important;
   }
-  .mwe-popups.mwe-popups-no-image-pointer::after,
-  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor::after {
+  .mwe-popups.mwe-popups-no-image-pointer::after {
     border-bottom-color: var(--gray-2) !important;
   }
   .mwe-popups.flipped_y::before, .mwe-popups.flipped_x_y::before,
@@ -2616,13 +2891,21 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mwe-popups.flipped-y::before, .mwe-popups.flipped-x-y::before {
     border-top-color: var(--gray-5) !important;
   }
-  .mwe-popups::after, .cx-callout-1::after,
-  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor::before {
-    border-bottom-color: var(--gray-7) !important;
+  .mwe-popups::after, .cx-callout-1::after {
+    border-bottom-color: var(--gray-2) !important;
   }
-  .oo-ui-popupWidget-anchored .oo-ui-popupWidget-anchor::before,
   .oo-ui-popupWidget-anchored .oo-ui-popupWidget-anchor::after {
-    border-bottom-color: var(--gray-4) !important;
+    border-bottom-color: var(--gray-2) !important;
+  }
+  .oo-ui-popupWidget-anchored .oo-ui-popupWidget-anchor::before {
+    border-top-color: var(--gray-5) !important;
+  }
+  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor::after {
+    border-bottom-color: var(--gray-2) !important;
+  }
+  .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor::before {
+    border-bottom-color: var(--gray-5) !important;
+    border-width: 10px !important;
   }
   .oo-ui-popupWidget {
     filter: none !important;
@@ -2645,7 +2928,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--gray-4) !important;
   }
   div.vectorTabs li:not(.selected), .oo-ui-popupWidget-anchor::after {
-    border-bottom: 1px solid var(--gray-5) !important;
+    border-bottom-color: var(--gray-5) !important;
   }
   .referencetooltip > li {
     background: var(--gray-2) !important;
@@ -2742,6 +3025,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover,
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
     color: var(--gray-bc) !important;
+  }
+  .ve-ui-mwTemplatePage-description {
+    color: var(--gray-a);
   }
   a.new, #p-personal a.new {
     color: var(--red-4) !important;
@@ -2938,7 +3224,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--gray-3) !important;
     border-color: var(--gray-5) !important;
   }
-  .mw-collapsible.mw-made-collapsible[style*="border"] {
+  .mw-collapsible.mw-made-collapsible[style*="border"],
+  .skin-vector-max-width .mw-footer {
     border-color: var(--gray-5) !important;
   }
   /*** main page ***/
@@ -2989,7 +3276,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--blue-3);
     border-color: var(--blue-4);
   }
-  #mp-middle p, #mp-other-lower p {
+  #mp-middle p, #mp-other-lower p, .oo-ui-toolbar-bar {
     color: var(--gray-c);
   }
   #mp-left h2, #mp-left h2 span {
@@ -3123,7 +3410,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
             filter: invert(100%) !important;
     background-color: transparent !important;
   }
-  img.mwe-math-fallback-image-inline {
+  img.mwe-math-fallback-image-inline, .oo-ui-indicator-required {
     filter: invert(1) brightness(90%);
   }
   div.equation-box[style*="background-color: #F5FFFA"] {
@@ -3212,7 +3499,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   img[src*="Psi2"], a.image [src*="Draig"], img[src*="Draig"],
   a.image [src*="Social_sciences"], img[src*="UserAvatar"],
   img[src*="external-link"], img[src*="_Silhouette"], img[src*="ship_side_view"],
-  img[src*="Sub"], img[src*="Frigate"], a.image img[src*="Propanol"] {
+  img[src*="Sub"], img[src*="Frigate"], a.image img[src*="Propanol"],
+  img[src*="Wikitext"] {
     background: transparent !important;
     filter: invert(1) hue-rotate(180deg) contrast(84%);
   }
@@ -3422,10 +3710,12 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   }
   .page-list li > a:active, .topic-title-list li > a:active,
   .site-link-list li > a:active, .page-list li > a:hover,
-  .topic-title-list li > a:hover, .site-link-list li > a:hover,
+  .topic-title-list li > a:hover, .site-link-list li > a:hover {
+    color: var(--gray-c);
+  }
   .page-list li > a:visited, .topic-title-list li > a:visited,
   .site-link-list li > a:visited {
-    color: var(--gray-c);
+    color: var(--visited-color);
   }
   .overlay.search-overlay .results, .overlay.search-overlay .search-feedback {
     background-color: var(--gray-28) !important;
@@ -3666,9 +3956,11 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     background-color: var(--ores-3);
   }
   /* Foreground fixes */
-  a, a:not([href]), .last-modified-bar a, .last-modified-bar a:visited,
-  .page-summary a h2, .page-summary a h3 {
+  a, a:not([href]), .last-modified-bar a, .page-summary a h2, .page-summary a h3 {
     color: var(--base-color);
+  }
+  .last-modified-bar a:visited {
+    color: var(--visited-color);
   }
   th[style*="color:#244C85;"] {
     color: var(--base-color) !important;
@@ -4524,83 +4816,6 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     color: inherit;
     border-color: var(--gray-4);
   }
-  .cm-comment, .cm-link {
-    font-style: italic;
-  }
-  .CodeMirror {
-    background: var(--gray-18);
-  }
-  .CodeMirror-gutters {
-    background: var(--gray-2);
-    border-right: 1px solid var(--gray-4);
-  }
-  .CodeMirror-guttermarker {
-    color: var(--white);
-  }
-  .CodeMirror-guttermarker-subtle, .CodeMirror-linenumber {
-    color: var(--gray-a);
-  }
-  .CodeMirror-cursor {
-    border-left: 1px solid var(--white);
-  }
-  .CodeMirror-activeline-background {
-    background: var(--cm-1);
-  }
-  .CodeMirror-matchingbracket {
-    outline: 1px solid var(--gray);
-    color: var(--white);
-  }
-  .cm-keyword {
-    color: var(--cm-2);
-  }
-  .cm-atom {
-    color: var(--cm-3);
-  }
-  .cm-number {
-    color: var(--cm-4);
-  }
-  .cm-def {
-    color: var(--cm-5);
-  }
-  .cm-variable-2, .cm-variable-3, span.cm-def, span.cm-tag {
-    color: var(--cm-6);
-  }
-  .cm-builtin, .cm-operator {
-    color: var(--cm-7);
-  }
-  .cm-comment {
-    color: var(--gray-7);
-    font-weight: 400;
-  }
-  .cm-string {
-    color: var(--cm-8);
-  }
-  .cm-string-2 {
-    color: var(--cm-9);
-  }
-  .cm-meta {
-    background-color: var(--gray-18);
-    color: var(--cm-10);
-  }
-  .cm-tag {
-    color: var(--cm-11);
-  }
-  .cm-attribute {
-    color: var(--cm-12);
-  }
-  .cm-header {
-    color: var(--cm-13);
-  }
-  .cm-hr {
-    color: var(--cm-14);
-  }
-  .cm-link {
-    color: var(--cm-15);
-    text-decoration: none;
-  }
-  .cm-error {
-    border-bottom: 1px solid var(--red);
-  }
 }
 @-moz-document domain("wikipedia.org") {
   /*** Navigation menu logo ***/
@@ -5078,6 +5293,31 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
 }
 @-moz-document domain("fr.wikipedia.org") {
+  .skin-vector-max-width, .skin-vector-max-width .mw-page-container,
+  .skin-vector-max-width #mw-panel {
+    background-color: var(--gray-2);
+    background-image: var(--bg-selected);
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-attachment: var(--bg-attachment);
+    /*[[bg-options]]*/
+    color: var(--gray-c);
+  }
+  .mw-logo-tagline {
+    filter: invert(1);
+  }
+  #talkpageheader li {
+    color: var(--gray-a);
+  }
+  img[src*="Blue-bg_rounded"][data-file-width*="50"] {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  .mw-headline {
+    color: var(--gray-c);
+  }
+  .wb-langlinks-link > a:link, .wb-langlinks-link > a:visited {
+    color: var(--visited-color) !important;
+  }
   .homonymie {
     background: transparent;
     border-bottom-color: var(--gray-5);
@@ -5100,6 +5340,9 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   #mw-content-text .accueil_2017_cadre h2 {
     border-bottom: solid .2rem var(--blue-4);
+  }
+  td[style*="border-left:1px solid #c2dfff"] {
+    border-color: var(--gray-4) !important;
   }
   .aa-fond-gris {
     background-color: var(--gray-28);
@@ -5144,8 +5387,16 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .ns-talk #mw-content-text dl dl dl dl dl dl dl dl,
   .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl dl,
   .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl dl dl dl,
-  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl dl dl dl dl dl {
+  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl dl dl dl dl dl,
+  .bandeau-niveau-neutre {
     background: var(--gray-2);
+  }
+  .noarticletext {
+    background: var(--gray-18);
+    border-color: var(--gray-4);
+  }
+  table[style*=" border:1px solid #a7d7f9" i] {
+    border-color: var(--blue-4) !important;
   }
   .aa-filet-bleu {
     border-left: 6px solid var(--blue-1);
@@ -5169,6 +5420,12 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   .aa-titre-rouge {
     color: var(--red-2);
+  }
+  div[style*="border-left-width:6px; border-color: #C00"] {
+    border-color: var(--red-1) !important;
+  }
+  div[style*="border-left-width:6px; border-color: #36B"] {
+    border-color: var(--blue-1) !important;
   }
 }
 @-moz-document domain("wikinews.org") {
@@ -6527,9 +6784,6 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
   }
   #simpleSearch {
     background-color: var(--gray-2);
-  }
-  tt {
-    background: var(--gray-1) !important;
   }
   #uls-settings-block {
     background-color: var(--gray-18);
