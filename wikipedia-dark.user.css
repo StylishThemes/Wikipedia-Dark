@@ -207,8 +207,11 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
   }
   .cm-def, .cm-mw-section-header, .cm-mw-link-pagename, .cm-mw-link-bracket,
   .cm-mw-link-delimiter, .cm-mw-indenting, .cm-mw-extlink-bracket, .cm-mw-list,
-  .cm-mw-apostrophes-bold, .cm-mw-apostrophes-italic {
+  .cm-mw-apostrophes-bold, .cm-mw-apostrophes-italic, .cm-mw-link-tosection {
     color: var(--cm-5);
+  }
+  .cm-mw-skipformatting {
+    background-color: var(--cm-6);
   }
   .cm-variable-2, .cm-variable-3, span.cm-def, span.cm-tag,
   .cm-mw-extlink-protocol, .cm-mw-free-extlink-protocol, .cm-mw-extlink,
@@ -222,7 +225,9 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
     color: var(--gray-7);
     font-weight: 400;
   }
-  .cm-string {
+  .cm-string, .cm-mw-htmltag-name, .cm-mw-htmltag-bracket, .cm-mw-exttag-name,
+  .cm-mw-exttag-bracket, .cm-mw-htmltag-attribute, .cm-mw-exttag-attribute,
+  .cm-mw-mnemonic {
     color: var(--cm-8);
   }
   .cm-string-2 {
@@ -238,7 +243,8 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
   .cm-attribute {
     color: var(--cm-12);
   }
-  .cm-header {
+  .cm-header, .cm-mw-table-bracket, .cm-mw-table-definition,
+  .cm-mw-table-delimiter {
     color: var(--cm-13);
   }
   .cm-hr {
@@ -274,26 +280,26 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
     color: var(--cm-10);
   }
   .ace-tm .ace_invisible {
-    color: rgb(191, 191, 191);
+    color: var(--cm-10);
   }
   .ace-tm .ace_storage, .ace-tm .ace_keyword {
     color: var(--cm-5);
   }
   .ace-tm .ace_constant {
-    color: rgb(197, 6, 11);
+    color: var(--cm-13);
   }
   .ace-tm .ace_constant.ace_buildin {
-    color: rgb(88, 72, 246);
+    color: var(--cm-14);
   }
   .ace-tm .ace_constant.ace_language {
-    color: rgb(88, 92, 246);
+    color: var(--cm-14);
   }
   .ace-tm .ace_constant.ace_library {
     color: var(--cm-8);
   }
   .ace-tm .ace_invalid {
     background-color: rgba(255, 0, 0, .1);
-    color: red;
+    color: var(--cm-13);
   }
   .ace-tm .ace_support.ace_function {
     color: var(--cm-5);
@@ -302,10 +308,10 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
     color: var(--cm-8);
   }
   .ace-tm .ace_support.ace_type, .ace-tm .ace_support.ace_class {
-    color: rgb(109, 121, 222);
+    color: var(--cm-14);
   }
   .ace-tm .ace_keyword.ace_operator {
-    color: rgb(104, 118, 135);
+    color: var(--cm-14);
   }
   .ace-tm .ace_string {
     color: var(--cm-8);
@@ -314,49 +320,49 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
     color: var(--cm-14);
   }
   .ace-tm .ace_comment.ace_doc {
-    color: rgb(0, 102, 255);
+    color: var(--cm-5);
   }
   .ace-tm .ace_comment.ace_doc.ace_tag {
-    color: rgb(128, 159, 191);
+    color: var(--cm-14);
   }
   .ace-tm .ace_constant.ace_numeric {
     color: var(--cm-5);
   }
   .ace-tm .ace_variable {
-    color: rgb(49, 132, 149);
+    color: var(--cm-12);
   }
   .ace-tm .ace_xml-pe {
-    color: rgb(104, 104, 91);
+    color: var(--cm-11);
   }
   .ace-tm .ace_entity.ace_name.ace_function {
-    color: #0000a2;
+    color: var(--cm-5);
   }
   .ace-tm .ace_heading {
     color: var(--cm-5);
   }
   .ace-tm .ace_list {
-    color: rgb(185, 6, 144);
+    color: var(--cm-13);
   }
   .ace-tm .ace_meta.ace_tag {
     color: var(--cm-6);
   }
   .ace-tm .ace_string.ace_regex {
-    color: rgb(255, 0, 0);
+    color: var(--cm-13);
   }
   .ace-tm .ace_marker-layer .ace_selection {
-    background: rgb(181, 213, 255);
+    background: var(--cm-1);
   }
   .ace-tm.ace_multiselect .ace_selection.ace_start {
-    box-shadow: 0 0 3px 0 white;
+    box-shadow: 0 0 3px 0 var(--cm-10);
   }
   .ace-tm .ace_marker-layer .ace_step {
-    background: rgb(252, 255, 0);
+    background: var(--cm-3);
   }
   .ace-tm .ace_marker-layer .ace_stack {
     background: var(--cm-2);
   }
   .ace-tm .ace_marker-layer .ace_bracket {
-    border: 1px solid rgb(192, 192, 192);
+    border: 1px solid var(--cm-14);
   }
   .ace-tm .ace_marker-layer .ace_active-line {
     background: rgba(0, 0, 0, .07);
