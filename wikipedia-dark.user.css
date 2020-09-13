@@ -1090,7 +1090,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     color: var(--gray-c);
   }
   table.wikitable > tr > th,
-  table.wikitable > * > tr > th:not([style*="#ABC;"]):not([style*="#fdb"]):not([style*="#fed"]):not([style*="#fef"]):not([style*="#d4f"]),
+  table.wikitable > * > tr > th:not([style*="#ABC;"]):not([style*="#fdb"]):not([style*="#fed"]):not([style*="#fef"]):not([style*="#d4f"]):not([style*="0; color:#000000"]):not([style*="FF; color:#000000"]),
   td[style*="background: #ececec;" i], th[style*="background:#eee" i],
   th[style*="background-color: #eee" i], tr[style*="background: #dddddd" i],
   tr[style*="background-color: #f7f7f7;" i], th[style*="background:#F2F2F2" i],
