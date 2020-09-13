@@ -476,10 +476,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   a[href*="Wikipedia:Wikipedia_Signpost"] span, .vertical-navbox th span,
   span[style*="white-space:nowrap; line-height:120%; font-size:155%; color:#333;"],
   tr[style^="color:black"], span[title="To be announced"],
-  div[style*="color: black;"], td[style*="color: #000000;"],
-  td[style*="color:#000"], div[style*="color:black"],
+  div[style*="color: black;"], td[style*="color: #000000;"]:not([style^="background"]),
+  td[style*="color:#000"]:not([style^="background"]), div[style*="color:black"],
   td[style*="color:darkslategray;"], .mw-mmv-post-image,
-  .mw-mmv-permission-box .mw-mmv-permission-text, span[style*="color:#555555"] {
+  .mw-mmv-permission-box .mw-mmv-permission-text, span[style*="color:#555555"], td[style^="background: #FFFFFF" i],
+  td[style^="background:#FFFFFF" i], td[style^="background: #F5F" i], td[style^="background:#F5F" i] {
     color: var(--gray-c) !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel,
@@ -1089,7 +1090,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     color: var(--gray-c);
   }
   table.wikitable > tr > th,
-  table.wikitable > * > tr > th:not([style*="#ABC;"]):not([style*="#fdb"]):not([style*="#fed"]):not([style*="#fef"]):not([style*="#d4f"]),
+  table.wikitable > * > tr > th:not([style*="#ABC;"]):not([style*="#fdb"]):not([style*="#fed"]):not([style*="#fef"]):not([style*="#d4f"]):not([style*="0; color:#000000"]):not([style*="FF; color:#000000"]),
   td[style*="background: #ececec;" i], th[style*="background:#eee" i],
   th[style*="background-color: #eee" i], tr[style*="background: #dddddd" i],
   tr[style*="background-color: #f7f7f7;" i], th[style*="background:#F2F2F2" i],
