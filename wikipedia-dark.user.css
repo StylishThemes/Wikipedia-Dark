@@ -480,7 +480,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   td[style*="color:#000"]:not([style^="background"]), div[style*="color:black"],
   td[style*="color:darkslategray;"], .mw-mmv-post-image,
   .mw-mmv-permission-box .mw-mmv-permission-text, span[style*="color:#555555"], td[style^="background: #FFFFFF" i],
-  td[style^="background: #F5F" i] {
+  td[style^="background:#FFFFFF" i], td[style^="background: #F5F" i], td[style^="background:#F5F" i] {
     color: var(--gray-c) !important;
   }
   a, .CategoryTreeToggle, #toc a, #toc a span, body .ui-button, .toctogglelabel,
