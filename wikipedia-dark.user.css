@@ -459,7 +459,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .central-featured-lang .link-box small, .other-project-tagline,
   .mw-number-text, .tux-editor-header, .tux-breadcrumb, .mw-mmv-title,
   .ext-translate-language-selector-label, #mw-mwoauth-authorize-form,
-  .mw-parser-output > div > blockquote > p, .mw-parser-output {
+  .mw-parser-output > div > blockquote > p, .mw-parser-output,
+  .mw-echo-ui-menuItemWidget > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {
     color: var(--gray-c);
   }
   .oo-ui-listToolGroup.oo-ui-widget-disabled,
@@ -759,6 +760,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .vector-menu-tabs, .vector-menu-tabs a, #mw-head .vector-menu-dropdown h3 {
     background-image: none;
   }
+  .vector-menu-dropdown .vector-menu-content-list {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+  }
   .wpb .portal ul, .boilerplate .pullquote, .module-shortcutboxplain,
   .mw-trackedTemplate, .todo-box {
     background-color: var(--gray-3) !important;
@@ -940,7 +945,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .ns-0 #mw-content-text h1, .wikiEditor-ui-toolbar, .mw-ext-score-popup,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle,
   .mw-parser-output .quotebox-title, .mw-parser-output .portal > ul,
-  .uls-menu .uls-no-results-view .uls-no-found-more, .mainpage-box-content {
+  .uls-menu .uls-no-results-view .uls-no-found-more, .mainpage-box-content,
+  .mw-echo-ui-notificationItemWidget {
     background-color: var(--gray-2); /* non-important */
   }
   .mw-notification, .mw-pt-languages, div.mw-pt-languages, div.thumbinner {
@@ -1063,7 +1069,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .imeselector-menu .selectable-row:hover, .guider, .mw-pt-languages-label,
   .mw_metadata th, .uls-language-block > ul > li:hover, th[bgcolor],
   .wikEdDiffBlock, .installerMessage, .styled-select:hover,
-  .rt-settingsLink:hover {
+  .rt-settingsLink:hover, .mw-echo-ui-notificationItemWidget:hover {
     background-color: var(--gray-3); /* don't include !important flag */
   }
   .imeselector {
@@ -2752,7 +2758,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-mmv-permission-box.full-size .mw-mmv-permission-html,
   .oo-ui-bookletLayout > .oo-ui-menuLayout-menu,
   .oo-ui-toolbar-position-top .ve-ui-toolbarDialog-position-above,
-  .ve-ui-specialCharacterPage-character {
+  .ve-ui-specialCharacterPage-character,
+  .mw-echo-ui-notificationItemWidget {
     border-color: var(--gray-5);
   }
   table.ambox-protection {
