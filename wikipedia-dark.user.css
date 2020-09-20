@@ -47,7 +47,9 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
   /* Global color palette */
   :root {
     --base-color: /*[[base-color]]*/;
-    --base-color-rgb: rgba(/*[[base-color-rgb]]*/, .8);
+    --base-color-rgb: /*[[base-color-rgb]]*/;
+    --base-color-rgba-3: rgba(var(--base-color-rgb), 3);
+    --base-color-rgba-8: rgba(var(--base-color-rgb), 8);
     --tab-color: /*[[tab-color]]*/;
     --visited-color: /*[[visited-color]]*/;
     --bg-custom: /*[[bg-custom]]*/;
@@ -567,8 +569,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     outline: 1px solid var(--gray-5);
   }
   .ve-ce-focusableNode-highlight {
-    background: rgba(/*[[base-color-rgb]]*/, .3);
-    box-shadow: inset 0 0 0 1px rgba(/*[[base-color-rgb]]*/, .3);
+    background: var(--base-color-rgba-3);
+    box-shadow: inset 0 0 0 1px var(--base-color-rgba-3);
   }
   .ve-ce-linkAnnotation.ve-ce-annotation-active {
     box-shadow: 0 0 0 1px var(--gray-5);
@@ -3889,12 +3891,12 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     border: 1px solid var(--gray-5);
   }
   .mw-ui-button.mw-ui-progressive:hover {
-    background-color: var(--base-color-rgb);
-    border-color: var(--base-color-rgb);
+    background-color: var(--base-color-rgba-8);
+    border-color: var(--base-color-rgba-8);
   }
   .mw-ui-button.mw-ui-progressive:active, .mw-ui-button.mw-ui-progressive.is-on {
-    background-color: var(--base-color-rgb);
-    border-color: var(--base-color-rgb);
+    background-color: var(--base-color-rgba-8);
+    border-color: var(--base-color-rgba-8);
     color: var(--gray-e);
   }
   .mw-ui-button:hover {
