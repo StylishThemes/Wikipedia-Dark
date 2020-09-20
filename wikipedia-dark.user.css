@@ -3548,6 +3548,85 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button .oo-ui-labelElement-label {
     color: var(--gray-e) !important;
   }
+  /*** translation pages ***/
+  body.mw-special-ContentTranslation, body.mw-special-ContentTranslationStats {
+    background-color: var(--gray-2);
+    background-image: var(--bg-selected);
+  }
+  .cx-dashboard, .cx-slitem__details .cx-slitem__translation-link .source-title,
+  .cx-tlitem .cx-tlitem__details .translation-link .source-title,
+  .cx-ui-translationIssue.oo-ui-tabPanelLayout > .cx-ui-translationIssue-message {
+    color: var(--gray-c);
+  }
+  .cx-translationlist-container, .cx-translation-view, .cx-column,
+  .cx-column.cx-column-tools, .card-instructions-count-one,
+  .card-instructions-count-two, .card-instructions-count-three {
+    background-color: transparent;
+  }
+  .cx-dashboard-sidebar__help, .cx-translator, .cx-suggestionlist__header,
+  .cx-translationlist__header, .cx-card:not(:empty) {
+    background-color: var(--gray-2);
+  }
+  .translation-filter, .cx-selected-source-page__actions,
+  .cx-selected-source-page__container, .cx-selected-source-page__license,
+  .cx-translationlist-empty, .cx-suggestionlist-empty,
+  .cx-translation-view .cx-translation-view-container {
+    background-color: var(--gray-28);
+  }
+  .cx-translatorstats, .cx-tlitem:hover, .cx-slitem:hover,
+  .cx-suggestionlist__collapse:hover, .cx-suggestionlist__expand:hover,
+  .cx-suggestionlist__refresh:hover,
+  .ve-ce-cxPendingNode-pending .ve-ce-cxPendingNode-indicator {
+    background-color: var(--gray-3);
+  }
+  .cx-tlitem:last-child, .cx-slitem:last-child,
+  .mw-cx-tools-IssueTracking > .mw-cx-tools-IssueTracking-body,
+  .cx-ui-translationIssue.oo-ui-tabPanelLayout > .cx-ui-translationIssue-foot:not(:empty) {
+    border-color: var(--gray-5);
+  }
+  .cx-language-filter .cx-language-filter-arrow::before,
+  .cx-language-filter .cx-language-filter-arrow::after {
+    border-left-color: var(--gray-5);
+  }
+  .ve-cx-toolbar-mt .ve-cx-toolbar-mt-title {
+    border-bottom-color: var(--gray-5);
+  }
+  .ve-ce-cxLintableNode.mw-cx-current-issue-warning {
+    box-shadow: -16px 0 0 -4px var(--gray-4), -20px 0 0 -4px var(--yellow-1);
+  }
+  .ve-ce-cxLintableNode.mw-cx-lintIssue-warning {
+    box-shadow: -17px 0 0 -4px var(--gray-3), -20px 0 0 -4px var(--yellow-1);
+  }
+  .cx-header__trademark img {
+    filter: invert(100%) brightness(60%);
+  }
+  .cx-tlitem, .cx-slitem, .cx-suggestionlist__collapse,
+  .cx-suggestionlist__expand, .cx-suggestionlist__refresh,
+  .cx-translation-view-header, .card-instructions-section {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+  }
+  .oo-ui-tagItemWidget.oo-ui-widget-disabled {
+    background-color: var(--gray-3);
+    border-color: var(--gray-5);
+    text-shadow: none;
+  }
+  .cx-language-filter, .cx-dashboardlist__loading-indicator {
+    background-color: var(--gray-3);
+    border-color: var(--gray-5);
+  }
+  .ve-ce-cxPlaceholderNode {
+    background-color: var(--gray-3);
+    box-shadow: 0 0 0 4px var(--gray-3);
+  }
+  .cx-highlight, .cx-sentence-highlight, .cx-section-highlight {
+    background-color: var(--brown-3);
+    box-shadow: 0 0 0 4px var(--brown-3);
+  }
+  .ve-cx-toolbar-mt .ve-cx-toolbar-mt-noservices {
+    background-color: var(--gray-28);
+    border-color: var(--gray-5);
+  }
   /*** invert images ***/
   img[title="Wikipedia"], #mw-wsmfinal-close, img[src*="Speaker_Icon"],
   .infobox img[alt*="structure"][src*=".svg"], img[src*=".svg"][height="16"],
