@@ -1175,8 +1175,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   /* add a white background to transparent images; see
    * https://forum.userstyles.org/discussion/48549/x */
-  a.image img:not([src*="Info"]):not([src*="lag"]):not([src*="ander"]),
-  a[href*=".svg"] img:not([src*="lag"]):not([src*="ander"]) {
+  a.image img:not([src*="Info"]):not([src*="lag"]):not([src*="ander"]):not([alt*="Wiki"]),
+  a[href*=".svg"] img:not([src*="lag"]):not([src*="ander"]):not([alt*="Wiki"]) {
     background: var(--gray-d) !important;
   }
   /* white background to wikEd - see #24 */
@@ -1841,6 +1841,12 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   td[style*="background-color: #FFF"] {
     background-color: var(--grey-2) !important;
+  }
+  table[style*="background: #f9f9f9"], .mw-parser-output .commonscat {
+    background: var(--gray-2) !important;
+  }
+  table[style*="border: 1px solid #aaaaaa"] {
+    border-color: var(--gray-4) !important;
   }
   td[style*="border-top: 1px solid white; border-left: 1px solid white; border-bottom: 1px solid white"],
   td[style*="border-top: 1px solid white; border-right: 1px solid white; border-bottom: 1px solid white"] {
@@ -2535,6 +2541,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--brown-3);
     border-color: var(--brown-2);
   }
+  tr[style="background: #EEF3E2"], td[style="background: #EFE"] {
+    background-color: var(--brown-3) !important;
+  }
   .flaggedrevs-pending {
     background-color: var(--brown-2);
   }
@@ -2803,7 +2812,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-mmv-permission-box.full-size .mw-mmv-permission-html,
   .oo-ui-bookletLayout > .oo-ui-menuLayout-menu,
   .oo-ui-toolbar-position-top .ve-ui-toolbarDialog-position-above,
-  .ve-ui-specialCharacterPage-character, .mw-echo-ui-notificationItemWidget {
+  .ve-ui-specialCharacterPage-character, .mw-echo-ui-notificationItemWidget,
+  .mw-parser-output .commonscat {
     border-color: var(--gray-5);
   }
   table.ambox-protection {
@@ -2929,7 +2939,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .tux-workflow-status:hover {
     border-color: var(--gray-7);
   }
-  td.navbox-abovebelow[style*="border-left:2px solid #fdfdfd"]:not([style*="border-bottom"]) {
+  td.navbox-abovebelow[style*="border-left:2px solid #fdfdfd"]:not([style*="border-bottom"]),
+  th[style*="border-right:1px solid #AAA" i] {
     border-color: var(--gray-2) !important;
   }
   td[style*="border-left:2px solid #b32424;" i],
