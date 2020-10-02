@@ -2220,7 +2220,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   div[style*="background:#fafcfe" i] {
     background-color: var(--blue-2) !important;
   }
-  td[style*="background-color: #CFF"] {
+  td[style*="background-color: #CFF"], div[style*="background-color:#7fbfff"] {
     background: var(--blue-4) !important;
   }
   .vertical-navbox th[style*="background:#cee0f2;"],
@@ -2525,7 +2525,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border-color: var(--brown-2);
     background-color: var(--brown-3);
   }
-  div[style*="background:#ffe496" i] {
+  div[style*="background:#ffe496" i],
+  div[style*="background-color:#ffffec"] {
     background-color: var(--brown-3) !important;
   }
   th[style*="background:#F5F5DC" i] {
