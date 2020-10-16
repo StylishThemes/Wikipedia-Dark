@@ -1956,6 +1956,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   table.ext-status-unknown > tbody > tr.tpl-infobox-header {
     background: var(--gray-5) !important;
   }
+  tr[style*="background:#F3F3F3" i] {
+    background: var(--gray-28) !important;
+  }
   div[style*="background-color:rgb(200,200,200);"], .collection-warning-box,
   tr[style*="background-color: white;"], th[style*="background: #ccc;"],
   span[style*="background-color: #e8e8e8;"], th[style="background:#efefef;"],
