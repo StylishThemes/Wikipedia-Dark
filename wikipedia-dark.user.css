@@ -1859,7 +1859,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   td[style*="background-color: #FFF"] {
     background-color: var(--grey-2) !important;
   }
-  table[style*="background: #f9f9f9"], .mw-parser-output .commonscat {
+  table[style*="background: #f9f9f9"], .mw-parser-output .commonscat,
+  div[style*="background-color:#FFFFFF"] {
     background: var(--gray-2) !important;
   }
   table[style*="border: 1px solid #aaaaaa"] {
@@ -5747,6 +5748,10 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .aa-fond-blanc, .aa-en-tete-aide-droite {
     background-color: var(--gray-2);
   }
+  #bandeau-portail {
+    border-color: var(--gray-3);
+    background-color: var(--gray-3);
+  }
   div[style*="border-color: #AAA; background-color: #FFF;"] {
     background-color: var(--gray-3) !important;
     border-color: var(--gray-4) !important;
@@ -5767,14 +5772,6 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background-color: var(--gray-2);
     border-color: var(--gray-4);
   }
-  .ns-talk #mw-content-text dl, .ns-talk #mw-content-text dl dl dl,
-  .ns-talk #mw-content-text dl dl dl dl dl,
-  .ns-talk #mw-content-text dl dl dl dl dl dl dl,
-  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl,
-  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl dl dl,
-  .ns-talk #mw-content-text dl dl dl dl dl dl dl dl dl dl dl dl dl {
-    background: var(--blue-2);
-  }
   .ns-talk #mw-content-text dl {
     border-top: solid 1px var(--blue-4);
     border-left: solid 1px var(--blue-4);
@@ -5788,12 +5785,20 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .bandeau-niveau-neutre {
     background: var(--gray-2);
   }
-  .noarticletext {
+  div[style*="background-color: #a3c4fc"] {
+    background-color: var(--blue-2) !important;
+  }
+  .noarticletext, div.infobox_v3 {
     background: var(--gray-18);
     border-color: var(--gray-4);
   }
-  table[style*=" border:1px solid #a7d7f9" i] {
+  table[style*=" border:1px solid #a7d7f9" i], .infobox_v3 caption.bordered,
+  .infobox_v3 p.bordered {
     border-color: var(--blue-4) !important;
+  }
+  .bandeau-niveau-ebauche, .bandeau-niveau-information {
+    border-color: var(--blue-4);
+    background-color: var(--gray-2);
   }
   .aa-filet-bleu {
     border-left: 6px solid var(--blue-1);
