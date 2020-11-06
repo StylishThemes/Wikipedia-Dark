@@ -388,7 +388,8 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
 regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach|foundation|donate)\.wikimedia)\.org\/.*"),
 regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   /* transparent background */
-  html, body, .mw-body[role="main"] {
+  html, body, .mw-body[role="main"], .skin-vector-max-width .mw-page-container,
+  .skin-vector-max-width #mw-panel {
     background-color: var(--gray-2);
     background-image: var(--bg-selected);
     background-clip: border-box;
@@ -5632,6 +5633,60 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   div[style*="border-style:solid; background:#FFFFDD;"] {
     background-color: var(--brown-1) !important;
     border-color: var(--brown-2) !important;
+  }
+}
+@-moz-document domain("fr.wiktionary.org") {
+  span[style*="background-color:#FFFFFF"], table[style*="background:#FFF"] {
+    background-color: var(--gray-2) !important;
+  }
+  span[style*="color: rgb(0, 0, 0)"] {
+    color: var(--gray-9) !important;
+  }
+  div[style*="border:1px solid #ECECD8"] {
+    border: 1px solid var(--brown-2) !important;
+  }
+  .cadre.jaune, .cadre.jaune h3 {
+    background-color: var(--brown-3);
+    border-color: var(--brown-4);
+  }
+  .cadre.bleu, .cadre.bleu h3 {
+    background: var(--blue-2);
+    border-color: var(--blue-3);
+  }
+  .cadre.vert, .cadre.vert h3 {
+    background: var(--green-4);
+    border-color: var(--green-2);
+  }
+  .ns-0 #mw-content-text div:not(.toctitle) > h2 {
+    background-color: transparent;
+  }
+  .ns-0 ol li, .ns-0 ol li li, .ns-0 ol li ul, .ns-0 ol li li ul,
+  .ns-0 ol li ul ul, div.NavFrame div.NavHead {
+    background-color: var(--gray-2);
+  }
+  .boite {
+    border: 1px solid var(--gray-5);
+    background-color: var(--gray-2);
+  }
+  .ns-talk .mw-body-content dl, .ns-talk .mw-body-content dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl dl dl {
+    background: var(--blue-2);
+  }
+  .ns-talk .mw-body-content dl {
+    border-top: solid 1px var(--blue-3);
+    border-left: solid 1px var(--blue-3);
+  }
+  table[style*="border:1px solid"], td[style*="border-bottom:1px solid #aaaaaa"] {
+    border-color: var(--gray-4) !important;
+    border-bottom-color: var(--gray-4) !important;
+  }
+  .templatesUsed, .hiddencats {
+    border: 1px solid var(--gray-4);
+    background-color: var(--gray-2);
   }
 }
 @-moz-document domain("fr.wikipedia.org") {
