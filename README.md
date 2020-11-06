@@ -23,6 +23,10 @@
 
 Applies to all Wikimedia wikis (wikipedia.org, wikidata.org, wiktionary.org, etc.), Wikidot wikis and the Arch Linux wiki.
 
+# Maintainers needed
+
+Please read [this](https://github.com/StylishThemes/Wikipedia-Dark/issues/151) announcement.
+
 ## Preview
 
 ![Wikipedia Dark preview](images/desktop-mobile-dark-composite.png "Wikipedia's main page with the dark theme applied.")
@@ -35,7 +39,6 @@ This theme also works with the mobile sites (Minerva skin). For more comparisons
 
 🎨 Stylus for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
 
-🎨 xStyle for [Firefox](https://addons.mozilla.org/firefox/addon/xstyle/) or [Chrome](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj).
 
 ### Then install using one of these methods
 
