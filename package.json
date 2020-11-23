@@ -11,10 +11,10 @@
     "node": ">=10"
   },
   "devDependencies": {
-    "eslint": "^7.12.1",
-    "eslint-config-silverwind": "^24.0.0",
+    "eslint": "^7.14.0",
+    "eslint-config-silverwind": "^24.0.1",
     "perfectionist": "^2.4.0",
-    "stylelint": "^13.7.2",
+    "stylelint": "^13.8.0",
     "stylelint-config-silverwind": "2.0.8",
     "stylelint-config-standard": "^20.0.0",
     "updates": "^11.4.0",
