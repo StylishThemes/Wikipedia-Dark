@@ -774,7 +774,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border-color: var(--gray-5);
   }
   .wpb .portal ul, .boilerplate .pullquote, .module-shortcutboxplain,
-  .mw-trackedTemplate, .todo-box {
+  .mw-trackedTemplate, .todo-box, .mw-echo-ui-notificationItemWidget-unread {
     background-color: var(--gray-3) !important;
   }
   .mw-body-content .portal, .sistersitebox,
@@ -2834,7 +2834,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .oo-ui-bookletLayout > .oo-ui-menuLayout-menu,
   .oo-ui-toolbar-position-top .ve-ui-toolbarDialog-position-above,
   .ve-ui-specialCharacterPage-character, .mw-echo-ui-notificationItemWidget,
-  .mw-parser-output .commonscat, .infobox_v2 {
+  .mw-parser-output .commonscat, .infobox_v2,
+  .mw-echo-ui-notificationBadgeButtonPopupWidget-popup > .oo-ui-popupWidget-popup > .oo-ui-popupWidget-head,
+  .mw-echo-ui-notificationItemWidget:last-child {
     border-color: var(--gray-5);
   }
   body[class*="skin-"] .mw-parser-output table.ambox {
@@ -5634,6 +5636,10 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   div[style*="border-style:solid; background:#FFFFDD;"] {
     background-color: var(--brown-1) !important;
     border-color: var(--brown-2) !important;
+  }
+  .mw-parser-output .Diskussion-container {
+    background-color: var(--gray-2);
+    border-color: var(--gray-4);
   }
 }
 @-moz-document domain("fr.wiktionary.org") {
