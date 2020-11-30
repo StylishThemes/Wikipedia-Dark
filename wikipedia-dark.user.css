@@ -999,7 +999,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .infoboks.biografi tr.overskrift th, .infoboks tr.rad td,
   .infoboks tr.bilde td, .infoboks tr.overskrift td,
   table[style*="background:#f9f9f9;"],
-  table[style*="background-color: white; font-size:100%; border:1px solid #CCC" i] th {
+  table[style*="background-color: white; font-size:100%; border:1px solid #CCC" i] th,
+  td[style*="background:#F5F5F5"], td[bgcolor="f5f5f5"] {
     background-color: var(--gray-2) !important;
   }
   #advancedSearchField-plain, #advancedSearchField-not, #advancedSearchField-or,
