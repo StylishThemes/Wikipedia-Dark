@@ -3470,7 +3470,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border-color: var(--gray-5) !important;
   }
   /*** main page ***/
-  .mw-parser-output #mp-topbanner {
+  .mw-parser-output #mp-topbanner, .mw-parser-output #mp-banner {
     border-color: var(--gray-5);
     background-color: var(--gray-2);
   }
