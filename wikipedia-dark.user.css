@@ -2563,6 +2563,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   div[style*="background-color: #FFE" i] div h2 span#Add_your_project {
     background-color: var(--brown-3);
   }
+  .mw-parser-output #mp-banner {
+    background-color: var(--brown-1);
+    border-color: var(--brown-2);
+  }
   .mw-parser-output .nmbox-header, .mw-parser-output .nmbox {
     background-color: var(--brown-3);
     border-color: var(--brown-2);
@@ -3473,10 +3477,6 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-parser-output #mp-topbanner {
     border-color: var(--gray-5);
     background-color: var(--gray-2);
-  }
-  .mw-parser-output #mp-banner {
-    border-color: var(--yellow-2);
-    background-color: var(--yellow-1);
   }
   .mw-parser-output #mp-topbanner, .mw-parser-output .mp-h2,
   .mw-parser-output #mp-left {
