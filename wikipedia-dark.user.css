@@ -1165,7 +1165,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--black_5);
   }
   /* remove background image/gradient */
-  .keyboard-key, div#editpage-specialchars a,
+  .keyboard-key, kbd, div#editpage-specialchars a,
   body div.ui-dialog .ui-widget-header {
     background: var(--gray-3) !important;
     border-color: var(--gray-5) !important;
@@ -1203,7 +1203,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   a img[src*="WRN_header.png"] {
     filter: invert(88%);
   }
-  .keyboard-key {
+  .keyboard-key, kbd {
     box-shadow: .1em .2em .2em var(--gray-4) !important;
   }
   .mw-mmv-ttf-ellipsis, .navpopup, .oo-ui-popupWidget-popup, input + span,
