@@ -1276,7 +1276,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .messagebox, .errorbox, .warningbox, .successbox,
   .suggestions-special .special-label, .reference-text,
   .mwe-popups .mwe-popups-container, #viewsourcetext {
+    background-color: var(--gray-2) !important;
     color: var(--gray-c);
+  }
+  .mwe-popups .mwe-popups-container .mwe-popups-discreet {
+    background-color: var(--white) !important;
   }
   span[style="color:black"], span[style*="color: black"],
   span[style*="color:black"], td[style*="color: black"],
