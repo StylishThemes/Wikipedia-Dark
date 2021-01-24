@@ -1281,7 +1281,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mwe-popups .mwe-popups-container {
     background-color: var(--gray-2) !important;
   }
-  .mwe-popups .mwe-popups-container .mwe-popups-discreet {
+  .mwe-popups .mwe-popups-container .mwe-popups-thumbnail {
     background-color: var(--white) !important;
   }
   span[style="color:black"], span[style*="color: black"],
@@ -4198,7 +4198,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .mwe-popups .mwe-popups-container {
     background-color: var(--gray-2) !important;
   }
-  .mwe-popups .mwe-popups-container .mwe-popups-discreet {
+  .mwe-popups .mwe-popups-container .mwe-popups-thumbnail {
     background-color: var(--white) !important;
   }
   .mwe-popups .mwe-popups-container a {
