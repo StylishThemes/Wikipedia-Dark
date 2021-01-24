@@ -1276,8 +1276,10 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .messagebox, .errorbox, .warningbox, .successbox,
   .suggestions-special .special-label, .reference-text,
   .mwe-popups .mwe-popups-container, #viewsourcetext {
-    background-color: var(--gray-2) !important;
     color: var(--gray-c);
+  }
+  .mwe-popups .mwe-popups-container {
+    background-color: var(--gray-2) !important;
   }
   .mwe-popups .mwe-popups-container .mwe-popups-discreet {
     background-color: var(--white) !important;
@@ -4191,6 +4193,26 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   }
   tr[bgcolor], td[bgcolor] {
     background-color: var(--gray-28);
+  }
+  /* popups fixes */
+  .mwe-popups .mwe-popups-container {
+    background-color: var(--gray-2) !important;
+  }
+  .mwe-popups .mwe-popups-container .mwe-popups-discreet {
+    background-color: var(--white) !important;
+  }
+  .mwe-popups .mwe-popups-container a {
+    color: var(--gray-c) !important;
+  }
+  .mwe-popups-extract::after {
+    background-image: linear-gradient(to right, transparent, var(--gray-2) 50%) !important;
+  }
+  .mw-mmv-ttf-ellipsis::before {
+    background-image: linear-gradient(to right, transparent, var(--gray-2)) !important;
+  }
+  .mwe-popups-extract .mwe-popups-fade,
+  .mw-mmv-permission-box .mw-mmv-permission-text .mw-mmv-permission-text-fader {
+    background-image: linear-gradient(to bottom, transparent, var(--gray-2)) !important;
   }
   /* these general selectorss have to go when adding not remove all */
   td[style*="background"] {
