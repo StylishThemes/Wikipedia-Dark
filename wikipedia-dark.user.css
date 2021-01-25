@@ -4559,11 +4559,10 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .client-js body.mw-rcfilters-ui-loading .mw-changeslist {
     opacity: .7;
   }
-  kbd.keyboard-key, kbd {
+  kbd.keyboard-key {
     background: var(--gray-18) !important;
     border-color: var(--gray-5) !important;
     color: var(--gray-9a) !important;
-    -webkit-box-shadow: .1em .2em .2em var(--gray-4) !important;
   }
   div#editpage-specialchars a, body div.ui-dialog .ui-widget-header {
     background: var(--gray-3) !important;
@@ -6437,6 +6436,14 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .mw-parser-output .ts-editnotice-neutral {
     background: var(--gray-28);
     border-color: var(--gray-5);
+  }
+}
+@-moz-document domain("ru.m.wikipedia.org") {
+  kbd {
+    background: var(--gray-18) !important;
+    border-color: var(--gray-5) !important;
+    color: var(--gray-9a) !important;
+    box-shadow: .1em .2em .2em var(--gray-4) !important;
   }
 }
 @-moz-document domain("en.wiktionary.org") {
