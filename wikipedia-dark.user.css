@@ -1974,10 +1974,6 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   td[style*="background: #F5F5FF"] {
     background-color: var(--gray-28) !important;
   }
-  html .thumbimage {
-    background-color: var(--gray-28);
-    border-color: var(--gray-5);
-  }
   .oo-ui-menuSelectWidget {
     background-color: var(--gray-18);
     border-color: var(--gray-5);
@@ -4200,6 +4196,9 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   }
   tr[bgcolor], td[bgcolor] {
     background-color: var(--gray-28);
+  }
+  html .thumbimage {
+    background-color: var(--white);
   }
   /* popups fixes */
   .mwe-popups .mwe-popups-container {
