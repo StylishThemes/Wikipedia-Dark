@@ -2853,6 +2853,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-echo-ui-notificationBadgeButtonPopupWidget-popup > .oo-ui-popupWidget-popup > .oo-ui-popupWidget-head,
   .mw-echo-ui-notificationItemWidget:last-child {
     border-color: var(--gray-5);
+    background-color: var(--gray-2);
   }
   body[class*="skin-"] .mw-parser-output table.ambox {
     border: 1px solid var(--gray-5);
