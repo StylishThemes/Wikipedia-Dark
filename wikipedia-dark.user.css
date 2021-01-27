@@ -4053,6 +4053,9 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     background-color: var(--blue-3);
     border-color: var(--blue-4);
   }
+  .lazy-image-placeholder {
+    background-color: var(--gray-28)
+  }
   /* Search */
   .client-nojs .search-box .search:focus,
   .search-overlay .search-box .search:focus {
