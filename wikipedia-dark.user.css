@@ -4029,6 +4029,9 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     background: var(--gray-28);
     border-color: var(--gray-5);
   }
+  .mw-parser-output .quotebox {
+    background: var(--gray-2)
+  }
   #mp-middle p, #mp-other-lower p {
     color: var(--gray-c);
   }
