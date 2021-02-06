@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Wikipedia Dark
 @namespace    StylishThemes
-@version      3.4.26
+@version      3.4.27
 @description  Wikipedia Dark theme
 @author       StylishThemes
 @homepageURL  https://github.com/StylishThemes/Wikipedia-Dark
@@ -389,7 +389,7 @@ regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|v
 regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   /* transparent background */
   html, body, .mw-body[role="main"], .skin-vector-max-width .mw-page-container,
-  .skin-vector-max-width #mw-panel {
+  .skin-vector-max-width #mw-panel, .mw-page-container {
     background-color: var(--gray-2);
     background-image: var(--bg-selected);
     background-clip: border-box;
@@ -1333,7 +1333,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--gray-2) !important;
   }
   .mw-mmv-download-button, .mw-mmv-reuse-button, .mw-mmv-options-button,
-  .mw-mmv-close, .mw-mmv-fullscreen, .mw-mmv-next-image, .mw-mmv-prev-image {
+  .mw-mmv-close, .mw-mmv-fullscreen, .mw-mmv-next-image, .mw-mmv-prev-image,
+  .mw-page-container, #mw-panel {
     background-color: transparent !important;
     border: none !important;
   }
@@ -6465,6 +6466,14 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .mw-parser-output .ts-editnotice-neutral {
     background: var(--gray-28);
     border-color: var(--gray-5);
+  }
+}
+@-moz-document domain("ru.m.wikipedia.org") {
+  kbd {
+    background: var(--gray-18) !important;
+    border-color: var(--gray-5) !important;
+    color: var(--gray-9a) !important;
+    box-shadow: .1em .2em .2em var(--gray-4) !important;
   }
 }
 @-moz-document domain("en.wiktionary.org") {
