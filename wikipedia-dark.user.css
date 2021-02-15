@@ -4205,23 +4205,22 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   }
   /* popups fixes */
   .mwe-popups .mwe-popups-container {
-    background-color: var(--gray-2) !important;
+    background-color: var(--gray-2);
   }
   .mwe-popups .mwe-popups-container .mwe-popups-thumbnail {
-    background-color: var(--white) !important;
+    background-color: var(--white);
   }
   .mwe-popups .mwe-popups-container a {
-    color: var(--gray-c) !important;
+    color: var(--gray-c);
   }
   .mwe-popups-extract::after {
-    background-image: linear-gradient(to right, transparent, var(--gray-2) 50%) !important;
+    background-image: linear-gradient(to right, transparent, var(--gray-2) 50%);
   }
   .mw-mmv-ttf-ellipsis::before {
-    background-image: linear-gradient(to right, transparent, var(--gray-2)) !important;
+    background-image: linear-gradient(to right, transparent, var(--gray-2));
   }
-  .mwe-popups-extract .mwe-popups-fade,
-  .mw-mmv-permission-box .mw-mmv-permission-text .mw-mmv-permission-text-fader {
-    background-image: linear-gradient(to bottom, transparent, var(--gray-2)) !important;
+  .mwe-popups .mwe-popups-extract[dir="ltr"]::after {
+    background-image: linear-gradient(to bottom, transparent, var(--gray-2));
   }
   /* these general selectorss have to go when adding not remove all */
   td[style*="background"] {
