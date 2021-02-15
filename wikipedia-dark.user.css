@@ -1276,10 +1276,12 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .messagebox, .errorbox, .warningbox, .successbox,
   .suggestions-special .special-label, .reference-text,
   .mwe-popups .mwe-popups-container, #viewsourcetext {
-    background-color: var(--gray-2) !important;
     color: var(--gray-c);
   }
-  .mwe-popups .mwe-popups-container .mwe-popups-discreet {
+  .mwe-popups .mwe-popups-container {
+    background-color: var(--gray-2) !important;
+  }
+  .mwe-popups .mwe-popups-container .mwe-popups-thumbnail {
     background-color: var(--white) !important;
   }
   span[style="color:black"], span[style*="color: black"],
@@ -1972,10 +1974,6 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   td[style*="background: #F5F5FF"] {
     background-color: var(--gray-28) !important;
-  }
-  html .thumbimage {
-    background-color: var(--gray-28);
-    border-color: var(--gray-5);
   }
   .oo-ui-menuSelectWidget {
     background-color: var(--gray-18);
@@ -2861,6 +2859,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   table.ambox-protection {
     border-left: 10px solid var(--gray-7) !important;
+  }
+  table.sidebar.vertical-navbox.nomobile {
+    background-color: var(--gray-2);
   }
   /* these are OK to be !important soon as a not is needed remove the offending one instead and fix fallback */
   #talkheader td, .infobox tr[style*="background-color"]:not([style*="#cedff2"]),
@@ -4027,6 +4028,9 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     background: var(--gray-28);
     border-color: var(--gray-5);
   }
+  .mw-parser-output .quotebox {
+    background: var(--gray-2)
+  }
   #mp-middle p, #mp-other-lower p {
     color: var(--gray-c);
   }
@@ -4047,6 +4051,9 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .mw-parser-output .itn-special {
     background-color: var(--blue-3);
     border-color: var(--blue-4);
+  }
+  .lazy-image-placeholder {
+    background-color: var(--gray-28)
   }
   /* Search */
   .client-nojs .search-box .search:focus,
@@ -4192,6 +4199,29 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   }
   tr[bgcolor], td[bgcolor] {
     background-color: var(--gray-28);
+  }
+  html .thumbimage {
+    background-color: var(--white);
+  }
+  /* popups fixes */
+  .mwe-popups .mwe-popups-container {
+    background-color: var(--gray-2) !important;
+  }
+  .mwe-popups .mwe-popups-container .mwe-popups-thumbnail {
+    background-color: var(--white) !important;
+  }
+  .mwe-popups .mwe-popups-container a {
+    color: var(--gray-c) !important;
+  }
+  .mwe-popups-extract::after {
+    background-image: linear-gradient(to right, transparent, var(--gray-2) 50%) !important;
+  }
+  .mw-mmv-ttf-ellipsis::before {
+    background-image: linear-gradient(to right, transparent, var(--gray-2)) !important;
+  }
+  .mwe-popups-extract .mwe-popups-fade,
+  .mw-mmv-permission-box .mw-mmv-permission-text .mw-mmv-permission-text-fader {
+    background-image: linear-gradient(to bottom, transparent, var(--gray-2)) !important;
   }
   /* these general selectorss have to go when adding not remove all */
   td[style*="background"] {
