@@ -98,6 +98,7 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
     --brown-4: #4b380d;
     --yellow-1: #b28200;
     --yellow-2: #ffdd7f;
+    --yellow-3: #a88b2c;
     --orange-1: #e53e00;
     --orange-2: #e08b26;
     --purple-d: #241738;
@@ -6546,8 +6547,48 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .list-switcher-element a[role="button"] {
     color: var(--base-color) !important;
   }
-  .NavContent > table > tbody > tr > th {
-    color: var(--gray-5);
+  tr > *[style*="background:#c0cfe4"],
+  tr > *[style*="background:#9999DF"] {
+    background-color: var(--blue-4) !important;
+  }
+  tr > *[style*="background:#a0ade3"],
+  tr > *[style*="background:#ccccff"] {
+    background-color: var(--blue-3) !important;
+  }
+  tr > *[style*="background:#e2e4c0"],
+  tr > *[style*="background:#d0cfa4"] {
+    background-color: var(--yellow-1) !important;
+  }
+  tr > *[style*="background:#c0d8e4"] {
+    background-color: var(--yellow-3) !important;
+  }
+  tr > *[style*="background:#e0e0b0"] {
+    background-color: var(--pink-1) !important;
+  }
+  tr > *[style*="background:#c0e4c0"],
+  tr > *[style*="background:#99cc99"],
+  tr > *[style*="background:#99CC99"] {
+    background-color: var(--green-3) !important;
+  }
+  tr > *[style*="background:#cfedcc"] {
+    background-color: var(--green-4) !important;
+  }
+  tr > *[style*="background:#e4d4c0"],
+  tr > *[style*="background:#f2caa4"] {
+    background-color: var(--red-3) !important;
+  }
+  tr > *[style*="background:#ECECEC"],
+  tr > *[style*="background:#C0C0C0"],
+  tr > *[style*="background:#d0d0d0"],
+  tr > *[style*="background:#EFEFEF"],
+  tr > *[style*="background: rgb(204, 204, 204)"],
+  tr > *[style*="background: #CCC"] {
+    background-color: var(--gray-4) !important;
+  }
+  div[style*="background:#d9ebff"],
+  tr > *[style*="background:#e0e0e0"],
+  tr > *[style*="background:#DEDEDE"]  {
+    background-color: var(--gray-3) !important;
   }
   .HQToggle::before, .NavToggle::before, .HQToggle::after, .NavToggle::after {
     color: var(--base-color);
