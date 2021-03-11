@@ -6552,17 +6552,19 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background-color: var(--blue-4) !important;
   }
   *[style*="background:#a0ade3"],
-  *[style*="background:#ccccff"] {
-    background-color: var(--blue-3) !important;
-  }
-  *[style*="background:#e2e4c0"],
-  *[style*="background:#d0cfa4"] {
-    background-color: var(--brown-2) !important;
-  }
+  *[style*="background:#ccccff"],
+  *[style*="background: rgb(242, 242, 255)"],
+  *[style*="background:#ccd8ff"],
   *[style*="background:#c0d8e4"] {
     background-color: var(--blue-3) !important;
   }
-  *[style*="background:#e0e0b0"] {
+  *[style*="background:#e2e4c0"],
+  *[style*="background-color:#e2e4c0"],
+  *[style*="background:#d0cfa4"] {
+    background-color: var(--brown-2) !important;
+  }
+  *[style*="background:#e0e0b0"],
+  *[style*="background:#e2c0c0"] {
     background-color: var(--pink-1) !important;
   }
   *[style*="background:#c0e4c0"],
@@ -6579,16 +6581,23 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   *[style*="background:#ECECEC"],
   *[style*="background:#C0C0C0"],
+  *[style*="background-color:#C0C0C0"],
   *[style*="background:#d0d0d0"],
   *[style*="background:#EFEFEF"],
   *[style*="background: rgb(204, 204, 204)"],
+  *[style*="background:#e2f6e2"],
+  *[style*="background: #e2f6e2"],
   *[style*="background: #CCC"] {
     background-color: var(--gray-4) !important;
   }
   div[style*="background:#d9ebff"],
+  div.CategoryTreeItem,
   *[style*="background:#e0e0e0"],
   *[style*="background:#DEDEDE"]  {
     background-color: var(--gray-3) !important;
+  }
+  table.inflection-table[style*="color: rgb(0%,0%,30%)"] {
+    color: var(--gray-c) !important;
   }
   .HQToggle::before, .NavToggle::before, .HQToggle::after, .NavToggle::after {
     color: var(--base-color);
