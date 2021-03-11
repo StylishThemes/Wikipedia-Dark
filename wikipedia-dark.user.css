@@ -98,7 +98,6 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
     --brown-4: #4b380d;
     --yellow-1: #b28200;
     --yellow-2: #ffdd7f;
-    --yellow-3: #a88b2c;
     --orange-1: #e53e00;
     --orange-2: #e08b26;
     --purple-d: #241738;
@@ -6560,7 +6559,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background-color: var(--yellow-1) !important;
   }
   tr > *[style*="background:#c0d8e4"] {
-    background-color: var(--yellow-3) !important;
+    background-color: var(--blue-3) !important;
   }
   tr > *[style*="background:#e0e0b0"] {
     background-color: var(--pink-1) !important;
