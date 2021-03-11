@@ -6556,7 +6556,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   *[style*="background:#e2e4c0"],
   *[style*="background:#d0cfa4"] {
-    background-color: var(--yellow-1) !important;
+    background-color: var(--brown-2) !important;
   }
   *[style*="background:#c0d8e4"] {
     background-color: var(--blue-3) !important;
