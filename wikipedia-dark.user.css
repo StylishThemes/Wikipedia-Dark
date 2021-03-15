@@ -5547,6 +5547,21 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: var(--brown-4) !important;
   }
 }
+@-moz-document domain("de.wiktionary.org") {
+  div.mw-parser-output h2, div.mw-parser-output h3 {
+    background-color: transparent !important;
+  }
+  div[style*="background-color: #EFF5FB"],
+  div[style*="background-color:#EAF3FC"],
+  table[style*="background-color:#F5FAFE"],
+  td[style*="background-color: #F7F7F9"] {
+      background-color: transparent !important;
+  }
+  table[style*="background-color: #FCFCFC"] {
+    background: var(--green-4) !important;
+    border-color: var(--green-2) !important;
+  }
+}
 @-moz-document domain("de.wikipedia.org") {
   img[src*="24px-OOjs_UI_icon_signature-ltr.svg"] {
     filter: invert(1) brightness(75%);
