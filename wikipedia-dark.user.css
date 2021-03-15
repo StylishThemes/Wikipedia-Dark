@@ -5704,7 +5704,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: var(--blue-2);
     border-color: var(--blue-3);
   }
-  .cadre.vert, .cadre.vert h3 {
+  .cadre.vert, .cadre.vert h3, div.bandeau-voir {
     background: var(--green-4);
     border-color: var(--green-2);
   }
