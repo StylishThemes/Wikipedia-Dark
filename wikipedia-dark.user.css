@@ -390,7 +390,7 @@ regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|v
 regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   /* transparent background */
   html, body, .mw-body[role="main"], .skin-vector-max-width .mw-page-container,
-  .skin-vector-max-width #mw-panel, .mw-page-container {
+  .skin-vector #mw-panel, .mw-page-container {
     background-color: var(--gray-2);
     background-image: var(--bg-selected);
     background-clip: border-box;
