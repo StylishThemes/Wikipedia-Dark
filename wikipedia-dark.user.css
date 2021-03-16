@@ -5555,7 +5555,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   div[style*="background-color:#EAF3FC"],
   table[style*="background-color:#F5FAFE"],
   td[style*="background-color: #F7F7F9"] {
-      background-color: transparent !important;
+    background-color: var(--gray-2_75) !important;
   }
   table[style*="background-color: #FCFCFC"] {
     background: var(--green-4) !important;
