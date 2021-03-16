@@ -5829,6 +5829,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     color: var(--gray-a) !important;
   }
   .bandeau-simple.bandeau-niveau-information,
+  .bandeau-section.bandeau-niveau-information,
   .bandeau-discussion.bandeau-niveau-information {
     border-color: var(--blue-4) !important;
     background-color: var(--blue-2);
