@@ -390,7 +390,7 @@ regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|v
 regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   /* transparent background */
   html, body, .mw-body[role="main"], .skin-vector-max-width .mw-page-container,
-  .skin-vector-max-width #mw-panel, .mw-page-container {
+  .skin-vector #mw-panel, .mw-page-container {
     background-color: var(--gray-2);
     background-image: var(--bg-selected);
     background-clip: border-box;
@@ -5547,6 +5547,21 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: var(--brown-4) !important;
   }
 }
+@-moz-document domain("de.wiktionary.org") {
+  div.mw-parser-output h2, div.mw-parser-output h3 {
+    background-color: transparent !important;
+  }
+  div[style*="background-color: #EFF5FB"],
+  div[style*="background-color:#EAF3FC"],
+  table[style*="background-color:#F5FAFE"],
+  td[style*="background-color: #F7F7F9"] {
+    background-color: var(--gray-2_75) !important;
+  }
+  table[style*="background-color: #FCFCFC"] {
+    background: var(--green-4) !important;
+    border-color: var(--green-2) !important;
+  }
+}
 @-moz-document domain("de.wikipedia.org") {
   img[src*="24px-OOjs_UI_icon_signature-ltr.svg"] {
     filter: invert(1) brightness(75%);
@@ -5704,7 +5719,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: var(--blue-2);
     border-color: var(--blue-3);
   }
-  .cadre.vert, .cadre.vert h3 {
+  .cadre.vert, .cadre.vert h3, div.bandeau-voir {
     background: var(--green-4);
     border-color: var(--green-2);
   }
@@ -5814,6 +5829,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     color: var(--gray-a) !important;
   }
   .bandeau-simple.bandeau-niveau-information,
+  .bandeau-section.bandeau-niveau-information,
   .bandeau-discussion.bandeau-niveau-information {
     border-color: var(--blue-4) !important;
     background-color: var(--blue-2);
