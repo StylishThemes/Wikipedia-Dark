@@ -11,7 +11,7 @@
     "node": ">=10"
   },
   "devDependencies": {
-    "eslint": "^7.21.0",
+    "eslint": "^7.22.0",
     "eslint-config-silverwind": "^29.0.0",
     "perfectionist": "^2.4.0",
     "stylelint": "^13.12.0",
@@ -21,7 +21,7 @@
     "versions": "8.4.5"
   },
   "scripts": {
-    "authors": "bash tools/authors",
+    "authors": "bash tools/authors.sh",
     "clean": "npm run perfectionist && node tools/clean.js",
     "lint": "eslint tools/*.js && stylelint wikipedia-dark.user.css",
     "patch": "versions -p -C patch wikipedia-dark.user.css",
