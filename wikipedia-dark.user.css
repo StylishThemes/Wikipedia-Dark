@@ -1547,7 +1547,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--red-3) !important;
     color: var(--gray-a);
   }
-  td[style="background-color: #fec1b9"], td[style="background-color: #fcb5ab"] {
+  td[style="background-color: #fec1b9"], td[style="background-color: #fcb5ab"],
+  td[style*="background:#fcc"] {
     background-color: var(--red-3) !important;
   }
   table[style="background-color: #fee;"] {
@@ -1824,8 +1825,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     border: 1px solid var(--yellow-1) !important;
     background-color: var(--yellow-1) !important;
   }
-  th[style*="background:#fed1a0;"][colspan="3"] {
-    background: var(--yellow-1) !important;
+  th[style*="background:#fed1a0;"][colspan="3"], td[style*="background:#ffc"] {
+    background-color: var(--yellow-1) !important;
   }
   /* Grey */
   h2[style*="color:white;"], th a span[style*="color:#FFFFFF"],
@@ -2247,7 +2248,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   table[style*="background-color:rgba(0,0,255,0.1)"],
   div[style*="background-color: #eaf3ff"], td[style="background-color: #eaf3ff"],
   div[style*="background-color:#DDE"], td[style*="background:SkyBlue"],
-  div[style*="background:#fafcfe" i] {
+  div[style*="background:#fafcfe" i], div[style*="background-color: #c6dbf7"] {
     background-color: var(--blue-2) !important;
   }
   td[style*="background-color: #CFF"], div[style*="background-color:#7fbfff"] {
@@ -2260,7 +2261,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   th[style*="background: #cfe3ff;"], h2[style*="background-color: #d1e4ff;"],
   div[style*="background-color: #adf"], td[style*="background-color:#cddeff;"],
   td[style*="background-color:#B0C4DE;"], div[style*="background: #bce1ff;"],
-  td[style="background: #ABCDEF;"], th[style="background: #ABCDEF;"] {
+  td[style="background: #ABCDEF;"], th[style="background: #ABCDEF;"],
+  td[style*="background:#ccf"] {
     background: var(--blue-3) !important;
   }
   div[style="background:#bff9fc; margin:0 auto; padding:0 10px 0 10px; border:1px solid #AAAAAA;"] {
@@ -2532,7 +2534,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   th[style*="background:lavender" i], td[style*="background:lavender" i],
   th[style*="background:#edf" i], td.import-high[style*="background: #ffacff"],
-  div[style*="background:#CCF;padding"],
+  div[style*="background:#CCF;padding"], td[style*="background:#fcf"],
   div[style*="background-color: lavender"] {
     background-color: var(--purple-1) !important;
   }
@@ -4030,7 +4032,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     border-color: var(--gray-5);
   }
   .mw-parser-output .quotebox {
-    background: var(--gray-2)
+    background: var(--gray-2);
   }
   #mp-middle p, #mp-other-lower p {
     color: var(--gray-c);
@@ -4054,7 +4056,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     border-color: var(--blue-4);
   }
   .lazy-image-placeholder {
-    background-color: var(--gray-28)
+    background-color: var(--gray-28);
   }
   /* Search */
   .client-nojs .search-box .search:focus,
@@ -6563,53 +6565,40 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .list-switcher-element a[role="button"] {
     color: var(--base-color) !important;
   }
-  *[style*="background:#c0cfe4"],
-  *[style*="background:#9999DF"] {
+  *[style*="background:#c0cfe4"], *[style*="background:#9999DF"] {
     background-color: var(--blue-4) !important;
   }
-  *[style*="background:#a0ade3"],
-  *[style*="background:#ccccff"],
-  *[style*="background: rgb(242, 242, 255)"],
-  *[style*="background:#ccd8ff"],
+  *[style*="background:#a0ade3"], *[style*="background:#ccccff"],
+  *[style*="background: rgb(242, 242, 255)"], *[style*="background:#ccd8ff"],
   *[style*="background:#c0d8e4"] {
     background-color: var(--blue-3) !important;
   }
-  *[style*="background:#e2e4c0"],
-  *[style*="background-color:#e2e4c0"],
+  *[style*="background:#e2e4c0"], *[style*="background-color:#e2e4c0"],
   *[style*="background:#d0cfa4"] {
     background-color: var(--brown-2) !important;
   }
-  *[style*="background:#e0e0b0"],
-  *[style*="background:#e2c0c0"] {
+  *[style*="background:#e0e0b0"], *[style*="background:#e2c0c0"] {
     background-color: var(--pink-1) !important;
   }
-  *[style*="background:#c0e4c0"],
-  *[style*="background:#99cc99"],
+  *[style*="background:#c0e4c0"], *[style*="background:#99cc99"],
   *[style*="background:#99CC99"] {
     background-color: var(--green-3) !important;
   }
   *[style*="background:#cfedcc"] {
     background-color: var(--green-4) !important;
   }
-  *[style*="background:#e4d4c0"],
-  *[style*="background:#f2caa4"] {
+  *[style*="background:#e4d4c0"], *[style*="background:#f2caa4"] {
     background-color: var(--orange-3) !important;
   }
-  *[style*="background:#ECECEC"],
-  *[style*="background:#C0C0C0"],
-  *[style*="background-color:#C0C0C0"],
-  *[style*="background:#d0d0d0"],
-  *[style*="background:#EFEFEF"],
-  *[style*="background: rgb(204, 204, 204)"],
-  *[style*="background:#e2f6e2"],
-  *[style*="background: #e2f6e2"],
+  *[style*="background:#ECECEC"], *[style*="background:#C0C0C0"],
+  *[style*="background-color:#C0C0C0"], *[style*="background:#d0d0d0"],
+  *[style*="background:#EFEFEF"], *[style*="background: rgb(204, 204, 204)"],
+  *[style*="background:#e2f6e2"], *[style*="background: #e2f6e2"],
   *[style*="background: #CCC"] {
     background-color: var(--gray-4) !important;
   }
-  div[style*="background:#d9ebff"],
-  div.CategoryTreeItem,
-  *[style*="background:#e0e0e0"],
-  *[style*="background:#DEDEDE"]  {
+  div[style*="background:#d9ebff"], div.CategoryTreeItem,
+  *[style*="background:#e0e0e0"], *[style*="background:#DEDEDE"] {
     background-color: var(--gray-3) !important;
   }
   table.inflection-table[style*="color: rgb(0%,0%,30%)"] {
