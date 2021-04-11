@@ -5862,11 +5862,6 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   figure[typeof~="mw:Image/Thumb"], figure[typeof~="mw:Video/Thumb"],
   figure[typeof~="mw:Audio/Thumb"], figure[typeof~="mw:Image/Frame"],
   figure[typeof~="mw:Video/Frame"], figure[typeof~="mw:Audio/Frame"],
-  figure[typeof~="mw:Image/Thumb"] > figcaption,
-  figure[typeof~="mw:Video/Thumb"] > figcaption,
-  figure[typeof~="mw:Audio/Thumb"] > figcaption,
-  figure[typeof~="mw:Image/Frame"] > figcaption,
-  figure[typeof~="mw:Video/Frame"] > figcaption,
   figure[typeof*="mw"] > figcaption {
     border: 1px solid var(--gray-5);
     background-color: var(--gray-28);
