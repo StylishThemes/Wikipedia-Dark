@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Wikipedia Dark
 @namespace    StylishThemes
-@version      3.5.3
+@version      3.5.2
 @description  Wikipedia Dark theme
 @author       StylishThemes
 @homepageURL  https://github.com/StylishThemes/Wikipedia-Dark
@@ -683,11 +683,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   .mw-parser-output .maf-info,
   .mw-parser-output .wwikipedii tr {
-    background: var(--gray-18);
+    background-color: var(--gray-18);
     border-color: var(--gray-5);
   }
   table td > div[style*="background-color: #F0EEFF;"] {
-    background: var(--gray-18) !important;
+    background-color: var(--gray-18) !important;
     border-color: var(--gray-5) !important;
   }
   .tux-message-proofread,
@@ -696,11 +696,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-parser-output td[style*="background-color:#f9f9f9;"],
   .mw-parser-output td[style*="background-color:#FFFFFF;"],
   .mw-parser-output td[style*="background-color:#fbfbfb;"] {
-    background: var(--gray-2) !important;
+    background-color: var(--gray-2) !important;
   }
   .frb-inline-message,
   .frb-inline-main .cta-container {
-    background: var(--gray-2);
+    background-color: var(--gray-2);
   }
   table[class="toccolours;"] tr[style*="background:#EEEEEE"],
   .infobox-above[style*="background-color: #D3D3D3"],
@@ -714,21 +714,21 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .cx-tools-editing-toolbar-container .ve-ui-positionedTargetToolbar > .oo-ui-toolbar-bar,
   td[bgcolor="#eeeeee"],
   tr[bgcolor="#eeeeee"] > td {
-    background: var(--gray-3) !important;
+    background-color: var(--gray-3) !important;
   }
   table[class="toccolours;"] tr[style*="background:#FAFAFA"],
   .ve-ui-cxDesktopContext .ve-ui-cxLinkContextItem-sourceBody {
-    background: var(--gray-4) !important;
+    background-color: var(--gray-4) !important;
   }
   .infobox[style^="background:#F5F5F5;"],
   .mw-parser-output > table.vertical-navbox,
   #uls-settings-block,
   .mw-parser-output td[style*="background-color:#efefef;"],
   .mw-cx-ui-CategoryTagItemWidget.oo-ui-flaggedElement-highlight {
-    background: var(--gray-18) !important;
+    background-color: var(--gray-18) !important;
   }
   input.languagefilter {
-    background: var(--gray-2);
+    background-color: var(--gray-2);
   }
   tr td[style="background: #FFFFFF; color:#000000;"],
   .cx-category-listing.oo-ui-icon-tag {
@@ -798,7 +798,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     box-shadow: 0 1px 1px var(--gray-5);
   }
   .tux-message-editor .messagekey .caret {
-    border-top: 4px solid var(--gray-c);
+    border-top-color: var(--gray-c);
   }
   .tux-message-editor .editor-expand {
     filter: invert(0.35);
@@ -5691,11 +5691,11 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     border-color: var(--base-color) !important;
   }
   .cytat.box {
-    background: var(--gray-1) !important;
+    background-color: var(--gray-1) !important;
     border-color: var(--gray-5) !important;
   }
   .portal-naglowek {
-    background: var(--gray-3) !important;
+    background-color: var(--gray-3) !important;
     border-color: var(--gray-5) !important;
   }
   .portal-sekcja {
@@ -5707,7 +5707,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   .infobox.jezyk .naglowek,
   .infobox > tbody > tr:not([style]) > th:not([colspan]):not([style]):not(.infobox-label) {
-    background: var(--gray-18) !important;
+    background-color: var(--gray-18) !important;
     color: var(--gray-c) !important;
   }
   .infobox.jezyk .naglowek,
@@ -6017,10 +6017,10 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   #mw-content-text [style*="background: #F8F9FA;"],
   .mw-parser-output > div[style*="background:#FFFFFF;"] {
-    background: var(--gray-2) !important;
+    background-color: var(--gray-2) !important;
   }
   table[style^="background:#fffff"] {
-    background: var(--gray-3) !important;
+    background-color: var(--gray-3) !important;
   }
   .hauptseite-box-content,
   .mw-parser-output > div[style*="background:#FFFFFF;"],
