@@ -653,20 +653,16 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-parser-output > #Vorlage_Alternative,
   .infobox td[style*="border:1px #aaa solid;"],
   .infobox th[style*="background:#d0d0d0;"],
-  .mw-parser-output > table.vertical-navbox,
-  .tux-message-item-compact,
-  .nomobile.plainlist,
-  .infobox td[style^="background-color:#cfea9e;"],
+  .mw-parser-output > table.vertical-navbox, .tux-message-item-compact,
+  .nomobile.plainlist, .infobox td[style^="background-color:#cfea9e;"],
   tr[style^="border-top:2px solid #aaaaaa"],
   div[style^="z-index"][style*="background:transparent;"][style*="1px solid #CCC"],
   .infobox[style*="border: solid 1px silver"],
   tr[style*="border:1px solid #aaa;"] {
     border-color: var(--gray-5) !important;
   }
-  .frb-inline-main,
-  .mw-parser-output .wwikipedii td,
-  .mw-parser-output .wwikipedii th,
-  .infobox.geography .mergedbottomrow td,
+  .frb-inline-main, .mw-parser-output .wwikipedii td,
+  .mw-parser-output .wwikipedii th, .infobox.geography .mergedbottomrow td,
   .infobox.geography .mergedbottomrow th,
   .mw-parser-output .sidebar-collapse .sidebar-above,
   .mw-parser-output .sidebar-collapse .sidebar-below,
@@ -681,8 +677,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .wikibase-toolbar-container.wikibase-toolbar-container {
     background: transparent !important;
   }
-  .mw-parser-output .maf-info,
-  .mw-parser-output .wwikipedii tr {
+  .mw-parser-output .maf-info, .mw-parser-output .wwikipedii tr {
     background-color: var(--gray-18);
     border-color: var(--gray-5);
   }
@@ -690,30 +685,24 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--gray-18) !important;
     border-color: var(--gray-5) !important;
   }
-  .tux-message-proofread,
-  .tux-message-item-compact,
-  .nomobile.plainlist,
+  .tux-message-proofread, .tux-message-item-compact, .nomobile.plainlist,
   .mw-parser-output td[style*="background-color:#f9f9f9;"],
   .mw-parser-output td[style*="background-color:#FFFFFF;"],
   .mw-parser-output td[style*="background-color:#fbfbfb;"] {
     background-color: var(--gray-2) !important;
   }
-  .frb-inline-message,
-  .frb-inline-main .cta-container {
+  .frb-inline-message, .frb-inline-main .cta-container {
     background-color: var(--gray-2);
   }
   table[class="toccolours;"] tr[style*="background:#EEEEEE"],
-  .infobox-above[style*="background-color: #D3D3D3"],
-  .sidebar-heading,
+  .infobox-above[style*="background-color: #D3D3D3"], .sidebar-heading,
   .sidebar-list-title[style*="background-color: #def"],
-  .cx-widget-translationtool,
-  .ve-ui-cxDesktopContext .ve-ui-contextItem,
+  .cx-widget-translationtool, .ve-ui-cxDesktopContext .ve-ui-contextItem,
   .ve-ui-cxDesktopContext .ve-ui-cxDesktopContext-inspectors,
   .oo-ui-panelLayout.cx-card,
   .oo-ui-toolbar-tools > .ve-ui-toolbar-group-cx-mt.oo-ui-menuToolGroup,
   .cx-tools-editing-toolbar-container .ve-ui-positionedTargetToolbar > .oo-ui-toolbar-bar,
-  td[bgcolor="#eeeeee"],
-  tr[bgcolor="#eeeeee"] > td {
+  td[bgcolor="#eeeeee"], tr[bgcolor="#eeeeee"] > td {
     background-color: var(--gray-3) !important;
   }
   table[class="toccolours;"] tr[style*="background:#FAFAFA"],
@@ -721,8 +710,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--gray-4) !important;
   }
   .infobox[style^="background:#F5F5F5;"],
-  .mw-parser-output > table.vertical-navbox,
-  #uls-settings-block,
+  .mw-parser-output > table.vertical-navbox, #uls-settings-block,
   .mw-parser-output td[style*="background-color:#efefef;"],
   .mw-cx-ui-CategoryTagItemWidget.oo-ui-flaggedElement-highlight {
     background-color: var(--gray-18) !important;
@@ -734,84 +722,58 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .cx-category-listing.oo-ui-icon-tag {
     color: var(--black) !important;
   }
-  .userbox tbody tr td,
-  .frb-headline > span,
+  .userbox tbody tr td, .frb-headline > span,
   .infobox td.infobox-full-data th.infobox-above,
   .infobox-above[style*="background-color:#b0c4de"],
   .infobox-above[style*="background-color:#FFD"],
   .infobox-above[style*="background-color: #91FAFA"],
-  .infobox-above[style="background-color: #b0c4de"],
-  .oo-ui-icon-tag,
-  .cx-message-widget-message,
-  td[style^="background:  #FFFF"],
-  td[style^="background:  #DFDFDF;"],
-  td[style*="background:  #CFCFFF;"],
-  td[style*="background:  #EFCFFF;"],
-  td[style*="background:  #DFFFDF;"],
-  td[style*="background:  #FFDF9F;"],
-  tr > td[style="background: #FFFFFF;"],
-  tr > td[style="background: #CFE8FF;"],
-  tr > td[style="background: #EED8AE;"],
-  tr > td[style="background: #FFF8DC;"],
-  tr > td[style="background: #B9D3FF;"],
-  tr > td[style="background: #6495ED;"],
-  tr > td[style="background: #607CD2;"],
-  tr > td[style="background: #828BD9;"],
-  tr > td[style="background: #F0F8FF;"] {
+  .infobox-above[style="background-color: #b0c4de"], .oo-ui-icon-tag,
+  .cx-message-widget-message, td[style^="background:  #FFFF"],
+  td[style^="background:  #DFDFDF;"], td[style*="background:  #CFCFFF;"],
+  td[style*="background:  #EFCFFF;"], td[style*="background:  #DFFFDF;"],
+  td[style*="background:  #FFDF9F;"], tr > td[style="background: #FFFFFF;"],
+  tr > td[style="background: #CFE8FF;"], tr > td[style="background: #EED8AE;"],
+  tr > td[style="background: #FFF8DC;"], tr > td[style="background: #B9D3FF;"],
+  tr > td[style="background: #6495ED;"], tr > td[style="background: #607CD2;"],
+  tr > td[style="background: #828BD9;"], tr > td[style="background: #F0F8FF;"] {
     color: var(--gray-1) !important;
   }
   .reference-text span[style^="color:#555"] {
     color: var(--gray-a) !important;
   }
-  .userbox tr td,
-  .frb-headline > span,
-  .frb-inline-message,
-  .tux-pagemode-translation,
-  .cx-translator__total-translations,
-  .cx-translator__header,
-  .tux-editor-insert-buttons button,
-  .tux-proofread-translation,
-  .tux-proofread-source,
-  .cx-tlitem__details .target-title,
-  .ve-ui-cxLinkContextItem-language,
-  .cx-header-draft-status,
-  .oo-ui-labelElement-label,
-  .ve-cx-toolbar-mt-title {
+  .userbox tr td, .frb-headline > span, .frb-inline-message,
+  .tux-pagemode-translation, .cx-translator__total-translations,
+  .cx-translator__header, .tux-editor-insert-buttons button,
+  .tux-proofread-translation, .tux-proofread-source,
+  .cx-tlitem__details .target-title, .ve-ui-cxLinkContextItem-language,
+  .cx-header-draft-status, .oo-ui-labelElement-label, .ve-cx-toolbar-mt-title {
     color: var(--gray-c) !important;
   }
-  .cx-tlitem .cx-tlitem__details .last-updated,
-  .cx-tlitem__languages__language,
-  .cx-slitem__languages__language,
-  .cx-selected-source-page__license,
+  .cx-tlitem .cx-tlitem__details .last-updated, .cx-tlitem__languages__language,
+  .cx-slitem__languages__language, .cx-selected-source-page__license,
   .mw-cx-tools-IssueTracking > .mw-cx-tools-IssueTracking-head .oo-ui-labelWidget,
-  .cx-column--language-label,
-  .cx-column-language-label {
+  .cx-column--language-label, .cx-column-language-label {
     color: var(--gray-c);
   }
-  .cx-header__trademark-text,
-  .cx-translationlist__header {
+  .cx-header__trademark-text, .cx-translationlist__header {
     color: var(--white);
   }
-  .cx-translationlist,
-  .cx-dashboard-sidebar__help,
-  .cx-translator {
+  .cx-translationlist, .cx-dashboard-sidebar__help, .cx-translator {
     box-shadow: 0 1px 1px var(--gray-5);
   }
   .tux-message-editor .messagekey .caret {
     border-top-color: var(--gray-c);
   }
   .tux-message-editor .editor-expand {
-    filter: invert(0.35);
+    filter: invert(.35);
   }
   #uls-settings-block > button {
-    filter: invert(0.5);
+    filter: invert(.5);
   }
-  .oo-ui-icon-check,
-  .mw-ui-icon-check::before {
-    filter: invert(0.75);
+  .oo-ui-icon-check, .mw-ui-icon-check::before {
+    filter: invert(.75);
   }
-  .redirectText > li:first-child,
-  .redirectText > li:first-child > a,
+  .redirectText > li:first-child, .redirectText > li:first-child > a,
   .uls-languagefilter-clear {
     filter: invert(1) !important;
   }
@@ -2958,8 +2920,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   div[style*="background-color"]:not([style*="#88A"]):not([style*="#36A"]):not([style*="#ACA"]):not([style*="#edeaff"]):not([style*="border:1px solid ;"]):not([style*="#99b2cc"]),
   th, td:not(:hover), h1, h3, h4, h5, h6, ul, li, select, .mw-body, .toc, #toc,
   .mw-gallery-traditional li.gallerybox div.thumb, div.thumbinner,
-  .mw-parser-output .portal, .mw-warning, .navbox, .catlinks, .catlinks li, table.fmbox,
-  .wikiEditor-ui .wikiEditor-ui-view, .wikiEditor-ui-toolbar .sections .section,
+  .mw-parser-output .portal, .mw-warning, .navbox, .catlinks, .catlinks li,
+  table.fmbox, .wikiEditor-ui .wikiEditor-ui-view,
+  .wikiEditor-ui-toolbar .sections .section,
   .wikiEditor-ui-toolbar .group-search, .wikiEditor-ui-toolbar .group,
   .wikiEditor-ui-toolbar .group .tool-select,
   .wikiEditor-ui-toolbar .group .tool-select .options,
@@ -5701,7 +5664,6 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .portal-sekcja {
     border-color: var(--gray-5) !important;
   }
-
   .takson-rosliny .naglowek td > span {
     color: var(--gray-1) !important;
   }
@@ -5710,8 +5672,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background-color: var(--gray-18) !important;
     color: var(--gray-c) !important;
   }
-  .infobox.jezyk .naglowek,
-  .mw-parser-output div.cytat,
+  .infobox.jezyk .naglowek, .mw-parser-output div.cytat,
   .navbox-abovebelow.hlist {
     border-color: var(--gray-5) !important;
   }
@@ -6022,18 +5983,15 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   table[style^="background:#fffff"] {
     background-color: var(--gray-3) !important;
   }
-  .hauptseite-box-content,
-  .mw-parser-output > div[style*="background:#FFFFFF;"],
+  .hauptseite-box-content, .mw-parser-output > div[style*="background:#FFFFFF;"],
   .toptextcells td[style="border-top: solid 1px #ccd2d9"],
-  table[style^="background:#fffff"],
-  .hintergrundfarbe5[style^="border"] {
+  table[style^="background:#fffff"], .hintergrundfarbe5[style^="border"] {
     border-color: var(--gray-5) !important;
   }
   table[style^="background:#fffff"] td > table[style*="background:#E5E5E5;"] {
     border-color: var(--gray-3) !important;
   }
-  td[style*="background:#fff"] b,
-  td[style="background:#e38d94;"] {
+  td[style*="background:#fff"] b, td[style="background:#e38d94;"] {
     color: var(--gray-1) !important;
   }
 }
