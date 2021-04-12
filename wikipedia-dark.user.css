@@ -5774,6 +5774,48 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background-color: var(--gray-2);
     border-color: var(--gray-4);
   }
+  .mw-parser-output .hauptseite-box-title {
+    background-color: var(--blue-3);
+    border-color: var(--blue-4) !important;
+  }
+  .mw-parser-output .hauptseite-box-content, .mw-parser-output .hauptseite-preview-wikidata {
+    background-color: var(--gray-2);
+  }
+  .mw-parser-output .hauptseite-box-content, .mw-parser-output .hauptseite-box-title {
+    border-color: var(--blue-4);
+  }
+  #SW-Sieger {
+    background-color: var(--gray-2) !important;
+    border-color: var(--gray-5) !important;
+  }
+  div[style*="#DFDFDF; padding:1em; background:white;"],
+  div[style*="#DFDFDF; padding:1em; background:#FFFFFF;"] {
+    background-color: var(--gray-2) !important;
+    border-color: var(--gray-5) !important;
+  }
+  td[style*="background:#fff8dc"] {
+    background-color: var(--gray-4) !important;
+  }
+  td[style*="background:#fffff0"] {
+    background-color: var(--gray-3) !important;
+  }
+  table[style*="background:#ffffff; border: 1px solid #b5b5b5"] {
+    background-color: transparent !important;
+    border-color: var(--gray-5) !important;
+  }
+  table[style*="border: 5px solid #E5E5E5; font-size:95%; background:#E5E5E5"] {
+    border-color: var(--gray-2) !important;
+    background-color: var(--gray-5) !important;
+  }
+  td[style*="border-left: 6px solid #E5E5E5"] {
+    border-color: var(--gray-2) !important;
+  }
+  div[style*="border:1px solid #A9A9A9"] {
+    border-color: var(--gray-5) !important;
+  }
+  td.hintergrundfarbe5 {
+    background-color: var(--gray-3) !important;
+  }
 }
 @-moz-document domain("fr.wiktionary.org") {
   span[style*="background-color:#FFFFFF"], table[style*="background:#FFF"] {
