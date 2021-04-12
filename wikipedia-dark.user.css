@@ -485,7 +485,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     color: var(--gray-1);
   }
   h1, h2, h3, h4, h5, h6, #footer li,
-  .infobox th[style*="background"]:not([style*="#eaecf0"]),
+  .infobox th[style*="background"]:not([style*="#eaecf0"]):not([style*="background-color:#b0c4de;"]):not([style*="background-color: #f9f"]):not([style*="background-color:#b0c4de"]):not([style*="background-color:#FFD"]):not([style*="background-color: #91FAFA"]):not([style="background-color: #b0c4de"]),,
   div[style*="color"]:not([style*="black;"]):not([style*="back"]):not([style*="966"]):not([style*="red"]),
   input[type="search"], input[type="submit"], .oo-ui-buttonElement-button,
   .oo-ui-buttonElement-button:hover, input[type="number"], select,
@@ -557,7 +557,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     color: var(--gray-d) !important;
   }
   a:hover,
-  a:not(.mw-redirect):not(.link-box):hover span:not([style*="002"]):not(.oo-ui-tool-title):not(.oo-ui-labelElement-label):not([class*="other-project-"]):not([class*="help"]):not([style*="8DB"]),
+  a:not(.mw-redirect):not(.link-box):hover span:not([style*="002"]):not(.oo-ui-tool-title):not(.oo-ui-labelElement-label):not([class*="other-project-"]):not([class*="help"]):not([style*="8DB"]):not(.frb-inline-container *),
   #toc a:hover, .suggestions-result .highlight,
   .suggestions-special .special-query {
     color: var(--white) !important;
@@ -644,6 +644,176 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   }
   input[type="checkbox"] {
     background-color: var(--base-color);
+  }
+  input#searchButton[type="submit"] {
+    border-left-color: var(--gray-a) !important;
+    filter: invert(1) !important;
+    background-color: var(--cm-10) !important;
+  }
+  .mw-parser-output > #Vorlage_Alternative,
+  .infobox td[style*="border:1px #aaa solid;"],
+  .infobox th[style*="background:#d0d0d0;"],
+  .mw-parser-output > table.vertical-navbox,
+  .tux-message-item-compact,
+  .nomobile.plainlist,
+  .infobox td[style^="background-color:#cfea9e;"],
+  tr[style^="border-top:2px solid #aaaaaa"],
+  div[style^="z-index"][style*="background:transparent;"][style*="1px solid #CCC"],
+  .infobox[style*="border: solid 1px silver"],
+  tr[style*="border:1px solid #aaa;"] {
+    border-color: var(--gray-5) !important;
+  }
+  .frb-inline-main,
+  .mw-parser-output .wwikipedii td,
+  .mw-parser-output .wwikipedii th,
+  .infobox.geography .mergedbottomrow td,
+  .infobox.geography .mergedbottomrow th,
+  .mw-parser-output .sidebar-collapse .sidebar-above,
+  .mw-parser-output .sidebar-collapse .sidebar-below,
+  .tux-editor-insert-buttons button,
+  .infobox > tbody > tr:not([style]) > th[style*="background: #ccf"],
+  .ve-ui-cxDesktopContext .ve-ui-cxLinkContextItem-sourceBody {
+    border-color: var(--gray-5);
+  }
+  .uls-settings-trigger {
+    border-color: var(--gray-2) !important;
+  }
+  .wikibase-toolbar-container.wikibase-toolbar-container {
+    background: transparent !important;
+  }
+  .mw-parser-output .maf-info,
+  .mw-parser-output .wwikipedii tr {
+    background: var(--gray-18);
+    border-color: var(--gray-5);
+  }
+  table td > div[style*="background-color: #F0EEFF;"] {
+    background: var(--gray-18) !important;
+    border-color: var(--gray-5) !important;
+  }
+  .tux-message-proofread,
+  .tux-message-item-compact,
+  .nomobile.plainlist,
+  .mw-parser-output td[style*="background-color:#f9f9f9;"],
+  .mw-parser-output td[style*="background-color:#FFFFFF;"],
+  .mw-parser-output td[style*="background-color:#fbfbfb;"] {
+    background: var(--gray-2) !important;
+  }
+  .frb-inline-message,
+  .frb-inline-main .cta-container {
+    background: var(--gray-2);
+  }
+  table[class="toccolours;"] tr[style*="background:#EEEEEE"],
+  .infobox-above[style*="background-color: #D3D3D3"],
+  .sidebar-heading,
+  .sidebar-list-title[style*="background-color: #def"],
+  .cx-widget-translationtool,
+  .ve-ui-cxDesktopContext .ve-ui-contextItem,
+  .ve-ui-cxDesktopContext .ve-ui-cxDesktopContext-inspectors,
+  .oo-ui-panelLayout.cx-card,
+  .oo-ui-toolbar-tools > .ve-ui-toolbar-group-cx-mt.oo-ui-menuToolGroup,
+  .cx-tools-editing-toolbar-container .ve-ui-positionedTargetToolbar > .oo-ui-toolbar-bar,
+  td[bgcolor="#eeeeee"],
+  tr[bgcolor="#eeeeee"] > td {
+    background: var(--gray-3) !important;
+  }
+  table[class="toccolours;"] tr[style*="background:#FAFAFA"],
+  .ve-ui-cxDesktopContext .ve-ui-cxLinkContextItem-sourceBody {
+    background: var(--gray-4) !important;
+  }
+  .infobox[style^="background:#F5F5F5;"],
+  .mw-parser-output > table.vertical-navbox,
+  #uls-settings-block,
+  .mw-parser-output td[style*="background-color:#efefef;"],
+  .mw-cx-ui-CategoryTagItemWidget.oo-ui-flaggedElement-highlight {
+    background: var(--gray-18) !important;
+  }
+  input.languagefilter {
+    background: var(--gray-2);
+  }
+  tr td[style="background: #FFFFFF; color:#000000;"],
+  .cx-category-listing.oo-ui-icon-tag {
+    color: var(--black) !important;
+  }
+  .userbox tbody tr td,
+  .frb-headline > span,
+  .infobox td.infobox-full-data th.infobox-above,
+  .infobox-above[style*="background-color:#b0c4de"],
+  .infobox-above[style*="background-color:#FFD"],
+  .infobox-above[style*="background-color: #91FAFA"],
+  .infobox-above[style="background-color: #b0c4de"],
+  .oo-ui-icon-tag,
+  .cx-message-widget-message,
+  td[style^="background:  #FFFF"],
+  td[style^="background:  #DFDFDF;"],
+  td[style*="background:  #CFCFFF;"],
+  td[style*="background:  #EFCFFF;"],
+  td[style*="background:  #DFFFDF;"],
+  td[style*="background:  #FFDF9F;"],
+  tr > td[style="background: #FFFFFF;"],
+  tr > td[style="background: #CFE8FF;"],
+  tr > td[style="background: #EED8AE;"],
+  tr > td[style="background: #FFF8DC;"],
+  tr > td[style="background: #B9D3FF;"],
+  tr > td[style="background: #6495ED;"],
+  tr > td[style="background: #607CD2;"],
+  tr > td[style="background: #828BD9;"],
+  tr > td[style="background: #F0F8FF;"] {
+    color: var(--gray-1) !important;
+  }
+  .reference-text span[style^="color:#555"] {
+    color: var(--gray-a) !important;
+  }
+  .userbox tr td,
+  .frb-headline > span,
+  .frb-inline-message,
+  .tux-pagemode-translation,
+  .cx-translator__total-translations,
+  .cx-translator__header,
+  .tux-editor-insert-buttons button,
+  .tux-proofread-translation,
+  .tux-proofread-source,
+  .cx-tlitem__details .target-title,
+  .ve-ui-cxLinkContextItem-language,
+  .cx-header-draft-status,
+  .oo-ui-labelElement-label,
+  .ve-cx-toolbar-mt-title {
+    color: var(--gray-c) !important;
+  }
+  .cx-tlitem .cx-tlitem__details .last-updated,
+  .cx-tlitem__languages__language,
+  .cx-slitem__languages__language,
+  .cx-selected-source-page__license,
+  .mw-cx-tools-IssueTracking > .mw-cx-tools-IssueTracking-head .oo-ui-labelWidget,
+  .cx-column--language-label,
+  .cx-column-language-label {
+    color: var(--gray-c);
+  }
+  .cx-header__trademark-text,
+  .cx-translationlist__header {
+    color: var(--white);
+  }
+  .cx-translationlist,
+  .cx-dashboard-sidebar__help,
+  .cx-translator {
+    box-shadow: 0 1px 1px var(--gray-5);
+  }
+  .tux-message-editor .messagekey .caret {
+    border-top: 4px solid var(--gray-c);
+  }
+  .tux-message-editor .editor-expand {
+    filter: invert(0.35);
+  }
+  #uls-settings-block > button {
+    filter: invert(0.5);
+  }
+  .oo-ui-icon-check,
+  .mw-ui-icon-check::before {
+    filter: invert(0.75);
+  }
+  .redirectText > li:first-child,
+  .redirectText > li:first-child > a,
+  .uls-languagefilter-clear {
+    filter: invert(1) !important;
   }
   .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget,
   .footer-sidebar-text, .site-license {
@@ -802,7 +972,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--blue-2) !important;
     border-left: 1em solid var(--blue-4) !important;
   }
-  input, input.mw-ui-input {
+  input:not(.languagefilter), input.mw-ui-input {
     background-color: var(--gray-1) !important;
     border-color: var(--gray-4) !important;
   }
@@ -972,7 +1142,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i]:not([style*="color: black" i]), #toc,
   td[style*="background-color"]:not([style*="F9"]):not([style*="FD"]):not([style*="FF"]):not([style*="CF"]):not([style*="fed"]):not([style*="F0F"]):not([style*="F9F"]):not([style*="D4F"]):not([style*="FDB"]):not([style*="FFF"]):not([style*="f4e"]):not([style*="faf"]):not([style*="f1f"]):not([style*="B0C4DE"]):not([style*="cdde"]):not([style*="8"]):not([style*="00"]):not([style*="FF6"]):not([style*="f2f2f4"]):not([style*="fc3"]):not([style*="E6F2FF"]):not([style*="ccccff"]):not([style*="f89b8f"]):not([style*="fba89d"]):not([style*="fecec8"]):not([style*="f68d81"]):not([style*="c1ccf2"]):not([style*="b8c4ef"]):not([style*="fcb5ab"]):not([style*="d33"]):not([style*="fec1b9"]):not([style*="fedbd7"]):not([style*="f0f0ff"]):not([style*="a8b4ea"]):not([style*="b1bced"]):not([style*="c9d4f5"]):not([style*="d2dbf7"]):not([style*="9fade8"]):not([style*="eaf3ff"]):not([style*="e2ebfc"]):not([style*="f8f8ff"]):not([style*="f8fff8"]):not([style*="ddddff"]):not([style*="eeeeff"]),
-  #mw-content-text div[style*="background:"]:not([style*="BF4"]):not([style*="468"]):not([style*="CED"]):not([style*="008"]):not([style*="ffe"]):not([style*="ffdb"]):not([style*="fafc"]):not([style*="ffe4"]):not([style*="3ff"]):not([style*="ffee"]):not([style*="bce1"]):not([style*="ebb"]):not([style*="EDD"]):not([style*="bff"]):not([style*="f7f7"]):not([style*="444"]):not([style*="fdf6e3"]):not([style*="CCF"]):not([style*="F9FCFF"]):not([style*="2a4b8d"]):not([style*="E0EEE0"]):not([style*="E8F1FF"]):not([style*="EEF"]):not([style*="7DC2F5"]):not([style*="CCC"]):not([style*="F16633"]):not([style*="F0F0FF"]):not([style*="336"]):not([style*="D33"]):not([style*="F0F8FF"]):not([style*="00AF89"]):not([style*="36C"]):not([style*="006699"]):not([style*="990000"]):not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]):not([style*="F5FAFF"]):not([style*="A3B1BF"]):not([style*="fff5fa"]):not([style*="faf5ff"]):not([style^="overflow:hidden;background:#e44"]),
+  #mw-content-text div[style*="background:"]:not([style*="BF4"]):not([style*="468"]):not([style*="CED"]):not([style*="008"]):not([style*="ffe"]):not([style*="ffdb"]):not([style*="fafc"]):not([style*="ffe4"]):not([style*="3ff"]):not([style*="ffee"]):not([style*="bce1"]):not([style*="ebb"]):not([style*="EDD"]):not([style*="bff"]):not([style*="f7f7"]):not([style*="444"]):not([style*="fdf6e3"]):not([style*="CCF"]):not([style*="F9FCFF"]):not([style*="2a4b8d"]):not([style*="E0EEE0"]):not([style*="E8F1FF"]):not([style*="EEF"]):not([style*="7DC2F5"]):not([style*="CCC"]):not([style*="F16633"]):not([style*="F0F0FF"]):not([style*="336"]):not([style*="D33"]):not([style*="F0F8FF"]):not([style*="00AF89"]):not([style*="36C"]):not([style*="006699"]):not([style*="990000"]):not([style*="#e7eff5;"]):not([style*="#90EE90;"]):not([class*="-active"]):not([style*="#339966"]):not([style*="FFF"]):not([style*="2E0"]):not([style*="14866d"]):not([style*="transparent"]):not([style*="F5FAFF"]):not([style*="A3B1BF"]):not([style*="fff5fa"]):not([style*="faf5ff"]):not([style^="overflow:hidden;background:#e44"]):not([style*="width"][style*="height"][style*="bottom"]:not([style*="opacity"])),
   .vevent td:not(.fileinfo-paramfield), .referencetooltip li, .suggestions,
   .mw-ui-button[style*="background"]:not([style*="d33682"]):not([style*="6c71c4"]):not([style*="268bd2"]),
   .mw-ui-button[style*="background"] *, .wikiEditor-ui, .mw-search-results li,
@@ -981,7 +1151,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mwe-popups-is-tall, .ui-widget-content, .oo-ui-window-body,
   #pagehistory li.selected, .tracklist tr,
   .mw-searchresults-has-iw .iw-resultset, .cx-callout-content,
-  .oo-ui-widget:not([id*="advancedSearchField-"]):not(.wbmi-link-notice):not([aria-disabled]):not(.oo-ui-tabOptionWidget):not(.flow-ui-boardDescriptionWidget):not(.oo-ui-buttonWidget):not(.oo-ui-tabSelectWidget-framed):not(.oo-ui-optionWidget-selected):not(span),
+  .oo-ui-widget:not([id*="advancedSearchField-"]):not(.wbmi-link-notice):not([aria-disabled]):not(.oo-ui-tabOptionWidget):not(.flow-ui-boardDescriptionWidget):not(.oo-ui-buttonWidget):not(.oo-ui-tabSelectWidget-framed):not(.oo-ui-optionWidget-selected):not(span):not(.ve-ui-cxTargetSurface):not(.ve-ui-cxSourceSurface),
   tr[style*="background:#f2f2f2" i], th[style*="background:#EDF1F1" i],
   td[style*="background:#EDF1F1" i], tr[style*="background-color:white" i],
   tr[style*="background:#f9f9f9" i], td[bgcolor="#FFFFFF" i],
@@ -2788,7 +2958,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   div[style*="background-color"]:not([style*="#88A"]):not([style*="#36A"]):not([style*="#ACA"]):not([style*="#edeaff"]):not([style*="border:1px solid ;"]):not([style*="#99b2cc"]),
   th, td:not(:hover), h1, h3, h4, h5, h6, ul, li, select, .mw-body, .toc, #toc,
   .mw-gallery-traditional li.gallerybox div.thumb, div.thumbinner,
-  .mw-parser-output .portal, .mw-warning, .navbox, .catlinks, table.fmbox,
+  .mw-parser-output .portal, .mw-warning, .navbox, .catlinks, .catlinks li, table.fmbox,
   .wikiEditor-ui .wikiEditor-ui-view, .wikiEditor-ui-toolbar .sections .section,
   .wikiEditor-ui-toolbar .group-search, .wikiEditor-ui-toolbar .group,
   .wikiEditor-ui-toolbar .group .tool-select,
@@ -3895,7 +4065,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     filter: invert(60.5%) !important;
   }
   .mw-ui-icon-popups-close::before, .mw-ui-icon-footer::before,
-  .oo-ui-iconElement-icon:not(.oo-ui-image-invert):not(.oo-ui-image-progressive):not(.oo-ui-icon-stop):not(.oo-ui-icon-add):not(.oo-ui-icon-check) {
+  .oo-ui-iconElement-icon:not(.oo-ui-image-invert):not(.oo-ui-image-progressive):not(.oo-ui-icon-stop):not(.oo-ui-icon-add):not(.oo-ui-icon-check):not(.oo-ui-iconElement-noIcon) {
     filter: invert(86.5%) !important;
   }
   .central-featured-logo {
@@ -5520,6 +5690,34 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   td[style*="border: #0645AD solid"] {
     border-color: var(--base-color) !important;
   }
+  .cytat.box {
+    background: var(--gray-1) !important;
+    border-color: var(--gray-5) !important;
+  }
+  .portal-naglowek {
+    background: var(--gray-3) !important;
+    border-color: var(--gray-5) !important;
+  }
+  .portal-sekcja {
+    border-color: var(--gray-5) !important;
+  }
+
+  .takson-rosliny .naglowek td > span {
+    color: var(--gray-1) !important;
+  }
+  .infobox.jezyk .naglowek,
+  .infobox > tbody > tr:not([style]) > th:not([colspan]):not([style]):not(.infobox-label) {
+    background: var(--gray-18) !important;
+    color: var(--gray-c) !important;
+  }
+  .infobox.jezyk .naglowek,
+  .mw-parser-output div.cytat,
+  .navbox-abovebelow.hlist {
+    border-color: var(--gray-5) !important;
+  }
+  table.navbox.v2 tr + tr > .navbox-grafika {
+    border-color: var(--gray-2);
+  }
 }
 @-moz-document domain("it.wikipedia.org") {
   td[style*="background:white"], td[style*="background:#FDFFFF"],
@@ -5816,6 +6014,27 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   td.hintergrundfarbe5 {
     background-color: var(--gray-3) !important;
+  }
+  #mw-content-text [style*="background: #F8F9FA;"],
+  .mw-parser-output > div[style*="background:#FFFFFF;"] {
+    background: var(--gray-2) !important;
+  }
+  table[style^="background:#fffff"] {
+    background: var(--gray-3) !important;
+  }
+  .hauptseite-box-content,
+  .mw-parser-output > div[style*="background:#FFFFFF;"],
+  .toptextcells td[style="border-top: solid 1px #ccd2d9"],
+  table[style^="background:#fffff"],
+  .hintergrundfarbe5[style^="border"] {
+    border-color: var(--gray-5) !important;
+  }
+  table[style^="background:#fffff"] td > table[style*="background:#E5E5E5;"] {
+    border-color: var(--gray-3) !important;
+  }
+  td[style*="background:#fff"] b,
+  td[style="background:#e38d94;"] {
+    color: var(--gray-1) !important;
   }
 }
 @-moz-document domain("fr.wiktionary.org") {
