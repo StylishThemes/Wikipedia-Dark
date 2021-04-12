@@ -3779,8 +3779,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   img[src*="C%C3%ADrculos_Conc%C3%A9ntricos.svg"],
   img[src*="Johnny-automatic-scales-of-justice"], img[src*="_scales"],
   a.image img[src*="Cross_country_skiing_pictogram"],
-  .ve-ui-educationPopup-header,
-  img[src*="/Status_iucn3."] {
+  .ve-ui-educationPopup-header, img[src*="/Status_iucn3."] {
     filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(102%);
   }
   a.image img[src*="Newspaper_Cover.svg"],
@@ -5778,10 +5777,12 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background-color: var(--blue-3);
     border-color: var(--blue-4) !important;
   }
-  .mw-parser-output .hauptseite-box-content, .mw-parser-output .hauptseite-preview-wikidata {
+  .mw-parser-output .hauptseite-box-content,
+  .mw-parser-output .hauptseite-preview-wikidata {
     background-color: var(--gray-2);
   }
-  .mw-parser-output .hauptseite-box-content, .mw-parser-output .hauptseite-box-title {
+  .mw-parser-output .hauptseite-box-content,
+  .mw-parser-output .hauptseite-box-title {
     border-color: var(--blue-4);
   }
   #SW-Sieger {
