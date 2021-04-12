@@ -485,7 +485,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     color: var(--gray-1);
   }
   h1, h2, h3, h4, h5, h6, #footer li,
-  .infobox th[style*="background"]:not([style*="#eaecf0"]):not([style*="background-color:#b0c4de;"]):not([style*="background-color: #f9f"]):not([style*="background-color:#b0c4de"]):not([style*="background-color:#FFD"]):not([style*="background-color: #91FAFA"]):not([style="background-color: #b0c4de"]),,
+  .infobox th[style*="background"]:not([style*="#eaecf0"]):not([style*="background-color:#b0c4de;"]):not([style*="background-color: #f9f"]):not([style*="background-color:#b0c4de"]):not([style*="background-color:#FFD"]):not([style*="background-color: #91FAFA"]):not([style="background-color: #b0c4de"]),
   div[style*="color"]:not([style*="black;"]):not([style*="back"]):not([style*="966"]):not([style*="red"]),
   input[type="search"], input[type="submit"], .oo-ui-buttonElement-button,
   .oo-ui-buttonElement-button:hover, input[type="number"], select,
