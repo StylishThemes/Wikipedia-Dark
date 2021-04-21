@@ -4797,6 +4797,10 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   #mw-page-base, .mw-parser-output #wdinfoboxcaption {
     background-color: var(--gray-2);
   }
+  .mw-parser-output .on-wikipedia {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+  }
   .mw-parser-output .discussion-menu-title {
     color: var(--base-color);
     background-color: var(--gray-18);
