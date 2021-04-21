@@ -4313,6 +4313,10 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     filter: invert(0);
   }
   /* Background fixes */
+  /* survey */
+  .ext-quick-survey-panel, .ext-qs-loader-bar {
+    background-color: var(--gray-2);
+  }
   .minerva--amc-enabled.action-history .mw-history-compareselectedversions,
   .ns-special .pre-content, .ns-special #content form {
     background-color: transparent;
