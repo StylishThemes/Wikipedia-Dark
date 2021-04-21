@@ -655,8 +655,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   th[style*="background-color: DarkSeaGreen;"] {
     background-color: var(--green-4) !important;
   }
-  th.sidebar-title,
-  th.sidebar-heading {
+  th.sidebar-title, th.sidebar-heading {
     background-color: var(--gray-4) !important;
   }
   input#searchButton[type="submit"] {
@@ -672,10 +671,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   tr[style^="border-top:2px solid #aaaaaa"],
   div[style^="z-index"][style*="background:transparent;"][style*="1px solid #CCC"],
   .infobox[style*="border: solid 1px silver"],
-  tr[style*="border:1px solid #aaa;"],
-  table[style*="border:1px solid #CCCCCC;"],
-  th[style*="border-top:1px solid #aaa;"],
-  td[style*="border-bottom:1px #aaa"] {
+  tr[style*="border:1px solid #aaa;"], table[style*="border:1px solid #CCCCCC;"],
+  th[style*="border-top:1px solid #aaa;"], td[style*="border-bottom:1px #aaa"] {
     border-color: var(--gray-5) !important;
   }
   .frb-inline-main, .mw-parser-output .wwikipedii td,
@@ -685,8 +682,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .mw-parser-output .sidebar-collapse .sidebar-below,
   .tux-editor-insert-buttons button,
   .infobox > tbody > tr:not([style]) > th[style*="background: #ccf"],
-  .ve-ui-cxDesktopContext .ve-ui-cxLinkContextItem-sourceBody,
-  .sidebar.WSerieV,
+  .ve-ui-cxDesktopContext .ve-ui-cxLinkContextItem-sourceBody, .sidebar.WSerieV,
   table[style*="border:1px solid #CCCCCC;"],
   .ve-ui-mwTransclusionDialog-addParameterFieldset .ve-ui-mwParameterSearchWidget {
     border-color: var(--gray-5);
@@ -723,8 +719,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .oo-ui-panelLayout.cx-card,
   .oo-ui-toolbar-tools > .ve-ui-toolbar-group-cx-mt.oo-ui-menuToolGroup,
   .cx-tools-editing-toolbar-container .ve-ui-positionedTargetToolbar > .oo-ui-toolbar-bar,
-  td[bgcolor="#eeeeee"], tr[bgcolor="#eeeeee"] > td,
-  .sidebar.WSerieV,
+  td[bgcolor="#eeeeee"], tr[bgcolor="#eeeeee"] > td, .sidebar.WSerieV,
   .infobox-above[style*="background:#ccc"],
   .infobox-above[style*="background: #DEDEE2;"],
   .infobox-above[style*="background-color: #E7DCC3;"],
@@ -732,13 +727,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
     background-color: var(--gray-3) !important;
   }
   .ve-ui-mwParameterResultWidget.oo-ui-optionWidget-highlighted,
-  .infobox-above[style=""],
-  .infobox-header[style=""] {
+  .infobox-above[style=""], .infobox-header[style=""] {
     background-color: var(--gray-3);
   }
   table[class="toccolours;"] tr[style*="background:#FAFAFA"],
-  .ve-ui-cxDesktopContext .ve-ui-cxLinkContextItem-sourceBody,
-  th.sidebar-title,
+  .ve-ui-cxDesktopContext .ve-ui-cxLinkContextItem-sourceBody, th.sidebar-title,
   th.sidebar-heading {
     background-color: var(--gray-4) !important;
   }
@@ -770,8 +763,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   tr > td[style="background: #6495ED;"], tr > td[style="background: #607CD2;"],
   tr > td[style="background: #828BD9;"], tr > td[style="background: #F0F8FF;"],
   .infobox tr[style*="background:#F6E5A8;"] td,
-  .infobox tr[style*="background:#F6E5A8;"] th,
-  td[style*="background:#AED0F0"],
+  .infobox tr[style*="background:#F6E5A8;"] th, td[style*="background:#AED0F0"],
   #mw-content-text .infobox-above[style*="background-color: lightblue"],
   #mwAg .infobox-above[style*="background-color: lightblue"],
   #mw-content-text .infobox-above[style*="background: #CCCCFF;"],
@@ -789,12 +781,9 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .thumbimage [style*="position"][style*="width"] [style*="font-size"] {
     color: var(--gray-1) !important;
   }
-  tr[style*="background:#B9C5FF;"] > td,
-  td[style*="background: #FFCC66;"],
-  td [style="background: #FFFF99;"],
-  td[style="background: #4169E1;"],
-  td[style="background: #8AB0FF;"],
-  tr[style*="background:#E5D8C0;"] > td {
+  tr[style*="background:#B9C5FF;"] > td, td[style*="background: #FFCC66;"],
+  td [style="background: #FFFF99;"], td[style="background: #4169E1;"],
+  td[style="background: #8AB0FF;"], tr[style*="background:#E5D8C0;"] > td {
     color: var(--gray-1);
   }
   .reference-text span[style^="color:#555"] {
@@ -2053,9 +2042,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl,
   .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl dl,
   .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl dl dl dl,
-  table:not([style*="efe"]):not([background-color:transparent;]).wikitable td:not([bgcolor]),
-  table.prettytable td,
-  .statstable > * > tr.tux-statstable-even > td {
+  table:not([style*="efe"]):not([style*="background-color:transparent;"]).wikitable td:not([bgcolor]),
+  table.prettytable td, .statstable > * > tr.tux-statstable-even > td {
     background: var(--gray-2);
   }
   tr[style*="background: #DEDEDE"] {
@@ -3949,9 +3937,11 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   /*** invert images ***/
   img[title="Wikipedia"], #mw-wsmfinal-close, img[src*="Speaker_Icon"],
   .infobox img[alt*="structure"][src*=".svg"]:not([alt*="lag"]),
-  /*img[src*=".svg"][height="16"]:not([alt*="lag"]),
+  /*
+  img[src*=".svg"][height="16"]:not([alt*="lag"]),
   img[src*=".svg"][height="17"]:not([alt*="lag"]),
-  img[src*=".svg"]:not([src*="check"])[height="18"]:not([src*="oyal"]):not([alt*="lag"]),*/
+  img[src*=".svg"]:not([src*="check"])[height="18"]:not([src*="oyal"]):not([alt*="lag"]),
+  */
   #gtx-host, .jfk-bubble-closebtn, .RTsettings,
   #pt-notifications-notice .mw-echo-notifications-badge,
   #pt-notifications-alert .mw-echo-notifications-badge,
