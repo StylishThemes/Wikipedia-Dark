@@ -1334,6 +1334,17 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$") {
   div[style*="background-color: #dddddd" i] {
     background-color: var(--gray-3) !important;
   }
+  .infobox-above[style="background-color:whitesmokemorph"],
+  .infobox-above[style="background-color:lemonchiffon"],
+  .infobox-above[style="background-color:thistle"],
+  .infobox-above[style="background-color:#E0E0E0"],
+  .infobox-above[style="background-color:beige"],
+  .infobox-above[style="background-color:lightgreen"],
+  .infobox-above[style="background-color:pink"],
+  .infobox-above[style="background-color:antiquewhite"],
+  .infobox-above[style="background-color:lightblue"] {
+    background-color: var(--gray-69) !important;
+  }
   .plainlinks.mw-trackedTemplate {
     background: var(--gray-3) !important;
   }
@@ -8009,6 +8020,10 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
   .portal h3, .vector-menu-portal h3 {
     background-image: linear-gradient(to top, transparent, var(--gray-c));
     background-size: auto 1px;
+  }
+  nav.vector-menu-tabs li.selected {
+    border-color: var(--gray-5);
+    background-color: inherit;
   }
 }
 @-moz-document domain("wiki.mozilla.org") {
