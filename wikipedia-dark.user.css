@@ -3473,6 +3473,9 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   tr.ext-infobox-header th, tr.ext-infobox-header span {
     color: var(--white) !important;
   }
+  .wikitable th[style*="color: black"], .wikitable th[style*="color: black"] {
+    color: var(--white) !important;
+  }
   .CategoryTreeEmptyBullet, .table-na, .infobox, .hp-portalen a span, kbd {
     color: var(--gray-c) !important;
   }
