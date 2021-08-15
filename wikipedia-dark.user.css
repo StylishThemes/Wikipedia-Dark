@@ -4198,7 +4198,8 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     color: var(--base-color);
   }
   .header .branding-box a img[src*="wikipedia-wordmark"],
-  footer > .post-content > h2 > img[src*="wikipedia-wordmark"] {
+  footer > .post-content > h2 > img[src*="wikipedia-wordmark"],
+  .branding-box img[src*="wikipedia-wordmark"] {
     filter: invert(1) !important;
   }
   .mw-parser-output #mp-topbanner {
