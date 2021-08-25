@@ -1587,9 +1587,6 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background-color: transparent !important;
     border: 1px solid var(--green-3) !important;
   }
-  .mw-highlight .gh {
-    color: var(--cm-5) !important;
-  }
   /* ORES highlight colors */
   .mw-rcfilters-ui-highlights-color-none {
     background-color: var(--gray-7);
@@ -4398,9 +4395,6 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .mw-rcfilters-ui-filterTagMultiselectWidget-mobile .oo-ui-tagMultiselectWidget-input.oo-ui-textInputWidget input[readonly] {
     background-color: var(--gray-1);
   }
-  .mw-highlight {
-    background-color: var(--gray-18);
-  }
   .overlay, .overlay.search-overlay, .language-overlay .overlay-content,
   .language-searcher .site-link-list li, .language-searcher .panel,
   #mw-mf-diffview #mw-mf-userinfo, .mw-rollback-link, .mw-tag-marker,
@@ -5512,6 +5506,9 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     background: inherit !important;
   }
   /* https://en.wikipedia.org/wiki/YAML syntax fixes */
+  .mw-highlight {
+    background-color: var(--gray-18);
+  }
   .mw-highlight .c1 {
     color: var(--cm-8);
   }
@@ -5532,6 +5529,24 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   .mw-highlight .mi {
     color: var(--cm-9) !important;
+  }
+  .mw-highlight .kd {
+    color: var(--cm-15);
+  }
+  .mw-highlight .gh {
+    color: var(--cm-5) !important;
+  }
+  .mw-highlight .nf {
+    color: var(--cm-4);
+  }
+  .mw-highlight .kt {
+    color: var(--cm-15);
+  }
+  .mw-highlight .na {
+    color: var(--cm-8);
+  }
+  .mw-highlight .s {
+    color: var(--cm-13);
   }
   .ns-talk .mw-body-content dl {
     border: 0;
