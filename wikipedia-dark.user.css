@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Wikipedia Dark
 @namespace    StylishThemes
-@version      3.5.11
+@version      3.5.10
 @description  Wikipedia Dark theme
 @author       StylishThemes
 @homepageURL  https://github.com/StylishThemes/Wikipedia-Dark
@@ -40,31 +40,6 @@
   Fixed "Fixed" <<<EOT
   fixed EOT;
 }
-@advanced dropdown custom_scrollbar "Custom Scrollbar:" {
-		1. "*ON" <<<EOT ::-webkit-scrollbar-track {
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
-             background-color: #212121;
-        }
-        html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
-        ::-webkit-scrollbar {
-             width: var(--custom_scrollbar_width);
-             background-color: #212121;
-        }
-        ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
-             background-color: var(--custom_scrollbar_color);
-        }
-		::-webkit-scrollbar-corner {
-			 background-color: #212121;
-			 border-color: #212121;
-		}EOT;
-	2. "OFF" <<<EOT EOT;
-}
-@advanced text custom_scrollbar_width "Width of custom scrollbar:(px, em, rem, vh etc.)" 1em
-@advanced text custom_scrollbar_color "Color of custom scrollbar:(hex, rgb, hsla or variables)" var(--assess-1)
-
 
 @preprocessor uso
 ==/UserStyle== */
@@ -72,8 +47,6 @@
 regexp("https?:\/\/.*wik(i|t).*(org|jp).*"), domain("sonichu.com"), domain("diff.wikimedia.org") {
   /* Global color palette */
   :root {
-	  --custom_scrollbar_width: /*[[custom_scrollbar_width]]*/;
-	  --custom_scrollbar_color: /*[[custom_scrollbar_color]]*/;
     --base-color: /*[[base-color]]*/;
     --base-color-rgb: /*[[base-color-rgb]]*/;
     --base-color-rgba-3: rgba(var(--base-color-rgb), 3);
@@ -198,7 +171,6 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*"), domain("sonichu.com"), domain("diff
     --cm-14: #aeaeae;
     --cm-15: #ad9361;
   }
-	/*[[custom_scrollbar]]*/
   .cm-comment, .cm-link {
     font-style: italic;
   }
@@ -414,51 +386,24 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*"), domain("sonichu.com"), domain("diff
     border-color: var(--cm-6);
   }
 	/*Blyad's Fixes*/
-	.central-featured-lang :hover, .central-featured-lang :hover strong::before, .other-project-link:hover, .central-featured-lang :hover small::before, .central-featured-lang :hover bdi::before, .central-featured-lang :hover span::before {
-		background-color: #0000;
-		position: relative;
-	}
-	.central-featured-lang :hover::before, .other-project-link:hover::before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		margin: 0;
-		background-color: var(--blue-3);
-		opacity: .54;
-	}
-	.other-project-link div, .central-featured-lang small, .central-featured-lang strong {
-		filter: brightness(1);
-	}
-	.footer-sidebar-icon.sprite.svg-wikipedia_app_tile {
+	.footer-sidebar-icon.sprite.svg-wikipedia_app_tile, [src*="Sound-icon.svg.png"], .wikibase-rankselector .ui-icon.ui-icon-rankselector {
 		filter: invert(.835) hue-rotate(180deg);
 	}
 	span.jsl10n.sprite.svg-badge_ios_app_store, span.jsl10n.sprite.svg-badge_google_play_store, span.jsl10n.sprite.svg-badge_google_play_store:hover {
 		color: transparent;
 	}
-	[src="//upload.wikimedia.org/wikipedia/donate/a/ac/Close_oojs.png"], [src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a1/OOjs_UI_icon_caretDown.svg/20px-OOjs_UI_icon_caretDown.svg.png"], [src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Stylus-logo.svg/120px-Stylus-logo.svg.png"], [src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Dragon-149393.svg/20px-Dragon-149393.svg.png"] {
-		filter: invert(1);
-	}
-	[style="color:#0645ad; font-weight:bold;"] {
+	[style*="color:#0645ad"] {
 		color: var(--assess-2) !important;
 	}
-	[style="font:3.6em/1.5 Gill Sans MT, GillSansSA, Calibri, sans-serif; color:#4a4a4a; padding:5px 0; -moz-box-shadow: 0px 5px 5px -6px #ccc; -webkit-box-shadow: 0px 5px 5px -6px #ccc; box-shadow: 0px 5px 5px -6px #ccc; vertical-align:middle;"] {
-		color: #bababa !important;
-	}
-	[style="color: DimGray; font-size:80%"] {
+	[style*="color: DimGray"] {
 		color: var(--gray-9a) !important;
-	}
-	.vector-user-menu-legacy #pt-anonuserpage {
-		color: #a4a9ad;
 	}
 	.vector-user-menu-legacy #pt-anonuserpage, .vector-user-menu-legacy #pt-userpage a {
 		background-image: none;
 		position: relative;
 	}
 	.vector-user-menu-legacy #pt-anonuserpage::before, .vector-user-menu-legacy #pt-userpage a::before {
-		content: url('https://pl.wikipedia.org/w/skins/Vector/resources/skins.vector.styles.legacy/images/user-avatar.svg?b7f58');
+		content: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KCTxnIGZpbGw9IiM1NDU5NWQiPgoJCTxwYXRoIGQ9Ik0xMCAxMWMtNS45MiAwLTggMy04IDV2M2gxNnYtM2MwLTItMi4wOC01LTgtNXoiLz4KCQk8Y2lyY2xlIGN4PSIxMCIgY3k9IjUuNSIgcj0iNC41Ii8+Cgk8L2c+Cjwvc3ZnPgo=');
 		position: absolute !important;
 		width: 100%;
 		height: 100%;
@@ -467,20 +412,14 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*"), domain("sonichu.com"), domain("diff
 		margin: 0;
 		filter: invert(1) hue-rotate(180deg);
 	}
-	.wb-langlinks-link > a:link, .wb-langlinks-link > a:visited {
-		color: #a4a9ad !important;
-	}
 	input[type="radio"][value] {
 		filter: invert(.835);
 	}
-	th.infobox-above[style="background: #99c2ff;"] {
-		background-color: var(--blue-4) !important;
-	}
-	th.infobox-above.summary[style="font-style: italic; background: #CCCCFF; padding: 0.25em 1em; font-size: 125%;"] {
+	th.infobox-above.summary[style*="background: #CCCCFF"] {
 		background-color: var(--purple-2) !important;
 		color: var(--white) !important;
 	}
-	table.wikitable.plainrowheaders.wikiepisodetable tbody tr th span[style="background-color:white;padding:1px;display:inline-block;line-height:50%"] {
+	table.wikitable.plainrowheaders.wikiepisodetable tbody tr th span[style*="background-color:white"] {
 		background-color: var(--grey-1) !important;
 	}
 	.rt-settingsLink {
@@ -496,51 +435,36 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*"), domain("sonichu.com"), domain("diff
 		top: 0;
 		margin: 0;
 	}
-	.mw-mmv-author:before, .mw-mmv-image-links li.mw-mmv-license-li.cc-license:before, .mw-mmv-image-links li.mw-mmv-filename-li:before, .mw-mmv-image-links li.mw-mmv-datetime-li:before {
+	.mw-mmv-author:before, .mw-mmv-image-links li.mw-mmv-license-li.cc-license:before, .mw-mmv-image-links li.mw-mmv-filename-li:before, .mw-mmv-image-links li.mw-mmv-datetime-li:before, [src*="Wikipedia_laurier_W.png"], [src*="Video_Camera_Icon.svg"] {
 		filter: invert(1) hue-rotate(180deg);
 	}
-	/*.mw-parser-output a[href$=".pdf"].external {
-		background: none;
-		position: relative;
+	[src*="Assassin%27s_Creed_Logo.svg"] {
+		filter: invert(1) hue-rotate(180deg) saturate(7);
 	}
-	.mw-parser-output a[href$=".pdf"].external::before {
-		content: url('https://upload.wikimedia.org/wikipedia/commons/2/23/Icons-mini-file_acrobat.gif');
-		position: absolute;
-		top: 0;
-		right: 0 !important;
-		margin: 0;
-		filter: invert(.835) hue-rotate(180deg) saturate(3);
-	}*/
-	[src="//upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia_laurier_W.png/67px-Wikipedia_laurier_W.png"], [src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Video_Camera_Icon.svg/15px-Video_Camera_Icon.svg.png"] {
-		filter: invert(1) hue-rotate(180deg);
-	}
-	td.MainPageBG[style="width:55%;border:1px solid #cef2e0;background: #f5fffa;vertical-align:top;color:#000;"], td.MainPageBG[style="width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;"] {
+	td.MainPageBG[style*="background: #f5fffa"], td.MainPageBG[style*="border:1px solid #cef2e0; background:#f5fffa;"] {
 		background-color: var(--green-4) !important;
 		border-color: var(--green-3) !important;
 	}
-	td.MainPageBG[style="width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top;"] {
+	td.MainPageBG[style*="border:1px solid #cedff2; background:#f5faff;"] {
 		background-color: var(--blue-2) !important;
 		border-color: var(--blue-4) !important;
 	}
-	td.MainPageBG[style="width:55%;border:1px solid #ddcef2;background: #faf5ff;vertical-align:top;"], td.MainPageBG[style="width:45%; border:1px solid #ddcef2; background:#faf5ff; vertical-align:top;"], td.MainPageBG[style="width:55%; border:1px solid #ddcef2; background:#faf5ff; vertical-align:top;"] {
+	td.MainPageBG[style*="border:1px solid #ddcef2;background: #faf5ff;"], td.MainPageBG[style*="border:1px solid #ddcef2; background:#faf5ff;"] {
 		background-color: var(--purple-0) !important;
 		border-color: var(--purple-1) !important;
 	}
-	td.MainPageBG[style="width:100%; border:1px solid #EEDC82; background:#FFE4B5; vertical-align:top; color:#000;"] {
+	td.MainPageBG[style*="border:1px solid #EEDC82; background:#FFE4B5;"] {
 		background-color: var(--yellow-1) !important;
 		border-color: var(--yellow-2) !important;
 	}
-	.thumbimage {
-		background-color: var(--gray-2);
-	}
-	table#toc tr[style="background:#ccccff"] {
+	table#toc tr[style*="background:#ccccff"] {
 		background-color: var(--purple-1) !important;
 	}
-	table[class="{{{2}}}"][style="border:1px dotted #4682B4; padding:5px; background-color:#F0F8FF"], table[class="{{{2}}}"][style="border:1px dotted #4682B4;padding:5px;background-color: #F0F8FF;"] {
+	table[style*="border:1px dotted #4682B4; background-color:#F0F8FF"], table[style*="border:1px dotted #4682B4;background-color: #F0F8FF;"] {
 		background-color: var(--blue-3) !important;
 		border-color: var(--blue-4) !important;
 	}
-	table[class="{{{2}}}"][style="border:1px dotted #B48246; padding:5px; background-color:#FCC"], table[class="{{{2}}}"][style="border:1px dotted #B48246;padding:5px;background-color: #FCC;"] {
+	table[style*="border:1px dotted #B48246; background-color:#FCC"], table[style*="border:1px dotted #B48246;background-color: #FCC;"] {
 		background-color: var(--red-0) !important;
 	}
 	.suggestion-thumbnail {
@@ -550,40 +474,31 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*"), domain("sonichu.com"), domain("diff
 		background-color: var(--gray-2) !important;
 		color: var(--white) !important;
 	}
-	.mw-parser-output .spoken-wikipedia, .mw-parser-output .sidebar {
+	.mw-parser-output .spoken-wikipedia, .mw-parser-output .sidebar, .wikibase-entitytermsforlanguagelistview {
 		background-color: var(--gray-2);
 		border-color: var(--gray-69);
 	}
-	[src="//upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sound-icon.svg/45px-Sound-icon.svg.png"] {
-		filter: invert(.835);
-	}
-    th.sidebar-heading[style="background: #aaddff;color:#000;"], th.sidebar-heading[style="background:#aaddff; color:#000;"] {
+	th.sidebar-heading[style*="background: #aaddff;"] {
         background-color: var(--blue-4) !important;
 		color: var(--white) !important;
     }
 	.mw-parser-output .wikipedia-languages-prettybars {
 		background-color: var(--blue-4);
 	}
-	.ws-noexport.noprint[style="float: right; border: 1px solid skyblue; padding-left:0.5em; padding-right:0.5em; background-color: #F3F3F3; margin: 0 0 0.5em 0.5em;"] {
+	.ws-noexport.noprint[style*="border: 1px solid skyblue; background-color: #F3F3F3;"] {
 		background-color: var(--gray-2) !important;
 		border-color: var(--blue-4) !important;
 	}
-	[style="clear:both; background-color:#F7FAFC; margin: 0 auto; text-align:center;"] {
-		background-color: var(--blue-2) !important;
-	}
-	th.infobox-above[style="background-color: #CEDEFF;"] {
+	th.infobox-above[style*="background-color: #CEDEFF;"] {
 		background-color: var(--blue-4) !important;
 	}
-	[src="//upload.wikimedia.org/wikipedia/commons/thumb/6/66/IPv4_address_structure_and_writing_systems-en.svg/300px-IPv4_address_structure_and_writing_systems-en.svg.png"], [src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Ipv6_address.svg/300px-Ipv6_address.svg.png"] {
+	[src*="IPv4_address_structure_and_writing_systems-en.svg"], [src*="Ipv6_address.svg"] {
 		filter: invert(1);
 		background-color: transparent;
 	}
-	span.citation-needed-content[style="padding-left:0.1em; padding-right:0.1em; color:#595959; border:1px solid #DDD;"] {
+	span.citation-needed-content[style*="color:#595959; border:1px solid #DDD;"] {
 		color: var(--gray-a) !important;
 		border-color: var(--gray-69) !important;
-	}
-	[src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Octicons-terminal.svg/24px-Octicons-terminal.svg.png"], [src="//upload.wikimedia.org/wikipedia/commons/thumb/8/88/At_sign.svg/15px-At_sign.svg.png"], [src="/static/images/mobile/copyright/wikipedia-wordmark-fr.svg"], [src="/static/images/mobile/copyright/wikipedia-tagline-pt.svg"], [src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Wikipedia-logo-v2-bw.svg/100px-Wikipedia-logo-v2-bw.svg.png"], .mw-ui-icon-wikimedia-language:before {
-		filter: invert(1);
 	}
 	#p-lang .mw-interlanguage-selector, #p-lang .mw-interlanguage-selector:active {
 		background-image: none;
@@ -591,7 +506,7 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*"), domain("sonichu.com"), domain("diff
 	}
 	#p-lang .mw-interlanguage-selector::before, #p-lang .mw-interlanguage-selector:active::before {
 		content: '';
-		background-image: url('https://en.wikipedia.org/w/extensions/UniversalLanguageSelector/resources/images/language-base20.svg?b7954');
+		background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KCTx0aXRsZT4KCQlsYW5ndWFnZQoJPC90aXRsZT4KCTxwYXRoIGZpbGw9IiM1NDU5NWQiIGQ9Ik0yMCAxOGgtMS40NGEuNjEuNjEgMCAwIDEtLjQtLjEyLjgxLjgxIDAgMCAxLS4yMy0uMzFMMTcgMTVoLTVsLTEgMi41NGEuNzcuNzcgMCAwIDEtLjIyLjMuNTkuNTkgMCAwIDEtLjQuMTRIOWw0LjU1LTExLjQ3aDEuODl6bS0zLjUzLTQuMzFMMTQuODkgOS41YTExLjYyIDExLjYyIDAgMCAxLS4zOS0xLjI0cS0uMDkuMzctLjE5LjY5bC0uMTkuNTYtMS41OCA0LjE5em0tNi4zLTEuNThhMTMuNDMgMTMuNDMgMCAwIDEtMi45MS0xLjQxIDExLjQ2IDExLjQ2IDAgMCAwIDIuODEtNS4zN0gxMlY0SDcuMzFhNCA0IDAgMCAwLS4yLS41NkM2Ljg3IDIuNzkgNi42IDIgNi42IDJsLTEuNDcuNXMuNC44OS42IDEuNUgwdjEuMzNoMi4xNUExMS4yMyAxMS4yMyAwIDAgMCA1IDEwLjdhMTcuMTkgMTcuMTkgMCAwIDEtNSAyLjFxLjU2LjgyLjg3IDEuMzhhMjMuMjggMjMuMjggMCAwIDAgNS4yMi0yLjUxIDE1LjY0IDE1LjY0IDAgMCAwIDMuNTYgMS43N3pNMy42MyA1LjMzaDQuOTFhOC4xMSA4LjExIDAgMCAxLTIuNDUgNC40NSA5LjExIDkuMTEgMCAwIDEtMi40Ni00LjQ1eiIvPgo8L3N2Zz4K');
 		background-repeat: no-repeat;
 		position: absolute;
 		height: 100%;
@@ -609,27 +524,12 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*"), domain("sonichu.com"), domain("diff
 		background-color: transparent !important;
 		border-color: transparent !important;
 	}
-	.mw-parser-output .dip-tab.selected {
-		background-color: var(--blue-3);
-	}
-	.mw-parser-output .dip {
-		background-color: transparent;
-	}
-	.mw-parser-output .tpl-badge {
-		background-color: var(--blue-3);
-	}
-	.mw-parser-output .wmf-engineering-project-box {
-		background-color: var(--gray-2);
-	}
 	.mw-parser-output .infobox td {
 		border-bottom-color: var(--gray-69) !important;
 	}
 	.mw-parser-output .hatnote {
 		color: var(--gray-a);
 		border-color: var(--gray-69);
-	}
-	table.plainlinks[style="text-align:center; background-color: #f8f9fa;"] {
-		background-color: var(--blue-2) !important;
 	}
 	.site-header {
 		background-color: transparent;
@@ -657,23 +557,11 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*"), domain("sonichu.com"), domain("diff
 		background-color: var(--blue-3);
 		color: var(--white);
 	}
-	#cta2 .widget {
-		background-color: var(--blue-3);
-	}
-	.wp-block-rss__item-author, .wp-block-rss__item-publish-date, #wpdcom .wpd-thread-head .wpd-thread-info {
-		color: var(--gray-a);
-	}
-	.photo-credit-container .text-container, article.grid-post .entry-meta, article.grid-post .entry-meta a, #wpdcom .wpd-sbs-toggle, #wpdcom .wpd-sbs-toggle i.fa-caret-down {
+	.photo-credit-container .text-container, article.grid-post .entry-meta, article.grid-post .entry-meta a, #wpdcom .wpd-sbs-toggle, #wpdcom .wpd-sbs-toggle i.fa-caret-down, h1 .wikibase-title-id {
 		color: var(--gray-9a);
-	}
-	ul#menu-footer-links, input#mw-searchButton, input[type="hidden"] {
-		background-color: transparent !important;
 	}
 	.photo-credit-container .img-container {
 		border-color: var(--blue-3);
-	}
-	#comments {
-		color: var(--gray-c);
 	}
 	#wpdcom .wpd-form-head, #wpdcom .wpd-thread-head {
 		border-color: var(--gray-3);
@@ -688,16 +576,13 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*"), domain("sonichu.com"), domain("diff
 	.mw-highlight .nv {
 		color: var(--blue-1);
 	}
-	[style="background-color: #DFD;border: 1px solid #6B6; font-size: 85%;padding: 5px 8px;border-radius:10px;"] {
+	[style*="background-color: #DFD;border: 1px solid #6B6;"] {
 		border-color: var(--green) !important;
 		background-color: var(--green-2) !important;
 	}
-	table.mw-collapsible.mw-collapsed.mw-made-collapsible[style="width:100%;margin:0;padding:0;border:1px solid #999999;border-collapse:collapse;background:#FFFFFF"], table.mw-collapsible.mw-made-collapsible[style="width:100%;margin:0;padding:0;border:1px solid #999999;border-collapse:collapse;background:#FFFFFF"] {
+	table.mw-collapsible[style*="border:1px solid #999999;background:#FFFFFF"] {
 		background-color: var(--gray-2) !important;
 		border-color: var(--gray-69) !important;
-	}
-	div[style="font-weight:bold;background-color:#CCCCFF;"] {
-		background-color: var(--purple-1) !important;
 	}
 }
 @-moz-document
@@ -842,7 +727,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   }
   .mw-parser-output > div::before, .uls-icon-close,
   .tool-button[style*="Button_underline"],
-  .tool-button[style*="Vector_strikeout"] {
+  .tool-button[style*="Vector_strikeout"], [src*="Close_oojs.png"], [src*="OOjs_UI_icon_caretDown.svg"], [src*="Stylus-logo.svg"], [src*="Dragon-149393.svg"], [src*="Octicons-terminal.svg"], [src*="At_sign.svg"], [src*="wikipedia-wordmark-fr.svg"], [src*="wikipedia-tagline-pt.svg"], [src*="Wikipedia-logo-v2-bw.svg"], .mw-ui-icon-wikimedia-language:before, [src*="Ubisoft_Montreal.png"], [src*="Industry5.svg"] {
     filter: invert(1);
   }
   .wb-langlinks-link > a:link::before, .wb-langlinks-link > a:visited::before,
@@ -1057,7 +942,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   .mw-cx-ui-CategoryTagItemWidget.oo-ui-flaggedElement-highlight {
     background-color: var(--gray-18) !important;
   }
-  input.languagefilter {
+  input.languagefilter, .mw-parser-output .wmf-engineering-project-box {
     background-color: var(--gray-2);
   }
   tr td[style="background: #FFFFFF; color:#000000;"],
@@ -1082,6 +967,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   .infobox tr[style*="background:#F6E5A8;"] th, td[style*="background:#AED0F0"],
   #mw-content-text .infobox-above[style*="background-color: lightblue"],
   #mwAg .infobox-above[style*="background-color: lightblue"],
+  #mw-content-text .infobox-above[style*="background: #CCCCFF;"],
   #mwAg .infobox-above[style*="background: #CCCCFF;"],
   #mwAg .infobox-above[style*="background-color: lightblue"],
   #mw-content-text .infobox-above[style*="background-color: #e7dcc3;"],
@@ -1101,7 +987,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   td[style="background: #8AB0FF;"], tr[style*="background:#E5D8C0;"] > td {
     color: var(--gray-1);
   }
-  .reference-text span[style^="color:#555"] {
+  .reference-text span[style^="color:#555"], .wb-langlinks-link > a:link, .wb-langlinks-link > a:visited {
     color: var(--gray-a) !important;
   }
   .userbox tr td, .frb-headline > span, .frb-inline-message,
@@ -1365,7 +1251,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   .mw-parser-output .chatheader-description, .ui-widget-content,
   span.mw-redirectedfrom, span.subpages, .mw-parser-output > p,
   .hatnote.navigation-not-searchable, .thumbcaption,
-  .oo-ui-fieldLayout-disabled > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label {
+  .oo-ui-fieldLayout-disabled > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label, .vector-user-menu-legacy #pt-anonuserpage, .wp-block-rss__item-author, .wp-block-rss__item-publish-date, #wpdcom .wpd-thread-head .wpd-thread-info {
     color: var(--gray-a);
   }
   .oo-ui-tagItemWidget.oo-ui-widget-enabled:not(.oo-ui-tagItemWidget-fixed),
@@ -1396,7 +1282,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
     border-color: var(--base-color);
     background-color: var(--gray-28);
   }
-  .settings-title, .checkbox strong, label.uls-font-label strong {
+  .settings-title, .checkbox strong, label.uls-font-label strong, #comments {
     color: var(--gray-c);
   }
   .languagesettings-menu .menu-section .settings-text, .uls-ui-languages p,
@@ -1466,6 +1352,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
     background-color: var(--gray-2);
     border-color: var(--gray-5);
   }
+  table:not(.mainpage-maintable):not(.floatright):not([style="width:100%; border:0px; border-collapse:collapse"]):not([style*="#f1f5"]):not([style*="#CED"]):not([style*="background:none;"]):not([style*="background:none;"]):not([cellspacing="0"]):not([style="text-align:center; width:100%"]):not([style*="E6F"]):not([style*="ffff"]):not([style*="E9F"]):not([style*="fff5"]):not([style*="E9E"]):not(.authortemplate):not(.fmbox-editnotice):not([style*="Alice"]):not([style*="efe"]):not([style*="transparent"]):not(.tmbox):not(.standard-talk):not(.cmbox-notice):not([style*="e4f2e4"]):not([style*="feeeee"]):not([style*="dfd"]):not(.processheadertemplate):not(.statstable):not([style*="eeeeff"]):not([style*="yellow"]):not([style*="#f7f8ff"]):not(.mw-alerte):not(.mp_header):not([style*="#FFDBDB"]):not([style*="#F0F8FF"]):not([style*="background: transparent"]):not([style*="background-color:transparent"]):not([style*="rgba(0,0,255,0.1)"]):not(.vertical-navbox):not([style*="#F5FAFF"]):not([style*="background color:transparent"]):not(#cite-err-report):not(.tmbox-notice):not([style*="background:transparent"]):not([style*="f5faff"]):not(.messagebox):not(#sisterwikis):not([class*="Caution"]):not(.tmbox-style):not(.ibox2),
   button:not([type="submit"]):not(.tux-editor-save-button):not(.save):not([class*="-settings-block"]):not([class*="mw-mmv-"]):not(.pure-button):not(.wikidialog-button):not(.uls-input-toggle-button),
   select, textarea:not([class*="mw-editfont"]),
   tr[style*="background: antiquewhite" i]:not([style*="color: black" i]), #toc,
@@ -1852,7 +1739,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   .mw-rcfilters-ui-menuSelectWidget-footer,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle,
-  .flaggedrevs_reviewform, .mw-specialCiteThisPage-bibliographic {
+  .flaggedrevs_reviewform, .mw-specialCiteThisPage-bibliographic, .mw-parser-output .dip {
     background-color: transparent;
   }
   .oo-ui-tagMultiselectWidget-focus {
@@ -1865,7 +1752,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   .oo-ui-widget-enabled.mw-rcfilters-ui-filterWrapperWidget,
   .oo-ui-widget-enabled.mw-rcfilters-ui-rcTopSectionWidget,
   .oo-ui-widget-enabled.oo-ui-tagMultiselectWidget,
-  .oo-ui-widget-enabled.mw-rcfilters-ui-watchlistTopSectionWidget {
+  .oo-ui-widget-enabled.mw-rcfilters-ui-watchlistTopSectionWidget, .mw-parser-output code.cs1-code, ul#menu-footer-links, input#mw-searchButton, input[type="hidden"] {
     background-color: transparent !important;
   }
   tr[style*="background"]:not([style*="ABCDEF"]):not([style*="cedff2"]):not([style*="E4F2E4"]):not([style*="ccccff"]):not([style*="white"]) {
@@ -1911,7 +1798,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   .mw-rcfilters-ui-changesListWrapperWidget li.mw-rcfilters-highlight-color-c1,
   .mw-rcfilters-ui-changesListWrapperWidget .mw-rcfilters-highlight-color-c1 tr:first-child,
   .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c1.mw-rcfilters-ui-highlights-enhanced-toplevel:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+2)),
-  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c1.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)) {
+  .mw-rcfilters-ui-changesListWrapperWidget tr.mw-rcfilters-highlight-color-c1.mw-rcfilters-ui-highlights-enhanced-nested:not(.mw-rcfilters-ui-changesListWrapperWidget-enhanced-grey) td:not(:nth-child(-n+4)), [style*="background-color:#F7FAFC;"], table.plainlinks[style*="background-color: #f8f9fa;"] {
     background-color: var(--blue-2) !important;
   }
   .mw-rcfilters-ui-highlights-color-c2,
@@ -2412,8 +2299,8 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
     background-color: var(--gray-2);
   }
   .flow-topic-titlebar, .fieldsetlike .legendtextlike,
-  .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled {
-    background: var(--gray-2);
+  .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled, .thumbimage {
+    background-color: var(--gray-2);
   }
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .mw-rcfilters-ui-tagItemWidget-selected.oo-ui-tagItemWidget.oo-ui-widget-enabled {
     background-color: var(--gray-2);
@@ -2757,7 +2644,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   div[style*="background:#fafcfe" i], div[style*="background-color: #c6dbf7"] {
     background-color: var(--blue-2) !important;
   }
-  td[style*="background-color: #CFF"], div[style*="background-color:#7fbfff"] {
+  td[style*="background-color: #CFF"], div[style*="background-color:#7fbfff"], th.infobox-above[style*="background: #99c2ff"] {
     background: var(--blue-4) !important;
   }
   .vertical-navbox th[style*="background:#cee0f2;"],
@@ -2775,7 +2662,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
     background: var(--blue-3) !important;
     border-color: var(--gray-4) !important;
   }
-  .mw-parser-output .taxontree-lcell, .mw-parser-output .wikidatainfobox-lcell {
+  .mw-parser-output .taxontree-lcell, .mw-parser-output .wikidatainfobox-lcell, .mw-parser-output .dip-tab.selected, .central-featured-lang :hover, .other-project-link:hover, .mw-parser-output .tpl-badge, #cta2 .widget {
     background-color: var(--blue-3);
   }
   div[style*="border:1px solid #a7d7f9;"], div[style*="border:navy solid"],
@@ -2869,7 +2756,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
     border-bottom: 1px solid var(--blue-4) !important;
   }
   div[style*="background-color:#cedff2;"],
-  table tr[style*="background-color:#cedff2"] {
+  table tr[style*="background-color:#cedff2"], [style*="background-color:#F7FAFC;"] {
     background-color: var(--blue-3) !important;
   }
   div[style*="border-bottom:0px solid #A3B1BF"] {
@@ -2933,7 +2820,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   }
   .navbox-subgroup .navbox-title, .navbox-subgroup .navbox-title *,
   td[style*="background-color:#ccccff;"],
-  li[style*="border:1px solid #CCF; background-color:#F0EEFF"] {
+  li[style*="border:1px solid #CCF; background-color:#F0EEFF"], div[style*="background-color:#CCCCFF;"] {
     background: var(--purple-1) !important;
     border-color: var(--purple-1) !important;
   }
@@ -3791,7 +3678,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   }
   .oo-ui-buttonElement-button:hover,
   .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover,
-  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
+  .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover, [style*="color:#4a4a4a"] {
     color: var(--gray-bc) !important;
   }
   .ve-ui-mwTemplatePage-description {
@@ -4289,7 +4176,7 @@ regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
   img[src*="Darkgreen_flag_waving.svg"], img[src*="Stock_post_message.svg"],
   img[src*="C%C3%ADrculos_Conc%C3%A9ntricos.svg"],
   img[src*="Johnny-automatic-scales-of-justice"], img[src*="_scales"],
-  a.image img[src*="Cross_country_skiing_pictogram"],
+  a.image img[src*="Cross_country_skiing_pictogram"], img[src*="Featured_article_star_-_cross.svg"],
   .ve-ui-educationPopup-header, img[src*="/Status_iucn3."] {
     filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(102%);
   }
