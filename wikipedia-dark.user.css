@@ -5565,6 +5565,42 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   table.cmbox-notice {
     background-color: var(--blue-2) !important;
   }
+  .mw-parser-output .p-current-events-headlines {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output .current-events {
+    background-color: var(--gray-2);
+  }
+  .mw-parser-output .current-events-main {
+    background-color: inherit;
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output .current-events-heading {
+    background-color: var(--blue-2);
+  }
+  .mw-parser-output .p-current-events-news-browser {
+    background-color: var(--blue-2);
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output .p-current-events-calendar {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output .p-current-events-calendar div {
+    background-color: var(--gray-3);
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output .current-events-calendar caption {
+    background-color: var(--gray-3);
+  }
+  .mw-parser-output .current-events-sidebar {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output .current-events-sidebar > div:not(.mw-collapsible-content) {
+    background-color:initial;
+  }
 }
 @-moz-document
 regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
