@@ -2122,7 +2122,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .mw-parser-output .p-current-events-calendar,
   .mw-parser-output .current-events-sidebar,
   .mw-parser-output .p-current-events-headlines,
-  .mw-parser-output .current-events-main {
+  .mw-parser-output .current-events-main,
+  .mw-parser-output .contents-pages-footer {
     background-color: var(--gray-2) !important;
     border-color: var(--gray-5) !important;
   }
