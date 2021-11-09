@@ -2021,7 +2021,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   th[style*="background:#fed1a0;"][colspan="3"], td[style*="background:#ffc"] {
     background-color: var(--yellow-1) !important;
   }
-  /* Grey */
+  /* Gray */
   h2[style*="color:white;"], th a span[style*="color:#FFFFFF"],
   b[style="color:black" i] {
     color: var(--gray-e) !important;
@@ -2061,7 +2061,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   th[style*="background: #EFEFEF"] {
     background: var(--gray-28) !important;
   }
-  td[style*="background-color: #FFF"] {
+  td[style*="background-color: #FFF"],
+  .mw-parser-output .current-events {
     background-color: var(--gray-2) !important;
   }
   table[style*="background: #f9f9f9"], .mw-parser-output .commonscat,
@@ -2117,7 +2118,11 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   }
   div[style*="border: 1px solid #CCC; border-top-width: 1px; vertical-align: top;background: white;"],
   div[style*="border: 1px solid #a2a9b1; padding: 0.2em; background-color: white;"],
-  td[style*="background: #ffffff"], td[style*="background-color: #FFFFFF"] {
+  td[style*="background: #ffffff"], td[style*="background-color: #FFFFFF"],
+  .mw-parser-output .p-current-events-calendar,
+  .mw-parser-output .current-events-sidebar,
+  .mw-parser-output .p-current-events-headlines,
+  .mw-parser-output .current-events-main {
     background-color: var(--gray-2) !important;
     border-color: var(--gray-5) !important;
   }
@@ -2134,7 +2139,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     border-color: var(--gray-5);
     color: var(--gray-c);
   }
-  .statstable > * > tr > th, .fancycaptcha-captcha-container {
+  .statstable > * > tr > th, .fancycaptcha-captcha-container,
+  .mw-parser-output .p-current-events-calendar div {
     background-color: var(--gray-3);
     border: 1px solid var(--gray-5);
   }
@@ -2187,7 +2193,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   div[style*="background-color:#cccccc;"], th[style*="background-color:#ddd"] {
     background-color: var(--gray-3) !important;
   }
-  .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover {
+  .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover,
+  .mw-parser-output .current-events-calendar caption {
     background-color: var(--gray-3);
   }
   div[style*="background-color: #F9F9F9;"] {
@@ -2392,7 +2399,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     border: 1px solid var(--blue-4);
     background: var(--blue-2);
   }
-  th[style*="background: #E0FFFF"] {
+  th[style*="background: #E0FFFF"],
+  .mw-parser-output .current-events-heading {
     background: var(--blue-2) !important;
   }
   div[style*="background-color: #BBDDFF; border: #4169E1 1px solid"] {
@@ -2411,7 +2419,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     border-color: var(--gray-4) !important;
   }
   table[style="width:100%; clear:both; background-color:#F0F8FF; border:1px solid #ccc;"],
-  div[style*="background:#F0F8FF;"] {
+  div[style*="background:#F0F8FF;"],
+  .mw-parser-output .p-current-events-news-browser {
     background: var(--blue-2) !important;
     border-color: var(--gray-5) !important;
   }
@@ -5564,39 +5573,6 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   table.cmbox-notice {
     background-color: var(--blue-2) !important;
-  }
-  .mw-parser-output .p-current-events-headlines {
-    background-color: var(--gray-2);
-    border-color: var(--gray-5);
-  }
-  .mw-parser-output .current-events {
-    background-color: var(--gray-2);
-  }
-  .mw-parser-output .current-events-main {
-    background-color: inherit;
-    border-color: var(--gray-5);
-  }
-  .mw-parser-output .current-events-heading {
-    background-color: var(--blue-2);
-  }
-  .mw-parser-output .p-current-events-news-browser {
-    background-color: var(--blue-2);
-    border-color: var(--gray-5);
-  }
-  .mw-parser-output .p-current-events-calendar {
-    background-color: var(--gray-2);
-    border-color: var(--gray-5);
-  }
-  .mw-parser-output .p-current-events-calendar div {
-    background-color: var(--gray-3);
-    border-color: var(--gray-5);
-  }
-  .mw-parser-output .current-events-calendar caption {
-    background-color: var(--gray-3);
-  }
-  .mw-parser-output .current-events-sidebar {
-    background-color: var(--gray-2);
-    border-color: var(--gray-5);
   }
   .mw-parser-output .current-events-sidebar > div:not(.mw-collapsible-content) {
     background-color:initial;
