@@ -4186,6 +4186,14 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     filter: invert(1) hue-rotate(180deg) brightness(90%);
   }
 }
+/*** Proofs on wikiversity are now readable ! ***/
+.NavContent {
+	background-color: var(--gray-1) !important;
+}
+.NavHead {
+	background-color: var(--gray-3) !important;
+}
+
 @-moz-document
 regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|m\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\.m\.wikimedia)\.org\/.+") {
   body {
@@ -8314,4 +8322,4 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
   .urgent-header {
     background: var(--red-3);
   }
-}
+
