@@ -2612,6 +2612,10 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   table[style*="border-color: lightblue;"] {
     border-color: var(--blue-4) !important;
   }
+  .mw-parser-output .portal-bar-bordered {
+    background-color: var(--blue-3);
+    border-color: var(--blue-2);
+  }
   /* Purple */
   table[style*="background-color:#f7f8ff; border:2px solid #8888aa;"] {
     background: var(--blue-2) !important;
@@ -2638,6 +2642,14 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background: var(--purple-0) !important;
     border-color: var(--gray-2) !important;
     color: var(--gray-c) !important;
+  }
+  .mw-parser-output .navbox, .mw-parser-output .navbox-subgroup {
+    background-color: var(--purple-1);
+  }
+  .mw-parser-output .navbox,
+  .mw-parser-output tr + tr > .navbox-abovebelow, .mw-parser-output tr + tr > .navbox-group,
+  .mw-parser-output tr + tr > .navbox-image, .mw-parser-output tr + tr > .navbox-list {
+    border-color: var(--purple-0);
   }
   div[style="background-color: #E3D2FB; margin: 2em 0 0 0; padding: 0 10px 0 10px; border: 1px solid #AAAAAA;"],
   td[style*="border-bottom:1px solid gray; background-color:#eeeeff;"] {
@@ -3683,9 +3695,6 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .boilerplate[style*="background-color: #efe" i] {
     background-color: var(--green-2) !important;
     border-color: var(--green-1) !important;
-  }
-  .mw-collapsible.mw-made-collapsible th[style*="background"]:not([style*="fed1a0"]):not([colspan]) {
-    background-color: var(--green-2) !important;
   }
   .mw-collapsible.mw-made-collapsible td[style*="background-color: #fcf4ef" i] {
     background-color: var(--gray-3) !important;
