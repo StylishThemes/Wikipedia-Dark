@@ -478,7 +478,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     color: var(--gray-7);
   }
   /* text color fix to black for https://en.wikipedia.org/wiki/Web_colors#Hex_triplet,
-	   if this breaks something we need to differenciate specificity */
+     if this breaks something we need to differenciate specificity */
   .color-chart-x11-table tr[style*="color: black"] > td {
     color: var(--gray-1);
   }
@@ -1097,8 +1097,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     filter: invert(1);
   }
   /* this is a hack for the display/keybord svg cause both use same selectors,
-	 * it causes a slight shift in text when active/inactive toggle.
-	 * using filters ddoesnt work on specific svg only, so hack! */
+   * it causes a slight shift in text when active/inactive toggle.
+   * using filters ddoesnt work on specific svg only, so hack! */
   .languagesettings-menu #display-panel-trigger {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="%23ccc" d="M.002 2.275V15.22h8.405c.535 1.624-.975 1.786-1.902 2.505 0 0 2.293-.024 3.439-.024 1.144 0 3.432.024 3.432.024-.905-.688-2.355-.868-1.902-2.505h8.527V2.275h-20zm6.81 1.84h.797l3.313 8.466H9.879L8.836 9.943H5.462l-1.043 2.638h-.982zm.368 1.104c-.084.369-.211.785-.368 1.227L5.83 9.023h2.699l-.982-2.577c-.128-.33-.234-.747-.368-1.227zm7.117.982c.753 0 1.295.157 1.656.491.365.334.552.858.552 1.595v4.294h-.675l-.184-.859h-.062c-.315.396-.605.655-.92.798-.311.138-.758.184-1.227.184-.626 0-1.115-.168-1.472-.491-.353-.323-.491-.754-.491-1.35 0-1.275 1.028-1.963 3.068-2.025h1.043v-.429c0-.495-.091-.87-.307-1.104-.211-.238-.574-.307-1.043-.307-.526 0-1.115.107-1.779.429l-.307-.675a4.748 4.748 0 0 1 1.043-.429 4.334 4.334 0 0 1 1.104-.123zm.307 3.313c-.761.027-1.318.157-1.656.368-.334.207-.491.54-.491.982 0 .346.1.617.307.798.211.181.544.245.92.245.595 0 1.012-.164 1.35-.491.342-.326.552-.762.552-1.35v-.552z"/></svg>');
   }
@@ -1816,7 +1816,11 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   th[style*="background:#EEF3E2" i] {
     background-color: var(--green-3) !important;
   }
-  td[style="background-color: #D4F4B4;"], th[style*="background:#d4f4b4;"] {
+  td[style="background-color: #D4F4B4;"], th[style*="background:#d4f4b4;"],
+  .mw-parser-output .current-events-heading,
+  .mw-parser-output .current-events-sidebar > div:not(.mw-collapsible-content),
+  .mw-parser-output .p-current-events-headlines h2,
+  .mw-parser-output .current-events-sidebar > div h2 {
     background-color: var(--green-2) !important;
   }
   span[style*="border-left: 1.2em solid #D4F4B4" i] {
@@ -1889,7 +1893,9 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background: var(--green-4) !important;
     border: 1px solid var(--green-1) !important;
   }
-  div[style*="border:1px solid #A3BFB1; background-color:#E6FFF2;"] {
+  div[style*="border:1px solid #A3BFB1; background-color:#E6FFF2;"],
+  .contentsPage__heading,
+  .contentsPage__title {
     background: var(--green-2) !important;
     border-color: var(--green-1) !important;
   }
@@ -1897,7 +1903,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background: var(--green-2) !important;
     border-color: var(--green-2) !important;
   }
-  div[style="float:left; box-sizing:border-box; margin:0.2em 0; width:50%; border-left:1px solid #FFFFFF; border-right:1px solid #FFFFFF; padding:0.1em; background-color:#F2FFE6"] {
+  div[style="float:left; box-sizing:border-box; margin:0.2em 0; width:50%; border-left:1px solid #FFFFFF; border-right:1px solid #FFFFFF; padding:0.1em; background-color:#F2FFE6"],
+  .contentsPage__intro {
     background: var(--green-4) !important;
     border-color: var(--green-4) !important;
   }
@@ -1930,7 +1937,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     color: var(--gray-d) !important;
   }
   table[style*="border: 1px solid #AAA; background: ivory;"],
-  div[style="background-color: #e3f9df; padding: 0 10px 0 10px; border: 1px solid #AAAAAA;"] {
+  div[style="background-color: #e3f9df; padding: 0 10px 0 10px; border: 1px solid #AAAAAA;"],
+  .mw-parser-output .p-current-events-news-browser {
     background: var(--green-4) !important;
     border-color: var(--gray-4) !important;
   }
@@ -2123,7 +2131,9 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .mw-parser-output .current-events-sidebar,
   .mw-parser-output .p-current-events-headlines,
   .mw-parser-output .current-events-main,
-  .mw-parser-output .contents-pages-footer {
+  .mw-parser-output .contents-pages-footer,
+  .mw-parser-output .contentsPage--type,
+  .mw-parser-output .contentsPage--topic {
     background-color: var(--gray-2) !important;
     border-color: var(--gray-5) !important;
   }
@@ -2400,8 +2410,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     border: 1px solid var(--blue-4);
     background: var(--blue-2);
   }
-  th[style*="background: #E0FFFF"],
-  .mw-parser-output .current-events-heading {
+  th[style*="background: #E0FFFF"] {
     background: var(--blue-2) !important;
   }
   div[style*="background-color: #BBDDFF; border: #4169E1 1px solid"] {
@@ -2420,8 +2429,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     border-color: var(--gray-4) !important;
   }
   table[style="width:100%; clear:both; background-color:#F0F8FF; border:1px solid #ccc;"],
-  div[style*="background:#F0F8FF;"],
-  .mw-parser-output .p-current-events-news-browser {
+  div[style*="background:#F0F8FF;"] {
     background: var(--blue-2) !important;
     border-color: var(--gray-5) !important;
   }
@@ -3195,7 +3203,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     border-color: transparent !important;
   }
   /* stop hovering effects on tr/td borders
-	   https://species.wikimedia.org/wiki/Wikispecies:Templates#Link_Templates */
+     https://species.wikimedia.org/wiki/Wikispecies:Templates#Link_Templates */
   tr:hover,
   td:not(.mid-table):not([style*="border:1px solid transparent"]):not(.navbox-abovebelow):not(.navbox-list):not([style]):not(.MainPageBG):hover {
     border-color: var(--gray-5) !important;
@@ -5583,9 +5591,6 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   table.cmbox-notice {
     background-color: var(--blue-2) !important;
-  }
-  .mw-parser-output .current-events-sidebar > div:not(.mw-collapsible-content) {
-    background-color:initial;
   }
 }
 @-moz-document
