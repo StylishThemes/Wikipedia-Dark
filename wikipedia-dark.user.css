@@ -4917,120 +4917,134 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     background-size: auto 1px;
   }
 }
-@-moz-document domain("commons.wikimedia.org") {
-  #mw-page-base, .mw-parser-output #wdinfoboxcaption {
-    background-color: var(--gray-2);
+@-moz-document domain("wikipedia.org") {
+  /*** Navigation menu logo ***/
+  #p-logo a {
+    background-position: center -155px !important;
+    display: table-cell !important;
+    vertical-align: middle !important;
   }
-  .mw-parser-output .on-wikipedia {
-    background-color: var(--gray-2);
-    border-color: var(--gray-5);
-  }
-  .mw-parser-output .discussion-menu-title {
-    color: var(--base-color);
-    background-color: var(--gray-18);
-    border-color: var(--gray-5);
-  }
-  .mw-parser-output .discussion-menu {
-    border-color: var(--gray-5);
-  }
-  table[style*="border:1px solid #cccccc; background-color:#f9f9f9;"] {
-    border: 1px solid var(--gray-4) !important;
-    background-color: var(--gray-28) !important;
-  }
-  #firstHeading div.fastcci-buttonset > .ui-button, .gallery .gallerybox {
-    background-color: var(--gray-2) !important;
-  }
-  .ui-state-active, .ui-widget-content .ui-state-active,
-  .ui-widget-header .ui-state-active, .ui-state-hover,
-  .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover,
-  .ui-state-focus, .ui-widget-content .ui-state-focus,
-  .ui-widget-header .ui-state-focus, #cat_a_lot {
-    background: var(--gray-3);
-  }
-  #firstHeading div.fastcci-buttonset > .ui-button:hover,
-  .gallerytext .jFileTitle, #Centralized_discussion tr th,
-  #villagepumpheader table tr th {
-    background-color: var(--gray-3) !important;
-  }
-  .mw-parser-output .mainpage-welcome-sitename {
-    color: var(--gray-91);
-  }
-  /* this isnt actually orange in default */
-  .mw-parser-output .mainpage-box-orange .mainpage-box-title {
-    background-color: var(--brown-2);
-  }
-  .mw-parser-output .mainpage-box-orange,
-  .mw-parser-output .mainpage-box-orange .mainpage-box-seealso {
-    border-color: var(--brown-2);
-  }
-  .mw-parser-output .mainpage-box-green .mainpage-box-title {
-    background-color: var(--green-2);
-  }
-  .mw-parser-output .mainpage-box-green,
-  .mw-parser-output .mainpage-box-green .mainpage-box-seealso {
-    border-color: var(--green-2);
-  }
-  .mw-parser-output .mainpage-box-blue,
-  .mw-parser-output .mainpage-box-blue .mainpage-box-seealso {
-    border-color: var(--blue-3);
-  }
-  .mw-parser-output .mainpage-box-blue .mainpage-box-title,
-  .mw-parser-output .community-tabs td.active {
-    background-color: var(--blue-3);
-  }
-  .mw-parser-output .community-tabs td {
-    background-color: var(--blue-2);
-  }
-  body .ui-button.ui-button-green, body .ui-button.ui-button-green:hover {
-    border-color: var(--green-4) !important;
-    background: linear-gradient(to bottom, var(--green-3) 0%, var(--green-2) 90%) !important;
-  }
-  .com-mg-pagination {
-    background-color: var(--gray-2);
-    border-color: var(--gray-5);
-  }
-  .tipsy-inner {
-    background-color: var(--gray-2);
-    border-color: var(--gray-5);
-    color: var(--gray-9a);
-  }
-  #gp_head {
-    background-color: var(--blue-3) !important;
-  }
-  #gallerypreview > div {
-    background-color: var(--green-4) !important;
-    color: var(--base-color) !important;
-  }
-  .licensetpl_wrapper {
-    background-color: var(--gray-3) !important;
-  }
-  .type.fileinfo-paramfield {
-    background-color: var(--blue-3);
-  }
-  #gallerypreview_container, .layouttemplate.licensetpl,
-  .layouttemplate.partnershiptemplate {
-    border-color: var(--gray-5) !important;
-  }
-  /* Hack to fix Wikimedia logo on MP */
-  .mainpage .center > .floatnone {
-    background-image: url("//upload.wikimedia.org/wikipedia/commons/thumb/8/81/Wikimedia-logo.svg/45px-Wikimedia-logo.svg.png");
-  }
-  .mainpage .center > .floatnone > img {
-    opacity: 0;
-  }
-  div[style*="background:#F8F8FF; margin:0px 0px 0.5em 0px; border:1px solid #CCCCFF;"] {
-    background: var(--blue-3) !important;
-    border-color: var(--blue-4) !important;
-  }
-  div[style*="background-color: #f9f9f9; border-color: #e9e9e9;"] {
-    background: var(--gray-2) !important;
-    border-color: var(--gray-5) !important;
-  }
-  .mw-tag-markers {
-    background-color: var(--brown-4);
-  }
-  a.image img[src*="Semi-protection-shackle.svg"] {
+  #p-logo a::before, #p-logo a::after {
+    display: block !important;
     background: inherit !important;
+    content: "" !important;
+  }
+  #p-logo a::before {
+    background-position: center 0 !important;
+    filter: brightness(90.5%) !important;
+    height: 108px !important;
+  }
+  #p-logo a::after {
+    background-position: center -108px !important;
+    filter: invert(90.5%) !important;
+    height: 47px !important;
+  }
+  a.image img[src*="Wikipedia-logo-v2.svg"] {
+    background-color: inherit !important;
+  }
+  a.image img[src*="Wikipedia_wordmark.svg"] {
+    filter: invert(1) brightness(90%);
+  }
+  /* Article assessment colors */
+  .assess-fa-text, .assess-fl-text {
+    color: var(--assess-1) !important;
+  }
+  .assess-a-text, .assess-al-text {
+    color: var(--assess-2) !important;
+  }
+  .assess-ga-text {
+    color: var(--assess-3) !important;
+  }
+  .assess-b-text, .assess-bl-text {
+    color: var(--assess-4) !important;
+  }
+  .assess-c-text, .assess-cl-text {
+    color: var(--assess-5) !important;
+  }
+  .assess-start-text {
+    color: var(--assess-6) !important;
+  }
+  .assess-stub-text, .assess-sl-text {
+    color: var(--assess-7) !important;
+  }
+  .assess-list-text {
+    color: var(--assess-8) !important;
+  }
+  .assess-bplus-text {
+    color: var(--assess-9) !important;
+  }
+  .assess-dab-text, .assess-setindex-text {
+    color: var(--assess-10) !important;
+  }
+  .assess-cur-text {
+    color: var(--assess-11) !important;
+  }
+  .assess-future-text {
+    color: var(--assess-12) !important;
+  }
+  /* https://en.wikipedia.org/wiki/YAML fixes */
+  td[style*="background: #FFFF66;"] {
+    background: var(--yellow-2) !important;
+  }
+  td[style*="background: #ffd6ff;"] {
+    background: var(--pink-3) !important;
+  }
+  a.image img[src*="System-installer.svg"], a.image img[src*="Graduation_cap"],
+  a.image img[src*="Crystal_kcontrol"],
+  a.image img[src*="Wikipedia_New_page_reviewer.svg"],
+  a.image img[src*="Scale_of_justice_2.svg"],
+  a.image img[src*="Crystal_kthememgr.svg"],
+  a.image img[src*="Question_book-new.svg"] {
+    background: inherit !important;
+  }
+  /* https://en.wikipedia.org/wiki/YAML syntax fixes */
+  .mw-highlight {
+    background-color: var(--gray-18);
+  }
+  .mw-highlight .c1 {
+    color: var(--cm-8);
+  }
+  .mw-highlight .nv, .mw-highlight .nn {
+    color: var(--cm-5);
+  }
+  .mw-highlight .no {
+    color: var(--cm-13);
+  }
+  .mw-highlight .nc {
+    color: var(--cm-6);
+  }
+  .mw-highlight .k, .mw-highlight .nt {
+    color: var(--cm-8);
+  }
+  .mw-highlight .mh, .mw-highlight .p {
+    color: var(--cm-14);
+  }
+  .mw-highlight .mi {
+    color: var(--cm-9) !important;
+  }
+  .mw-highlight .kd {
+    color: var(--cm-15);
+  }
+  .mw-highlight .gh {
+    color: var(--cm-5) !important;
+  }
+  .mw-highlight .nf {
+    color: var(--cm-4);
+  }
+  .mw-highlight .kt {
+    color: var(--cm-15);
+  }
+  .mw-highlight .na {
+    color: var(--cm-8);
+  }
+  .mw-highlight .s {
+    color: var(--cm-13);
+  }
+  .ns-talk .mw-body-content dl {
+    border: 0;
+  }
+  div[style*="border:2px solid #90C0FF; background:#F0F0FF;"] hr {
+    background-color: var(--gray-4) !important;
   }
   .ns-talk .mw-body-content dl, .ns-talk .mw-body-content dl dl dl,
   .ns-talk .mw-body-content dl dl dl dl dl,
@@ -5039,7 +5053,12 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl,
   .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl dl dl {
     background: inherit;
-    border: inherit;
+  }
+  table.cmbox-notice {
+    background-color: var(--blue-2) !important;
+  }
+  .mw-parser-output .current-events-sidebar > div:not(.mw-collapsible-content) {
+    background-color: initial;
   }
 }
 @-moz-document
@@ -5481,200 +5500,124 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     border-color: var(--gray-4);
   }
 }
-@-moz-document domain("wikipedia.org") {
-  /*** Navigation menu logo ***/
-  #p-logo a {
-    background-position: center -155px !important;
-    display: table-cell !important;
-    vertical-align: middle !important;
+@-moz-document domain("en.wiktionary.org") {
+  .mw-wiki-logo {
+    background-image: url("https://upload.wikimedia.org/wikipedia/meta/2/21/Wiktionary-logo-tiles_1x.png");
+    width: 120px !important;
+    height: 120px !important;
+    margin-left: 30px !important;
+    background-size: cover;
   }
-  #p-logo a::before, #p-logo a::after {
-    display: block !important;
-    background: inherit !important;
-    content: "" !important;
+  #p-logo:before {
+    content: "Wiktionary";
+    margin-left: 40px !important;
+    font-size: 20px;
+    color: var(--gray-a);
   }
-  #p-logo a::before {
-    background-position: center 0 !important;
-    filter: brightness(90.5%) !important;
-    height: 108px !important;
+  #p-logo:after {
+    content: "The free Dictionary";
+    margin-left: 26px !important;
+    font-size: 14px;
+    color: var(--gray-a);
+    vertical-align: text-top;
   }
-  #p-logo a::after {
-    background-position: center -108px !important;
-    filter: invert(90.5%) !important;
-    height: 47px !important;
+  span a img[src*="Wikinews_commentary"] {
+    filter: invert(1) hue-rotate(180deg) brightness(150%) !important;
   }
-  a.image img[src*="Wikipedia-logo-v2.svg"] {
-    background-color: inherit !important;
+  #main_page_mp-mp {
+    background-color: transparent !important;
   }
-  a.image img[src*="Wikipedia_wordmark.svg"] {
-    filter: invert(1) brightness(90%);
+  #main_page_mp-mp div:not(.ui-widget):not(.control-bar):not(.lButton):not(.bodySearchWrap):not(#WOTD-rss-description):not([style*="border"]):not([style="text-align:center;"]),
+  [id*="Translations-"] .NavContent, .noShowEditText, div.mw-editnotice div,
+  .mw-htmlform-ooui-wrapper.oo-ui-layout {
+    background-color: var(--gray-2);
   }
-  /* Article assessment colors */
-  .assess-fa-text, .assess-fl-text {
-    color: var(--assess-1) !important;
+  div[style*="background-color: #FFFFFF;"],
+  div[style*="background-color: #F8F8FF"],
+  div[class=""][style*="border: 2px solid #ccc"] {
+    background-color: var(--gray-2) !important;
   }
-  .assess-a-text, .assess-al-text {
-    color: var(--assess-2) !important;
+  span[style*="background-color: rgb(248, 248, 255)"] {
+    background-color: var(--gray-2) !important;
   }
-  .assess-ga-text {
-    color: var(--assess-3) !important;
+  table[style*="background-color:#E9E9FF; width: 100%; border: 3px solid #AAAAEE;"] {
+    background-color: var(--purple-0) !important;
+    border: 3px solid var(--purple-2) !important;
   }
-  .assess-b-text, .assess-bl-text {
-    color: var(--assess-4) !important;
+  table[style*="border:3px solid #AABBDD; background:#E9F3FF;"] {
+    background-color: var(--blue-2) !important;
+    border: 3px solid var(--blue-4) !important;
   }
-  .assess-c-text, .assess-cl-text {
-    color: var(--assess-5) !important;
+  div[style*="border: 3px solid #AAAAAA;padding:5px;background-color: #F0F0F0"] {
+    background-color: var(--gray-28) !important;
+    border: 3px solid var(--gray-4) !important;
   }
-  .assess-start-text {
-    color: var(--assess-6) !important;
+  td[style*="border: 1px solid #FFFFFF;padding:5px;background-color: #FFFFFF"] {
+    border-color: var(--gray-2) !important;
   }
-  .assess-stub-text, .assess-sl-text {
-    color: var(--assess-7) !important;
+  #main_page_mp-mp table:not([style*="#AAAAEE;"]):not([style*="#AABBDD;"]) {
+    border-color: var(--gray-5) !important;
   }
-  .assess-list-text {
-    color: var(--assess-8) !important;
+  div.NavFrame div.NavHead {
+    color: var(--gray-e);
   }
-  .assess-bplus-text {
-    color: var(--assess-9) !important;
+  div.NavFrame div.NavHead, details.NavFrame summary.NavHead {
+    background: var(--gray-4);
   }
-  .assess-dab-text, .assess-setindex-text {
-    color: var(--assess-10) !important;
+  div.NavFrame div.NavHead:hover, details.NavFrame summary.NavHead:hover {
+    background: var(--gray-5);
   }
-  .assess-cur-text {
-    color: var(--assess-11) !important;
+  .NavContent .translations form span[style*="color"],
+  .list-switcher-element a[role="button"] {
+    color: var(--base-color) !important;
   }
-  .assess-future-text {
-    color: var(--assess-12) !important;
+  *[style*="background:#c0cfe4"], *[style*="background:#9999DF"] {
+    background-color: var(--blue-4) !important;
   }
-  /* https://en.wikipedia.org/wiki/YAML fixes */
-  td[style*="background: #FFFF66;"] {
-    background: var(--yellow-2) !important;
+  *[style*="background:#a0ade3"], *[style*="background:#ccccff"],
+  *[style*="background: rgb(242, 242, 255)"], *[style*="background:#ccd8ff"],
+  *[style*="background:#c0d8e4"] {
+    background-color: var(--blue-3) !important;
   }
-  td[style*="background: #ffd6ff;"] {
-    background: var(--pink-3) !important;
+  *[style*="background:#e2e4c0"], *[style*="background-color:#e2e4c0"],
+  *[style*="background:#d0cfa4"] {
+    background-color: var(--brown-2) !important;
   }
-  a.image img[src*="System-installer.svg"], a.image img[src*="Graduation_cap"],
-  a.image img[src*="Crystal_kcontrol"],
-  a.image img[src*="Wikipedia_New_page_reviewer.svg"],
-  a.image img[src*="Scale_of_justice_2.svg"],
-  a.image img[src*="Crystal_kthememgr.svg"],
-  a.image img[src*="Question_book-new.svg"] {
-    background: inherit !important;
+  *[style*="background:#e0e0b0"], *[style*="background:#e2c0c0"] {
+    background-color: var(--pink-1) !important;
   }
-  /* https://en.wikipedia.org/wiki/YAML syntax fixes */
-  .mw-highlight {
-    background-color: var(--gray-18);
+  *[style*="background:#c0e4c0"], *[style*="background:#99cc99"],
+  *[style*="background:#99CC99"] {
+    background-color: var(--green-3) !important;
   }
-  .mw-highlight .c1 {
-    color: var(--cm-8);
+  *[style*="background:#cfedcc"] {
+    background-color: var(--green-4) !important;
   }
-  .mw-highlight .nv, .mw-highlight .nn {
-    color: var(--cm-5);
+  *[style*="background:#e4d4c0"], *[style*="background:#f2caa4"] {
+    background-color: var(--orange-3) !important;
   }
-  .mw-highlight .no {
-    color: var(--cm-13);
-  }
-  .mw-highlight .nc {
-    color: var(--cm-6);
-  }
-  .mw-highlight .k, .mw-highlight .nt {
-    color: var(--cm-8);
-  }
-  .mw-highlight .mh, .mw-highlight .p {
-    color: var(--cm-14);
-  }
-  .mw-highlight .mi {
-    color: var(--cm-9) !important;
-  }
-  .mw-highlight .kd {
-    color: var(--cm-15);
-  }
-  .mw-highlight .gh {
-    color: var(--cm-5) !important;
-  }
-  .mw-highlight .nf {
-    color: var(--cm-4);
-  }
-  .mw-highlight .kt {
-    color: var(--cm-15);
-  }
-  .mw-highlight .na {
-    color: var(--cm-8);
-  }
-  .mw-highlight .s {
-    color: var(--cm-13);
-  }
-  .ns-talk .mw-body-content dl {
-    border: 0;
-  }
-  div[style*="border:2px solid #90C0FF; background:#F0F0FF;"] hr {
+  *[style*="background:#ECECEC"], *[style*="background:#C0C0C0"],
+  *[style*="background-color:#C0C0C0"], *[style*="background:#d0d0d0"],
+  *[style*="background:#EFEFEF"], *[style*="background: rgb(204, 204, 204)"],
+  *[style*="background:#e2f6e2"], *[style*="background: #e2f6e2"],
+  *[style*="background: #CCC"] {
     background-color: var(--gray-4) !important;
   }
-  .ns-talk .mw-body-content dl, .ns-talk .mw-body-content dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl dl dl {
-    background: inherit;
+  div[style*="background:#d9ebff"], div.CategoryTreeItem,
+  *[style*="background:#e0e0e0"], *[style*="background:#DEDEDE"] {
+    background-color: var(--gray-3) !important;
   }
-  table.cmbox-notice {
-    background-color: var(--blue-2) !important;
+  table.inflection-table[style*="color: rgb(0%,0%,30%)"] {
+    color: var(--gray-c) !important;
   }
-  .mw-parser-output .current-events-sidebar > div:not(.mw-collapsible-content) {
-    background-color: initial;
+  .HQToggle::before, .NavToggle::before, .HQToggle::after, .NavToggle::after {
+    color: var(--base-color);
   }
-}
-@-moz-document
-regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
-  .mw-wiki-logo {
-    filter: invert(1) brightness(80%);
+  td[style*="background-color:#ffffe0"] {
+    background-color: var(--brown-1) !important;
   }
-  img[src*="OOjs_UI_icon_info"] {
-    filter: invert(1) brightness(75%);
-  }
-  div[style*="background: #eaf3ff;"] {
-    background: var(--blue-2) !important;
-    border-top-color: var(--blue-1) !important;
-  }
-  div[style*="background-color: none; border:6px solid #36c;"] {
-    background: none !important;
-    border-color: var(--blue-1) !important;
-  }
-  #form-wrapper {
-    background-color: var(--gray-18);
-    border: 1px solid var(--gray-5);
-    color: var(--gray-c);
-  }
-  input[type="radio"]:checked + .frb-btn {
-    background-color: var(--base-color);
-    color: var(--gray-e);
-    border-color: var(--base-color);
-  }
-  .frb-btn, .payment-method-button {
-    background-color: var(--gray-3);
-    color: var(--gray-c);
-    border: 1px solid var(--gray-5);
-  }
-  .frb-btn:hover {
-    background-color: var(--gray-4);
-    color: var(--gray-c);
-    border-color: var(--gray-5);
-  }
-  .frb-btn:active {
-    background-color: var(--gray-3);
-    color: var(--gray-c);
-    border-color: var(--gray-3);
-  }
-  .payment-method-button:hover {
-    background-color: var(--gray-5) !important;
-    border-color: var(--base-color);
-  }
-  #appeal h2, #appeal-head {
-    border-bottom: 1px solid var(--gray-5);
-  }
-  #infobox-wrapper {
-    color: var(--gray-c);
+  .trreq {
+    background-color: var(--green-4);
   }
 }
 @-moz-document domain("es.wikipedia.org") {
@@ -5739,100 +5682,6 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .oo-ui-menuOptionWidget.oo-ui-optionWidget-selected.oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted,
   .oo-ui-menuOptionWidget.oo-ui-optionWidget-pressed.oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted {
     color: var(--base-color);
-  }
-}
-@-moz-document domain("sl.wikipedia.org") {
-  th[style*="color:black"], td[style*="color:black;background:Gainsboro"] {
-    color: var(--gray-c) !important;
-    background: var(--purple-1) !important;
-  }
-  td[style*="color:black;background:Gainsboro"] {
-    color: var(--gray-a) !important;
-  }
-  td[style="background:SkyBlue; color:black"] {
-    background: var(--purple-1) !important;
-  }
-}
-@-moz-document domain("pl.wikipedia.org") {
-  [id*="main-page-column"], #main-page-sister-projects, #main-page-wikimedia {
-    background: var(--gray-18);
-  }
-  #mw-content-text .cytat {
-    background-color: var(--gray-3);
-  }
-  #main-page-welcome strong {
-    color: var(--gray-18);
-  }
-  #main-page #main-page-content h2 {
-    background: linear-gradient(to right, var(--blue-1) 0%, transparent 90%);
-    background-image: none;
-    border-radius: 18px;
-  }
-  #main-page #main-page-column1, #main-page #main-page-column2,
-  #main-page #main-page-footer .section.blue {
-    border-color: var(--blue-1);
-  }
-  #main-page #main-page-footer h2 {
-    background: linear-gradient(to right, var(--green-3) 0%, transparent 90%);
-    background-image: none;
-    border-radius: 18px;
-  }
-  #main-page #main-page-footer .section {
-    border-color: var(--green-3);
-  }
-  #main-page #main-page-header, #main-page #main-page-wiki-events {
-    border-color: var(--gray-5);
-  }
-  .tool-button {
-    filter: invert(60%) brightness(140%);
-  }
-  tr[style*="background:white"], td[style*="background-color:white"],
-  div[style*="background-color: white"] {
-    background: var(--gray-2) !important;
-  }
-  td[style*="background-color:#f8f8f8"] {
-    background: var(--gray-28) !important;
-  }
-  tr[style*="border-top:1px solid #aaa"], td[style*="border:1px solid #aaa"] {
-    border-color: var(--gray-5) !important;
-  }
-  .mw-parser-output table.duchowny-kardynal td.naglowek,
-  .mw-parser-output table.duchowny-kardynal tr.naglowek {
-    color: var(--gray-e) !important;
-    background: var(--red-3) !important;
-  }
-  .global-nav td:hover, .global-nav td:focus {
-    border-color: var(--base-color) !important;
-    background-color: var(--blue-3) !important;
-  }
-  td[style*="border: #0645AD solid"] {
-    border-color: var(--base-color) !important;
-  }
-  .cytat.box {
-    background-color: var(--gray-1) !important;
-    border-color: var(--gray-5) !important;
-  }
-  .portal-naglowek {
-    background-color: var(--gray-3) !important;
-    border-color: var(--gray-5) !important;
-  }
-  .portal-sekcja {
-    border-color: var(--gray-5) !important;
-  }
-  .takson-rosliny .naglowek td > span {
-    color: var(--gray-1) !important;
-  }
-  .infobox.jezyk .naglowek,
-  .infobox > tbody > tr:not([style]) > th:not([colspan]):not([style]):not(.infobox-label) {
-    background-color: var(--gray-18) !important;
-    color: var(--gray-c) !important;
-  }
-  .infobox.jezyk .naglowek, .mw-parser-output div.cytat,
-  .navbox-abovebelow.hlist {
-    border-color: var(--gray-5) !important;
-  }
-  table.navbox.v2 tr + tr > .navbox-grafika {
-    border-color: var(--gray-2);
   }
 }
 @-moz-document domain("it.wikipedia.org") {
@@ -6166,6 +6015,22 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     color: var(--gray-1) !important;
   }
 }
+@-moz-document domain("fa.wikipedia.org") {
+  /* Staging fixes for fawiki */
+  #mp-left {
+    background-color: var(--blue-3) !important;
+    border-color: var(--blue-2) !important;
+  }
+  .mw-footer {
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output .wikipedia-languages-prettybars {
+    background-color: var(--gray-5);
+  }
+  #mp-header .hlist {
+    border-color: var(--gray-5) !important;
+  }
+}
 @-moz-document domain("fr.wiktionary.org") {
   span[style*="background-color:#FFFFFF"], table[style*="background:#FFF"] {
     background-color: var(--gray-2) !important;
@@ -6362,68 +6227,6 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     border-color: var(--blue-1) !important;
   }
 }
-@-moz-document domain("wikinews.org") {
-  h1.central-textlogo {
-    text-shadow: none !important;
-  }
-  span[style="color: #595959;"] {
-    color: var(--gray-7) !important;
-  }
-  table.xambox-type-content {
-    border-left: 15px solid var(--orange-1);
-  }
-  span[style="color: #8c8c8c;"] {
-    color: var(--gray-9a) !important;
-  }
-  span[style*="color: #000"], span[style*="color:#000"] {
-    color: var(--gray-c) !important;
-  }
-  .ns-talk .mw-body-content dl, .ns-talk .mw-body-content dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl,
-  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl dl dl {
-    background: inherit;
-    border: inherit;
-  }
-  span[style*="color: #000; box-shadow: 0 0 7px #5de;"] {
-    color: var(--gray-e) !important;
-    box-shadow: 0 1px 3px var(--base-color) !important;
-  }
-  body .ui-button {
-    color: var(--base-color);
-    border: 1px solid var(--gray-5) !important;
-    background: var(--gray-28) !important;
-    background: linear-gradient(to bottom, var(--gray-4) 0%, var(--gray-3) 90%) !important;
-  }
-  body .ui-button .ui-button-text {
-    color: var(--gray-9a);
-  }
-  .lqt_header_content, .lqt-thread-topmost > .lqt-post-wrapper {
-    border-color: var(--gray-5);
-  }
-  .lqt-post-wrapper {
-    border-color: var(--gray-5);
-    background: var(--gray-3);
-  }
-  .thread-collapse-control a {
-    filter: invert(1) contrast(70%);
-  }
-  .lqt-thread-toolbar-menu ul {
-    border-color: var(--gray-5);
-    background: var(--gray-2);
-  }
-  select:not(#searchLanguage) {
-    background-color: var(--gray-1);
-  }
-  .search-form button[type="submit"] {
-    height: 22px;
-  }
-  .search-form button img {
-    filter: invert(1) brightness(150%);
-  }
-}
 @-moz-document domain("fr.wikinews.org") {
   #bandeau-page {
     border: 2px solid var(--gray-4);
@@ -6586,14 +6389,86 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background-color: var(--gray-2) !important;
   }
 }
-@-moz-document domain("incubator.wikimedia.org") {
-  div[style*="background-color: #f9f9f9"],
-  td[style*="background-color: #F9F9F9"] {
-    background-color: var(--gray-18) !important;
+@-moz-document domain("pl.wikipedia.org") {
+  [id*="main-page-column"], #main-page-sister-projects, #main-page-wikimedia {
+    background: var(--gray-18);
   }
-  div[style*="border: 2px solid #025E8D"],
-  td[style*="border: 1px solid #025E8D"] {
-    border-color: var(--blue-2) !important;
+  #mw-content-text .cytat {
+    background-color: var(--gray-3);
+  }
+  #main-page-welcome strong {
+    color: var(--gray-18);
+  }
+  #main-page #main-page-content h2 {
+    background: linear-gradient(to right, var(--blue-1) 0%, transparent 90%);
+    background-image: none;
+    border-radius: 18px;
+  }
+  #main-page #main-page-column1, #main-page #main-page-column2,
+  #main-page #main-page-footer .section.blue {
+    border-color: var(--blue-1);
+  }
+  #main-page #main-page-footer h2 {
+    background: linear-gradient(to right, var(--green-3) 0%, transparent 90%);
+    background-image: none;
+    border-radius: 18px;
+  }
+  #main-page #main-page-footer .section {
+    border-color: var(--green-3);
+  }
+  #main-page #main-page-header, #main-page #main-page-wiki-events {
+    border-color: var(--gray-5);
+  }
+  .tool-button {
+    filter: invert(60%) brightness(140%);
+  }
+  tr[style*="background:white"], td[style*="background-color:white"],
+  div[style*="background-color: white"] {
+    background: var(--gray-2) !important;
+  }
+  td[style*="background-color:#f8f8f8"] {
+    background: var(--gray-28) !important;
+  }
+  tr[style*="border-top:1px solid #aaa"], td[style*="border:1px solid #aaa"] {
+    border-color: var(--gray-5) !important;
+  }
+  .mw-parser-output table.duchowny-kardynal td.naglowek,
+  .mw-parser-output table.duchowny-kardynal tr.naglowek {
+    color: var(--gray-e) !important;
+    background: var(--red-3) !important;
+  }
+  .global-nav td:hover, .global-nav td:focus {
+    border-color: var(--base-color) !important;
+    background-color: var(--blue-3) !important;
+  }
+  td[style*="border: #0645AD solid"] {
+    border-color: var(--base-color) !important;
+  }
+  .cytat.box {
+    background-color: var(--gray-1) !important;
+    border-color: var(--gray-5) !important;
+  }
+  .portal-naglowek {
+    background-color: var(--gray-3) !important;
+    border-color: var(--gray-5) !important;
+  }
+  .portal-sekcja {
+    border-color: var(--gray-5) !important;
+  }
+  .takson-rosliny .naglowek td > span {
+    color: var(--gray-1) !important;
+  }
+  .infobox.jezyk .naglowek,
+  .infobox > tbody > tr:not([style]) > th:not([colspan]):not([style]):not(.infobox-label) {
+    background-color: var(--gray-18) !important;
+    color: var(--gray-c) !important;
+  }
+  .infobox.jezyk .naglowek, .mw-parser-output div.cytat,
+  .navbox-abovebelow.hlist {
+    border-color: var(--gray-5) !important;
+  }
+  table.navbox.v2 tr + tr > .navbox-grafika {
+    border-color: var(--gray-2);
   }
 }
 @-moz-document domain("pt.wikipedia.org") {
@@ -6958,20 +6833,16 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     box-shadow: .1em .2em .2em var(--gray-4) !important;
   }
 }
-@-moz-document domain("fa.wikipedia.org") {
-  /* Staging fixes for fawiki */
-  #mp-left {
-    background-color: var(--blue-3) !important;
-    border-color: var(--blue-2) !important;
+@-moz-document domain("sl.wikipedia.org") {
+  th[style*="color:black"], td[style*="color:black;background:Gainsboro"] {
+    color: var(--gray-c) !important;
+    background: var(--purple-1) !important;
   }
-  .mw-footer {
-    border-color: var(--gray-5);
+  td[style*="color:black;background:Gainsboro"] {
+    color: var(--gray-a) !important;
   }
-  .mw-parser-output .wikipedia-languages-prettybars {
-    background-color: var(--gray-5);
-  }
-  #mp-header .hlist {
-    border-color: var(--gray-5) !important;
+  td[style="background:SkyBlue; color:black"] {
+    background: var(--purple-1) !important;
   }
 }
 @-moz-document domain("zh.wikipedia.org") {
@@ -6980,126 +6851,6 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   .template-facttext {
     background-color: var(--gray-3);
-  }
-}
-@-moz-document domain("en.wiktionary.org") {
-  .mw-wiki-logo {
-    background-image: url("https://upload.wikimedia.org/wikipedia/meta/2/21/Wiktionary-logo-tiles_1x.png");
-    width: 120px !important;
-    height: 120px !important;
-    margin-left: 30px !important;
-    background-size: cover;
-  }
-  #p-logo:before {
-    content: "Wiktionary";
-    margin-left: 40px !important;
-    font-size: 20px;
-    color: var(--gray-a);
-  }
-  #p-logo:after {
-    content: "The free Dictionary";
-    margin-left: 26px !important;
-    font-size: 14px;
-    color: var(--gray-a);
-    vertical-align: text-top;
-  }
-  span a img[src*="Wikinews_commentary"] {
-    filter: invert(1) hue-rotate(180deg) brightness(150%) !important;
-  }
-  #main_page_mp-mp {
-    background-color: transparent !important;
-  }
-  #main_page_mp-mp div:not(.ui-widget):not(.control-bar):not(.lButton):not(.bodySearchWrap):not(#WOTD-rss-description):not([style*="border"]):not([style="text-align:center;"]),
-  [id*="Translations-"] .NavContent, .noShowEditText, div.mw-editnotice div,
-  .mw-htmlform-ooui-wrapper.oo-ui-layout {
-    background-color: var(--gray-2);
-  }
-  div[style*="background-color: #FFFFFF;"],
-  div[style*="background-color: #F8F8FF"],
-  div[class=""][style*="border: 2px solid #ccc"] {
-    background-color: var(--gray-2) !important;
-  }
-  span[style*="background-color: rgb(248, 248, 255)"] {
-    background-color: var(--gray-2) !important;
-  }
-  table[style*="background-color:#E9E9FF; width: 100%; border: 3px solid #AAAAEE;"] {
-    background-color: var(--purple-0) !important;
-    border: 3px solid var(--purple-2) !important;
-  }
-  table[style*="border:3px solid #AABBDD; background:#E9F3FF;"] {
-    background-color: var(--blue-2) !important;
-    border: 3px solid var(--blue-4) !important;
-  }
-  div[style*="border: 3px solid #AAAAAA;padding:5px;background-color: #F0F0F0"] {
-    background-color: var(--gray-28) !important;
-    border: 3px solid var(--gray-4) !important;
-  }
-  td[style*="border: 1px solid #FFFFFF;padding:5px;background-color: #FFFFFF"] {
-    border-color: var(--gray-2) !important;
-  }
-  #main_page_mp-mp table:not([style*="#AAAAEE;"]):not([style*="#AABBDD;"]) {
-    border-color: var(--gray-5) !important;
-  }
-  div.NavFrame div.NavHead {
-    color: var(--gray-e);
-  }
-  div.NavFrame div.NavHead, details.NavFrame summary.NavHead {
-    background: var(--gray-4);
-  }
-  div.NavFrame div.NavHead:hover, details.NavFrame summary.NavHead:hover {
-    background: var(--gray-5);
-  }
-  .NavContent .translations form span[style*="color"],
-  .list-switcher-element a[role="button"] {
-    color: var(--base-color) !important;
-  }
-  *[style*="background:#c0cfe4"], *[style*="background:#9999DF"] {
-    background-color: var(--blue-4) !important;
-  }
-  *[style*="background:#a0ade3"], *[style*="background:#ccccff"],
-  *[style*="background: rgb(242, 242, 255)"], *[style*="background:#ccd8ff"],
-  *[style*="background:#c0d8e4"] {
-    background-color: var(--blue-3) !important;
-  }
-  *[style*="background:#e2e4c0"], *[style*="background-color:#e2e4c0"],
-  *[style*="background:#d0cfa4"] {
-    background-color: var(--brown-2) !important;
-  }
-  *[style*="background:#e0e0b0"], *[style*="background:#e2c0c0"] {
-    background-color: var(--pink-1) !important;
-  }
-  *[style*="background:#c0e4c0"], *[style*="background:#99cc99"],
-  *[style*="background:#99CC99"] {
-    background-color: var(--green-3) !important;
-  }
-  *[style*="background:#cfedcc"] {
-    background-color: var(--green-4) !important;
-  }
-  *[style*="background:#e4d4c0"], *[style*="background:#f2caa4"] {
-    background-color: var(--orange-3) !important;
-  }
-  *[style*="background:#ECECEC"], *[style*="background:#C0C0C0"],
-  *[style*="background-color:#C0C0C0"], *[style*="background:#d0d0d0"],
-  *[style*="background:#EFEFEF"], *[style*="background: rgb(204, 204, 204)"],
-  *[style*="background:#e2f6e2"], *[style*="background: #e2f6e2"],
-  *[style*="background: #CCC"] {
-    background-color: var(--gray-4) !important;
-  }
-  div[style*="background:#d9ebff"], div.CategoryTreeItem,
-  *[style*="background:#e0e0e0"], *[style*="background:#DEDEDE"] {
-    background-color: var(--gray-3) !important;
-  }
-  table.inflection-table[style*="color: rgb(0%,0%,30%)"] {
-    color: var(--gray-c) !important;
-  }
-  .HQToggle::before, .NavToggle::before, .HQToggle::after, .NavToggle::after {
-    color: var(--base-color);
-  }
-  td[style*="background-color:#ffffe0"] {
-    background-color: var(--brown-1) !important;
-  }
-  .trreq {
-    background-color: var(--green-4);
   }
 }
 @-moz-document domain("wikiversity.org") {
@@ -7201,6 +6952,68 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   table[style*="border:1px solid #ffff77"] {
     border-color: var(--brown-2) !important;
+  }
+}
+@-moz-document domain("wikinews.org") {
+  h1.central-textlogo {
+    text-shadow: none !important;
+  }
+  span[style="color: #595959;"] {
+    color: var(--gray-7) !important;
+  }
+  table.xambox-type-content {
+    border-left: 15px solid var(--orange-1);
+  }
+  span[style="color: #8c8c8c;"] {
+    color: var(--gray-9a) !important;
+  }
+  span[style*="color: #000"], span[style*="color:#000"] {
+    color: var(--gray-c) !important;
+  }
+  .ns-talk .mw-body-content dl, .ns-talk .mw-body-content dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl dl dl {
+    background: inherit;
+    border: inherit;
+  }
+  span[style*="color: #000; box-shadow: 0 0 7px #5de;"] {
+    color: var(--gray-e) !important;
+    box-shadow: 0 1px 3px var(--base-color) !important;
+  }
+  body .ui-button {
+    color: var(--base-color);
+    border: 1px solid var(--gray-5) !important;
+    background: var(--gray-28) !important;
+    background: linear-gradient(to bottom, var(--gray-4) 0%, var(--gray-3) 90%) !important;
+  }
+  body .ui-button .ui-button-text {
+    color: var(--gray-9a);
+  }
+  .lqt_header_content, .lqt-thread-topmost > .lqt-post-wrapper {
+    border-color: var(--gray-5);
+  }
+  .lqt-post-wrapper {
+    border-color: var(--gray-5);
+    background: var(--gray-3);
+  }
+  .thread-collapse-control a {
+    filter: invert(1) contrast(70%);
+  }
+  .lqt-thread-toolbar-menu ul {
+    border-color: var(--gray-5);
+    background: var(--gray-2);
+  }
+  select:not(#searchLanguage) {
+    background-color: var(--gray-1);
+  }
+  .search-form button[type="submit"] {
+    height: 22px;
+  }
+  .search-form button img {
+    filter: invert(1) brightness(150%);
   }
 }
 @-moz-document domain("wikisource.org") {
@@ -7563,6 +7376,131 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background-color: var(--gray-3);
   }
 }
+@-moz-document domain("commons.wikimedia.org") {
+  #mw-page-base, .mw-parser-output #wdinfoboxcaption {
+    background-color: var(--gray-2);
+  }
+  .mw-parser-output .on-wikipedia {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output .discussion-menu-title {
+    color: var(--base-color);
+    background-color: var(--gray-18);
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output .discussion-menu {
+    border-color: var(--gray-5);
+  }
+  table[style*="border:1px solid #cccccc; background-color:#f9f9f9;"] {
+    border: 1px solid var(--gray-4) !important;
+    background-color: var(--gray-28) !important;
+  }
+  #firstHeading div.fastcci-buttonset > .ui-button, .gallery .gallerybox {
+    background-color: var(--gray-2) !important;
+  }
+  .ui-state-active, .ui-widget-content .ui-state-active,
+  .ui-widget-header .ui-state-active, .ui-state-hover,
+  .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover,
+  .ui-state-focus, .ui-widget-content .ui-state-focus,
+  .ui-widget-header .ui-state-focus, #cat_a_lot {
+    background: var(--gray-3);
+  }
+  #firstHeading div.fastcci-buttonset > .ui-button:hover,
+  .gallerytext .jFileTitle, #Centralized_discussion tr th,
+  #villagepumpheader table tr th {
+    background-color: var(--gray-3) !important;
+  }
+  .mw-parser-output .mainpage-welcome-sitename {
+    color: var(--gray-91);
+  }
+  /* this isnt actually orange in default */
+  .mw-parser-output .mainpage-box-orange .mainpage-box-title {
+    background-color: var(--brown-2);
+  }
+  .mw-parser-output .mainpage-box-orange,
+  .mw-parser-output .mainpage-box-orange .mainpage-box-seealso {
+    border-color: var(--brown-2);
+  }
+  .mw-parser-output .mainpage-box-green .mainpage-box-title {
+    background-color: var(--green-2);
+  }
+  .mw-parser-output .mainpage-box-green,
+  .mw-parser-output .mainpage-box-green .mainpage-box-seealso {
+    border-color: var(--green-2);
+  }
+  .mw-parser-output .mainpage-box-blue,
+  .mw-parser-output .mainpage-box-blue .mainpage-box-seealso {
+    border-color: var(--blue-3);
+  }
+  .mw-parser-output .mainpage-box-blue .mainpage-box-title,
+  .mw-parser-output .community-tabs td.active {
+    background-color: var(--blue-3);
+  }
+  .mw-parser-output .community-tabs td {
+    background-color: var(--blue-2);
+  }
+  body .ui-button.ui-button-green, body .ui-button.ui-button-green:hover {
+    border-color: var(--green-4) !important;
+    background: linear-gradient(to bottom, var(--green-3) 0%, var(--green-2) 90%) !important;
+  }
+  .com-mg-pagination {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+  }
+  .tipsy-inner {
+    background-color: var(--gray-2);
+    border-color: var(--gray-5);
+    color: var(--gray-9a);
+  }
+  #gp_head {
+    background-color: var(--blue-3) !important;
+  }
+  #gallerypreview > div {
+    background-color: var(--green-4) !important;
+    color: var(--base-color) !important;
+  }
+  .licensetpl_wrapper {
+    background-color: var(--gray-3) !important;
+  }
+  .type.fileinfo-paramfield {
+    background-color: var(--blue-3);
+  }
+  #gallerypreview_container, .layouttemplate.licensetpl,
+  .layouttemplate.partnershiptemplate {
+    border-color: var(--gray-5) !important;
+  }
+  /* Hack to fix Wikimedia logo on MP */
+  .mainpage .center > .floatnone {
+    background-image: url("//upload.wikimedia.org/wikipedia/commons/thumb/8/81/Wikimedia-logo.svg/45px-Wikimedia-logo.svg.png");
+  }
+  .mainpage .center > .floatnone > img {
+    opacity: 0;
+  }
+  div[style*="background:#F8F8FF; margin:0px 0px 0.5em 0px; border:1px solid #CCCCFF;"] {
+    background: var(--blue-3) !important;
+    border-color: var(--blue-4) !important;
+  }
+  div[style*="background-color: #f9f9f9; border-color: #e9e9e9;"] {
+    background: var(--gray-2) !important;
+    border-color: var(--gray-5) !important;
+  }
+  .mw-tag-markers {
+    background-color: var(--brown-4);
+  }
+  a.image img[src*="Semi-protection-shackle.svg"] {
+    background: inherit !important;
+  }
+  .ns-talk .mw-body-content dl, .ns-talk .mw-body-content dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl,
+  .ns-talk .mw-body-content dl dl dl dl dl dl dl dl dl dl dl dl dl {
+    background: inherit;
+    border: inherit;
+  }
+}
 @-moz-document domain("meta.wikimedia.org") {
   .mw-wiki-logo {
     filter: brightness(135%);
@@ -7810,6 +7748,16 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     border: inherit;
   }
 }
+@-moz-document domain("incubator.wikimedia.org") {
+  div[style*="background-color: #f9f9f9"],
+  td[style*="background-color: #F9F9F9"] {
+    background-color: var(--gray-18) !important;
+  }
+  div[style*="border: 2px solid #025E8D"],
+  td[style*="border: 1px solid #025E8D"] {
+    border-color: var(--blue-2) !important;
+  }
+}
 @-moz-document domain("outreach.wikimedia.org") {
   div[style*="background-color: whiteSmoke;"] {
     background-color: var(--gray-28) !important;
@@ -7937,6 +7885,250 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   }
   a.image img {
     background: inherit !important;
+  }
+}
+@-moz-document
+regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
+  .mw-wiki-logo {
+    filter: invert(1) brightness(80%);
+  }
+  img[src*="OOjs_UI_icon_info"] {
+    filter: invert(1) brightness(75%);
+  }
+  div[style*="background: #eaf3ff;"] {
+    background: var(--blue-2) !important;
+    border-top-color: var(--blue-1) !important;
+  }
+  div[style*="background-color: none; border:6px solid #36c;"] {
+    background: none !important;
+    border-color: var(--blue-1) !important;
+  }
+  #form-wrapper {
+    background-color: var(--gray-18);
+    border: 1px solid var(--gray-5);
+    color: var(--gray-c);
+  }
+  input[type="radio"]:checked + .frb-btn {
+    background-color: var(--base-color);
+    color: var(--gray-e);
+    border-color: var(--base-color);
+  }
+  .frb-btn, .payment-method-button {
+    background-color: var(--gray-3);
+    color: var(--gray-c);
+    border: 1px solid var(--gray-5);
+  }
+  .frb-btn:hover {
+    background-color: var(--gray-4);
+    color: var(--gray-c);
+    border-color: var(--gray-5);
+  }
+  .frb-btn:active {
+    background-color: var(--gray-3);
+    color: var(--gray-c);
+    border-color: var(--gray-3);
+  }
+  .payment-method-button:hover {
+    background-color: var(--gray-5) !important;
+    border-color: var(--base-color);
+  }
+  #appeal h2, #appeal-head {
+    border-bottom: 1px solid var(--gray-5);
+  }
+  #infobox-wrapper {
+    color: var(--gray-c);
+  }
+}
+@-moz-document domain("wikimediafoundation.org") {
+  body {
+    background: var(--gray-18);
+    color: var(--gray-c);
+  }
+  .top-nav, .header-home, .focus-block, .card-vertical.card-person,
+  .card-vertical.card-person .card-content {
+    background: var(--gray-18);
+  }
+  .logo-container a, .language-dropdown button img[src*="down"],
+  .connect-container .icon, img[src*="Wikimedia-Foundation-trademarked-logo"],
+  img[src*="Wikipedia_wordmark"] {
+    filter: invert(1) brightness(80%);
+  }
+  .language-list, .home-project-list-item--gray {
+    background: var(--gray-28);
+  }
+  .language-dropdown button {
+    color: var(--blue-1);
+    background: var(--pink-0);
+    border: 1px solid var(--pink-1);
+  }
+  .language-dropdown button:hover {
+    border: 1px solid var(--pink-3);
+  }
+  .donate-btn {
+    background: var(--pink-1);
+    border: 1px solid var(--pink-2);
+    color: var(--pink-3);
+  }
+  .donate-btn:hover {
+    border: 1px solid var(--pink-3);
+  }
+  .shadow, .pagination-container,
+  .header-home.featured-photo--content-left .page-intro-text .w-32p {
+    border-color: var(--gray-5);
+  }
+  .language-list ul li a.selected {
+    border-color: var(--blue-1);
+  }
+  button img[src*="language"] {
+    filter: grayscale(1) brightness(325%);
+  }
+  .donate-btn img[src*="lock-pink"] {
+    filter: brightness(800%);
+  }
+  .main-nav {
+    border-top: 1px solid var(--gray-5);
+  }
+  .main-nav a {
+    background-image: linear-gradient(to top, var(--gray-18), var(--gray-1));
+  }
+  .header-default .post-meta a {
+    background-image: linear-gradient(to top, var(--gray-18), var(--gray-1));
+    color: var(--gray-a);
+    border-color: var(--blue-1);
+  }
+  .toc-link.-active, .people .person-name {
+    color: var(--gray-e);
+  }
+  .header-default ul li a, .header-home ul li a, .bg-ltgray .color-gray,
+  .language-list ul li a {
+    color: var(--gray-c);
+  }
+  .module-mu .email-signup, .bg-ltgray .related-news .card .date, .color-gray,
+  .article-img .img-caption, .translation-bar li,
+  .header-home.featured-photo--content-left .page-intro-text .secure {
+    color: var(--gray-9a);
+  }
+  .module-mu .email-signup input::placeholder, .nav-newer, .nav-older {
+    color: var(--gray-69);
+  }
+  .nav-newer svg, .nav-older svg {
+    fill: var(--gray-69);
+  }
+  #News\ Index path[fill="#FFFFFF"] {
+    fill: var(--gray-18);
+  }
+  .nav-newer a:hover svg, .nav-older a:hover svg,
+  .elsewhere-wikimedia .link-external a:hover .icon {
+    fill: var(--base-color);
+  }
+  .elsewhere-wikimedia .link-external a .icon {
+    fill: var(--gray-c);
+    transition: .3s all;
+  }
+  .header-default ul li.current_page_item a,
+  footer ul:not(.social-list) li a:hover {
+    color: var(--base-color);
+    border-color: var(--base-color);
+  }
+  .header-default.header-pink .ungrid {
+    background: var(--pink-0);
+  }
+  .cta-primary {
+    background: var(--pink-1);
+  }
+  .cta-primary .h2, .cta-description {
+    color: var(--pink-3);
+  }
+  .module-mu.w-23p .h2.no-border span, .module-mu.w-50p .h2.no-border span {
+    color: var(--purple-2);
+  }
+  .header-default .ungrid .content,
+  .connect-container .email-signup #wmf-subscribe-input-email {
+    background: var(--gray-18);
+  }
+  .page-number-list a:hover, .page-number-list span:hover {
+    background: var(--gray-3);
+  }
+  .page-number-list li.active a, .page-number-list .current {
+    background: var(--base-color);
+  }
+  .main-nav a:hover, .wysiwyg p a, .wysiwyg .p a, .wysiwyg li a, .arrow-link,
+  .bg-white .related-news .card .card-heading:hover h3,
+  .bg-white .related-news .card .card-heading .date h3,
+  .module-mu .email-signup input, .photo-credits a:hover,
+  .header-default .eyebrow a, .toc-link, .article-img .img-caption a:hover,
+  .link-list a, .news-list-container .h3 a:hover, .nav-newer a:hover,
+  .nav-older a:hover, .elsewhere-wikimedia .link-external a:hover,
+  .article-footer .read-more a, .translation-bar a:hover,
+  a.hover-img-zoom:hover .person-name {
+    color: var(--base-color);
+  }
+  .article-footer .read-more a:hover {
+    color: var(--base-color);
+    opacity: .9;
+  }
+  .header-default .ungrid .h2.eyebrow, .framing-copy-ungrid code,
+  .card .post-meta a {
+    color: var(--blue-1);
+  }
+  .card .post-meta a:hover {
+    color: var(--blue-1);
+    border-color: var(--blue-1);
+    opacity: .9;
+  }
+  .framing-copy-ungrid .ungrid-line {
+    background: var(--blue-1);
+  }
+  .btn-blue .btn, .btn.btn-blue {
+    background-color: var(--blue-1);
+    color: var(--gray-e);
+  }
+  .btn-blue .btn:hover, .btn.btn-blue:hover {
+    background-color: var(--blue-1);
+    color: var(--gray-e);
+  }
+  .fact-inner {
+    background: var(--pink-0);
+  }
+  .connect-container .module-mu.gray-module, .bg-ltgray {
+    background: var(--gray-28);
+  }
+  .connect-container .module-mu {
+    border: 1px solid var(--gray-4);
+  }
+  input, textarea {
+    border: 1px solid var(--gray-5);
+  }
+  .connect-container .module-mu .email-signup input:focus {
+    background: var(--gray-1);
+    outline: 1px solid var(--base-color);
+    box-shadow: 0 0 1px 1px var(--base-color);
+  }
+  .header-default .ungrid,
+  .header-home.featured-photo--content-left .vision_container {
+    background: var(--brown-4);
+  }
+  footer.bg-black {
+    background: var(--gray-3);
+  }
+  footer #menu-footer-under-text li a, .module-mu h4.category,
+  .module-mu h4 a.category {
+    background: var(--gray-28);
+    color: var(--base-color);
+  }
+  footer #menu-footer-under-text li a:hover {
+    box-shadow: 0 2px 10px 0 var(--gray-69);
+  }
+  .module-mu h4.category:hover, .module-mu h4 a.category:hover {
+    background: var(--blue-1);
+    color: var(--gra-e);
+  }
+  .translation-bar {
+    color: var(--base-color);
+    border-color: var(--gray-5);
+  }
+  .urgent-header {
+    background: var(--red-3);
   }
 }
 @-moz-document
@@ -8183,197 +8375,5 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
   }
   #pagehistory li {
     border-color: var(--gray-5);
-  }
-}
-@-moz-document domain("wikimediafoundation.org") {
-  body {
-    background: var(--gray-18);
-    color: var(--gray-c);
-  }
-  .top-nav, .header-home, .focus-block, .card-vertical.card-person,
-  .card-vertical.card-person .card-content {
-    background: var(--gray-18);
-  }
-  .logo-container a, .language-dropdown button img[src*="down"],
-  .connect-container .icon, img[src*="Wikimedia-Foundation-trademarked-logo"],
-  img[src*="Wikipedia_wordmark"] {
-    filter: invert(1) brightness(80%);
-  }
-  .language-list, .home-project-list-item--gray {
-    background: var(--gray-28);
-  }
-  .language-dropdown button {
-    color: var(--blue-1);
-    background: var(--pink-0);
-    border: 1px solid var(--pink-1);
-  }
-  .language-dropdown button:hover {
-    border: 1px solid var(--pink-3);
-  }
-  .donate-btn {
-    background: var(--pink-1);
-    border: 1px solid var(--pink-2);
-    color: var(--pink-3);
-  }
-  .donate-btn:hover {
-    border: 1px solid var(--pink-3);
-  }
-  .shadow, .pagination-container,
-  .header-home.featured-photo--content-left .page-intro-text .w-32p {
-    border-color: var(--gray-5);
-  }
-  .language-list ul li a.selected {
-    border-color: var(--blue-1);
-  }
-  button img[src*="language"] {
-    filter: grayscale(1) brightness(325%);
-  }
-  .donate-btn img[src*="lock-pink"] {
-    filter: brightness(800%);
-  }
-  .main-nav {
-    border-top: 1px solid var(--gray-5);
-  }
-  .main-nav a {
-    background-image: linear-gradient(to top, var(--gray-18), var(--gray-1));
-  }
-  .header-default .post-meta a {
-    background-image: linear-gradient(to top, var(--gray-18), var(--gray-1));
-    color: var(--gray-a);
-    border-color: var(--blue-1);
-  }
-  .toc-link.-active, .people .person-name {
-    color: var(--gray-e);
-  }
-  .header-default ul li a, .header-home ul li a, .bg-ltgray .color-gray,
-  .language-list ul li a {
-    color: var(--gray-c);
-  }
-  .module-mu .email-signup, .bg-ltgray .related-news .card .date, .color-gray,
-  .article-img .img-caption, .translation-bar li,
-  .header-home.featured-photo--content-left .page-intro-text .secure {
-    color: var(--gray-9a);
-  }
-  .module-mu .email-signup input::placeholder, .nav-newer, .nav-older {
-    color: var(--gray-69);
-  }
-  .nav-newer svg, .nav-older svg {
-    fill: var(--gray-69);
-  }
-  #News\ Index path[fill="#FFFFFF"] {
-    fill: var(--gray-18);
-  }
-  .nav-newer a:hover svg, .nav-older a:hover svg,
-  .elsewhere-wikimedia .link-external a:hover .icon {
-    fill: var(--base-color);
-  }
-  .elsewhere-wikimedia .link-external a .icon {
-    fill: var(--gray-c);
-    transition: .3s all;
-  }
-  .header-default ul li.current_page_item a,
-  footer ul:not(.social-list) li a:hover {
-    color: var(--base-color);
-    border-color: var(--base-color);
-  }
-  .header-default.header-pink .ungrid {
-    background: var(--pink-0);
-  }
-  .cta-primary {
-    background: var(--pink-1);
-  }
-  .cta-primary .h2, .cta-description {
-    color: var(--pink-3);
-  }
-  .module-mu.w-23p .h2.no-border span, .module-mu.w-50p .h2.no-border span {
-    color: var(--purple-2);
-  }
-  .header-default .ungrid .content,
-  .connect-container .email-signup #wmf-subscribe-input-email {
-    background: var(--gray-18);
-  }
-  .page-number-list a:hover, .page-number-list span:hover {
-    background: var(--gray-3);
-  }
-  .page-number-list li.active a, .page-number-list .current {
-    background: var(--base-color);
-  }
-  .main-nav a:hover, .wysiwyg p a, .wysiwyg .p a, .wysiwyg li a, .arrow-link,
-  .bg-white .related-news .card .card-heading:hover h3,
-  .bg-white .related-news .card .card-heading .date h3,
-  .module-mu .email-signup input, .photo-credits a:hover,
-  .header-default .eyebrow a, .toc-link, .article-img .img-caption a:hover,
-  .link-list a, .news-list-container .h3 a:hover, .nav-newer a:hover,
-  .nav-older a:hover, .elsewhere-wikimedia .link-external a:hover,
-  .article-footer .read-more a, .translation-bar a:hover,
-  a.hover-img-zoom:hover .person-name {
-    color: var(--base-color);
-  }
-  .article-footer .read-more a:hover {
-    color: var(--base-color);
-    opacity: .9;
-  }
-  .header-default .ungrid .h2.eyebrow, .framing-copy-ungrid code,
-  .card .post-meta a {
-    color: var(--blue-1);
-  }
-  .card .post-meta a:hover {
-    color: var(--blue-1);
-    border-color: var(--blue-1);
-    opacity: .9;
-  }
-  .framing-copy-ungrid .ungrid-line {
-    background: var(--blue-1);
-  }
-  .btn-blue .btn, .btn.btn-blue {
-    background-color: var(--blue-1);
-    color: var(--gray-e);
-  }
-  .btn-blue .btn:hover, .btn.btn-blue:hover {
-    background-color: var(--blue-1);
-    color: var(--gray-e);
-  }
-  .fact-inner {
-    background: var(--pink-0);
-  }
-  .connect-container .module-mu.gray-module, .bg-ltgray {
-    background: var(--gray-28);
-  }
-  .connect-container .module-mu {
-    border: 1px solid var(--gray-4);
-  }
-  input, textarea {
-    border: 1px solid var(--gray-5);
-  }
-  .connect-container .module-mu .email-signup input:focus {
-    background: var(--gray-1);
-    outline: 1px solid var(--base-color);
-    box-shadow: 0 0 1px 1px var(--base-color);
-  }
-  .header-default .ungrid,
-  .header-home.featured-photo--content-left .vision_container {
-    background: var(--brown-4);
-  }
-  footer.bg-black {
-    background: var(--gray-3);
-  }
-  footer #menu-footer-under-text li a, .module-mu h4.category,
-  .module-mu h4 a.category {
-    background: var(--gray-28);
-    color: var(--base-color);
-  }
-  footer #menu-footer-under-text li a:hover {
-    box-shadow: 0 2px 10px 0 var(--gray-69);
-  }
-  .module-mu h4.category:hover, .module-mu h4 a.category:hover {
-    background: var(--blue-1);
-    color: var(--gra-e);
-  }
-  .translation-bar {
-    color: var(--base-color);
-    border-color: var(--gray-5);
-  }
-  .urgent-header {
-    background: var(--red-3);
   }
 }
