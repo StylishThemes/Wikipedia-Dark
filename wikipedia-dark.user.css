@@ -685,7 +685,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .infobox > tbody > tr:not([style]) > th[style*="background: #ccf"],
   .ve-ui-cxDesktopContext .ve-ui-cxLinkContextItem-sourceBody, .sidebar.WSerieV,
   table[style*="border:1px solid #CCCCCC;"],
-  .ve-ui-mwTransclusionDialog-addParameterFieldset .ve-ui-mwParameterSearchWidget {
+  .ve-ui-mwTransclusionDialog-addParameterFieldset .ve-ui-mwParameterSearchWidget,
+  .mw-parser-output .portalborder {
     border-color: var(--gray-5);
   }
   .uls-settings-trigger {
@@ -733,7 +734,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   }
   table[class="toccolours;"] tr[style*="background:#FAFAFA"],
   .ve-ui-cxDesktopContext .ve-ui-cxLinkContextItem-sourceBody, th.sidebar-title,
-  th.sidebar-heading {
+  th.sidebar-heading, tr .table-cast[style*="background: #CCC"] {
     background-color: var(--gray-4) !important;
   }
   .infobox[style^="background:#F5F5F5;"],
@@ -944,6 +945,9 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .portal h3, .vector-menu-portal h3 {
     background-image: linear-gradient(to top, transparent, var(--gray-c));
     background-size: auto 1px;
+  }
+  .vector-menu-portal .vector-menu-heading {
+    background-image: linear-gradient(to right,var(--black_17) 0,var(--gray-5) 33%,var(--gray-5) 66%,var(--black_17) 100%);
   }
   .vector-menu-content-list li[id*="ca-"] {
     border-top: 0 !important;
@@ -1222,7 +1226,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   table:not(.wikitable) td[bgcolor]:not([bgcolor="fcf"]),
   table:not(.wikitable) tr[bgcolor]:not([bgcolor="D0D8DD"]),
   .app-badges .footer-sidebar-content,
-  .languagesettings-menu .menu-section:hover {
+  .languagesettings-menu .menu-section:hover,
+  .mw-parser-output .portalborder > ul {
     background-color: var(--gray-28);
   }
   #mw-sidebar-button:focus {
@@ -1787,6 +1792,9 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   td[style*="border:1px solid #BF4D40"], div[style*="border: 1px solid #BF4D40"] {
     border: 1px solid var(--red-3) !important;
   }
+  .no.table-no2 {
+    background-color: var(--red-3) !important;
+  }
   /* Green */
   .mw-parser-output .MainPage__column--left {
     border: 1px solid var(--green-1);
@@ -1966,6 +1974,10 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   span[style="background-color:#DFD; color:#000"] {
     background-color: var(--green-a1) !important;
     color: var(--gray-e) !important;
+  }
+  .yes.table-yes2 {
+    background-color: var(--green-2) !important;
+    color: var(--gray-c) !important;
   }
   /* Yellow */
   table.ext-status-beta > tbody > tr.tpl-infobox-header,
@@ -2388,14 +2400,11 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background: var(--gray-2);
     border-color: var(--gray-5) !important;
   }
-  table.prettytable > tr > th, table.prettytable > * > tr > th {
-    background-color: var(--gray-18);
-    border: 1px solid var(--blue-4);
+  .infobox-above.summary[style*="background: #CCCCFF"] {
+    background-color: var(--blue-4) !important;
   }
-  table.prettytable > tr > td:nth-child(1),
-  table.prettytable > * > tr > td:nth-child(1), table.prettytable > tr > td,
-  table.prettytable > * > tr > td {
-    border-color: var(--blue-4);
+  .infobox.scotus .infobox-above.fn {
+    background-color: var(--blue-1) !important;
   }
   /* Blue */
   .mw-parser-output .MainPage__column--right {
@@ -2474,7 +2483,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background: var(--blue-3) !important;
     border-color: var(--gray-4) !important;
   }
-  .mw-parser-output .taxontree-lcell, .mw-parser-output .wikidatainfobox-lcell {
+  .mw-parser-output .taxontree-lcell, .mw-parser-output .wikidatainfobox-lcell,
+  .mw-parser-output .ib-spaceflight .infobox-header {
     background-color: var(--blue-3);
   }
   div[style*="border:1px solid #a7d7f9;"], div[style*="border:navy solid"],
@@ -2617,6 +2627,21 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .mw-parser-output .portal-bar-bordered {
     background-color: var(--blue-3);
     border-color: var(--blue-2);
+  }
+  table.prettytable > tr > th, table.prettytable > * > tr > th {
+    background-color: var(--gray-18);
+    border: 1px solid var(--blue-4);
+  }
+  table.prettytable > tr > td:nth-child(1),
+  table.prettytable > * > tr > td:nth-child(1), table.prettytable > tr > td,
+  table.prettytable > * > tr > td {
+    border-color: var(--blue-4);
+  }
+  .infobox-above.summary[style*="background: #CCCCFF"] {
+    background-color: var(--blue-4) !important;
+  }
+  .infobox.scotus .infobox-above.fn {
+    background-color: var(--blue-1) !important;
   }
   /* Purple */
   table[style*="background-color:#f7f8ff; border:2px solid #8888aa;"] {
