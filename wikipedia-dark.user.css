@@ -947,7 +947,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background-size: auto 1px;
   }
   .vector-menu-portal .vector-menu-heading {
-    background-image: linear-gradient(to right,var(--black_17) 0,var(--gray-5) 33%,var(--gray-5) 66%,var(--black_17) 100%);
+    background-image: linear-gradient(to right, var(--black_17) 0, var(--gray-5) 33%, var(--gray-5) 66%, var(--black_17) 100%);
   }
   .vector-menu-content-list li[id*="ca-"] {
     border-top: 0 !important;
@@ -2075,8 +2075,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   th[style*="background: #EFEFEF"] {
     background: var(--gray-28) !important;
   }
-  td[style*="background-color: #FFF"],
-  .mw-parser-output .current-events {
+  td[style*="background-color: #FFF"], .mw-parser-output .current-events {
     background-color: var(--gray-2) !important;
   }
   table[style*="background: #f9f9f9"], .mw-parser-output .commonscat,
@@ -2411,8 +2410,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     border: 1px solid var(--blue-4);
     background: var(--blue-2);
   }
-  th[style*="background: #E0FFFF"],
-  .mw-parser-output .current-events-heading {
+  th[style*="background: #E0FFFF"], .mw-parser-output .current-events-heading {
     background: var(--blue-2) !important;
   }
   div[style*="background-color: #BBDDFF; border: #4169E1 1px solid"] {
@@ -2673,9 +2671,10 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .mw-parser-output .navbox, .mw-parser-output .navbox-subgroup {
     background-color: var(--purple-1);
   }
-  .mw-parser-output .navbox,
-  .mw-parser-output tr + tr > .navbox-abovebelow, .mw-parser-output tr + tr > .navbox-group,
-  .mw-parser-output tr + tr > .navbox-image, .mw-parser-output tr + tr > .navbox-list {
+  .mw-parser-output .navbox, .mw-parser-output tr + tr > .navbox-abovebelow,
+  .mw-parser-output tr + tr > .navbox-group,
+  .mw-parser-output tr + tr > .navbox-image,
+  .mw-parser-output tr + tr > .navbox-list {
     border-color: var(--purple-0);
   }
   div[style="background-color: #E3D2FB; margin: 2em 0 0 0; padding: 0 10px 0 10px; border: 1px solid #AAAAAA;"],
@@ -5623,7 +5622,7 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     background-color: var(--blue-2) !important;
   }
   .mw-parser-output .current-events-sidebar > div:not(.mw-collapsible-content) {
-    background-color:initial;
+    background-color: initial;
   }
 }
 @-moz-document
