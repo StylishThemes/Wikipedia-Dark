@@ -6921,6 +6921,22 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     box-shadow: .1em .2em .2em var(--gray-4) !important;
   }
 }
+@-moz-document domain("fa.wikipedia.org") {
+  /* Staging fixes for fawiki */
+  #mp-left {
+    background-color: var(--blue-3) !important;
+    border-color: var(--blue-2) !important;
+  }
+  .mw-footer {
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output .wikipedia-languages-prettybars {
+    background-color: var(--gray-5);
+  }
+  #mp-header .hlist {
+    border-color: var(--gray-5) !important;
+  }
+}
 @-moz-document domain("zh.wikipedia.org") {
   mark {
     color: var(--gray-c);
