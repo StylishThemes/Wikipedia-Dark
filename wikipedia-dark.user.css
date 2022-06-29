@@ -4425,7 +4425,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .oo-ui-dropdownInputWidget.oo-ui-widget-enabled,
   .mw-widgets-datetime-dateTimeInputWidget.oo-ui-widget-enabled .mw-widgets-datetime-dateTimeInputWidget-editField:hover,
   .navigation-enabled #mw-mf-page-center, table.wikitable tr,
-  .action-history .mw-history-compareselectedversions {
+  .action-history .mw-history-compareselectedversions, .catlinks {
     background-color: var(--gray-2);
   }
   .content table.infobox *[style*="background"] {
@@ -4638,7 +4638,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .notifications-filter-overlay .overlay-content .mw-echo-ui-crossWikiUnreadFilterWidget,
   form.mw-mf-settings .oo-ui-fieldLayout,
   form.mw-mf-settings .oo-ui-fieldLayout:first-child,
-  .overlay.search-overlay .search-content {
+  .overlay.search-overlay .search-content, .catlinks, .catlinks li {
     border-color: var(--gray-5);
   }
   .language-searcher .site-link-list a, .minerva-footer,
