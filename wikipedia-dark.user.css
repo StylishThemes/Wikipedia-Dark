@@ -3766,8 +3766,19 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background-color: var(--pink-1) !important;
     color: var(--gray-d) !important;
   }
-  #mp-lower #mp-bottom h2, #mp-bottom h2 span {
-    background-color: var(--purple-1) !important;
+  .mw-parser-output #mp-lower .mp-h2 {
+    background-color: var(--purple-1);
+    border-color: var(--purple-2);
+  }
+  .mw-parser-output #mp-bottom .mp-h2 {
+    background-color: var(--gray-3);
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output #mp-bottom {
+    border-color: var(--gray-5);
+  }
+  .mw-parser-output .wikipedia-languages-prettybars {
+    background-color: var(--gray-5);
   }
   /*** diff pages ***/
   table.diff, td.diff-otitle, td.diff-ntitle, td.diff-addedline,
