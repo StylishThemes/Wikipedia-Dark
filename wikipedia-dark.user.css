@@ -1741,7 +1741,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     color: var(--gray-a);
   }
   td[style="background-color: #fec1b9"], td[style="background-color: #fcb5ab"],
-  td[style*="background:#fcc"] {
+  td[style*="background:#fcc"], td[style="background:#F6E4E7"] {
     background-color: var(--red-3) !important;
   }
   table[style="background-color: #fee;"] {
@@ -1816,7 +1816,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   th[style*="background:#EEF3E2" i] {
     background-color: var(--green-3) !important;
   }
-  td[style="background-color: #D4F4B4;"], th[style*="background:#d4f4b4;"] {
+  td[style="background-color: #D4F4B4;"], th[style*="background:#d4f4b4;"],
+  td[style="background:#E6E6B7"] {
     background-color: var(--green-2) !important;
   }
   span[style*="border-left: 1.2em solid #D4F4B4" i] {
@@ -1831,7 +1832,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     color: var(--gray-e) !important;
   }
   td.mbox-text[style*="border: 1px solid #AAA;"],
-  tr[style*="background-color: #E4F2E4;"], div[style*="background:#00af89;"] {
+  tr[style*="background-color: #E4F2E4;"], div[style*="background:#00af89;"],
+  td[style="background:#D4F7D4"] {
     background-color: var(--green-4) !important;
   }
   td[style*="background-color:#98FB98" i],
