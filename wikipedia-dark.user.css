@@ -422,7 +422,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background-color: transparent !important;
   }
   .color_swatch div[style*="background"] {
-    color: rgba(255, 255, 255, .25) !important;
+    color: var(--white_25) !important;
   }
   .mw-body, .parsoid-body {
     background-color: transparent !important;
@@ -3815,6 +3815,10 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   #mp-center #mp-tfl-h2, #mp-center #mp-tfl-h2 span {
     background-color: var(--pink-1) !important;
     color: var(--gray-d) !important;
+  }
+  .mw-parser-output #mp-middle .mp-h2 {
+    background-color: var(--pink-1);
+    border-color: var(--pink-2);
   }
   .mw-parser-output #mp-lower .mp-h2 {
     background-color: var(--purple-1);
