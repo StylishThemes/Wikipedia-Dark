@@ -411,7 +411,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   table.flextable, table.flextable .invisible, table#noarticletext,
   table#noarticletext table, .metadata.plainlinks.stub,
   .mw-body-content #mw-content-text h2:not([id^="mp-"]),
-  .mw-body-content .portal ul,:not(.color_swatch) > div[style*="background"]:not([style*="#90EE90"]),
+  .mw-body-content .portal ul,
+  :not(.color_swatch) > div[style*="background"]:not([style*="#90EE90"]),
   .wikitable > tr, .wikitable > tr > th, .wikitable > tr > td,
   .wikitable > * > tr, .wikitable > * > tr > th,
   .wikitable > * > tr > td:not(.break), .wikitable th span[style*="background"],
@@ -420,9 +421,9 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .mw-parser-output .mod-gallery .gallerybox div, tt[style="background: white;"] {
     background-color: transparent !important;
   }
-	.color_swatch div[style*="background"] {
-		color: rgba(255,255,255,0.25) !important;
-	}
+  .color_swatch div[style*="background"] {
+    color: rgba(255, 255, 255, .25) !important;
+  }
   .mw-body, .parsoid-body {
     background-color: transparent !important;
     color: var(--gray-9a);
@@ -1501,7 +1502,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header::before {
     background-color: var(--gray-3);
   }
-  :not(.color_swatch) > div[style*="background: #FFF;"], :not(.color_swatch) > div[style*="background:gainsboro;"],
+  :not(.color_swatch) > div[style*="background: #FFF;"],
+  :not(.color_swatch) > div[style*="background:gainsboro;"],
   :not(.color_swatch) > div[style*="background:#eee"] {
     background: var(--gray-4) !important;
   }
@@ -1843,7 +1845,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     color: var(--gray-e) !important;
   }
   td.mbox-text[style*="border: 1px solid #AAA;"],
-  tr[style*="background-color: #E4F2E4;"], :not(.color_swatch) > div[style*="background:#00af89;"],
+  tr[style*="background-color: #E4F2E4;"],
+  :not(.color_swatch) > div[style*="background:#00af89;"],
   td[style="background:#D4F7D4"] {
     background-color: var(--green-4) !important;
   }
@@ -1873,10 +1876,12 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     border-color: var(--green-1) !important;
     background: var(--green-2) !important;
   }
-  :not(.color_swatch) > div[style*="background-color:#cef2e0"], th[style*="background: #CFC;"] {
+  :not(.color_swatch) > div[style*="background-color:#cef2e0"],
+  th[style*="background: #CFC;"] {
     background: var(--green-2) !important;
   }
-  :not(.color_swatch) > div[style*="background:#E6FFF2"], :not(.color_swatch) > div[style*=";background:#14866d"] {
+  :not(.color_swatch) > div[style*="background:#E6FFF2"],
+  :not(.color_swatch) > div[style*=";background:#14866d"] {
     background: var(--green-3) !important;
   }
   :not(.color_swatch) > div[style*="background:#E0EEE0"],
@@ -2203,11 +2208,13 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   tr[style*="background:#F3F3F3" i] {
     background: var(--gray-28) !important;
   }
-  :not(.color_swatch) > div[style*="background-color:rgb(200,200,200);"], .collection-warning-box,
-  tr[style*="background-color: white;"], th[style*="background: #ccc;"],
-  span[style*="background-color: #e8e8e8;"], th[style="background:#efefef;"],
-  tr[bgcolor="D0D8DD"] td, tr[bgcolor="E5E4E2"] *,
-  :not(.color_swatch) > div[style*="background-color:#cccccc;"], th[style*="background-color:#ddd"] {
+  :not(.color_swatch) > div[style*="background-color:rgb(200,200,200);"],
+  .collection-warning-box, tr[style*="background-color: white;"],
+  th[style*="background: #ccc;"], span[style*="background-color: #e8e8e8;"],
+  th[style="background:#efefef;"], tr[bgcolor="D0D8DD"] td,
+  tr[bgcolor="E5E4E2"] *,
+  :not(.color_swatch) > div[style*="background-color:#cccccc;"],
+  th[style*="background-color:#ddd"] {
     background-color: var(--gray-3) !important;
   }
   .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover,
@@ -2370,7 +2377,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   h2[style*="border:1px solid #AAAAAA; background-color:#F0F0F0;"],
   div[style*="background-color:#F5F5F5; font-size:100%; padding: 0.5em; border-bottom-style: solid;"],
   div[style*="border: solid #CCC; border-width: 1px 1px 0; background: #CCC; color: black;"],
-  :not(.color_swatch) > div[style*="background:#444444;"], :not(.color_swatch) > div[style*="background: #f7f7f7;"] {
+  :not(.color_swatch) > div[style*="background:#444444;"],
+  :not(.color_swatch) > div[style*="background: #f7f7f7;"] {
     background: var(--gray-3) !important;
     border-color: var(--gray-5) !important;
   }
@@ -2389,7 +2397,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   }
   :not(.color_swatch) > div[style*="background-color:#FCFBFF;"],
   div[style*="background:#FFFFFF; border-style:solid; border-width:1px; border-color:#000000;"],
-  :not(.color_swatch) > div[style*="background-color:#ccc;"], :not(.color_swatch) > div[style*="background: #FFF"] {
+  :not(.color_swatch) > div[style*="background-color:#ccc;"],
+  :not(.color_swatch) > div[style*="background: #FFF"] {
     background: var(--gray-2) !important;
   }
   :not(.color_swatch) > div[style*="background: #FFF"] {
@@ -2448,34 +2457,40 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   }
   div[style*="background"]:not([style*="order"]):not(.boilerplate):not([style*="#FFE"]):not([style*="#fff"]) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question),
   div[style*="background"]:not([style*="order"]):not(.boilerplate):not([style*="#FFE"]):not([style*="#fff"]) h2:not([style]):not(#Before_you_post):not(#Post_a_new_question) *,
-  tr[style*="background-color:tan" i], :not(.color_swatch) > div[style*="background: #444444"],
+  tr[style*="background-color:tan" i],
+  :not(.color_swatch) > div[style*="background: #444444"],
   div[style*="background: #444444"] *, ol.references li:target,
   sup.reference:target, span.citation:target, ol.references li:target *,
   sup.reference:target *, span.citation:target *,
   td[style*="background:#CEDFF2" i], tr[bgcolor="#CEDFF2" i],
   table[style*="background-color:#cef2e0" i] *,
   :not(.color_swatch) > div[style*="background-color: #cee0f2" i],
-  :not(.color_swatch) > div[style*="background-color: #cedff2" i], div[role="region"] h2,
-  tr[style*="background-color: #cedff2" i], td[bgcolor*="#f0f0ff" i],
-  tr[style*="background-color:#E1E9F3" i], th[style*="background:#d1dbdf" i],
-  td[style*="background:#e6f2ff" i], td[style*="background:#F5FAFF" i],
-  table[style*="background:#f5faff"],
+  :not(.color_swatch) > div[style*="background-color: #cedff2" i],
+  div[role="region"] h2, tr[style*="background-color: #cedff2" i],
+  td[bgcolor*="#f0f0ff" i], tr[style*="background-color:#E1E9F3" i],
+  th[style*="background:#d1dbdf" i], td[style*="background:#e6f2ff" i],
+  td[style*="background:#F5FAFF" i], table[style*="background:#f5faff"],
   table[style*="background-color:rgba(0,0,255,0.1)"],
-  :not(.color_swatch) > div[style*="background-color: #eaf3ff"], td[style="background-color: #eaf3ff"],
-  :not(.color_swatch) > div[style*="background-color:#DDE"], td[style*="background:SkyBlue"],
-  :not(.color_swatch) > div[style*="background:#fafcfe" i], :not(.color_swatch) > div[style*="background-color: #c6dbf7"] {
+  :not(.color_swatch) > div[style*="background-color: #eaf3ff"],
+  td[style="background-color: #eaf3ff"],
+  :not(.color_swatch) > div[style*="background-color:#DDE"],
+  td[style*="background:SkyBlue"],
+  :not(.color_swatch) > div[style*="background:#fafcfe" i],
+  :not(.color_swatch) > div[style*="background-color: #c6dbf7"] {
     background-color: var(--blue-2) !important;
   }
-  td[style*="background-color: #CFF"], :not(.color_swatch) > div[style*="background-color:#7fbfff"] {
+  td[style*="background-color: #CFF"],
+  :not(.color_swatch) > div[style*="background-color:#7fbfff"] {
     background: var(--blue-4) !important;
   }
   .vertical-navbox th[style*="background:#cee0f2;"],
-  :not(.color_swatch) > div[style*="background-color:#c8d8FF;"], td[style*="background: #3366FF;"],
-  td[style="background-color: #e2ebfc"],
+  :not(.color_swatch) > div[style*="background-color:#c8d8FF;"],
+  td[style*="background: #3366FF;"], td[style="background-color: #e2ebfc"],
   .vertical-navbox th[style*="background:#e5eef8;"],
   th[style*="background: #cfe3ff;"], h2[style*="background-color: #d1e4ff;"],
-  :not(.color_swatch) > div[style*="background-color: #adf"], td[style*="background-color:#cddeff;"],
-  td[style*="background-color:#B0C4DE;"], :not(.color_swatch) > div[style*="background: #bce1ff;"],
+  :not(.color_swatch) > div[style*="background-color: #adf"],
+  td[style*="background-color:#cddeff;"], td[style*="background-color:#B0C4DE;"],
+  :not(.color_swatch) > div[style*="background: #bce1ff;"],
   td[style="background: #ABCDEF;"], th[style="background: #ABCDEF;"],
   td[style*="background:#ccf"] {
     background: var(--blue-3) !important;
@@ -2544,7 +2559,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background-color: var(--blue-3) !important;
     border-color: var(--blue-4) !important;
   }
-  :not(.color_swatch) > div[style*="background: #3366FF"], :not(.color_swatch) > div[style*="background:#2a4b8d;"] {
+  :not(.color_swatch) > div[style*="background: #3366FF"],
+  :not(.color_swatch) > div[style*="background:#2a4b8d;"] {
     background: var(--blue-4) !important;
   }
   div[style*="border:1px solid #cedff2;"],
@@ -2561,7 +2577,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background: var(--blue-4) !important;
     color: var(--gray-d) !important;
   }
-  table[style*="background:#F5FAFF"], :not(.color_swatch) > div[style*="background-color:#f8f9fa"],
+  table[style*="background:#F5FAFF"],
+  :not(.color_swatch) > div[style*="background-color:#f8f9fa"],
   table[style*="background-color:#f5faff;border:1px solid #cedff2"],
   .infobox[style*="background-color:#f5faff;border:1px solid #cedff2"],
   div[style*="border:1px solid #cedff2; padding:0.7em 0.5em; background-color: #f8f9fa"],
@@ -2701,7 +2718,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   td[style="background-color: #b1bced"], td[style*="background: #ccf"],
   .navbox-abovebelow:not([style*="background:white"]),
   .navbox-abovebelow:not([style*="background:white"]) *,
-  :not(.color_swatch) > div[style*="background:#ddddff" i], :not(.color_swatch) > div[style*="background:#ddf"] {
+  :not(.color_swatch) > div[style*="background:#ddddff" i],
+  :not(.color_swatch) > div[style*="background:#ddf"] {
     background: var(--purple-1) !important;
   }
   td[style="background-color: #a8b4ea"] {
@@ -2801,7 +2819,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     border-color: var(--brown-2);
     background-color: var(--brown-3);
   }
-  :not(.color_swatch) > div[style*="background:#ffe496" i], :not(.color_swatch) > div[style*="background-color:#ffffec"] {
+  :not(.color_swatch) > div[style*="background:#ffe496" i],
+  :not(.color_swatch) > div[style*="background-color:#ffffec"] {
     background-color: var(--brown-3) !important;
   }
   th[style*="background:#F5F5DC" i] {
@@ -2838,7 +2857,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   #btn_opisy_zm_waxon_off, tr[style="background-color:#FFFFAA" i],
   div[style*="background:#FFF4B8;border:1px solid #AAA" i],
   table[style*="border:1px solid #A9A9A9; background-color:#FFEFD5;" i],
-  :not(.color_swatch) > div[style*="background-color: #FFE" i], .messagebox.standard-talk {
+  :not(.color_swatch) > div[style*="background-color: #FFE" i],
+  .messagebox.standard-talk {
     background-color: var(--brown-3) !important;
     border-color: var(--brown-2) !important;
   }
@@ -2955,7 +2975,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background-color: var(--brown-2) !important;
   }
   /* pink */
-  :not(.color_swatch) > div[style*="background:#fff5fa;"], th[style*="background:#FFABD5"] {
+  :not(.color_swatch) > div[style*="background:#fff5fa;"],
+  th[style*="background:#FFABD5"] {
     background-color: var(--pink-0) !important;
   }
   td[style*="background-color: #FDD"] {
@@ -5607,7 +5628,8 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     background-color: var(--gray-4) !important;
   }
   :not(.color_swatch) > div[style*="background:#d9ebff"], div.CategoryTreeItem,
-  :not(.color_swatch) > *[style*="background:#e0e0e0"], *[style*="background:#DEDEDE"] {
+  :not(.color_swatch) > *[style*="background:#e0e0e0"],
+  *[style*="background:#DEDEDE"] {
     background-color: var(--gray-3) !important;
   }
   table.inflection-table[style*="color: rgb(0%,0%,30%)"] {
@@ -5714,8 +5736,8 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   div[style*="border-top: 1px solid #a7d7f9"] {
     border-color: var(--blue-4) !important;
   }
-  :not(.color_swatch) > div[style*="background:#F0F0FF"], td[style*="background-color:#F0DFFE"],
-  table[style*="background:#f5faff"] {
+  :not(.color_swatch) > div[style*="background:#F0F0FF"],
+  td[style*="background-color:#F0DFFE"], table[style*="background:#f5faff"] {
     background: var(--purple-0) !important;
   }
   div[style*="border:1px solid #c6c9ff"],
@@ -5724,7 +5746,8 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   div[style*="border-top: 1px solid #D0B0FF"] {
     border-color: var(--purple-2) !important;
   }
-  :not(.color_swatch) > div[style*="background:#ffeedd"], :not(.color_swatch) > div[style*="background-color:#FFFFDD"],
+  :not(.color_swatch) > div[style*="background:#ffeedd"],
+  :not(.color_swatch) > div[style*="background-color:#FFFFDD"],
   div[style*="background:#ffeedd"] table tr {
     background: var(--brown-3) !important;
   }
@@ -6006,7 +6029,8 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   table[style^="background:#fffff"] {
     background-color: var(--gray-3) !important;
   }
-  .hauptseite-box-content, .mw-parser-output:not(.color_swatch) > div[style*="background:#FFFFFF;"],
+  .hauptseite-box-content,
+  .mw-parser-output:not(.color_swatch) > div[style*="background:#FFFFFF;"],
   .toptextcells td[style="border-top: solid 1px #ccd2d9"],
   table[style^="background:#fffff"], .hintergrundfarbe5[style^="border"] {
     border-color: var(--gray-5) !important;
@@ -6488,9 +6512,10 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   .wb-langlinks-link > a:link, .wb-langlinks-link > a:visited {
     color: var(--visited-color) !important;
   }
-  :not(.color_swatch) > div[style*="background:#FFFFFF"], td[style*="background: #f5faff"],
-  table[style*="background: #f5faff"], th[style*="background-color: #eee" i],
-  td[style*="background: #e6e6e6"], ul[style*="background-color: #F9F9F9" i],
+  :not(.color_swatch) > div[style*="background:#FFFFFF"],
+  td[style*="background: #f5faff"], table[style*="background: #f5faff"],
+  th[style*="background-color: #eee" i], td[style*="background: #e6e6e6"],
+  ul[style*="background-color: #F9F9F9" i],
   td[style*="background-color: white" i], td[style*="background: #fff" i] {
     background-color: var(--gray-2) !important;
   }
@@ -6564,9 +6589,11 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   div.mw-inputbox-centered[style*="background-color: #f8f8ff"] {
     background-color: transparent !important;
   }
-  :not(.color_swatch) > div[style*="background:#99CCFF" i], h2[style*="background: #C6DEFE" i],
-  th[style*="background-color:#B0C4DE" i], :not(.color_swatch) > div[style*="background: #F5FAFF" i],
-  :not(.color_swatch) > div[style*="background-color:#E6F2FF" i], table[style*="background:#E6F2FF" i],
+  :not(.color_swatch) > div[style*="background:#99CCFF" i],
+  h2[style*="background: #C6DEFE" i], th[style*="background-color:#B0C4DE" i],
+  :not(.color_swatch) > div[style*="background: #F5FAFF" i],
+  :not(.color_swatch) > div[style*="background-color:#E6F2FF" i],
+  table[style*="background:#E6F2FF" i],
   td[style*="background:#F5FAFF" i] table#toc tbody,
   th[style*="background: #cedff2" i], table[style*="background:#CEDFF2" i],
   table[style*="background:#f1f5fc" i], td[style*="background-color:#f1f5fc" i],
@@ -6593,8 +6620,10 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   .mw-parser-output .main-page-second-row > div {
     background-color: var(--green-4);
   }
-  :not(.color_swatch) > div[style*="background-color:#B5DFD3" i], :not(.color_swatch) > div[style*="background: #008000" i],
-  td[style*="background:#408040" i], :not(.color_swatch) > div[style*="background-color:#80C080" i] {
+  :not(.color_swatch) > div[style*="background-color:#B5DFD3" i],
+  :not(.color_swatch) > div[style*="background: #008000" i],
+  td[style*="background:#408040" i],
+  :not(.color_swatch) > div[style*="background-color:#80C080" i] {
     background-color: var(--green-3) !important;
   }
   td[style*="border:2px solid #B7D7C7" i] {
@@ -6614,7 +6643,8 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     background: var(--red-3) !important;
   }
   th[style*="background:#FFF2E6" i], th[style*="background-color:khaki" i],
-  th[style*="background: khaki" i], :not(.color_swatch) > div[style*="background-color:#eee8aa" i] {
+  th[style*="background: khaki" i],
+  :not(.color_swatch) > div[style*="background-color:#eee8aa" i] {
     background: var(--brown-2) !important;
   }
   th[style*="background:#FFE6F2"] {
@@ -6652,11 +6682,14 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   td[style*="background-color:#F0F4F9" i],
   th[style*="background-color: lightblue" i], td[style*="background:#76adb7" i],
-  th[style*="background:#76adb7" i], :not(.color_swatch) > div[style*="background-color:#CEDFF2" i],
-  td[style*="background:#CEE0F2" i], :not(.color_swatch) > div[style*="background:#4682B4" i] {
+  th[style*="background:#76adb7" i],
+  :not(.color_swatch) > div[style*="background-color:#CEDFF2" i],
+  td[style*="background:#CEE0F2" i],
+  :not(.color_swatch) > div[style*="background:#4682B4" i] {
     background-color: var(--blue-3) !important;
   }
-  :not(.color_swatch) > div[style*="background: #CEDFF2" i], tr[style*="background:#9ebadf" i] {
+  :not(.color_swatch) > div[style*="background: #CEDFF2" i],
+  tr[style*="background:#9ebadf" i] {
     background: var(--blue-4) !important;
   }
   td[style*="background-color:#F0F0F9" i] {
@@ -7042,8 +7075,9 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   #navigationNotes div {
     background-color: transparent !important;
   }
-  #mf-explore-wikisource :not(.color_swatch) > div[style*="background"], #plainSister,
-  :not(.color_swatch) > div[style*="background:#FFFFFF"], span[style="background:#FFFFFF"] {
+  #mf-explore-wikisource :not(.color_swatch) > div[style*="background"],
+  #plainSister, :not(.color_swatch) > div[style*="background:#FFFFFF"],
+  span[style="background:#FFFFFF"] {
     background-color: var(--gray-2) !important;
   }
   :not(.color_swatch) > div[style*="background-color:whitesmoke"] {
@@ -7135,7 +7169,8 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
 }
 @-moz-document domain("wikiquote.org") {
-  :not(.color_swatch) > div[style*="background-color: #f8f8ff"], #mf-qotd > div:not([style*="#fff5"]) {
+  :not(.color_swatch) > div[style*="background-color: #f8f8ff"],
+  #mf-qotd > div:not([style*="#fff5"]) {
     background-color: var(--gray-2) !important;
   }
   div[style*="border: 2px solid #faf9b2"], .MainPageLetterHead {
@@ -8333,6 +8368,7 @@ regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
             box-shadow: none;
     border-color: var(--base-color) !important;
     -webkit-appearance: none;
+            appearance: none;
   }
   input#searchButton {
     border-left: 1px solid var(--gray-5) !important;
