@@ -5,7 +5,7 @@ const fs = require("fs").promises;
 const path = require("path");
 const pkg = require("../package.json");
 
-const fileName = path.join(__dirname, "..", pkg.main);
+const fileName = path.join(process.cwd(), pkg.main);
 
 function cleanup(css) {
   return css

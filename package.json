@@ -11,14 +11,14 @@
     "node": ">=10"
   },
   "devDependencies": {
-    "eslint": "^7.22.0",
-    "eslint-config-silverwind": "^29.0.0",
+    "eslint": "^8.27.0",
+    "eslint-config-silverwind": "^62.0.0",
     "perfectionist": "^2.4.0",
-    "stylelint": "^13.12.0",
-    "stylelint-config-silverwind": "2.0.8",
-    "stylelint-config-standard": "^21.0.0",
-    "updates": "^11.4.3",
-    "versions": "8.4.5"
+    "stylelint": "^14.15.0",
+    "stylelint-config-silverwind": "7.0.1",
+    "stylelint-config-standard": "^29.0.0",
+    "updates": "^13.2.1",
+    "versions": "10.2.4"
   },
   "scripts": {
     "authors": "bash tools/authors.sh",
