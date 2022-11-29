@@ -938,8 +938,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .infobox tr[style*="background:#F6E5A8;"] td,
   .infobox tr[style*="background:#F6E5A8;"] th,
   #mw-content-text .infobox-above[style*="background-color: lightblue"],
-  #mwAg .infobox-above[style*="background-color: lightblue"],
-  #mw-content-text .infobox-above[style*="background: #CCCCFF;"],
+  #mwAg .infobox-above[style*="background-color: lightblue"],/*
+  #mw-content-text .infobox-above[style*="background: #CCCCFF;"],*/
   #mwAg .infobox-above[style*="background: #CCCCFF;"],
   #mwAg .infobox-above[style*="background-color: lightblue"],
   #mw-content-text .infobox-above[style*="background-color: #e7dcc3;"],
@@ -1377,8 +1377,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background-color: var(--gray-18) !important;
   }
   .mw-widget-dateInputWidget-handle,
-  .mwe-pt-control-gradient,
-  .mw-parser-output .quotebox,
+  .mwe-pt-control-gradient,/*
+  .mw-parser-output .quotebox,*/
   .uls-language-settings-close-block,
   .uls-input-settings .uls-input-settings-inputmethods-list,
   .imeselector-menu,
@@ -2840,9 +2840,6 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background: var(--gray-2);
     border-color: var(--gray-5) !important;
   }
-  .infobox-above.summary[style*="background: #CCCCFF"] {
-    background-color: var(--blue-4) !important;
-  }
   .infobox.scotus .infobox-above.fn {
     background-color: var(--blue-1) !important;
   }
@@ -3104,9 +3101,13 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   table.prettytable > * > tr > td {
     border-color: var(--blue-4);
   }
-  .infobox-above.summary[style*="background: #CCCCFF"] {
-    background-color: var(--blue-4) !important;
+  #mw-content-text .infobox-above.summary[style*="background: #CCCCFF"] {
+    background-color: var(--blue-3) !important;
+		color: var(--gray-b) !important;
   }
+  div.quotebox.pullquote {
+		background-color: var(--gray-1) !important;
+	}
   .infobox.scotus .infobox-above.fn {
     background-color: var(--blue-1) !important;
   }
