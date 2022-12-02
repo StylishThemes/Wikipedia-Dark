@@ -1,6 +1,9 @@
 extends: stylelint-config-silverwind
 
 rules:
+  at-rule-no-vendor-prefix: null
+  custom-property-pattern: null
   declaration-block-no-duplicate-properties: null
   indentation: null
   max-empty-lines: 0
+  selector-no-vendor-prefix: null

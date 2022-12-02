@@ -27,7 +27,7 @@
     "patch": "versions -p -C patch wikipedia-dark.user.css",
     "minor": "versions -p -C minor wikipedia-dark.user.css",
     "major": "versions -p -C major wikipedia-dark.user.css",
-    "perfectionist": "perfectionist wikipedia-dark.user.css wikipedia-dark.user.css --indentSize 2 --maxAtRuleLength 250",
+    "perfectionist": "perfectionist wikipedia-dark.user.css wikipedia-dark.user.css --indentSize 2 --maxAtRuleLength 1 --maxSelectorLength false --maxValueLength false",
     "test": "npm run lint",
     "update": "updates -cu && npm install"
   }
