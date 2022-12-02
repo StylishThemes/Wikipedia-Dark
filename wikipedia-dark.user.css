@@ -42,8 +42,7 @@
 }
 @preprocessor uso
 ==/UserStyle== */
-@-moz-document
-regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
+@-moz-document regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
   /* Global color palette */
   :root {
     --base-color: /*[[base-color]]*/;
@@ -414,8 +413,7 @@ regexp("https?:\/\/.*wik(i|t).*(org|jp).*") {
     border-color: var(--cm-6);
   }
 }
-@-moz-document
-regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach|foundation|donate)\.wikimedia)\.org\/.*"),
+@-moz-document regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach|foundation|donate)\.wikimedia)\.org\/.*"),
 regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
 regexp("https?:\/\/wikiless\.org\/.*$") {
   /* transparent background */
@@ -922,7 +920,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   tr > td[style="background: #6495ED;"],
   tr > td[style="background: #607CD2;"],
   tr > td[style="background: #828BD9;"],
-  tr > td[style="background: #F0F8FF;"],  .userbox tbody tr td,
+  tr > td[style="background: #F0F8FF;"],
+  .userbox tbody tr td,
   [class*="map"] [style*="font-size"][style*="left"],
   .frb-headline > span,
   .infobox td.infobox-full-data th.infobox-above,
@@ -938,8 +937,10 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .infobox tr[style*="background:#F6E5A8;"] td,
   .infobox tr[style*="background:#F6E5A8;"] th,
   #mw-content-text .infobox-above[style*="background-color: lightblue"],
-  #mwAg .infobox-above[style*="background-color: lightblue"],/*
-  #mw-content-text .infobox-above[style*="background: #CCCCFF;"],*/
+  #mwAg .infobox-above[style*="background-color: lightblue"],
+  /*
+  #mw-content-text .infobox-above[style*="background: #CCCCFF;"],
+  */
   #mwAg .infobox-above[style*="background: #CCCCFF;"],
   #mwAg .infobox-above[style*="background-color: lightblue"],
   #mw-content-text .infobox-above[style*="background-color: #e7dcc3;"],
@@ -1377,8 +1378,10 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background-color: var(--gray-18) !important;
   }
   .mw-widget-dateInputWidget-handle,
-  .mwe-pt-control-gradient,/*
-  .mw-parser-output .quotebox,*/
+  .mwe-pt-control-gradient,
+  /*
+  .mw-parser-output .quotebox,
+  */
   .uls-language-settings-close-block,
   .uls-input-settings .uls-input-settings-inputmethods-list,
   .imeselector-menu,
@@ -1667,7 +1670,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .infobox tr[style*="background-color"]:not([style*="cedff2"]),
   .infobox,
   .tlheader,
-  #filetoc  {
+  #filetoc {
     background-color: var(--gray-3) !important;
   }
   .infobox-above[style="background-color:whitesmokemorph"],
@@ -1678,7 +1681,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .infobox-above[style="background-color:lightgreen"],
   .infobox-above[style="background-color:pink"],
   .infobox-above[style="background-color:antiquewhite"],
-  .infobox-above[style="background-color:lightblue"]  {
+  .infobox-above[style="background-color:lightblue"] {
     background-color: var(--gray-69) !important;
   }
   .plainlinks.mw-trackedTemplate {
@@ -2105,7 +2108,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   td[style*="background: #ffdddd" i],
   tr[style*="background:#FFDDDD" i],
   tr[style*="background:#fbb" i],
-  .table-no  {
+  .table-no {
     background: var(--red-3) !important;
     color: var(--gray-d) !important;
   }
@@ -3103,11 +3106,11 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   }
   #mw-content-text .infobox-above.summary[style*="background: #CCCCFF"] {
     background-color: var(--blue-3) !important;
-		color: var(--gray-b) !important;
+    color: var(--gray-b) !important;
   }
   div.quotebox.pullquote {
-		background-color: var(--gray-1) !important;
-	}
+    background-color: var(--gray-1) !important;
+  }
   .infobox.scotus .infobox-above.fn {
     background-color: var(--blue-1) !important;
   }
@@ -4823,7 +4826,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   a.image img[src*="Wikimedia_logo_family_complete"],
   a.image img[src*="Propan"],
   a.image img[src*="pictogram"],
-  a img[src*="Commons-logo"], .filehistory a img,
+  a img[src*="Commons-logo"],
+  .filehistory a img,
   img[src*="Nuvola_apps_date.svg"],
   img[src*="Ambox_warning"],
   img[src*="Cscr-former.svg"],
@@ -5009,8 +5013,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     filter: invert(1) hue-rotate(180deg) brightness(90%);
   }
 }
-@-moz-document
-regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|m\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\.m\.wikimedia)\.org\/.+") {
+@-moz-document regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|m\.(mediawiki|wiki(data|dot))|(meta|commons|otrs-wiki|species|wikitech)\.m\.wikimedia)\.org\/.+") {
   body {
     background-color: var(--gray-2);
     background-image: var(--bg-selected);
@@ -5288,7 +5291,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .action-history .mw-history-compareselectedversions,
   .catlinks,
   #mw-mf-page-left,
-  #mw-mf-diffview #mw-mf-userinfo  {
+  #mw-mf-diffview #mw-mf-userinfo {
     background-color: var(--gray-2);
   }
   .content table.infobox *[style*="background"] {
@@ -5569,7 +5572,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
   .header-container,
   .mw-echo-ui-notificationItemWidget:last-child {
     border-bottom-color: var(--gray-5);
-  }  
+  }
   blockquote,
   .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor::after {
     border-left-color: var(--gray-5);
@@ -5972,8 +5975,7 @@ regexp("https?:\/\/([\w\-]{2,}\.m\.(wiki(pedia|books|news|quote|source|versity|v
     background-color: initial;
   }
 }
-@-moz-document
-regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
+@-moz-document regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   #p-logo .mw-wiki-logo {
     filter: brightness(150%) contrast(60%);
   }
@@ -6065,7 +6067,7 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   .wikibase-statementgroupview-property.wb-edit + .wikibase-statementlistview > .wikibase-toolbar-wrapper {
     background-color: var(--blue-2);
   }
-  .wikibase-entityview textarea, 
+  .wikibase-entityview textarea,
   .ui-listrotator,
   .wikiEditor-ui-toolbar .page-table th,
   .mw-parser-output .chatheader-title,
@@ -6708,7 +6710,7 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   }
   td[style*="background-color:#F0DFFE"],
   table[style*="background:#f5faff"],
-  :not(.color_swatch) > div[style*="background:#F0F0FF"]  {
+  :not(.color_swatch) > div[style*="background:#F0F0FF"] {
     background: var(--purple-0) !important;
   }
   div[style*="border:1px solid #c6c9ff"],
@@ -8696,7 +8698,7 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
   .mw-parser-output .MainPageSisterProjects__group {
     border-color: var(--gray-5);
   }
-  table .navbox-title ,
+  table .navbox-title,
   .navbox th {
     background: var(--purple-1) !important;
   }
@@ -9074,8 +9076,7 @@ regexp("https?:\/\/([\w\-]{2,}\.)?wikidata\.org\/.*") {
     background: inherit !important;
   }
 }
-@-moz-document
-regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
+@-moz-document regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
   .mw-wiki-logo {
     filter: invert(1) brightness(80%);
   }
@@ -9359,8 +9360,7 @@ regexp("^https://(foundation|donate)\.wikimedia\.org.*$") {
     background: var(--red-3);
   }
 }
-@-moz-document
-regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
+@-moz-document regexp("^https://wiki\.archlinux\.(org|jp)\/.*$") {
   /* some styling fix hacks */
   #searchform #simpleSearch {
     background-color: var(--gray-1);
