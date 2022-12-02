@@ -414,8 +414,8 @@
   }
 }
 @-moz-document regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach|foundation|donate)\.wikimedia)\.org\/.*"),
-regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
-regexp("https?:\/\/wikiless\.org\/.*$") {
+               regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
+               regexp("https?:\/\/wikiless\.org\/.*$") {
   /* transparent background */
   html,
   body,
@@ -1753,7 +1753,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .mw-mmv-ttf-ellipsis,
   .navpopup,
   .oo-ui-popupWidget-popup,
-  .pure-form input[type=search],
+  .pure-form input[type="search"],
   .searchbox .mw-ui-input {
     box-shadow: none !important;
   }
@@ -2680,12 +2680,10 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     color: var(--gray-a) !important;
   }
   .tux-pagemode-status.fuzzy {
-    background-image: linear-gradient(transparent, transparent),
-                          url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2233.389%22 height=%2222.857%22 viewBox=%220 0 33.389 22.857%22%3E %3Cpath fill=%22%234b380d%22 d=%22M0 0h25.922l7.467 11.43-7.468 11.428H0V0z%22/%3E %3Cpath fill=%22%23999%22 d=%22M17.98 4.357c-4.06 0-7.374 3.316-7.374 7.375 0 4.06 3.315 7.375 7.375 7.375 4.06 0 7.376-3.316 7.376-7.375 0-4.06-3.316-7.375-7.375-7.375zm0 1.768c3.105 0 5.608 2.504 5.608 5.607s-2.504 5.607-5.607 5.607c-3.102 0-5.606-2.505-5.606-5.608 0-3.103 2.504-5.607 5.607-5.607z%22/%3E %3Cpath fill=%22%23999%22 d=%22M17.19 7.223v5.761h3.427v-1.21H18.4V7.223h-1.21z%22/%3E %3C/svg%3E");
+    background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2233.389%22 height=%2222.857%22 viewBox=%220 0 33.389 22.857%22%3E %3Cpath fill=%22%234b380d%22 d=%22M0 0h25.922l7.467 11.43-7.468 11.428H0V0z%22/%3E %3Cpath fill=%22%23999%22 d=%22M17.98 4.357c-4.06 0-7.374 3.316-7.374 7.375 0 4.06 3.315 7.375 7.375 7.375 4.06 0 7.376-3.316 7.376-7.375 0-4.06-3.316-7.375-7.375-7.375zm0 1.768c3.105 0 5.608 2.504 5.608 5.607s-2.504 5.607-5.607 5.607c-3.102 0-5.606-2.505-5.606-5.608 0-3.103 2.504-5.607 5.607-5.607z%22/%3E %3Cpath fill=%22%23999%22 d=%22M17.19 7.223v5.761h3.427v-1.21H18.4V7.223h-1.21z%22/%3E %3C/svg%3E");
   }
   .tux-workflow-status-selector li.selected {
-    background-image: linear-gradient(transparent, transparent),
-                          url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2215%22 viewBox=%220 0 15 15%22%3E %3Cpath fill=%22%23999%22 d=%22M10.765 1.078l-5.188 8.938-2.03-1.5L1.95 10.64l3.25 2.407 1.188.875.75-1.28 5.906-10.25-2.28-1.314z%22/%3E %3C/svg%3E");
+    background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2215%22 viewBox=%220 0 15 15%22%3E %3Cpath fill=%22%23999%22 d=%22M10.765 1.078l-5.188 8.938-2.03-1.5L1.95 10.64l3.25 2.407 1.188.875.75-1.28 5.906-10.25-2.28-1.314z%22/%3E %3C/svg%3E");
     color: var(--gray-a) !important;
   }
   .grid .tux-message-editor .close {
@@ -2734,8 +2732,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%3E%3Cpath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23999%22%20d%3D%22M7.5.125C3.44.125.125%203.44.125%207.5c0%204.06%203.316%207.375%207.375%207.375%204.06%200%207.375-3.316%207.375-7.375C14.875%203.44%2011.56.125%207.5.125zm0%201.768c3.104%200%205.607%202.504%205.607%205.607s-2.504%205.607-5.607%205.607S1.893%2010.604%201.893%207.5%204.396%201.893%207.5%201.893z%22%2F%3E%3Cpath%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23999%22%20d%3D%22M6.708%202.99v5.763h3.428v-1.21H7.918V2.99h-1.21z%22%2F%3E%3C%2Fsvg%3E");
   }
   .tux-loading-indicator {
-    background-image: linear-gradient(transparent, transparent),
-                          url("data:image/svg+xml,<?xml version='1.0' standalone='no'?><svg version='1.0' xmlns='http://www.w3.org/2000/svg' width='34px' height='34px' viewBox='0 0 34.000000 34.000000' preserveAspectRatio='xMidYMid meet'><g transform='translate(0.000000,34.000000) scale(0.100000,-0.100000)' fill='rgb(/*[[base-color-rgb]]*/)' stroke='none'><path d='M285 103 c-16 -29 -32 -43 -75 -60 -48 -19 -51 -22 -25 -23 39 0 90 32 115 72 21 35 25 48 13 48 -5 0 -17 -17 -28 -37z'/></g></svg>");
+    background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,<?xml version='1.0' standalone='no'?><svg version='1.0' xmlns='http://www.w3.org/2000/svg' width='34px' height='34px' viewBox='0 0 34.000000 34.000000' preserveAspectRatio='xMidYMid meet'><g transform='translate(0.000000,34.000000) scale(0.100000,-0.100000)' fill='rgb(/*[[base-color-rgb]]*/)' stroke='none'><path d='M285 103 c-16 -29 -32 -43 -75 -60 -48 -19 -51 -22 -25 -23 39 0 90 32 115 72 21 35 25 48 13 48 -5 0 -17 -17 -28 -37z'/></g></svg>");
   }
   .tux-dropdown-menu .unchangeable,
   .tux-message-editor .shortcutinfo,
@@ -4254,8 +4251,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     color: var(--gray-9a);
   }
   .imeselector-menu .ime-checked {
-    background-image: linear-gradient(transparent, transparent),
-                          url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%229%22%3E%3Cpath d=%22M11.226.257l-6.718 6.453-2.699-2.575-1.292 1.302c1.33 1.273 2.65 2.557 3.99 3.821 2.654-2.591 5.337-5.153 8.01-7.726z%22 fill=%22%23ccc%22/%3E%3C/svg%3E");
+    background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%229%22%3E%3Cpath d=%22M11.226.257l-6.718 6.453-2.699-2.575-1.292 1.302c1.33 1.273 2.65 2.557 3.99 3.821 2.654-2.591 5.337-5.153 8.01-7.726z%22 fill=%22%23ccc%22/%3E%3C/svg%3E");
   }
   .wikEdButton,
   .wikEdButtonDummy,
@@ -6437,13 +6433,13 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   .popover.left > .arrow::after {
     border-left-color: var(--gray-18);
   }
-  .popover.top>.arrow:after {
+  .popover.top > .arrow:after {
     border-top-color: var(--gray-18);
   }
-  .popover.right>.arrow:after {
+  .popover.right > .arrow:after {
     border-right-color: var(--gray-18);
   }
-  .popover.bottom>.arrow:after {
+  .popover.bottom > .arrow:after {
     border-bottom-color: var(--gray-2);
   }
   .popover.left > .arrow {
@@ -7610,7 +7606,7 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
   td[style*="border-left: 1px solid #ccc" i],
   div[style*="border:1px solid #a3b0bf" i],
   div[style*="border: solid #aaa 1px" i],
-  div[style*="border:solid #F0F0F0"i],
+  div[style*="border:solid #F0F0F0" i],
   div[style*="border: #aaa 1px solid" i],
   div[style*="border:1px solid #cccccc" i],
   div[style*="border-top: 1px solid #ccd2d9; border-bottom: 1px solid #ccd2d9" i] {
@@ -7802,7 +7798,8 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     filter: invert(80%);
   }
 }
-@-moz-document domain("ru.wikipedia.org"), domain("ru.wiktionary.org") {
+@-moz-document domain("ru.wikipedia.org"),
+               domain("ru.wiktionary.org") {
   .mw-parser-output .main-top,
   .mw-parser-output .main-box,
   #mw-page-base {
@@ -9466,12 +9463,10 @@ regexp("https?:\/\/wikiless\.org\/.*$") {
     background: var(--gray-28);
   }
   #uls-settings-block > button.display-settings-block {
-    background-image: linear-gradient(transparent, transparent),
-                          url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Cpath fill=%22%23ddd%22 d=%22M.002 2.275V15.22h8.405c.535 1.624-.975 1.786-1.902 2.505 0 0 2.293-.024 3.439-.024 1.144 0 3.432.024 3.432.024-.905-.688-2.355-.868-1.902-2.505h8.527V2.275h-20zm6.81 1.84h.797l3.313 8.466H9.879L8.836 9.943H5.462l-1.043 2.638h-.982zm.368 1.104c-.084.369-.211.785-.368 1.227L5.83 9.023h2.699l-.982-2.577c-.128-.33-.234-.747-.368-1.227zm7.117.982c.753 0 1.295.157 1.656.491.365.334.552.858.552 1.595v4.294h-.675l-.184-.859h-.062c-.315.396-.605.655-.92.798-.311.138-.758.184-1.227.184-.626 0-1.115-.168-1.472-.491-.353-.323-.491-.754-.491-1.35 0-1.275 1.028-1.963 3.068-2.025h1.043v-.429c0-.495-.091-.87-.307-1.104-.211-.238-.574-.307-1.043-.307-.526 0-1.115.107-1.779.429l-.307-.675a4.748 4.748 0 0 1 1.043-.429 4.334 4.334 0 0 1 1.104-.123zm.307 3.313c-.761.027-1.318.157-1.656.368-.334.207-.491.54-.491.982 0 .346.1.617.307.798.211.181.544.245.92.245.595 0 1.012-.164 1.35-.491.342-.326.552-.762.552-1.35v-.552z%22/%3E %3C/svg%3E");
+    background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Cpath fill=%22%23ddd%22 d=%22M.002 2.275V15.22h8.405c.535 1.624-.975 1.786-1.902 2.505 0 0 2.293-.024 3.439-.024 1.144 0 3.432.024 3.432.024-.905-.688-2.355-.868-1.902-2.505h8.527V2.275h-20zm6.81 1.84h.797l3.313 8.466H9.879L8.836 9.943H5.462l-1.043 2.638h-.982zm.368 1.104c-.084.369-.211.785-.368 1.227L5.83 9.023h2.699l-.982-2.577c-.128-.33-.234-.747-.368-1.227zm7.117.982c.753 0 1.295.157 1.656.491.365.334.552.858.552 1.595v4.294h-.675l-.184-.859h-.062c-.315.396-.605.655-.92.798-.311.138-.758.184-1.227.184-.626 0-1.115-.168-1.472-.491-.353-.323-.491-.754-.491-1.35 0-1.275 1.028-1.963 3.068-2.025h1.043v-.429c0-.495-.091-.87-.307-1.104-.211-.238-.574-.307-1.043-.307-.526 0-1.115.107-1.779.429l-.307-.675a4.748 4.748 0 0 1 1.043-.429 4.334 4.334 0 0 1 1.104-.123zm.307 3.313c-.761.027-1.318.157-1.656.368-.334.207-.491.54-.491.982 0 .346.1.617.307.798.211.181.544.245.92.245.595 0 1.012-.164 1.35-.491.342-.326.552-.762.552-1.35v-.552z%22/%3E %3C/svg%3E");
   }
   #uls-settings-block > button.input-settings-block {
-    background-image: linear-gradient(transparent, transparent),
-                          url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Cpath fill=%22%23ddd%22 d=%22M9 1.281c-.124.259-.185.599-.5.688-.55.081-1.133.018-1.688 0-.866-.032-1.733-.148-2.594 0-.588.157-.953.727-1.188 1.25-.178.416-.271.836-.344 1.281H-.002V16h20V4.5H3.654c.109-.52.203-1.057.563-1.469.222-.231.587-.17.875-.188 1.212.003 2.415.179 3.625.063.463-.058.812-.455.969-.875l.188-.438-.875-.313zM1.875 7.125h1.563c.094 0 .188.093.188.188v1.531a.201.201 0 0 1-.188.188H1.875c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.563c.094 0 .156.093.156.188v1.531c0 .094-.062.188-.156.188H4.719c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.563c.094 0 .156.093.156.188v1.531c0 .094-.062.188-.156.188H7.563a.201.201 0 0 1-.188-.188V7.313c0-.094.093-.188.188-.188zm2.813 0h1.563c.094 0 .188.093.188.188v1.531a.201.201 0 0 1-.188.188h-1.563c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.563c.094 0 .156.093.156.188v1.531c0 .094-.062.188-.156.188H13.22c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.531c.094 0 .188.093.188.188v1.531a.201.201 0 0 1-.188.188h-1.531a.201.201 0 0 1-.188-.188V7.313c0-.094.093-.188.188-.188zm-12.844 3h1.563c.094 0 .156.093.156.188v1.563c0 .094-.062.156-.156.156H3.22c-.094 0-.156-.062-.156-.156v-1.563c0-.094.062-.188.156-.188zm2.906 0h1.563c.094 0 .188.093.188.188v1.563c0 .094-.093.156-.188.156H6.126c-.094 0-.156-.062-.156-.156v-1.563c0-.094.062-.188.156-.188zm2.938 0h1.531c.094 0 .188.093.188.188v1.563c0 .094-.093.156-.188.156H9.064c-.094 0-.188-.062-.188-.156v-1.563c0-.094.093-.188.188-.188zm2.906 0h1.563c.094 0 .156.093.156.188v1.563c0 .094-.062.156-.156.156H11.97c-.094 0-.188-.062-.188-.156v-1.563c0-.094.093-.188.188-.188zm2.906 0h1.563c.094 0 .156.093.156.188v1.563c0 .094-.062.156-.156.156h-1.563c-.094 0-.156-.062-.156-.156v-1.563c0-.094.062-.188.156-.188zM4.001 13.688h12c.088 0 .156.068.156.156v.844a.154.154 0 0 1-.156.156h-12a.154.154 0 0 1-.156-.156v-.844c0-.088.068-.156.156-.156z%22/%3E %3C/svg%3E");
+    background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Cpath fill=%22%23ddd%22 d=%22M9 1.281c-.124.259-.185.599-.5.688-.55.081-1.133.018-1.688 0-.866-.032-1.733-.148-2.594 0-.588.157-.953.727-1.188 1.25-.178.416-.271.836-.344 1.281H-.002V16h20V4.5H3.654c.109-.52.203-1.057.563-1.469.222-.231.587-.17.875-.188 1.212.003 2.415.179 3.625.063.463-.058.812-.455.969-.875l.188-.438-.875-.313zM1.875 7.125h1.563c.094 0 .188.093.188.188v1.531a.201.201 0 0 1-.188.188H1.875c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.563c.094 0 .156.093.156.188v1.531c0 .094-.062.188-.156.188H4.719c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.563c.094 0 .156.093.156.188v1.531c0 .094-.062.188-.156.188H7.563a.201.201 0 0 1-.188-.188V7.313c0-.094.093-.188.188-.188zm2.813 0h1.563c.094 0 .188.093.188.188v1.531a.201.201 0 0 1-.188.188h-1.563c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.563c.094 0 .156.093.156.188v1.531c0 .094-.062.188-.156.188H13.22c-.094 0-.156-.093-.156-.188V7.313c0-.094.062-.188.156-.188zm2.844 0h1.531c.094 0 .188.093.188.188v1.531a.201.201 0 0 1-.188.188h-1.531a.201.201 0 0 1-.188-.188V7.313c0-.094.093-.188.188-.188zm-12.844 3h1.563c.094 0 .156.093.156.188v1.563c0 .094-.062.156-.156.156H3.22c-.094 0-.156-.062-.156-.156v-1.563c0-.094.062-.188.156-.188zm2.906 0h1.563c.094 0 .188.093.188.188v1.563c0 .094-.093.156-.188.156H6.126c-.094 0-.156-.062-.156-.156v-1.563c0-.094.062-.188.156-.188zm2.938 0h1.531c.094 0 .188.093.188.188v1.563c0 .094-.093.156-.188.156H9.064c-.094 0-.188-.062-.188-.156v-1.563c0-.094.093-.188.188-.188zm2.906 0h1.563c.094 0 .156.093.156.188v1.563c0 .094-.062.156-.156.156H11.97c-.094 0-.188-.062-.188-.156v-1.563c0-.094.093-.188.188-.188zm2.906 0h1.563c.094 0 .156.093.156.188v1.563c0 .094-.062.156-.156.156h-1.563c-.094 0-.156-.062-.156-.156v-1.563c0-.094.062-.188.156-.188zM4.001 13.688h12c.088 0 .156.068.156.156v.844a.154.154 0 0 1-.156.156h-12a.154.154 0 0 1-.156-.156v-.844c0-.088.068-.156.156-.156z%22/%3E %3C/svg%3E");
   }
   #uls-settings-block > button {
     color: var(--gray-9a);
