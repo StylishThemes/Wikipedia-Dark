@@ -1,7 +1,7 @@
 {
   "name": "wikipedia-dark",
   "title": "Wikipedia Dark",
-  "version": "3.6.1",
+  "version": "3.7.0",
   "description": "Wikipedia Dark theme",
   "license": "CC-BY-SA-4.0",
   "repository": "https://github.com/StylishThemes/Wikipedia-Dark",
@@ -24,9 +24,9 @@
     "authors": "bash tools/authors.sh",
     "clean": "npm run perfectionist && node tools/clean.js",
     "lint": "eslint tools/*.js && stylelint wikipedia-dark.user.css",
-    "patch": "versions -p -C patch wikipedia-dark.user.css",
-    "minor": "versions -p -C minor wikipedia-dark.user.css",
-    "major": "versions -p -C major wikipedia-dark.user.css",
+    "patch": "versions -p patch package.json wikipedia-dark.user.css",
+    "minor": "versions -p minor package.json wikipedia-dark.user.css",
+    "major": "versions -p major package.json wikipedia-dark.user.css",
     "perfectionist": "perfectionist wikipedia-dark.user.css wikipedia-dark.user.css --indentSize 2 --maxAtRuleLength 1 --maxSelectorLength false --maxValueLength false",
     "test": "npm run lint",
     "update": "updates -cu && npm install"
