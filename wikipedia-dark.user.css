@@ -168,6 +168,9 @@
     --cm-13: #ff6400;
     --cm-14: #aeaeae;
     --cm-15: #ad9361;
+    /* Browser specifics */
+    scrollbar-color: #7779 #111111a3; /* firefox scrollbars */
+    color-scheme: dark; /* chrome scrollbars  */
   }
   .cm-comment,
   .cm-link {
@@ -1254,6 +1257,9 @@
   .vector-feature-page-tools-disabled .vector-main-menu-action-item .vector-menu-heading {
     color: var(--gray-9a);
     border-color: var(--gray-69);
+  }
+  .vector-search-box-input {
+    padding: 5px 3.64615385em 5px 0.4em;
   }
   .vector-search-box-form #searchButton {
     background: no-repeat center / 1.23076923em url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath d='M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8z'/%3E%3C/svg%3E") !important;
