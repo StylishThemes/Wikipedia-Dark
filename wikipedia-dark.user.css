@@ -1246,7 +1246,8 @@
   .vector-user-menu-login {
     border-bottom: 1px solid var(--gray-7);
   }
-  .vector-feature-page-tools-disabled .vector-main-menu {
+  .vector-feature-page-tools-disabled .vector-main-menu,
+  .vector-pinned-container .vector-toc {
     background-color: var(--black_17);
   }
   .vector-feature-page-tools-disabled .vector-main-menu-group .vector-menu-heading,
@@ -1515,7 +1516,7 @@
   td[style*="background:#eee" i],
   td[bgcolor="f5f5f5"],
   td > span[style*="background-color:#eee" i],
-  button:not([type="submit"]):not(.tux-editor-save-button):not(.save):not([class*="-settings-block"]):not([class*="mw-mmv-"]):not(.pure-button):not(.wikidialog-button):not(.uls-input-toggle-button):not(.mw-ui-icon-wikimedia-expand),
+  button:not([type="submit"]):not(.tux-editor-save-button):not(.save):not([class*="-settings-block"]):not([class*="mw-mmv-"]):not(.pure-button):not(.wikidialog-button):not(.uls-input-toggle-button):not(.mw-ui-icon-wikimedia-expand):not(.vector-pinnable-header-toggle-button),
   select,
   div.arcProg,
   textarea:not([class*="mw-editfont"]),
@@ -1992,7 +1993,6 @@
     background-color: transparent !important;
     border: none !important;
   }
-  .vector-pinned-container .vector-toc,
   .mw-rcfilters-ui-filterMenuHeaderWidget-header,
   .mw-rcfilters-ui-menuSelectWidget-footer,
   .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle,
