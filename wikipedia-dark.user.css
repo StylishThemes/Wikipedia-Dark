@@ -1713,6 +1713,7 @@
   .client-js .mw-ui-radio:not(#noop) [type="radio"]:enabled:checked + label::before {
     border-color: var(--base-color);
   }
+  .client-js .vector-below-page-title .vector-page-titlebar-toc,
   .cdx-search-input--has-end-button,
   .client-js .mw-ui-radio:not(#noop) [type="radio"] + label::before {
     background-color: var(--gray-1);
@@ -1829,6 +1830,7 @@
     filter: invert(88%);
   }
   kbd,
+  .client-js .vector-below-page-title .vector-page-titlebar-toc,
   .keyboard-key {
     box-shadow: .1em .2em .2em var(--gray-4) !important;
   }
