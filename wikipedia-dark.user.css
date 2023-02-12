@@ -1230,6 +1230,9 @@
   input.mw-ui-input:focus {
     box-shadow: inset 0 0 0 1px var(--base-color) !important;
   }
+  #vector-page-tools-pinned-container .vector-page-tools {
+    padding-right: 14px;
+  }
   .uls-menu.uls-language-actions-dialog .uls-language-actions-title .uls-language-actions-close,
   .vector-user-menu-logout .mw-ui-icon::before,
   .mw-list-item .mw-ui-icon::before {
@@ -1261,7 +1264,7 @@
   }
   .vector-feature-page-tools-enabled #vector-main-menu-pinned-container .vector-main-menu,
   .vector-feature-page-tools-disabled .vector-main-menu,
-  .vector-pinned-container .vector-toc {
+  .vector-pinnable-element {
     background-color: var(--black_17);
   }
   .vector-feature-page-tools-enabled .vector-pinnable-element > :not(:last-child),
