@@ -1230,7 +1230,14 @@
   input.mw-ui-input:focus {
     box-shadow: inset 0 0 0 1px var(--base-color) !important;
   }
+  #vector-toc-pinned-container .vector-toc::after,
+  #vector-toc-pinned-container .sidebar-toc::after,
+  #vector-page-tools-pinned-container .vector-page-tools::after {
+    background: linear-gradient(transparent, var(--gray-1));
+  }
   #vector-page-tools-pinned-container .vector-page-tools {
+    margin-left: 0;
+    padding-left: 14px;
     padding-right: 14px;
   }
   .uls-menu.uls-language-actions-dialog .uls-language-actions-title .uls-language-actions-close,
@@ -1314,7 +1321,7 @@
     border-top: 1px solid var(--gray-3);
   }
   .mw-message-box {
-    color: var(--base-color);
+    color: var(--gray-c);
     background-color: var(--black_5);
     border-color: var(--gray-3);
   }
@@ -1588,8 +1595,6 @@
   #advancedSearchField-hastemplate {
     background-color: var(--gray-1) !important;
   }
-  .vector-toc-pinned #vector-toc-pinned-container .vector-toc::after,
-  .vector-toc-pinned #vector-toc-pinned-container .sidebar-toc::after,
   .mw-parser-output table.floatright[width="35%"] {
     background: none;
   }
@@ -1861,6 +1866,12 @@
   .pure-form input[type="search"],
   .searchbox .mw-ui-input {
     box-shadow: none !important;
+  }
+  .cdx-menu,
+  .skin-vector .uls-menu,
+  .vector-dropdown .vector-dropdown-content, .vector-dropdown > .vector-menu-content,
+  .vector-sticky-header {
+    box-shadow: 0 0 .5em var(--black);
   }
   .mw-ui-input {
     box-shadow: inset 0 0 0 .1em var(--gray-5);
@@ -4339,6 +4350,7 @@
   }
   a.link-box strong:hover,
   a.link-box:hover strong,
+  .vector-pinnable-header-toggle-button,
   .wikiEditor-ui-toolbar .booklet .index div,
   .site-license a:hover,
   .lang-list-button,
