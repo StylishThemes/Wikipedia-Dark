@@ -1739,7 +1739,6 @@
   .client-js .mw-ui-radio:not(#noop) [type="radio"]:enabled:checked + label::before {
     border-color: var(--base-color);
   }
-  .client-js .vector-below-page-title .vector-page-titlebar-toc,
   .cdx-search-input--has-end-button,
   .client-js .mw-ui-radio:not(#noop) [type="radio"] + label::before {
     background-color: var(--gray-1);
@@ -1843,8 +1842,6 @@
   }
   img[src*="76px-Wikimedia_Research_Newsletter_Logo.png"],
   img[src*="OOjs_UI_icon_download-ltr-progressive.svg.png"],
-  .mw-ui-icon-wikimedia-logIn::before,
-  .mw-ui-icon-wikimedia-language::before,
   .mw-rcfilters-ui-filterWrapperWidget-showNewChanges .oo-ui-iconElement-icon {
     filter: invert(100%) hue-rotate(180deg);
   }
@@ -1985,6 +1982,10 @@
   }
   img[src*="9px-AnonEditWarning"],
   a img[src*="OOjs_UI_icon"],
+  .oo-ui-icon-ellipsis, .mw-ui-icon-ellipsis::before,
+  .mw-ui-icon-wikimedia-listBullet::before,
+  .mw-ui-icon-wikimedia-logIn::before,
+  .mw-ui-icon-wikimedia-language::before,
   .mw-ui-icon.mw-ui-icon-before::before,
   .mw-ui-icon.mw-ui-icon-element::before,
   .mw-parser-output .helpContents-icon {
