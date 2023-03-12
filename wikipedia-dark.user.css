@@ -1298,11 +1298,11 @@
   .client-js .vector-search-box-vue .vector-typeahead-search .cdx-text-input__input:not(:hover):not(:focus) {
     border-right-color: transparent !important;
   }
-  .cdx-button--framed:enabled:hover {
+  .cdx-button:not(.cdx-button--type-quiet):enabled:hover {
     background-color: var(--gray-a);
     color: var(--gray-d);
   }
-  .cdx-button--framed:enabled {
+  .cdx-button:not(.cdx-button--type-quiet):enabled {
     background-color: var(--gray-a);
     border-color: var(--gray-5);
   }
@@ -1383,8 +1383,8 @@
   .hatnote.navigation-not-searchable,
   .thumbcaption,
   .oo-ui-fieldLayout-disabled > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label,
-  .cdx-text-input__input:enabled:focus ~ .cdx-text-input__icon,
-  .cdx-text-input__input:enabled.cdx-text-input__input--has-value ~ .cdx-text-input__icon,
+  .cdx-text-input__input:enabled:focus ~ .cdx-text-input__icon-vue,
+  .cdx-text-input__input:enabled.cdx-text-input__input--has-value ~ .cdx-text-input__icon-vue,
   #languagesettings-settings-panel {
     color: var(--gray-a);
   }
