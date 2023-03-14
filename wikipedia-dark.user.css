@@ -1015,8 +1015,6 @@
   #uls-settings-block > button {
     filter: invert(.5);
   }
-  .vector-dropdown > .vector-menu-heading::after,
-  .mw-interlanguage-selector::after,
   .oo-ui-icon-check,
   .mw-ui-icon-check::before {
     filter: invert(.75);
@@ -1240,10 +1238,6 @@
     margin-left: 0;
     padding-left: 14px;
     padding-right: 14px;
-  }
-  .uls-menu.uls-language-actions-dialog .uls-language-actions-title .uls-language-actions-close,
-  .mw-list-item .mw-ui-icon::before {
-    filter: invert(.6);
   }
   .mw-ui-checkbox:not(#noop) [type="checkbox"] + label:hover::before {
     background-color: var(--gray-1);
@@ -1982,10 +1976,12 @@
   }
   img[src*="9px-AnonEditWarning"],
   a img[src*="OOjs_UI_icon"],
-  .oo-ui-icon-ellipsis, .mw-ui-icon-ellipsis::before,
-  .mw-ui-icon-wikimedia-listBullet::before,
-  .mw-ui-icon-wikimedia-logIn::before,
-  .mw-ui-icon-wikimedia-language::before,
+  span.mw-ui-icon::before,
+  .vector-dropdown > .vector-menu-heading::after,
+  .mw-interlanguage-selector::after,
+  .uls-menu.uls-language-actions-dialog .uls-language-actions-title .uls-language-actions-close,
+  .oo-ui-icon-ellipsis,
+  .mw-ui-icon-ellipsis::before,
   .mw-ui-icon.mw-ui-icon-before::before,
   .mw-ui-icon.mw-ui-icon-element::before,
   .mw-parser-output .helpContents-icon {
@@ -5097,7 +5093,6 @@
   img[src*="Sort_both_small.svg"] {
     filter: invert(.8);
   }
-  .sidebar-toc .mw-ui-icon-wikimedia-expand::before,
   .vector-toc .mw-ui-icon-wikimedia-expand::before,
   .oo-ui-indicator-down,
   .oo-ui-indicator-clear {
