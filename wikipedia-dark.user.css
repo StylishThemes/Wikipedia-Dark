@@ -1573,6 +1573,9 @@
   .mw-parser-output table.floatright[width="35%"] {
     background: none;
   }
+  #vector-toc-pinned-container .vector-toc:after {
+    background: transparent !important;
+  }
   table[style*="background: transparent"],
   table[style*="background-color:transparent"],
   table.navbox-inner[style*="background:transparent"],
