@@ -495,6 +495,7 @@
     background-color: transparent !important;
   }
   div.vectorTabs li.selected,
+  .vector-header-container,
   .mw-mmv-image-metadata,
   .navbox,
   .navbox-subgroup,
@@ -1697,7 +1698,7 @@
   #mwe-pt-list-more {
     background-color: var(--gray-3); /* don't include !important flag */
   }
-  .vector-sticky-header,
+  .vector-header-container.vector-sticky-header-container,
   .imeselector,
   .imeselector:not(.imeselector-open):hover {
     background-color: var(--gray-18);
@@ -1863,7 +1864,7 @@
   .skin-vector .uls-menu,
   .vector-dropdown .vector-dropdown-content,
   .vector-dropdown > .vector-menu-content,
-  .vector-sticky-header {
+  .vector-sticky-header-container {
     box-shadow: 0 0 .5em var(--black);
   }
   .mw-ui-input {
@@ -2071,7 +2072,7 @@
   }
   #uls-settings-block.uls-settings-block--vector-2022.uls-settings-block--with-add-languages,
   .uls-menu.uls-language-actions-dialog .uls-language-actions-title,
-  .vector-sticky-header,
+  .vector-sticky-header-container,
   .vector-user-menu-logout,
   .mw-echo-ui-notificationBadgeButtonPopupWidget-popup > .oo-ui-popupWidget-popup > .oo-ui-popupWidget-footer,
   .mw-echo-ui-notificationBadgeButtonPopupWidget-popup > .oo-ui-popupWidget-popup > .oo-ui-popupWidget-footer .mw-echo-ui-notificationBadgeButtonPopupWidget-footer-buttons .oo-ui-buttonElement:last-child,
