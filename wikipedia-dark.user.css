@@ -425,7 +425,10 @@
   .mw-body[role="main"],
   .skin-vector-max-width .mw-page-container,
   .skin-vector #mw-panel,
-  .mw-page-container {
+  .mw-page-container,
+	.vector-feature-zebra-design-disabled body,
+	.vector-feature-zebra-design-disabled .vector-header-container,
+	#preferences .mw-htmlform-submit-buttons {
     background-color: var(--gray-2);
     background-image: var(--bg-selected);
     background-clip: border-box;
@@ -612,7 +615,10 @@
   .vertical-navbox th span,
   .mw-mmv-post-image,
   .mw-mmv-permission-box .mw-mmv-permission-text,
-  #footer li {
+  #footer li,
+	.vector-feature-zebra-design-disabled .vector-main-menu-landmark div > div,
+	.vector-feature-zebra-design-disabled #vector-page-tools > div div,
+	.frb-inline-main .cta {
     color: var(--gray-c) !important;
   }
   a,
@@ -749,9 +755,17 @@
   .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
     background-color: var(--gray-2f) !important;
   }
-  .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th:not(.wikidatainfobox-lcell):not([style*="cfe3ff;"]):not([style*="text"]):not([style*="#fff1d2;"]):not([style*="transparent"]):not([colspan="3"]):not(.mbox-text) {
+  .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th:not(.wikidatainfobox-lcell):not([style*="cfe3ff;"]):not([style*="text"]):not([style*="#fff1d2;"]):not([style*="transparent"]):not([colspan="3"]):not(.mbox-text), .infobox th.infobox-above.fn[style*="background-color"] {
     background-color: var(--gray-3) !important;
   }
+	.cx-uls-relevant-languages-banner {
+		background-color: var(--gray-3) !important;
+		color: var(--gray) !important;
+	}
+								 
+	.cx-uls-relevant-languages-banner__icon {
+		filter: invert(0.8) !important;
+	}
   .oo-ui-toolbar-bar,
   .oo-ui-window-head,
   .oo-ui-window-foot,
@@ -768,7 +782,9 @@
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active:focus,
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-tool-active > .oo-ui-tool-link,
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link,
-  .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover {
+  .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover,
+  .vector-feature-zebra-design-disabled .vector-dropdown .vector-dropdown-content,
+	.vector-feature-zebra-design-disabled .vector-dropdown > .vector-menu-content {
     background-color: var(--gray-3);
   }
   :not(.color_swatch) > div[style*="background-color: rgb(249, 249, 249)"] {
@@ -1267,7 +1283,7 @@
   }
   .vector-feature-page-tools-enabled #vector-main-menu-pinned-container .vector-main-menu,
   .vector-feature-page-tools-disabled .vector-main-menu,
-  .vector-pinnable-element {
+  .vector-pinnable-element, .vector-feature-zebra-design-disabled #vector-main-menu-pinned-container .vector-main-menu {
     background-color: var(--black_17);
   }
   .vector-feature-page-tools-enabled .vector-pinnable-element > :not(:last-child),
@@ -1594,7 +1610,8 @@
   .mw-parser-output table.floatright[width="35%"] {
     background: none;
   }
-  #vector-toc-pinned-container .vector-toc:after {
+  #vector-toc-pinned-container .vector-toc:after,
+	.vector-page-tools::after {
     background: transparent !important;
   }
   table[style*="background: transparent"],
@@ -1987,8 +2004,10 @@
   .oo-ui-icon-ellipsis,
   .mw-ui-icon-ellipsis::before,
   .mw-ui-icon.mw-ui-icon-before::before,
-  .mw-ui-icon.mw-ui-icon-element::before,
-  .mw-parser-output .helpContents-icon {
+  .mw-ui-icon.mw-ui-icon-element:not(.mw-ui-icon-bell):not(.mw-ui-icon-tray)::before,
+  .mw-parser-output .helpContents-icon,
+	.mw-ui-icon-wikimedia-bell,
+	.mw-ui-icon-wikimedia-tray {
     filter: invert(80%);
   }
   .k-player .control-bar {
@@ -3793,7 +3812,18 @@
   #content,
   #filetoc,
   #toc,
-  #uls-settings-block {
+  #uls-settings-block,
+ .vector-feature-zebra-design-disabled .vector-pinnable-element > :not(:last-child),
+ .vector-feature-zebra-design-disabled .vector-dropdown-content > :not(:last-child),
+ .mw-footer,
+ .vector-feature-zebra-design-disabled .vector-sticky-header-container,
+ .vector-feature-zebra-design-disabled .vector-sticky-header-context-bar,
+ .ve-ui-mwLanguagesPage-languages-table th,
+ .ve-ui-mwLanguagesPage-languages-table td,
+ .mw-guidedtour-tour-WlFiltersIntro,
+ .mw-parser-output .infobox td,
+ .mw-parser-output .infobox th,
+ #preferences .mw-htmlform-submit-buttons {
     border-color: var(--gray-5);
   }
   body[class*="skin-"] .mw-parser-output table.ambox {
@@ -3942,7 +3972,7 @@
   /* stop hovering effects on tr/td borders
 	   https://species.wikimedia.org/wiki/Wikispecies:Templates#Link_Templates */
   tr:hover,
-  td:not(.mid-table):not([style*="border:1px solid transparent"]):not(.navbox-abovebelow):not(.navbox-list):not([style]):not(.MainPageBG):hover {
+  td:not(.mid-table):not([style*="border:1px solid transparent"]):not(.navbox-abovebelow):not(.navbox-list):not([style]):not(.MainPageBG):not(.infobox-image):hover {
     border-color: var(--gray-5) !important;
   }
   .tux-workflow-status:hover {
@@ -4136,13 +4166,18 @@
   .oo-ui-image-progressive.oo-ui-icon-wikiText,
   .oo-ui-image-progressive.oo-ui-icon-eye,
   .mw-ui-icon-eye-progressive::before,
-  .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon,
   .oo-ui-image-progressive.oo-ui-icon-specialCharacter,
   .mw-ui-icon-specialCharacter-progressive::before,
   .oo-ui-image-progressive.oo-ui-icon-help,
   .mw-ui-icon-help-progressive::before {
     filter: grayscale(1) brightness(230%);
   }
+ .ve-ui-mwLanguagesPage-languages-table tr:nth-child(2n) td {
+	  background-color: var(--gray-3) !important;
+	}
+ .ve-ui-mwLanguagesPage-languages-table tr:nth-child(2n+1) td {
+	  background-color: var(--gray-4) !important;
+	}
   .mwe-popups.flipped_y::after,
   .mwe-popups.flipped_x_y::after,
   .mwe-popups.flipped-y::after,
