@@ -850,7 +850,8 @@
   .ve-ui-cxDesktopContext .ve-ui-cxLinkContextItem-sourceBody,
   .sidebar.WSerieV,
   .ve-ui-mwTransclusionDialog-addParameterFieldset .ve-ui-mwParameterSearchWidget,
-  .mw-parser-output .portalborder {
+  .mw-parser-output .portalborder,
+	.mw-collapsible-toggle-default {
     border-color: var(--gray-5);
   }
   .uls-settings-trigger {
@@ -1144,7 +1145,9 @@
     color: var(--gray-c) !important;
   }
   .suggestion-description,
-  .mw-mmv-credit {
+  .mw-mmv-credit,
+	.mw-collapsible-toggle-default::before,
+	.mw-collapsible-toggle-default::after {
     color: var(--gray-b9);
   }
   .suggestion-link.active {
@@ -1997,8 +2000,8 @@
   }
   img[src*="9px-AnonEditWarning"],
   a img[src*="OOjs_UI_icon"],
-  span.mw-ui-icon::before,
-  .vector-dropdown > .vector-menu-heading::after,
+  span.mw-ui-icon:not(.mw-ui-icon-language-progressive)::before,
+  .vector-dropdown > .vector-menu-heading:not(.vector-menu-heading)::after,
   .mw-interlanguage-selector::after,
   .uls-menu.uls-language-actions-dialog .uls-language-actions-title .uls-language-actions-close,
   .oo-ui-icon-ellipsis,
@@ -3823,7 +3826,8 @@
  .mw-guidedtour-tour-WlFiltersIntro,
  .mw-parser-output .infobox td,
  .mw-parser-output .infobox th,
- #preferences .mw-htmlform-submit-buttons {
+ #preferences .mw-htmlform-submit-buttons,
+ .mw-parser-output .side-box {
     border-color: var(--gray-5);
   }
   body[class*="skin-"] .mw-parser-output table.ambox {
@@ -3955,7 +3959,8 @@
   .vector-menu-content,
   #talkheader td,
   #mwe-popups-settings,
-  #mwe-popups-settings header {
+  #mwe-popups-settings header,
+  .infobox-below[style="border-top:1px #aaa solid;"] {
     border-color: var(--gray-5) !important;
   }
   div[style*="border:1px #FFFFFF" i],
@@ -7629,12 +7634,18 @@
   #main-page-wikimedia {
     background: var(--gray-18);
   }
-  #mw-content-text .cytat {
-    background-color: var(--gray-3);
+  #mw-content-text .cytat, .mw-parser-output .naglowek {
+    background-color: var(--gray-3) !important;
   }
+	.infobox .grafika {
+    background-color: var(--gray-2) !important;
+	}
   #main-page-welcome strong {
-    color: var(--gray-18);
+    color: var(--gray-18) !important;
   }
+	.mw-parser-output .naglowek {
+		color: var(--gray-c) !important;
+	}
   #main-page #main-page-content h2 {
     background: linear-gradient(to right, var(--blue-1) 0%, transparent 90%);
     background-image: none;
@@ -7654,7 +7665,7 @@
     border-color: var(--green-3);
   }
   #main-page #main-page-header,
-  #main-page #main-page-wiki-events {
+  #main-page #main-page-wiki-events, .infobox > caption {
     border-color: var(--gray-5);
   }
   .tool-button {
