@@ -467,7 +467,7 @@
   .wikitable > tr > td,
   .wikitable > * > tr,
   .wikitable > * > tr > th,
-  .wikitable > * > tr > td:not(.break),
+  .wikitable > * > tr > td:not(.break):not([style^="background:"]):not([bgcolor]),
   .wikitable th span[style*="background"],
   .inline-quote-talk,
   .oo-ui-fieldsetLayout-group .oo-ui-widget,
@@ -475,6 +475,9 @@
   .mw-parser-output .mod-gallery .gallerybox div,
   #mp-topbanner {
     background-color: transparent !important;
+  }
+  tr > td[bgcolor] {
+    color: var(--gray-1) !important;
   }
   .color_swatch div[style*="background"] {
     color: var(--white_25) !important;
@@ -851,7 +854,15 @@
   .sidebar.WSerieV,
   .ve-ui-mwTransclusionDialog-addParameterFieldset .ve-ui-mwParameterSearchWidget,
   .mw-parser-output .portalborder,
-	.mw-collapsible-toggle-default {
+	.mw-collapsible-toggle-default,
+	.mw-parser-output .ib-settlement .mergedtoprow .infobox-header,
+	.mw-parser-output .ib-settlement .mergedtoprow .infobox-label,
+	.mw-parser-output .ib-settlement .mergedtoprow .infobox-data,
+	.mw-parser-output .ib-settlement .mergedbottomrow .infobox-label,
+  .mw-parser-output .ib-settlement .mergedbottomrow .infobox-data,
+	.mw-parser-output .ib-settlement .mergedbottomrow .infobox-full-data,
+  .mw-parser-output .ib-settlement .mergedbottomrow .infobox-data,
+	.ui-closeable {
     border-color: var(--gray-5);
   }
   .uls-settings-trigger {
@@ -859,9 +870,13 @@
   }
   .vector-search-box-collapses #searchButton,
   .vector-search-box-collapses #mw-searchButton,
-  .wikibase-toolbar-container.wikibase-toolbar-container {
+  .wikibase-toolbar-container.wikibase-toolbar-container,
+	.thumbinner > .tsingle > .thumbimage{
     background: transparent !important;
   }
+	.wb-preferred .wikibase-statementview-mainsnak {
+		background-color: var(--green-a0) !important;
+	}
   .mw-parser-output .maf-info,
   .mw-parser-output .wwikipedii tr {
     background-color: var(--gray-18);
@@ -1790,7 +1805,7 @@
   p[style*="background-color:#F7FAFC" i],
   :not(.color_swatch) > div[style*="background-color: #dddddd" i],
   .infobox.standard-talk tr[style*="#e8dbae"],
-  .infobox th[style*="background"]:not([style*="green"]):not([style*="background:#dfc;"]):not(.infobox-above):not([style*="lavender"]):not([style*="cfe3ff"]):not([style*="rgb(235,235,210)"]):not([style*="antiquewhite"]),
+  .infobox th[style*="background"]:not([style*="green"]):not([style*="background:#dfc;"]):not([style*="lavender"]):not([style*="cfe3ff"]):not([style*="rgb(235,235,210)"]):not([style*="antiquewhite"]),
   .infobox tr[style*="background-color"]:not([style*="cedff2"]),
   .infobox,
   .tlheader,
@@ -1819,6 +1834,9 @@
   .navbox-subgroup .navbox-title {
     background-color: var(--gray-5);
   }
+	.navbox-title > div {
+		color: var(--black) !important;
+	}
   .mw-revslider-revision,
   .cbnnr-close {
     background-color: var(--gray-7);
@@ -1898,6 +1916,14 @@
   .mw-ui-button.mw-ui-progressive:focus:not(:active) {
     box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 2px var(--gray-a) !important;
   }
+	input[type="checkbox"]:focus + .mw-ui-button.mw-ui-quiet,
+	input[type="checkbox"]:focus + .mw-ui-button.mw-ui-quiet.mw-ui-progressive,
+	input[type="checkbox"]:focus + .mw-ui-button.mw-ui-quiet.mw-ui-destructive,
+	.mw-ui-button.mw-ui-quiet:focus,
+	.mw-ui-button.mw-ui-quiet.mw-ui-progressive:focus,
+	.mw-ui-button.mw-ui-quiet.mw-ui-destructive:focus {
+	box-shadow: inset 0 0 0 1px #36c,inset 0 0 0 2px var(--gray-4) !important;
+}				 
   .oo-ui-popupToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link:focus {
     outline: 0;
     box-shadow: inset 0 0 0 2px var(--base-color);
@@ -3283,16 +3309,14 @@
     background: var(--purple-1) !important;
     border-color: var(--purple-1) !important;
   }
-  table.navbox th,
-  .navbox-title,
-  .navbox-title *,
-  .navbox th {
-    background: var(--purple-0) !important;
-    border-color: var(--gray-2) !important;
-    color: var(--gray-c) !important;
-  }
+	.mw-parser-output .navbox .inner-standard > tbody > tr > th + td,
+	.mw-parser-output .navbox .inner-standard > tbody > tr + tr > th,
+	.mw-parser-output .navbox .inner-standard > tbody > tr + tr > td {
+		border-color: var(--gray-4) !important;
+	}
   .mw-parser-output .navbox,
-  .mw-parser-output .navbox-subgroup {
+  .mw-parser-output .navbox-subgroup,
+	.mw-parser-output .navbox > .caption {
     background-color: var(--purple-1);
   }
   .mw-parser-output .navbox,
@@ -3579,7 +3603,6 @@
     border-color: var(--yellow-1);
   }
   tr[style*="background:orange" i],
-  td[style*="background:#ffd" i],
   .table-partial {
     background-color: var(--brown-1) !important;
   }
@@ -3977,7 +4000,7 @@
   /* stop hovering effects on tr/td borders
 	   https://species.wikimedia.org/wiki/Wikispecies:Templates#Link_Templates */
   tr:hover,
-  td:not(.mid-table):not([style*="border:1px solid transparent"]):not(.navbox-abovebelow):not(.navbox-list):not([style]):not(.MainPageBG):not(.infobox-image):hover {
+  td:not(.mid-table):not([style*="border:1px solid transparent"]):not(.navbox-abovebelow):not(.navbox-list):not([style]):not(.MainPageBG):not(.infobox-image):not(.navbox-even):not(.navbox-odd):hover {
     border-color: var(--gray-5) !important;
   }
   .tux-workflow-status:hover {
