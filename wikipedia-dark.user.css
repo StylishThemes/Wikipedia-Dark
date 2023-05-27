@@ -425,6 +425,8 @@
   .tracklist th[scope="col"] {
     background-color: var(--gray-3) !important;
   }
+
+  
   .tracklist-total-length span,
   .tracklist-total-length td {
     background-color: var(--gray-3) !important;
@@ -434,6 +436,13 @@
   }
   .infobox-header {
     border-color: var(--gray-5) !important;
+  }
+
+  td[style*="background:#FFB" i] {
+    background: var(--yellow-2) !important;
+  }
+  td[style*="background:#BBF3FF" i] {
+    background: var(--blue-1) !important;
   }
   /* transparent background */
   html,
@@ -901,7 +910,8 @@
   .infobox-above[style*="background:#ccc"],
   .infobox-above[style*="background: #DEDEE2;"],
   .infobox-above[style*="background-color: #E7DCC3;"],
-  .infobox-above[style="background:Silver"] {
+  .infobox-above[style="background:Silver"],
+  .infobox-above[style*="background-color: lightsteelblue"] {
     background-color: var(--gray-3) !important;
   }
   .ve-ui-mwParameterResultWidget.oo-ui-optionWidget-highlighted,
@@ -2249,6 +2259,8 @@
   td[style*="background: #ffdddd" i],
   tr[style*="background:#FFDDDD" i],
   tr[style*="background:#fbb" i],
+  td[style*="background:#FBB" i],
+  tr[bgcolor="#FFBBBB"],
   .table-no {
     background: var(--red-3) !important;
     color: var(--gray-d) !important;
@@ -2326,7 +2338,8 @@
   div[style*="border: 1px solid #BF4D40"] {
     border: 1px solid var(--red-3) !important;
   }
-  .no.table-no2 {
+  .no.table-no2,
+  .table-no2 {
     background-color: var(--red-3) !important;
   }
   /* Green */
@@ -2479,9 +2492,11 @@
   td[style*="background: #99FF99;" i],
   td[style*="background:#dfd" i],
   td[style*="background:#bfd" i],
+  td[style*="background-color:#FFBBBB" i],
   tr[style*="background:#DDFFDD" i],
   tr[style*="background:#bfb" i],
   tr[style*="background-color:#CCFFCC" i],
+  tr[bgcolor="#CCFFCC" i],
   .table-yes {
     background: var(--green-2) !important;
     color: var(--gray-d) !important;
@@ -3600,7 +3615,9 @@
   td[style*="background-color: #FDD"] {
     background-color: var(--pink-1) !important;
   }
-  td[style*="background-color: #F9D"] {
+  td[style*="background-color: #F9D"],
+  td[style*="background-color: #E0CEF2" i],
+  td[bgcolor="EOCEF2"] {
     background-color: var(--pink-2) !important;
   }
   div[style="background-color: #fff5f5; margin: 2em 0 0 0; padding: 0 10px 0 10px; border: 1px solid #AAAAAA;"] {
