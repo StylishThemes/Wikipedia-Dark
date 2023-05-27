@@ -3680,6 +3680,7 @@
   table.wikitable,
   button.formBtn {
     border: 1px solid var(--gray-5) !important;
+    background-color: var(--gray-2) !important;
   }
   fieldset,
   button[type="submit"]:not(.pure-button-primary-progressive):not(.formBtn),
