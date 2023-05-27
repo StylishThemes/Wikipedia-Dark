@@ -429,6 +429,12 @@
   .tracklist-total-length td {
     background-color: var(--gray-3) !important;
   }
+  .infobox-data {
+    background-color: var(--gray-2) !important;
+  }
+  .infobox-header {
+    border-color: var(--gray-5) !important;
+  }
   /* transparent background */
   html,
   body,
@@ -899,8 +905,8 @@
     background-color: var(--gray-3) !important;
   }
   .ve-ui-mwParameterResultWidget.oo-ui-optionWidget-highlighted,
-  .infobox-above[style=""],
-  .infobox-header[style=""] {
+  .infobox-above,
+  .infobox-header {
     background-color: var(--gray-3);
   }
   table[class="toccolours;"] tr[style*="background:#FAFAFA"],
