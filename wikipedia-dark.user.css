@@ -419,6 +419,9 @@
 @-moz-document regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach|foundation|donate)\.wikimedia)\.org\/.*"),
                regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
                regexp("https?:\/\/wikiless\.org\/.*$") {
+  #vector-toc {
+    background-color: transparent;
+  }
   /* transparent background */
   html,
   body,
@@ -504,7 +507,7 @@
   .ve-ui-mwSaveDialog-options,
   .mw-parser-output #siteContainer div:first-child,
   #mw-page-base {
-    background-color: transparent;
+    background-color: transparent !important;
   }
   .lang-list-button {
     border-color: var(--gray-5);
