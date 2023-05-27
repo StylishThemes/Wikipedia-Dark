@@ -425,8 +425,17 @@
   .tracklist th[scope="col"] {
     background-color: var(--gray-3) !important;
   }
-
-  
+  caption {
+    background-color: var(--gray-3) !important;
+    border-color: var(--gray-5) !important;
+  }
+  button.mw-collapsible-toggle {
+    border-color: var(--gray-5);
+  }
+  button.mw-collapsible-toggle::after,
+  button.mw-collapsible-toggle::before {
+    color: var(--gray-5);
+  }
   .tracklist-total-length span,
   .tracklist-total-length td {
     background-color: var(--gray-3) !important;
@@ -437,7 +446,6 @@
   .infobox-header {
     border-color: var(--gray-5) !important;
   }
-
   td[style*="background:#FFB" i] {
     background: var(--yellow-2) !important;
   }
