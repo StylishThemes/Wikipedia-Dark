@@ -422,6 +422,13 @@
   #vector-toc {
     background-color: transparent;
   }
+  .tracklist th[scope="col"] {
+    background-color: var(--gray-3) !important;
+  }
+  .tracklist-total-length span,
+  .tracklist-total-length td {
+    background-color: var(--gray-3) !important;
+  }
   /* transparent background */
   html,
   body,
@@ -439,7 +446,7 @@
   }
   div.vectorTabs ul li,
   tt[style="background: white;"],
-  span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]):not(.wikibase-toolbar-wrapper):not(.tool),
+  span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]):not(.wikibase-toolbar-wrapper):not(.tool):not(.tracklist-total-length span),
   tr[style*="background:#F5FFFA" i],
   th[style*="background-color: #fff" i],
   blockquote[style*="background-color: white" i],
