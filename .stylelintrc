@@ -5,5 +5,5 @@ rules:
   custom-property-pattern: null
   declaration-block-no-duplicate-properties: null
   indentation: null
-  max-empty-lines: 0
+  rule-empty-line-before: 'never'
   selector-no-vendor-prefix: null
