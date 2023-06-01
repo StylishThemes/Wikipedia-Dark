@@ -458,7 +458,10 @@
   .mw-body[role="main"],
   .skin-vector-max-width .mw-page-container,
   .skin-vector #mw-panel,
-  .mw-page-container {
+  .mw-page-container,
+  .vector-feature-zebra-design-disabled body,
+  .vector-feature-zebra-design-disabled .vector-header-container,
+  #preferences .mw-htmlform-submit-buttons {
     background-color: var(--gray-2);
     background-image: var(--bg-selected);
     background-clip: border-box;
@@ -477,7 +480,6 @@
   table.flextable .invisible,
   table#noarticletext,
   table#noarticletext table,
-  :not(.color_swatch) > div[style*="background"]:not([style*="#90EE90"]),
   .navbox-list,
   .mw-wsmfinal-content,
   .mw-body-content,
@@ -506,6 +508,9 @@
   #mp-topbanner {
     background-color: transparent !important;
   }
+  tr > td[bgcolor] {
+    color: var(--gray-1) !important;
+  }
   .color_swatch div[style*="background"] {
     color: var(--white_25) !important;
   }
@@ -525,7 +530,7 @@
   .mw-mmv-permission-box,
   .mw-mmv-info-box {
     border-color: var(--gray-5);
-    background-color: transparent !important;
+    background-color: transparent;
   }
   div.vectorTabs li.selected,
   .vector-header-container,
@@ -617,8 +622,6 @@
   span[style*="color:#555555"],
   td[style^="background: #FFFFFF" i],
   td[style^="background:#FFFFFF" i],
-  td[style^="background: #F5F" i],
-  td[style^="background:#F5F" i],
   div[style*="color"]:not([style*="black;"]):not([style*="back"]):not([style*="966"]):not([style*="red"]),
   div.flaggedrevs_preview,
   div.plainlinks,
@@ -645,7 +648,12 @@
   .vertical-navbox th span,
   .mw-mmv-post-image,
   .mw-mmv-permission-box .mw-mmv-permission-text,
-  #footer li {
+  #footer li,
+  .vector-feature-zebra-design-disabled .vector-main-menu-landmark div > div,
+  .vector-feature-zebra-design-disabled #vector-page-tools > div div,
+  .frb-inline-main .cta,
+  .cx-uls-entrypoint.cx-uls-entrypoint,
+  .mw-electronpdfservice-selection-form label {
     color: var(--gray-c) !important;
   }
   a,
@@ -765,7 +773,6 @@
     color: var(--base-color);
     box-shadow: inset 0 -2px 0 0 var(--base-color);
   }
-  tt,
   tt[style*="background: white"] {
     background: var(--gray-1) !important;
   }
@@ -782,8 +789,19 @@
   .mw-echo-ui-toggleReadCircleButtonWidget:hover .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
     background-color: var(--gray-2f) !important;
   }
-  .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th:not(.wikidatainfobox-lcell):not([style*="cfe3ff;"]):not([style*="text"]):not([style*="#fff1d2;"]):not([style*="transparent"]):not([colspan="3"]):not(.mbox-text) {
+  .mw-collapsible:not([class*="navbox-"]):not([class*="wpb"]) th:not(.wikidatainfobox-lcell):not([style*="cfe3ff;"]):not([style*="text"]):not([style*="#fff1d2;"]):not([style*="transparent"]):not([colspan="3"]):not(.mbox-text),
+  .infobox th.infobox-above.fn[style*="background-color"],
+  .cx-uls-entrypoint__panel-container,
+  .infobox-subheader,
+  table.toccolours > caption[style*="background-color:lavender"] {
     background-color: var(--gray-3) !important;
+  }
+  .cx-uls-relevant-languages-banner {
+    background-color: var(--gray-3) !important;
+    color: var(--gray) !important;
+  }
+  .cx-uls-relevant-languages-banner__icon {
+    filter: invert(.8) !important;
   }
   .oo-ui-toolbar-bar,
   .oo-ui-window-head,
@@ -801,7 +819,9 @@
   .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active:focus,
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-tool-active > .oo-ui-tool-link,
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link,
-  .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover {
+  .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover,
+  .vector-feature-zebra-design-disabled .vector-dropdown .vector-dropdown-content,
+  .vector-feature-zebra-design-disabled .vector-dropdown > .vector-menu-content {
     background-color: var(--gray-3);
   }
   :not(.color_swatch) > div[style*="background-color: rgb(249, 249, 249)"] {
@@ -851,7 +871,11 @@
   .tux-message-item-compact,
   .nomobile.plainlist,
   .infobox td[style^="background-color:#cfea9e;"],
-  .infobox[style*="border: solid 1px silver"] {
+  .infobox[style*="border: solid 1px silver"],
+  table.toccolours tr > th[style*="border-bottom:1px solid black"],
+  table.toccolours tr > th[style*="border-bottom:1px solid #bbbbbb"],
+  table.toccolours tr > td[style*="border-bottom:1px solid #bbbbbb"],
+  table.toccolours > caption[style*="background-color:lavender"] {
     border-color: var(--gray-5) !important;
   }
   table[style*="border:1px solid #CCCCCC;"],
@@ -867,7 +891,21 @@
   .ve-ui-cxDesktopContext .ve-ui-cxLinkContextItem-sourceBody,
   .sidebar.WSerieV,
   .ve-ui-mwTransclusionDialog-addParameterFieldset .ve-ui-mwParameterSearchWidget,
-  .mw-parser-output .portalborder {
+  .mw-parser-output .portalborder,
+  .mw-collapsible-toggle-default,
+  .mw-parser-output .ib-settlement .mergedtoprow .infobox-header,
+  .mw-parser-output .ib-settlement .mergedtoprow .infobox-label,
+  .mw-parser-output .ib-settlement .mergedtoprow .infobox-data,
+  .mw-parser-output .ib-settlement .mergedbottomrow .infobox-label,
+  .mw-parser-output .ib-settlement .mergedbottomrow .infobox-data,
+  .mw-parser-output .ib-settlement .mergedbottomrow .infobox-full-data,
+  .mw-parser-output .ib-settlement .mergedbottomrow .infobox-data,
+  .mw-parser-output .ib-settlement .mergedtoprow .infobox-full-data,
+  div.flaggedrevs_notice,
+  .ui-closeable,
+  .cx-uls-entrypoint__header,
+  .cx-uls-entrypoint,
+  .mw-electronpdfservice-selection-form label {
     border-color: var(--gray-5);
   }
   .uls-settings-trigger {
@@ -875,8 +913,12 @@
   }
   .vector-search-box-collapses #searchButton,
   .vector-search-box-collapses #mw-searchButton,
-  .wikibase-toolbar-container.wikibase-toolbar-container {
+  .wikibase-toolbar-container.wikibase-toolbar-container,
+  .thumbinner > .tsingle > .thumbimage {
     background: transparent !important;
+  }
+  .wb-preferred .wikibase-statementview-mainsnak {
+    background-color: var(--green-a0) !important;
   }
   .mw-parser-output .maf-info,
   .mw-parser-output .wwikipedii tr {
@@ -919,7 +961,8 @@
   .infobox-above[style*="background: #DEDEE2;"],
   .infobox-above[style*="background-color: #E7DCC3;"],
   .infobox-above[style="background:Silver"],
-  .infobox-above[style*="background-color: lightsteelblue"] {
+  .infobox-above[style*="background-color: lightsteelblue"],
+  .wikitable[style*="background-color:#f7f8ff"] tbody {
     background-color: var(--gray-3) !important;
   }
   .ve-ui-mwParameterResultWidget.oo-ui-optionWidget-highlighted,
@@ -1162,7 +1205,9 @@
     color: var(--gray-c) !important;
   }
   .suggestion-description,
-  .mw-mmv-credit {
+  .mw-mmv-credit,
+  .mw-collapsible-toggle-default::before,
+  .mw-collapsible-toggle-default::after {
     color: var(--gray-b9);
   }
   .suggestion-link.active {
@@ -1236,7 +1281,8 @@
   .NavFrame,
   .divbox,
   .vertical-navbox:not(.nowraplinks),
-  .mw-advancedSearch-fieldContainer .oo-ui-labelElement > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label {
+  .mw-advancedSearch-fieldContainer .oo-ui-labelElement > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label,
+  .mw-parser-output > div[dir="ltr"][style^="background: #ffffee;"] {
     background-color: var(--gray-2) !important;
   }
   table[style*="background-color: #f9f9f9; border: 1px solid #aaa;"] {
@@ -1301,7 +1347,9 @@
   }
   .vector-feature-page-tools-enabled #vector-main-menu-pinned-container .vector-main-menu,
   .vector-feature-page-tools-disabled .vector-main-menu,
-  .vector-pinnable-element {
+  .vector-pinnable-element,
+  .vector-feature-zebra-design-disabled #vector-main-menu-pinned-container .vector-main-menu,
+  .vector-feature-zebra-design-disabled .vector-toc {
     background-color: var(--black_17);
   }
   .vector-feature-page-tools-enabled .vector-pinnable-element > :not(:last-child),
@@ -1330,6 +1378,17 @@
   .cdx-button:not(.cdx-button--type-quiet):enabled:hover {
     background-color: var(--gray-a);
     color: var(--gray-d);
+  }
+  .cx-source-title,
+  .mw-logo-page-title {
+    color: var(--gray-d) !important;
+  }
+  .cx-target-title,
+  .cx-last-updated {
+    color: var(--gray-c) !important;
+  }
+  .cx-translation-filter {
+    box-shadow: 0 4px 4px -4px var(--gray-5);
   }
   .cdx-button:not(.cdx-button--type-quiet):enabled {
     background-color: var(--gray-a);
@@ -1615,7 +1674,8 @@
   #mwe-popups-settings,
   #mw-searchoptions,
   #pagehistory li.selected,
-  #js-lang-lists .text {
+  #js-lang-lists .text,
+  .tooltipContent > div {
     background-color: var(--gray-2) !important;
   }
   #advancedSearchField-plain,
@@ -1628,7 +1688,8 @@
   .mw-parser-output table.floatright[width="35%"] {
     background: none;
   }
-  #vector-toc-pinned-container .vector-toc:after {
+  #vector-toc-pinned-container .vector-toc:after,
+  .vector-page-tools::after {
     background: transparent !important;
   }
   table[style*="background: transparent"],
@@ -1784,7 +1845,7 @@
   table.nmbox th:not([style*="#EEF"]),
   table.wikitable > * > tr > th:not([style*="#ABC;"]):not([style*="#fdb"]):not([style*="#fed"]):not([style*="#fef"]):not([style*="#d4f"]):not([style*="0; color:#000000"]):not([style*="FF; color:#000000"]),
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i],
-  td[style*="background"]:not([style*="D8B"]):not([style*="000"]):not([style*="cdde"]):not([style*="e8dbae"]):not([style*="FE4"]):not([style*="301"]):not([style*="722"]):not([style*="781"]):not([style*="702"]):not([style*="6C3"]):not([style*="880"]):not([style*="866"]):not([style*="512"]):not([style*="DE6"]):not([style*="C54"]):not([style*="B76"]):not([style*="9A4"]):not([style*="4E2"]):not([style*="DF0"]):not([style*="DA7"]):not([style*="DF7"]):not([style*="9F00"]):not([style*="FAE6"]):not([style*="E0B0"]):not([style*="800080"]):not([style*="66023C"]):not([style*="7851A9"]):not([style*="C71585"]):not([style*="BF00FF"]):not([style*="A020F0"]):not([style*="9370DB"]):not([style*="663399"]),
+  td[style*="background"]:not([style*="D8B"]):not([style*="000"]):not([style*="cdde"]):not([style*="e8dbae"]):not([style*="FE4"]):not([style*="301"]):not([style*="722"]):not([style*="781"]):not([style*="702"]):not([style*="6C3"]):not([style*="880"]):not([style*="866"]):not([style*="512"]):not([style*="DE6"]):not([style*="C54"]):not([style*="B76"]):not([style*="9A4"]):not([style*="4E2"]):not([style*="DF0"]):not([style*="DA7"]):not([style*="DF7"]):not([style*="9F00"]):not([style*="FAE6"]):not([style*="E0B0"]):not([style*="800080"]):not([style*="66023C"]):not([style*="7851A9"]):not([style*="C71585"]):not([style*="BF00FF"]):not([style*="A020F0"]):not([style*="9370DB"]):not([style*="663399"]):not(.notheme),
   td[style*="background:#F2F2F2" i],
   td[style*="background: #ececec;" i],
   th[style*="background:#eee" i],
@@ -1804,7 +1865,7 @@
   p[style*="background-color:#F7FAFC" i],
   :not(.color_swatch) > div[style*="background-color: #dddddd" i],
   .infobox.standard-talk tr[style*="#e8dbae"],
-  .infobox th[style*="background"]:not([style*="green"]):not([style*="background:#dfc;"]):not(.infobox-above):not([style*="lavender"]):not([style*="cfe3ff"]):not([style*="rgb(235,235,210)"]):not([style*="antiquewhite"]),
+  .infobox th[style*="background"]:not([style*="green"]):not([style*="background:#dfc;"]):not([style*="lavender"]):not([style*="cfe3ff"]):not([style*="rgb(235,235,210)"]):not([style*="antiquewhite"]),
   .infobox tr[style*="background-color"]:not([style*="cedff2"]),
   .infobox,
   .tlheader,
@@ -1832,6 +1893,9 @@
   .navbox-group,
   .navbox-subgroup .navbox-title {
     background-color: var(--gray-5);
+  }
+  .navbox-title > div {
+    color: var(--black) !important;
   }
   .mw-revslider-revision,
   .cbnnr-close {
@@ -1881,7 +1945,8 @@
     border-color: var(--gray-2) !important;
   }
   .mw-logo-container > img,
-  a img[src*="WRN_header.png"] {
+  a img[src*="WRN_header.png"],
+  .mw-logo-wordmark {
     filter: invert(88%);
   }
   kbd,
@@ -1911,6 +1976,14 @@
   .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus:not(:active),
   .mw-ui-button.mw-ui-progressive:focus:not(:active) {
     box-shadow: inset 0 0 0 1px var(--base-color), inset 0 0 0 2px var(--gray-a) !important;
+  }
+  input[type="checkbox"]:focus + .mw-ui-button.mw-ui-quiet,
+  input[type="checkbox"]:focus + .mw-ui-button.mw-ui-quiet.mw-ui-progressive,
+  input[type="checkbox"]:focus + .mw-ui-button.mw-ui-quiet.mw-ui-destructive,
+  .mw-ui-button.mw-ui-quiet:focus,
+  .mw-ui-button.mw-ui-quiet.mw-ui-progressive:focus,
+  .mw-ui-button.mw-ui-quiet.mw-ui-destructive:focus {
+    box-shadow: inset 0 0 0 1px #36c, inset 0 0 0 2px var(--gray-4) !important;
   }
   .oo-ui-popupToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link:focus {
     outline: 0;
@@ -2014,15 +2087,17 @@
   }
   img[src*="9px-AnonEditWarning"],
   a img[src*="OOjs_UI_icon"],
-  span.mw-ui-icon::before,
-  .vector-dropdown > .vector-menu-heading::after,
+  span.mw-ui-icon:not(.mw-ui-icon-language-progressive)::before,
+  .vector-dropdown > .vector-menu-heading:not(.vector-menu-heading)::after,
   .mw-interlanguage-selector::after,
   .uls-menu.uls-language-actions-dialog .uls-language-actions-title .uls-language-actions-close,
   .oo-ui-icon-ellipsis,
   .mw-ui-icon-ellipsis::before,
   .mw-ui-icon.mw-ui-icon-before::before,
-  .mw-ui-icon.mw-ui-icon-element::before,
-  .mw-parser-output .helpContents-icon {
+  .mw-ui-icon.mw-ui-icon-element:not(.mw-ui-icon-bell):not(.mw-ui-icon-tray)::before,
+  .mw-parser-output .helpContents-icon,
+  .mw-ui-icon-wikimedia-bell,
+  .mw-ui-icon-wikimedia-tray {
     filter: invert(80%);
   }
   .k-player .control-bar {
@@ -2064,7 +2139,8 @@
   .mw-mmv-next-image,
   .mw-mmv-prev-image,
   .mw-page-container,
-  #mw-panel {
+  #mw-panel,
+  .cx-translation-filter {
     background-color: transparent !important;
     border: none !important;
   }
@@ -2777,9 +2853,6 @@
     background-color: var(--gray-28) !important;
     border-color: var(--gray-5) !important;
   }
-  td[style*="background: #F5F5FF"] {
-    background-color: var(--gray-28) !important;
-  }
   .oo-ui-menuSelectWidget {
     background-color: var(--gray-18);
     border-color: var(--gray-5);
@@ -3252,7 +3325,8 @@
   table[style*="border-color: lightblue;"] {
     border-color: var(--blue-4) !important;
   }
-  .mw-parser-output .portal-bar-bordered {
+  .mw-parser-output .portal-bar-bordered,
+  .mw-parser-output .sister-bar {
     background-color: var(--blue-3);
     border-color: var(--blue-2);
   }
@@ -3308,8 +3382,17 @@
     border-color: var(--gray-2) !important;
     color: var(--gray-c) !important;
   }
+  .mw-parser-output .navbox .inner-standard > tbody > tr > th + td,
+  .mw-parser-output .navbox .inner-standard > tbody > tr + tr > th,
+  .mw-parser-output .navbox .inner-standard > tbody > tr + tr > td {
+    border-color: var(--gray-4) !important;
+  }
   .mw-parser-output .navbox,
-  .mw-parser-output .navbox-subgroup {
+  .mw-parser-output .navbox-subgroup,
+  .mw-parser-output .navbox > .caption,
+  .mw-parser-output .fileinfo-paramfield,
+  .mw-parser-output .navbox > .mw-collapsible-content > .above,
+  .mw-parser-output .navbox > .mw-collapsible-content > .below {
     background-color: var(--purple-1);
   }
   .mw-parser-output .navbox,
@@ -3596,7 +3679,6 @@
     border-color: var(--yellow-1);
   }
   tr[style*="background:orange" i],
-  td[style*="background:#ffd" i],
   .table-partial {
     background-color: var(--brown-1) !important;
   }
@@ -3835,7 +3917,19 @@
   #content,
   #filetoc,
   #toc,
-  #uls-settings-block {
+  #uls-settings-block,
+  .vector-feature-zebra-design-disabled .vector-pinnable-element > :not(:last-child),
+  .vector-feature-zebra-design-disabled .vector-dropdown-content > :not(:last-child),
+  .mw-footer,
+  .vector-feature-zebra-design-disabled .vector-sticky-header-container,
+  .vector-feature-zebra-design-disabled .vector-sticky-header-context-bar,
+  .ve-ui-mwLanguagesPage-languages-table th,
+  .ve-ui-mwLanguagesPage-languages-table td,
+  .mw-guidedtour-tour-WlFiltersIntro,
+  .mw-parser-output .infobox td,
+  .mw-parser-output .infobox th,
+  #preferences .mw-htmlform-submit-buttons,
+  .mw-parser-output .side-box {
     border-color: var(--gray-5);
   }
   body[class*="skin-"] .mw-parser-output table.ambox {
@@ -3967,7 +4061,11 @@
   .vector-menu-content,
   #talkheader td,
   #mwe-popups-settings,
-  #mwe-popups-settings header {
+  #mwe-popups-settings header,
+  .infobox-below[style="border-top:1px #aaa solid;"],
+  .mw-parser-output table[style*="border:solid 1px silver"],
+  .thumbcaption > span,
+  .tooltipContent > div {
     border-color: var(--gray-5) !important;
   }
   div[style*="border:1px #FFFFFF" i],
@@ -3983,8 +4081,9 @@
   }
   /* stop hovering effects on tr/td borders
 	   https://species.wikimedia.org/wiki/Wikispecies:Templates#Link_Templates */
-  tr:hover,
-  td:not(.mid-table):not([style*="border:1px solid transparent"]):not(.navbox-abovebelow):not(.navbox-list):not([style]):not(.MainPageBG):hover {
+  table:not(.inner-standard) > tbody > tr:hover,
+  table:not(.inner-standard) > tbody > tr > td:not(.mid-table):not([style*="border:1px solid transparent"]):not(.navbox-abovebelow):not(.navbox-list):not([style]):not(.MainPageBG):not(.infobox-image):not(.navbox-even):not(.navbox-odd):hover,
+  .ibox-inner > tbody > tr > th[colspan] {
     border-color: var(--gray-5) !important;
   }
   .tux-workflow-status:hover {
@@ -4178,12 +4277,17 @@
   .oo-ui-image-progressive.oo-ui-icon-wikiText,
   .oo-ui-image-progressive.oo-ui-icon-eye,
   .mw-ui-icon-eye-progressive::before,
-  .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon,
   .oo-ui-image-progressive.oo-ui-icon-specialCharacter,
   .mw-ui-icon-specialCharacter-progressive::before,
   .oo-ui-image-progressive.oo-ui-icon-help,
   .mw-ui-icon-help-progressive::before {
     filter: grayscale(1) brightness(230%);
+  }
+  .ve-ui-mwLanguagesPage-languages-table tr:nth-child(2n) td {
+    background-color: var(--gray-3) !important;
+  }
+  .ve-ui-mwLanguagesPage-languages-table tr:nth-child(2n+1) td {
+    background-color: var(--gray-4) !important;
   }
   .mwe-popups.flipped_y::after,
   .mwe-popups.flipped_x_y::after,
@@ -7636,11 +7740,18 @@
   #main-page-wikimedia {
     background: var(--gray-18);
   }
-  #mw-content-text .cytat {
-    background-color: var(--gray-3);
+  #mw-content-text .cytat,
+  .mw-parser-output .naglowek {
+    background-color: var(--gray-3) !important;
+  }
+  .infobox .grafika {
+    background-color: var(--gray-2) !important;
   }
   #main-page-welcome strong {
-    color: var(--gray-18);
+    color: var(--gray-18) !important;
+  }
+  .mw-parser-output .naglowek {
+    color: var(--gray-c) !important;
   }
   #main-page #main-page-content h2 {
     background: linear-gradient(to right, var(--blue-1) 0%, transparent 90%);
@@ -7661,7 +7772,8 @@
     border-color: var(--green-3);
   }
   #main-page #main-page-header,
-  #main-page #main-page-wiki-events {
+  #main-page #main-page-wiki-events,
+  .infobox > caption {
     border-color: var(--gray-5);
   }
   .tool-button {
