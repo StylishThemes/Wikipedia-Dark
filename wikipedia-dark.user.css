@@ -428,7 +428,12 @@
   .mw-page-container,
   .vector-feature-zebra-design-disabled body,
   .vector-feature-zebra-design-disabled .vector-header-container,
-  #preferences .mw-htmlform-submit-buttons {
+  #preferences .mw-htmlform-submit-buttons,
+	.vector-feature-zebra-design-enabled .vector-header-container,
+	.vector-feature-zebra-design-disabled .mw-page-container,
+	.vector-feature-zebra-design-enabled .vector-page-titlebar,
+	.vector-feature-zebra-design-enabled .vector-page-toolbar,
+	.vector-feature-zebra-design-enabled .vector-body {
     background-color: var(--gray-2);
     background-image: var(--bg-selected);
     background-clip: border-box;
@@ -620,7 +625,8 @@
   .vector-feature-zebra-design-disabled #vector-page-tools > div div,
   .frb-inline-main .cta,
   .cx-uls-entrypoint.cx-uls-entrypoint,
-  .mw-electronpdfservice-selection-form label {
+  .mw-electronpdfservice-selection-form label,
+	.vector-menu-heading {
     color: var(--gray-c) !important;
   }
   a,
@@ -760,7 +766,10 @@
   .infobox th.infobox-above.fn[style*="background-color"],
   .cx-uls-entrypoint__panel-container,
   .infobox-subheader,
-  table.toccolours > caption[style*="background-color:lavender"] {
+  table.toccolours > caption[style*="background-color:lavender"],
+	.navbox .navbox-navbox td.navbox-group,
+	.mw-parser-output th.navbox2-group,
+	.mw-parser-output .navbox2[role="navigation"] {
     background-color: var(--gray-3) !important;
   }
   .cx-uls-relevant-languages-banner {
@@ -842,7 +851,10 @@
   table.toccolours tr > th[style*="border-bottom:1px solid black"],
   table.toccolours tr > th[style*="border-bottom:1px solid #bbbbbb"],
   table.toccolours tr > td[style*="border-bottom:1px solid #bbbbbb"],
-  table.toccolours > caption[style*="background-color:lavender"] {
+  table.toccolours > caption[style*="background-color:lavender"],
+	.infobox-header[style^="border-top:#aaa 1px solid"],
+	.infobox-below[style="border-top:#aaa 1px solid"],						 
+	.mw-ui-icon-small.vector-toc-toggle {
     border-color: var(--gray-5) !important;
   }
   table[style*="border:1px solid #CCCCCC;"],
@@ -872,7 +884,18 @@
   .ui-closeable,
   .cx-uls-entrypoint__header,
   .cx-uls-entrypoint,
-  .mw-electronpdfservice-selection-form label {
+  .mw-electronpdfservice-selection-form label,
+	.vector-feature-zebra-design-enabled .vector-pinned-container,
+	.vector-feature-zebra-design-enabled .vector-pinnable-header,
+	.vector-feature-zebra-design-enabled .vector-pinnable-element .vector-menu-heading,
+	.vector-feature-zebra-design-enabled .vector-page-titlebar,
+	.vector-feature-zebra-design-enabled .vector-page-toolbar,
+	.vector-feature-zebra-design-enabled .vector-body,
+	.vector-feature-zebra-design-enabled .vector-header-container,
+	.labelced-page-type-content.ambox-content,
+	.mw-parser-output .navbox2[role="navigation"],
+	.mw-parser-output .navbox2-list,
+	.mw-parser-output .us-census-pop caption {
     border-color: var(--gray-5);
   }
   .uls-settings-trigger {
@@ -881,7 +904,9 @@
   .vector-search-box-collapses #searchButton,
   .vector-search-box-collapses #mw-searchButton,
   .wikibase-toolbar-container.wikibase-toolbar-container,
-  .thumbinner > .tsingle > .thumbimage {
+  .thumbinner > .tsingle > .thumbimage,
+  .vector-feature-zebra-design-enabled .vector-pinned-container::after,
+	.vector-feature-zebra-design-enabled .vector-dropdown .vector-dropdown-content::after {
     background: transparent !important;
   }
   .wb-preferred .wikibase-statementview-mainsnak {
@@ -947,7 +972,7 @@
   .mw-parser-output > table.vertical-navbox,
   .mw-parser-output td[style*="background-color:#efefef;"],
   .mw-cx-ui-CategoryTagItemWidget.oo-ui-flaggedElement-highlight,
-  #uls-settings-block {
+  #uls-settings-block{
     background-color: var(--gray-18) !important;
   }
   input.languagefilter {
@@ -974,6 +999,9 @@
   tr > td[style="background: #607CD2;"],
   tr > td[style="background: #828BD9;"],
   tr > td[style="background: #F0F8FF;"],
+  tr > td[style="background: #FFA500;"],
+  tr > td[style="background: #FF6347;"],
+  tr > td[style="background: #FF8C00;"],
   .userbox tbody tr td,
   [class*="map"] [style*="font-size"][style*="left"],
   .frb-headline > span,
@@ -1027,7 +1055,8 @@
   .ve-ui-cxLinkContextItem-language,
   .cx-header-draft-status,
   .oo-ui-labelElement-label,
-  .ve-cx-toolbar-mt-title {
+  .ve-cx-toolbar-mt-title,
+  .vector-feature-zebra-design-enabled .vector-pinnable-header-toggle-button {
     color: var(--gray-c) !important;
   }
   .vector-feature-page-tools-enabled .vector-pinnable-element .vector-menu-heading,
@@ -1221,7 +1250,8 @@
   #mw-head .vector-menu-dropdown h3 {
     background-image: none;
   }
-  .vector-menu-dropdown .vector-menu-content-list {
+  .vector-menu-dropdown .vector-menu-content-list,
+  .vector-feature-zebra-design-enabled .vector-dropdown .vector-dropdown-content {
     background-color: var(--gray-2);
     border-color: var(--gray-5);
   }
@@ -1315,7 +1345,9 @@
   .vector-feature-page-tools-disabled .vector-main-menu,
   .vector-pinnable-element,
   .vector-feature-zebra-design-disabled #vector-main-menu-pinned-container .vector-main-menu,
-  .vector-feature-zebra-design-disabled .vector-toc {
+  .vector-feature-zebra-design-disabled .vector-toc,
+	.vector-feature-zebra-design-enabled .vector-pinned-container,
+	.labelced-page-type-content.ambox-content {
     background-color: var(--black_17);
   }
   .vector-feature-page-tools-enabled .vector-pinnable-element > :not(:last-child),
@@ -1811,7 +1843,7 @@
   table.nmbox th:not([style*="#EEF"]),
   table.wikitable > * > tr > th:not([style*="#ABC;"]):not([style*="#fdb"]):not([style*="#fed"]):not([style*="#fef"]):not([style*="#d4f"]):not([style*="0; color:#000000"]):not([style*="FF; color:#000000"]),
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i],
-  td[style*="background"]:not([style*="D8B"]):not([style*="000"]):not([style*="cdde"]):not([style*="e8dbae"]):not([style*="FE4"]):not([style*="301"]):not([style*="722"]):not([style*="781"]):not([style*="702"]):not([style*="6C3"]):not([style*="880"]):not([style*="866"]):not([style*="512"]):not([style*="DE6"]):not([style*="C54"]):not([style*="B76"]):not([style*="9A4"]):not([style*="4E2"]):not([style*="DF0"]):not([style*="DA7"]):not([style*="DF7"]):not([style*="9F00"]):not([style*="FAE6"]):not([style*="E0B0"]):not([style*="800080"]):not([style*="66023C"]):not([style*="7851A9"]):not([style*="C71585"]):not([style*="BF00FF"]):not([style*="A020F0"]):not([style*="9370DB"]):not([style*="663399"]):not(.notheme),
+  table:not([style*="background:#E5E5E5"]) > tbody >tr > td[style*="background"]:not([style*="D8B"]):not([style*="000"]):not([style*="cdde"]):not([style*="e8dbae"]):not([style*="FE4"]):not([style*="301"]):not([style*="722"]):not([style*="781"]):not([style*="702"]):not([style*="6C3"]):not([style*="880"]):not([style*="866"]):not([style*="512"]):not([style*="DE6"]):not([style*="C54"]):not([style*="B76"]):not([style*="9A4"]):not([style*="4E2"]):not([style*="DF0"]):not([style*="DA7"]):not([style*="DF7"]):not([style*="9F00"]):not([style*="FAE6"]):not([style*="E0B0"]):not([style*="800080"]):not([style*="66023C"]):not([style*="7851A9"]):not([style*="C71585"]):not([style*="BF00FF"]):not([style*="A020F0"]):not([style*="9370DB"]):not([style*="663399"]):not(.notheme),
   td[style*="background:#F2F2F2" i],
   td[style*="background: #ececec;" i],
   th[style*="background:#eee" i],
@@ -1835,7 +1867,9 @@
   .infobox tr[style*="background-color"]:not([style*="cedff2"]),
   .infobox,
   .tlheader,
-  #filetoc {
+  #filetoc,
+	.t-geoinfobox th[class*="infobox"],
+	.mw-parser-output .us-census-pop caption {
     background-color: var(--gray-3) !important;
   }
   .infobox-above[style="background-color:whitesmokemorph"],
@@ -1857,7 +1891,9 @@
   }
   .navbox-abovebelow,
   .navbox-group,
-  .navbox-subgroup .navbox-title {
+  .navbox-subgroup .navbox-title,
+	.vector-feature-zebra-design-enabled .vector-page-titlebar::after,
+  .vector-feature-zebra-design-enabled .vector-pinnable-header-toggle-button:hover {
     background-color: var(--gray-5);
   }
   .navbox-title > div {
@@ -2104,7 +2140,6 @@
   .mw-mmv-fullscreen,
   .mw-mmv-next-image,
   .mw-mmv-prev-image,
-  .mw-page-container,
   #mw-panel,
   .cx-translation-filter {
     background-color: transparent !important;
@@ -2773,7 +2808,8 @@
     border-top: 6px solid var(--gray-a);
   }
   .wikidialog-button.wikidialog-delegable,
-  .tux-workflow-status {
+  .tux-workflow-status,
+  .vector-feature-zebra-design-enabled .vector-pinnable-header-toggle-button {
     background-color: var(--gray-4);
     border-color: var(--gray-5);
     color: var(--gray-c);
