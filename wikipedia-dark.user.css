@@ -429,11 +429,11 @@
   .vector-feature-zebra-design-disabled body,
   .vector-feature-zebra-design-disabled .vector-header-container,
   #preferences .mw-htmlform-submit-buttons,
-	.vector-feature-zebra-design-enabled .vector-header-container,
-	.vector-feature-zebra-design-disabled .mw-page-container,
-	.vector-feature-zebra-design-enabled .vector-page-titlebar,
-	.vector-feature-zebra-design-enabled .vector-page-toolbar,
-	.vector-feature-zebra-design-enabled .vector-body {
+  .vector-feature-zebra-design-enabled .vector-header-container,
+  .vector-feature-zebra-design-disabled .mw-page-container,
+  .vector-feature-zebra-design-enabled .vector-page-titlebar,
+  .vector-feature-zebra-design-enabled .vector-page-toolbar,
+  .vector-feature-zebra-design-enabled .vector-body {
     background-color: var(--gray-2);
     background-image: var(--bg-selected);
     background-clip: border-box;
@@ -626,7 +626,7 @@
   .frb-inline-main .cta,
   .cx-uls-entrypoint.cx-uls-entrypoint,
   .mw-electronpdfservice-selection-form label,
-	.vector-menu-heading {
+  .vector-menu-heading {
     color: var(--gray-c) !important;
   }
   a,
@@ -767,9 +767,9 @@
   .cx-uls-entrypoint__panel-container,
   .infobox-subheader,
   table.toccolours > caption[style*="background-color:lavender"],
-	.navbox .navbox-navbox td.navbox-group,
-	.mw-parser-output th.navbox2-group,
-	.mw-parser-output .navbox2[role="navigation"] {
+  .navbox .navbox-navbox td.navbox-group,
+  .mw-parser-output th.navbox2-group,
+  .mw-parser-output .navbox2[role="navigation"] {
     background-color: var(--gray-3) !important;
   }
   .cx-uls-relevant-languages-banner {
@@ -852,9 +852,9 @@
   table.toccolours tr > th[style*="border-bottom:1px solid #bbbbbb"],
   table.toccolours tr > td[style*="border-bottom:1px solid #bbbbbb"],
   table.toccolours > caption[style*="background-color:lavender"],
-	.infobox-header[style^="border-top:#aaa 1px solid"],
-	.infobox-below[style="border-top:#aaa 1px solid"],						 
-	.mw-ui-icon-small.vector-toc-toggle {
+  .infobox-header[style^="border-top:#aaa 1px solid"],
+  .infobox-below[style="border-top:#aaa 1px solid"],
+  .mw-ui-icon-small.vector-toc-toggle {
     border-color: var(--gray-5) !important;
   }
   table[style*="border:1px solid #CCCCCC;"],
@@ -885,17 +885,17 @@
   .cx-uls-entrypoint__header,
   .cx-uls-entrypoint,
   .mw-electronpdfservice-selection-form label,
-	.vector-feature-zebra-design-enabled .vector-pinned-container,
-	.vector-feature-zebra-design-enabled .vector-pinnable-header,
-	.vector-feature-zebra-design-enabled .vector-pinnable-element .vector-menu-heading,
-	.vector-feature-zebra-design-enabled .vector-page-titlebar,
-	.vector-feature-zebra-design-enabled .vector-page-toolbar,
-	.vector-feature-zebra-design-enabled .vector-body,
-	.vector-feature-zebra-design-enabled .vector-header-container,
-	.labelced-page-type-content.ambox-content,
-	.mw-parser-output .navbox2[role="navigation"],
-	.mw-parser-output .navbox2-list,
-	.mw-parser-output .us-census-pop caption {
+  .vector-feature-zebra-design-enabled .vector-pinned-container,
+  .vector-feature-zebra-design-enabled .vector-pinnable-header,
+  .vector-feature-zebra-design-enabled .vector-pinnable-element .vector-menu-heading,
+  .vector-feature-zebra-design-enabled .vector-page-titlebar,
+  .vector-feature-zebra-design-enabled .vector-page-toolbar,
+  .vector-feature-zebra-design-enabled .vector-body,
+  .vector-feature-zebra-design-enabled .vector-header-container,
+  .labelced-page-type-content.ambox-content,
+  .mw-parser-output .navbox2[role="navigation"],
+  .mw-parser-output .navbox2-list,
+  .mw-parser-output .us-census-pop caption {
     border-color: var(--gray-5);
   }
   .uls-settings-trigger {
@@ -906,7 +906,7 @@
   .wikibase-toolbar-container.wikibase-toolbar-container,
   .thumbinner > .tsingle > .thumbimage,
   .vector-feature-zebra-design-enabled .vector-pinned-container::after,
-	.vector-feature-zebra-design-enabled .vector-dropdown .vector-dropdown-content::after {
+  .vector-feature-zebra-design-enabled .vector-dropdown .vector-dropdown-content::after {
     background: transparent !important;
   }
   .wb-preferred .wikibase-statementview-mainsnak {
@@ -972,7 +972,7 @@
   .mw-parser-output > table.vertical-navbox,
   .mw-parser-output td[style*="background-color:#efefef;"],
   .mw-cx-ui-CategoryTagItemWidget.oo-ui-flaggedElement-highlight,
-  #uls-settings-block{
+  #uls-settings-block {
     background-color: var(--gray-18) !important;
   }
   input.languagefilter {
@@ -1346,8 +1346,8 @@
   .vector-pinnable-element,
   .vector-feature-zebra-design-disabled #vector-main-menu-pinned-container .vector-main-menu,
   .vector-feature-zebra-design-disabled .vector-toc,
-	.vector-feature-zebra-design-enabled .vector-pinned-container,
-	.labelced-page-type-content.ambox-content {
+  .vector-feature-zebra-design-enabled .vector-pinned-container,
+  .labelced-page-type-content.ambox-content {
     background-color: var(--black_17);
   }
   .vector-feature-page-tools-enabled .vector-pinnable-element > :not(:last-child),
@@ -1868,8 +1868,8 @@
   .infobox,
   .tlheader,
   #filetoc,
-	.t-geoinfobox th[class*="infobox"],
-	.mw-parser-output .us-census-pop caption {
+  .t-geoinfobox th[class*="infobox"],
+  .mw-parser-output .us-census-pop caption {
     background-color: var(--gray-3) !important;
   }
   .infobox-above[style="background-color:whitesmokemorph"],
@@ -1892,7 +1892,7 @@
   .navbox-abovebelow,
   .navbox-group,
   .navbox-subgroup .navbox-title,
-	.vector-feature-zebra-design-enabled .vector-page-titlebar::after,
+  .vector-feature-zebra-design-enabled .vector-page-titlebar::after,
   .vector-feature-zebra-design-enabled .vector-pinnable-header-toggle-button:hover {
     background-color: var(--gray-5);
   }
