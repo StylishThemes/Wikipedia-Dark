@@ -571,7 +571,7 @@
     color: var(--gray-c);
   }
   .cdx-text-input__input:enabled ~ .cdx-text-input__icon,
-  .vector-sticky-header.vector-header-search-toggled .vector-search-box-show-thumbnail .cdx-text-input__start-icon,
+  .vector-feature-zebra-design-disabled .vector-sticky-header.vector-header-search-toggled .vector-search-box-show-thumbnail .cdx-text-input__start-icon,
   .oo-ui-listToolGroup.oo-ui-widget-disabled,
   .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-disabled .oo-ui-tool-title,
   .oo-ui-popupToolGroup-tools .oo-ui-tool-link .oo-ui-tool-accel {
@@ -1362,7 +1362,7 @@
   .vector-search-box-collapses #searchButton {
     background: no-repeat center / 20px auto url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath d='M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8z'/%3E%3C/svg%3E") !important;
   }
-  .vector-search-box-collapses input#searchButton[type="submit"] {
+  .cdx-search-input .cdx-text-input__icon.cdx-text-input__start-icon {
     filter: invert(75%) !important;
     border-left-color: var(--gray-a) !important;
     background-color: transparent !important;
@@ -1370,12 +1370,15 @@
   .vector-sticky-header-context-bar {
     border-left: 1px solid var(--gray-5);
   }
-  .client-js .vector-search-box-vue .vector-typeahead-search .cdx-text-input__input:not(:hover):not(:focus) {
-    border-right-color: transparent !important;
+  input:hover + .vector-menu-heading.cdx-button:not(.cdx-button--action-progressive),
+  .cdx-button--weight-quiet:enabled:hover,
+  .cdx-button--weight-quiet.cdx-button--fake-button--enabled:hover {
+    background-color: var(--gray-3);
   }
-  .cdx-button:not(.cdx-button--type-quiet):enabled:hover {
+  .cdx-button:not(.cdx-button--weight-quiet):enabled,
+  .cdx-button:not(.cdx-button--weight-quiet).cdx-button--fake-button--enabled {
     background-color: var(--gray-a);
-    color: var(--gray-d);
+    border-color: var(--gray-5);
   }
   .cx-source-title,
   .mw-logo-page-title {
@@ -1388,9 +1391,10 @@
   .cx-translation-filter {
     box-shadow: 0 4px 4px -4px var(--gray-5);
   }
-  .cdx-button:not(.cdx-button--type-quiet):enabled {
+  .cdx-button:not(.cdx-button--weight-quiet):enabled:hover,
+  .cdx-button:not(.cdx-button--weight-quiet).cdx-button--fake-button--enabled:hover {
     background-color: var(--gray-a);
-    border-color: var(--gray-5);
+    color: var(--gray-d);
   }
   .cdx-menu {
     background-color: var(--gray-2);
@@ -1406,6 +1410,21 @@
   }
   .cdx-menu--has-footer .cdx-menu-item:last-of-type:not(:first-of-type) {
     border-top: 1px solid var(--gray-3);
+  }
+  .vector-menu-heading-label,
+  .cdx-button::after,
+  .cdx-button .vector-icon,
+  .vector-menu-content .vector-icon {
+    filter: invert(75%);
+  }
+  .mw-portlet-lang {
+    filter: invert(100%);
+  }
+  input:hover + .vector-menu-heading.cdx-button.cdx-button--action-progressive,
+  .cdx-button--weight-quiet.cdx-button--action-progressive:enabled:hover,
+  .cdx-button--weight-quiet.cdx-button--action-progressive.cdx-button--fake-button--enabled:hover {
+    background-color: var(--black_2);
+    color: var(--gray-a);
   }
   .mw-message-box {
     color: var(--gray-c);
@@ -1633,7 +1652,7 @@
   td[style*="background:#eee" i],
   td[bgcolor="f5f5f5"],
   td > span[style*="background-color:#eee" i],
-  button:not([type="submit"]):not(.tux-editor-save-button):not(.save):not([class*="-settings-block"]):not([class*="mw-mmv-"]):not(.pure-button):not(.wikidialog-button):not(.uls-input-toggle-button):not(.mw-ui-icon-wikimedia-expand):not(.vector-pinnable-header-toggle-button):not(.vector-sticky-header-search-toggle):not(.uls-add-languages-button):not(.uls-language-settings-button):not(.mw-interlanguage-selector):not(.uls-language-actions-close),
+  button:not([type="submit"]):not(.tux-editor-save-button):not(.save):not([class*="-settings-block"]):not([class*="mw-mmv-"]):not(.pure-button):not(.wikidialog-button):not(.uls-input-toggle-button):not(.mw-ui-icon-wikimedia-expand):not(.vector-pinnable-header-toggle-button):not(.vector-sticky-header-search-toggle):not(.uls-add-languages-button):not(.uls-language-settings-button):not(.mw-interlanguage-selector):not(.uls-language-actions-close):not(.mw-collapsible-toggle):not(.vector-toc-toggle),
   select,
   div.arcProg,
   textarea:not([class*="mw-editfont"]),
@@ -2089,17 +2108,7 @@
   }
   img[src*="9px-AnonEditWarning"],
   a img[src*="OOjs_UI_icon"],
-  span.mw-ui-icon:not(.mw-ui-icon-language-progressive)::before,
-  .vector-dropdown > .vector-menu-heading:not(.vector-menu-heading)::after,
-  .mw-interlanguage-selector::after,
-  .uls-menu.uls-language-actions-dialog .uls-language-actions-title .uls-language-actions-close,
-  .oo-ui-icon-ellipsis,
-  .mw-ui-icon-ellipsis::before,
-  .mw-ui-icon.mw-ui-icon-before::before,
-  .mw-ui-icon.mw-ui-icon-element:not(.mw-ui-icon-bell):not(.mw-ui-icon-tray)::before,
-  .mw-parser-output .helpContents-icon,
-  .mw-ui-icon-wikimedia-bell,
-  .mw-ui-icon-wikimedia-tray {
+  .mw-parser-output .helpContents-icon {
     filter: invert(80%);
   }
   .k-player .control-bar {
@@ -5237,7 +5246,6 @@
   img[src*="Sort_both_small.svg"] {
     filter: invert(.8);
   }
-  .vector-toc .mw-ui-icon-wikimedia-expand::before,
   .oo-ui-indicator-down,
   .oo-ui-indicator-clear {
     filter: invert(100%);
