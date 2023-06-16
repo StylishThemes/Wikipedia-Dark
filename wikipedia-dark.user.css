@@ -1396,6 +1396,9 @@
     background-color: var(--gray-a);
     color: var(--gray-d);
   }
+  .cdx-button:not(.cdx-button--weight-quiet).cdx-button--fake-button--enabled {
+    background-color: var(--black_8);
+  }
   .cdx-menu {
     background-color: var(--gray-2);
     border: 1px solid var(--gray-4);
