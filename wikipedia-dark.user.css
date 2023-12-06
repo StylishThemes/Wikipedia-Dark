@@ -444,7 +444,7 @@
   }
   div.vectorTabs ul li,
   tt[style="background: white;"],
-  span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]):not(.wikibase-toolbar-wrapper):not(.tool),
+  span:not(.legend-color):not([class*="wikEd"]):not([style*="background"]):not(.wikibase-toolbar-wrapper):not(.tool):not(.cdx-button__icon):not(.mw-tmh-play-icon),
   tr[style*="background:#F5FFFA" i],
   th[style*="background-color: #fff" i],
   blockquote[style*="background-color: white" i],
@@ -461,7 +461,7 @@
   .infobox span.plainlinks *,
   .tracklist,
   .vertical-navbox th a,
-  .ns-0 ul,
+  .ns-0 ul:not(.vjs-menu-content),
   .ns-0 ol li,
   .metadata.plainlinks.stub,
   .mw-body-content #mw-content-text h2:not([id^="mp-"]),
@@ -1306,9 +1306,7 @@
   input.mw-ui-input:focus {
     box-shadow: inset 0 0 0 1px var(--base-color) !important;
   }
-  #vector-toc-pinned-container .vector-toc::after,
-  #vector-toc-pinned-container .sidebar-toc::after,
-  #vector-page-tools-pinned-container .vector-page-tools::after {
+  .vector-feature-zebra-design-disabled .vector-sticky-pinned-container::after {
     background: linear-gradient(transparent, var(--gray-1));
   }
   #vector-page-tools-pinned-container .vector-page-tools {
@@ -1429,6 +1427,9 @@
     background-color: var(--black_2);
     color: var(--gray-a);
   }
+  .mw-parser-output .pathnavbox,
+  div.quotebox.pullquote,
+  .mw-parser-output .side-box,
   .mw-message-box {
     color: var(--gray-c);
     background-color: var(--black_5);
@@ -1493,6 +1494,7 @@
   .oo-ui-fieldLayout-disabled > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label,
   .cdx-text-input__input:enabled:focus ~ .cdx-text-input__icon-vue,
   .cdx-text-input__input:enabled.cdx-text-input__input--has-value ~ .cdx-text-input__icon-vue,
+  .cdx-button.cdx-button--fake-button--enabled,
   #languagesettings-settings-panel {
     color: var(--gray-a);
   }
@@ -1655,7 +1657,7 @@
   td[style*="background:#eee" i],
   td[bgcolor="f5f5f5"],
   td > span[style*="background-color:#eee" i],
-  button:not([type="submit"]):not(.tux-editor-save-button):not(.save):not([class*="-settings-block"]):not([class*="mw-mmv-"]):not(.pure-button):not(.wikidialog-button):not(.uls-input-toggle-button):not(.mw-ui-icon-wikimedia-expand):not(.vector-pinnable-header-toggle-button):not(.vector-sticky-header-search-toggle):not(.uls-add-languages-button):not(.uls-language-settings-button):not(.mw-interlanguage-selector):not(.uls-language-actions-close):not(.mw-collapsible-toggle):not(.vector-toc-toggle),
+  button:not([type="submit"]):not(.tux-editor-save-button):not(.save):not([class*="-settings-block"]):not([class*="mw-mmv-"]):not(.pure-button):not(.wikidialog-button):not(.uls-input-toggle-button):not(.mw-ui-icon-wikimedia-expand):not(.vector-pinnable-header-toggle-button):not(.vector-sticky-header-search-toggle):not(.uls-add-languages-button):not(.uls-language-settings-button):not(.mw-interlanguage-selector):not(.uls-language-actions-close):not(.mw-collapsible-toggle):not(.vector-toc-toggle):not(.vjs-button),
   select,
   div.arcProg,
   textarea:not([class*="mw-editfont"]),
@@ -1891,6 +1893,7 @@
   .tlheader,
   #filetoc,
   .t-geoinfobox th[class*="infobox"],
+  .mw-tmh-player.audio .mw-tmh-play .mw-tmh-play-icon,
   .mw-parser-output .us-census-pop caption {
     background-color: var(--gray-3) !important;
   }
@@ -3766,6 +3769,9 @@
   .navbox-list {
     border-color: transparent !important;
   }
+  .video-js button {
+    border-color: transparent;
+  }
   table.wikitable,
   button.formBtn {
     border: 1px solid var(--gray-5) !important;
@@ -4416,6 +4422,7 @@
   table.wikitable > tbody > tr[style*="background-color:#F6F6F6" i] > td > *,
   tr.ext-infobox-header th,
   tr.ext-infobox-header span,
+  .cdx-button.cdx-button--fake-button--enabled.cdx-button--weight-primary.cdx-button--action-progressive,
   .wikitable tr:not([style*="color:black" i]) th:not([style*="color: black" i]):not([style*="FF"]):not([style*="77"]) {
     color: var(--white) !important;
   }
