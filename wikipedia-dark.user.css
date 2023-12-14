@@ -1375,6 +1375,10 @@
   .cdx-button--weight-quiet.cdx-button--fake-button--enabled:hover {
     background-color: var(--gray-3);
   }
+  input:active + .cdx-button:not(.cdx-button--action-progressive) {
+    background-color: var(--gray-3_5);
+    color: var(--gray-d);
+  }
   .cdx-button:not(.cdx-button--weight-quiet):enabled,
   .cdx-button:not(.cdx-button--weight-quiet).cdx-button--fake-button--enabled {
     background-color: var(--gray-a);
@@ -3195,6 +3199,7 @@
     background: var(--blue-3) !important;
     border-color: var(--gray-4) !important;
   }
+  .cdx-menu-item--enabled.cdx-menu-item--selected,
   .mw-parser-output .taxontree-lcell,
   .mw-parser-output .wikidatainfobox-lcell,
   .mw-parser-output .ib-spaceflight .infobox-header {
