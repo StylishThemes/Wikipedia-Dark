@@ -1437,14 +1437,11 @@
     border-top: 1px solid var(--gray-3);
   }
   .vector-menu-heading-label,
-  .cdx-button::after,
-						   
+  .cdx-button .vector-icon:not(.mw-ui-icon-wikimedia-language-progressive),
+  .cdx-button:not([for="p-lang-btn-checkbox"])::after,
   .vector-menu-content .vector-icon {
     filter: invert(75%);
   }
-					
-						 
-   
   input:hover + .vector-menu-heading.cdx-button.cdx-button--action-progressive,
   .cdx-button--weight-quiet.cdx-button--action-progressive:enabled:hover,
   .cdx-button--weight-quiet.cdx-button--action-progressive.cdx-button--fake-button--enabled:hover {
