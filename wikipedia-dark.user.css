@@ -433,8 +433,8 @@
   .vector-feature-zebra-design-enabled .vector-page-titlebar,
   .vector-feature-zebra-design-enabled .vector-page-toolbar,
   .vector-feature-zebra-design-enabled .vector-body,
-	.vector-feature-zebra-design-enabled .vector-header-container .vector-sticky-header,
-	.vector-feature-zebra-design-enabled .mw-page-container {
+  .vector-feature-zebra-design-enabled .vector-header-container .vector-sticky-header,
+  .vector-feature-zebra-design-enabled .mw-page-container {
     background-color: var(--gray-2);
     background-image: var(--bg-selected);
     background-clip: border-box;
@@ -479,7 +479,8 @@
   .mw-parser-output .mod-gallery .whitebg img,
   .mw-parser-output .mod-gallery .gallerybox div,
   #mp-topbanner,
-  figure[typeof~="mw:File/Thumb"], figure[typeof~="mw:File/Frame"] {
+  figure[typeof~="mw:File/Thumb"],
+  figure[typeof~="mw:File/Frame"] {
     background-color: transparent !important;
   }
   tr > td[bgcolor] {
@@ -858,7 +859,8 @@
   .infobox-header[style^="border-top:#aaa 1px solid"],
   .infobox-below[style="border-top:#aaa 1px solid"],
   .mw-ui-icon-small.vector-toc-toggle,
-  figure[typeof~="mw:File/Thumb"], figure[typeof~="mw:File/Frame"],
+  figure[typeof~="mw:File/Thumb"],
+  figure[typeof~="mw:File/Frame"],
   figure[typeof~="mw:File/Thumb"] > :not(figcaption) .mw-file-element {
     border-color: var(--gray-5) !important;
   }
@@ -7784,7 +7786,7 @@
   }
   #mw-content-text .cytat,
   .mw-parser-output .naglowek,
-	tr[style$="background:#fff;"] {
+  tr[style$="background:#fff;"] {
     background-color: var(--gray-3) !important;
   }
   .infobox .grafika {
