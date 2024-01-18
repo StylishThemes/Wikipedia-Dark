@@ -434,7 +434,9 @@
   .vector-feature-zebra-design-enabled .vector-page-toolbar,
   .vector-feature-zebra-design-enabled .vector-body,
   .vector-feature-zebra-design-enabled .vector-header-container .vector-sticky-header,
-  .vector-feature-zebra-design-enabled .mw-page-container {
+  .vector-feature-zebra-design-enabled .mw-page-container,
+  .vector-header-container .mw-header,
+  .vector-header-container .vector-sticky-header {
     background-color: var(--gray-2);
     background-image: var(--bg-selected);
     background-clip: border-box;
@@ -517,7 +519,8 @@
   .mwe-pt-article-row-even,
   .ve-ui-mwSaveDialog-options,
   .mw-parser-output #siteContainer div:first-child,
-  #mw-page-base {
+  #mw-page-base,
+  .vector-pinned-container {
     background-color: transparent;
   }
   .lang-list-button {
@@ -801,7 +804,8 @@
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-tool-active > .oo-ui-tool-link,
   .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link,
   .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover,
-  .vector-feature-zebra-design-disabled .vector-dropdown > .vector-menu-content {
+  .vector-feature-zebra-design-disabled .vector-dropdown > .vector-menu-content,
+  .vector-page-titlebar::after {
     background-color: var(--gray-3);
   }
   :not(.color_swatch) > div[style*="background-color: rgb(249, 249, 249)"] {
@@ -902,7 +906,10 @@
   .labelced-page-type-content.ambox-content,
   .mw-parser-output .navbox2[role="navigation"],
   .mw-parser-output .navbox2-list,
-  .mw-parser-output .us-census-pop caption {
+  .mw-parser-output .us-census-pop caption,
+  .vector-sticky-header,
+  .vector-pinnable-element .vector-menu-heading,
+  .vector-pinnable-header {
     border-color: var(--gray-5);
   }
   .uls-settings-trigger {
@@ -914,7 +921,8 @@
   .thumbinner > .tsingle > .thumbimage,
   .vector-feature-zebra-design-enabled .vector-pinned-container::after,
   .vector-feature-zebra-design-enabled .vector-dropdown .vector-dropdown-content::after,
-  .vector-feature-zebra-design-enabled .vector-sticky-pinned-container::after {
+  .vector-feature-zebra-design-enabled .vector-sticky-pinned-container::after,
+  .vector-sticky-pinned-container::after {
     background: transparent !important;
   }
   .wb-preferred .wikibase-statementview-mainsnak {
@@ -962,7 +970,8 @@
   .infobox-above[style*="background-color: #E7DCC3;"],
   .infobox-above[style="background:Silver"],
   .wikitable[style*="background-color:#f7f8ff"] tbody,
-  input:hover + .cdx-button.cdx-button--action-progressive {
+  input:hover + .cdx-button.cdx-button--action-progressive,
+  .vector-dropdown .vector-dropdown-content {
     background-color: var(--gray-3) !important;
   }
   .ve-ui-mwParameterResultWidget.oo-ui-optionWidget-highlighted,
@@ -1290,7 +1299,8 @@
   .mw-parser-output > div[dir="ltr"][style^="background: #ffffee;"] {
     background-color: var(--gray-2) !important;
   }
-  table[style*="background-color: #f9f9f9; border: 1px solid #aaa;"] {
+  table[style*="background-color: #f9f9f9; border: 1px solid #aaa;"],
+  .infobox-full-data > .mw-made-collapsible > div[style*="background:lavender"]  {
     background-color: var(--gray-3) !important;
   }
   input[type="search"]#searchInput:focus,
@@ -1439,8 +1449,8 @@
     border-top: 1px solid var(--gray-3);
   }
   .vector-menu-heading-label,
-  .cdx-button .vector-icon:not(.mw-ui-icon-wikimedia-language-progressive),
-  .cdx-button:not([for="p-lang-btn-checkbox"])::after,
+  .cdx-button .vector-icon:not(.mw-ui-icon-wikimedia-language-progressive):not(.mw-ui-icon-wikimedia-tray):not(.mw-ui-icon-wikimedia-tray):not(.mw-echo-unseen-notifications) ,
+  .cdx-button:not([for="p-lang-btn-checkbox"]):not(.mw-ui-icon-wikimedia-tray):not(.mw-echo-unseen-notifications)::after,
   .vector-menu-content .vector-icon {
     filter: invert(75%);
   }
@@ -1461,9 +1471,6 @@
   .cdx-menu-item--enabled.cdx-menu-item--active,
   .cdx-menu-item--enabled.cdx-menu-item--active:hover {
     background-color: var(--black_25);
-  }
-  .vector-page-titlebar {
-    box-shadow: 0 1px var(--gray-5);
   }
   .vector-page-toolbar-container {
     box-shadow: 0 1px var(--gray-6_5);
@@ -2049,7 +2056,8 @@
     background-color: rgba(41, 98, 204, .1);
     color: var(--base-color);
   }
-  .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle {
+  .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle,
+    .vector-pinnable-header-toggle-button {
     background-color: var(--gray-3);
     color: var(--base-color);
   }
