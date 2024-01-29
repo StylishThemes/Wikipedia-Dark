@@ -1300,7 +1300,7 @@
     background-color: var(--gray-2) !important;
   }
   table[style*="background-color: #f9f9f9; border: 1px solid #aaa;"],
-  .infobox-full-data > .mw-made-collapsible > div[style*="background:lavender"]  {
+  .infobox-full-data > .mw-made-collapsible > div[style*="background:lavender"] {
     background-color: var(--gray-3) !important;
   }
   input[type="search"]#searchInput:focus,
@@ -1449,7 +1449,7 @@
     border-top: 1px solid var(--gray-3);
   }
   .vector-menu-heading-label,
-  .cdx-button .vector-icon:not(.mw-ui-icon-wikimedia-language-progressive):not(.mw-ui-icon-wikimedia-tray):not(.mw-ui-icon-wikimedia-tray):not(.mw-echo-unseen-notifications) ,
+  .cdx-button .vector-icon:not(.mw-ui-icon-wikimedia-language-progressive):not(.mw-ui-icon-wikimedia-tray):not(.mw-ui-icon-wikimedia-tray):not(.mw-echo-unseen-notifications),
   .cdx-button:not([for="p-lang-btn-checkbox"]):not(.mw-ui-icon-wikimedia-tray):not(.mw-echo-unseen-notifications)::after,
   .vector-menu-content .vector-icon {
     filter: invert(75%);
@@ -2057,7 +2057,7 @@
     color: var(--base-color);
   }
   .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle,
-    .vector-pinnable-header-toggle-button {
+  .vector-pinnable-header-toggle-button {
     background-color: var(--gray-3);
     color: var(--base-color);
   }
