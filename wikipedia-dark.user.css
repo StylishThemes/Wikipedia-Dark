@@ -422,6 +422,8 @@
   /* transparent background */
   html,
   body,
+  body.skin-vector-2022 .vector-header-container,
+  body.skin-vector div.mw-page-container,
   .mw-body[role="main"],
   .skin-vector-max-width .mw-page-container,
   .skin-vector #mw-panel,
