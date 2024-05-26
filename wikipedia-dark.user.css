@@ -417,7 +417,7 @@
   }
 }
 @-moz-document regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach|foundation|donate)\.wikimedia)\.org\/.*"),
-               regexp("https?:\/\/wiki\.(archlinux|mozilla)\.(org|jp)\/.*$"),
+               regexp("https?:\/\/wiki\.(archlinux|mozilla|nixos)\.(org|jp)\/.*$"),
                regexp("https?:\/\/wikiless\.org\/.*$") {
   /* transparent background */
   html,
