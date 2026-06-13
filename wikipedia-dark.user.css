@@ -1456,7 +1456,6 @@
   .cdx-menu--has-footer .cdx-menu-item:last-of-type:not(:first-of-type) {
     border-top: 1px solid var(--gray-3);
   }
-  .vector-menu-heading-label,
   .cdx-button .vector-icon:not(.mw-ui-icon-wikimedia-language-progressive):not(.mw-ui-icon-wikimedia-tray):not(.mw-ui-icon-wikimedia-tray):not(.mw-echo-unseen-notifications),
   .cdx-button:not([for="p-lang-btn-checkbox"]):not(.mw-ui-icon-wikimedia-tray):not(.mw-echo-unseen-notifications)::after,
   .vector-menu-content .vector-icon {
@@ -6158,11 +6157,25 @@
       background-color: var(--gray-2);
     }
   }
-  #mw-panel .portal:not(#p-navigation) .body {
+#mw-panel .portal:not(#p-navigation) .body {
     background-image: linear-gradient(to top, transparent, var(--gray-c));
     background-size: auto 1px;
   }
 }
+
+@-moz-document regexp("https?:\/\/(([\w\-]{2,}\.)?(wiki(pedia|books|news|quote|source|versity|voyage)|wiktionary)|(www|test)\.(mediawiki|wiki(data|dot))|(meta|wikimania|commons|otrs-wiki|species|wikitech|incubator|outreach|foundation|donate)\.wikimedia)\.org\/.*"),
+               regexp("https?:\/\/wiki\.(archlinux|mozilla|nixos)\.(org|jp)\/.*$"),
+               regexp("https?:\/\/wikiless\.org\/.*$") {
+  figure[typeof~="mw:File/Thumb"] figcaption,
+  figure[typeof~="mw:File/Frame"] figcaption {
+    color: var(--white) !important;
+  }
+  td.MainPageBG[style*="background-color:#f2e0ce"] {
+    background-color: var(--gray-2) !important;
+    color: var(--gray-c) !important;
+  }
+}
+
 @-moz-document domain("wikipedia.org") {
   /*** Navigation menu logo ***/
   #p-logo a {
@@ -6509,6 +6522,7 @@
   }
   .mw-parser-output .mp-frame {
     box-shadow: 0 0 .3em var(--gray-7);
+      
   }
 }
 @-moz-document domain("m.wikidata.org") {
@@ -8148,6 +8162,7 @@
   a.image img[src*="Das"] {
     filter: invert(1) hue-rotate(180deg) contrast(85%) brightness(200%);
     background-color: inherit !important;
+
   }
 }
 @-moz-document domain("ru.wiktionary.org") {
