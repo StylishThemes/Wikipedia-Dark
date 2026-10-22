@@ -1,3 +1,5 @@
+**Retired:** Wikipedia has a built-in dark mode now.
+
 <p align="center">
   <img alt="WikipediaDark" src="https://cdn.jsdelivr.net/gh/StylishThemes/logos@master/wikipedia.dark/wikipediadark.svg" width="580">
   <br>
